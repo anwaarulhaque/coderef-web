@@ -1,0 +1,289 @@
+{
+  "slug": "typescript",
+  "updated": "2026-10-14",
+  "title": "TypeScript",
+  "category": "Languages",
+  "color": "#3178c6",
+  "language": "typescript",
+  "description": "TypeScript types: annotations, interfaces, unions, generics, utility types, narrowing and configuration.",
+  "docs": "https://www.typescriptlang.org/docs/",
+  "sections": [
+    {
+      "title": "Basic types",
+      "description": "Annotating values.",
+      "rows": [
+        [
+          "Primitive types",
+          "let name: string = \"Ada\";\nlet age: number = 36;\nlet active: boolean = true;"
+        ],
+        [
+          "Arrays",
+          [
+            "let nums: number[] = [1, 2];",
+            "let names: Array<string> = [];"
+          ]
+        ],
+        [
+          "Tuple",
+          "let point: [number, number] = [4, 5];"
+        ],
+        [
+          "Any / unknown",
+          [
+            "let data: unknown = JSON.parse(text);",
+            "let loose: any;  // avoid"
+          ]
+        ],
+        [
+          "Literal types",
+          "let dir: \"left\" | \"right\" = \"left\";"
+        ],
+        [
+          "Null and undefined",
+          "let email: string | null = null;"
+        ],
+        [
+          "Type inference",
+          "const total = 10;  // inferred as 10 (number)"
+        ]
+      ]
+    },
+    {
+      "title": "Objects & interfaces",
+      "description": "Describing object shapes.",
+      "rows": [
+        [
+          "Type alias",
+          "type User = {\n  id: number;\n  name: string;\n  email?: string;  // optional\n};"
+        ],
+        [
+          "Interface",
+          "interface User {\n  readonly id: number;\n  name: string;\n}"
+        ],
+        [
+          "Extend an interface",
+          "interface Admin extends User {\n  permissions: string[];\n}"
+        ],
+        [
+          "Intersection",
+          "type Admin = User & { permissions: string[] };"
+        ],
+        [
+          "Index signature",
+          "type Scores = { [player: string]: number };"
+        ],
+        [
+          "Record",
+          "const scores: Record<string, number> = {};"
+        ]
+      ]
+    },
+    {
+      "title": "Functions",
+      "description": "Typing parameters and return values.",
+      "rows": [
+        [
+          "Typed function",
+          "function add(a: number, b: number): number {\n  return a + b;\n}"
+        ],
+        [
+          "Arrow function type",
+          "const add = (a: number, b: number): number => a + b;"
+        ],
+        [
+          "Optional / default parameter",
+          [
+            "function greet(name?: string) { }",
+            "function greet(name = \"world\") { }"
+          ]
+        ],
+        [
+          "Function type",
+          "type Handler = (event: MouseEvent) => void;"
+        ],
+        [
+          "Void and never",
+          [
+            "function log(msg: string): void { }",
+            "function fail(msg: string): never { throw new Error(msg); }"
+          ]
+        ],
+        [
+          "Overloads",
+          "function parse(x: string): number;\nfunction parse(x: number): string;\nfunction parse(x: string | number) { /* ... */ }"
+        ]
+      ]
+    },
+    {
+      "title": "Unions & narrowing",
+      "description": "Values that can be several types.",
+      "rows": [
+        [
+          "Union",
+          "type Id = string | number;"
+        ],
+        [
+          "Narrow with typeof",
+          "if (typeof id === \"string\") {\n  id.toUpperCase();\n}"
+        ],
+        [
+          "Narrow with in",
+          "if (\"permissions\" in user) { }"
+        ],
+        [
+          "Discriminated union",
+          "type Shape =\n  | { kind: \"circle\"; radius: number }\n  | { kind: \"square\"; size: number };"
+        ],
+        [
+          "Exhaustive switch",
+          "switch (shape.kind) {\n  case \"circle\": return Math.PI * shape.radius ** 2;\n  case \"square\": return shape.size ** 2;\n}"
+        ],
+        [
+          "Type guard",
+          "function isString(x: unknown): x is string {\n  return typeof x === \"string\";\n}"
+        ],
+        [
+          "Non-null assertion",
+          "document.getElementById(\"app\")!"
+        ],
+        [
+          "Type assertion",
+          "const input = el as HTMLInputElement;"
+        ]
+      ]
+    },
+    {
+      "title": "Generics",
+      "description": "Reusable, type-safe code.",
+      "rows": [
+        [
+          "Generic function",
+          "function first<T>(items: T[]): T | undefined {\n  return items[0];\n}"
+        ],
+        [
+          "Generic type",
+          "type ApiResponse<T> = { data: T; error?: string };"
+        ],
+        [
+          "Constraint",
+          "function len<T extends { length: number }>(x: T) {\n  return x.length;\n}"
+        ],
+        [
+          "keyof",
+          "function get<T, K extends keyof T>(obj: T, key: K): T[K] {\n  return obj[key];\n}"
+        ],
+        [
+          "Generic class",
+          "class Box<T> {\n  constructor(public value: T) {}\n}"
+        ]
+      ]
+    },
+    {
+      "title": "Utility types",
+      "description": "Built-in type transformers.",
+      "rows": [
+        [
+          "All optional / required",
+          [
+            "Partial<User>",
+            "Required<User>"
+          ]
+        ],
+        [
+          "Read-only",
+          "Readonly<User>"
+        ],
+        [
+          "Pick / omit fields",
+          [
+            "Pick<User, \"id\" | \"name\">",
+            "Omit<User, \"email\">"
+          ]
+        ],
+        [
+          "Function return / parameters",
+          [
+            "ReturnType<typeof load>",
+            "Parameters<typeof add>"
+          ]
+        ],
+        [
+          "Unwrap a promise",
+          "Awaited<ReturnType<typeof load>>"
+        ],
+        [
+          "Remove null",
+          "NonNullable<string | null>"
+        ],
+        [
+          "Type of a value",
+          "type Config = typeof config;"
+        ],
+        [
+          "Const assertion",
+          "const roles = [\"admin\", \"user\"] as const;\ntype Role = (typeof roles)[number];"
+        ],
+        [
+          "Check without widening",
+          "const config = { port: 3000 } satisfies Config;"
+        ]
+      ]
+    },
+    {
+      "title": "Classes & enums",
+      "description": "Object-oriented features.",
+      "rows": [
+        [
+          "Class with access modifiers",
+          "class Account {\n  private balance = 0;\n  constructor(public owner: string) {}\n}"
+        ],
+        [
+          "Implement an interface",
+          "class Dog implements Animal { }"
+        ],
+        [
+          "Abstract class",
+          "abstract class Shape {\n  abstract area(): number;\n}"
+        ],
+        [
+          "Enum",
+          "enum Status {\n  Active = \"active\",\n  Disabled = \"disabled\",\n}"
+        ],
+        [
+          "Union instead of enum",
+          "type Status = \"active\" | \"disabled\";"
+        ]
+      ]
+    },
+    {
+      "title": "Tooling",
+      "description": "Compiler and config.",
+      "rows": [
+        [
+          "Install",
+          "npm install --save-dev typescript"
+        ],
+        [
+          "Create tsconfig.json",
+          "npx tsc --init"
+        ],
+        [
+          "Type-check only",
+          "npx tsc --noEmit"
+        ],
+        [
+          "Strict mode",
+          "\"compilerOptions\": { \"strict\": true }"
+        ],
+        [
+          "Run a .ts file directly (Node 22.6+)",
+          "node --experimental-strip-types app.ts"
+        ],
+        [
+          "Ignore one line",
+          "// @ts-expect-error  (fails if there's no error)"
+        ]
+      ]
+    }
+  ]
+}

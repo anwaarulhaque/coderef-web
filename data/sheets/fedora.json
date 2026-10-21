@@ -1,0 +1,58 @@
+{
+  "slug": "fedora",
+  "title": "Fedora",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Fedora.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Fedora Docs",
+              "url": "https://docs.fedoraproject.org/en-US/docs/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://fedoraproject.org/"
+            },
+            {
+              "name": "Wikipedia Fedora",
+              "url": "https://en.wikipedia.org/wiki/Fedora_(operating_system)"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "RedHat/Fedora command cheat sheet",
+              "url": "http://jd40c.com/linux.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Red Hat",
+              "url": "/redhat/"
+            },
+            {
+              "name": "Linux",
+              "url": "/linux/"
+            },
+            {
+              "name": "rpm",
+              "url": "/rpm/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

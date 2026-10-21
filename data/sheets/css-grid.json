@@ -1,0 +1,469 @@
+{
+  "slug": "css-grid",
+  "title": "CSS Grid",
+  "category": "Web",
+  "color": "#a855f7",
+  "kind": "visual",
+  "description": "Visual cheat sheet for CSS Grid Layout — every property with live previews you can copy.",
+  "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
+  "sections": [
+    {
+      "title": "Grid container",
+      "groups": [
+        {
+          "title": "display",
+          "description": "Makes the element a grid container; its direct children become grid items.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+          "demo": {
+            "base": "gap: 3px; grid-template-columns: repeat(3, 14px);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "display: grid;"
+            },
+            {
+              "name": "display: inline-grid;"
+            }
+          ]
+        },
+        {
+          "title": "grid-template-columns",
+          "description": "Defines the number and size of the columns.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%;",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "grid-template-columns: repeat(3, 1fr);"
+            },
+            {
+              "name": "grid-template-columns: 1fr 2fr 1fr;"
+            },
+            {
+              "name": "grid-template-columns: 12px auto 12px;"
+            },
+            {
+              "name": "grid-template-columns: repeat(auto-fill, minmax(18px, 1fr));"
+            }
+          ]
+        },
+        {
+          "title": "grid-template-rows",
+          "description": "Defines the number and size of the rows.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "grid-template-rows: 1fr 1fr;"
+            },
+            {
+              "name": "grid-template-rows: 1fr 3fr;"
+            },
+            {
+              "name": "grid-template-rows: 12px auto;"
+            },
+            {
+              "name": "grid-template-rows: 30% 70%;"
+            }
+          ]
+        },
+        {
+          "title": "grid-template-areas",
+          "description": "Names regions of the grid; items are placed with grid-area.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: 1fr 3fr; grid-template-rows: auto 1fr auto;",
+            "items": 4,
+            "itemStyles": [
+              "grid-area: head",
+              "grid-area: side",
+              "grid-area: main",
+              "grid-area: foot"
+            ]
+          },
+          "items": [
+            {
+              "name": "grid-template-areas:\n  \"head head\"\n  \"side main\"\n  \"foot foot\";"
+            },
+            {
+              "name": "grid-template-areas:\n  \"head head\"\n  \"main side\"\n  \"foot side\";"
+            },
+            {
+              "name": "grid-template-areas:\n  \"side head\"\n  \"side main\"\n  \"side foot\";"
+            },
+            {
+              "name": "grid-template-areas:\n  \"head head\"\n  \"main main\"\n  \"side foot\";"
+            }
+          ]
+        },
+        {
+          "title": "gap",
+          "description": "Sets the gutters between rows and columns.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap",
+          "demo": {
+            "base": "display: grid; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);",
+            "items": 9
+          },
+          "items": [
+            {
+              "name": "gap: 1px;"
+            },
+            {
+              "name": "gap: 8px;"
+            },
+            {
+              "name": "row-gap: 8px;\ncolumn-gap: 1px;"
+            },
+            {
+              "name": "row-gap: 1px;\ncolumn-gap: 10px;"
+            }
+          ]
+        },
+        {
+          "title": "justify-items",
+          "description": "Aligns every item inside its cell along the row (inline) axis.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "justify-items: start;"
+            },
+            {
+              "name": "justify-items: end;"
+            },
+            {
+              "name": "justify-items: center;"
+            },
+            {
+              "name": "justify-items: stretch;"
+            }
+          ]
+        },
+        {
+          "title": "align-items",
+          "description": "Aligns every item inside its cell along the column (block) axis.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-items",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "align-items: start;"
+            },
+            {
+              "name": "align-items: end;"
+            },
+            {
+              "name": "align-items: center;"
+            },
+            {
+              "name": "align-items: stretch;"
+            }
+          ]
+        },
+        {
+          "title": "place-items",
+          "description": "Shorthand for align-items and justify-items.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-items",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "place-items: center;"
+            },
+            {
+              "name": "place-items: start end;"
+            },
+            {
+              "name": "place-items: end start;"
+            },
+            {
+              "name": "place-items: stretch center;"
+            }
+          ]
+        },
+        {
+          "title": "justify-content",
+          "description": "Positions the whole grid along the row axis when it is smaller than its container.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 14px); grid-template-rows: repeat(2, 1fr);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "justify-content: start;"
+            },
+            {
+              "name": "justify-content: end;"
+            },
+            {
+              "name": "justify-content: center;"
+            },
+            {
+              "name": "justify-content: space-between;"
+            },
+            {
+              "name": "justify-content: space-around;"
+            },
+            {
+              "name": "justify-content: space-evenly;"
+            }
+          ]
+        },
+        {
+          "title": "align-content",
+          "description": "Positions the whole grid along the column axis when it is smaller than its container.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 14px);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "align-content: start;"
+            },
+            {
+              "name": "align-content: end;"
+            },
+            {
+              "name": "align-content: center;"
+            },
+            {
+              "name": "align-content: space-between;"
+            },
+            {
+              "name": "align-content: space-around;"
+            },
+            {
+              "name": "align-content: space-evenly;"
+            }
+          ]
+        },
+        {
+          "title": "grid-auto-flow",
+          "description": "Controls how items without an explicit position are placed.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 1fr;",
+            "items": 5,
+            "itemStyles": [
+              "grid-column: span 2",
+              "grid-column: span 2"
+            ]
+          },
+          "items": [
+            {
+              "name": "grid-auto-flow: row;"
+            },
+            {
+              "name": "grid-auto-flow: row dense;"
+            }
+          ]
+        },
+        {
+          "title": "grid-auto-rows",
+          "description": "Sizes rows that are created implicitly.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr);",
+            "items": 6
+          },
+          "items": [
+            {
+              "name": "grid-auto-rows: 12px;"
+            },
+            {
+              "name": "grid-auto-rows: 1fr;"
+            },
+            {
+              "name": "grid-auto-rows: 8px 20px;"
+            },
+            {
+              "name": "grid-auto-rows: minmax(12px, auto);"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grid items",
+      "groups": [
+        {
+          "title": "grid-column",
+          "description": "Places an item between column lines, or spans it across columns.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);",
+            "items": 5,
+            "target": 0
+          },
+          "items": [
+            {
+              "name": "grid-column: 1 / 3;"
+            },
+            {
+              "name": "grid-column: span 3;"
+            },
+            {
+              "name": "grid-column: 2 / -1;"
+            },
+            {
+              "name": "grid-column: 2 / span 1;"
+            }
+          ]
+        },
+        {
+          "title": "grid-row",
+          "description": "Places an item between row lines, or spans it across rows.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);",
+            "items": 5,
+            "target": 0
+          },
+          "items": [
+            {
+              "name": "grid-row: 1 / 3;"
+            },
+            {
+              "name": "grid-row: span 3;"
+            },
+            {
+              "name": "grid-row: 2 / 4;"
+            },
+            {
+              "name": "grid-row: 2 / span 1;"
+            }
+          ]
+        },
+        {
+          "title": "grid-area",
+          "description": "Shorthand for row-start / column-start / row-end / column-end, or a named area.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);",
+            "items": 5,
+            "target": 0
+          },
+          "items": [
+            {
+              "name": "grid-area: 1 / 1 / 3 / 3;"
+            },
+            {
+              "name": "grid-area: 2 / 2 / 4 / 4;"
+            },
+            {
+              "name": "grid-row: 1 / span 2;\ngrid-column: 2 / span 2;"
+            },
+            {
+              "name": "grid-area: 1 / 1 / 4 / 2;"
+            }
+          ]
+        },
+        {
+          "title": "justify-self",
+          "description": "Aligns a single item inside its cell along the row axis.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);",
+            "items": 6,
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "justify-self: start;"
+            },
+            {
+              "name": "justify-self: end;"
+            },
+            {
+              "name": "justify-self: center;"
+            },
+            {
+              "name": "justify-self: stretch;"
+            }
+          ]
+        },
+        {
+          "title": "align-self",
+          "description": "Aligns a single item inside its cell along the column axis.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-self",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);",
+            "items": 6,
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "align-self: start;"
+            },
+            {
+              "name": "align-self: end;"
+            },
+            {
+              "name": "align-self: center;"
+            },
+            {
+              "name": "align-self: stretch;"
+            }
+          ]
+        },
+        {
+          "title": "place-self",
+          "description": "Shorthand for align-self and justify-self.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/place-self",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);",
+            "items": 6,
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "place-self: center;"
+            },
+            {
+              "name": "place-self: start end;"
+            },
+            {
+              "name": "place-self: end start;"
+            },
+            {
+              "name": "place-self: end;"
+            }
+          ]
+        },
+        {
+          "title": "order",
+          "description": "Changes the order in which an auto-placed item appears.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/order",
+          "demo": {
+            "base": "display: grid; gap: 3px; height: 100%; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);",
+            "items": 6,
+            "target": 2
+          },
+          "items": [
+            {
+              "name": "order: -1;"
+            },
+            {
+              "name": "order: 1;"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

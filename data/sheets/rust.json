@@ -1,0 +1,78 @@
+{
+  "slug": "rust",
+  "title": "Rust",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Rust.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "The Rust Book",
+              "url": "https://doc.rust-lang.org/book/"
+            },
+            {
+              "name": "Standard library",
+              "url": "https://doc.rust-lang.org/std/"
+            },
+            {
+              "name": "Rust by Example",
+              "url": "https://doc.rust-lang.org/rust-by-example/"
+            },
+            {
+              "name": "Cargo Book",
+              "url": "https://doc.rust-lang.org/cargo/"
+            },
+            {
+              "name": "Official Website",
+              "url": "https://www.rust-lang.org"
+            },
+            {
+              "name": "Wikipedia Rust",
+              "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "The Rust Programming Language",
+              "url": "https://doc.rust-lang.org/book/"
+            },
+            {
+              "name": "The Rustonomicon",
+              "url": "https://doc.rust-lang.org/nomicon/"
+            },
+            {
+              "name": "Rust-101",
+              "url": "https://www.ralfj.de/projects/rust-101/main.html"
+            },
+            {
+              "name": "Rust: A Friendly Introduction [.pdf]",
+              "url": "http://catamorphism.org/Writing/Rust-Tutorial-tjc.pdf"
+            },
+            {
+              "name": "Rust Language Cheat Sheet",
+              "url": "https://cheats.rs/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "C#",
+              "url": "/csharp/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "slug": "org-mode",
+  "title": "Org Mode",
+  "category": "Applications",
+  "color": "#77aa99",
+  "description": "Org mode markup, TODOs, scheduling, tables, source blocks, export and key bindings for Emacs.",
+  "reference": "https://orgmode.org/manual/",
+  "sections": [
+    {
+      "title": "Document Structure",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "* Heading",
+              "url": "https://orgmode.org/manual/Headlines.html"
+            },
+            {
+              "name": "** Subheading",
+              "url": "https://orgmode.org/manual/Headlines.html"
+            },
+            {
+              "name": "#+TITLE:",
+              "url": "https://orgmode.org/manual/Export-Settings.html"
+            },
+            {
+              "name": "#+AUTHOR:",
+              "url": "https://orgmode.org/manual/Export-Settings.html"
+            },
+            {
+              "name": "#+OPTIONS: toc:nil",
+              "url": "https://orgmode.org/manual/Table-of-Contents.html"
+            },
+            {
+              "name": "Paragraphs",
+              "url": "https://orgmode.org/manual/Paragraphs.html"
+            },
+            {
+              "name": "-----",
+              "url": "https://orgmode.org/manual/Horizontal-Rules.html"
+            },
+            {
+              "name": ":DRAWER:",
+              "url": "https://orgmode.org/manual/Drawers.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formatting",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "*bold*",
+              "url": "https://orgmode.org/manual/Emphasis-and-Monospace.html"
+            },
+            {
+              "name": "/italic/",
+              "url": "https://orgmode.org/manual/Emphasis-and-Monospace.html"
+            },
+            {
+              "name": "_underline_",
+              "url": "https://orgmode.org/manual/Emphasis-and-Monospace.html"
+            },
+            {
+              "name": "=verbatim=",
+              "url": "https://orgmode.org/manual/Emphasis-and-Monospace.html"
+            },
+            {
+              "name": "~code~",
+              "url": "https://orgmode.org/manual/Emphasis-and-Monospace.html"
+            },
+            {
+              "name": "+strike+",
+              "url": "https://orgmode.org/manual/Emphasis-and-Monospace.html"
+            },
+            {
+              "name": "[[url][desc]]",
+              "url": "https://orgmode.org/manual/Link-Format.html"
+            },
+            {
+              "name": "[fn:1]",
+              "url": "https://orgmode.org/manual/Footnotes.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lists",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "- item",
+              "url": "https://orgmode.org/manual/Plain-Lists.html"
+            },
+            {
+              "name": "1. item",
+              "url": "https://orgmode.org/manual/Plain-Lists.html"
+            },
+            {
+              "name": "term :: description",
+              "url": "https://orgmode.org/manual/Plain-Lists.html"
+            },
+            {
+              "name": "- [ ] checkbox",
+              "url": "https://orgmode.org/manual/Checkboxes.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tasks",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "TODO / DONE",
+              "url": "https://orgmode.org/manual/TODO-Basics.html"
+            },
+            {
+              "name": "[#A] priority",
+              "url": "https://orgmode.org/manual/Priorities.html"
+            },
+            {
+              "name": ":tag:",
+              "url": "https://orgmode.org/manual/Tags.html"
+            },
+            {
+              "name": "SCHEDULED:",
+              "url": "https://orgmode.org/manual/Deadlines-and-Scheduling.html"
+            },
+            {
+              "name": "DEADLINE:",
+              "url": "https://orgmode.org/manual/Deadlines-and-Scheduling.html"
+            },
+            {
+              "name": "<2026-10-14 Wed>",
+              "url": "https://orgmode.org/manual/Timestamps.html"
+            },
+            {
+              "name": ":PROPERTIES:",
+              "url": "https://orgmode.org/manual/Property-Syntax.html"
+            },
+            {
+              "name": "CLOCK:",
+              "url": "https://orgmode.org/manual/Clocking-Work-Time.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tables & Code",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "| a | b |",
+              "url": "https://orgmode.org/manual/Built_002din-Table-Editor.html"
+            },
+            {
+              "name": "#+TBLFM:",
+              "url": "https://orgmode.org/manual/The-Spreadsheet.html"
+            },
+            {
+              "name": "#+BEGIN_SRC",
+              "url": "https://orgmode.org/manual/Structure-of-Code-Blocks.html"
+            },
+            {
+              "name": "#+BEGIN_EXAMPLE",
+              "url": "https://orgmode.org/manual/Literal-Examples.html"
+            },
+            {
+              "name": "#+BEGIN_QUOTE",
+              "url": "https://orgmode.org/manual/Paragraphs.html"
+            },
+            {
+              "name": "#+RESULTS:",
+              "url": "https://orgmode.org/manual/Results-of-Evaluation.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Key Bindings",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "TAB  cycle",
+              "url": "https://orgmode.org/manual/Global-and-local-cycling.html"
+            },
+            {
+              "name": "S-TAB  global cycle",
+              "url": "https://orgmode.org/manual/Global-and-local-cycling.html"
+            },
+            {
+              "name": "M-RET  new heading",
+              "url": "https://orgmode.org/manual/Structure-Editing.html"
+            },
+            {
+              "name": "M-←/→  promote/demote",
+              "url": "https://orgmode.org/manual/Structure-Editing.html"
+            },
+            {
+              "name": "C-c C-t  TODO",
+              "url": "https://orgmode.org/manual/TODO-Basics.html"
+            },
+            {
+              "name": "C-c C-s  schedule",
+              "url": "https://orgmode.org/manual/Inserting-deadline_002fschedule.html"
+            },
+            {
+              "name": "C-c C-d  deadline",
+              "url": "https://orgmode.org/manual/Inserting-deadline_002fschedule.html"
+            },
+            {
+              "name": "C-c C-q  tags",
+              "url": "https://orgmode.org/manual/Setting-Tags.html"
+            },
+            {
+              "name": "C-c C-c  context action",
+              "url": "https://orgmode.org/manual/The-Very-Busy-C_002dc-C_002dc-Key.html"
+            },
+            {
+              "name": "C-c C-l  insert link",
+              "url": "https://orgmode.org/manual/Handling-Links.html"
+            },
+            {
+              "name": "C-c a  agenda",
+              "url": "https://orgmode.org/manual/Agenda-Dispatcher.html"
+            },
+            {
+              "name": "C-c c  capture",
+              "url": "https://orgmode.org/manual/Capture.html"
+            },
+            {
+              "name": "C-c C-e  export",
+              "url": "https://orgmode.org/manual/The-Export-Dispatcher.html"
+            },
+            {
+              "name": "C-c C-x C-i  clock in",
+              "url": "https://orgmode.org/manual/Clocking-Commands.html"
+            },
+            {
+              "name": "C-c /  sparse tree",
+              "url": "https://orgmode.org/manual/Sparse-Trees.html"
+            },
+            {
+              "name": "C-c C-w  refile",
+              "url": "https://orgmode.org/manual/Refile-and-Copy.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Export",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "HTML",
+              "url": "https://orgmode.org/manual/HTML-Export.html"
+            },
+            {
+              "name": "LaTeX / PDF",
+              "url": "https://orgmode.org/manual/LaTeX-Export.html"
+            },
+            {
+              "name": "Markdown",
+              "url": "https://orgmode.org/manual/Markdown-Export.html"
+            },
+            {
+              "name": "ODT",
+              "url": "https://orgmode.org/manual/OpenDocument-Text-Export.html"
+            },
+            {
+              "name": "iCalendar",
+              "url": "https://orgmode.org/manual/iCalendar-Export.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

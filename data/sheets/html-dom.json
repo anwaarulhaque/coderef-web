@@ -1,0 +1,1060 @@
+{
+  "slug": "html-dom",
+  "title": "HTML DOM",
+  "category": "Web",
+  "color": "#f7931e",
+  "description": "Document, Element, Node, Event and Window APIs for scripting web pages.",
+  "reference": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
+  "sections": [
+    {
+      "title": "Document",
+      "groups": [
+        {
+          "title": "Query",
+          "items": [
+            {
+              "name": "getElementById()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById"
+            },
+            {
+              "name": "querySelector()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector"
+            },
+            {
+              "name": "querySelectorAll()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll"
+            },
+            {
+              "name": "getElementsByClassName()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName"
+            },
+            {
+              "name": "getElementsByTagName()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName"
+            },
+            {
+              "name": "getElementsByName()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName"
+            }
+          ]
+        },
+        {
+          "title": "Create",
+          "items": [
+            {
+              "name": "createElement()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement"
+            },
+            {
+              "name": "createTextNode()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode"
+            },
+            {
+              "name": "createDocumentFragment()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment"
+            },
+            {
+              "name": "createComment()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createComment"
+            },
+            {
+              "name": "importNode()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/importNode"
+            },
+            {
+              "name": "adoptNode()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/adoptNode"
+            }
+          ]
+        },
+        {
+          "title": "Properties",
+          "items": [
+            {
+              "name": "body",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/body"
+            },
+            {
+              "name": "head",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/head"
+            },
+            {
+              "name": "title",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/title"
+            },
+            {
+              "name": "documentElement",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement"
+            },
+            {
+              "name": "cookie",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie"
+            },
+            {
+              "name": "readyState",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/readyState"
+            },
+            {
+              "name": "activeElement",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement"
+            },
+            {
+              "name": "forms",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/forms"
+            },
+            {
+              "name": "images",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/images"
+            },
+            {
+              "name": "links",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/links"
+            },
+            {
+              "name": "URL",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/URL"
+            },
+            {
+              "name": "referrer",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/referrer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Element",
+      "groups": [
+        {
+          "title": "Attributes",
+          "items": [
+            {
+              "name": "getAttribute()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute"
+            },
+            {
+              "name": "setAttribute()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute"
+            },
+            {
+              "name": "removeAttribute()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute"
+            },
+            {
+              "name": "hasAttribute()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/hasAttribute"
+            },
+            {
+              "name": "toggleAttribute()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/toggleAttribute"
+            },
+            {
+              "name": "attributes",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/attributes"
+            }
+          ]
+        },
+        {
+          "title": "Classes & Content",
+          "items": [
+            {
+              "name": "id",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/id"
+            },
+            {
+              "name": "className",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/className"
+            },
+            {
+              "name": "classList",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/classList"
+            },
+            {
+              "name": "innerHTML",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML"
+            },
+            {
+              "name": "outerHTML",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/outerHTML"
+            },
+            {
+              "name": "insertAdjacentHTML()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML"
+            },
+            {
+              "name": "insertAdjacentElement()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentElement"
+            },
+            {
+              "name": "setHTMLUnsafe()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/setHTMLUnsafe"
+            }
+          ]
+        },
+        {
+          "title": "Tree",
+          "items": [
+            {
+              "name": "children",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/children"
+            },
+            {
+              "name": "firstElementChild",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/firstElementChild"
+            },
+            {
+              "name": "lastElementChild",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/lastElementChild"
+            },
+            {
+              "name": "nextElementSibling",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling"
+            },
+            {
+              "name": "previousElementSibling",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling"
+            },
+            {
+              "name": "closest()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/closest"
+            },
+            {
+              "name": "matches()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/matches"
+            },
+            {
+              "name": "append()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/append"
+            },
+            {
+              "name": "prepend()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/prepend"
+            },
+            {
+              "name": "before()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/before"
+            },
+            {
+              "name": "after()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/after"
+            },
+            {
+              "name": "remove()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/remove"
+            },
+            {
+              "name": "replaceWith()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceWith"
+            },
+            {
+              "name": "replaceChildren()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/replaceChildren"
+            }
+          ]
+        },
+        {
+          "title": "Geometry & Scroll",
+          "items": [
+            {
+              "name": "getBoundingClientRect()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect"
+            },
+            {
+              "name": "scrollIntoView()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView"
+            },
+            {
+              "name": "scrollTop",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTop"
+            },
+            {
+              "name": "scrollLeft",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft"
+            },
+            {
+              "name": "scrollHeight",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight"
+            },
+            {
+              "name": "clientWidth",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientWidth"
+            },
+            {
+              "name": "clientHeight",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight"
+            },
+            {
+              "name": "scrollTo()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo"
+            }
+          ]
+        },
+        {
+          "title": "Other",
+          "items": [
+            {
+              "name": "attachShadow()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/attachShadow"
+            },
+            {
+              "name": "shadowRoot",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/shadowRoot"
+            },
+            {
+              "name": "requestFullscreen()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen"
+            },
+            {
+              "name": "animate()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/animate"
+            },
+            {
+              "name": "setPointerCapture()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "HTMLElement",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "dataset",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset"
+            },
+            {
+              "name": "style",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style"
+            },
+            {
+              "name": "hidden",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden"
+            },
+            {
+              "name": "innerText",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText"
+            },
+            {
+              "name": "title",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/title"
+            },
+            {
+              "name": "tabIndex",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex"
+            },
+            {
+              "name": "contentEditable",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/contentEditable"
+            },
+            {
+              "name": "offsetWidth",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetWidth"
+            },
+            {
+              "name": "offsetHeight",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetHeight"
+            },
+            {
+              "name": "offsetTop",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop"
+            },
+            {
+              "name": "offsetLeft",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetLeft"
+            },
+            {
+              "name": "offsetParent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetParent"
+            },
+            {
+              "name": "focus()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus"
+            },
+            {
+              "name": "blur()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/blur"
+            },
+            {
+              "name": "click()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click"
+            },
+            {
+              "name": "showPopover()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/showPopover"
+            },
+            {
+              "name": "hidePopover()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidePopover"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Node",
+      "groups": [
+        {
+          "title": "Methods",
+          "items": [
+            {
+              "name": "appendChild()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild"
+            },
+            {
+              "name": "removeChild()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild"
+            },
+            {
+              "name": "replaceChild()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild"
+            },
+            {
+              "name": "insertBefore()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore"
+            },
+            {
+              "name": "cloneNode()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode"
+            },
+            {
+              "name": "contains()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/contains"
+            },
+            {
+              "name": "hasChildNodes()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes"
+            },
+            {
+              "name": "normalize()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/normalize"
+            },
+            {
+              "name": "isEqualNode()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/isEqualNode"
+            },
+            {
+              "name": "compareDocumentPosition()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/compareDocumentPosition"
+            }
+          ]
+        },
+        {
+          "title": "Properties",
+          "items": [
+            {
+              "name": "childNodes",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes"
+            },
+            {
+              "name": "firstChild",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild"
+            },
+            {
+              "name": "lastChild",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/lastChild"
+            },
+            {
+              "name": "parentNode",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode"
+            },
+            {
+              "name": "parentElement",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement"
+            },
+            {
+              "name": "nextSibling",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/nextSibling"
+            },
+            {
+              "name": "previousSibling",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/previousSibling"
+            },
+            {
+              "name": "nodeName",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeName"
+            },
+            {
+              "name": "nodeType",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType"
+            },
+            {
+              "name": "nodeValue",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeValue"
+            },
+            {
+              "name": "textContent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent"
+            },
+            {
+              "name": "ownerDocument",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/ownerDocument"
+            },
+            {
+              "name": "isConnected",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/isConnected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "groups": [
+        {
+          "title": "EventTarget",
+          "items": [
+            {
+              "name": "addEventListener()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
+            },
+            {
+              "name": "removeEventListener()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener"
+            },
+            {
+              "name": "dispatchEvent()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent"
+            }
+          ]
+        },
+        {
+          "title": "Event",
+          "items": [
+            {
+              "name": "preventDefault()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"
+            },
+            {
+              "name": "stopPropagation()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation"
+            },
+            {
+              "name": "stopImmediatePropagation()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/stopImmediatePropagation"
+            },
+            {
+              "name": "target",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/target"
+            },
+            {
+              "name": "currentTarget",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget"
+            },
+            {
+              "name": "type",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/type"
+            },
+            {
+              "name": "bubbles",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/bubbles"
+            },
+            {
+              "name": "cancelable",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/cancelable"
+            },
+            {
+              "name": "defaultPrevented",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/defaultPrevented"
+            },
+            {
+              "name": "timeStamp",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp"
+            },
+            {
+              "name": "isTrusted",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/isTrusted"
+            }
+          ]
+        },
+        {
+          "title": "Constructors",
+          "items": [
+            {
+              "name": "Event",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event"
+            },
+            {
+              "name": "CustomEvent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent"
+            },
+            {
+              "name": "MouseEvent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent"
+            },
+            {
+              "name": "KeyboardEvent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent"
+            },
+            {
+              "name": "PointerEvent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent"
+            },
+            {
+              "name": "InputEvent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/InputEvent"
+            },
+            {
+              "name": "FocusEvent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/FocusEvent"
+            },
+            {
+              "name": "SubmitEvent",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubmitEvent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Event Types",
+      "groups": [
+        {
+          "title": "Element",
+          "items": [
+            {
+              "name": "click",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event"
+            },
+            {
+              "name": "dblclick",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event"
+            },
+            {
+              "name": "contextmenu",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event"
+            },
+            {
+              "name": "mousedown",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event"
+            },
+            {
+              "name": "mouseup",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event"
+            },
+            {
+              "name": "mousemove",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event"
+            },
+            {
+              "name": "mouseenter",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event"
+            },
+            {
+              "name": "mouseleave",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event"
+            },
+            {
+              "name": "pointerdown",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerdown_event"
+            },
+            {
+              "name": "pointerup",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/pointerup_event"
+            },
+            {
+              "name": "keydown",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event"
+            },
+            {
+              "name": "keyup",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event"
+            },
+            {
+              "name": "focus",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/focus_event"
+            },
+            {
+              "name": "blur",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event"
+            },
+            {
+              "name": "focusin",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/focusin_event"
+            },
+            {
+              "name": "focusout",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/focusout_event"
+            },
+            {
+              "name": "scroll",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event"
+            },
+            {
+              "name": "wheel",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event"
+            },
+            {
+              "name": "input",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/input_event"
+            }
+          ]
+        },
+        {
+          "title": "Others",
+          "items": [
+            {
+              "name": "change",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event"
+            },
+            {
+              "name": "submit",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event"
+            },
+            {
+              "name": "DOMContentLoaded",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event"
+            },
+            {
+              "name": "visibilitychange",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilitychange_event"
+            },
+            {
+              "name": "load",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event"
+            },
+            {
+              "name": "resize",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event"
+            },
+            {
+              "name": "beforeunload",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event"
+            },
+            {
+              "name": "hashchange",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/hashchange_event"
+            },
+            {
+              "name": "popstate",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event"
+            },
+            {
+              "name": "storage",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/storage_event"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Window",
+      "groups": [
+        {
+          "title": "Dialogs & Timers",
+          "items": [
+            {
+              "name": "alert()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/alert"
+            },
+            {
+              "name": "confirm()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm"
+            },
+            {
+              "name": "prompt()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt"
+            },
+            {
+              "name": "open()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/open"
+            },
+            {
+              "name": "close()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/close"
+            },
+            {
+              "name": "setTimeout()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout"
+            },
+            {
+              "name": "setInterval()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval"
+            },
+            {
+              "name": "clearTimeout()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/clearTimeout"
+            },
+            {
+              "name": "clearInterval()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/clearInterval"
+            },
+            {
+              "name": "requestAnimationFrame()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame"
+            },
+            {
+              "name": "queueMicrotask()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/queueMicrotask"
+            }
+          ]
+        },
+        {
+          "title": "Other",
+          "items": [
+            {
+              "name": "fetch()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch"
+            },
+            {
+              "name": "getComputedStyle()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle"
+            },
+            {
+              "name": "matchMedia()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia"
+            },
+            {
+              "name": "scrollTo()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo"
+            },
+            {
+              "name": "scrollBy()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy"
+            },
+            {
+              "name": "structuredClone()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/structuredClone"
+            },
+            {
+              "name": "postMessage()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage"
+            },
+            {
+              "name": "localStorage",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+            },
+            {
+              "name": "sessionStorage",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage"
+            },
+            {
+              "name": "location",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/location"
+            },
+            {
+              "name": "history",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/history"
+            },
+            {
+              "name": "navigator",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator"
+            },
+            {
+              "name": "innerWidth",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth"
+            },
+            {
+              "name": "innerHeight",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/innerHeight"
+            },
+            {
+              "name": "devicePixelRatio",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio"
+            },
+            {
+              "name": "scrollY",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Location & History",
+      "groups": [
+        {
+          "title": "Location",
+          "items": [
+            {
+              "name": "href",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/href"
+            },
+            {
+              "name": "origin",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/origin"
+            },
+            {
+              "name": "pathname",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname"
+            },
+            {
+              "name": "search",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/search"
+            },
+            {
+              "name": "hash",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/hash"
+            },
+            {
+              "name": "host",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/host"
+            },
+            {
+              "name": "reload()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/reload"
+            },
+            {
+              "name": "assign()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/assign"
+            },
+            {
+              "name": "replace()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Location/replace"
+            }
+          ]
+        },
+        {
+          "title": "History",
+          "items": [
+            {
+              "name": "back()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/History/back"
+            },
+            {
+              "name": "forward()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/History/forward"
+            },
+            {
+              "name": "go()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/History/go"
+            },
+            {
+              "name": "pushState()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/History/pushState"
+            },
+            {
+              "name": "replaceState()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/History/replaceState"
+            },
+            {
+              "name": "state",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/History/state"
+            },
+            {
+              "name": "length",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/History/length"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Storage",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "getItem()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/getItem"
+            },
+            {
+              "name": "setItem()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/setItem"
+            },
+            {
+              "name": "removeItem()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/removeItem"
+            },
+            {
+              "name": "clear()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/clear"
+            },
+            {
+              "name": "key()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/key"
+            },
+            {
+              "name": "length",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage/length"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "DOMTokenList (classList)",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "add()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add"
+            },
+            {
+              "name": "remove()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove"
+            },
+            {
+              "name": "toggle()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle"
+            },
+            {
+              "name": "contains()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains"
+            },
+            {
+              "name": "replace()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/replace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Observers & Utilities",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "MutationObserver",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver"
+            },
+            {
+              "name": "IntersectionObserver",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver"
+            },
+            {
+              "name": "ResizeObserver",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver"
+            },
+            {
+              "name": "DOMParser",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/DOMParser"
+            },
+            {
+              "name": "XMLSerializer",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLSerializer"
+            },
+            {
+              "name": "FormData",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/FormData"
+            },
+            {
+              "name": "URLSearchParams",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams"
+            },
+            {
+              "name": "AbortController",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController"
+            },
+            {
+              "name": "TreeWalker",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/TreeWalker"
+            },
+            {
+              "name": "Range",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Range"
+            },
+            {
+              "name": "Selection",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Selection"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

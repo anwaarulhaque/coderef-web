@@ -1,0 +1,28 @@
+{
+  "slug": "opencv",
+  "title": "OpenCV",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for OpenCV.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "OpenCV documentation",
+              "url": "https://docs.opencv.org/4.x/"
+            },
+            {
+              "name": "Wikipedia OpenCV",
+              "url": "https://en.wikipedia.org/wiki/OpenCV"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

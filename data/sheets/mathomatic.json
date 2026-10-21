@@ -1,0 +1,45 @@
+{
+  "slug": "mathomatic",
+  "title": "Mathomatic",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Mathomatic.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Mathomatic",
+              "url": "https://en.wikipedia.org/wiki/Mathomatic"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Algebra",
+              "url": "/algebra/"
+            },
+            {
+              "name": "Math",
+              "url": "/math/"
+            },
+            {
+              "name": "Mathematica",
+              "url": "/mathematica/"
+            },
+            {
+              "name": "Maxima",
+              "url": "/maxima/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

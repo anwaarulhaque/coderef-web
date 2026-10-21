@@ -1,0 +1,476 @@
+{
+  "slug": "mod_rewrite",
+  "title": "mod_rewrite",
+  "category": "Systems",
+  "color": "#d22128",
+  "description": "Apache mod_rewrite directives, RewriteRule flags, server variables and condition tests.",
+  "reference": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html",
+  "sections": [
+    {
+      "title": "Directives",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "RewriteEngine",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewriteengine"
+            },
+            {
+              "name": "RewriteRule",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewriterule"
+            },
+            {
+              "name": "RewriteCond",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "RewriteBase",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritebase"
+            },
+            {
+              "name": "RewriteMap",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritemap"
+            },
+            {
+              "name": "RewriteOptions",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewriteoptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "RewriteRule Flags",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "[L] last",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_l"
+            },
+            {
+              "name": "[END] end",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_end"
+            },
+            {
+              "name": "[R=301] redirect",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_r"
+            },
+            {
+              "name": "[NC] nocase",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_nc"
+            },
+            {
+              "name": "[QSA] qsappend",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_qsa"
+            },
+            {
+              "name": "[QSD] qsdiscard",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_qsd"
+            },
+            {
+              "name": "[NE] noescape",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_ne"
+            },
+            {
+              "name": "[PT] passthrough",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_pt"
+            },
+            {
+              "name": "[P] proxy",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_p"
+            },
+            {
+              "name": "[F] forbidden",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_f"
+            },
+            {
+              "name": "[G] gone",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_g"
+            },
+            {
+              "name": "[C] chain",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_c"
+            },
+            {
+              "name": "[S=n] skip",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_s"
+            },
+            {
+              "name": "[N] next",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_n"
+            },
+            {
+              "name": "[E=var:val] env",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_e"
+            },
+            {
+              "name": "[CO] cookie",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_co"
+            },
+            {
+              "name": "[T=type] type",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_t"
+            },
+            {
+              "name": "[H=handler]",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_h"
+            },
+            {
+              "name": "[B] escape backrefs",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_b"
+            },
+            {
+              "name": "[DPI] discardpath",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_dpi"
+            },
+            {
+              "name": "[NS] nosubreq",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html#flag_ns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "RewriteCond",
+      "groups": [
+        {
+          "title": "Flags",
+          "items": [
+            {
+              "name": "[NC] nocase",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "[OR] ornext",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "[NV] novary",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            }
+          ]
+        },
+        {
+          "title": "Tests",
+          "items": [
+            {
+              "name": "-d directory",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "-f file",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "-s non-empty",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "-l symlink",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "-F via subrequest",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "-U URL via subrequest",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "=string",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "<string",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": ">string",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "-eq -ne -lt -gt",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "!pattern",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "expr",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Server Variables",
+      "groups": [
+        {
+          "title": "HTTP Headers",
+          "items": [
+            {
+              "name": "HTTP_HOST",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "HTTP_USER_AGENT",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "HTTP_REFERER",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "HTTP_COOKIE",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "HTTP_ACCEPT",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "HTTP_FORWARDED",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            }
+          ]
+        },
+        {
+          "title": "Request",
+          "items": [
+            {
+              "name": "REQUEST_URI",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "REQUEST_FILENAME",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "REQUEST_METHOD",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "REQUEST_SCHEME",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "QUERY_STRING",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "THE_REQUEST",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "REMOTE_ADDR",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "REMOTE_HOST",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "HTTPS",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            }
+          ]
+        },
+        {
+          "title": "Server & Time",
+          "items": [
+            {
+              "name": "SERVER_NAME",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "SERVER_PORT",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "DOCUMENT_ROOT",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "SERVER_PROTOCOL",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "TIME",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "TIME_YEAR",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "TIME_HOUR",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "ENV:name",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            },
+            {
+              "name": "SSL:name",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html#rewritecond"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Patterns & Backreferences",
+      "groups": [
+        {
+          "title": "Regex",
+          "items": [
+            {
+              "name": "^",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "$",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": ".",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "[chars]",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "[^chars]",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "?",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "*",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "+",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "(...)",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "a|b",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            },
+            {
+              "name": "!",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#regex"
+            }
+          ]
+        },
+        {
+          "title": "Backreferences",
+          "items": [
+            {
+              "name": "$1 … $9",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#InternalBackRefs"
+            },
+            {
+              "name": "%1 … %9",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#InternalBackRefs"
+            },
+            {
+              "name": "${map:key}",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html#InternalBackRefs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Related",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Redirect",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect"
+            },
+            {
+              "name": "RedirectMatch",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch"
+            },
+            {
+              "name": "Alias",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_alias.html#alias"
+            },
+            {
+              "name": "AllowOverride",
+              "url": "https://httpd.apache.org/docs/2.4/mod/core.html#allowoverride"
+            },
+            {
+              "name": "FallbackResource",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_dir.html#fallbackresource"
+            },
+            {
+              "name": "<If>",
+              "url": "https://httpd.apache.org/docs/2.4/mod/core.html#if"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Guides",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Introduction",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/intro.html"
+            },
+            {
+              "name": "Flags",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/flags.html"
+            },
+            {
+              "name": "Redirecting & remapping",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/remapping.html"
+            },
+            {
+              "name": "Access control",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/access.html"
+            },
+            {
+              "name": "Virtual hosts",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/vhosts.html"
+            },
+            {
+              "name": "Using RewriteMap",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html"
+            },
+            {
+              "name": "Advanced techniques",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/advanced.html"
+            },
+            {
+              "name": "When not to use it",
+              "url": "https://httpd.apache.org/docs/2.4/rewrite/avoid.html"
+            },
+            {
+              "name": ".htaccess files",
+              "url": "https://httpd.apache.org/docs/2.4/howto/htaccess.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

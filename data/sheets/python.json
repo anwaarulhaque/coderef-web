@@ -1,0 +1,721 @@
+{
+  "slug": "python",
+  "title": "Python",
+  "category": "Languages",
+  "color": "#3776ab",
+  "description": "Built-in functions, core types and common standard library modules.",
+  "reference": "https://docs.python.org/3/library/index.html",
+  "sections": [
+    {
+      "title": "Built-in Functions",
+      "groups": [
+        {
+          "title": "Common",
+          "items": [
+            {
+              "name": "print()",
+              "url": "https://docs.python.org/3/library/functions.html#print"
+            },
+            {
+              "name": "input()",
+              "url": "https://docs.python.org/3/library/functions.html#input"
+            },
+            {
+              "name": "len()",
+              "url": "https://docs.python.org/3/library/functions.html#len"
+            },
+            {
+              "name": "range()",
+              "url": "https://docs.python.org/3/library/functions.html#range"
+            },
+            {
+              "name": "enumerate()",
+              "url": "https://docs.python.org/3/library/functions.html#enumerate"
+            },
+            {
+              "name": "zip()",
+              "url": "https://docs.python.org/3/library/functions.html#zip"
+            },
+            {
+              "name": "map()",
+              "url": "https://docs.python.org/3/library/functions.html#map"
+            },
+            {
+              "name": "filter()",
+              "url": "https://docs.python.org/3/library/functions.html#filter"
+            },
+            {
+              "name": "sorted()",
+              "url": "https://docs.python.org/3/library/functions.html#sorted"
+            },
+            {
+              "name": "reversed()",
+              "url": "https://docs.python.org/3/library/functions.html#reversed"
+            },
+            {
+              "name": "sum()",
+              "url": "https://docs.python.org/3/library/functions.html#sum"
+            },
+            {
+              "name": "min()",
+              "url": "https://docs.python.org/3/library/functions.html#min"
+            },
+            {
+              "name": "max()",
+              "url": "https://docs.python.org/3/library/functions.html#max"
+            },
+            {
+              "name": "abs()",
+              "url": "https://docs.python.org/3/library/functions.html#abs"
+            },
+            {
+              "name": "round()",
+              "url": "https://docs.python.org/3/library/functions.html#round"
+            },
+            {
+              "name": "any()",
+              "url": "https://docs.python.org/3/library/functions.html#any"
+            },
+            {
+              "name": "all()",
+              "url": "https://docs.python.org/3/library/functions.html#all"
+            }
+          ]
+        },
+        {
+          "title": "Types",
+          "items": [
+            {
+              "name": "int()",
+              "url": "https://docs.python.org/3/library/functions.html#int"
+            },
+            {
+              "name": "float()",
+              "url": "https://docs.python.org/3/library/functions.html#float"
+            },
+            {
+              "name": "str()",
+              "url": "https://docs.python.org/3/library/functions.html#str"
+            },
+            {
+              "name": "bool()",
+              "url": "https://docs.python.org/3/library/functions.html#bool"
+            },
+            {
+              "name": "list()",
+              "url": "https://docs.python.org/3/library/functions.html#list"
+            },
+            {
+              "name": "dict()",
+              "url": "https://docs.python.org/3/library/functions.html#dict"
+            },
+            {
+              "name": "set()",
+              "url": "https://docs.python.org/3/library/functions.html#set"
+            },
+            {
+              "name": "tuple()",
+              "url": "https://docs.python.org/3/library/functions.html#tuple"
+            },
+            {
+              "name": "type()",
+              "url": "https://docs.python.org/3/library/functions.html#type"
+            },
+            {
+              "name": "isinstance()",
+              "url": "https://docs.python.org/3/library/functions.html#isinstance"
+            }
+          ]
+        },
+        {
+          "title": "Objects",
+          "items": [
+            {
+              "name": "getattr()",
+              "url": "https://docs.python.org/3/library/functions.html#getattr"
+            },
+            {
+              "name": "setattr()",
+              "url": "https://docs.python.org/3/library/functions.html#setattr"
+            },
+            {
+              "name": "hasattr()",
+              "url": "https://docs.python.org/3/library/functions.html#hasattr"
+            },
+            {
+              "name": "dir()",
+              "url": "https://docs.python.org/3/library/functions.html#dir"
+            },
+            {
+              "name": "id()",
+              "url": "https://docs.python.org/3/library/functions.html#id"
+            },
+            {
+              "name": "vars()",
+              "url": "https://docs.python.org/3/library/functions.html#vars"
+            },
+            {
+              "name": "open()",
+              "url": "https://docs.python.org/3/library/functions.html#open"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "list",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "append()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "extend()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "insert()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "remove()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "pop()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "clear()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "index()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "count()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "sort()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#list.sort"
+            },
+            {
+              "name": "reverse()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            },
+            {
+              "name": "copy()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#typesseq-mutable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "str",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "capitalize()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.capitalize"
+            },
+            {
+              "name": "count()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.count"
+            },
+            {
+              "name": "endswith()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.endswith"
+            },
+            {
+              "name": "find()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.find"
+            },
+            {
+              "name": "format()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.format"
+            },
+            {
+              "name": "join()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.join"
+            },
+            {
+              "name": "lower()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.lower"
+            },
+            {
+              "name": "upper()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.upper"
+            },
+            {
+              "name": "replace()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.replace"
+            },
+            {
+              "name": "split()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.split"
+            },
+            {
+              "name": "splitlines()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.splitlines"
+            },
+            {
+              "name": "startswith()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.startswith"
+            },
+            {
+              "name": "strip()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.strip"
+            },
+            {
+              "name": "lstrip()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.lstrip"
+            },
+            {
+              "name": "rstrip()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.rstrip"
+            },
+            {
+              "name": "title()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.title"
+            },
+            {
+              "name": "zfill()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#str.zfill"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dict",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "get()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.get"
+            },
+            {
+              "name": "items()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.items"
+            },
+            {
+              "name": "keys()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.keys"
+            },
+            {
+              "name": "values()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.values"
+            },
+            {
+              "name": "pop()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.pop"
+            },
+            {
+              "name": "popitem()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.popitem"
+            },
+            {
+              "name": "setdefault()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.setdefault"
+            },
+            {
+              "name": "update()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.update"
+            },
+            {
+              "name": "clear()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.clear"
+            },
+            {
+              "name": "copy()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.copy"
+            },
+            {
+              "name": "fromkeys()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#dict.fromkeys"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "set",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "add()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.add"
+            },
+            {
+              "name": "discard()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.discard"
+            },
+            {
+              "name": "remove()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.remove"
+            },
+            {
+              "name": "union()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.union"
+            },
+            {
+              "name": "intersection()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.intersection"
+            },
+            {
+              "name": "difference()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.difference"
+            },
+            {
+              "name": "issubset()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.issubset"
+            },
+            {
+              "name": "issuperset()",
+              "url": "https://docs.python.org/3/library/stdtypes.html#frozenset.issuperset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modules",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "os",
+              "url": "https://docs.python.org/3/library/os.html"
+            },
+            {
+              "name": "sys",
+              "url": "https://docs.python.org/3/library/sys.html"
+            },
+            {
+              "name": "pathlib",
+              "url": "https://docs.python.org/3/library/pathlib.html"
+            },
+            {
+              "name": "json",
+              "url": "https://docs.python.org/3/library/json.html"
+            },
+            {
+              "name": "re",
+              "url": "https://docs.python.org/3/library/re.html"
+            },
+            {
+              "name": "datetime",
+              "url": "https://docs.python.org/3/library/datetime.html"
+            },
+            {
+              "name": "collections",
+              "url": "https://docs.python.org/3/library/collections.html"
+            },
+            {
+              "name": "itertools",
+              "url": "https://docs.python.org/3/library/itertools.html"
+            },
+            {
+              "name": "functools",
+              "url": "https://docs.python.org/3/library/functools.html"
+            },
+            {
+              "name": "math",
+              "url": "https://docs.python.org/3/library/math.html"
+            },
+            {
+              "name": "random",
+              "url": "https://docs.python.org/3/library/random.html"
+            },
+            {
+              "name": "typing",
+              "url": "https://docs.python.org/3/library/typing.html"
+            },
+            {
+              "name": "dataclasses",
+              "url": "https://docs.python.org/3/library/dataclasses.html"
+            },
+            {
+              "name": "asyncio",
+              "url": "https://docs.python.org/3/library/asyncio.html"
+            },
+            {
+              "name": "logging",
+              "url": "https://docs.python.org/3/library/logging.html"
+            },
+            {
+              "name": "subprocess",
+              "url": "https://docs.python.org/3/library/subprocess.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statements",
+      "groups": [
+        {
+          "title": "Compound",
+          "items": [
+            {
+              "name": "if",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#the-if-statement"
+            },
+            {
+              "name": "while",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#the-while-statement"
+            },
+            {
+              "name": "for",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#the-for-statement"
+            },
+            {
+              "name": "try",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#the-try-statement"
+            },
+            {
+              "name": "with",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#the-with-statement"
+            },
+            {
+              "name": "match",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#the-match-statement"
+            },
+            {
+              "name": "def",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#function-definitions"
+            },
+            {
+              "name": "class",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#class-definitions"
+            },
+            {
+              "name": "async",
+              "url": "https://docs.python.org/3/reference/compound_stmts.html#coroutines"
+            }
+          ]
+        },
+        {
+          "title": "Simple",
+          "items": [
+            {
+              "name": "return",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-return-statement"
+            },
+            {
+              "name": "yield",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-yield-statement"
+            },
+            {
+              "name": "raise",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-raise-statement"
+            },
+            {
+              "name": "import",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-import-statement"
+            },
+            {
+              "name": "assert",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement"
+            },
+            {
+              "name": "del",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-del-statement"
+            },
+            {
+              "name": "pass",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-pass-statement"
+            },
+            {
+              "name": "break",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-break-statement"
+            },
+            {
+              "name": "continue",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-continue-statement"
+            },
+            {
+              "name": "global",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-global-statement"
+            },
+            {
+              "name": "nonlocal",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-nonlocal-statement"
+            },
+            {
+              "name": "type",
+              "url": "https://docs.python.org/3/reference/simple_stmts.html#the-type-statement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Expressions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "lambda",
+              "url": "https://docs.python.org/3/reference/expressions.html#lambda"
+            },
+            {
+              "name": "comprehensions",
+              "url": "https://docs.python.org/3/reference/expressions.html#displays-for-lists-sets-and-dictionaries"
+            },
+            {
+              "name": "generator expressions",
+              "url": "https://docs.python.org/3/reference/expressions.html#generator-expressions"
+            },
+            {
+              "name": "conditional (x if c else y)",
+              "url": "https://docs.python.org/3/reference/expressions.html#conditional-expressions"
+            },
+            {
+              "name": "walrus :=",
+              "url": "https://docs.python.org/3/reference/expressions.html#assignment-expressions"
+            },
+            {
+              "name": "f-strings",
+              "url": "https://docs.python.org/3/reference/lexical_analysis.html#f-strings"
+            },
+            {
+              "name": "slicing",
+              "url": "https://docs.python.org/3/reference/expressions.html#slicings"
+            },
+            {
+              "name": "format spec",
+              "url": "https://docs.python.org/3/library/string.html#formatspec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exceptions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Exception",
+              "url": "https://docs.python.org/3/library/exceptions.html#Exception"
+            },
+            {
+              "name": "ValueError",
+              "url": "https://docs.python.org/3/library/exceptions.html#ValueError"
+            },
+            {
+              "name": "TypeError",
+              "url": "https://docs.python.org/3/library/exceptions.html#TypeError"
+            },
+            {
+              "name": "KeyError",
+              "url": "https://docs.python.org/3/library/exceptions.html#KeyError"
+            },
+            {
+              "name": "IndexError",
+              "url": "https://docs.python.org/3/library/exceptions.html#IndexError"
+            },
+            {
+              "name": "AttributeError",
+              "url": "https://docs.python.org/3/library/exceptions.html#AttributeError"
+            },
+            {
+              "name": "NameError",
+              "url": "https://docs.python.org/3/library/exceptions.html#NameError"
+            },
+            {
+              "name": "FileNotFoundError",
+              "url": "https://docs.python.org/3/library/exceptions.html#FileNotFoundError"
+            },
+            {
+              "name": "ZeroDivisionError",
+              "url": "https://docs.python.org/3/library/exceptions.html#ZeroDivisionError"
+            },
+            {
+              "name": "RuntimeError",
+              "url": "https://docs.python.org/3/library/exceptions.html#RuntimeError"
+            },
+            {
+              "name": "StopIteration",
+              "url": "https://docs.python.org/3/library/exceptions.html#StopIteration"
+            },
+            {
+              "name": "NotImplementedError",
+              "url": "https://docs.python.org/3/library/exceptions.html#NotImplementedError"
+            },
+            {
+              "name": "ExceptionGroup",
+              "url": "https://docs.python.org/3/library/exceptions.html#ExceptionGroup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Model",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "__init__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__init__"
+            },
+            {
+              "name": "__repr__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__repr__"
+            },
+            {
+              "name": "__str__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__str__"
+            },
+            {
+              "name": "__eq__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__eq__"
+            },
+            {
+              "name": "__hash__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__hash__"
+            },
+            {
+              "name": "__len__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__len__"
+            },
+            {
+              "name": "__iter__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__iter__"
+            },
+            {
+              "name": "__getitem__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__getitem__"
+            },
+            {
+              "name": "__contains__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__contains__"
+            },
+            {
+              "name": "__call__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__call__"
+            },
+            {
+              "name": "__enter__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__enter__"
+            },
+            {
+              "name": "__exit__",
+              "url": "https://docs.python.org/3/reference/datamodel.html#object.__exit__"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

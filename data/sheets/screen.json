@@ -1,0 +1,37 @@
+{
+  "slug": "screen",
+  "title": "Screen",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Screen.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "GNU Screen manual",
+              "url": "https://www.gnu.org/software/screen/manual/screen.html"
+            },
+            {
+              "name": "Wikipedia Screen",
+              "url": "https://en.wikipedia.org/wiki/GNU_Screen"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Screen VT100/ANSI Terminal Emulator Cheat Sheet [.pdf, tex, txt]",
+              "url": "http://www.catonmat.net/blog/screen-terminal-emulator-cheat-sheet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

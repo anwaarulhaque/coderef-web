@@ -1,0 +1,33 @@
+{
+  "slug": "freeware",
+  "title": "Freeware",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Freeware.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Freeware",
+              "url": "https://en.wikipedia.org/wiki/Freeware"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Freeware in one page",
+              "url": "http://www.pack.su/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

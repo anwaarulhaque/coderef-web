@@ -1,0 +1,212 @@
+{
+  "slug": "git",
+  "title": "Git",
+  "category": "Tools",
+  "color": "#f05032",
+  "description": "Everyday Git commands for setup, staging, branching and remotes.",
+  "reference": "https://git-scm.com/docs",
+  "sections": [
+    {
+      "title": "Setup",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "init",
+              "url": "https://git-scm.com/docs/git-init"
+            },
+            {
+              "name": "clone",
+              "url": "https://git-scm.com/docs/git-clone"
+            },
+            {
+              "name": "config",
+              "url": "https://git-scm.com/docs/git-config"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Snapshot",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "add",
+              "url": "https://git-scm.com/docs/git-add"
+            },
+            {
+              "name": "status",
+              "url": "https://git-scm.com/docs/git-status"
+            },
+            {
+              "name": "diff",
+              "url": "https://git-scm.com/docs/git-diff"
+            },
+            {
+              "name": "commit",
+              "url": "https://git-scm.com/docs/git-commit"
+            },
+            {
+              "name": "restore",
+              "url": "https://git-scm.com/docs/git-restore"
+            },
+            {
+              "name": "reset",
+              "url": "https://git-scm.com/docs/git-reset"
+            },
+            {
+              "name": "rm",
+              "url": "https://git-scm.com/docs/git-rm"
+            },
+            {
+              "name": "mv",
+              "url": "https://git-scm.com/docs/git-mv"
+            },
+            {
+              "name": "stash",
+              "url": "https://git-scm.com/docs/git-stash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Branch & Merge",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "branch",
+              "url": "https://git-scm.com/docs/git-branch"
+            },
+            {
+              "name": "switch",
+              "url": "https://git-scm.com/docs/git-switch"
+            },
+            {
+              "name": "checkout",
+              "url": "https://git-scm.com/docs/git-checkout"
+            },
+            {
+              "name": "merge",
+              "url": "https://git-scm.com/docs/git-merge"
+            },
+            {
+              "name": "rebase",
+              "url": "https://git-scm.com/docs/git-rebase"
+            },
+            {
+              "name": "cherry-pick",
+              "url": "https://git-scm.com/docs/git-cherry-pick"
+            },
+            {
+              "name": "tag",
+              "url": "https://git-scm.com/docs/git-tag"
+            },
+            {
+              "name": "worktree",
+              "url": "https://git-scm.com/docs/git-worktree"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inspect",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "log",
+              "url": "https://git-scm.com/docs/git-log"
+            },
+            {
+              "name": "show",
+              "url": "https://git-scm.com/docs/git-show"
+            },
+            {
+              "name": "blame",
+              "url": "https://git-scm.com/docs/git-blame"
+            },
+            {
+              "name": "shortlog",
+              "url": "https://git-scm.com/docs/git-shortlog"
+            },
+            {
+              "name": "describe",
+              "url": "https://git-scm.com/docs/git-describe"
+            },
+            {
+              "name": "reflog",
+              "url": "https://git-scm.com/docs/git-reflog"
+            },
+            {
+              "name": "bisect",
+              "url": "https://git-scm.com/docs/git-bisect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Remote",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "remote",
+              "url": "https://git-scm.com/docs/git-remote"
+            },
+            {
+              "name": "fetch",
+              "url": "https://git-scm.com/docs/git-fetch"
+            },
+            {
+              "name": "pull",
+              "url": "https://git-scm.com/docs/git-pull"
+            },
+            {
+              "name": "push",
+              "url": "https://git-scm.com/docs/git-push"
+            },
+            {
+              "name": "submodule",
+              "url": "https://git-scm.com/docs/git-submodule"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Maintenance",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "clean",
+              "url": "https://git-scm.com/docs/git-clean"
+            },
+            {
+              "name": "gc",
+              "url": "https://git-scm.com/docs/git-gc"
+            },
+            {
+              "name": "fsck",
+              "url": "https://git-scm.com/docs/git-fsck"
+            },
+            {
+              "name": "revert",
+              "url": "https://git-scm.com/docs/git-revert"
+            },
+            {
+              "name": "archive",
+              "url": "https://git-scm.com/docs/git-archive"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "tex",
+  "title": "TeX",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for TeX.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "TeX Users Group",
+              "url": "https://tug.org/"
+            },
+            {
+              "name": "Wikipedia TeX",
+              "url": "https://en.wikipedia.org/wiki/TeX"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "LaTeX",
+              "url": "/latex/"
+            },
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "blender",
+  "title": "Blender",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Blender.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Blender Manual",
+              "url": "https://docs.blender.org/manual/en/latest/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.blender.org/"
+            },
+            {
+              "name": "Wikipedia Blender",
+              "url": "https://en.wikipedia.org/wiki/Blender_(software)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

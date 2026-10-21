@@ -1,0 +1,50 @@
+{
+  "slug": "google-maps",
+  "title": "Google Maps",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Google Maps.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Google Maps Platform docs",
+              "url": "https://developers.google.com/maps/documentation"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://maps.google.com/"
+            },
+            {
+              "name": "Wikipedia Google Maps",
+              "url": "https://en.wikipedia.org/wiki/Google_Maps"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Google Maps Cheat Sheet [.pdf]",
+              "url": "http://www.nabito.net/google-maps-cheat-sheets/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Google",
+              "url": "/google/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

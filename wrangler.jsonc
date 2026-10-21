@@ -1,0 +1,20 @@
+// Cloudflare Workers config — serves the static export in ./out (no server code).
+// Deploy with: npm run deploy
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "coderef",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./out",
+    // Unknown URLs get out/404.html with a 404 status.
+    "not_found_handling": "404-page",
+    // /quick-reference/python serves /quick-reference/python/index.html (redirects to the trailing-slash URL).
+    "html_handling": "auto-trailing-slash"
+  },
+  // Attaches the domains to this Worker (creates the DNS records in the coderef.xyz zone).
+  "routes": [
+    { "pattern": "coderef.xyz", "custom_domain": true },
+    { "pattern": "www.coderef.xyz", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}

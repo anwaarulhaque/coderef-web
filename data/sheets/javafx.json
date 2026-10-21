@@ -1,0 +1,41 @@
+{
+  "slug": "javafx",
+  "title": "JavaFX",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for JavaFX.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "OpenJFX documentation",
+              "url": "https://openjfx.io/"
+            },
+            {
+              "name": "Wikipedia JavaFX",
+              "url": "https://en.wikipedia.org/wiki/JavaFX"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "Silverlight",
+              "url": "/silverlight/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

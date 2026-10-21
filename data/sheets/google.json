@@ -1,0 +1,66 @@
+{
+  "slug": "google",
+  "title": "Google",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Google.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Google Search operators",
+              "url": "https://developers.google.com/search/docs/monitor-debug/search-operators"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.google.com/"
+            },
+            {
+              "name": "Wikipedia Google",
+              "url": "https://en.wikipedia.org/wiki/Google"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Google Help : Cheat Sheet",
+              "url": "http://www.google.com/help/cheatsheet.html"
+            },
+            {
+              "name": "GoogleGuide",
+              "url": "http://www.googleguide.com/advanced_operators_reference.html"
+            },
+            {
+              "name": "PhD in Googling",
+              "url": "http://www.onlinephd.org/phd-in-googling/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Gmail",
+              "url": "/gmail/"
+            },
+            {
+              "name": "Google Chrome",
+              "url": "/google-chrome/"
+            },
+            {
+              "name": "Google Maps",
+              "url": "/google-maps/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

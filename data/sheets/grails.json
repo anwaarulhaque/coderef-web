@@ -1,0 +1,41 @@
+{
+  "slug": "grails",
+  "title": "Grails",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Grails.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Grails documentation",
+              "url": "https://grails.apache.org/docs/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://grails.org/"
+            },
+            {
+              "name": "Wikipedia Grails",
+              "url": "https://en.wikipedia.org/wiki/Grails_(framework)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

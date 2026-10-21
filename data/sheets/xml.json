@@ -1,0 +1,78 @@
+{
+  "slug": "xml",
+  "title": "XML",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for XML.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "XML 1.0 (W3C)",
+              "url": "https://www.w3.org/TR/xml/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/XML/"
+            },
+            {
+              "name": "Wikipedia XML",
+              "url": "https://en.wikipedia.org/wiki/XML"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "XML in one page",
+              "url": "http://www.xml.su/"
+            },
+            {
+              "name": "XML 1.0 Syntax Quick Reference [.pdf]",
+              "url": "http://www.mulberrytech.com/quickref/XMLquickref.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "VoiceXML",
+              "url": "/voicexml/"
+            },
+            {
+              "name": "XHTML",
+              "url": "/xhtml/"
+            },
+            {
+              "name": "XML Schema",
+              "url": "/xml-schema/"
+            },
+            {
+              "name": "XPath",
+              "url": "/xpath/"
+            },
+            {
+              "name": "XSL",
+              "url": "/xsl/"
+            },
+            {
+              "name": "XSLT",
+              "url": "/xslt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

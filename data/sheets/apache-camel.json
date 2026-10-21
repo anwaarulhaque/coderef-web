@@ -1,0 +1,45 @@
+{
+  "slug": "apache-camel",
+  "title": "Apache Camel",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Apache Camel.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Camel Documentation",
+              "url": "https://camel.apache.org/docs/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://camel.apache.org/"
+            },
+            {
+              "name": "Wikipedia Apache Camel",
+              "url": "https://en.wikipedia.org/wiki/Apache_Camel"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            },
+            {
+              "name": "Design Pattern",
+              "url": "/design-pattern/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

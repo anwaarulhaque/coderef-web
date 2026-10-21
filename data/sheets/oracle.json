@@ -1,0 +1,78 @@
+{
+  "slug": "oracle",
+  "title": "Oracle",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for Oracle.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Oracle Database docs",
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/"
+            },
+            {
+              "name": "SQL Language Reference",
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/"
+            },
+            {
+              "name": "Wikipedia Oracle",
+              "url": "https://en.wikipedia.org/wiki/Oracle_database"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Oracle PL/SQL Cheatsheet",
+              "url": "http://www.yagc.ndo.co.uk/cheatsheets/plsql_cheatsheet.html"
+            },
+            {
+              "name": "Oracle Relational SQL Cheatsheet",
+              "url": "http://www.yagc.ndo.co.uk/cheatsheets/sql_cheatsheet.html"
+            },
+            {
+              "name": "Oracle Cheat Sheet",
+              "url": "http://www.vttoth.com/oracle.htm"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Db2",
+              "url": "/db2/"
+            },
+            {
+              "name": "MySQL",
+              "url": "/mysql/"
+            },
+            {
+              "name": "PostgreSQL",
+              "url": "/postgresql/"
+            },
+            {
+              "name": "SQL",
+              "url": "/sql/"
+            },
+            {
+              "name": "SQLite",
+              "url": "/sqlite/"
+            },
+            {
+              "name": "Sybase",
+              "url": "/sybase/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

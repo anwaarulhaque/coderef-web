@@ -1,0 +1,74 @@
+{
+  "slug": "mathml",
+  "title": "MathML",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for MathML.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MDN: MathML",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML"
+            },
+            {
+              "name": "MathML Core (W3C)",
+              "url": "https://www.w3.org/TR/mathml-core/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/Math/"
+            },
+            {
+              "name": "Wikipedia MathML",
+              "url": "https://en.wikipedia.org/wiki/MathML"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "MathML in one page",
+              "url": "http://www.mathml.su/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "XHTML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XML Schema",
+              "url": "/xml-schema/"
+            },
+            {
+              "name": "XPath",
+              "url": "/xpath/"
+            },
+            {
+              "name": "XSL",
+              "url": "/xsl/"
+            },
+            {
+              "name": "XSLT",
+              "url": "/xslt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "vbscript",
+  "title": "VBScript",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for VBScript.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "VBScript deprecation",
+              "url": "https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features"
+            },
+            {
+              "name": "Wikipedia VBScript",
+              "url": "https://en.wikipedia.org/wiki/VBScript"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "ASP / VBScript Cheat Sheet Cheat Sheet [.png, pdf]",
+              "url": "http://www.addedbytes.com/asp/asp-vbscript-cheat-sheet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

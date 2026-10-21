@@ -1,0 +1,28 @@
+{
+  "slug": "computer-science",
+  "title": "Computer Science",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for Computer Science.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Big-O Cheat Sheet",
+              "url": "https://www.bigocheatsheet.com/"
+            },
+            {
+              "name": "Wikipedia Computer Science",
+              "url": "https://en.wikipedia.org/wiki/Computer_Science"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

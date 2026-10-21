@@ -1,0 +1,62 @@
+{
+  "slug": "matlab",
+  "title": "MATLAB",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for MATLAB.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MATLAB documentation",
+              "url": "https://www.mathworks.com/help/matlab/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.mathworks.com/products/matlab/"
+            },
+            {
+              "name": "Wikipedia MATLAB",
+              "url": "https://en.wikipedia.org/wiki/MATLAB"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "A Matlab Cheat-sheet (MIT 18.06, Fall 2007) [.pdf]",
+              "url": "http://web.mit.edu/18.06/www/MATLAB/matlab-cheatsheet.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Maple",
+              "url": "/maple/"
+            },
+            {
+              "name": "Math",
+              "url": "/math/"
+            },
+            {
+              "name": "Mathematica",
+              "url": "/mathematica/"
+            },
+            {
+              "name": "Maxima",
+              "url": "/maxima/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

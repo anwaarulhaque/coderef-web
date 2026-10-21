@@ -1,0 +1,45 @@
+{
+  "slug": "assembly",
+  "title": "Assembly Language",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Assembly Language.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "x86 Assembly (Wikibooks)",
+              "url": "https://en.wikibooks.org/wiki/X86_Assembly"
+            },
+            {
+              "name": "Intel SDM",
+              "url": "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html"
+            },
+            {
+              "name": "Wikipedia Assembly language",
+              "url": "https://en.wikipedia.org/wiki/Assembly_language"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Win32 Assembly Cheat Sheet by Peter Kankowski [.png]",
+              "url": "http://www.strchr.com/assembly_cheat_sheet"
+            },
+            {
+              "name": "gcc x86 Assembly Quick Reference (\"Cheat Sheet\") by Peter O. Lawlor",
+              "url": "http://www.cs.uaf.edu/2005/fall/cs301/support/x86/index.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

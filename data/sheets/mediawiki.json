@@ -1,0 +1,32 @@
+{
+  "slug": "mediawiki",
+  "title": "MediaWiki",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for MediaWiki.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Help: Formatting",
+              "url": "https://www.mediawiki.org/wiki/Help:Formatting"
+            },
+            {
+              "name": "Help: Cheatsheet",
+              "url": "https://en.wikipedia.org/wiki/Help:Cheatsheet"
+            },
+            {
+              "name": "Wikipedia MediaWiki",
+              "url": "https://en.wikipedia.org/wiki/Mediawiki"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

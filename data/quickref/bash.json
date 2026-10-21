@@ -1,0 +1,199 @@
+{
+  "slug": "bash",
+  "updated": "2026-10-14",
+  "title": "Bash Scripting",
+  "category": "Tools",
+  "color": "#4eaa25",
+  "language": "bash",
+  "description": "Bash scripts: variables, quoting, arguments, conditions, loops, functions, string tricks and exit codes.",
+  "docs": "https://www.gnu.org/software/bash/manual/bash.html",
+  "sections": [
+    {
+      "title": "Script basics",
+      "description": "Start every script right.",
+      "rows": [
+        [
+          "Shebang + safety flags",
+          "#!/usr/bin/env bash\nset -euo pipefail"
+        ],
+        [
+          "Make executable and run",
+          [
+            "chmod +x script.sh",
+            "./script.sh"
+          ]
+        ],
+        [
+          "Variables",
+          [
+            "name=\"Ada\"   # no spaces around =",
+            "echo \"Hi $name\""
+          ]
+        ],
+        [
+          "Command output into a variable",
+          "today=$(date +%F)"
+        ],
+        [
+          "Read input",
+          "read -rp \"Name: \" name"
+        ],
+        [
+          "Arithmetic",
+          [
+            "count=$((count + 1))",
+            "(( total += n ))"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Arguments",
+      "description": "Inputs to your script.",
+      "rows": [
+        [
+          "Positional arguments",
+          [
+            "$1 $2 $3",
+            "\"$@\"   # all, safely quoted"
+          ]
+        ],
+        [
+          "Number of arguments",
+          "$#"
+        ],
+        [
+          "Default value",
+          "name=\"${1:-world}\""
+        ],
+        [
+          "Require an argument",
+          ": \"${1:?usage: $0 <file>}\""
+        ],
+        [
+          "Script name / dir",
+          [
+            "$0",
+            "dir=\"$(cd \"$(dirname \"$0\")\" && pwd)\""
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Conditions",
+      "description": "Branching.",
+      "rows": [
+        [
+          "If / else",
+          "if [[ $n -gt 10 ]]; then\n  echo big\nelif [[ $n -eq 10 ]]; then\n  echo ten\nelse\n  echo small\nfi"
+        ],
+        [
+          "String tests",
+          [
+            "[[ $a == \"$b\" ]]",
+            "[[ -z $s ]]   # empty",
+            "[[ -n $s ]]   # not empty"
+          ]
+        ],
+        [
+          "File tests",
+          [
+            "[[ -f file ]]   # file exists",
+            "[[ -d dir ]]    # directory exists"
+          ]
+        ],
+        [
+          "Number comparisons",
+          "-eq -ne -lt -le -gt -ge"
+        ],
+        [
+          "Case",
+          "case \"$1\" in\n  start) start ;;\n  stop)  stop ;;\n  *)     echo \"usage\" ;;\nesac"
+        ]
+      ]
+    },
+    {
+      "title": "Loops & functions",
+      "description": "Repetition and reuse.",
+      "rows": [
+        [
+          "For over values",
+          "for name in ada grace linus; do\n  echo \"$name\"\ndone"
+        ],
+        [
+          "For over files",
+          "for f in *.txt; do\n  echo \"$f\"\ndone"
+        ],
+        [
+          "Range",
+          [
+            "for i in {1..5}; do echo $i; done",
+            "for ((i=0; i<5; i++)); do echo $i; done"
+          ]
+        ],
+        [
+          "Read a file line by line",
+          "while IFS= read -r line; do\n  echo \"$line\"\ndone < input.txt"
+        ],
+        [
+          "Function",
+          "greet() {\n  local name=$1\n  echo \"Hello, $name\"\n}\ngreet Ada"
+        ],
+        [
+          "Arrays",
+          [
+            "files=(a.txt b.txt)",
+            "\"${files[@]}\"",
+            "${#files[@]}  # length"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Strings & exit codes",
+      "description": "Text tricks and success/failure.",
+      "rows": [
+        [
+          "Length / substring",
+          [
+            "${#s}",
+            "${s:0:3}"
+          ]
+        ],
+        [
+          "Replace",
+          [
+            "${s/old/new}",
+            "${s//old/new}  # all"
+          ]
+        ],
+        [
+          "Strip a suffix / prefix",
+          [
+            "${file%.txt}",
+            "${path##*/}   # basename"
+          ]
+        ],
+        [
+          "Upper / lower case",
+          [
+            "${s^^}",
+            "${s,,}"
+          ]
+        ],
+        [
+          "Exit status of last command",
+          "$?"
+        ],
+        [
+          "Exit with an error",
+          "echo \"failed\" >&2\nexit 1"
+        ],
+        [
+          "Run cleanup on exit",
+          "trap 'rm -f \"$tmp\"' EXIT"
+        ]
+      ]
+    }
+  ]
+}

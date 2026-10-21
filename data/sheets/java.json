@@ -1,0 +1,745 @@
+{
+  "slug": "java",
+  "title": "Java",
+  "category": "Languages",
+  "color": "#ea2d2e",
+  "description": "Java SE 25 core classes by package, language features and JDK tools.",
+  "reference": "https://docs.oracle.com/en/java/javase/25/docs/api/index.html",
+  "sections": [
+    {
+      "title": "java.lang",
+      "groups": [
+        {
+          "title": "java.lang",
+          "items": [
+            {
+              "name": "Object",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html"
+            },
+            {
+              "name": "String",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html"
+            },
+            {
+              "name": "StringBuilder",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/StringBuilder.html"
+            },
+            {
+              "name": "Math",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Math.html"
+            },
+            {
+              "name": "Integer",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html"
+            },
+            {
+              "name": "Long",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Long.html"
+            },
+            {
+              "name": "Double",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Double.html"
+            },
+            {
+              "name": "Boolean",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html"
+            },
+            {
+              "name": "Character",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Character.html"
+            },
+            {
+              "name": "System",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/System.html"
+            },
+            {
+              "name": "Runtime",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runtime.html"
+            },
+            {
+              "name": "Thread",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Thread.html"
+            },
+            {
+              "name": "Runnable",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html"
+            },
+            {
+              "name": "Record",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Record.html"
+            },
+            {
+              "name": "Enum",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Enum.html"
+            },
+            {
+              "name": "Iterable",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Iterable.html"
+            },
+            {
+              "name": "Comparable",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Comparable.html"
+            },
+            {
+              "name": "AutoCloseable",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/AutoCloseable.html"
+            },
+            {
+              "name": "Throwable",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Throwable.html"
+            },
+            {
+              "name": "Exception",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Exception.html"
+            },
+            {
+              "name": "RuntimeException",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/RuntimeException.html"
+            },
+            {
+              "name": "IllegalArgumentException",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/IllegalArgumentException.html"
+            },
+            {
+              "name": "NullPointerException",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/NullPointerException.html"
+            },
+            {
+              "name": "ProcessBuilder",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/ProcessBuilder.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "java.util",
+      "groups": [
+        {
+          "title": "Collections",
+          "items": [
+            {
+              "name": "List",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/List.html"
+            },
+            {
+              "name": "ArrayList",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayList.html"
+            },
+            {
+              "name": "LinkedList",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedList.html"
+            },
+            {
+              "name": "Map",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Map.html"
+            },
+            {
+              "name": "HashMap",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashMap.html"
+            },
+            {
+              "name": "LinkedHashMap",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedHashMap.html"
+            },
+            {
+              "name": "TreeMap",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeMap.html"
+            },
+            {
+              "name": "Set",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Set.html"
+            },
+            {
+              "name": "HashSet",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HashSet.html"
+            },
+            {
+              "name": "LinkedHashSet",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/LinkedHashSet.html"
+            },
+            {
+              "name": "TreeSet",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/TreeSet.html"
+            },
+            {
+              "name": "Queue",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Queue.html"
+            },
+            {
+              "name": "Deque",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Deque.html"
+            },
+            {
+              "name": "ArrayDeque",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/ArrayDeque.html"
+            },
+            {
+              "name": "PriorityQueue",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/PriorityQueue.html"
+            },
+            {
+              "name": "SequencedCollection",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html"
+            }
+          ]
+        },
+        {
+          "title": "Utilities",
+          "items": [
+            {
+              "name": "Collections",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collections.html"
+            },
+            {
+              "name": "Arrays",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Arrays.html"
+            },
+            {
+              "name": "Optional",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html"
+            },
+            {
+              "name": "Objects",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Objects.html"
+            },
+            {
+              "name": "Iterator",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Iterator.html"
+            },
+            {
+              "name": "Comparator",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Comparator.html"
+            },
+            {
+              "name": "Scanner",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Scanner.html"
+            },
+            {
+              "name": "Random",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Random.html"
+            },
+            {
+              "name": "UUID",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/UUID.html"
+            },
+            {
+              "name": "StringJoiner",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/StringJoiner.html"
+            },
+            {
+              "name": "Properties",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Properties.html"
+            },
+            {
+              "name": "HexFormat",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/HexFormat.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "java.util.function",
+      "groups": [
+        {
+          "title": "java.util.function",
+          "items": [
+            {
+              "name": "Function",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html"
+            },
+            {
+              "name": "BiFunction",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiFunction.html"
+            },
+            {
+              "name": "Consumer",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Consumer.html"
+            },
+            {
+              "name": "BiConsumer",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiConsumer.html"
+            },
+            {
+              "name": "Supplier",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Supplier.html"
+            },
+            {
+              "name": "Predicate",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Predicate.html"
+            },
+            {
+              "name": "BiPredicate",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiPredicate.html"
+            },
+            {
+              "name": "UnaryOperator",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/UnaryOperator.html"
+            },
+            {
+              "name": "BinaryOperator",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BinaryOperator.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "java.util.stream",
+      "groups": [
+        {
+          "title": "java.util.stream",
+          "items": [
+            {
+              "name": "Stream",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html"
+            },
+            {
+              "name": "IntStream",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/IntStream.html"
+            },
+            {
+              "name": "LongStream",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/LongStream.html"
+            },
+            {
+              "name": "Collectors",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collectors.html"
+            },
+            {
+              "name": "Collector",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Collector.html"
+            },
+            {
+              "name": "Gatherers",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherers.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "java.util.concurrent",
+      "groups": [
+        {
+          "title": "java.util.concurrent",
+          "items": [
+            {
+              "name": "ExecutorService",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ExecutorService.html"
+            },
+            {
+              "name": "Executors",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Executors.html"
+            },
+            {
+              "name": "CompletableFuture",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/CompletableFuture.html"
+            },
+            {
+              "name": "Future",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Future.html"
+            },
+            {
+              "name": "ConcurrentHashMap",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html"
+            },
+            {
+              "name": "CountDownLatch",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/CountDownLatch.html"
+            },
+            {
+              "name": "Semaphore",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Semaphore.html"
+            },
+            {
+              "name": "TimeUnit",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/TimeUnit.html"
+            },
+            {
+              "name": "StructuredTaskScope",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/StructuredTaskScope.html"
+            },
+            {
+              "name": "atomic.AtomicInteger",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html"
+            },
+            {
+              "name": "atomic.AtomicLong",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html"
+            },
+            {
+              "name": "locks.ReentrantLock",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I/O",
+      "groups": [
+        {
+          "title": "java.io",
+          "items": [
+            {
+              "name": "File",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/File.html"
+            },
+            {
+              "name": "InputStream",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/InputStream.html"
+            },
+            {
+              "name": "OutputStream",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/OutputStream.html"
+            },
+            {
+              "name": "Reader",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/Reader.html"
+            },
+            {
+              "name": "Writer",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/Writer.html"
+            },
+            {
+              "name": "BufferedReader",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/BufferedReader.html"
+            },
+            {
+              "name": "BufferedWriter",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/BufferedWriter.html"
+            },
+            {
+              "name": "PrintStream",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/PrintStream.html"
+            },
+            {
+              "name": "Serializable",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/Serializable.html"
+            },
+            {
+              "name": "IOException",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/IOException.html"
+            },
+            {
+              "name": "UncheckedIOException",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/UncheckedIOException.html"
+            }
+          ]
+        },
+        {
+          "title": "java.nio.file",
+          "items": [
+            {
+              "name": "Files",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html"
+            },
+            {
+              "name": "Path",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Path.html"
+            },
+            {
+              "name": "Paths",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Paths.html"
+            },
+            {
+              "name": "StandardOpenOption",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/StandardOpenOption.html"
+            },
+            {
+              "name": "DirectoryStream",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/DirectoryStream.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "java.time",
+      "groups": [
+        {
+          "title": "java.time",
+          "items": [
+            {
+              "name": "LocalDate",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDate.html"
+            },
+            {
+              "name": "LocalTime",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalTime.html"
+            },
+            {
+              "name": "LocalDateTime",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/LocalDateTime.html"
+            },
+            {
+              "name": "ZonedDateTime",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/ZonedDateTime.html"
+            },
+            {
+              "name": "Instant",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Instant.html"
+            },
+            {
+              "name": "Duration",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Duration.html"
+            },
+            {
+              "name": "Period",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/Period.html"
+            },
+            {
+              "name": "ZoneId",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/ZoneId.html"
+            },
+            {
+              "name": "DayOfWeek",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/DayOfWeek.html"
+            },
+            {
+              "name": "format.DateTimeFormatter",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/format/DateTimeFormatter.html"
+            },
+            {
+              "name": "temporal.ChronoUnit",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/time/temporal/ChronoUnit.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Networking",
+      "groups": [
+        {
+          "title": "java.net",
+          "items": [
+            {
+              "name": "URI",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/URI.html"
+            },
+            {
+              "name": "URL",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/URL.html"
+            },
+            {
+              "name": "Socket",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/Socket.html"
+            },
+            {
+              "name": "ServerSocket",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/ServerSocket.html"
+            },
+            {
+              "name": "InetAddress",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/InetAddress.html"
+            },
+            {
+              "name": "URLEncoder",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/net/URLEncoder.html"
+            }
+          ]
+        },
+        {
+          "title": "java.net.http",
+          "items": [
+            {
+              "name": "HttpClient",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html"
+            },
+            {
+              "name": "HttpRequest",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpRequest.html"
+            },
+            {
+              "name": "HttpResponse",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpResponse.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Text, Math & Regex",
+      "groups": [
+        {
+          "title": "java.util.regex",
+          "items": [
+            {
+              "name": "Pattern",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/regex/Pattern.html"
+            },
+            {
+              "name": "Matcher",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/regex/Matcher.html"
+            }
+          ]
+        },
+        {
+          "title": "java.math",
+          "items": [
+            {
+              "name": "BigDecimal",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html"
+            },
+            {
+              "name": "BigInteger",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigInteger.html"
+            },
+            {
+              "name": "RoundingMode",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/RoundingMode.html"
+            }
+          ]
+        },
+        {
+          "title": "java.text",
+          "items": [
+            {
+              "name": "NumberFormat",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/NumberFormat.html"
+            },
+            {
+              "name": "MessageFormat",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/text/MessageFormat.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "java.sql",
+      "groups": [
+        {
+          "title": "java.sql",
+          "items": [
+            {
+              "name": "Connection",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html"
+            },
+            {
+              "name": "DriverManager",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/DriverManager.html"
+            },
+            {
+              "name": "PreparedStatement",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/PreparedStatement.html"
+            },
+            {
+              "name": "ResultSet",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/ResultSet.html"
+            },
+            {
+              "name": "Statement",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Statement.html"
+            },
+            {
+              "name": "SQLException",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/SQLException.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Language Features",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Records",
+              "url": "https://docs.oracle.com/en/java/javase/25/language/records.html"
+            },
+            {
+              "name": "Sealed classes",
+              "url": "https://docs.oracle.com/en/java/javase/25/language/sealed-classes-and-interfaces.html"
+            },
+            {
+              "name": "Switch expressions",
+              "url": "https://docs.oracle.com/en/java/javase/25/language/switch-expressions-and-statements.html"
+            },
+            {
+              "name": "Pattern matching",
+              "url": "https://docs.oracle.com/en/java/javase/25/language/pattern-matching.html"
+            },
+            {
+              "name": "Record patterns",
+              "url": "https://docs.oracle.com/en/java/javase/25/language/record-patterns.html"
+            },
+            {
+              "name": "Text blocks",
+              "url": "https://docs.oracle.com/en/java/javase/25/text-blocks/index.html"
+            },
+            {
+              "name": "var (local type inference)",
+              "url": "https://docs.oracle.com/en/java/javase/25/language/local-variable-type-inference.html"
+            },
+            {
+              "name": "Language overview",
+              "url": "https://docs.oracle.com/en/java/javase/25/language/java-language-changes.html"
+            },
+            {
+              "name": "Java Language Spec",
+              "url": "https://docs.oracle.com/javase/specs/jls/se25/html/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JDK Tools",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "java",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/java.html"
+            },
+            {
+              "name": "javac",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/javac.html"
+            },
+            {
+              "name": "jar",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jar.html"
+            },
+            {
+              "name": "javadoc",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/javadoc.html"
+            },
+            {
+              "name": "jshell",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jshell.html"
+            },
+            {
+              "name": "jlink",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jlink.html"
+            },
+            {
+              "name": "jpackage",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jpackage.html"
+            },
+            {
+              "name": "jcmd",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jcmd.html"
+            },
+            {
+              "name": "jstack",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jstack.html"
+            },
+            {
+              "name": "jfr",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/jfr.html"
+            },
+            {
+              "name": "keytool",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/specs/man/keytool.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

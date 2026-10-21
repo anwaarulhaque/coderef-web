@@ -1,0 +1,33 @@
+{
+  "slug": "ttcn-3",
+  "title": "TTCN-3",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for TTCN-3.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia TTCN-3",
+              "url": "https://en.wikipedia.org/wiki/TTCN-3"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Quick Reference Card for TTCN-3 [.pdf]",
+              "url": "http://www.blukaktus.com/card.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

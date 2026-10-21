@@ -1,0 +1,371 @@
+{
+  "slug": "drush",
+  "title": "Drush",
+  "category": "Tools",
+  "color": "#0678be",
+  "description": "Drush commands for Drupal: cache, config, modules, database, users, roles and logs.",
+  "reference": "https://www.drush.org/latest/commands/all/",
+  "sections": [
+    {
+      "title": "Core",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "core:status (st)",
+              "url": "https://www.drush.org/latest/commands/core_status/"
+            },
+            {
+              "name": "core:cron (cron)",
+              "url": "https://www.drush.org/latest/commands/core_cron/"
+            },
+            {
+              "name": "core:requirements (rq)",
+              "url": "https://www.drush.org/latest/commands/core_requirements/"
+            },
+            {
+              "name": "core:rsync (rsync)",
+              "url": "https://www.drush.org/latest/commands/core_rsync/"
+            },
+            {
+              "name": "deploy",
+              "url": "https://www.drush.org/latest/commands/deploy/"
+            },
+            {
+              "name": "updatedb (updb)",
+              "url": "https://www.drush.org/latest/commands/updatedb/"
+            },
+            {
+              "name": "updatedb:status (updbst)",
+              "url": "https://www.drush.org/latest/commands/updatedb_status/"
+            },
+            {
+              "name": "deploy:hook",
+              "url": "https://www.drush.org/latest/commands/deploy_hook/"
+            },
+            {
+              "name": "php:cli (php)",
+              "url": "https://www.drush.org/latest/commands/php_cli/"
+            },
+            {
+              "name": "php:eval (ev)",
+              "url": "https://www.drush.org/latest/commands/php_eval/"
+            },
+            {
+              "name": "php:script (scr)",
+              "url": "https://www.drush.org/latest/commands/php_script/"
+            },
+            {
+              "name": "site:install (si)",
+              "url": "https://www.drush.org/latest/commands/site_install/"
+            },
+            {
+              "name": "site:alias (sa)",
+              "url": "https://www.drush.org/latest/commands/site_alias/"
+            },
+            {
+              "name": "site:ssh (ssh)",
+              "url": "https://www.drush.org/latest/commands/site_ssh/"
+            },
+            {
+              "name": "list",
+              "url": "https://www.drush.org/latest/commands/list/"
+            },
+            {
+              "name": "help",
+              "url": "https://www.drush.org/latest/commands/help/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cache",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "cache:rebuild (cr)",
+              "url": "https://www.drush.org/latest/commands/cache_rebuild/"
+            },
+            {
+              "name": "cache:clear (cc)",
+              "url": "https://www.drush.org/latest/commands/cache_clear/"
+            },
+            {
+              "name": "cache:get (cg)",
+              "url": "https://www.drush.org/latest/commands/cache_get/"
+            },
+            {
+              "name": "cache:set (cs)",
+              "url": "https://www.drush.org/latest/commands/cache_set/"
+            },
+            {
+              "name": "cache:tags (ct)",
+              "url": "https://www.drush.org/latest/commands/cache_tags/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Config",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "config:export (cex)",
+              "url": "https://www.drush.org/latest/commands/config_export/"
+            },
+            {
+              "name": "config:import (cim)",
+              "url": "https://www.drush.org/latest/commands/config_import/"
+            },
+            {
+              "name": "config:get (cget)",
+              "url": "https://www.drush.org/latest/commands/config_get/"
+            },
+            {
+              "name": "config:set (cset)",
+              "url": "https://www.drush.org/latest/commands/config_set/"
+            },
+            {
+              "name": "config:status (cst)",
+              "url": "https://www.drush.org/latest/commands/config_status/"
+            },
+            {
+              "name": "config:edit (cedit)",
+              "url": "https://www.drush.org/latest/commands/config_edit/"
+            },
+            {
+              "name": "config:delete (cdel)",
+              "url": "https://www.drush.org/latest/commands/config_delete/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extensions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "pm:install (en)",
+              "url": "https://www.drush.org/latest/commands/pm_install/"
+            },
+            {
+              "name": "pm:uninstall (pmu)",
+              "url": "https://www.drush.org/latest/commands/pm_uninstall/"
+            },
+            {
+              "name": "pm:list (pml)",
+              "url": "https://www.drush.org/latest/commands/pm_list/"
+            },
+            {
+              "name": "theme:install (thin)",
+              "url": "https://www.drush.org/latest/commands/theme_install/"
+            },
+            {
+              "name": "theme:uninstall (thun)",
+              "url": "https://www.drush.org/latest/commands/theme_uninstall/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "sql:cli (sqlc)",
+              "url": "https://www.drush.org/latest/commands/sql_cli/"
+            },
+            {
+              "name": "sql:query (sqlq)",
+              "url": "https://www.drush.org/latest/commands/sql_query/"
+            },
+            {
+              "name": "sql:dump",
+              "url": "https://www.drush.org/latest/commands/sql_dump/"
+            },
+            {
+              "name": "sql:drop",
+              "url": "https://www.drush.org/latest/commands/sql_drop/"
+            },
+            {
+              "name": "sql:sync",
+              "url": "https://www.drush.org/latest/commands/sql_sync/"
+            },
+            {
+              "name": "sql:connect",
+              "url": "https://www.drush.org/latest/commands/sql_connect/"
+            },
+            {
+              "name": "sql:sanitize (sqlsan)",
+              "url": "https://www.drush.org/latest/commands/sql_sanitize/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Users",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "user:login (uli)",
+              "url": "https://www.drush.org/latest/commands/user_login/"
+            },
+            {
+              "name": "user:create (ucrt)",
+              "url": "https://www.drush.org/latest/commands/user_create/"
+            },
+            {
+              "name": "user:information (uinf)",
+              "url": "https://www.drush.org/latest/commands/user_information/"
+            },
+            {
+              "name": "user:block (ublk)",
+              "url": "https://www.drush.org/latest/commands/user_block/"
+            },
+            {
+              "name": "user:unblock (uublk)",
+              "url": "https://www.drush.org/latest/commands/user_unblock/"
+            },
+            {
+              "name": "user:password (upwd)",
+              "url": "https://www.drush.org/latest/commands/user_password/"
+            },
+            {
+              "name": "user:cancel (ucan)",
+              "url": "https://www.drush.org/latest/commands/user_cancel/"
+            },
+            {
+              "name": "user:role:add (urol)",
+              "url": "https://www.drush.org/latest/commands/user_role_add/"
+            },
+            {
+              "name": "user:role:remove (urrol)",
+              "url": "https://www.drush.org/latest/commands/user_role_remove/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Roles",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "role:create (rcrt)",
+              "url": "https://www.drush.org/latest/commands/role_create/"
+            },
+            {
+              "name": "role:delete (rdel)",
+              "url": "https://www.drush.org/latest/commands/role_delete/"
+            },
+            {
+              "name": "role:list (rls)",
+              "url": "https://www.drush.org/latest/commands/role_list/"
+            },
+            {
+              "name": "role:perm:add (rap)",
+              "url": "https://www.drush.org/latest/commands/role_perm_add/"
+            },
+            {
+              "name": "role:perm:remove (rmp)",
+              "url": "https://www.drush.org/latest/commands/role_perm_remove/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fields & Entities",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "field:create (fc)",
+              "url": "https://www.drush.org/latest/commands/field_create/"
+            },
+            {
+              "name": "field:info (fi)",
+              "url": "https://www.drush.org/latest/commands/field_info/"
+            },
+            {
+              "name": "field:delete (fd)",
+              "url": "https://www.drush.org/latest/commands/field_delete/"
+            },
+            {
+              "name": "entity:delete (edel)",
+              "url": "https://www.drush.org/latest/commands/entity_delete/"
+            },
+            {
+              "name": "entity:save (esav)",
+              "url": "https://www.drush.org/latest/commands/entity_save/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Logs, State & Queues",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "watchdog:show (wd-show)",
+              "url": "https://www.drush.org/latest/commands/watchdog_show/"
+            },
+            {
+              "name": "watchdog:list (wd-list)",
+              "url": "https://www.drush.org/latest/commands/watchdog_list/"
+            },
+            {
+              "name": "watchdog:tail (wd-tail)",
+              "url": "https://www.drush.org/latest/commands/watchdog_tail/"
+            },
+            {
+              "name": "watchdog:delete (wd-del)",
+              "url": "https://www.drush.org/latest/commands/watchdog_delete/"
+            },
+            {
+              "name": "state:get (sget)",
+              "url": "https://www.drush.org/latest/commands/state_get/"
+            },
+            {
+              "name": "state:set (sset)",
+              "url": "https://www.drush.org/latest/commands/state_set/"
+            },
+            {
+              "name": "state:delete (sdel)",
+              "url": "https://www.drush.org/latest/commands/state_delete/"
+            },
+            {
+              "name": "queue:list",
+              "url": "https://www.drush.org/latest/commands/queue_list/"
+            },
+            {
+              "name": "queue:run",
+              "url": "https://www.drush.org/latest/commands/queue_run/"
+            },
+            {
+              "name": "locale:check",
+              "url": "https://www.drush.org/latest/commands/locale_check/"
+            },
+            {
+              "name": "locale:update",
+              "url": "https://www.drush.org/latest/commands/locale_update/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

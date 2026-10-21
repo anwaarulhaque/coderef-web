@@ -1,0 +1,41 @@
+{
+  "slug": "jboss",
+  "title": "JBoss",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for JBoss.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "WildFly documentation",
+              "url": "https://docs.wildfly.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.jboss.com/products/platforms/application/"
+            },
+            {
+              "name": "Wikipedia JBoss",
+              "url": "https://en.wikipedia.org/wiki/JBoss"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

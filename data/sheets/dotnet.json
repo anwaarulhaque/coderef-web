@@ -1,0 +1,65 @@
+{
+  "slug": "dotnet",
+  "title": ".NET",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for .NET.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": ".NET documentation",
+              "url": "https://learn.microsoft.com/en-us/dotnet/"
+            },
+            {
+              "name": ".NET API browser",
+              "url": "https://learn.microsoft.com/en-us/dotnet/api/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.microsoft.com/net/"
+            },
+            {
+              "name": "Wikipedia .NET",
+              "url": "https://en.wikipedia.org/wiki/Microsoft_.NET"
+            },
+            {
+              "name": ".NET Regular Expression Cheat Sheet",
+              "url": "http://regexlib.com/CheatSheet.aspx"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "ADO.NET",
+              "url": "/ado-net/"
+            },
+            {
+              "name": "ASP",
+              "url": "/asp/"
+            },
+            {
+              "name": "C#",
+              "url": "/csharp/"
+            },
+            {
+              "name": "MFC",
+              "url": "/mfc/"
+            },
+            {
+              "name": "Sandcastle",
+              "url": "/sandcastle/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

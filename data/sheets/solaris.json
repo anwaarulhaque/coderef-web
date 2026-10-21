@@ -1,0 +1,41 @@
+{
+  "slug": "solaris",
+  "title": "Solaris",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Solaris.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Oracle Solaris docs",
+              "url": "https://docs.oracle.com/en/operating-systems/solaris.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://sun.com/solaris/"
+            },
+            {
+              "name": "Wikipedia Solaris",
+              "url": "https://en.wikipedia.org/wiki/Solaris_%28operating_system%29"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Unix",
+              "url": "/unix/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

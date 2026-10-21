@@ -1,0 +1,33 @@
+{
+  "slug": "vcs",
+  "title": "Veritas Cluster",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Veritas Cluster.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Veritas Cluster",
+              "url": "https://en.wikipedia.org/wiki/Veritas_Cluster_File_System"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Veritas Cluster Cheat sheet [.pdf]",
+              "url": "http://www.scribd.com/doc/2675288/Veritas-Cluster-Cheat-Sheet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

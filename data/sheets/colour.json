@@ -1,0 +1,45 @@
+{
+  "slug": "colour",
+  "title": "Colour",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Colour.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MDN: CSS color values",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
+            },
+            {
+              "name": "Named colors",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/named-color"
+            },
+            {
+              "name": "Wolfram Alpha",
+              "url": "http://www.wolframalpha.com/examples/Colors.html"
+            },
+            {
+              "name": "Wikipedia Colour",
+              "url": "https://en.wikipedia.org/wiki/Colour"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Reference: Color Codes",
+              "url": "http://www.webmonkey.com/webmonkey/reference/color_codes/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

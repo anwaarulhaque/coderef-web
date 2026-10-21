@@ -1,0 +1,41 @@
+{
+  "slug": "servicemix",
+  "title": "ServiceMix",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for ServiceMix.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apache ServiceMix",
+              "url": "https://servicemix.apache.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://servicemix.apache.org/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            },
+            {
+              "name": "Mule",
+              "url": "/mule/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

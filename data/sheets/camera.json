@@ -1,0 +1,24 @@
+{
+  "slug": "camera",
+  "title": "Camera",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Camera.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Camera",
+              "url": "https://en.wikipedia.org/wiki/Camera"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

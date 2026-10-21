@@ -1,0 +1,62 @@
+{
+  "slug": "rpm",
+  "title": "rpm",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for rpm.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "rpm(8)",
+              "url": "https://man7.org/linux/man-pages/man8/rpm.8.html"
+            },
+            {
+              "name": "RPM documentation",
+              "url": "https://rpm.org/documentation.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.rpm.org/"
+            },
+            {
+              "name": "Wikipedia rpm(RedHat Package Manager)",
+              "url": "https://en.wikipedia.org/wiki/RPM_Package_Manager"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "RPM Cheat Sheet",
+              "url": "http://michal.guerquin.com/rpmcheatsheet.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Linux",
+              "url": "/linux/"
+            },
+            {
+              "name": "Fedora",
+              "url": "/fedora/"
+            },
+            {
+              "name": "Red Hat",
+              "url": "/redhat/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

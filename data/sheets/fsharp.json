@@ -1,0 +1,36 @@
+{
+  "slug": "fsharp",
+  "title": "F#",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for F#.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "F# documentation",
+              "url": "https://learn.microsoft.com/en-us/dotnet/fsharp/"
+            },
+            {
+              "name": "F# language reference",
+              "url": "https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/"
+            },
+            {
+              "name": "Wikipedia F#",
+              "url": "https://en.wikipedia.org/wiki/F_Sharp_(programming_language)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

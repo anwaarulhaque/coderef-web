@@ -1,0 +1,32 @@
+{
+  "slug": "vaadin",
+  "title": "Vaadin",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Vaadin.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Vaadin docs",
+              "url": "https://vaadin.com/docs/latest/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://vaadin.com/"
+            },
+            {
+              "name": "Wikipedia Vaadin",
+              "url": "https://en.wikipedia.org/wiki/Vaadin"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

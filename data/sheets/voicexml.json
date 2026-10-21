@@ -1,0 +1,61 @@
+{
+  "slug": "voicexml",
+  "title": "VoiceXML",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for VoiceXML.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "VoiceXML 2.1 (W3C)",
+              "url": "https://www.w3.org/TR/voicexml21/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/Voice/"
+            },
+            {
+              "name": "Wikipedia VoiceXML",
+              "url": "https://en.wikipedia.org/wiki/VoiceXML"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "XHTML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XML Schema",
+              "url": "/xml-schema/"
+            },
+            {
+              "name": "XPath",
+              "url": "/xpath/"
+            },
+            {
+              "name": "XSL",
+              "url": "/xsl/"
+            },
+            {
+              "name": "XSLT",
+              "url": "/xslt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

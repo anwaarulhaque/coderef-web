@@ -1,0 +1,33 @@
+{
+  "slug": "hardware",
+  "title": "Hardware",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Hardware.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Hardware",
+              "url": "https://en.wikipedia.org/wiki/Hardware"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Computer hardware poster 1.7 [.png]",
+              "url": "http://sonic840.deviantart.com/art/Computer-hardware-poster-1-7-111402099"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

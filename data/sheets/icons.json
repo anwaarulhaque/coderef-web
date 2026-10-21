@@ -1,0 +1,41 @@
+{
+  "slug": "icons",
+  "title": "Icons",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Icons.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Material Symbols",
+              "url": "https://fonts.google.com/icons"
+            },
+            {
+              "name": "Wikipedia Icons",
+              "url": "https://en.wikipedia.org/wiki/Icon_%28computing%29"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Icon Moon",
+              "url": "https://chrome.google.com/webstore/detail/icomoon/kppingdhhalimbaehfmhldppemnmlcjd?hl=zh-CN&utm_source=chrome-ntp-launcher"
+            },
+            {
+              "name": "Free icons",
+              "url": "http://www.iconsfree.org/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

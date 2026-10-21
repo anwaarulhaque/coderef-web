@@ -1,0 +1,45 @@
+{
+  "slug": "hadoop",
+  "title": "Hadoop",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Hadoop.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apache Hadoop docs",
+              "url": "https://hadoop.apache.org/docs/stable/"
+            },
+            {
+              "name": "HDFS commands",
+              "url": "https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://hadoop.apache.org/"
+            },
+            {
+              "name": "Wikipedia Hadoop",
+              "url": "https://en.wikipedia.org/wiki/Hadoop"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

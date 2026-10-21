@@ -1,0 +1,66 @@
+{
+  "slug": "photoshop",
+  "title": "Photoshop",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Photoshop.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Photoshop keyboard shortcuts",
+              "url": "https://helpx.adobe.com/photoshop/using/default-keyboard-shortcuts.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.adobe.com/products/photoshop/"
+            },
+            {
+              "name": "Wikipedia Photoshop",
+              "url": "https://en.wikipedia.org/wiki/Photoshop"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Spiekbrief | Adobe Photoshop CS6 | Mac | PC by Ton Haarmans",
+              "url": "http://www.wideopenwin.com/pscs6.html"
+            },
+            {
+              "name": "Adobe Photoshop CS5 | Engels > Nederlands + sneltoetsen (Mac | Win) by Ton Haarmans",
+              "url": "http://www.wideopenwin.com/pscs5.html"
+            },
+            {
+              "name": "English to Dutch menu's and shortcuts for Photoshop CS4 (Mac | Win)",
+              "url": "http://www.wideopenwin.com/pscs4.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Adobe Systems",
+              "url": "/adobe/"
+            },
+            {
+              "name": "Illustrator",
+              "url": "/illustrator/"
+            },
+            {
+              "name": "Gimp",
+              "url": "/gimp/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

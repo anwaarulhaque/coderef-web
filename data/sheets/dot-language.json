@@ -1,0 +1,41 @@
+{
+  "slug": "dot-language",
+  "title": "Dot Language",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Dot Language.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Graphviz DOT Language",
+              "url": "https://graphviz.org/doc/info/lang.html"
+            },
+            {
+              "name": "Node, Edge & Graph Attributes",
+              "url": "https://graphviz.org/doc/info/attrs.html"
+            },
+            {
+              "name": "Wikipedia Dot Language",
+              "url": "https://en.wikipedia.org/wiki/DOT_language"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "The DOT Language by Graphviz - Graph Visualization Software",
+              "url": "http://graphviz.org/content/dot-language"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

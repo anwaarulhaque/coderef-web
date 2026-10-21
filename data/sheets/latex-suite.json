@@ -1,0 +1,41 @@
+{
+  "slug": "latex-suite",
+  "title": "LaTeX-Suite",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for LaTeX-Suite.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Vim-LaTeX",
+              "url": "https://vim-latex.sourceforge.net/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://vim-latex.sourceforge.net/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "LaTeX",
+              "url": "/latex/"
+            },
+            {
+              "name": "Vim",
+              "url": "/vim/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

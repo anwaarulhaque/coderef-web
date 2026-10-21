@@ -1,0 +1,58 @@
+{
+  "slug": "coldfusion",
+  "title": "ColdFusion",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for ColdFusion.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "ColdFusion docs",
+              "url": "https://helpx.adobe.com/coldfusion/user-guide.html"
+            },
+            {
+              "name": "CFDocs",
+              "url": "https://cfdocs.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.adobe.com/products/coldfusion/"
+            },
+            {
+              "name": "Wikipedia ColdFusion",
+              "url": "https://en.wikipedia.org/wiki/ColdFusion"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "ColdFusion Cheat Sheet",
+              "url": "http://www.petefreitag.com/cheatsheets/coldfusion/"
+            },
+            {
+              "name": "CFSCRIPT ColdFusion Cheat Sheet",
+              "url": "http://www.petefreitag.com/cheatsheets/coldfusion/cfscript/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Adobe Systems",
+              "url": "/adobe/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "ivr",
+  "title": "IVR",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for IVR.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia IVR",
+              "url": "https://en.wikipedia.org/wiki/Ivr"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "IVR Cheat Sheet - gethuman 500 database",
+              "url": "http://gethuman.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

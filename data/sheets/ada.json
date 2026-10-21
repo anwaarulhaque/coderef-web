@@ -1,0 +1,36 @@
+{
+  "slug": "ada",
+  "title": "Ada",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Ada.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Ada Reference Manual",
+              "url": "https://www.adaic.org/resources/add_content/standards/22rm/html/RM-TOC.html"
+            },
+            {
+              "name": "learn.adacore.com",
+              "url": "https://learn.adacore.com/"
+            },
+            {
+              "name": "Ada Europe",
+              "url": "http://www.ada-europe.org/"
+            },
+            {
+              "name": "Wikipedia Ada",
+              "url": "https://en.wikipedia.org/wiki/Ada_%28programming_language%29"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

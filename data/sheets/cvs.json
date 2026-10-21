@@ -1,0 +1,58 @@
+{
+  "slug": "cvs",
+  "title": "CVS",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for CVS.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "CVS Manual",
+              "url": "https://www.gnu.org/software/trans-coord/manual/cvs/cvs.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://msdn2.microsoft.com/en-us/vcsharp/aa336809.aspx"
+            },
+            {
+              "name": "Wikipedia CVS",
+              "url": "https://en.wikipedia.org/wiki/Concurrent_Versions_System"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "CVS Quick Reference Card by Laurent Grégoire [.pdf]",
+              "url": "http://tnerual.eriogerg.free.fr/cvs.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Bazaar",
+              "url": "/bazaar/"
+            },
+            {
+              "name": "Git",
+              "url": "/git/"
+            },
+            {
+              "name": "SVN",
+              "url": "/svn/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

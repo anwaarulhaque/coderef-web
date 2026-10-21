@@ -1,0 +1,37 @@
+{
+  "slug": "mule",
+  "title": "Mule",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Mule.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MuleSoft docs",
+              "url": "https://docs.mulesoft.com/"
+            },
+            {
+              "name": "Wikipedia Mule",
+              "url": "https://en.wikipedia.org/wiki/Mule_(software)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "ServiceMix",
+              "url": "/servicemix/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

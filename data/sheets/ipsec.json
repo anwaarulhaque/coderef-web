@@ -1,0 +1,28 @@
+{
+  "slug": "ipsec",
+  "title": "IPsec",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for IPsec.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 4301 (IPsec Architecture)",
+              "url": "https://www.rfc-editor.org/rfc/rfc4301"
+            },
+            {
+              "name": "Wikipedia IPsec",
+              "url": "https://en.wikipedia.org/wiki/IPsec"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

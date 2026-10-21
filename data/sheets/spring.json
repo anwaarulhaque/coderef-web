@@ -1,0 +1,49 @@
+{
+  "slug": "spring",
+  "title": "Spring Framework",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Spring Framework.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Spring Framework reference",
+              "url": "https://docs.spring.io/spring-framework/reference/"
+            },
+            {
+              "name": "Spring Boot reference",
+              "url": "https://docs.spring.io/spring-boot/"
+            },
+            {
+              "name": "Wikipedia Spring Framework",
+              "url": "https://ru.wikipedia.org/wiki/Spring_Framework"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Flex",
+              "url": "/flex/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "Spring Roo",
+              "url": "/springroo/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

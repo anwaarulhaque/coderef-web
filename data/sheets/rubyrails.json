@@ -1,0 +1,66 @@
+{
+  "slug": "rubyrails",
+  "title": "Ruby on Rails",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Ruby on Rails.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Rails Guides",
+              "url": "https://guides.rubyonrails.org/"
+            },
+            {
+              "name": "Rails API",
+              "url": "https://api.rubyonrails.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.rubyonrails.org/"
+            },
+            {
+              "name": "Wikipedia Ruby on Rails",
+              "url": "https://en.wikipedia.org/wiki/Ruby_on_Rails"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Ruby on Rails Cheat Sheet [.png, pdf]",
+              "url": "http://www.addedbytes.com/cheat-sheets/ruby-on-rails-cheat-sheet/"
+            },
+            {
+              "name": "RubyOnRails-Cheatsheet [.pdf]",
+              "url": "http://www.blainekendall.com/index.php/rubyonrailscheatsheet/"
+            },
+            {
+              "name": "Ruby on Rails cheat sheet guide [.pdf]",
+              "url": "http://slash7.com/cheats/form_helpers.pdf"
+            },
+            {
+              "name": "What Goes Where a Ruby on Rails cheat sheet [.pdf]",
+              "url": "http://slash7.com/cheats/rails_files_cheatsheet.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Ruby",
+              "url": "/ruby/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

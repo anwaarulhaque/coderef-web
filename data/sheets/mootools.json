@@ -1,0 +1,45 @@
+{
+  "slug": "mootools",
+  "title": "MooTools",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for MooTools.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MooTools Core docs",
+              "url": "https://mootools.net/core/docs"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://mootools.net/"
+            },
+            {
+              "name": "Wikipedia MooTools",
+              "url": "https://en.wikipedia.org/wiki/Mootools"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "AJAX",
+              "url": "/ajax/"
+            },
+            {
+              "name": "JavaScript",
+              "url": "/javascript/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

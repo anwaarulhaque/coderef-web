@@ -1,0 +1,41 @@
+{
+  "slug": "windows",
+  "title": "Windows",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Windows.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Windows keyboard shortcuts",
+              "url": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec"
+            },
+            {
+              "name": "Windows commands",
+              "url": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands"
+            },
+            {
+              "name": "Wikipedia Windows",
+              "url": "https://en.wikipedia.org/wiki/Windows"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "An A-Z Index of the Windows NT/XP command line",
+              "url": "http://www.ss64.com/nt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

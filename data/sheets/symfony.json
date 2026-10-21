@@ -1,0 +1,45 @@
+{
+  "slug": "symfony",
+  "title": "Symfony",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Symfony.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Symfony docs",
+              "url": "https://symfony.com/doc/current/index.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.symfony-project.org/"
+            },
+            {
+              "name": "Wikipedia Symfony",
+              "url": "https://en.wikipedia.org/wiki/Symfony"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "PHP",
+              "url": "/php/"
+            },
+            {
+              "name": "Symfony2",
+              "url": "/symfony2/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

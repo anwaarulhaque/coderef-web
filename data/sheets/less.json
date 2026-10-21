@@ -1,0 +1,37 @@
+{
+  "slug": "less",
+  "title": "less",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for less.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Less documentation",
+              "url": "https://lesscss.org/features/"
+            },
+            {
+              "name": "Wikipedia less",
+              "url": "https://en.wikipedia.org/wiki/Less_(Unix)"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Less cheat sheet",
+              "url": "http://sheet.shiar.nl/less"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

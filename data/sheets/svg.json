@@ -1,0 +1,49 @@
+{
+  "slug": "svg",
+  "title": "SVG",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for SVG.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MDN: SVG",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG"
+            },
+            {
+              "name": "SVG element reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element"
+            },
+            {
+              "name": "SVG attribute reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/Graphics/SVG/"
+            },
+            {
+              "name": "Wikipedia SVG",
+              "url": "https://en.wikipedia.org/wiki/Svg"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "SVG Visual Cheat Sheet",
+              "url": "http://www.cheat-sheets.org/own/svg/index.xhtml"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

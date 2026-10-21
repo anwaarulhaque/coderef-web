@@ -1,0 +1,28 @@
+{
+  "slug": "mfc",
+  "title": "MFC",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for MFC.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MFC reference",
+              "url": "https://learn.microsoft.com/en-us/cpp/mfc/mfc-desktop-applications"
+            },
+            {
+              "name": "Wikipedia MFC",
+              "url": "https://en.wikipedia.org/wiki/Microsoft_Foundation_Class_Library"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

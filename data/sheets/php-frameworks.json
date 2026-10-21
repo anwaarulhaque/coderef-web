@@ -1,0 +1,41 @@
+{
+  "slug": "php-frameworks",
+  "title": "PHP Frameworks",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for PHP Frameworks.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Laravel docs",
+              "url": "https://laravel.com/docs"
+            },
+            {
+              "name": "Symfony docs",
+              "url": "https://symfony.com/doc/current/index.html"
+            },
+            {
+              "name": "Wikipedia PHP Frameworks",
+              "url": "https://en.wikipedia.org/wiki/Comparison_of_web_application_frameworks#PHP_2"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "PHP",
+              "url": "/php/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

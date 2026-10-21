@@ -1,0 +1,41 @@
+{
+  "slug": "vvvv",
+  "title": "vvvv",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for vvvv.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "vvvv documentation",
+              "url": "https://thegraybook.vvvv.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://vvvv.org/"
+            },
+            {
+              "name": "Wikipedia vvvv",
+              "url": "https://en.wikipedia.org/wiki/Vvvv"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "don't panic - the nodes guide to vvvv [.pdf]",
+              "url": "http://vvvv.org/sites/default/files/uploads/dontpanic_45beta25_1_0.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

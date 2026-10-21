@@ -1,0 +1,57 @@
+{
+  "slug": "shellscript",
+  "title": "ShellScript",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for ShellScript.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Bash Reference Manual",
+              "url": "https://www.gnu.org/software/bash/manual/bash.html"
+            },
+            {
+              "name": "POSIX Shell Command Language",
+              "url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html"
+            },
+            {
+              "name": "Wikipedia ShellScript",
+              "url": "https://en.wikipedia.org/wiki/Shell_script"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "UNIX / Linux Shell Cheat Sheet [.pdf]",
+              "url": "http://steve-parker.org/sh/cheatsheet.pdf"
+            },
+            {
+              "name": "SHELL PROGRAMMING QUICK REFERENCE GUIDE [.pdf]",
+              "url": "http://www.mikeoliveri.com/utils/shellcheatsheet.pdf"
+            },
+            {
+              "name": "Bourne Shell Quick Reference Card [.pdf]",
+              "url": "http://www.hoomanb.com/cs/QuickRef/bash_ref.pdf"
+            },
+            {
+              "name": "Unix/Linux shell script reference",
+              "url": "http://www.devdaily.com/blog/post/linux-unix/unix-linux-shell-script-reference-cheat-sheet/"
+            },
+            {
+              "name": "Advanced Bash-Scripting Guide [.pdf]",
+              "url": "http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/refcards.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

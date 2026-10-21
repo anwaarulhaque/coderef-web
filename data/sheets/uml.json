@@ -1,0 +1,45 @@
+{
+  "slug": "uml",
+  "title": "UML",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for UML.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "UML (OMG)",
+              "url": "https://www.omg.org/spec/UML/"
+            },
+            {
+              "name": "PlantUML",
+              "url": "https://plantuml.com/"
+            },
+            {
+              "name": "Wikipedia UML",
+              "url": "https://en.wikipedia.org/wiki/Unified_Modeling_Language"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Allen Holub's UML Quick Reference",
+              "url": "http://www.holub.com/goodies/uml/index.html"
+            },
+            {
+              "name": "UML Quick Reference Card [.pdf]",
+              "url": "http://tnerual.eriogerg.free.fr/uml.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

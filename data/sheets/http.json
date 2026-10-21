@@ -1,0 +1,49 @@
+{
+  "slug": "http",
+  "title": "HTTP",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for HTTP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MDN: HTTP",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+            },
+            {
+              "name": "HTTP status codes",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
+            },
+            {
+              "name": "HTTP headers",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
+            },
+            {
+              "name": "RFC 9110 (HTTP Semantics)",
+              "url": "https://www.rfc-editor.org/rfc/rfc9110"
+            },
+            {
+              "name": "Wikipedia HTTP",
+              "url": "https://en.wikipedia.org/wiki/Http"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "HTML",
+              "url": "/html/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

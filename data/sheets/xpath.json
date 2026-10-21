@@ -1,0 +1,90 @@
+{
+  "slug": "xpath",
+  "title": "XPath",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for XPath.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "XPath 3.1 (W3C)",
+              "url": "https://www.w3.org/TR/xpath-31/"
+            },
+            {
+              "name": "MDN: XPath",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/XPath"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/Style/XSL/"
+            },
+            {
+              "name": "Wikipedia XPath",
+              "url": "https://en.wikipedia.org/wiki/XPath"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "XSLT 1.0 and XPath 1.0 Quick Reference [.pdf]",
+              "url": "http://www.mulberrytech.com/quickref/XSLT_1quickref-v2.pdf"
+            },
+            {
+              "name": "XPath, CSS, DOM and Selenium [.pdf]",
+              "url": "http://www.simple-talk.com/dotnet/.net-framework/xpath,-css,-dom-and-selenium-the-rosetta-stone/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "CSS",
+              "url": "/css/"
+            },
+            {
+              "name": "HTML DOM",
+              "url": "/html-dom/"
+            },
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "Selenium",
+              "url": "/selenium/"
+            },
+            {
+              "name": "XHTML",
+              "url": "/xhtml/"
+            },
+            {
+              "name": "XML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XML Schema",
+              "url": "/xml-schema/"
+            },
+            {
+              "name": "XSL",
+              "url": "/xsl/"
+            },
+            {
+              "name": "XSLT",
+              "url": "/xslt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

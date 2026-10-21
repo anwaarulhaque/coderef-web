@@ -1,0 +1,49 @@
+{
+  "slug": "openmp",
+  "title": "OpenMP",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for OpenMP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "OpenMP specifications",
+              "url": "https://www.openmp.org/specifications/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://openmp.org/"
+            },
+            {
+              "name": "Wikipedia OpenMP",
+              "url": "https://en.wikipedia.org/wiki/OpenMP"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "C",
+              "url": "/c/"
+            },
+            {
+              "name": "C++",
+              "url": "/cpp/"
+            },
+            {
+              "name": "Fortran",
+              "url": "/fortran/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

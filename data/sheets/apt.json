@@ -1,0 +1,41 @@
+{
+  "slug": "apt",
+  "title": "Advanced Packaging Tool",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Advanced Packaging Tool.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "apt(8)",
+              "url": "https://manpages.debian.org/apt.8"
+            },
+            {
+              "name": "Debian Handbook: APT",
+              "url": "https://www.debian.org/doc/manuals/debian-handbook/apt.en.html"
+            },
+            {
+              "name": "Wikipedia Advanced Packaging Tool",
+              "url": "https://en.wikipedia.org/wiki/Advanced_Packaging_Tool"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Debian",
+              "url": "/debian/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "prototype",
+  "title": "Prototype",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Prototype.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Prototype API docs",
+              "url": "http://api.prototypejs.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://prototypejs.org/"
+            },
+            {
+              "name": "Wikipedia Prototype",
+              "url": "https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "AJAX",
+              "url": "/ajax/"
+            },
+            {
+              "name": "JavaScript",
+              "url": "/javascript/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

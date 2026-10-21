@@ -1,0 +1,54 @@
+{
+  "slug": "design-pattern",
+  "title": "Design Pattern",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for Design Pattern.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Refactoring.Guru: Design Patterns",
+              "url": "https://refactoring.guru/design-patterns"
+            },
+            {
+              "name": "Wikipedia Design Pattern",
+              "url": "https://en.wikipedia.org/wiki/Design_pattern"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Design Pattern Quick Reference by Jason S. McDonald [.pdf]",
+              "url": "http://www.mcdonaldland.info/2007/11/28/40/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache Camel",
+              "url": "/apache-camel/"
+            },
+            {
+              "name": "Computer Science",
+              "url": "/computer-science/"
+            },
+            {
+              "name": "Tapestry",
+              "url": "/tapestry/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

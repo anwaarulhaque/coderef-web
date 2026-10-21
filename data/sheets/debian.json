@@ -1,0 +1,45 @@
+{
+  "slug": "debian",
+  "title": "Debian",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Debian.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Debian Documentation",
+              "url": "https://www.debian.org/doc/"
+            },
+            {
+              "name": "Debian Reference",
+              "url": "https://www.debian.org/doc/manuals/debian-reference/"
+            },
+            {
+              "name": "Wikipedia Debian",
+              "url": "https://en.wikipedia.org/wiki/Debian"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Linux",
+              "url": "/linux/"
+            },
+            {
+              "name": "Unix",
+              "url": "/unix/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

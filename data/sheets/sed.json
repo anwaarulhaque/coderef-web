@@ -1,0 +1,37 @@
+{
+  "slug": "sed",
+  "title": "Sed",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Sed.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "GNU sed manual",
+              "url": "https://www.gnu.org/software/sed/manual/sed.html"
+            },
+            {
+              "name": "Wikipedia Sed",
+              "url": "https://en.wikipedia.org/wiki/Sed"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Sed Command Summary (sed cheat sheet) [.doc, pdf, txt]",
+              "url": "http://www.catonmat.net/blog/sed-stream-editor-cheat-sheet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

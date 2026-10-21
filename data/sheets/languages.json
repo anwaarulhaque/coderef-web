@@ -1,0 +1,33 @@
+{
+  "slug": "languages",
+  "title": "Languages",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Languages.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Languages",
+              "url": "https://en.wikipedia.org/wiki/Languages"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Codes for the Representation of Names of Languages",
+              "url": "http://www.loc.gov/standards/iso639-2/php/code_list.php"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

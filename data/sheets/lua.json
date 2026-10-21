@@ -1,0 +1,45 @@
+{
+  "slug": "lua",
+  "title": "Lua",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Lua.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Lua 5.4 Reference Manual",
+              "url": "https://www.lua.org/manual/5.4/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.lua.org/"
+            },
+            {
+              "name": "Wikipedia Lua",
+              "url": "https://en.wikipedia.org/wiki/Lua_%28programming_language%29"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Lua 5.1 C API short reference [.pdf]",
+              "url": "http://www.ewald-arnold.de/lua/lua-apiref.pdf"
+            },
+            {
+              "name": "Lua 5.1 C API short reference [.pdf] ·",
+              "url": "http://www.ewald-arnold.de/lua/lua_capi.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

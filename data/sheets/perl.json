@@ -1,0 +1,74 @@
+{
+  "slug": "perl",
+  "title": "Perl",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Perl.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "perldoc",
+              "url": "https://perldoc.perl.org/"
+            },
+            {
+              "name": "perlfunc",
+              "url": "https://perldoc.perl.org/perlfunc"
+            },
+            {
+              "name": "perlcheat",
+              "url": "https://perldoc.perl.org/perlcheat"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.perl.org/"
+            },
+            {
+              "name": "Wikipedia Perl",
+              "url": "https://en.wikipedia.org/wiki/Perl"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Perl Cheat Sheet",
+              "url": "http://juerd.nl/site.plp/perlcheat"
+            },
+            {
+              "name": "Perl Quick Reference Card [.pdf]",
+              "url": "http://johnbokma.com/perl/perl-quick-reference-card.html"
+            },
+            {
+              "name": "Perl Predefined Variables (perl's special variable cheat sheet) [.doc, pdf]",
+              "url": "http://www.catonmat.net/blog/perls-special-variable-cheat-sheet/"
+            },
+            {
+              "name": "Perl pack/unpack Summary (perl's pack/unpack and printf cheat sheet) [.doc, pdf]",
+              "url": "http://www.catonmat.net/blog/perl-pack-unpack-printf-cheat-sheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Catalyst",
+              "url": "/catalyst/"
+            },
+            {
+              "name": "mod_perl",
+              "url": "/mod_perl/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

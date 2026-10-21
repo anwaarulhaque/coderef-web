@@ -1,0 +1,73 @@
+{
+  "slug": "adobe",
+  "title": "Adobe System",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Adobe System.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Adobe Help Center",
+              "url": "https://helpx.adobe.com/"
+            },
+            {
+              "name": "Official",
+              "url": "http://www.adobe.com/"
+            },
+            {
+              "name": "Wikipedia Adobe",
+              "url": "https://en.wikipedia.org/wiki/Adobe_Systems"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "ActionScript",
+              "url": "/actionscript/"
+            },
+            {
+              "name": "Adobe Acrobat",
+              "url": "/adobe-acrobat/"
+            },
+            {
+              "name": "Adobe ColdFusion",
+              "url": "/coldfusion/"
+            },
+            {
+              "name": "Adobe Flash",
+              "url": "/flash/"
+            },
+            {
+              "name": "Adobe Flex",
+              "url": "/flex/"
+            },
+            {
+              "name": "Adobe Illustrator",
+              "url": "/illustrator/"
+            },
+            {
+              "name": "Adobe Photoshop",
+              "url": "/photoshop/"
+            },
+            {
+              "name": "BlazeDS",
+              "url": "/blazeds/"
+            },
+            {
+              "name": "Open Source Media Framework",
+              "url": "/osmf/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "cue",
+  "title": "Cue",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Cue.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Cue",
+              "url": "https://en.wikipedia.org/wiki/Cue_sheet_%28computing%29"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

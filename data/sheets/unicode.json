@@ -1,0 +1,66 @@
+{
+  "slug": "unicode",
+  "title": "Unicode",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Unicode.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Unicode Standard",
+              "url": "https://www.unicode.org/standard/standard.html"
+            },
+            {
+              "name": "Unicode Character Code Charts",
+              "url": "https://www.unicode.org/charts/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.unicode.org/"
+            },
+            {
+              "name": "Wikipedia Unicode",
+              "url": "https://en.wikipedia.org/wiki/Unicode"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "The Unicode Character Code Charts",
+              "url": "http://www.utf.ru/"
+            },
+            {
+              "name": "Free Unicode Fonts",
+              "url": "http://www.font.su/"
+            },
+            {
+              "name": "Die Unicode-Datenbank",
+              "url": "http://www.sql-und-xml.de/unicode-database/"
+            },
+            {
+              "name": "HTML Characters, Numeric Codes, 0-65535",
+              "url": "http://www.visibone.com/htmlref/char/cer.htm"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Characters",
+              "url": "/characters/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

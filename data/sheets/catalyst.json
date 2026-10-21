@@ -1,0 +1,41 @@
+{
+  "slug": "catalyst",
+  "title": "Catalyst",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Catalyst.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Catalyst Manual",
+              "url": "https://metacpan.org/pod/Catalyst::Manual"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.catalystframework.org/"
+            },
+            {
+              "name": "Wikipedia Catalyst",
+              "url": "https://en.wikipedia.org/wiki/Catalyst_(software)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Perl",
+              "url": "/perl/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

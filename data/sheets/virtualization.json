@@ -1,0 +1,41 @@
+{
+  "slug": "virtualization",
+  "title": "Virtualization",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Virtualization.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "KVM",
+              "url": "https://linux-kvm.org/page/Documents"
+            },
+            {
+              "name": "libvirt docs",
+              "url": "https://libvirt.org/docs.html"
+            },
+            {
+              "name": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Virtual_machine"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "VMware",
+              "url": "/vmware/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

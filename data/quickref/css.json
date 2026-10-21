@@ -1,0 +1,286 @@
+{
+  "slug": "css",
+  "updated": "2026-10-14",
+  "title": "CSS",
+  "category": "Web",
+  "color": "#2965f1",
+  "language": "css",
+  "description": "CSS selectors, the box model, flexbox, grid, typography, colors, responsive design, variables and animation.",
+  "docs": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  "try": {
+    "label": "Visual Flexbox & Grid sheets",
+    "href": "/flexbox/"
+  },
+  "sections": [
+    {
+      "title": "Selectors",
+      "description": "Choosing elements to style.",
+      "rows": [
+        [
+          "Element / class / id",
+          [
+            "p { }",
+            ".card { }",
+            "#header { }"
+          ]
+        ],
+        [
+          "Descendant / direct child",
+          [
+            ".nav a { }",
+            ".nav > a { }"
+          ]
+        ],
+        [
+          "Group selectors",
+          "h1, h2, h3 { }"
+        ],
+        [
+          "Attribute",
+          [
+            "[type=\"email\"] { }",
+            "a[href^=\"https\"] { }"
+          ]
+        ],
+        [
+          "States",
+          [
+            "a:hover { }",
+            "button:focus-visible { }",
+            "input:disabled { }"
+          ]
+        ],
+        [
+          "Position in parent",
+          [
+            "li:first-child { }",
+            "li:nth-child(2n) { }",
+            "li:last-child { }"
+          ]
+        ],
+        [
+          "Not / has",
+          [
+            "li:not(.done) { }",
+            ".card:has(img) { }"
+          ]
+        ],
+        [
+          "Before / after content",
+          ".required::after { content: \"*\"; }"
+        ]
+      ]
+    },
+    {
+      "title": "Box model & spacing",
+      "description": "Size, padding, borders and margins.",
+      "rows": [
+        [
+          "Include padding in width",
+          "*, *::before, *::after { box-sizing: border-box; }"
+        ],
+        [
+          "Padding / margin",
+          [
+            "padding: 16px;",
+            "padding: 8px 16px;",
+            "margin: 0 auto;  /* center a block */"
+          ]
+        ],
+        [
+          "Width limits",
+          [
+            "max-width: 60rem;",
+            "min-height: 100vh;"
+          ]
+        ],
+        [
+          "Border",
+          [
+            "border: 1px solid #ddd;",
+            "border-radius: 8px;"
+          ]
+        ],
+        [
+          "Shadow",
+          "box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);"
+        ],
+        [
+          "Hide overflow / scroll",
+          [
+            "overflow: hidden;",
+            "overflow-y: auto;"
+          ]
+        ],
+        [
+          "Aspect ratio",
+          "aspect-ratio: 16 / 9;"
+        ]
+      ]
+    },
+    {
+      "title": "Layout",
+      "description": "Flexbox, grid and positioning.",
+      "rows": [
+        [
+          "Row with space between",
+          ".row {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 1rem;\n}"
+        ],
+        [
+          "Center anything",
+          ".center {\n  display: grid;\n  place-items: center;\n}"
+        ],
+        [
+          "Wrap items",
+          "flex-wrap: wrap;"
+        ],
+        [
+          "Item fills remaining space",
+          "flex: 1;"
+        ],
+        [
+          "Responsive card grid",
+          ".grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));\n  gap: 1rem;\n}"
+        ],
+        [
+          "Span grid columns",
+          "grid-column: span 2;"
+        ],
+        [
+          "Position over a parent",
+          [
+            ".parent { position: relative; }",
+            ".badge { position: absolute; top: 0; right: 0; }"
+          ]
+        ],
+        [
+          "Sticky header",
+          "position: sticky;\ntop: 0;"
+        ],
+        [
+          "Stack order",
+          "z-index: 10;"
+        ]
+      ]
+    },
+    {
+      "title": "Typography & color",
+      "description": "Text and colors.",
+      "rows": [
+        [
+          "Font",
+          [
+            "font-family: system-ui, sans-serif;",
+            "font-size: 1.125rem;",
+            "font-weight: 600;"
+          ]
+        ],
+        [
+          "Line height / letter spacing",
+          [
+            "line-height: 1.6;",
+            "letter-spacing: 0.02em;"
+          ]
+        ],
+        [
+          "Align / transform",
+          [
+            "text-align: center;",
+            "text-transform: uppercase;"
+          ]
+        ],
+        [
+          "Truncate with …",
+          "white-space: nowrap;\noverflow: hidden;\ntext-overflow: ellipsis;"
+        ],
+        [
+          "Balanced headings",
+          "text-wrap: balance;"
+        ],
+        [
+          "Colors",
+          [
+            "color: #2563eb;",
+            "background: rgb(37 99 235 / 0.1);",
+            "color: oklch(60% 0.2 260);"
+          ]
+        ],
+        [
+          "Gradient",
+          "background: linear-gradient(135deg, #2563eb, #9333ea);"
+        ],
+        [
+          "Load a web font",
+          "@import url(\"https://fonts.googleapis.com/css2?family=Inter&display=swap\");"
+        ]
+      ]
+    },
+    {
+      "title": "Responsive",
+      "description": "Adapting to screen size.",
+      "rows": [
+        [
+          "Media query",
+          "@media (min-width: 768px) {\n  .sidebar { display: block; }\n}"
+        ],
+        [
+          "Dark mode",
+          "@media (prefers-color-scheme: dark) {\n  body { background: #111; color: #eee; }\n}"
+        ],
+        [
+          "Reduced motion",
+          "@media (prefers-reduced-motion: reduce) {\n  * { animation: none; transition: none; }\n}"
+        ],
+        [
+          "Fluid size",
+          "font-size: clamp(1rem, 2.5vw, 2rem);"
+        ],
+        [
+          "Container query",
+          ".cards { container-type: inline-size; }\n@container (min-width: 500px) {\n  .card { display: flex; }\n}"
+        ],
+        [
+          "Responsive image",
+          "img { max-width: 100%; height: auto; }"
+        ]
+      ]
+    },
+    {
+      "title": "Variables & effects",
+      "description": "Custom properties, transitions and animation.",
+      "rows": [
+        [
+          "Define and use a variable",
+          ":root { --brand: #2563eb; }\n.button { background: var(--brand); }"
+        ],
+        [
+          "Variable with fallback",
+          "color: var(--text, #111);"
+        ],
+        [
+          "Transition",
+          "transition: transform 200ms ease, opacity 200ms ease;"
+        ],
+        [
+          "Transform",
+          [
+            "transform: translateY(-4px);",
+            "transform: rotate(45deg) scale(1.1);"
+          ]
+        ],
+        [
+          "Keyframe animation",
+          "@keyframes spin {\n  to { transform: rotate(360deg); }\n}\n.loader { animation: spin 1s linear infinite; }"
+        ],
+        [
+          "Visually hidden (screen-reader only)",
+          ".sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  overflow: hidden;\n  clip: rect(0 0 0 0);\n  white-space: nowrap;\n}"
+        ],
+        [
+          "Nesting",
+          ".card {\n  padding: 1rem;\n  & h2 { margin: 0; }\n  &:hover { box-shadow: 0 2px 8px #0002; }\n}"
+        ]
+      ]
+    }
+  ]
+}

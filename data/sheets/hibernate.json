@@ -1,0 +1,41 @@
+{
+  "slug": "hibernate",
+  "title": "Hibernate",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Hibernate.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Hibernate ORM docs",
+              "url": "https://hibernate.org/orm/documentation/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.hibernate.org/"
+            },
+            {
+              "name": "Wikipedia Hibernate",
+              "url": "https://en.wikipedia.org/wiki/Hibernate_(Java)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

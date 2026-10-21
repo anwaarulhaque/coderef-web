@@ -1,0 +1,32 @@
+{
+  "slug": "fitnesse",
+  "title": "FitNesse",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for FitNesse.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "FitNesse User Guide",
+              "url": "https://fitnesse.org/FitNesse/UserGuide.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.fitnesse.org/"
+            },
+            {
+              "name": "Wikipedia FitNesse",
+              "url": "https://en.wikipedia.org/wiki/FitNesse"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

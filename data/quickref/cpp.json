@@ -1,0 +1,229 @@
+{
+  "slug": "cpp",
+  "updated": "2026-10-14",
+  "title": "C++",
+  "category": "Languages",
+  "color": "#00599c",
+  "language": "cpp",
+  "description": "Modern C++: I/O, strings, vectors, maps, algorithms, classes, smart pointers, lambdas and compiling.",
+  "docs": "https://en.cppreference.com/w/cpp",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Program structure and I/O.",
+      "rows": [
+        [
+          "Hello world",
+          "#include <iostream>\n\nint main() {\n    std::cout << \"Hello\\n\";\n}"
+        ],
+        [
+          "Variables",
+          [
+            "int count = 10;",
+            "auto price = 9.99;",
+            "const int max = 100;"
+          ]
+        ],
+        [
+          "Read input",
+          "int n;\nstd::cin >> n;"
+        ],
+        [
+          "Read a whole line",
+          "std::string line;\nstd::getline(std::cin, line);"
+        ],
+        [
+          "Format (C++20)",
+          "#include <format>\nstd::string s = std::format(\"{} is {}\", name, age);"
+        ]
+      ]
+    },
+    {
+      "title": "Strings",
+      "description": "std::string.",
+      "rows": [
+        [
+          "Create / length",
+          [
+            "std::string s = \"Ada\";",
+            "s.size()"
+          ]
+        ],
+        [
+          "Concatenate",
+          "s + \" Lovelace\""
+        ],
+        [
+          "Substring / find",
+          [
+            "s.substr(0, 3)",
+            "s.find(\"da\") != std::string::npos"
+          ]
+        ],
+        [
+          "Convert numbers",
+          [
+            "std::to_string(42)",
+            "std::stoi(\"42\")",
+            "std::stod(\"3.5\")"
+          ]
+        ],
+        [
+          "Compare",
+          "a == b"
+        ]
+      ]
+    },
+    {
+      "title": "Containers",
+      "description": "Vectors, maps and sets.",
+      "rows": [
+        [
+          "Vector",
+          [
+            "std::vector<int> nums = {3, 1, 2};",
+            "nums.push_back(4);"
+          ]
+        ],
+        [
+          "Access / size",
+          [
+            "nums[0]",
+            "nums.at(0)",
+            "nums.size()"
+          ]
+        ],
+        [
+          "Loop",
+          [
+            "for (int n : nums) { }",
+            "for (const auto& item : items) { }"
+          ]
+        ],
+        [
+          "Map",
+          "std::map<std::string, int> ages;\nages[\"Ada\"] = 36;"
+        ],
+        [
+          "Hash map / find",
+          [
+            "std::unordered_map<std::string, int> m;",
+            "if (m.contains(\"Ada\")) { }  // C++20"
+          ]
+        ],
+        [
+          "Set",
+          "std::set<int> s = {3, 1, 2};"
+        ],
+        [
+          "Pair / tuple",
+          [
+            "auto p = std::make_pair(1, \"a\");",
+            "auto [x, y] = p;  // structured binding"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Algorithms",
+      "description": "<algorithm> and ranges.",
+      "rows": [
+        [
+          "Sort",
+          [
+            "std::sort(nums.begin(), nums.end());",
+            "std::ranges::sort(nums);"
+          ]
+        ],
+        [
+          "Sort descending / by key",
+          "std::ranges::sort(users, {}, &User::age);"
+        ],
+        [
+          "Find",
+          "auto it = std::ranges::find(nums, 3);"
+        ],
+        [
+          "Count / sum",
+          [
+            "std::ranges::count(nums, 3)",
+            "std::accumulate(nums.begin(), nums.end(), 0)"
+          ]
+        ],
+        [
+          "Min / max",
+          "auto [lo, hi] = std::ranges::minmax(nums);"
+        ],
+        [
+          "Reverse",
+          "std::ranges::reverse(nums);"
+        ]
+      ]
+    },
+    {
+      "title": "Classes & memory",
+      "description": "Objects and ownership.",
+      "rows": [
+        [
+          "Class",
+          "class Dog {\npublic:\n    explicit Dog(std::string name) : name_(std::move(name)) {}\n    std::string bark() const { return \"Woof\"; }\nprivate:\n    std::string name_;\n};"
+        ],
+        [
+          "Inheritance",
+          "class Puppy : public Dog {\n    using Dog::Dog;\n};"
+        ],
+        [
+          "Virtual method",
+          [
+            "virtual double area() const = 0;",
+            "double area() const override { }"
+          ]
+        ],
+        [
+          "Unique pointer",
+          "auto dog = std::make_unique<Dog>(\"Rex\");"
+        ],
+        [
+          "Shared pointer",
+          "auto cfg = std::make_shared<Config>();"
+        ],
+        [
+          "Lambda",
+          [
+            "auto add = [](int a, int b) { return a + b; };",
+            "[&total](int n) { total += n; }"
+          ]
+        ],
+        [
+          "Struct",
+          "struct Point { int x = 0; int y = 0; };"
+        ]
+      ]
+    },
+    {
+      "title": "Errors & building",
+      "description": "Exceptions and compiling.",
+      "rows": [
+        [
+          "Try / catch",
+          "try {\n    risky();\n} catch (const std::exception& e) {\n    std::cerr << e.what() << '\\n';\n}"
+        ],
+        [
+          "Throw",
+          "throw std::runtime_error(\"something failed\");"
+        ],
+        [
+          "Optional",
+          "std::optional<int> find_id(); if (auto id = find_id()) { }"
+        ],
+        [
+          "Compile",
+          [
+            "g++ -std=c++20 -Wall main.cpp -o app",
+            "clang++ -std=c++20 -O2 main.cpp -o app"
+          ]
+        ]
+      ]
+    }
+  ]
+}

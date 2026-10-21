@@ -1,0 +1,42 @@
+{
+  "slug": "guitar",
+  "title": "Guitar",
+  "category": "Miscellaneous",
+  "description": "Reference links and cheat sheets for Guitar.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Guitar",
+              "url": "https://en.wikipedia.org/wiki/Guitar"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Tom's Guitar Cheat Sheet [.gif, pdf]",
+              "url": "http://www.halfhill.com/guitar.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Music",
+              "url": "/music/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

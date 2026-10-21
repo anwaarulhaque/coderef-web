@@ -1,0 +1,41 @@
+{
+  "slug": "tlds",
+  "title": "TLDs",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for TLDs.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IANA Root Zone Database",
+              "url": "https://www.iana.org/domains/root/db"
+            },
+            {
+              "name": "Wikipedia Top-Level domains",
+              "url": "https://en.wikipedia.org/wiki/TLDs"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "VisiBone Country Chart [.jpg]",
+              "url": "http://www.visibone.com/countries/"
+            },
+            {
+              "name": "Country Code Splist VisiBone's “split list” of Internet Country Codes",
+              "url": "http://www.visibone.com/countrycodes/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

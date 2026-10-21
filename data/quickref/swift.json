@@ -1,0 +1,184 @@
+{
+  "slug": "swift",
+  "updated": "2026-10-14",
+  "title": "Swift",
+  "category": "Languages",
+  "color": "#f05138",
+  "language": "swift",
+  "description": "Swift essentials: constants, optionals, strings, collections, control flow, functions, closures, structs, classes and protocols.",
+  "docs": "https://docs.swift.org/swift-book/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Constants, variables and output.",
+      "rows": [
+        [
+          "Constant / variable",
+          [
+            "let name = \"Ada\"",
+            "var count = 0"
+          ]
+        ],
+        [
+          "Type annotation",
+          "let price: Double = 9.99"
+        ],
+        [
+          "Print",
+          [
+            "print(\"Hello\")",
+            "print(\"\\(name) is \\(age)\")"
+          ]
+        ],
+        [
+          "Convert",
+          [
+            "Int(\"42\")  // Int?",
+            "String(42)",
+            "Double(n)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Optionals",
+      "description": "Values that might be missing.",
+      "rows": [
+        [
+          "Declare",
+          "var nickname: String? = nil"
+        ],
+        [
+          "Unwrap safely",
+          "if let nickname {\n    print(nickname)\n}"
+        ],
+        [
+          "Guard",
+          "guard let user else { return }"
+        ],
+        [
+          "Default",
+          "let name = nickname ?? \"guest\""
+        ],
+        [
+          "Optional chaining",
+          "user?.address?.city"
+        ]
+      ]
+    },
+    {
+      "title": "Collections",
+      "description": "Arrays, dictionaries and sets.",
+      "rows": [
+        [
+          "Array",
+          [
+            "var nums = [3, 1, 2]",
+            "nums.append(4)",
+            "nums.count"
+          ]
+        ],
+        [
+          "Transform",
+          [
+            "nums.map { $0 * 2 }",
+            "nums.filter { $0 > 1 }",
+            "nums.reduce(0, +)"
+          ]
+        ],
+        [
+          "Sort",
+          [
+            "nums.sorted()",
+            "users.sorted { $0.age < $1.age }"
+          ]
+        ],
+        [
+          "Reverse",
+          [
+            "nums.reverse()",
+            "nums.reversed()"
+          ]
+        ],
+        [
+          "Dictionary",
+          "var ages = [\"Ada\": 36]\nages[\"Bob\"] = 40\nages[\"Ada\", default: 0]"
+        ],
+        [
+          "Loop",
+          [
+            "for n in nums { }",
+            "for (key, value) in ages { }",
+            "for (i, n) in nums.enumerated() { }"
+          ]
+        ],
+        [
+          "Set",
+          "let tags: Set = [\"a\", \"b\"]"
+        ]
+      ]
+    },
+    {
+      "title": "Control flow & functions",
+      "description": "Logic and reuse.",
+      "rows": [
+        [
+          "If / switch",
+          [
+            "if x > 0 { } else { }",
+            "switch n {\ncase 0: print(\"zero\")\ncase 1...9: print(\"small\")\ndefault: print(\"big\")\n}"
+          ]
+        ],
+        [
+          "Ranges",
+          [
+            "for i in 0..<5 { }",
+            "for i in 1...5 { }"
+          ]
+        ],
+        [
+          "Function",
+          "func greet(_ name: String, loudly: Bool = false) -> String {\n    loudly ? name.uppercased() : name\n}"
+        ],
+        [
+          "Closure",
+          "let square = { (n: Int) in n * n }"
+        ],
+        [
+          "Async / await",
+          "func load() async throws -> Data {\n    let (data, _) = try await URLSession.shared.data(from: url)\n    return data\n}"
+        ]
+      ]
+    },
+    {
+      "title": "Types",
+      "description": "Structs, classes, enums and protocols.",
+      "rows": [
+        [
+          "Struct",
+          "struct Point {\n    var x: Int\n    var y: Int\n}"
+        ],
+        [
+          "Class",
+          "class Dog {\n    let name: String\n    init(name: String) { self.name = name }\n}"
+        ],
+        [
+          "Enum with associated values",
+          "enum Shape {\n    case circle(radius: Double)\n    case square(size: Double)\n}"
+        ],
+        [
+          "Protocol",
+          "protocol Shape {\n    func area() -> Double\n}"
+        ],
+        [
+          "Extension",
+          "extension Int {\n    var isEven: Bool { self % 2 == 0 }\n}"
+        ],
+        [
+          "Errors",
+          "do {\n    try risky()\n} catch {\n    print(error)\n}"
+        ]
+      ]
+    }
+  ]
+}

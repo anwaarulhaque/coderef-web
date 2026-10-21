@@ -1,0 +1,1204 @@
+{
+  "slug": "php",
+  "title": "PHP",
+  "category": "Languages",
+  "color": "#777bb4",
+  "description": "PHP functions for strings, arrays, files, JSON and dates, plus core language features.",
+  "reference": "https://www.php.net/manual/en/funcref.php",
+  "sections": [
+    {
+      "title": "Strings",
+      "groups": [
+        {
+          "title": "Inspect",
+          "items": [
+            {
+              "name": "strlen",
+              "url": "https://www.php.net/manual/en/function.strlen.php"
+            },
+            {
+              "name": "str_contains",
+              "url": "https://www.php.net/manual/en/function.str-contains.php"
+            },
+            {
+              "name": "str_starts_with",
+              "url": "https://www.php.net/manual/en/function.str-starts-with.php"
+            },
+            {
+              "name": "str_ends_with",
+              "url": "https://www.php.net/manual/en/function.str-ends-with.php"
+            },
+            {
+              "name": "strpos",
+              "url": "https://www.php.net/manual/en/function.strpos.php"
+            },
+            {
+              "name": "stripos",
+              "url": "https://www.php.net/manual/en/function.stripos.php"
+            },
+            {
+              "name": "strrpos",
+              "url": "https://www.php.net/manual/en/function.strrpos.php"
+            },
+            {
+              "name": "strcmp",
+              "url": "https://www.php.net/manual/en/function.strcmp.php"
+            },
+            {
+              "name": "strcasecmp",
+              "url": "https://www.php.net/manual/en/function.strcasecmp.php"
+            },
+            {
+              "name": "similar_text",
+              "url": "https://www.php.net/manual/en/function.similar-text.php"
+            },
+            {
+              "name": "levenshtein",
+              "url": "https://www.php.net/manual/en/function.levenshtein.php"
+            }
+          ]
+        },
+        {
+          "title": "Transform",
+          "items": [
+            {
+              "name": "substr",
+              "url": "https://www.php.net/manual/en/function.substr.php"
+            },
+            {
+              "name": "str_replace",
+              "url": "https://www.php.net/manual/en/function.str-replace.php"
+            },
+            {
+              "name": "str_ireplace",
+              "url": "https://www.php.net/manual/en/function.str-ireplace.php"
+            },
+            {
+              "name": "str_repeat",
+              "url": "https://www.php.net/manual/en/function.str-repeat.php"
+            },
+            {
+              "name": "str_pad",
+              "url": "https://www.php.net/manual/en/function.str-pad.php"
+            },
+            {
+              "name": "str_split",
+              "url": "https://www.php.net/manual/en/function.str-split.php"
+            },
+            {
+              "name": "strtolower",
+              "url": "https://www.php.net/manual/en/function.strtolower.php"
+            },
+            {
+              "name": "strtoupper",
+              "url": "https://www.php.net/manual/en/function.strtoupper.php"
+            },
+            {
+              "name": "ucfirst",
+              "url": "https://www.php.net/manual/en/function.ucfirst.php"
+            },
+            {
+              "name": "ucwords",
+              "url": "https://www.php.net/manual/en/function.ucwords.php"
+            },
+            {
+              "name": "lcfirst",
+              "url": "https://www.php.net/manual/en/function.lcfirst.php"
+            },
+            {
+              "name": "trim",
+              "url": "https://www.php.net/manual/en/function.trim.php"
+            },
+            {
+              "name": "ltrim",
+              "url": "https://www.php.net/manual/en/function.ltrim.php"
+            },
+            {
+              "name": "rtrim",
+              "url": "https://www.php.net/manual/en/function.rtrim.php"
+            },
+            {
+              "name": "strrev",
+              "url": "https://www.php.net/manual/en/function.strrev.php"
+            },
+            {
+              "name": "wordwrap",
+              "url": "https://www.php.net/manual/en/function.wordwrap.php"
+            },
+            {
+              "name": "nl2br",
+              "url": "https://www.php.net/manual/en/function.nl2br.php"
+            }
+          ]
+        },
+        {
+          "title": "Format & Split",
+          "items": [
+            {
+              "name": "explode",
+              "url": "https://www.php.net/manual/en/function.explode.php"
+            },
+            {
+              "name": "implode",
+              "url": "https://www.php.net/manual/en/function.implode.php"
+            },
+            {
+              "name": "sprintf",
+              "url": "https://www.php.net/manual/en/function.sprintf.php"
+            },
+            {
+              "name": "printf",
+              "url": "https://www.php.net/manual/en/function.printf.php"
+            },
+            {
+              "name": "number_format",
+              "url": "https://www.php.net/manual/en/function.number-format.php"
+            },
+            {
+              "name": "htmlspecialchars",
+              "url": "https://www.php.net/manual/en/function.htmlspecialchars.php"
+            },
+            {
+              "name": "strip_tags",
+              "url": "https://www.php.net/manual/en/function.strip-tags.php"
+            },
+            {
+              "name": "addslashes",
+              "url": "https://www.php.net/manual/en/function.addslashes.php"
+            },
+            {
+              "name": "md5",
+              "url": "https://www.php.net/manual/en/function.md5.php"
+            },
+            {
+              "name": "sha1",
+              "url": "https://www.php.net/manual/en/function.sha1.php"
+            }
+          ]
+        },
+        {
+          "title": "Multibyte",
+          "items": [
+            {
+              "name": "mb_strlen",
+              "url": "https://www.php.net/manual/en/function.mb-strlen.php"
+            },
+            {
+              "name": "mb_substr",
+              "url": "https://www.php.net/manual/en/function.mb-substr.php"
+            },
+            {
+              "name": "mb_strtoupper",
+              "url": "https://www.php.net/manual/en/function.mb-strtoupper.php"
+            },
+            {
+              "name": "mb_strtolower",
+              "url": "https://www.php.net/manual/en/function.mb-strtolower.php"
+            },
+            {
+              "name": "mb_str_split",
+              "url": "https://www.php.net/manual/en/function.mb-str-split.php"
+            },
+            {
+              "name": "mb_str_pad",
+              "url": "https://www.php.net/manual/en/function.mb-str-pad.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arrays",
+      "groups": [
+        {
+          "title": "Functional",
+          "items": [
+            {
+              "name": "array_map",
+              "url": "https://www.php.net/manual/en/function.array-map.php"
+            },
+            {
+              "name": "array_filter",
+              "url": "https://www.php.net/manual/en/function.array-filter.php"
+            },
+            {
+              "name": "array_reduce",
+              "url": "https://www.php.net/manual/en/function.array-reduce.php"
+            },
+            {
+              "name": "array_walk",
+              "url": "https://www.php.net/manual/en/function.array-walk.php"
+            },
+            {
+              "name": "array_find",
+              "url": "https://www.php.net/manual/en/function.array-find.php"
+            },
+            {
+              "name": "array_any",
+              "url": "https://www.php.net/manual/en/function.array-any.php"
+            },
+            {
+              "name": "array_all",
+              "url": "https://www.php.net/manual/en/function.array-all.php"
+            }
+          ]
+        },
+        {
+          "title": "Keys & Values",
+          "items": [
+            {
+              "name": "array_keys",
+              "url": "https://www.php.net/manual/en/function.array-keys.php"
+            },
+            {
+              "name": "array_values",
+              "url": "https://www.php.net/manual/en/function.array-values.php"
+            },
+            {
+              "name": "array_key_exists",
+              "url": "https://www.php.net/manual/en/function.array-key-exists.php"
+            },
+            {
+              "name": "array_key_first",
+              "url": "https://www.php.net/manual/en/function.array-key-first.php"
+            },
+            {
+              "name": "array_key_last",
+              "url": "https://www.php.net/manual/en/function.array-key-last.php"
+            },
+            {
+              "name": "array_search",
+              "url": "https://www.php.net/manual/en/function.array-search.php"
+            },
+            {
+              "name": "in_array",
+              "url": "https://www.php.net/manual/en/function.in-array.php"
+            },
+            {
+              "name": "array_flip",
+              "url": "https://www.php.net/manual/en/function.array-flip.php"
+            },
+            {
+              "name": "array_column",
+              "url": "https://www.php.net/manual/en/function.array-column.php"
+            },
+            {
+              "name": "array_combine",
+              "url": "https://www.php.net/manual/en/function.array-combine.php"
+            },
+            {
+              "name": "array_is_list",
+              "url": "https://www.php.net/manual/en/function.array-is-list.php"
+            }
+          ]
+        },
+        {
+          "title": "Build & Combine",
+          "items": [
+            {
+              "name": "array_merge",
+              "url": "https://www.php.net/manual/en/function.array-merge.php"
+            },
+            {
+              "name": "array_slice",
+              "url": "https://www.php.net/manual/en/function.array-slice.php"
+            },
+            {
+              "name": "array_splice",
+              "url": "https://www.php.net/manual/en/function.array-splice.php"
+            },
+            {
+              "name": "array_chunk",
+              "url": "https://www.php.net/manual/en/function.array-chunk.php"
+            },
+            {
+              "name": "array_fill",
+              "url": "https://www.php.net/manual/en/function.array-fill.php"
+            },
+            {
+              "name": "array_unique",
+              "url": "https://www.php.net/manual/en/function.array-unique.php"
+            },
+            {
+              "name": "array_reverse",
+              "url": "https://www.php.net/manual/en/function.array-reverse.php"
+            },
+            {
+              "name": "array_diff",
+              "url": "https://www.php.net/manual/en/function.array-diff.php"
+            },
+            {
+              "name": "array_intersect",
+              "url": "https://www.php.net/manual/en/function.array-intersect.php"
+            },
+            {
+              "name": "range",
+              "url": "https://www.php.net/manual/en/function.range.php"
+            },
+            {
+              "name": "compact",
+              "url": "https://www.php.net/manual/en/function.compact.php"
+            },
+            {
+              "name": "extract",
+              "url": "https://www.php.net/manual/en/function.extract.php"
+            }
+          ]
+        },
+        {
+          "title": "Stack & Math",
+          "items": [
+            {
+              "name": "array_push",
+              "url": "https://www.php.net/manual/en/function.array-push.php"
+            },
+            {
+              "name": "array_pop",
+              "url": "https://www.php.net/manual/en/function.array-pop.php"
+            },
+            {
+              "name": "array_shift",
+              "url": "https://www.php.net/manual/en/function.array-shift.php"
+            },
+            {
+              "name": "array_unshift",
+              "url": "https://www.php.net/manual/en/function.array-unshift.php"
+            },
+            {
+              "name": "array_sum",
+              "url": "https://www.php.net/manual/en/function.array-sum.php"
+            },
+            {
+              "name": "array_product",
+              "url": "https://www.php.net/manual/en/function.array-product.php"
+            },
+            {
+              "name": "count",
+              "url": "https://www.php.net/manual/en/function.count.php"
+            }
+          ]
+        },
+        {
+          "title": "Sorting",
+          "items": [
+            {
+              "name": "sort",
+              "url": "https://www.php.net/manual/en/function.sort.php"
+            },
+            {
+              "name": "rsort",
+              "url": "https://www.php.net/manual/en/function.rsort.php"
+            },
+            {
+              "name": "usort",
+              "url": "https://www.php.net/manual/en/function.usort.php"
+            },
+            {
+              "name": "uasort",
+              "url": "https://www.php.net/manual/en/function.uasort.php"
+            },
+            {
+              "name": "uksort",
+              "url": "https://www.php.net/manual/en/function.uksort.php"
+            },
+            {
+              "name": "asort",
+              "url": "https://www.php.net/manual/en/function.asort.php"
+            },
+            {
+              "name": "arsort",
+              "url": "https://www.php.net/manual/en/function.arsort.php"
+            },
+            {
+              "name": "ksort",
+              "url": "https://www.php.net/manual/en/function.ksort.php"
+            },
+            {
+              "name": "krsort",
+              "url": "https://www.php.net/manual/en/function.krsort.php"
+            },
+            {
+              "name": "natsort",
+              "url": "https://www.php.net/manual/en/function.natsort.php"
+            },
+            {
+              "name": "shuffle",
+              "url": "https://www.php.net/manual/en/function.shuffle.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Math",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "abs",
+              "url": "https://www.php.net/manual/en/function.abs.php"
+            },
+            {
+              "name": "ceil",
+              "url": "https://www.php.net/manual/en/function.ceil.php"
+            },
+            {
+              "name": "floor",
+              "url": "https://www.php.net/manual/en/function.floor.php"
+            },
+            {
+              "name": "round",
+              "url": "https://www.php.net/manual/en/function.round.php"
+            },
+            {
+              "name": "max",
+              "url": "https://www.php.net/manual/en/function.max.php"
+            },
+            {
+              "name": "min",
+              "url": "https://www.php.net/manual/en/function.min.php"
+            },
+            {
+              "name": "pow",
+              "url": "https://www.php.net/manual/en/function.pow.php"
+            },
+            {
+              "name": "sqrt",
+              "url": "https://www.php.net/manual/en/function.sqrt.php"
+            },
+            {
+              "name": "intdiv",
+              "url": "https://www.php.net/manual/en/function.intdiv.php"
+            },
+            {
+              "name": "fmod",
+              "url": "https://www.php.net/manual/en/function.fmod.php"
+            },
+            {
+              "name": "random_int",
+              "url": "https://www.php.net/manual/en/function.random-int.php"
+            },
+            {
+              "name": "rand",
+              "url": "https://www.php.net/manual/en/function.rand.php"
+            },
+            {
+              "name": "pi",
+              "url": "https://www.php.net/manual/en/function.pi.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variables",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "isset",
+              "url": "https://www.php.net/manual/en/function.isset.php"
+            },
+            {
+              "name": "empty",
+              "url": "https://www.php.net/manual/en/function.empty.php"
+            },
+            {
+              "name": "unset",
+              "url": "https://www.php.net/manual/en/function.unset.php"
+            },
+            {
+              "name": "is_null",
+              "url": "https://www.php.net/manual/en/function.is-null.php"
+            },
+            {
+              "name": "is_array",
+              "url": "https://www.php.net/manual/en/function.is-array.php"
+            },
+            {
+              "name": "is_string",
+              "url": "https://www.php.net/manual/en/function.is-string.php"
+            },
+            {
+              "name": "is_int",
+              "url": "https://www.php.net/manual/en/function.is-int.php"
+            },
+            {
+              "name": "is_numeric",
+              "url": "https://www.php.net/manual/en/function.is-numeric.php"
+            },
+            {
+              "name": "is_bool",
+              "url": "https://www.php.net/manual/en/function.is-bool.php"
+            },
+            {
+              "name": "is_callable",
+              "url": "https://www.php.net/manual/en/function.is-callable.php"
+            },
+            {
+              "name": "gettype",
+              "url": "https://www.php.net/manual/en/function.gettype.php"
+            },
+            {
+              "name": "get_debug_type",
+              "url": "https://www.php.net/manual/en/function.get-debug-type.php"
+            },
+            {
+              "name": "var_dump",
+              "url": "https://www.php.net/manual/en/function.var-dump.php"
+            },
+            {
+              "name": "print_r",
+              "url": "https://www.php.net/manual/en/function.print-r.php"
+            },
+            {
+              "name": "var_export",
+              "url": "https://www.php.net/manual/en/function.var-export.php"
+            },
+            {
+              "name": "serialize",
+              "url": "https://www.php.net/manual/en/function.serialize.php"
+            },
+            {
+              "name": "unserialize",
+              "url": "https://www.php.net/manual/en/function.unserialize.php"
+            },
+            {
+              "name": "intval",
+              "url": "https://www.php.net/manual/en/function.intval.php"
+            },
+            {
+              "name": "floatval",
+              "url": "https://www.php.net/manual/en/function.floatval.php"
+            },
+            {
+              "name": "boolval",
+              "url": "https://www.php.net/manual/en/function.boolval.php"
+            },
+            {
+              "name": "strval",
+              "url": "https://www.php.net/manual/en/function.strval.php"
+            },
+            {
+              "name": "settype",
+              "url": "https://www.php.net/manual/en/function.settype.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Files",
+      "groups": [
+        {
+          "title": "Read & Write",
+          "items": [
+            {
+              "name": "file_get_contents",
+              "url": "https://www.php.net/manual/en/function.file-get-contents.php"
+            },
+            {
+              "name": "file_put_contents",
+              "url": "https://www.php.net/manual/en/function.file-put-contents.php"
+            },
+            {
+              "name": "file",
+              "url": "https://www.php.net/manual/en/function.file.php"
+            },
+            {
+              "name": "fopen",
+              "url": "https://www.php.net/manual/en/function.fopen.php"
+            },
+            {
+              "name": "fclose",
+              "url": "https://www.php.net/manual/en/function.fclose.php"
+            },
+            {
+              "name": "fread",
+              "url": "https://www.php.net/manual/en/function.fread.php"
+            },
+            {
+              "name": "fwrite",
+              "url": "https://www.php.net/manual/en/function.fwrite.php"
+            },
+            {
+              "name": "fgets",
+              "url": "https://www.php.net/manual/en/function.fgets.php"
+            },
+            {
+              "name": "feof",
+              "url": "https://www.php.net/manual/en/function.feof.php"
+            },
+            {
+              "name": "fputcsv",
+              "url": "https://www.php.net/manual/en/function.fputcsv.php"
+            },
+            {
+              "name": "fgetcsv",
+              "url": "https://www.php.net/manual/en/function.fgetcsv.php"
+            }
+          ]
+        },
+        {
+          "title": "Filesystem",
+          "items": [
+            {
+              "name": "file_exists",
+              "url": "https://www.php.net/manual/en/function.file-exists.php"
+            },
+            {
+              "name": "is_file",
+              "url": "https://www.php.net/manual/en/function.is-file.php"
+            },
+            {
+              "name": "is_dir",
+              "url": "https://www.php.net/manual/en/function.is-dir.php"
+            },
+            {
+              "name": "mkdir",
+              "url": "https://www.php.net/manual/en/function.mkdir.php"
+            },
+            {
+              "name": "rmdir",
+              "url": "https://www.php.net/manual/en/function.rmdir.php"
+            },
+            {
+              "name": "unlink",
+              "url": "https://www.php.net/manual/en/function.unlink.php"
+            },
+            {
+              "name": "rename",
+              "url": "https://www.php.net/manual/en/function.rename.php"
+            },
+            {
+              "name": "copy",
+              "url": "https://www.php.net/manual/en/function.copy.php"
+            },
+            {
+              "name": "scandir",
+              "url": "https://www.php.net/manual/en/function.scandir.php"
+            },
+            {
+              "name": "glob",
+              "url": "https://www.php.net/manual/en/function.glob.php"
+            },
+            {
+              "name": "basename",
+              "url": "https://www.php.net/manual/en/function.basename.php"
+            },
+            {
+              "name": "dirname",
+              "url": "https://www.php.net/manual/en/function.dirname.php"
+            },
+            {
+              "name": "pathinfo",
+              "url": "https://www.php.net/manual/en/function.pathinfo.php"
+            },
+            {
+              "name": "realpath",
+              "url": "https://www.php.net/manual/en/function.realpath.php"
+            },
+            {
+              "name": "filesize",
+              "url": "https://www.php.net/manual/en/function.filesize.php"
+            },
+            {
+              "name": "filemtime",
+              "url": "https://www.php.net/manual/en/function.filemtime.php"
+            },
+            {
+              "name": "tempnam",
+              "url": "https://www.php.net/manual/en/function.tempnam.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JSON & Regex",
+      "groups": [
+        {
+          "title": "JSON",
+          "items": [
+            {
+              "name": "json_encode",
+              "url": "https://www.php.net/manual/en/function.json-encode.php"
+            },
+            {
+              "name": "json_decode",
+              "url": "https://www.php.net/manual/en/function.json-decode.php"
+            },
+            {
+              "name": "json_validate",
+              "url": "https://www.php.net/manual/en/function.json-validate.php"
+            },
+            {
+              "name": "json_last_error_msg",
+              "url": "https://www.php.net/manual/en/function.json-last-error-msg.php"
+            }
+          ]
+        },
+        {
+          "title": "PCRE",
+          "items": [
+            {
+              "name": "preg_match",
+              "url": "https://www.php.net/manual/en/function.preg-match.php"
+            },
+            {
+              "name": "preg_match_all",
+              "url": "https://www.php.net/manual/en/function.preg-match-all.php"
+            },
+            {
+              "name": "preg_replace",
+              "url": "https://www.php.net/manual/en/function.preg-replace.php"
+            },
+            {
+              "name": "preg_replace_callback",
+              "url": "https://www.php.net/manual/en/function.preg-replace-callback.php"
+            },
+            {
+              "name": "preg_split",
+              "url": "https://www.php.net/manual/en/function.preg-split.php"
+            },
+            {
+              "name": "preg_quote",
+              "url": "https://www.php.net/manual/en/function.preg-quote.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Date & Time",
+      "groups": [
+        {
+          "title": "Functions",
+          "items": [
+            {
+              "name": "date",
+              "url": "https://www.php.net/manual/en/function.date.php"
+            },
+            {
+              "name": "time",
+              "url": "https://www.php.net/manual/en/function.time.php"
+            },
+            {
+              "name": "mktime",
+              "url": "https://www.php.net/manual/en/function.mktime.php"
+            },
+            {
+              "name": "strtotime",
+              "url": "https://www.php.net/manual/en/function.strtotime.php"
+            },
+            {
+              "name": "checkdate",
+              "url": "https://www.php.net/manual/en/function.checkdate.php"
+            },
+            {
+              "name": "date_default_timezone_set",
+              "url": "https://www.php.net/manual/en/function.date-default-timezone-set.php"
+            },
+            {
+              "name": "hrtime",
+              "url": "https://www.php.net/manual/en/function.hrtime.php"
+            }
+          ]
+        },
+        {
+          "title": "Classes",
+          "items": [
+            {
+              "name": "DateTime",
+              "url": "https://www.php.net/manual/en/class.datetime.php"
+            },
+            {
+              "name": "DateTimeImmutable",
+              "url": "https://www.php.net/manual/en/class.datetimeimmutable.php"
+            },
+            {
+              "name": "DateInterval",
+              "url": "https://www.php.net/manual/en/class.dateinterval.php"
+            },
+            {
+              "name": "DateTimeZone",
+              "url": "https://www.php.net/manual/en/class.datetimezone.php"
+            },
+            {
+              "name": "DatePeriod",
+              "url": "https://www.php.net/manual/en/class.dateperiod.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "HTTP & Output",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "echo",
+              "url": "https://www.php.net/manual/en/function.echo.php"
+            },
+            {
+              "name": "print",
+              "url": "https://www.php.net/manual/en/function.print.php"
+            },
+            {
+              "name": "header",
+              "url": "https://www.php.net/manual/en/function.header.php"
+            },
+            {
+              "name": "headers_sent",
+              "url": "https://www.php.net/manual/en/function.headers-sent.php"
+            },
+            {
+              "name": "http_response_code",
+              "url": "https://www.php.net/manual/en/function.http-response-code.php"
+            },
+            {
+              "name": "setcookie",
+              "url": "https://www.php.net/manual/en/function.setcookie.php"
+            },
+            {
+              "name": "session_start",
+              "url": "https://www.php.net/manual/en/function.session-start.php"
+            },
+            {
+              "name": "session_destroy",
+              "url": "https://www.php.net/manual/en/function.session-destroy.php"
+            },
+            {
+              "name": "ob_start",
+              "url": "https://www.php.net/manual/en/function.ob-start.php"
+            },
+            {
+              "name": "ob_get_clean",
+              "url": "https://www.php.net/manual/en/function.ob-get-clean.php"
+            },
+            {
+              "name": "filter_var",
+              "url": "https://www.php.net/manual/en/function.filter-var.php"
+            },
+            {
+              "name": "urlencode",
+              "url": "https://www.php.net/manual/en/function.urlencode.php"
+            },
+            {
+              "name": "rawurlencode",
+              "url": "https://www.php.net/manual/en/function.rawurlencode.php"
+            },
+            {
+              "name": "http_build_query",
+              "url": "https://www.php.net/manual/en/function.http-build-query.php"
+            },
+            {
+              "name": "parse_url",
+              "url": "https://www.php.net/manual/en/function.parse-url.php"
+            },
+            {
+              "name": "parse_str",
+              "url": "https://www.php.net/manual/en/function.parse-str.php"
+            },
+            {
+              "name": "base64_encode",
+              "url": "https://www.php.net/manual/en/function.base64-encode.php"
+            },
+            {
+              "name": "base64_decode",
+              "url": "https://www.php.net/manual/en/function.base64-decode.php"
+            },
+            {
+              "name": "password_hash",
+              "url": "https://www.php.net/manual/en/function.password-hash.php"
+            },
+            {
+              "name": "password_verify",
+              "url": "https://www.php.net/manual/en/function.password-verify.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Classes & Functions",
+      "groups": [
+        {
+          "title": "Introspection",
+          "items": [
+            {
+              "name": "class_exists",
+              "url": "https://www.php.net/manual/en/function.class-exists.php"
+            },
+            {
+              "name": "method_exists",
+              "url": "https://www.php.net/manual/en/function.method-exists.php"
+            },
+            {
+              "name": "property_exists",
+              "url": "https://www.php.net/manual/en/function.property-exists.php"
+            },
+            {
+              "name": "get_class",
+              "url": "https://www.php.net/manual/en/function.get-class.php"
+            },
+            {
+              "name": "get_object_vars",
+              "url": "https://www.php.net/manual/en/function.get-object-vars.php"
+            },
+            {
+              "name": "get_parent_class",
+              "url": "https://www.php.net/manual/en/function.get-parent-class.php"
+            },
+            {
+              "name": "is_a",
+              "url": "https://www.php.net/manual/en/function.is-a.php"
+            },
+            {
+              "name": "is_subclass_of",
+              "url": "https://www.php.net/manual/en/function.is-subclass-of.php"
+            },
+            {
+              "name": "spl_autoload_register",
+              "url": "https://www.php.net/manual/en/function.spl-autoload-register.php"
+            },
+            {
+              "name": "function_exists",
+              "url": "https://www.php.net/manual/en/function.function-exists.php"
+            },
+            {
+              "name": "call_user_func",
+              "url": "https://www.php.net/manual/en/function.call-user-func.php"
+            },
+            {
+              "name": "call_user_func_array",
+              "url": "https://www.php.net/manual/en/function.call-user-func-array.php"
+            },
+            {
+              "name": "func_get_args",
+              "url": "https://www.php.net/manual/en/function.func-get-args.php"
+            }
+          ]
+        },
+        {
+          "title": "Magic Methods",
+          "items": [
+            {
+              "name": "__construct",
+              "url": "https://www.php.net/manual/en/language.oop5.decon.php#object.construct"
+            },
+            {
+              "name": "__destruct",
+              "url": "https://www.php.net/manual/en/language.oop5.decon.php#object.destruct"
+            },
+            {
+              "name": "__get",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.get"
+            },
+            {
+              "name": "__set",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.set"
+            },
+            {
+              "name": "__isset",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.isset"
+            },
+            {
+              "name": "__unset",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.unset"
+            },
+            {
+              "name": "__call",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.call"
+            },
+            {
+              "name": "__callStatic",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.callstatic"
+            },
+            {
+              "name": "__toString",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.tostring"
+            },
+            {
+              "name": "__invoke",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.invoke"
+            },
+            {
+              "name": "__clone",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.clone"
+            },
+            {
+              "name": "__serialize",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.serialize"
+            },
+            {
+              "name": "__unserialize",
+              "url": "https://www.php.net/manual/en/language.oop5.magic.php#object.unserialize"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Superglobals",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "$_GET",
+              "url": "https://www.php.net/manual/en/reserved.variables.get.php"
+            },
+            {
+              "name": "$_POST",
+              "url": "https://www.php.net/manual/en/reserved.variables.post.php"
+            },
+            {
+              "name": "$_SERVER",
+              "url": "https://www.php.net/manual/en/reserved.variables.server.php"
+            },
+            {
+              "name": "$_SESSION",
+              "url": "https://www.php.net/manual/en/reserved.variables.session.php"
+            },
+            {
+              "name": "$_COOKIE",
+              "url": "https://www.php.net/manual/en/reserved.variables.cookies.php"
+            },
+            {
+              "name": "$_FILES",
+              "url": "https://www.php.net/manual/en/reserved.variables.files.php"
+            },
+            {
+              "name": "$_ENV",
+              "url": "https://www.php.net/manual/en/reserved.variables.environment.php"
+            },
+            {
+              "name": "$_REQUEST",
+              "url": "https://www.php.net/manual/en/reserved.variables.request.php"
+            },
+            {
+              "name": "$GLOBALS",
+              "url": "https://www.php.net/manual/en/reserved.variables.globals.php"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Language",
+      "groups": [
+        {
+          "title": "Control Structures",
+          "items": [
+            {
+              "name": "if / else",
+              "url": "https://www.php.net/manual/en/control-structures.elseif.php"
+            },
+            {
+              "name": "match",
+              "url": "https://www.php.net/manual/en/control-structures.match.php"
+            },
+            {
+              "name": "switch",
+              "url": "https://www.php.net/manual/en/control-structures.switch.php"
+            },
+            {
+              "name": "foreach",
+              "url": "https://www.php.net/manual/en/control-structures.foreach.php"
+            },
+            {
+              "name": "for",
+              "url": "https://www.php.net/manual/en/control-structures.for.php"
+            },
+            {
+              "name": "while",
+              "url": "https://www.php.net/manual/en/control-structures.while.php"
+            },
+            {
+              "name": "require_once",
+              "url": "https://www.php.net/manual/en/function.require-once.php"
+            },
+            {
+              "name": "include",
+              "url": "https://www.php.net/manual/en/function.include.php"
+            },
+            {
+              "name": "declare(strict_types=1)",
+              "url": "https://www.php.net/manual/en/control-structures.declare.php"
+            }
+          ]
+        },
+        {
+          "title": "Features",
+          "items": [
+            {
+              "name": "Classes & objects",
+              "url": "https://www.php.net/manual/en/language.oop5.php"
+            },
+            {
+              "name": "Interfaces",
+              "url": "https://www.php.net/manual/en/language.oop5.interfaces.php"
+            },
+            {
+              "name": "Traits",
+              "url": "https://www.php.net/manual/en/language.oop5.traits.php"
+            },
+            {
+              "name": "Enums",
+              "url": "https://www.php.net/manual/en/language.enumerations.php"
+            },
+            {
+              "name": "Readonly properties",
+              "url": "https://www.php.net/manual/en/language.oop5.properties.php#language.oop5.properties.readonly-properties"
+            },
+            {
+              "name": "Property hooks",
+              "url": "https://www.php.net/manual/en/language.oop5.property-hooks.php"
+            },
+            {
+              "name": "Attributes",
+              "url": "https://www.php.net/manual/en/language.attributes.php"
+            },
+            {
+              "name": "Namespaces",
+              "url": "https://www.php.net/manual/en/language.namespaces.php"
+            },
+            {
+              "name": "Exceptions",
+              "url": "https://www.php.net/manual/en/class.exception.php"
+            },
+            {
+              "name": "Generators",
+              "url": "https://www.php.net/manual/en/language.generators.php"
+            },
+            {
+              "name": "Closures",
+              "url": "https://www.php.net/manual/en/functions.anonymous.php"
+            },
+            {
+              "name": "Arrow functions",
+              "url": "https://www.php.net/manual/en/functions.arrow.php"
+            },
+            {
+              "name": "Named arguments",
+              "url": "https://www.php.net/manual/en/functions.arguments.php#functions.named-arguments"
+            },
+            {
+              "name": "Type declarations",
+              "url": "https://www.php.net/manual/en/language.types.declarations.php"
+            },
+            {
+              "name": "Nullsafe operator ?->",
+              "url": "https://www.php.net/manual/en/language.oop5.basic.php#language.oop5.basic.nullsafe"
+            },
+            {
+              "name": "Null coalescing ??",
+              "url": "https://www.php.net/manual/en/language.operators.comparison.php#language.operators.comparison.coalesce"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

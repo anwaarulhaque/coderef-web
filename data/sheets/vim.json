@@ -1,0 +1,62 @@
+{
+  "slug": "vim",
+  "title": "Vim",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Vim.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Vim documentation",
+              "url": "https://vimhelp.org/"
+            },
+            {
+              "name": "Quick reference",
+              "url": "https://vimhelp.org/quickref.txt.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.vim.org/"
+            },
+            {
+              "name": "Wikipedia Vim",
+              "url": "https://en.wikipedia.org/wiki/Vim_%28text_editor%29"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Vim Commands Cheat Sheet",
+              "url": "http://bullium.com/support/vim.html"
+            },
+            {
+              "name": "VIM Quick Reference Card",
+              "url": "http://tnerual.eriogerg.free.fr/vim.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Vi",
+              "url": "/vi/"
+            },
+            {
+              "name": "LaTeX-Suite",
+              "url": "/latex-suite/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

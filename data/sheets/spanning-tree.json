@@ -1,0 +1,28 @@
+{
+  "slug": "spanning-tree",
+  "title": "Spanning Tree",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for Spanning Tree.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IEEE 802.1Q",
+              "url": "https://1.ieee802.org/"
+            },
+            {
+              "name": "Wikipedia Spanning Tree",
+              "url": "https://en.wikipedia.org/wiki/Spanning_tree"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

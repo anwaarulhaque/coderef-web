@@ -1,0 +1,28 @@
+{
+  "slug": "astronomy",
+  "title": "Astronomy",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Astronomy.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "NASA Science",
+              "url": "https://science.nasa.gov/"
+            },
+            {
+              "name": "Wikipedia Astronomy",
+              "url": "https://en.wikipedia.org/wiki/Advanced_Packaging_Tool"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "music",
+  "title": "Music",
+  "category": "Miscellaneous",
+  "description": "Reference links and cheat sheets for Music.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wolfram Alpha Tools",
+              "url": "http://www.wolframalpha.com/examples/Music.html"
+            },
+            {
+              "name": "Wikipedia Music",
+              "url": "https://en.wikipedia.org/wiki/Music"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Dan’s Music Theory 101 Cheat Sheet [.pdf]",
+              "url": "http://www.rkstar.com/links/musictheory.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Guitar",
+              "url": "/guitar/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

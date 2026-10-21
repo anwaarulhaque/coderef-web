@@ -1,0 +1,62 @@
+{
+  "slug": "osx",
+  "title": "Mac OS X",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Mac OS X.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "macOS User Guide",
+              "url": "https://support.apple.com/guide/mac-help/welcome/mac"
+            },
+            {
+              "name": "Mac keyboard shortcuts",
+              "url": "https://support.apple.com/en-us/102650"
+            },
+            {
+              "name": "Wikipedia Mac OS X",
+              "url": "https://en.wikipedia.org/wiki/OS_X"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "The OS X Keyboard Cheat Sheet [.pdf]",
+              "url": "http://www.extensions.in.th/post/rescue/OSX_KeyCombo_Reference_Guide.pdf"
+            },
+            {
+              "name": "Apple Mac OS X Terminal Commands list [.pdf]",
+              "url": "http://www.scribd.com/doc/2084227/Mac-OS-X-Terminal-Commands-list"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Cocoa",
+              "url": "/cocoa/"
+            },
+            {
+              "name": "Macintosh",
+              "url": "/mac/"
+            },
+            {
+              "name": "Objective-C",
+              "url": "/objective-c/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

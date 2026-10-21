@@ -1,0 +1,205 @@
+{
+  "slug": "c",
+  "updated": "2026-10-14",
+  "title": "C",
+  "category": "Languages",
+  "color": "#a8b9cc",
+  "language": "c",
+  "description": "C essentials: types, printf/scanf, arrays, strings, pointers, structs, memory, files and compiling.",
+  "docs": "https://en.cppreference.com/w/c",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Program structure and types.",
+      "rows": [
+        [
+          "Hello world",
+          "#include <stdio.h>\n\nint main(void) {\n    printf(\"Hello\\n\");\n    return 0;\n}"
+        ],
+        [
+          "Variables",
+          [
+            "int count = 10;",
+            "double price = 9.99;",
+            "char grade = 'A';"
+          ]
+        ],
+        [
+          "Constant",
+          [
+            "const int MAX = 100;",
+            "#define MAX 100"
+          ]
+        ],
+        [
+          "Booleans",
+          "#include <stdbool.h>\nbool done = false;"
+        ],
+        [
+          "Print formatted",
+          "printf(\"%s is %d, %.2f\\n\", name, age, price);"
+        ],
+        [
+          "Read input",
+          "int n;\nscanf(\"%d\", &n);"
+        ],
+        [
+          "Size of a type",
+          "sizeof(int)"
+        ]
+      ]
+    },
+    {
+      "title": "Control flow",
+      "description": "Conditions and loops.",
+      "rows": [
+        [
+          "If / else",
+          "if (x > 0) {\n    /* ... */\n} else {\n    /* ... */\n}"
+        ],
+        [
+          "Switch",
+          "switch (c) {\n    case 'a': handle(); break;\n    default: other();\n}"
+        ],
+        [
+          "For / while",
+          [
+            "for (int i = 0; i < n; i++) { }",
+            "while (running) { }"
+          ]
+        ],
+        [
+          "Do-while",
+          "do {\n    /* runs at least once */\n} while (again);"
+        ]
+      ]
+    },
+    {
+      "title": "Arrays & strings",
+      "description": "Fixed-size data and text.",
+      "rows": [
+        [
+          "Array",
+          [
+            "int nums[5] = {1, 2, 3, 4, 5};",
+            "int len = sizeof nums / sizeof nums[0];"
+          ]
+        ],
+        [
+          "String",
+          "char name[] = \"Ada\";"
+        ],
+        [
+          "String length / copy",
+          [
+            "#include <string.h>\nstrlen(s)",
+            "strncpy(dest, src, sizeof dest - 1);"
+          ]
+        ],
+        [
+          "Compare strings",
+          "strcmp(a, b) == 0"
+        ],
+        [
+          "Concatenate",
+          "strncat(dest, src, sizeof dest - strlen(dest) - 1);"
+        ],
+        [
+          "Format into a string",
+          "snprintf(buf, sizeof buf, \"%d items\", n);"
+        ],
+        [
+          "Number from string",
+          "long n = strtol(text, NULL, 10);"
+        ]
+      ]
+    },
+    {
+      "title": "Pointers & memory",
+      "description": "Addresses and the heap.",
+      "rows": [
+        [
+          "Pointer basics",
+          "int x = 5;\nint *p = &x;   // address of x\n*p = 6;        // change x through p"
+        ],
+        [
+          "Pass by pointer",
+          "void inc(int *n) { (*n)++; }\ninc(&count);"
+        ],
+        [
+          "Allocate memory",
+          "#include <stdlib.h>\nint *arr = malloc(n * sizeof *arr);\nif (arr == NULL) { /* handle */ }"
+        ],
+        [
+          "Zeroed / resized memory",
+          [
+            "calloc(n, sizeof(int))",
+            "arr = realloc(arr, new_n * sizeof *arr);"
+          ]
+        ],
+        [
+          "Free memory",
+          "free(arr);\narr = NULL;"
+        ]
+      ]
+    },
+    {
+      "title": "Structs & functions",
+      "description": "Grouping data and code.",
+      "rows": [
+        [
+          "Struct",
+          "struct Point {\n    int x;\n    int y;\n};\nstruct Point p = {1, 2};"
+        ],
+        [
+          "Typedef",
+          "typedef struct {\n    char name[50];\n    int age;\n} Person;"
+        ],
+        [
+          "Member access",
+          [
+            "p.x",
+            "ptr->x"
+          ]
+        ],
+        [
+          "Function",
+          "int add(int a, int b) {\n    return a + b;\n}"
+        ],
+        [
+          "Prototype (declare before use)",
+          "int add(int a, int b);"
+        ],
+        [
+          "Enum",
+          "enum Color { RED, GREEN, BLUE };"
+        ]
+      ]
+    },
+    {
+      "title": "Files & compiling",
+      "description": "I/O and building.",
+      "rows": [
+        [
+          "Write a file",
+          "FILE *f = fopen(\"out.txt\", \"w\");\nfprintf(f, \"%d\\n\", n);\nfclose(f);"
+        ],
+        [
+          "Read lines",
+          "char line[256];\nwhile (fgets(line, sizeof line, f)) {\n    /* ... */\n}"
+        ],
+        [
+          "Compile and run",
+          [
+            "gcc main.c -o app && ./app",
+            "gcc -Wall -Wextra -g main.c -o app"
+          ]
+        ],
+        [
+          "Command-line arguments",
+          "int main(int argc, char *argv[]) { }"
+        ]
+      ]
+    }
+  ]
+}

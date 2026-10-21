@@ -1,0 +1,41 @@
+{
+  "slug": "springroo",
+  "title": "Spring Roo",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Spring Roo.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Spring Roo (GitHub)",
+              "url": "https://github.com/spring-attic/spring-roo"
+            },
+            {
+              "name": "Wikipedia Spring Roo",
+              "url": "https://en.wikipedia.org/wiki/Spring_Roo"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "Spring Framework",
+              "url": "/spring/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

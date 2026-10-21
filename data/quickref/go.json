@@ -1,0 +1,240 @@
+{
+  "slug": "go",
+  "updated": "2026-10-14",
+  "title": "Go",
+  "category": "Languages",
+  "color": "#00add8",
+  "language": "go",
+  "description": "Go essentials: variables, slices, maps, structs, interfaces, errors, goroutines, channels and the go tool.",
+  "docs": "https://go.dev/doc/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Programs and variables.",
+      "rows": [
+        [
+          "Hello world",
+          "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello\")\n}"
+        ],
+        [
+          "Variables",
+          [
+            "var count int = 10",
+            "name := \"Ada\"  // short declaration",
+            "const Max = 100"
+          ]
+        ],
+        [
+          "Multiple assignment",
+          "a, b := 1, 2"
+        ],
+        [
+          "Print formatted",
+          [
+            "fmt.Printf(\"%s is %d\\n\", name, age)",
+            "fmt.Sprintf(\"%.2f\", price)"
+          ]
+        ],
+        [
+          "Convert",
+          [
+            "strconv.Itoa(42)",
+            "n, err := strconv.Atoi(\"42\")",
+            "float64(n)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Slices & maps",
+      "description": "Collections.",
+      "rows": [
+        [
+          "Slice",
+          [
+            "nums := []int{3, 1, 2}",
+            "nums = append(nums, 4)"
+          ]
+        ],
+        [
+          "Make with length",
+          "buf := make([]byte, 0, 1024)"
+        ],
+        [
+          "Slice of a slice",
+          "nums[1:3]"
+        ],
+        [
+          "Loop",
+          "for i, n := range nums {\n    fmt.Println(i, n)\n}"
+        ],
+        [
+          "Sort",
+          [
+            "slices.Sort(nums)",
+            "sort.Slice(users, func(i, j int) bool { return users[i].Age < users[j].Age })"
+          ]
+        ],
+        [
+          "Contains",
+          "slices.Contains(nums, 3)"
+        ],
+        [
+          "Reverse",
+          "slices.Reverse(nums)"
+        ],
+        [
+          "Map",
+          "ages := map[string]int{\"Ada\": 36}\nages[\"Bob\"] = 40"
+        ],
+        [
+          "Check a key",
+          "age, ok := ages[\"Ada\"]"
+        ],
+        [
+          "Delete a key",
+          "delete(ages, \"Bob\")"
+        ]
+      ]
+    },
+    {
+      "title": "Control flow",
+      "description": "Conditions and loops.",
+      "rows": [
+        [
+          "If with init",
+          "if err := run(); err != nil {\n    return err\n}"
+        ],
+        [
+          "For (the only loop)",
+          [
+            "for i := 0; i < 5; i++ { }",
+            "for running { }",
+            "for { }  // forever"
+          ]
+        ],
+        [
+          "Range over an integer (1.22+)",
+          "for i := range 10 { }"
+        ],
+        [
+          "Switch",
+          "switch day {\ncase \"sat\", \"sun\":\n    fmt.Println(\"weekend\")\ndefault:\n    fmt.Println(\"weekday\")\n}"
+        ],
+        [
+          "Defer",
+          "f, _ := os.Open(name)\ndefer f.Close()"
+        ]
+      ]
+    },
+    {
+      "title": "Functions, structs & interfaces",
+      "description": "Types and methods.",
+      "rows": [
+        [
+          "Function with multiple returns",
+          "func divide(a, b float64) (float64, error) {\n    if b == 0 {\n        return 0, errors.New(\"divide by zero\")\n    }\n    return a / b, nil\n}"
+        ],
+        [
+          "Struct",
+          "type User struct {\n    Name string\n    Age  int\n}\nu := User{Name: \"Ada\", Age: 36}"
+        ],
+        [
+          "Method",
+          "func (u User) Greet() string {\n    return \"Hi \" + u.Name\n}"
+        ],
+        [
+          "Pointer receiver",
+          "func (u *User) Birthday() { u.Age++ }"
+        ],
+        [
+          "Interface",
+          "type Shape interface {\n    Area() float64\n}"
+        ],
+        [
+          "Generics",
+          "func Map[T, U any](xs []T, f func(T) U) []U { }"
+        ],
+        [
+          "Struct tags (JSON)",
+          "type User struct {\n    Name string `json:\"name\"`\n}"
+        ]
+      ]
+    },
+    {
+      "title": "Errors & concurrency",
+      "description": "Error handling, goroutines and channels.",
+      "rows": [
+        [
+          "Check an error",
+          "data, err := os.ReadFile(\"in.txt\")\nif err != nil {\n    log.Fatal(err)\n}"
+        ],
+        [
+          "Wrap an error",
+          "return fmt.Errorf(\"loading config: %w\", err)"
+        ],
+        [
+          "Check error type",
+          [
+            "errors.Is(err, os.ErrNotExist)",
+            "errors.As(err, &target)"
+          ]
+        ],
+        [
+          "Goroutine",
+          "go doWork()"
+        ],
+        [
+          "Channel",
+          "ch := make(chan int)\ngo func() { ch <- 42 }()\nv := <-ch"
+        ],
+        [
+          "Wait group",
+          "var wg sync.WaitGroup\nwg.Add(1)\ngo func() {\n    defer wg.Done()\n    work()\n}()\nwg.Wait()"
+        ],
+        [
+          "Select",
+          "select {\ncase msg := <-ch:\n    fmt.Println(msg)\ncase <-time.After(time.Second):\n    fmt.Println(\"timeout\")\n}"
+        ]
+      ]
+    },
+    {
+      "title": "Go tool",
+      "description": "Build, test and modules.",
+      "rows": [
+        [
+          "Start a module",
+          "go mod init example.com/app"
+        ],
+        [
+          "Run / build",
+          [
+            "go run .",
+            "go build -o app ."
+          ]
+        ],
+        [
+          "Test",
+          [
+            "go test ./...",
+            "go test -run TestName -v"
+          ]
+        ],
+        [
+          "Add / tidy dependencies",
+          [
+            "go get github.com/gin-gonic/gin",
+            "go mod tidy"
+          ]
+        ],
+        [
+          "Format / vet",
+          [
+            "go fmt ./...",
+            "go vet ./..."
+          ]
+        ]
+      ]
+    }
+  ]
+}

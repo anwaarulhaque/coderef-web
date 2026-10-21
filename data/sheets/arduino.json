@@ -1,0 +1,37 @@
+{
+  "slug": "arduino",
+  "title": "Arduino",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for Arduino.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Arduino Language Reference",
+              "url": "https://docs.arduino.cc/language-reference/"
+            },
+            {
+              "name": "Wikipedia Arduino",
+              "url": "https://en.wikipedia.org/wiki/Arduino"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Arduino Cheat Sheet by Gavin Smith [.pdf]",
+              "url": "http://sites.google.com/site/mechatronicsguy/arduinocheatsheet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

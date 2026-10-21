@@ -1,0 +1,57 @@
+{
+  "slug": "csharp",
+  "title": "C#",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for C#.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "C# documentation",
+              "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+            },
+            {
+              "name": "C# language reference",
+              "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://msdn2.microsoft.com/en-us/vcsharp/aa336809.aspx"
+            },
+            {
+              "name": "Wikipedia C#",
+              "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "C",
+              "url": "/c/"
+            },
+            {
+              "name": "C++",
+              "url": "/cpp/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "Objective-C",
+              "url": "/objective-c/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

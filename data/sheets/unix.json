@@ -1,0 +1,78 @@
+{
+  "slug": "unix",
+  "title": "Unix",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Unix.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "POSIX utilities",
+              "url": "https://pubs.opengroup.org/onlinepubs/9799919799/idx/utilities.html"
+            },
+            {
+              "name": "Wikipedia Unix",
+              "url": "https://en.wikipedia.org/wiki/Unix"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Treebeard's Unix Cheat Sheet",
+              "url": "http://www.rain.org/%7emkummel/unix.html"
+            },
+            {
+              "name": "Set Operations in the Unix Shell Simplified [.html, pdf, txt]",
+              "url": "http://www.catonmat.net/blog/set-operations-in-unix-shell-simplified/"
+            },
+            {
+              "name": "The Definitive Guide to Bash Command Line History [.html, pdf, tex, txt]",
+              "url": "http://www.catonmat.net/blog/the-definitive-guide-to-bash-command-line-history/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "chmod",
+              "url": "/chmod/"
+            },
+            {
+              "name": "Debian",
+              "url": "/debian/"
+            },
+            {
+              "name": "Linux",
+              "url": "/linux/"
+            },
+            {
+              "name": "Solaris",
+              "url": "/solaris/"
+            },
+            {
+              "name": "Ubuntu",
+              "url": "/ubuntu/"
+            },
+            {
+              "name": "Vi",
+              "url": "/vi/"
+            },
+            {
+              "name": "Vim",
+              "url": "/vim/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

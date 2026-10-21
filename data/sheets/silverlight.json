@@ -1,0 +1,49 @@
+{
+  "slug": "silverlight",
+  "title": "Silverlight",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Silverlight.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Silverlight end of support",
+              "url": "https://learn.microsoft.com/en-us/lifecycle/products/silverlight-5"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.microsoft.com/silverlight/"
+            },
+            {
+              "name": "Wikipedia Silverlight",
+              "url": "https://en.wikipedia.org/wiki/Microsoft_Silverlight"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "JavaFX",
+              "url": "/javafx/"
+            },
+            {
+              "name": "Flash",
+              "url": "/flash/"
+            },
+            {
+              "name": "Flex",
+              "url": "/flex/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

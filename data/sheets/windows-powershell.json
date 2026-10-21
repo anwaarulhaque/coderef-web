@@ -1,0 +1,45 @@
+{
+  "slug": "windows-powershell",
+  "title": "Windows Powershell",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Windows Powershell.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "PowerShell documentation",
+              "url": "https://learn.microsoft.com/en-us/powershell/"
+            },
+            {
+              "name": "About topics",
+              "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.microsoft.com/powershell"
+            },
+            {
+              "name": "Wikipedia Windows Powershell",
+              "url": "https://en.wikipedia.org/wiki/Windows_PowerShell"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Windows",
+              "url": "/windows/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

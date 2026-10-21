@@ -1,0 +1,546 @@
+{
+  "slug": "python",
+  "updated": "2026-10-14",
+  "title": "Python",
+  "category": "Languages",
+  "color": "#3776ab",
+  "language": "python",
+  "description": "Everyday Python: variables, strings, lists, dicts, control flow, functions, classes, files and errors.",
+  "docs": "https://docs.python.org/3/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Variables, output, input and comments.",
+      "rows": [
+        [
+          "Assign a variable",
+          "x = 10"
+        ],
+        [
+          "Assign several at once",
+          "a, b = 1, 2"
+        ],
+        [
+          "Swap two variables",
+          "a, b = b, a"
+        ],
+        [
+          "Print a value",
+          "print(\"Hello\")"
+        ],
+        [
+          "Print without a newline",
+          "print(\"Loading\", end=\"\")"
+        ],
+        [
+          "Read input",
+          "name = input(\"Name: \")"
+        ],
+        [
+          "Comment",
+          "# this is a comment"
+        ],
+        [
+          "Check a type",
+          [
+            "type(x)",
+            "isinstance(x, int)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Numbers & conversion",
+      "description": "Arithmetic and converting between types.",
+      "rows": [
+        [
+          "Integer division",
+          "7 // 2   # 3"
+        ],
+        [
+          "Remainder",
+          "7 % 2    # 1"
+        ],
+        [
+          "Power",
+          "2 ** 10  # 1024"
+        ],
+        [
+          "Round",
+          [
+            "round(3.14159, 2)",
+            "math.floor(x)",
+            "math.ceil(x)"
+          ]
+        ],
+        [
+          "String to number",
+          [
+            "int(\"42\")",
+            "float(\"3.5\")"
+          ]
+        ],
+        [
+          "Number to string",
+          "str(42)"
+        ],
+        [
+          "Min / max / sum",
+          [
+            "min(nums)",
+            "max(nums)",
+            "sum(nums)"
+          ]
+        ],
+        [
+          "Absolute value",
+          "abs(-5)"
+        ]
+      ]
+    },
+    {
+      "title": "Strings",
+      "description": "Formatting and manipulating text.",
+      "rows": [
+        [
+          "Format with an f-string",
+          "f\"Hi {name}, you are {age}\""
+        ],
+        [
+          "Format a number",
+          [
+            "f\"{price:.2f}\"",
+            "f\"{n:,}\""
+          ]
+        ],
+        [
+          "Length",
+          "len(text)"
+        ],
+        [
+          "Upper / lower case",
+          [
+            "text.upper()",
+            "text.lower()",
+            "text.title()"
+          ]
+        ],
+        [
+          "Trim whitespace",
+          [
+            "text.strip()",
+            "text.lstrip()",
+            "text.rstrip()"
+          ]
+        ],
+        [
+          "Replace",
+          "text.replace(\"old\", \"new\")"
+        ],
+        [
+          "Split / join",
+          [
+            "text.split(\",\")",
+            "\", \".join(words)"
+          ]
+        ],
+        [
+          "Find a substring",
+          [
+            "\"py\" in text",
+            "text.find(\"py\")"
+          ]
+        ],
+        [
+          "Starts / ends with",
+          [
+            "text.startswith(\"http\")",
+            "text.endswith(\".py\")"
+          ]
+        ],
+        [
+          "Slice",
+          [
+            "text[0:3]",
+            "text[-3:]",
+            "text[::-1]  # reversed"
+          ]
+        ],
+        [
+          "Multi-line string",
+          "\"\"\"line one\nline two\"\"\""
+        ]
+      ]
+    },
+    {
+      "title": "Lists",
+      "description": "Ordered, mutable sequences.",
+      "rows": [
+        [
+          "Create",
+          "nums = [3, 1, 2]"
+        ],
+        [
+          "Access first / last",
+          [
+            "nums[0]",
+            "nums[-1]"
+          ]
+        ],
+        [
+          "Add to the end",
+          "nums.append(4)"
+        ],
+        [
+          "Add many",
+          "nums.extend([5, 6])"
+        ],
+        [
+          "Insert at an index",
+          "nums.insert(0, 9)"
+        ],
+        [
+          "Remove by value",
+          "nums.remove(2)"
+        ],
+        [
+          "Remove by index",
+          [
+            "nums.pop()",
+            "nums.pop(0)",
+            "del nums[1]"
+          ]
+        ],
+        [
+          "Sort",
+          [
+            "nums.sort()",
+            "sorted(nums)",
+            "sorted(nums, reverse=True)"
+          ]
+        ],
+        [
+          "Sort by a key",
+          "sorted(users, key=lambda u: u.age)"
+        ],
+        [
+          "Reverse",
+          [
+            "nums.reverse()",
+            "nums[::-1]"
+          ]
+        ],
+        [
+          "Index of a value",
+          "nums.index(3)"
+        ],
+        [
+          "Slice",
+          "nums[1:3]"
+        ],
+        [
+          "List comprehension",
+          "[n * 2 for n in nums if n > 1]"
+        ],
+        [
+          "Loop with index",
+          "for i, n in enumerate(nums):"
+        ],
+        [
+          "Loop over two lists",
+          "for a, b in zip(xs, ys):"
+        ]
+      ]
+    },
+    {
+      "title": "Tuples & sets",
+      "description": "Immutable sequences and unique collections.",
+      "rows": [
+        [
+          "Create a tuple",
+          "point = (4, 5)"
+        ],
+        [
+          "Unpack",
+          "x, y = point"
+        ],
+        [
+          "Create a set",
+          "tags = {\"a\", \"b\"}"
+        ],
+        [
+          "Remove duplicates",
+          "unique = list(set(items))"
+        ],
+        [
+          "Add / remove",
+          [
+            "tags.add(\"c\")",
+            "tags.discard(\"a\")"
+          ]
+        ],
+        [
+          "Union / intersection / difference",
+          [
+            "a | b",
+            "a & b",
+            "a - b"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Dictionaries",
+      "description": "Key–value maps.",
+      "rows": [
+        [
+          "Create",
+          "user = {\"name\": \"Ada\", \"age\": 36}"
+        ],
+        [
+          "Get a value",
+          [
+            "user[\"name\"]",
+            "user.get(\"email\", \"n/a\")"
+          ]
+        ],
+        [
+          "Set a value",
+          "user[\"email\"] = \"ada@example.com\""
+        ],
+        [
+          "Delete a key",
+          [
+            "del user[\"age\"]",
+            "user.pop(\"age\", None)"
+          ]
+        ],
+        [
+          "Check a key",
+          "\"name\" in user"
+        ],
+        [
+          "Loop over pairs",
+          "for key, value in user.items():"
+        ],
+        [
+          "Keys / values",
+          [
+            "user.keys()",
+            "user.values()"
+          ]
+        ],
+        [
+          "Merge",
+          [
+            "merged = a | b",
+            "a.update(b)"
+          ]
+        ],
+        [
+          "Dict comprehension",
+          "{k: v * 2 for k, v in prices.items()}"
+        ],
+        [
+          "Count items",
+          "from collections import Counter\nCounter(words).most_common(3)"
+        ],
+        [
+          "Default values",
+          "from collections import defaultdict\ngroups = defaultdict(list)"
+        ]
+      ]
+    },
+    {
+      "title": "Control flow",
+      "description": "Conditions and loops.",
+      "rows": [
+        [
+          "If / elif / else",
+          "if x > 0:\n    ...\nelif x == 0:\n    ...\nelse:\n    ..."
+        ],
+        [
+          "Ternary",
+          "label = \"even\" if n % 2 == 0 else \"odd\""
+        ],
+        [
+          "For loop over a range",
+          [
+            "for i in range(5):",
+            "for i in range(1, 10, 2):"
+          ]
+        ],
+        [
+          "While loop",
+          "while count < 10:\n    count += 1"
+        ],
+        [
+          "Break / continue",
+          [
+            "break",
+            "continue"
+          ]
+        ],
+        [
+          "Match (3.10+)",
+          "match command:\n    case \"start\":\n        run()\n    case _:\n        help()"
+        ],
+        [
+          "Any / all",
+          [
+            "any(n < 0 for n in nums)",
+            "all(n > 0 for n in nums)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Functions",
+      "description": "Defining and calling functions.",
+      "rows": [
+        [
+          "Define",
+          "def greet(name):\n    return f\"Hello, {name}\""
+        ],
+        [
+          "Default argument",
+          "def greet(name=\"world\"):"
+        ],
+        [
+          "Keyword arguments",
+          "greet(name=\"Ada\")"
+        ],
+        [
+          "Variable arguments",
+          "def total(*nums, **options):"
+        ],
+        [
+          "Type hints",
+          "def add(a: int, b: int) -> int:"
+        ],
+        [
+          "Lambda",
+          "square = lambda n: n * n"
+        ],
+        [
+          "Map / filter",
+          [
+            "list(map(str, nums))",
+            "list(filter(None, items))"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Classes",
+      "description": "Objects and data classes.",
+      "rows": [
+        [
+          "Define a class",
+          "class Dog:\n    def __init__(self, name):\n        self.name = name\n\n    def bark(self):\n        return \"Woof\""
+        ],
+        [
+          "Create an instance",
+          "rex = Dog(\"Rex\")"
+        ],
+        [
+          "Inheritance",
+          "class Puppy(Dog):\n    def bark(self):\n        return super().bark() + \"!\""
+        ],
+        [
+          "Data class",
+          "from dataclasses import dataclass\n\n@dataclass\nclass Point:\n    x: int\n    y: int"
+        ],
+        [
+          "String representation",
+          "def __repr__(self):\n    return f\"Dog({self.name!r})\""
+        ],
+        [
+          "Property",
+          "@property\ndef area(self):\n    return self.w * self.h"
+        ]
+      ]
+    },
+    {
+      "title": "Errors & files",
+      "description": "Exceptions and reading/writing files.",
+      "rows": [
+        [
+          "Catch an exception",
+          "try:\n    value = int(text)\nexcept ValueError as e:\n    print(e)\nfinally:\n    cleanup()"
+        ],
+        [
+          "Raise an exception",
+          "raise ValueError(\"bad input\")"
+        ],
+        [
+          "Read a whole file",
+          "with open(\"data.txt\") as f:\n    text = f.read()"
+        ],
+        [
+          "Read line by line",
+          "with open(\"data.txt\") as f:\n    for line in f:\n        print(line.rstrip())"
+        ],
+        [
+          "Write a file",
+          "with open(\"out.txt\", \"w\") as f:\n    f.write(\"hello\\n\")"
+        ],
+        [
+          "JSON",
+          [
+            "import json\ndata = json.loads(text)",
+            "json.dumps(data, indent=2)"
+          ]
+        ],
+        [
+          "Paths",
+          "from pathlib import Path\nPath(\"logs\").mkdir(exist_ok=True)"
+        ]
+      ]
+    },
+    {
+      "title": "Modules & tooling",
+      "description": "Imports, packages and running code.",
+      "rows": [
+        [
+          "Import",
+          [
+            "import math",
+            "from math import sqrt",
+            "import numpy as np"
+          ]
+        ],
+        [
+          "Run only as a script",
+          "if __name__ == \"__main__\":\n    main()"
+        ],
+        [
+          "Create a virtual environment",
+          [
+            "python -m venv .venv",
+            "source .venv/bin/activate   # macOS/Linux",
+            ".venv\\Scripts\\activate     # Windows"
+          ]
+        ],
+        [
+          "Install a package",
+          [
+            "pip install requests",
+            "pip install -r requirements.txt"
+          ]
+        ],
+        [
+          "Current date and time",
+          "from datetime import datetime\ndatetime.now().isoformat()"
+        ],
+        [
+          "Random",
+          [
+            "import random\nrandom.randint(1, 6)",
+            "random.choice(items)"
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "gmail",
+  "title": "Gmail",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Gmail.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Gmail keyboard shortcuts",
+              "url": "https://support.google.com/mail/answer/6594"
+            },
+            {
+              "name": "Gmail search operators",
+              "url": "https://support.google.com/mail/answer/7190"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.gmail.com/"
+            },
+            {
+              "name": "Wikipedia Gmail",
+              "url": "https://en.wikipedia.org/wiki/Gmail"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Google",
+              "url": "/google/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

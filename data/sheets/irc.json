@@ -1,0 +1,37 @@
+{
+  "slug": "irc",
+  "title": "IRC (Internet Relay Chat)",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for IRC.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Modern IRC docs",
+              "url": "https://modern.ircdocs.horse/"
+            },
+            {
+              "name": "Wikipedia IRC(Internet Relay Chat)",
+              "url": "https://en.wikipedia.org/wiki/Internet_Relay_Chat"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "wikiHow:IRC Cheat Sheet [.pdf]",
+              "url": "http://www.wikihow.com/wikiHow:IRC-Cheat-Sheet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

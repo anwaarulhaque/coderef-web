@@ -1,0 +1,70 @@
+{
+  "slug": "flex",
+  "title": "Flex",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Flex.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apache Flex",
+              "url": "https://flex.apache.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.adobe.com/products/flex/"
+            },
+            {
+              "name": "Wikipedia Flex",
+              "url": "https://en.wikipedia.org/wiki/Adobe_Flex"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Adobe flex 3 cheat sheet [.pdf]",
+              "url": "http://www.scribd.com/doc/2966310/Adobe-flex-3-cheat-sheet"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Adobe Systems",
+              "url": "/adobe/"
+            },
+            {
+              "name": "BlazeDS",
+              "url": "/blazeds/"
+            },
+            {
+              "name": "Flash",
+              "url": "/flash/"
+            },
+            {
+              "name": "Flash Catalyst",
+              "url": "/flash-catalyst/"
+            },
+            {
+              "name": "Silverlight",
+              "url": "/silverlight/"
+            },
+            {
+              "name": "Spring",
+              "url": "/spring/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

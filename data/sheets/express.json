@@ -1,0 +1,493 @@
+{
+  "slug": "express",
+  "title": "Express",
+  "category": "Frameworks",
+  "color": "#68717a",
+  "description": "Express 5 API: application, request, response, router and middleware.",
+  "reference": "https://expressjs.com/en/5x/api.html",
+  "sections": [
+    {
+      "title": "express()",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "express.json()",
+              "url": "https://expressjs.com/en/5x/api.html#express.json"
+            },
+            {
+              "name": "express.urlencoded()",
+              "url": "https://expressjs.com/en/5x/api.html#express.urlencoded"
+            },
+            {
+              "name": "express.static()",
+              "url": "https://expressjs.com/en/5x/api.html#express.static"
+            },
+            {
+              "name": "express.Router()",
+              "url": "https://expressjs.com/en/5x/api.html#express.router"
+            },
+            {
+              "name": "express.raw()",
+              "url": "https://expressjs.com/en/5x/api.html#express.raw"
+            },
+            {
+              "name": "express.text()",
+              "url": "https://expressjs.com/en/5x/api.html#express.text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Application",
+      "groups": [
+        {
+          "title": "Routing",
+          "items": [
+            {
+              "name": "app.get()",
+              "url": "https://expressjs.com/en/5x/api.html#app.get.method"
+            },
+            {
+              "name": "app.post()",
+              "url": "https://expressjs.com/en/5x/api.html#app.post.method"
+            },
+            {
+              "name": "app.put()",
+              "url": "https://expressjs.com/en/5x/api.html#app.put.method"
+            },
+            {
+              "name": "app.patch()",
+              "url": "https://expressjs.com/en/5x/api.html#app.patch.method"
+            },
+            {
+              "name": "app.delete()",
+              "url": "https://expressjs.com/en/5x/api.html#app.delete.method"
+            },
+            {
+              "name": "app.all()",
+              "url": "https://expressjs.com/en/5x/api.html#app.all"
+            },
+            {
+              "name": "app.use()",
+              "url": "https://expressjs.com/en/5x/api.html#app.use"
+            },
+            {
+              "name": "app.route()",
+              "url": "https://expressjs.com/en/5x/api.html#app.route"
+            },
+            {
+              "name": "app.param()",
+              "url": "https://expressjs.com/en/5x/api.html#app.param"
+            }
+          ]
+        },
+        {
+          "title": "Settings",
+          "items": [
+            {
+              "name": "app.set()",
+              "url": "https://expressjs.com/en/5x/api.html#app.set"
+            },
+            {
+              "name": "app.get()",
+              "url": "https://expressjs.com/en/5x/api.html#app.get"
+            },
+            {
+              "name": "app.enable()",
+              "url": "https://expressjs.com/en/5x/api.html#app.enable"
+            },
+            {
+              "name": "app.disable()",
+              "url": "https://expressjs.com/en/5x/api.html#app.disable"
+            },
+            {
+              "name": "app.enabled()",
+              "url": "https://expressjs.com/en/5x/api.html#app.enabled"
+            },
+            {
+              "name": "app.disabled()",
+              "url": "https://expressjs.com/en/5x/api.html#app.disabled"
+            }
+          ]
+        },
+        {
+          "title": "Other",
+          "items": [
+            {
+              "name": "app.listen()",
+              "url": "https://expressjs.com/en/5x/api.html#app.listen"
+            },
+            {
+              "name": "app.engine()",
+              "url": "https://expressjs.com/en/5x/api.html#app.engine"
+            },
+            {
+              "name": "app.render()",
+              "url": "https://expressjs.com/en/5x/api.html#app.render"
+            },
+            {
+              "name": "app.locals",
+              "url": "https://expressjs.com/en/5x/api.html#app.locals"
+            },
+            {
+              "name": "app.mountpath",
+              "url": "https://expressjs.com/en/5x/api.html#app.mountpath"
+            },
+            {
+              "name": "app.path()",
+              "url": "https://expressjs.com/en/5x/api.html#app.path"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Request",
+      "groups": [
+        {
+          "title": "Properties",
+          "items": [
+            {
+              "name": "req.params",
+              "url": "https://expressjs.com/en/5x/api.html#req.params"
+            },
+            {
+              "name": "req.query",
+              "url": "https://expressjs.com/en/5x/api.html#req.query"
+            },
+            {
+              "name": "req.body",
+              "url": "https://expressjs.com/en/5x/api.html#req.body"
+            },
+            {
+              "name": "req.cookies",
+              "url": "https://expressjs.com/en/5x/api.html#req.cookies"
+            },
+            {
+              "name": "req.signedCookies",
+              "url": "https://expressjs.com/en/5x/api.html#req.signedCookies"
+            },
+            {
+              "name": "req.path",
+              "url": "https://expressjs.com/en/5x/api.html#req.path"
+            },
+            {
+              "name": "req.method",
+              "url": "https://expressjs.com/en/5x/api.html#req.method"
+            },
+            {
+              "name": "req.ip",
+              "url": "https://expressjs.com/en/5x/api.html#req.ip"
+            },
+            {
+              "name": "req.ips",
+              "url": "https://expressjs.com/en/5x/api.html#req.ips"
+            },
+            {
+              "name": "req.hostname",
+              "url": "https://expressjs.com/en/5x/api.html#req.hostname"
+            },
+            {
+              "name": "req.originalUrl",
+              "url": "https://expressjs.com/en/5x/api.html#req.originalUrl"
+            },
+            {
+              "name": "req.baseUrl",
+              "url": "https://expressjs.com/en/5x/api.html#req.baseUrl"
+            },
+            {
+              "name": "req.protocol",
+              "url": "https://expressjs.com/en/5x/api.html#req.protocol"
+            },
+            {
+              "name": "req.secure",
+              "url": "https://expressjs.com/en/5x/api.html#req.secure"
+            },
+            {
+              "name": "req.xhr",
+              "url": "https://expressjs.com/en/5x/api.html#req.xhr"
+            },
+            {
+              "name": "req.route",
+              "url": "https://expressjs.com/en/5x/api.html#req.route"
+            },
+            {
+              "name": "req.app",
+              "url": "https://expressjs.com/en/5x/api.html#req.app"
+            },
+            {
+              "name": "req.res",
+              "url": "https://expressjs.com/en/5x/api.html#req.res"
+            }
+          ]
+        },
+        {
+          "title": "Methods",
+          "items": [
+            {
+              "name": "req.get()",
+              "url": "https://expressjs.com/en/5x/api.html#req.get"
+            },
+            {
+              "name": "req.is()",
+              "url": "https://expressjs.com/en/5x/api.html#req.is"
+            },
+            {
+              "name": "req.accepts()",
+              "url": "https://expressjs.com/en/5x/api.html#req.accepts"
+            },
+            {
+              "name": "req.acceptsLanguages()",
+              "url": "https://expressjs.com/en/5x/api.html#req.acceptsLanguages"
+            },
+            {
+              "name": "req.range()",
+              "url": "https://expressjs.com/en/5x/api.html#req.range"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Response",
+      "groups": [
+        {
+          "title": "Send",
+          "items": [
+            {
+              "name": "res.send()",
+              "url": "https://expressjs.com/en/5x/api.html#res.send"
+            },
+            {
+              "name": "res.json()",
+              "url": "https://expressjs.com/en/5x/api.html#res.json"
+            },
+            {
+              "name": "res.jsonp()",
+              "url": "https://expressjs.com/en/5x/api.html#res.jsonp"
+            },
+            {
+              "name": "res.status()",
+              "url": "https://expressjs.com/en/5x/api.html#res.status"
+            },
+            {
+              "name": "res.sendStatus()",
+              "url": "https://expressjs.com/en/5x/api.html#res.sendStatus"
+            },
+            {
+              "name": "res.sendFile()",
+              "url": "https://expressjs.com/en/5x/api.html#res.sendFile"
+            },
+            {
+              "name": "res.download()",
+              "url": "https://expressjs.com/en/5x/api.html#res.download"
+            },
+            {
+              "name": "res.render()",
+              "url": "https://expressjs.com/en/5x/api.html#res.render"
+            },
+            {
+              "name": "res.redirect()",
+              "url": "https://expressjs.com/en/5x/api.html#res.redirect"
+            },
+            {
+              "name": "res.end()",
+              "url": "https://expressjs.com/en/5x/api.html#res.end"
+            }
+          ]
+        },
+        {
+          "title": "Headers & Cookies",
+          "items": [
+            {
+              "name": "res.set()",
+              "url": "https://expressjs.com/en/5x/api.html#res.set"
+            },
+            {
+              "name": "res.get()",
+              "url": "https://expressjs.com/en/5x/api.html#res.get"
+            },
+            {
+              "name": "res.append()",
+              "url": "https://expressjs.com/en/5x/api.html#res.append"
+            },
+            {
+              "name": "res.type()",
+              "url": "https://expressjs.com/en/5x/api.html#res.type"
+            },
+            {
+              "name": "res.format()",
+              "url": "https://expressjs.com/en/5x/api.html#res.format"
+            },
+            {
+              "name": "res.attachment()",
+              "url": "https://expressjs.com/en/5x/api.html#res.attachment"
+            },
+            {
+              "name": "res.location()",
+              "url": "https://expressjs.com/en/5x/api.html#res.location"
+            },
+            {
+              "name": "res.links()",
+              "url": "https://expressjs.com/en/5x/api.html#res.links"
+            },
+            {
+              "name": "res.vary()",
+              "url": "https://expressjs.com/en/5x/api.html#res.vary"
+            },
+            {
+              "name": "res.cookie()",
+              "url": "https://expressjs.com/en/5x/api.html#res.cookie"
+            },
+            {
+              "name": "res.clearCookie()",
+              "url": "https://expressjs.com/en/5x/api.html#res.clearCookie"
+            }
+          ]
+        },
+        {
+          "title": "Properties",
+          "items": [
+            {
+              "name": "res.locals",
+              "url": "https://expressjs.com/en/5x/api.html#res.locals"
+            },
+            {
+              "name": "res.headersSent",
+              "url": "https://expressjs.com/en/5x/api.html#res.headersSent"
+            },
+            {
+              "name": "res.app",
+              "url": "https://expressjs.com/en/5x/api.html#res.app"
+            },
+            {
+              "name": "res.req",
+              "url": "https://expressjs.com/en/5x/api.html#res.req"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Router",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "router.use()",
+              "url": "https://expressjs.com/en/5x/api.html#router.use"
+            },
+            {
+              "name": "router.route()",
+              "url": "https://expressjs.com/en/5x/api.html#router.route"
+            },
+            {
+              "name": "router.param()",
+              "url": "https://expressjs.com/en/5x/api.html#router.param"
+            },
+            {
+              "name": "router.all()",
+              "url": "https://expressjs.com/en/5x/api.html#router.all"
+            },
+            {
+              "name": "router.METHOD()",
+              "url": "https://expressjs.com/en/5x/api.html#router.METHOD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Guides",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Routing",
+              "url": "https://expressjs.com/en/guide/routing.html"
+            },
+            {
+              "name": "Writing middleware",
+              "url": "https://expressjs.com/en/guide/writing-middleware.html"
+            },
+            {
+              "name": "Using middleware",
+              "url": "https://expressjs.com/en/guide/using-middleware.html"
+            },
+            {
+              "name": "Error handling",
+              "url": "https://expressjs.com/en/guide/error-handling.html"
+            },
+            {
+              "name": "Template engines",
+              "url": "https://expressjs.com/en/guide/using-template-engines.html"
+            },
+            {
+              "name": "Serving static files",
+              "url": "https://expressjs.com/en/starter/static-files.html"
+            },
+            {
+              "name": "Migrating to Express 5",
+              "url": "https://expressjs.com/en/guide/migrating-5.html"
+            },
+            {
+              "name": "Security best practices",
+              "url": "https://expressjs.com/en/advanced/best-practice-security.html"
+            },
+            {
+              "name": "Performance best practices",
+              "url": "https://expressjs.com/en/advanced/best-practice-performance.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Middleware",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "body-parser",
+              "url": "https://expressjs.com/en/resources/middleware/body-parser.html"
+            },
+            {
+              "name": "cookie-parser",
+              "url": "https://expressjs.com/en/resources/middleware/cookie-parser.html"
+            },
+            {
+              "name": "cors",
+              "url": "https://expressjs.com/en/resources/middleware/cors.html"
+            },
+            {
+              "name": "compression",
+              "url": "https://expressjs.com/en/resources/middleware/compression.html"
+            },
+            {
+              "name": "morgan",
+              "url": "https://expressjs.com/en/resources/middleware/morgan.html"
+            },
+            {
+              "name": "multer",
+              "url": "https://expressjs.com/en/resources/middleware/multer.html"
+            },
+            {
+              "name": "express-session",
+              "url": "https://expressjs.com/en/resources/middleware/session.html"
+            },
+            {
+              "name": "serve-static",
+              "url": "https://expressjs.com/en/resources/middleware/serve-static.html"
+            },
+            {
+              "name": "helmet",
+              "url": "https://helmetjs.github.io/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

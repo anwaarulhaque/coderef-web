@@ -1,0 +1,41 @@
+{
+  "slug": "opensearch",
+  "title": "OpenSearch",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for OpenSearch.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "OpenSearch description spec",
+              "url": "https://github.com/dewitt/opensearch"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.opensearch.org/"
+            },
+            {
+              "name": "Wikipedia OpenSearch",
+              "url": "https://en.wikipedia.org/wiki/OpenSearch"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "OpenSearch Cheat Sheet [.pdf]",
+              "url": "http://www.scribd.com/doc/6114752/OpenSearch-Cheat-Sheet-15"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

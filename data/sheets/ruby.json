@@ -1,0 +1,1196 @@
+{
+  "slug": "ruby",
+  "title": "Ruby",
+  "category": "Languages",
+  "color": "#cc342d",
+  "description": "Ruby 3.4 core classes — String, Array, Hash, Enumerable, Kernel — and syntax guides.",
+  "reference": "https://docs.ruby-lang.org/en/3.4/",
+  "sections": [
+    {
+      "title": "String",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "capitalize",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-capitalize"
+            },
+            {
+              "name": "center",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-center"
+            },
+            {
+              "name": "chars",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-chars"
+            },
+            {
+              "name": "chomp",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-chomp"
+            },
+            {
+              "name": "chop",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-chop"
+            },
+            {
+              "name": "count",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-count"
+            },
+            {
+              "name": "delete",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-delete"
+            },
+            {
+              "name": "downcase",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-downcase"
+            },
+            {
+              "name": "each_char",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-each_char"
+            },
+            {
+              "name": "empty?",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-empty-3F"
+            },
+            {
+              "name": "end_with?",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-end_with-3F"
+            },
+            {
+              "name": "gsub",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-gsub"
+            },
+            {
+              "name": "include?",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-include-3F"
+            },
+            {
+              "name": "index",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-index"
+            },
+            {
+              "name": "length",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-length"
+            },
+            {
+              "name": "ljust",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-ljust"
+            },
+            {
+              "name": "lines",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-lines"
+            },
+            {
+              "name": "match",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-match"
+            },
+            {
+              "name": "replace",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-replace"
+            },
+            {
+              "name": "reverse",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-reverse"
+            },
+            {
+              "name": "rjust",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-rjust"
+            },
+            {
+              "name": "scan",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-scan"
+            },
+            {
+              "name": "slice",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-slice"
+            },
+            {
+              "name": "split",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-split"
+            },
+            {
+              "name": "squeeze",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-squeeze"
+            },
+            {
+              "name": "start_with?",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-start_with-3F"
+            },
+            {
+              "name": "strip",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-strip"
+            },
+            {
+              "name": "sub",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-sub"
+            },
+            {
+              "name": "swapcase",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-swapcase"
+            },
+            {
+              "name": "to_i",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-to_i"
+            },
+            {
+              "name": "to_f",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-to_f"
+            },
+            {
+              "name": "to_sym",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-to_sym"
+            },
+            {
+              "name": "tr",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-tr"
+            },
+            {
+              "name": "upcase",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i-upcase"
+            },
+            {
+              "name": "+",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i--2B"
+            },
+            {
+              "name": "*",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i--2A"
+            },
+            {
+              "name": "%",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i--25"
+            },
+            {
+              "name": "=~",
+              "url": "https://docs.ruby-lang.org/en/3.4/String.html#method-i--3D-7E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Array",
+      "groups": [
+        {
+          "title": "Add & Remove",
+          "items": [
+            {
+              "name": "push",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-push"
+            },
+            {
+              "name": "<<",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i--3C-3C"
+            },
+            {
+              "name": "pop",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-pop"
+            },
+            {
+              "name": "shift",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-shift"
+            },
+            {
+              "name": "unshift",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-unshift"
+            },
+            {
+              "name": "insert",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-insert"
+            },
+            {
+              "name": "concat",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-concat"
+            },
+            {
+              "name": "delete",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-delete"
+            },
+            {
+              "name": "delete_at",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-delete_at"
+            },
+            {
+              "name": "delete_if",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-delete_if"
+            },
+            {
+              "name": "compact",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-compact"
+            },
+            {
+              "name": "clear",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-clear"
+            },
+            {
+              "name": "fill",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-fill"
+            }
+          ]
+        },
+        {
+          "title": "Query & Transform",
+          "items": [
+            {
+              "name": "[]",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i--5B-5D"
+            },
+            {
+              "name": "first",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-first"
+            },
+            {
+              "name": "last",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-last"
+            },
+            {
+              "name": "take",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-take"
+            },
+            {
+              "name": "drop",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-drop"
+            },
+            {
+              "name": "slice",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-slice"
+            },
+            {
+              "name": "dig",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-dig"
+            },
+            {
+              "name": "include?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-include-3F"
+            },
+            {
+              "name": "index",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-index"
+            },
+            {
+              "name": "count",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-count"
+            },
+            {
+              "name": "sample",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-sample"
+            },
+            {
+              "name": "shuffle",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-shuffle"
+            },
+            {
+              "name": "sort",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-sort"
+            },
+            {
+              "name": "reverse",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-reverse"
+            },
+            {
+              "name": "rotate",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-rotate"
+            },
+            {
+              "name": "flatten",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-flatten"
+            },
+            {
+              "name": "uniq",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-uniq"
+            },
+            {
+              "name": "zip",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-zip"
+            },
+            {
+              "name": "product",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-product"
+            },
+            {
+              "name": "join",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-join"
+            },
+            {
+              "name": "sum",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-sum"
+            },
+            {
+              "name": "min",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-min"
+            },
+            {
+              "name": "max",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-max"
+            },
+            {
+              "name": "map",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-map"
+            },
+            {
+              "name": "select",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-select"
+            },
+            {
+              "name": "reject",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-reject"
+            },
+            {
+              "name": "any?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-any-3F"
+            },
+            {
+              "name": "all?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-all-3F"
+            },
+            {
+              "name": "none?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-none-3F"
+            },
+            {
+              "name": "each",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-each"
+            },
+            {
+              "name": "each_with_index",
+              "url": "https://docs.ruby-lang.org/en/3.4/Array.html#method-i-each_with_index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hash",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "[]",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i--5B-5D"
+            },
+            {
+              "name": "[]=",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i--5B-5D-3D"
+            },
+            {
+              "name": "fetch",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-fetch"
+            },
+            {
+              "name": "dig",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-dig"
+            },
+            {
+              "name": "store",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-store"
+            },
+            {
+              "name": "delete",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-delete"
+            },
+            {
+              "name": "key?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-key-3F"
+            },
+            {
+              "name": "value?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-value-3F"
+            },
+            {
+              "name": "keys",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-keys"
+            },
+            {
+              "name": "values",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-values"
+            },
+            {
+              "name": "each",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-each"
+            },
+            {
+              "name": "each_pair",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-each_pair"
+            },
+            {
+              "name": "merge",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-merge"
+            },
+            {
+              "name": "select",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-select"
+            },
+            {
+              "name": "reject",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-reject"
+            },
+            {
+              "name": "filter_map",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-filter_map"
+            },
+            {
+              "name": "transform_keys",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-transform_keys"
+            },
+            {
+              "name": "transform_values",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-transform_values"
+            },
+            {
+              "name": "to_a",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-to_a"
+            },
+            {
+              "name": "invert",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-invert"
+            },
+            {
+              "name": "slice",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-slice"
+            },
+            {
+              "name": "except",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-except"
+            },
+            {
+              "name": "compact",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-compact"
+            },
+            {
+              "name": "empty?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-empty-3F"
+            },
+            {
+              "name": "size",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-size"
+            },
+            {
+              "name": "any?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-any-3F"
+            },
+            {
+              "name": "default",
+              "url": "https://docs.ruby-lang.org/en/3.4/Hash.html#method-i-default"
+            },
+            {
+              "name": "group_by",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-group_by"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enumerable",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "map",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-map"
+            },
+            {
+              "name": "flat_map",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-flat_map"
+            },
+            {
+              "name": "filter_map",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-filter_map"
+            },
+            {
+              "name": "select",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-select"
+            },
+            {
+              "name": "reject",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-reject"
+            },
+            {
+              "name": "find",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-find"
+            },
+            {
+              "name": "find_index",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-find_index"
+            },
+            {
+              "name": "reduce",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-reduce"
+            },
+            {
+              "name": "inject",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-inject"
+            },
+            {
+              "name": "each_with_index",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-each_with_index"
+            },
+            {
+              "name": "each_with_object",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-each_with_object"
+            },
+            {
+              "name": "each_slice",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-each_slice"
+            },
+            {
+              "name": "each_cons",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-each_cons"
+            },
+            {
+              "name": "group_by",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-group_by"
+            },
+            {
+              "name": "partition",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-partition"
+            },
+            {
+              "name": "chunk_while",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-chunk_while"
+            },
+            {
+              "name": "sort_by",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-sort_by"
+            },
+            {
+              "name": "min_by",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-min_by"
+            },
+            {
+              "name": "max_by",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-max_by"
+            },
+            {
+              "name": "minmax",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-minmax"
+            },
+            {
+              "name": "sum",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-sum"
+            },
+            {
+              "name": "count",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-count"
+            },
+            {
+              "name": "tally",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-tally"
+            },
+            {
+              "name": "zip",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-zip"
+            },
+            {
+              "name": "include?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-include-3F"
+            },
+            {
+              "name": "first",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-first"
+            },
+            {
+              "name": "take_while",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-take_while"
+            },
+            {
+              "name": "drop_while",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-drop_while"
+            },
+            {
+              "name": "uniq",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-uniq"
+            },
+            {
+              "name": "to_h",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-to_h"
+            },
+            {
+              "name": "lazy",
+              "url": "https://docs.ruby-lang.org/en/3.4/Enumerable.html#method-i-lazy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Integer & Range",
+      "groups": [
+        {
+          "title": "Integer",
+          "items": [
+            {
+              "name": "times",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-times"
+            },
+            {
+              "name": "upto",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-upto"
+            },
+            {
+              "name": "downto",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-downto"
+            },
+            {
+              "name": "even?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-even-3F"
+            },
+            {
+              "name": "odd?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-odd-3F"
+            },
+            {
+              "name": "zero?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-zero-3F"
+            },
+            {
+              "name": "abs",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-abs"
+            },
+            {
+              "name": "digits",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-digits"
+            },
+            {
+              "name": "gcd",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-gcd"
+            },
+            {
+              "name": "lcm",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-lcm"
+            },
+            {
+              "name": "pow",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-pow"
+            },
+            {
+              "name": "to_s",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-to_s"
+            },
+            {
+              "name": "round",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-round"
+            },
+            {
+              "name": "floor",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-floor"
+            },
+            {
+              "name": "ceil",
+              "url": "https://docs.ruby-lang.org/en/3.4/Integer.html#method-i-ceil"
+            }
+          ]
+        },
+        {
+          "title": "Range",
+          "items": [
+            {
+              "name": "each",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-each"
+            },
+            {
+              "name": "step",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-step"
+            },
+            {
+              "name": "include?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-include-3F"
+            },
+            {
+              "name": "cover?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-cover-3F"
+            },
+            {
+              "name": "to_a",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-to_a"
+            },
+            {
+              "name": "sum",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-sum"
+            },
+            {
+              "name": "min",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-min"
+            },
+            {
+              "name": "max",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-max"
+            },
+            {
+              "name": "size",
+              "url": "https://docs.ruby-lang.org/en/3.4/Range.html#method-i-size"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kernel",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "puts",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-puts"
+            },
+            {
+              "name": "print",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-print"
+            },
+            {
+              "name": "p",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-p"
+            },
+            {
+              "name": "pp",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-pp"
+            },
+            {
+              "name": "gets",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-gets"
+            },
+            {
+              "name": "require",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-require"
+            },
+            {
+              "name": "require_relative",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-require_relative"
+            },
+            {
+              "name": "raise",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-raise"
+            },
+            {
+              "name": "loop",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-loop"
+            },
+            {
+              "name": "rand",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-rand"
+            },
+            {
+              "name": "sleep",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-sleep"
+            },
+            {
+              "name": "format",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-format"
+            },
+            {
+              "name": "sprintf",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-sprintf"
+            },
+            {
+              "name": "lambda",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-lambda"
+            },
+            {
+              "name": "proc",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-proc"
+            },
+            {
+              "name": "catch",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-catch"
+            },
+            {
+              "name": "throw",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-throw"
+            },
+            {
+              "name": "caller",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-caller"
+            },
+            {
+              "name": "exit",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-exit"
+            },
+            {
+              "name": "at_exit",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-at_exit"
+            },
+            {
+              "name": "Integer",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-Integer"
+            },
+            {
+              "name": "Float",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-Float"
+            },
+            {
+              "name": "String",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-String"
+            },
+            {
+              "name": "Array",
+              "url": "https://docs.ruby-lang.org/en/3.4/Kernel.html#method-i-Array"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Object",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "tap",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-tap"
+            },
+            {
+              "name": "then",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-then"
+            },
+            {
+              "name": "freeze",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-freeze"
+            },
+            {
+              "name": "frozen?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-frozen-3F"
+            },
+            {
+              "name": "dup",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-dup"
+            },
+            {
+              "name": "clone",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-clone"
+            },
+            {
+              "name": "respond_to?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-respond_to-3F"
+            },
+            {
+              "name": "is_a?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-is_a-3F"
+            },
+            {
+              "name": "kind_of?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-kind_of-3F"
+            },
+            {
+              "name": "instance_of?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-instance_of-3F"
+            },
+            {
+              "name": "nil?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-nil-3F"
+            },
+            {
+              "name": "send",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-send"
+            },
+            {
+              "name": "public_send",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-public_send"
+            },
+            {
+              "name": "method",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-method"
+            },
+            {
+              "name": "methods",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-methods"
+            },
+            {
+              "name": "instance_variable_get",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-instance_variable_get"
+            },
+            {
+              "name": "instance_variables",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-instance_variables"
+            },
+            {
+              "name": "define_singleton_method",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-define_singleton_method"
+            },
+            {
+              "name": "inspect",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-inspect"
+            },
+            {
+              "name": "to_s",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-to_s"
+            },
+            {
+              "name": "itself",
+              "url": "https://docs.ruby-lang.org/en/3.4/Object.html#method-i-itself"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Files & IO",
+      "groups": [
+        {
+          "title": "File",
+          "items": [
+            {
+              "name": "File.exist?",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-exist-3F"
+            },
+            {
+              "name": "File.directory?",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-directory-3F"
+            },
+            {
+              "name": "File.file?",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-file-3F"
+            },
+            {
+              "name": "File.basename",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-basename"
+            },
+            {
+              "name": "File.dirname",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-dirname"
+            },
+            {
+              "name": "File.extname",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-extname"
+            },
+            {
+              "name": "File.join",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-join"
+            },
+            {
+              "name": "File.expand_path",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-expand_path"
+            },
+            {
+              "name": "File.size",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-size"
+            },
+            {
+              "name": "File.delete",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-delete"
+            },
+            {
+              "name": "File.rename",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-rename"
+            },
+            {
+              "name": "File.open",
+              "url": "https://docs.ruby-lang.org/en/3.4/File.html#method-c-open"
+            }
+          ]
+        },
+        {
+          "title": "IO",
+          "items": [
+            {
+              "name": "IO.read",
+              "url": "https://docs.ruby-lang.org/en/3.4/IO.html#method-c-read"
+            },
+            {
+              "name": "IO.readlines",
+              "url": "https://docs.ruby-lang.org/en/3.4/IO.html#method-c-readlines"
+            },
+            {
+              "name": "IO.write",
+              "url": "https://docs.ruby-lang.org/en/3.4/IO.html#method-c-write"
+            },
+            {
+              "name": "IO.foreach",
+              "url": "https://docs.ruby-lang.org/en/3.4/IO.html#method-c-foreach"
+            }
+          ]
+        },
+        {
+          "title": "Dir",
+          "items": [
+            {
+              "name": "Dir.glob",
+              "url": "https://docs.ruby-lang.org/en/3.4/Dir.html#method-c-glob"
+            },
+            {
+              "name": "Dir.entries",
+              "url": "https://docs.ruby-lang.org/en/3.4/Dir.html#method-c-entries"
+            },
+            {
+              "name": "Dir.children",
+              "url": "https://docs.ruby-lang.org/en/3.4/Dir.html#method-c-children"
+            },
+            {
+              "name": "Dir.mkdir",
+              "url": "https://docs.ruby-lang.org/en/3.4/Dir.html#method-c-mkdir"
+            },
+            {
+              "name": "Dir.pwd",
+              "url": "https://docs.ruby-lang.org/en/3.4/Dir.html#method-c-pwd"
+            },
+            {
+              "name": "Dir.exist?",
+              "url": "https://docs.ruby-lang.org/en/3.4/Dir.html#method-c-exist-3F"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Other Classes",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Symbol",
+              "url": "https://docs.ruby-lang.org/en/3.4/Symbol.html"
+            },
+            {
+              "name": "Proc",
+              "url": "https://docs.ruby-lang.org/en/3.4/Proc.html"
+            },
+            {
+              "name": "Method",
+              "url": "https://docs.ruby-lang.org/en/3.4/Method.html"
+            },
+            {
+              "name": "Struct",
+              "url": "https://docs.ruby-lang.org/en/3.4/Struct.html"
+            },
+            {
+              "name": "Data",
+              "url": "https://docs.ruby-lang.org/en/3.4/Data.html"
+            },
+            {
+              "name": "Comparable",
+              "url": "https://docs.ruby-lang.org/en/3.4/Comparable.html"
+            },
+            {
+              "name": "Time",
+              "url": "https://docs.ruby-lang.org/en/3.4/Time.html"
+            },
+            {
+              "name": "Regexp",
+              "url": "https://docs.ruby-lang.org/en/3.4/Regexp.html"
+            },
+            {
+              "name": "MatchData",
+              "url": "https://docs.ruby-lang.org/en/3.4/MatchData.html"
+            },
+            {
+              "name": "Set",
+              "url": "https://docs.ruby-lang.org/en/3.4/Set.html"
+            },
+            {
+              "name": "Exception",
+              "url": "https://docs.ruby-lang.org/en/3.4/Exception.html"
+            },
+            {
+              "name": "StandardError",
+              "url": "https://docs.ruby-lang.org/en/3.4/StandardError.html"
+            },
+            {
+              "name": "Fiber",
+              "url": "https://docs.ruby-lang.org/en/3.4/Fiber.html"
+            },
+            {
+              "name": "Thread",
+              "url": "https://docs.ruby-lang.org/en/3.4/Thread.html"
+            },
+            {
+              "name": "Ractor",
+              "url": "https://docs.ruby-lang.org/en/3.4/Ractor.html"
+            },
+            {
+              "name": "ObjectSpace",
+              "url": "https://docs.ruby-lang.org/en/3.4/ObjectSpace.html"
+            },
+            {
+              "name": "GC",
+              "url": "https://docs.ruby-lang.org/en/3.4/GC.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Syntax",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Literals",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/literals_rdoc.html"
+            },
+            {
+              "name": "Assignment",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/assignment_rdoc.html"
+            },
+            {
+              "name": "Control expressions",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/control_expressions_rdoc.html"
+            },
+            {
+              "name": "Methods",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/methods_rdoc.html"
+            },
+            {
+              "name": "Calling methods",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/calling_methods_rdoc.html"
+            },
+            {
+              "name": "Modules & classes",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/modules_and_classes_rdoc.html"
+            },
+            {
+              "name": "Exceptions",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/exceptions_rdoc.html"
+            },
+            {
+              "name": "Pattern matching",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/pattern_matching_rdoc.html"
+            },
+            {
+              "name": "Precedence",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/operators_rdoc.html"
+            },
+            {
+              "name": "Refinements",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/refinements_rdoc.html"
+            },
+            {
+              "name": "Miscellaneous",
+              "url": "https://docs.ruby-lang.org/en/3.4/syntax/miscellaneous_rdoc.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tooling",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "irb",
+              "url": "https://ruby.github.io/irb/"
+            },
+            {
+              "name": "gem",
+              "url": "https://guides.rubygems.org/command-reference/"
+            },
+            {
+              "name": "bundler",
+              "url": "https://bundler.io/guides/getting_started.html"
+            },
+            {
+              "name": "rake",
+              "url": "https://ruby.github.io/rake/"
+            },
+            {
+              "name": "rdoc",
+              "url": "https://ruby.github.io/rdoc/"
+            },
+            {
+              "name": "Ruby Style Guide",
+              "url": "https://rubystyle.guide/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1070 @@
+{
+  "slug": "javascript",
+  "title": "JavaScript",
+  "category": "Languages",
+  "color": "#f0db4f",
+  "description": "Core language built-ins: Array, String, Object, Promise, Math and more.",
+  "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference",
+  "sections": [
+    {
+      "title": "Array",
+      "groups": [
+        {
+          "title": "Static",
+          "items": [
+            {
+              "name": "from()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from"
+            },
+            {
+              "name": "isArray()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"
+            },
+            {
+              "name": "of()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of"
+            }
+          ]
+        },
+        {
+          "title": "Mutator",
+          "items": [
+            {
+              "name": "push()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+            },
+            {
+              "name": "pop()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+            },
+            {
+              "name": "shift()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+            },
+            {
+              "name": "unshift()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+            },
+            {
+              "name": "splice()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+            },
+            {
+              "name": "sort()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+            },
+            {
+              "name": "reverse()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"
+            },
+            {
+              "name": "fill()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"
+            },
+            {
+              "name": "copyWithin()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin"
+            }
+          ]
+        },
+        {
+          "title": "Accessor",
+          "items": [
+            {
+              "name": "at()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at"
+            },
+            {
+              "name": "concat()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+            },
+            {
+              "name": "includes()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+            },
+            {
+              "name": "indexOf()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+            },
+            {
+              "name": "join()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"
+            },
+            {
+              "name": "slice()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+            },
+            {
+              "name": "toSorted()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted"
+            },
+            {
+              "name": "toReversed()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed"
+            },
+            {
+              "name": "with()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with"
+            }
+          ]
+        },
+        {
+          "title": "Iteration",
+          "items": [
+            {
+              "name": "forEach()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+            },
+            {
+              "name": "map()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+            },
+            {
+              "name": "filter()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+            },
+            {
+              "name": "reduce()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+            },
+            {
+              "name": "reduceRight()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight"
+            },
+            {
+              "name": "find()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+            },
+            {
+              "name": "findIndex()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+            },
+            {
+              "name": "findLast()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast"
+            },
+            {
+              "name": "some()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+            },
+            {
+              "name": "every()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+            },
+            {
+              "name": "flat()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"
+            },
+            {
+              "name": "flatMap()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String",
+      "groups": [
+        {
+          "title": "Static",
+          "items": [
+            {
+              "name": "fromCharCode()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode"
+            },
+            {
+              "name": "fromCodePoint()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCodePoint"
+            },
+            {
+              "name": "raw()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw"
+            }
+          ]
+        },
+        {
+          "title": "Methods",
+          "items": [
+            {
+              "name": "at()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/at"
+            },
+            {
+              "name": "charAt()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt"
+            },
+            {
+              "name": "codePointAt()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt"
+            },
+            {
+              "name": "concat()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat"
+            },
+            {
+              "name": "endsWith()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
+            },
+            {
+              "name": "includes()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+            },
+            {
+              "name": "indexOf()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf"
+            },
+            {
+              "name": "match()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match"
+            },
+            {
+              "name": "matchAll()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll"
+            },
+            {
+              "name": "normalize()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize"
+            },
+            {
+              "name": "padEnd()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd"
+            },
+            {
+              "name": "padStart()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart"
+            },
+            {
+              "name": "repeat()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat"
+            },
+            {
+              "name": "replace()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"
+            },
+            {
+              "name": "replaceAll()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll"
+            },
+            {
+              "name": "search()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search"
+            },
+            {
+              "name": "slice()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+            },
+            {
+              "name": "split()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+            },
+            {
+              "name": "startsWith()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith"
+            },
+            {
+              "name": "substring()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring"
+            },
+            {
+              "name": "toLowerCase()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase"
+            },
+            {
+              "name": "toUpperCase()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"
+            },
+            {
+              "name": "trim()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim"
+            },
+            {
+              "name": "trimEnd()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd"
+            },
+            {
+              "name": "trimStart()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Object",
+      "groups": [
+        {
+          "title": "Static",
+          "items": [
+            {
+              "name": "assign()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign"
+            },
+            {
+              "name": "create()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create"
+            },
+            {
+              "name": "defineProperty()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty"
+            },
+            {
+              "name": "entries()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries"
+            },
+            {
+              "name": "freeze()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze"
+            },
+            {
+              "name": "fromEntries()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries"
+            },
+            {
+              "name": "getOwnPropertyNames()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames"
+            },
+            {
+              "name": "getPrototypeOf()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf"
+            },
+            {
+              "name": "groupBy()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy"
+            },
+            {
+              "name": "hasOwn()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn"
+            },
+            {
+              "name": "is()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is"
+            },
+            {
+              "name": "isFrozen()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen"
+            },
+            {
+              "name": "keys()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys"
+            },
+            {
+              "name": "seal()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal"
+            },
+            {
+              "name": "values()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values"
+            }
+          ]
+        },
+        {
+          "title": "Instance",
+          "items": [
+            {
+              "name": "hasOwnProperty()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+            },
+            {
+              "name": "isPrototypeOf()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf"
+            },
+            {
+              "name": "toString()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString"
+            },
+            {
+              "name": "valueOf()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Promise",
+      "groups": [
+        {
+          "title": "Static",
+          "items": [
+            {
+              "name": "all()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all"
+            },
+            {
+              "name": "allSettled()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled"
+            },
+            {
+              "name": "any()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any"
+            },
+            {
+              "name": "race()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race"
+            },
+            {
+              "name": "reject()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject"
+            },
+            {
+              "name": "resolve()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve"
+            },
+            {
+              "name": "withResolvers()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/withResolvers"
+            }
+          ]
+        },
+        {
+          "title": "Instance",
+          "items": [
+            {
+              "name": "then()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then"
+            },
+            {
+              "name": "catch()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch"
+            },
+            {
+              "name": "finally()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Math",
+      "groups": [
+        {
+          "title": "Methods",
+          "items": [
+            {
+              "name": "abs()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs"
+            },
+            {
+              "name": "ceil()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil"
+            },
+            {
+              "name": "floor()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor"
+            },
+            {
+              "name": "round()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round"
+            },
+            {
+              "name": "trunc()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc"
+            },
+            {
+              "name": "max()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max"
+            },
+            {
+              "name": "min()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min"
+            },
+            {
+              "name": "pow()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow"
+            },
+            {
+              "name": "random()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random"
+            },
+            {
+              "name": "sign()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign"
+            },
+            {
+              "name": "sqrt()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt"
+            },
+            {
+              "name": "cbrt()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt"
+            },
+            {
+              "name": "log()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log"
+            },
+            {
+              "name": "log2()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log2"
+            },
+            {
+              "name": "log10()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/log10"
+            },
+            {
+              "name": "hypot()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot"
+            }
+          ]
+        },
+        {
+          "title": "Constants",
+          "items": [
+            {
+              "name": "E",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E"
+            },
+            {
+              "name": "PI",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI"
+            },
+            {
+              "name": "LN2",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN2"
+            },
+            {
+              "name": "LN10",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN10"
+            },
+            {
+              "name": "SQRT2",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Number",
+      "groups": [
+        {
+          "title": "Static",
+          "items": [
+            {
+              "name": "isFinite()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite"
+            },
+            {
+              "name": "isInteger()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger"
+            },
+            {
+              "name": "isNaN()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN"
+            },
+            {
+              "name": "isSafeInteger()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger"
+            },
+            {
+              "name": "parseFloat()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat"
+            },
+            {
+              "name": "parseInt()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseInt"
+            }
+          ]
+        },
+        {
+          "title": "Instance",
+          "items": [
+            {
+              "name": "toFixed()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed"
+            },
+            {
+              "name": "toPrecision()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision"
+            },
+            {
+              "name": "toString()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString"
+            },
+            {
+              "name": "toLocaleString()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JSON",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "parse()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+            },
+            {
+              "name": "stringify()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Map & Set",
+      "groups": [
+        {
+          "title": "Map",
+          "items": [
+            {
+              "name": "set()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set"
+            },
+            {
+              "name": "get()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get"
+            },
+            {
+              "name": "has()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/has"
+            },
+            {
+              "name": "delete()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete"
+            },
+            {
+              "name": "clear()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear"
+            },
+            {
+              "name": "keys()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/keys"
+            },
+            {
+              "name": "values()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/values"
+            },
+            {
+              "name": "entries()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries"
+            },
+            {
+              "name": "forEach()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach"
+            }
+          ]
+        },
+        {
+          "title": "Set",
+          "items": [
+            {
+              "name": "add()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add"
+            },
+            {
+              "name": "has()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has"
+            },
+            {
+              "name": "delete()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete"
+            },
+            {
+              "name": "clear()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear"
+            },
+            {
+              "name": "union()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/union"
+            },
+            {
+              "name": "intersection()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/intersection"
+            },
+            {
+              "name": "difference()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/difference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statements",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "async function",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function"
+            },
+            {
+              "name": "class",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class"
+            },
+            {
+              "name": "const",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"
+            },
+            {
+              "name": "let",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+            },
+            {
+              "name": "for...of",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of"
+            },
+            {
+              "name": "for...in",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in"
+            },
+            {
+              "name": "if...else",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else"
+            },
+            {
+              "name": "switch",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch"
+            },
+            {
+              "name": "try...catch",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch"
+            },
+            {
+              "name": "import",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import"
+            },
+            {
+              "name": "export",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Operators",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Optional chaining",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining"
+            },
+            {
+              "name": "Nullish coalescing",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing"
+            },
+            {
+              "name": "Spread syntax",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax"
+            },
+            {
+              "name": "Destructuring",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring"
+            },
+            {
+              "name": "typeof",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
+            },
+            {
+              "name": "instanceof",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof"
+            },
+            {
+              "name": "await",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await"
+            },
+            {
+              "name": "new",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new"
+            },
+            {
+              "name": "delete",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Date",
+      "groups": [
+        {
+          "title": "Static",
+          "items": [
+            {
+              "name": "now()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now"
+            },
+            {
+              "name": "parse()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse"
+            },
+            {
+              "name": "UTC()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC"
+            }
+          ]
+        },
+        {
+          "title": "Getters",
+          "items": [
+            {
+              "name": "getFullYear()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear"
+            },
+            {
+              "name": "getMonth()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth"
+            },
+            {
+              "name": "getDate()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate"
+            },
+            {
+              "name": "getDay()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay"
+            },
+            {
+              "name": "getHours()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours"
+            },
+            {
+              "name": "getMinutes()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes"
+            },
+            {
+              "name": "getSeconds()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds"
+            },
+            {
+              "name": "getTime()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime"
+            },
+            {
+              "name": "getTimezoneOffset()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset"
+            }
+          ]
+        },
+        {
+          "title": "Format",
+          "items": [
+            {
+              "name": "toISOString()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString"
+            },
+            {
+              "name": "toLocaleDateString()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString"
+            },
+            {
+              "name": "toLocaleTimeString()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString"
+            },
+            {
+              "name": "toJSON()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Global Functions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "parseInt()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt"
+            },
+            {
+              "name": "parseFloat()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat"
+            },
+            {
+              "name": "isNaN()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN"
+            },
+            {
+              "name": "isFinite()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite"
+            },
+            {
+              "name": "encodeURIComponent()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent"
+            },
+            {
+              "name": "decodeURIComponent()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent"
+            },
+            {
+              "name": "encodeURI()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI"
+            },
+            {
+              "name": "decodeURI()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI"
+            },
+            {
+              "name": "globalThis",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Errors",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Error",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error"
+            },
+            {
+              "name": "TypeError",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError"
+            },
+            {
+              "name": "RangeError",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError"
+            },
+            {
+              "name": "SyntaxError",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError"
+            },
+            {
+              "name": "ReferenceError",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError"
+            },
+            {
+              "name": "AggregateError",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Other Built-ins",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Symbol",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol"
+            },
+            {
+              "name": "BigInt",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt"
+            },
+            {
+              "name": "WeakMap",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap"
+            },
+            {
+              "name": "WeakSet",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet"
+            },
+            {
+              "name": "WeakRef",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef"
+            },
+            {
+              "name": "Proxy",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy"
+            },
+            {
+              "name": "Reflect",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect"
+            },
+            {
+              "name": "Intl",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl"
+            },
+            {
+              "name": "Iterator",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator"
+            },
+            {
+              "name": "ArrayBuffer",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer"
+            },
+            {
+              "name": "DataView",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView"
+            },
+            {
+              "name": "Uint8Array",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions & Classes",
+      "groups": [
+        {
+          "title": "Functions",
+          "items": [
+            {
+              "name": "Arrow_functions",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+            },
+            {
+              "name": "Default_parameters",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters"
+            },
+            {
+              "name": "Rest_parameters",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Rest_parameters"
+            },
+            {
+              "name": "arguments",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments"
+            },
+            {
+              "name": "get",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get"
+            },
+            {
+              "name": "set",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set"
+            }
+          ]
+        },
+        {
+          "title": "Classes",
+          "items": [
+            {
+              "name": "constructor",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor"
+            },
+            {
+              "name": "extends",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends"
+            },
+            {
+              "name": "static",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static"
+            },
+            {
+              "name": "Private_properties",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties"
+            },
+            {
+              "name": "Public_class_fields",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields"
+            },
+            {
+              "name": "Static_initialization_blocks",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Static_initialization_blocks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

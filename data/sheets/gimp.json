@@ -1,0 +1,41 @@
+{
+  "slug": "gimp",
+  "title": "Gimp",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Gimp.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "GIMP User Manual",
+              "url": "https://docs.gimp.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.gimp.org/"
+            },
+            {
+              "name": "Wikipedia Gimp",
+              "url": "https://en.wikipedia.org/wiki/GIMP"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Photoshop",
+              "url": "/photoshop/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

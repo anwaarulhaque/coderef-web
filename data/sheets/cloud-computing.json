@@ -1,0 +1,57 @@
+{
+  "slug": "cloud-computing",
+  "title": "Cloud Computing",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Cloud Computing.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "NIST Definition of Cloud Computing",
+              "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+            },
+            {
+              "name": "Amazon Web Services",
+              "url": "http://aws.amazon.com/"
+            },
+            {
+              "name": "Google App Engine",
+              "url": "http://appengine.google.com/"
+            },
+            {
+              "name": "Windows Azure",
+              "url": "http://www.microsoft.com/windowsazure/"
+            },
+            {
+              "name": "Wikipedia Cloud Computing",
+              "url": "https://en.wikipedia.org/wiki/Cloud_Computing"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Google App Engine",
+              "url": "/google-app-engine/"
+            },
+            {
+              "name": "Scalability and High Availability",
+              "url": "/scalability/"
+            },
+            {
+              "name": "Windows Azure",
+              "url": "/azure/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "drupal",
+  "title": "Drupal",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Drupal.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Drupal documentation",
+              "url": "https://www.drupal.org/docs"
+            },
+            {
+              "name": "Drupal API",
+              "url": "https://api.drupal.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://drupal.org/"
+            },
+            {
+              "name": "Wikipedia Drupal",
+              "url": "https://en.wikipedia.org/wiki/Drupal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

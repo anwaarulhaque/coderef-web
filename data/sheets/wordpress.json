@@ -1,0 +1,40 @@
+{
+  "slug": "wordpress",
+  "title": "WordPress",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for WordPress.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "WordPress Developer Resources",
+              "url": "https://developer.wordpress.org/"
+            },
+            {
+              "name": "Code Reference",
+              "url": "https://developer.wordpress.org/reference/"
+            },
+            {
+              "name": "WP-CLI commands",
+              "url": "https://developer.wordpress.org/cli/commands/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://wordpress.org/"
+            },
+            {
+              "name": "Wikipedia WordPress",
+              "url": "https://en.wikipedia.org/wiki/WordPress"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

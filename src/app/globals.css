@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f9;
+  --surface: #ffffff;
+  --foreground: #16181d;
+  --muted: #5f6673;
+  --border: #e3e6eb;
+  --accent: #2563eb;
+  --chip: #f1f3f6;
+  --chip-hover: #e4e9f2;
+  --demo-a: #3b82f6;
+  --demo-b: #6366f1;
+  --demo-target: #f97316;
+  --demo-container: rgb(37 99 235 / 0.07);
+  --demo-container-line: rgb(37 99 235 / 0.4);
+  /* JSON syntax colors */
+  --json-key: #9333ea;
+  --json-string: #16a34a;
+  --json-number: #2563eb;
+  --json-bool: #ea580c;
+  /* Regex tester: match / group highlights and pattern syntax colors */
+  --rx-match-a: rgb(250 204 21 / 0.55);
+  --rx-match-b: rgb(251 191 36 / 0.75);
+  --rx-g1: rgb(34 197 94 / 0.35);
+  --rx-g2: rgb(249 115 22 / 0.35);
+  --rx-g3: rgb(236 72 153 / 0.3);
+  --rx-g4: rgb(139 92 246 / 0.35);
+  --rx-g5: rgb(20 184 166 / 0.35);
+  /* Solid group colors, drawn as underlines on top of the yellow match highlight */
+  --rx-line-1: #16a34a;
+  --rx-line-2: #ea580c;
+  --rx-line-3: #db2777;
+  --rx-line-4: #7c3aed;
+  --rx-line-5: #0d9488;
+  --rx-depth-0: #16a34a;
+  --rx-depth-1: #ea580c;
+  --rx-depth-2: #db2777;
+  --rx-depth-3: #ca8a04;
+  --rx-quantifier: #2563eb;
+  --rx-class: #0e7490;
+  --rx-escape: #9333ea;
+  --rx-anchor: #dc2626;
+  --rx-backref: #c026d3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-chip: var(--chip);
+  --color-chip-hover: var(--chip-hover);
+  --color-demo-a: var(--demo-a);
+  --color-demo-b: var(--demo-b);
+  --color-demo-target: var(--demo-target);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d0f13;
+    --surface: #161920;
+    --foreground: #e8eaee;
+    --muted: #9198a5;
+    --border: #262a33;
+    --accent: #60a5fa;
+    --chip: #1f232b;
+    --chip-hover: #2a303b;
+    --demo-a: #2563eb;
+    --demo-b: #4f46e5;
+    --demo-target: #ea580c;
+    --demo-container: rgb(96 165 250 / 0.1);
+    --demo-container-line: rgb(96 165 250 / 0.45);
+    --json-key: #c084fc;
+    --json-string: #4ade80;
+    --json-number: #60a5fa;
+    --json-bool: #fb923c;
+    --rx-match-a: rgb(250 204 21 / 0.4);
+    --rx-match-b: rgb(245 158 11 / 0.5);
+    --rx-g1: rgb(34 197 94 / 0.5);
+    --rx-g2: rgb(249 115 22 / 0.5);
+    --rx-g3: rgb(236 72 153 / 0.45);
+    --rx-g4: rgb(139 92 246 / 0.5);
+    --rx-g5: rgb(20 184 166 / 0.5);
+    --rx-line-1: #4ade80;
+    --rx-line-2: #fb923c;
+    --rx-line-3: #f472b6;
+    --rx-line-4: #a78bfa;
+    --rx-line-5: #2dd4bf;
+    --rx-depth-0: #4ade80;
+    --rx-depth-1: #fb923c;
+    --rx-depth-2: #f472b6;
+    --rx-depth-3: #facc15;
+    --rx-quantifier: #60a5fa;
+    --rx-class: #22d3ee;
+    --rx-escape: #c084fc;
+    --rx-anchor: #f87171;
+    --rx-backref: #e879f9;
+  }
+}
+
+/* The header is sticky (3.5rem): keep anchor jumps and scrollIntoView clear of it. */
+html {
+  scroll-padding-top: 4.5rem;
+  /* Always reserve the scrollbar's space, so centered content (the header menu) doesn't
+     shift sideways between pages that scroll and pages that don't. */
+  scrollbar-gutter: stable;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Rendered Markdown (editor preview and cheat sheet) */
+.md-preview {
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.md-preview > :first-child { margin-top: 0; }
+.md-preview > :last-child { margin-bottom: 0; }
+.md-preview h1, .md-preview h2, .md-preview h3, .md-preview h4, .md-preview h5, .md-preview h6 {
+  margin: 1.2em 0 0.5em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.md-preview h1 { font-size: 1.9em; border-bottom: 1px solid var(--border); padding-bottom: 0.25em; }
+.md-preview h2 { font-size: 1.5em; border-bottom: 1px solid var(--border); padding-bottom: 0.25em; }
+.md-preview h3 { font-size: 1.25em; }
+.md-preview h4 { font-size: 1.05em; }
+.md-preview p, .md-preview ul, .md-preview ol, .md-preview dl, .md-preview blockquote, .md-preview pre, .md-preview table { margin: 0 0 1em; }
+.md-preview ul { list-style: disc; padding-left: 1.6em; }
+.md-preview ol { list-style: decimal; padding-left: 1.6em; }
+.md-preview li > ul, .md-preview li > ol { margin: 0.25em 0 0; }
+.md-preview li + li { margin-top: 0.2em; }
+.md-preview a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.md-preview strong { font-weight: 700; }
+.md-preview em { font-style: italic; }
+.md-preview blockquote { border-left: 4px solid var(--border); padding: 0 1em; color: var(--muted); }
+.md-preview code { font-family: var(--font-geist-mono), monospace; font-size: 0.875em; background: var(--chip); border-radius: 4px; padding: 0.15em 0.35em; }
+.md-preview pre { background: var(--chip); border-radius: 8px; padding: 0.9em 1em; overflow-x: auto; }
+.md-preview pre code { background: none; padding: 0; font-size: 0.85em; }
+.md-preview hr { border: 0; border-top: 2px solid var(--border); margin: 1.5em 0; }
+.md-preview img { max-width: 100%; display: inline-block; }
+.md-preview table { border-collapse: collapse; display: block; overflow-x: auto; }
+.md-preview th, .md-preview td { border: 1px solid var(--border); padding: 0.4em 0.8em; }
+.md-preview th { background: var(--chip); font-weight: 600; }
+.md-preview mark { background: rgb(250 204 21 / 0.55); color: inherit; padding: 0 0.15em; border-radius: 2px; }
+.md-preview kbd { font-family: var(--font-geist-mono), monospace; font-size: 0.8em; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 4px; padding: 0.1em 0.4em; background: var(--surface); }
+.md-preview dt { font-weight: 600; }
+.md-preview dd { margin-left: 1.5em; }
+.md-preview .task-list-item { list-style: none; margin-left: -1.3em; }
+.md-preview .task-list-item-checkbox { margin-right: 0.45em; vertical-align: middle; }
+.md-preview .footnotes { font-size: 0.875em; color: var(--muted); }
+.md-preview .footnotes-sep { margin: 1.5em 0 1em; }
+.md-preview .footnote-ref a, .md-preview .footnote-backref { text-decoration: none; }
+
+/* Printing (Quick Reference "Print / PDF"): just the content, black on white. */
+@media print {
+  .no-print { display: none !important; }
+  :root { --background: #fff; --surface: #fff; --chip: #f3f4f6; --foreground: #000; --muted: #444; }
+  body { background: #fff; }
+  pre { white-space: pre-wrap !important; }
+  section { break-inside: avoid-page; }
+}

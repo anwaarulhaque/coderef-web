@@ -1,0 +1,28 @@
+{
+  "slug": "ports",
+  "title": "Ports",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for Ports.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IANA Service Name and Port Registry",
+              "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"
+            },
+            {
+              "name": "Wikipedia Ports",
+              "url": "https://en.wikipedia.org/wiki/Port_(computer_networking)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

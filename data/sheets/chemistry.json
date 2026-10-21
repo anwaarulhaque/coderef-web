@@ -1,0 +1,53 @@
+{
+  "slug": "chemistry",
+  "title": "Chemistry",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Chemistry.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IUPAC Periodic Table",
+              "url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+            },
+            {
+              "name": "Wolfram Alpha Tools",
+              "url": "http://www.wolframalpha.com/examples/Chemistry.html"
+            },
+            {
+              "name": "Wikipedia Chemistry",
+              "url": "https://en.wikipedia.org/wiki/Chemistry"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Periodic Table of the Chemical Elements",
+              "url": "http://www.chemistry.su/periodic-table-chemical-elements-chemistry.html"
+            },
+            {
+              "name": "Periodic table",
+              "url": "https://en.wikipedia.org/wiki/Periodic_Table_of_the_Elements"
+            },
+            {
+              "name": "Math for Chemistry Cheat Sheet [.pdf]",
+              "url": "http://www.chemistrysurvival.com/pdf/ChemMastery_MathCard_Sample.pdf"
+            },
+            {
+              "name": "Chemistry Salt Analysis Cheatsheet by Ankur Banerjee [.pdf]",
+              "url": "http://www.scribd.com/doc/14012060/Chemistry-Salt-Analysis-Cheatsheet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

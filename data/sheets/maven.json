@@ -1,0 +1,49 @@
+{
+  "slug": "maven",
+  "title": "Maven",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Maven.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Maven documentation",
+              "url": "https://maven.apache.org/guides/index.html"
+            },
+            {
+              "name": "POM reference",
+              "url": "https://maven.apache.org/pom.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://maven.apache.org/"
+            },
+            {
+              "name": "Wikipedia Maven",
+              "url": "https://en.wikipedia.org/wiki/Apache_Maven"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

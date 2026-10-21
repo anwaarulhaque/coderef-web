@@ -1,0 +1,45 @@
+{
+  "slug": "intellij-idea",
+  "title": "IntelliJ IDEA",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for IntelliJ IDEA.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IntelliJ IDEA docs",
+              "url": "https://www.jetbrains.com/help/idea/"
+            },
+            {
+              "name": "Keyboard shortcuts",
+              "url": "https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.jetbrains.com/idea/"
+            },
+            {
+              "name": "Wikipedia IntelliJ IDEA",
+              "url": "https://en.wikipedia.org/wiki/IntelliJ_IDEA"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

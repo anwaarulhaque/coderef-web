@@ -1,0 +1,32 @@
+{
+  "slug": "continuous-integration",
+  "title": "Continuous Integration",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Continuous Integration.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Martin Fowler: Continuous Integration",
+              "url": "https://martinfowler.com/articles/continuousIntegration.html"
+            },
+            {
+              "name": "GitHub Actions docs",
+              "url": "https://docs.github.com/en/actions"
+            },
+            {
+              "name": "Wikipedia Continuous Integration",
+              "url": "https://en.wikipedia.org/wiki/Continuous_integration"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "ed",
+  "title": "Ed",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Ed.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "GNU ed manual",
+              "url": "https://www.gnu.org/software/ed/manual/ed_manual.html"
+            },
+            {
+              "name": "Wikipedia Ed",
+              "url": "https://en.wikipedia.org/wiki/Ed_%28text_editor%29"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Ed Text Editor Summary [.doc, pdf, txt]",
+              "url": "http://www.catonmat.net/blog/ed-unix-text-editor-cheat-sheet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

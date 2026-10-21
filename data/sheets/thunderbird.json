@@ -1,0 +1,28 @@
+{
+  "slug": "thunderbird",
+  "title": "Thunderbird",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Thunderbird.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Thunderbird keyboard shortcuts",
+              "url": "https://support.mozilla.org/en-US/kb/keyboard-shortcuts-thunderbird"
+            },
+            {
+              "name": "Wikipedia Thunderbird",
+              "url": "https://en.wikipedia.org/wiki/Mozilla_Thunderbird"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

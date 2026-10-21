@@ -1,0 +1,165 @@
+{
+  "slug": "dart",
+  "updated": "2026-10-14",
+  "title": "Dart",
+  "category": "Languages",
+  "color": "#0175c2",
+  "language": "dart",
+  "description": "Dart essentials (Flutter's language): variables, null safety, strings, collections, functions, classes and async.",
+  "docs": "https://dart.dev/language",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Variables and output.",
+      "rows": [
+        [
+          "Main",
+          "void main() {\n  print('Hello');\n}"
+        ],
+        [
+          "Variables",
+          [
+            "var name = 'Ada';",
+            "final created = DateTime.now();",
+            "const max = 100;"
+          ]
+        ],
+        [
+          "Interpolation",
+          "'$name is ${age + 1}'"
+        ],
+        [
+          "Convert",
+          [
+            "int.parse('42')",
+            "int.tryParse(text)",
+            "42.toString()"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Null safety",
+      "description": "Nullable types.",
+      "rows": [
+        [
+          "Nullable",
+          "String? nickname;"
+        ],
+        [
+          "Default / safe call",
+          [
+            "nickname ?? 'guest'",
+            "user?.name"
+          ]
+        ],
+        [
+          "Assert non-null",
+          "nickname!"
+        ],
+        [
+          "Late initialisation",
+          "late final String token;"
+        ]
+      ]
+    },
+    {
+      "title": "Collections",
+      "description": "Lists, maps and sets.",
+      "rows": [
+        [
+          "List",
+          [
+            "var nums = [3, 1, 2];",
+            "nums.add(4);"
+          ]
+        ],
+        [
+          "Transform",
+          [
+            "nums.map((n) => n * 2).toList()",
+            "nums.where((n) => n > 1)",
+            "nums.fold(0, (a, b) => a + b)"
+          ]
+        ],
+        [
+          "Sort",
+          [
+            "nums.sort();",
+            "users.sort((a, b) => a.age.compareTo(b.age));"
+          ]
+        ],
+        [
+          "Reverse",
+          "nums.reversed.toList()"
+        ],
+        [
+          "Map",
+          "var ages = {'Ada': 36};\nages['Bob'] = 40;"
+        ],
+        [
+          "Collection if / for",
+          "[for (var n in nums) n * 2, if (showMore) 99]"
+        ],
+        [
+          "Spread",
+          "[...a, ...b]"
+        ]
+      ]
+    },
+    {
+      "title": "Functions & classes",
+      "description": "Reuse and types.",
+      "rows": [
+        [
+          "Function",
+          [
+            "int add(int a, int b) => a + b;",
+            "void greet({required String name, int age = 0}) { }"
+          ]
+        ],
+        [
+          "Class",
+          "class Dog {\n  final String name;\n  Dog(this.name);\n  String bark() => 'Woof';\n}"
+        ],
+        [
+          "Named constructor",
+          "Dog.puppy() : name = 'Puppy';"
+        ],
+        [
+          "Inheritance / mixin",
+          [
+            "class Puppy extends Dog { Puppy(super.name); }",
+            "class Robot with Walker { }"
+          ]
+        ],
+        [
+          "Enum",
+          "enum Status { active, disabled }"
+        ]
+      ]
+    },
+    {
+      "title": "Async",
+      "description": "Futures and streams.",
+      "rows": [
+        [
+          "Async function",
+          "Future<String> load() async {\n  final res = await http.get(Uri.parse(url));\n  return res.body;\n}"
+        ],
+        [
+          "Wait for several",
+          "final results = await Future.wait([loadA(), loadB()]);"
+        ],
+        [
+          "Try / catch",
+          "try {\n  await load();\n} catch (e) {\n  print(e);\n}"
+        ],
+        [
+          "Stream",
+          "await for (final value in stream) {\n  print(value);\n}"
+        ]
+      ]
+    }
+  ]
+}

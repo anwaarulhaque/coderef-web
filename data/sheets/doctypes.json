@@ -1,0 +1,41 @@
+{
+  "slug": "doctypes",
+  "title": "Doctypes",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Doctypes.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MDN: Doctype",
+              "url": "https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+            },
+            {
+              "name": "Wikipedia Doctypes",
+              "url": "https://en.wikipedia.org/wiki/Document_Type_Definition"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "HTML",
+              "url": "/html/"
+            },
+            {
+              "name": "HTML-DOM",
+              "url": "/html-dom/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

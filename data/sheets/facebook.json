@@ -1,0 +1,45 @@
+{
+  "slug": "facebook",
+  "title": "Facebook",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Facebook.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Facebook Help Center",
+              "url": "https://www.facebook.com/help/"
+            },
+            {
+              "name": "Meta for Developers",
+              "url": "https://developers.facebook.com/docs/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.facebook.com/"
+            },
+            {
+              "name": "Wikipedia Facebook",
+              "url": "https://en.wikipedia.org/wiki/Facebook"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Notes Cheat Sheet | Facebook",
+              "url": "http://www.facebook.com/notes_cheatsheet.php"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "fortran",
+  "title": "Fortran",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Fortran.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Fortran-lang docs",
+              "url": "https://fortran-lang.org/learn/"
+            },
+            {
+              "name": "Wikipedia Fortran",
+              "url": "https://en.wikipedia.org/wiki/Fortran"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Modern Fortran Reference Card [.pdf]",
+              "url": "http://michaelgoerz.net/refcards/fortran_refcard_a4.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "GDB",
+              "url": "/gdb/"
+            },
+            {
+              "name": "OpenMP",
+              "url": "/openmp/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

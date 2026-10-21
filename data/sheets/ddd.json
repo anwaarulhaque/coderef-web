@@ -1,0 +1,32 @@
+{
+  "slug": "ddd",
+  "title": "Domain Driven Design",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for Domain Driven Design.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Martin Fowler: Domain Driven Design",
+              "url": "https://martinfowler.com/bliki/DomainDrivenDesign.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.dddcommunity.org/"
+            },
+            {
+              "name": "Wikipedia Domain Driven Design",
+              "url": "https://en.wikipedia.org/wiki/Domain-driven_design"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

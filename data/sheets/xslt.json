@@ -1,0 +1,70 @@
+{
+  "slug": "xslt",
+  "title": "XSLT (Extensible Stylesheet Language Transformations)",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for XSLT.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "XSLT 3.0 (W3C)",
+              "url": "https://www.w3.org/TR/xslt-30/"
+            },
+            {
+              "name": "MDN: XSLT",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/XSLT"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/Style/XSL/"
+            },
+            {
+              "name": "Wikipedia XSLT(Extensible Stylesheet Language Transformations)",
+              "url": "https://en.wikipedia.org/wiki/XSLT"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "XSLT 1.0 and XPath 1.0 Quick Reference [.pdf]",
+              "url": "http://www.mulberrytech.com/quickref/XSLT_1quickref-v2.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "XHTML",
+              "url": "/xhtml/"
+            },
+            {
+              "name": "XML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XML Schema",
+              "url": "/xml-schema/"
+            },
+            {
+              "name": "XPath",
+              "url": "/xpath/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

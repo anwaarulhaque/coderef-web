@@ -1,0 +1,49 @@
+{
+  "slug": "illustrator",
+  "title": "Illustrator",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Illustrator.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Illustrator keyboard shortcuts",
+              "url": "https://helpx.adobe.com/illustrator/using/default-keyboard-shortcuts.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.adobe.com/products/illustrator/"
+            },
+            {
+              "name": "Wikipedia Illustrator",
+              "url": "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Adobe Systems",
+              "url": "/adobe/"
+            },
+            {
+              "name": "Photoshop",
+              "url": "/photoshop/"
+            },
+            {
+              "name": "Gimp",
+              "url": "/gimp/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "htaccess",
+  "title": "Htaccess",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Htaccess.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": ".htaccess tutorial",
+              "url": "https://httpd.apache.org/docs/2.4/howto/htaccess.html"
+            },
+            {
+              "name": "Wikipedia Htaccess",
+              "url": "https://en.wikipedia.org/wiki/Htaccess"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "htaccess Cheatsheet",
+              "url": "http://www.thejackol.com/htaccess-cheatsheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            },
+            {
+              "name": "mod_rewrite",
+              "url": "/mod_rewrite/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

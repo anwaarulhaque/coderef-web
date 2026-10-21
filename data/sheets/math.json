@@ -1,0 +1,106 @@
+{
+  "slug": "math",
+  "title": "Math",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Math.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wolfram Alpha Tools",
+              "url": "http://www.wolframalpha.com/examples/Math.html"
+            },
+            {
+              "name": "Wikipedia Math",
+              "url": "https://en.wikipedia.org/wiki/Mathematics"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Table of Laplace Transforms [.pdf, html]",
+              "url": "http://tutorial.math.lamar.edu/pdf/Laplace_Table.pdf"
+            },
+            {
+              "name": "Mathematics Cheat Sheet for Population Biology [.pdf]",
+              "url": "http://www.stanford.edu/~jhj1/teachingdocs/Jones-mathcheatsheet2008.pdf"
+            },
+            {
+              "name": "Useful Inequalities [.pdf, ps.gz]",
+              "url": "http://www.lkozma.net/inequalities_cheat_sheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Algebra",
+              "url": "/algebra/"
+            },
+            {
+              "name": "Calculus",
+              "url": "/calculus/"
+            },
+            {
+              "name": "Computer Science",
+              "url": "/computer-science/"
+            },
+            {
+              "name": "Geometry",
+              "url": "/geometry/"
+            },
+            {
+              "name": "LaTeX",
+              "url": "/latex/"
+            },
+            {
+              "name": "Maple",
+              "url": "/maple/"
+            },
+            {
+              "name": "Mathematica",
+              "url": "/mathematica/"
+            },
+            {
+              "name": "Mathomatic",
+              "url": "/mathomatic/"
+            },
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "MATLAB",
+              "url": "/matlab/"
+            },
+            {
+              "name": "Maxima",
+              "url": "/maxima/"
+            },
+            {
+              "name": "Probability Theory",
+              "url": "/probability-theory/"
+            },
+            {
+              "name": "Statistics",
+              "url": "/statistics/"
+            },
+            {
+              "name": "Trigonometry",
+              "url": "/trigonometry/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

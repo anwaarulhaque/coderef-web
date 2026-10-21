@@ -1,0 +1,32 @@
+{
+  "slug": "perforce",
+  "title": "Perforce",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Perforce.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Helix Core command reference",
+              "url": "https://help.perforce.com/helix-core/server-apps/cmdref/current/Content/CmdRef/Home-cmdref.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.perforce.com/"
+            },
+            {
+              "name": "Wikipedia Perforce",
+              "url": "https://en.wikipedia.org/wiki/Perforce"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

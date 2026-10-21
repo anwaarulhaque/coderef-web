@@ -1,0 +1,28 @@
+{
+  "slug": "first-hop-redundancy",
+  "title": "First Hop Redundancy",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for First Hop Redundancy.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 5798 (VRRPv3)",
+              "url": "https://www.rfc-editor.org/rfc/rfc5798"
+            },
+            {
+              "name": "Wikipedia First Hop Redundancy",
+              "url": "https://en.wikipedia.org/wiki/First_Hop_Redundancy_Protocols"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

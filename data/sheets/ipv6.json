@@ -1,0 +1,32 @@
+{
+  "slug": "ipv6",
+  "title": "IPv6",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for IPv6.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 8200 (IPv6)",
+              "url": "https://www.rfc-editor.org/rfc/rfc8200"
+            },
+            {
+              "name": "IANA IPv6 Address Space",
+              "url": "https://www.iana.org/assignments/ipv6-address-space/ipv6-address-space.xhtml"
+            },
+            {
+              "name": "Wikipedia IPv6",
+              "url": "https://en.wikipedia.org/wiki/Ipv6"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

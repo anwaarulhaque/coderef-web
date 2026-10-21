@@ -1,0 +1,66 @@
+{
+  "slug": "haskell",
+  "title": "Haskell",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Haskell.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Haskell documentation",
+              "url": "https://www.haskell.org/documentation/"
+            },
+            {
+              "name": "Hoogle",
+              "url": "https://hoogle.haskell.org/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://haskell.org/"
+            },
+            {
+              "name": "Wikipedia Haskell",
+              "url": "https://en.wikipedia.org/wiki/Haskell_(programming_language)"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Haskell Cheat Sheet by Scott Turner [.pdf]",
+              "url": "http://www.pkturner.org/programming/Haskellcheatsheet.html"
+            },
+            {
+              "name": "Haskell Cheat Sheet[.pdf]",
+              "url": "http://www.docstoc.com/docs/2589907/Haskell-Cheat-Sheet"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Clojure",
+              "url": "/clojure/"
+            },
+            {
+              "name": "Erlang",
+              "url": "/erlang/"
+            },
+            {
+              "name": "OCaml",
+              "url": "/ocaml/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

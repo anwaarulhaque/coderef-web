@@ -1,0 +1,50 @@
+{
+  "slug": "adobe-acrobat",
+  "title": "Adobe Acrobat",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Adobe Acrobat.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Acrobat User Guide",
+              "url": "https://helpx.adobe.com/acrobat/user-guide.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.adobe.com/products/acrobat/"
+            },
+            {
+              "name": "Wikipedia Adobe Acrobat",
+              "url": "https://en.wikipedia.org/wiki/Adobe_Acrobat"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Adobe Acrobat Quick Reference, Abobe Acrobat 8 Cheat Sheet [.pdf]",
+              "url": "http://www.cheat-sheets.org/saved-copy/acrobat-quick-reference-8.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Adobe System",
+              "url": "/adobe/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

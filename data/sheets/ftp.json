@@ -1,0 +1,41 @@
+{
+  "slug": "ftp",
+  "title": "FTP",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for FTP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 959 (FTP)",
+              "url": "https://www.rfc-editor.org/rfc/rfc959"
+            },
+            {
+              "name": "Wikipedia FTP",
+              "url": "https://en.wikipedia.org/wiki/FTP"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Basic FTP Commands",
+              "url": "http://www.cs.colostate.edu/helpdocs/ftp.html"
+            },
+            {
+              "name": "List of FTP commands for the Microsoft command-line FTP client",
+              "url": "http://www.nsftools.com/tips/MSFTP.htm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

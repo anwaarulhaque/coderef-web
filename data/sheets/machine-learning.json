@@ -1,0 +1,32 @@
+{
+  "slug": "machine-learning",
+  "title": "Machine Learning",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for Machine Learning.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "scikit-learn User Guide",
+              "url": "https://scikit-learn.org/stable/user_guide.html"
+            },
+            {
+              "name": "Google ML Crash Course",
+              "url": "https://developers.google.com/machine-learning/crash-course"
+            },
+            {
+              "name": "Wikipedia Machine Learning",
+              "url": "https://en.wikipedia.org/wiki/Machine_learning"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

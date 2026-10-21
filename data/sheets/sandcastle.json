@@ -1,0 +1,46 @@
+{
+  "slug": "sandcastle",
+  "title": "Sandcastle",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Sandcastle.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Sandcastle Help File Builder",
+              "url": "https://github.com/EWSoftware/SHFB"
+            },
+            {
+              "name": "Wikipedia Sandcastle",
+              "url": "https://en.wikipedia.org/wiki/Sandcastle_(software)"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Sandcastle and Sandcastle Help File Builder [.pdf]",
+              "url": "http://www.red-gate.com/products/dotnet-development/ants-performance-profiler/entrypage/code-profiling-made-easy-sandcastlechart"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": ".NET",
+              "url": "/dotnet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

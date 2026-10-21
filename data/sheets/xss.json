@@ -1,0 +1,28 @@
+{
+  "slug": "xss",
+  "title": "XSS (Cross Site Scripting)",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for XSS.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "OWASP XSS Prevention Cheat Sheet",
+              "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
+            },
+            {
+              "name": "OWASP: XSS",
+              "url": "https://owasp.org/www-community/attacks/xss/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

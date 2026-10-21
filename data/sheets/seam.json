@@ -1,0 +1,41 @@
+{
+  "slug": "seam",
+  "title": "Seam",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Seam.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Official Website",
+              "url": "http://www.seamframework.org/"
+            },
+            {
+              "name": "Wikipedia Seam",
+              "url": "https://en.wikipedia.org/wiki/JBoss_Seam"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "JavaServer Faces",
+              "url": "/jsf/"
+            },
+            {
+              "name": "RichFaces",
+              "url": "/richfaces/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

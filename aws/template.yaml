@@ -1,0 +1,151 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CodeRef Web - CloudFront Distribution and OAC connected to existing S3 Bucket'
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: 'coderef-web'
+    Description: 'Base name used for resource naming'
+
+  ExistingBucketName:
+    Type: String
+    Default: 'coderef.xyz'
+    Description: 'The name of your existing S3 bucket (already created)'
+
+Resources:
+  # 1. CloudFront Origin Access Control (OAC)
+  CloudFrontOriginAccessControl:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: !Sub '${ProjectName}-oac'
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
+
+  # 2. CloudFront Function: URL Rewrite for Next.js Static Export
+  UrlRewriteFunction:
+    Type: AWS::CloudFront::Function
+    Properties:
+      Name: !Sub '${ProjectName}-url-rewrite'
+      AutoPublish: true
+      FunctionConfig:
+        Comment: 'Rewrite directory and extension-less requests to index.html for Next.js static export'
+        Runtime: cloudfront-js-2.0
+      FunctionCode: |
+        function handler(event) {
+          var request = event.request;
+          var uri = request.uri;
+          
+          // 1. Files with file extensions (e.g. /sitemap.xml, /robots.txt, images, js, css) pass through directly
+          if (uri.includes('.')) {
+            return request;
+          }
+          
+          // 2. SEO: 301 Permanent Redirect to trailing slash if missing (matches Next.js canonical URLs)
+          if (!uri.endsWith('/')) {
+            var qs = '';
+            if (request.querystring) {
+              var parts = [];
+              for (var key in request.querystring) {
+                if (request.querystring[key].value) {
+                  parts.push(key + '=' + request.querystring[key].value);
+                } else {
+                  parts.push(key);
+                }
+              }
+              if (parts.length > 0) {
+                qs = '?' + parts.join('&');
+              }
+            }
+            return {
+              statusCode: 301,
+              statusDescription: 'Moved Permanently',
+              headers: {
+                'location': { value: uri + '/' + qs }
+              }
+            };
+          }
+          
+          // 3. Trailing slash requests internally fetch index.html from S3 without changing the browser URL
+          request.uri += 'index.html';
+          return request;
+        }
+
+  # 3. CloudFront Distribution connected to existing S3 Bucket
+  CloudFrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Comment: !Sub '${ProjectName} distribution'
+        Enabled: true
+        DefaultRootObject: 'index.html'
+        HttpVersion: http2and3
+        PriceClass: PriceClass_100
+        
+        Origins:
+          - Id: S3Origin
+            DomainName: !Sub '${ExistingBucketName}.s3.${AWS::Region}.amazonaws.com'
+            OriginAccessControlId: !GetAtt CloudFrontOriginAccessControl.Id
+            S3OriginConfig: {}
+
+        DefaultCacheBehavior:
+          TargetOriginId: S3Origin
+          ViewerProtocolPolicy: redirect-to-https
+          AllowedMethods:
+            - GET
+            - HEAD
+          CachedMethods:
+            - GET
+            - HEAD
+          Compress: true
+          # Managed-CachingOptimized policy ID
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+          FunctionAssociations:
+            - EventType: viewer-request
+              FunctionARN: !GetAtt UrlRewriteFunction.FunctionMetadata.FunctionARN
+
+        CustomErrorResponses:
+          - ErrorCode: 404
+            ResponseCode: 404
+            ResponsePagePath: '/404/index.html'
+            ErrorCachingMinTTL: 60
+          - ErrorCode: 403
+            ResponseCode: 404
+            ResponsePagePath: '/404/index.html'
+            ErrorCachingMinTTL: 60
+
+  # 4. Attach Bucket Policy to your existing S3 Bucket for CloudFront OAC
+  WebsiteBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref ExistingBucketName
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowCloudFrontServicePrincipalReadOnly
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action:
+              - s3:GetObject
+              - s3:ListBucket
+            Resource:
+              - !Sub 'arn:aws:s3:::${ExistingBucketName}/*'
+              - !Sub 'arn:aws:s3:::${ExistingBucketName}'
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution.Id}'
+
+Outputs:
+  S3BucketName:
+    Description: 'Existing S3 Bucket Name'
+    Value: !Ref ExistingBucketName
+
+  CloudFrontDistributionId:
+    Description: 'CloudFront Distribution ID'
+    Value: !Ref CloudFrontDistribution
+
+  CloudFrontDomainName:
+    Description: 'CloudFront URL (Default endpoint)'
+    Value: !GetAtt CloudFrontDistribution.DomainName

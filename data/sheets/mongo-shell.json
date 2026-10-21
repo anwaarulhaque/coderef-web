@@ -1,0 +1,569 @@
+{
+  "slug": "mongo-shell",
+  "title": "MongoDB Shell",
+  "category": "Databases",
+  "color": "#00684a",
+  "description": "mongosh methods for collections, cursors and databases, plus query, update and aggregation operators.",
+  "reference": "https://www.mongodb.com/docs/mongodb-shell/",
+  "sections": [
+    {
+      "title": "Collection",
+      "groups": [
+        {
+          "title": "Read",
+          "items": [
+            {
+              "name": "db.collection.find()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.find/"
+            },
+            {
+              "name": "db.collection.findOne()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne/"
+            },
+            {
+              "name": "db.collection.countDocuments()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.countDocuments/"
+            },
+            {
+              "name": "db.collection.estimatedDocumentCount()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.estimatedDocumentCount/"
+            },
+            {
+              "name": "db.collection.distinct()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.distinct/"
+            },
+            {
+              "name": "db.collection.aggregate()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/"
+            },
+            {
+              "name": "db.collection.watch()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.watch/"
+            }
+          ]
+        },
+        {
+          "title": "Write",
+          "items": [
+            {
+              "name": "db.collection.insertOne()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.insertOne/"
+            },
+            {
+              "name": "db.collection.insertMany()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/"
+            },
+            {
+              "name": "db.collection.updateOne()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.updateOne/"
+            },
+            {
+              "name": "db.collection.updateMany()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.updateMany/"
+            },
+            {
+              "name": "db.collection.replaceOne()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.replaceOne/"
+            },
+            {
+              "name": "db.collection.deleteOne()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteOne/"
+            },
+            {
+              "name": "db.collection.deleteMany()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteMany/"
+            },
+            {
+              "name": "db.collection.findOneAndUpdate()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findOneAndUpdate/"
+            },
+            {
+              "name": "db.collection.findOneAndReplace()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findOneAndReplace/"
+            },
+            {
+              "name": "db.collection.findOneAndDelete()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findOneAndDelete/"
+            },
+            {
+              "name": "db.collection.bulkWrite()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.bulkWrite/"
+            }
+          ]
+        },
+        {
+          "title": "Indexes & Admin",
+          "items": [
+            {
+              "name": "db.collection.createIndex()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.createIndex/"
+            },
+            {
+              "name": "db.collection.createIndexes()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.createIndexes/"
+            },
+            {
+              "name": "db.collection.getIndexes()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.getIndexes/"
+            },
+            {
+              "name": "db.collection.dropIndex()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.dropIndex/"
+            },
+            {
+              "name": "db.collection.dropIndexes()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.dropIndexes/"
+            },
+            {
+              "name": "db.collection.drop()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.drop/"
+            },
+            {
+              "name": "db.collection.renameCollection()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.renameCollection/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cursor",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "cursor.sort()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.sort/"
+            },
+            {
+              "name": "cursor.limit()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.limit/"
+            },
+            {
+              "name": "cursor.skip()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.skip/"
+            },
+            {
+              "name": "cursor.toArray()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.toArray/"
+            },
+            {
+              "name": "cursor.forEach()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.forEach/"
+            },
+            {
+              "name": "cursor.map()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.map/"
+            },
+            {
+              "name": "cursor.hasNext()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.hasNext/"
+            },
+            {
+              "name": "cursor.next()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.next/"
+            },
+            {
+              "name": "cursor.explain()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.explain/"
+            },
+            {
+              "name": "cursor.project()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.project/"
+            },
+            {
+              "name": "cursor.batchSize()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.batchSize/"
+            },
+            {
+              "name": "cursor.hint()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.hint/"
+            },
+            {
+              "name": "cursor.collation()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/cursor.collation/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "db.createCollection()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.createCollection/"
+            },
+            {
+              "name": "db.getCollectionNames()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.getCollectionNames/"
+            },
+            {
+              "name": "db.getCollection()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.getCollection/"
+            },
+            {
+              "name": "db.dropDatabase()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.dropDatabase/"
+            },
+            {
+              "name": "db.stats()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.stats/"
+            },
+            {
+              "name": "db.runCommand()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.runCommand/"
+            },
+            {
+              "name": "db.adminCommand()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.adminCommand/"
+            },
+            {
+              "name": "db.getSiblingDB()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.getSiblingDB/"
+            },
+            {
+              "name": "db.createUser()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.createUser/"
+            },
+            {
+              "name": "db.dropUser()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.dropUser/"
+            },
+            {
+              "name": "db.currentOp()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.currentOp/"
+            },
+            {
+              "name": "db.killOp()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.killOp/"
+            },
+            {
+              "name": "db.serverStatus()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.serverStatus/"
+            },
+            {
+              "name": "db.version()",
+              "url": "https://www.mongodb.com/docs/manual/reference/method/db.version/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shell Helpers",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "show dbs",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            },
+            {
+              "name": "use <db>",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            },
+            {
+              "name": "show collections",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            },
+            {
+              "name": "show users",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            },
+            {
+              "name": "show roles",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            },
+            {
+              "name": "it",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            },
+            {
+              "name": "help",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            },
+            {
+              "name": "exit",
+              "url": "https://www.mongodb.com/docs/mongodb-shell/reference/access-mdb-shell-help/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Query Operators",
+      "groups": [
+        {
+          "title": "Comparison",
+          "items": [
+            {
+              "name": "$eq",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/eq/"
+            },
+            {
+              "name": "$ne",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/ne/"
+            },
+            {
+              "name": "$gt",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/gt/"
+            },
+            {
+              "name": "$gte",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/gte/"
+            },
+            {
+              "name": "$lt",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/lt/"
+            },
+            {
+              "name": "$lte",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/lte/"
+            },
+            {
+              "name": "$in",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/in/"
+            },
+            {
+              "name": "$nin",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/nin/"
+            }
+          ]
+        },
+        {
+          "title": "Logical & Element",
+          "items": [
+            {
+              "name": "$and",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/and/"
+            },
+            {
+              "name": "$or",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/or/"
+            },
+            {
+              "name": "$not",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/not/"
+            },
+            {
+              "name": "$nor",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/nor/"
+            },
+            {
+              "name": "$exists",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/exists/"
+            },
+            {
+              "name": "$type",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/type/"
+            }
+          ]
+        },
+        {
+          "title": "Evaluation & Array",
+          "items": [
+            {
+              "name": "$regex",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/regex/"
+            },
+            {
+              "name": "$expr",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/expr/"
+            },
+            {
+              "name": "$text",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/text/"
+            },
+            {
+              "name": "$elemMatch",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/"
+            },
+            {
+              "name": "$size",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/size/"
+            },
+            {
+              "name": "$all",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/query/all/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Update Operators",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "$set",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/set/"
+            },
+            {
+              "name": "$unset",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/unset/"
+            },
+            {
+              "name": "$inc",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/inc/"
+            },
+            {
+              "name": "$mul",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/mul/"
+            },
+            {
+              "name": "$rename",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/rename/"
+            },
+            {
+              "name": "$min",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/min/"
+            },
+            {
+              "name": "$max",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/max/"
+            },
+            {
+              "name": "$currentDate",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/currentdate/"
+            },
+            {
+              "name": "$setOnInsert",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/setoninsert/"
+            },
+            {
+              "name": "$push",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/push/"
+            },
+            {
+              "name": "$pull",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/pull/"
+            },
+            {
+              "name": "$addToSet",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/addtoset/"
+            },
+            {
+              "name": "$pop",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/update/pop/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aggregation",
+      "groups": [
+        {
+          "title": "Stages",
+          "items": [
+            {
+              "name": "$match",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/match/"
+            },
+            {
+              "name": "$group",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/group/"
+            },
+            {
+              "name": "$project",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/project/"
+            },
+            {
+              "name": "$sort",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/sort/"
+            },
+            {
+              "name": "$limit",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/limit/"
+            },
+            {
+              "name": "$skip",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/skip/"
+            },
+            {
+              "name": "$lookup",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/lookup/"
+            },
+            {
+              "name": "$unwind",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/unwind/"
+            },
+            {
+              "name": "$addFields",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/addfields/"
+            },
+            {
+              "name": "$set",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/set/"
+            },
+            {
+              "name": "$count",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/count/"
+            },
+            {
+              "name": "$facet",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/facet/"
+            },
+            {
+              "name": "$bucket",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/bucket/"
+            },
+            {
+              "name": "$sample",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/sample/"
+            },
+            {
+              "name": "$replaceRoot",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/replaceroot/"
+            },
+            {
+              "name": "$unionWith",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/unionwith/"
+            },
+            {
+              "name": "$out",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/out/"
+            },
+            {
+              "name": "$merge",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/merge/"
+            }
+          ]
+        },
+        {
+          "title": "Accumulators",
+          "items": [
+            {
+              "name": "$sum",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/sum/"
+            },
+            {
+              "name": "$avg",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/avg/"
+            },
+            {
+              "name": "$first",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/first/"
+            },
+            {
+              "name": "$last",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/last/"
+            },
+            {
+              "name": "$push",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/push/"
+            },
+            {
+              "name": "$addToSet",
+              "url": "https://www.mongodb.com/docs/manual/reference/operator/aggregation/addtoset/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "delphi",
+  "title": "Delphi",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Delphi.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RAD Studio docs",
+              "url": "https://docwiki.embarcadero.com/RADStudio/en/Main_Page"
+            },
+            {
+              "name": "Wikipedia Delphi",
+              "url": "https://en.wikipedia.org/wiki/Borland_Delphi"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

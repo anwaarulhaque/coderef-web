@@ -1,0 +1,800 @@
+{
+  "slug": "linux",
+  "title": "Linux",
+  "category": "Systems",
+  "color": "#fcc624",
+  "description": "Essential Linux commands for files, text, processes, users, networking and packages.",
+  "reference": "https://man7.org/linux/man-pages/",
+  "sections": [
+    {
+      "title": "Files & Directories",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "ls",
+              "url": "https://man7.org/linux/man-pages/man1/ls.1.html"
+            },
+            {
+              "name": "cd",
+              "url": "https://man7.org/linux/man-pages/man1/cd.1p.html"
+            },
+            {
+              "name": "pwd",
+              "url": "https://man7.org/linux/man-pages/man1/pwd.1.html"
+            },
+            {
+              "name": "mkdir",
+              "url": "https://man7.org/linux/man-pages/man1/mkdir.1.html"
+            },
+            {
+              "name": "rmdir",
+              "url": "https://man7.org/linux/man-pages/man1/rmdir.1.html"
+            },
+            {
+              "name": "cp",
+              "url": "https://man7.org/linux/man-pages/man1/cp.1.html"
+            },
+            {
+              "name": "mv",
+              "url": "https://man7.org/linux/man-pages/man1/mv.1.html"
+            },
+            {
+              "name": "rm",
+              "url": "https://man7.org/linux/man-pages/man1/rm.1.html"
+            },
+            {
+              "name": "touch",
+              "url": "https://man7.org/linux/man-pages/man1/touch.1.html"
+            },
+            {
+              "name": "ln",
+              "url": "https://man7.org/linux/man-pages/man1/ln.1.html"
+            },
+            {
+              "name": "find",
+              "url": "https://man7.org/linux/man-pages/man1/find.1.html"
+            },
+            {
+              "name": "plocate",
+              "url": "https://manpages.debian.org/plocate.1"
+            },
+            {
+              "name": "tree",
+              "url": "https://manpages.debian.org/tree.1"
+            },
+            {
+              "name": "stat",
+              "url": "https://man7.org/linux/man-pages/man1/stat.1.html"
+            },
+            {
+              "name": "file",
+              "url": "https://man7.org/linux/man-pages/man1/file.1.html"
+            },
+            {
+              "name": "du",
+              "url": "https://man7.org/linux/man-pages/man1/du.1.html"
+            },
+            {
+              "name": "df",
+              "url": "https://man7.org/linux/man-pages/man1/df.1.html"
+            },
+            {
+              "name": "basename",
+              "url": "https://man7.org/linux/man-pages/man1/basename.1.html"
+            },
+            {
+              "name": "dirname",
+              "url": "https://man7.org/linux/man-pages/man1/dirname.1.html"
+            },
+            {
+              "name": "realpath",
+              "url": "https://man7.org/linux/man-pages/man1/realpath.1.html"
+            },
+            {
+              "name": "readlink",
+              "url": "https://man7.org/linux/man-pages/man1/readlink.1.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Viewing Files",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "cat",
+              "url": "https://man7.org/linux/man-pages/man1/cat.1.html"
+            },
+            {
+              "name": "less",
+              "url": "https://man7.org/linux/man-pages/man1/less.1.html"
+            },
+            {
+              "name": "more",
+              "url": "https://man7.org/linux/man-pages/man1/more.1.html"
+            },
+            {
+              "name": "head",
+              "url": "https://man7.org/linux/man-pages/man1/head.1.html"
+            },
+            {
+              "name": "tail",
+              "url": "https://man7.org/linux/man-pages/man1/tail.1.html"
+            },
+            {
+              "name": "wc",
+              "url": "https://man7.org/linux/man-pages/man1/wc.1.html"
+            },
+            {
+              "name": "nl",
+              "url": "https://man7.org/linux/man-pages/man1/nl.1.html"
+            },
+            {
+              "name": "tac",
+              "url": "https://man7.org/linux/man-pages/man1/tac.1.html"
+            },
+            {
+              "name": "od",
+              "url": "https://man7.org/linux/man-pages/man1/od.1.html"
+            },
+            {
+              "name": "hexdump",
+              "url": "https://man7.org/linux/man-pages/man1/hexdump.1.html"
+            },
+            {
+              "name": "xxd",
+              "url": "https://manpages.debian.org/xxd.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Text Processing",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "grep",
+              "url": "https://man7.org/linux/man-pages/man1/grep.1.html"
+            },
+            {
+              "name": "sed",
+              "url": "https://man7.org/linux/man-pages/man1/sed.1.html"
+            },
+            {
+              "name": "gawk",
+              "url": "https://man7.org/linux/man-pages/man1/gawk.1.html"
+            },
+            {
+              "name": "sort",
+              "url": "https://man7.org/linux/man-pages/man1/sort.1.html"
+            },
+            {
+              "name": "uniq",
+              "url": "https://man7.org/linux/man-pages/man1/uniq.1.html"
+            },
+            {
+              "name": "cut",
+              "url": "https://man7.org/linux/man-pages/man1/cut.1.html"
+            },
+            {
+              "name": "paste",
+              "url": "https://man7.org/linux/man-pages/man1/paste.1.html"
+            },
+            {
+              "name": "tr",
+              "url": "https://man7.org/linux/man-pages/man1/tr.1.html"
+            },
+            {
+              "name": "diff",
+              "url": "https://man7.org/linux/man-pages/man1/diff.1.html"
+            },
+            {
+              "name": "comm",
+              "url": "https://man7.org/linux/man-pages/man1/comm.1.html"
+            },
+            {
+              "name": "join",
+              "url": "https://man7.org/linux/man-pages/man1/join.1.html"
+            },
+            {
+              "name": "xargs",
+              "url": "https://man7.org/linux/man-pages/man1/xargs.1.html"
+            },
+            {
+              "name": "tee",
+              "url": "https://man7.org/linux/man-pages/man1/tee.1.html"
+            },
+            {
+              "name": "column",
+              "url": "https://man7.org/linux/man-pages/man1/column.1.html"
+            },
+            {
+              "name": "fmt",
+              "url": "https://man7.org/linux/man-pages/man1/fmt.1.html"
+            },
+            {
+              "name": "jq",
+              "url": "https://manpages.debian.org/jq.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Permissions & Users",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "chmod",
+              "url": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+            },
+            {
+              "name": "chown",
+              "url": "https://man7.org/linux/man-pages/man1/chown.1.html"
+            },
+            {
+              "name": "chgrp",
+              "url": "https://man7.org/linux/man-pages/man1/chgrp.1.html"
+            },
+            {
+              "name": "umask",
+              "url": "https://man7.org/linux/man-pages/man1/umask.1p.html"
+            },
+            {
+              "name": "sudo",
+              "url": "https://man7.org/linux/man-pages/man8/sudo.8.html"
+            },
+            {
+              "name": "su",
+              "url": "https://man7.org/linux/man-pages/man1/su.1.html"
+            },
+            {
+              "name": "id",
+              "url": "https://man7.org/linux/man-pages/man1/id.1.html"
+            },
+            {
+              "name": "groups",
+              "url": "https://man7.org/linux/man-pages/man1/groups.1.html"
+            },
+            {
+              "name": "whoami",
+              "url": "https://man7.org/linux/man-pages/man1/whoami.1.html"
+            },
+            {
+              "name": "passwd",
+              "url": "https://man7.org/linux/man-pages/man1/passwd.1.html"
+            },
+            {
+              "name": "useradd",
+              "url": "https://man7.org/linux/man-pages/man8/useradd.8.html"
+            },
+            {
+              "name": "usermod",
+              "url": "https://man7.org/linux/man-pages/man8/usermod.8.html"
+            },
+            {
+              "name": "userdel",
+              "url": "https://man7.org/linux/man-pages/man8/userdel.8.html"
+            },
+            {
+              "name": "groupadd",
+              "url": "https://man7.org/linux/man-pages/man8/groupadd.8.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Processes",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "ps",
+              "url": "https://man7.org/linux/man-pages/man1/ps.1.html"
+            },
+            {
+              "name": "top",
+              "url": "https://man7.org/linux/man-pages/man1/top.1.html"
+            },
+            {
+              "name": "htop",
+              "url": "https://man7.org/linux/man-pages/man1/htop.1.html"
+            },
+            {
+              "name": "kill",
+              "url": "https://man7.org/linux/man-pages/man1/kill.1.html"
+            },
+            {
+              "name": "killall",
+              "url": "https://man7.org/linux/man-pages/man1/killall.1.html"
+            },
+            {
+              "name": "pkill",
+              "url": "https://man7.org/linux/man-pages/man1/pkill.1.html"
+            },
+            {
+              "name": "pgrep",
+              "url": "https://man7.org/linux/man-pages/man1/pgrep.1.html"
+            },
+            {
+              "name": "nice",
+              "url": "https://man7.org/linux/man-pages/man1/nice.1.html"
+            },
+            {
+              "name": "renice",
+              "url": "https://man7.org/linux/man-pages/man1/renice.1.html"
+            },
+            {
+              "name": "nohup",
+              "url": "https://man7.org/linux/man-pages/man1/nohup.1.html"
+            },
+            {
+              "name": "jobs",
+              "url": "https://man7.org/linux/man-pages/man1/jobs.1p.html"
+            },
+            {
+              "name": "bg",
+              "url": "https://man7.org/linux/man-pages/man1/bg.1p.html"
+            },
+            {
+              "name": "fg",
+              "url": "https://man7.org/linux/man-pages/man1/fg.1p.html"
+            },
+            {
+              "name": "watch",
+              "url": "https://man7.org/linux/man-pages/man1/watch.1.html"
+            },
+            {
+              "name": "timeout",
+              "url": "https://man7.org/linux/man-pages/man1/timeout.1.html"
+            },
+            {
+              "name": "time",
+              "url": "https://man7.org/linux/man-pages/man1/time.1.html"
+            },
+            {
+              "name": "strace",
+              "url": "https://man7.org/linux/man-pages/man1/strace.1.html"
+            },
+            {
+              "name": "lsof",
+              "url": "https://man7.org/linux/man-pages/man8/lsof.8.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System Info",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "uname",
+              "url": "https://man7.org/linux/man-pages/man1/uname.1.html"
+            },
+            {
+              "name": "hostname",
+              "url": "https://man7.org/linux/man-pages/man1/hostname.1.html"
+            },
+            {
+              "name": "uptime",
+              "url": "https://man7.org/linux/man-pages/man1/uptime.1.html"
+            },
+            {
+              "name": "free",
+              "url": "https://man7.org/linux/man-pages/man1/free.1.html"
+            },
+            {
+              "name": "dmesg",
+              "url": "https://man7.org/linux/man-pages/man1/dmesg.1.html"
+            },
+            {
+              "name": "lscpu",
+              "url": "https://man7.org/linux/man-pages/man1/lscpu.1.html"
+            },
+            {
+              "name": "lsblk",
+              "url": "https://man7.org/linux/man-pages/man8/lsblk.8.html"
+            },
+            {
+              "name": "lsusb",
+              "url": "https://man7.org/linux/man-pages/man8/lsusb.8.html"
+            },
+            {
+              "name": "lspci",
+              "url": "https://man7.org/linux/man-pages/man8/lspci.8.html"
+            },
+            {
+              "name": "vmstat",
+              "url": "https://man7.org/linux/man-pages/man8/vmstat.8.html"
+            },
+            {
+              "name": "date",
+              "url": "https://man7.org/linux/man-pages/man1/date.1.html"
+            },
+            {
+              "name": "cal",
+              "url": "https://man7.org/linux/man-pages/man1/cal.1.html"
+            },
+            {
+              "name": "env",
+              "url": "https://man7.org/linux/man-pages/man1/env.1.html"
+            },
+            {
+              "name": "whereis",
+              "url": "https://man7.org/linux/man-pages/man1/whereis.1.html"
+            },
+            {
+              "name": "which",
+              "url": "https://manpages.debian.org/which.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Disks & Services",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "mount",
+              "url": "https://man7.org/linux/man-pages/man8/mount.8.html"
+            },
+            {
+              "name": "umount",
+              "url": "https://man7.org/linux/man-pages/man8/umount.8.html"
+            },
+            {
+              "name": "fdisk",
+              "url": "https://man7.org/linux/man-pages/man8/fdisk.8.html"
+            },
+            {
+              "name": "mkfs",
+              "url": "https://man7.org/linux/man-pages/man8/mkfs.8.html"
+            },
+            {
+              "name": "fsck",
+              "url": "https://man7.org/linux/man-pages/man8/fsck.8.html"
+            },
+            {
+              "name": "systemctl",
+              "url": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+            },
+            {
+              "name": "journalctl",
+              "url": "https://man7.org/linux/man-pages/man1/journalctl.1.html"
+            },
+            {
+              "name": "crontab",
+              "url": "https://man7.org/linux/man-pages/man1/crontab.1.html"
+            },
+            {
+              "name": "shutdown",
+              "url": "https://man7.org/linux/man-pages/man8/shutdown.8.html"
+            },
+            {
+              "name": "reboot",
+              "url": "https://man7.org/linux/man-pages/man8/reboot.8.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Networking",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "ip",
+              "url": "https://man7.org/linux/man-pages/man8/ip.8.html"
+            },
+            {
+              "name": "ss",
+              "url": "https://man7.org/linux/man-pages/man8/ss.8.html"
+            },
+            {
+              "name": "ping",
+              "url": "https://man7.org/linux/man-pages/man8/ping.8.html"
+            },
+            {
+              "name": "traceroute",
+              "url": "https://man7.org/linux/man-pages/man8/traceroute.8.html"
+            },
+            {
+              "name": "curl",
+              "url": "https://man7.org/linux/man-pages/man1/curl.1.html"
+            },
+            {
+              "name": "wget",
+              "url": "https://man7.org/linux/man-pages/man1/wget.1.html"
+            },
+            {
+              "name": "ssh",
+              "url": "https://man7.org/linux/man-pages/man1/ssh.1.html"
+            },
+            {
+              "name": "scp",
+              "url": "https://man7.org/linux/man-pages/man1/scp.1.html"
+            },
+            {
+              "name": "rsync",
+              "url": "https://man7.org/linux/man-pages/man1/rsync.1.html"
+            },
+            {
+              "name": "dig",
+              "url": "https://manpages.debian.org/dig.1"
+            },
+            {
+              "name": "host",
+              "url": "https://manpages.debian.org/host.1"
+            },
+            {
+              "name": "nc",
+              "url": "https://manpages.debian.org/nc.1"
+            },
+            {
+              "name": "netstat",
+              "url": "https://man7.org/linux/man-pages/man8/netstat.8.html"
+            },
+            {
+              "name": "iptables",
+              "url": "https://man7.org/linux/man-pages/man8/iptables.8.html"
+            },
+            {
+              "name": "nft",
+              "url": "https://manpages.debian.org/nft.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Archives",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "tar",
+              "url": "https://man7.org/linux/man-pages/man1/tar.1.html"
+            },
+            {
+              "name": "gzip",
+              "url": "https://manpages.debian.org/gzip.1"
+            },
+            {
+              "name": "gunzip",
+              "url": "https://manpages.debian.org/gunzip.1"
+            },
+            {
+              "name": "zip",
+              "url": "https://manpages.debian.org/zip.1"
+            },
+            {
+              "name": "unzip",
+              "url": "https://manpages.debian.org/unzip.1"
+            },
+            {
+              "name": "bzip2",
+              "url": "https://manpages.debian.org/bzip2.1"
+            },
+            {
+              "name": "xz",
+              "url": "https://manpages.debian.org/xz.1"
+            },
+            {
+              "name": "zstd",
+              "url": "https://manpages.debian.org/zstd.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Packages",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "apt",
+              "url": "https://manpages.debian.org/apt.8"
+            },
+            {
+              "name": "dpkg",
+              "url": "https://man7.org/linux/man-pages/man1/dpkg.1.html"
+            },
+            {
+              "name": "dnf",
+              "url": "https://man7.org/linux/man-pages/man8/dnf.8.html"
+            },
+            {
+              "name": "rpm",
+              "url": "https://man7.org/linux/man-pages/man8/rpm.8.html"
+            },
+            {
+              "name": "pacman",
+              "url": "https://man.archlinux.org/man/pacman.8"
+            },
+            {
+              "name": "snap",
+              "url": "https://manpages.debian.org/snap.8"
+            },
+            {
+              "name": "flatpak",
+              "url": "https://man7.org/linux/man-pages/man1/flatpak.1.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shell",
+      "groups": [
+        {
+          "title": "Operators",
+          "items": [
+            {
+              "name": "cmd > file",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Redirections.html"
+            },
+            {
+              "name": "cmd >> file",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Redirections.html"
+            },
+            {
+              "name": "cmd 2>&1",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Redirections.html"
+            },
+            {
+              "name": "cmd < file",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Redirections.html"
+            },
+            {
+              "name": "cmd1 | cmd2",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Pipelines.html"
+            },
+            {
+              "name": "cmd1 && cmd2",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Lists.html"
+            },
+            {
+              "name": "cmd1 || cmd2",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Lists.html"
+            },
+            {
+              "name": "cmd &",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Lists.html"
+            },
+            {
+              "name": "$(cmd)",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Command-Substitution.html"
+            },
+            {
+              "name": "${var:-default}",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html"
+            },
+            {
+              "name": "!!",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Event-Designators.html"
+            },
+            {
+              "name": "*.txt",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html"
+            }
+          ]
+        },
+        {
+          "title": "Builtins",
+          "items": [
+            {
+              "name": "alias",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html"
+            },
+            {
+              "name": "export",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html"
+            },
+            {
+              "name": "source",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html"
+            },
+            {
+              "name": "history",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html"
+            },
+            {
+              "name": "type",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html"
+            },
+            {
+              "name": "set",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html"
+            },
+            {
+              "name": "read",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html"
+            },
+            {
+              "name": "echo",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html"
+            },
+            {
+              "name": "printf",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html"
+            },
+            {
+              "name": "test",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html"
+            },
+            {
+              "name": "exit",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Keyboard Shortcuts",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Ctrl+C",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+D",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+Z",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+R",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+A",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+E",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+U",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+K",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+W",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Ctrl+L",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            },
+            {
+              "name": "Tab",
+              "url": "https://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

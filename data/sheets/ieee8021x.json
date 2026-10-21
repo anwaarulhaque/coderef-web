@@ -1,0 +1,28 @@
+{
+  "slug": "ieee8021x",
+  "title": "IEEE 802.1X",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for IEEE 802.1X.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IEEE 802.1X",
+              "url": "https://1.ieee802.org/security/802-1x/"
+            },
+            {
+              "name": "Wikipedia IEEE 802.1X",
+              "url": "https://en.wikipedia.org/wiki/IEEE_802.1X"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

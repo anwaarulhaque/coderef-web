@@ -1,0 +1,24 @@
+{
+  "slug": "db4o",
+  "title": "DB4O",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for DB4O.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia db4o",
+              "url": "https://en.wikipedia.org/wiki/Db4o"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

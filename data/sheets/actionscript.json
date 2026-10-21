@@ -1,0 +1,437 @@
+{
+  "slug": "actionscript",
+  "title": "ActionScript 3",
+  "category": "Languages",
+  "color": "#c41e3a",
+  "description": "ActionScript 3.0 classes for the Flash/AIR platform, grouped by package.",
+  "reference": "https://airsdk.dev/reference/actionscript/3.0/",
+  "sections": [
+    {
+      "title": "Top Level",
+      "groups": [
+        {
+          "title": "Top Level",
+          "items": [
+            {
+              "name": "Array",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Array.html"
+            },
+            {
+              "name": "Boolean",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Boolean.html"
+            },
+            {
+              "name": "Class",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Class.html"
+            },
+            {
+              "name": "Date",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Date.html"
+            },
+            {
+              "name": "Error",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Error.html"
+            },
+            {
+              "name": "Function",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Function.html"
+            },
+            {
+              "name": "int",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/int.html"
+            },
+            {
+              "name": "JSON",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/JSON.html"
+            },
+            {
+              "name": "Math",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Math.html"
+            },
+            {
+              "name": "Namespace",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Namespace.html"
+            },
+            {
+              "name": "Number",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Number.html"
+            },
+            {
+              "name": "Object",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Object.html"
+            },
+            {
+              "name": "RegExp",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/RegExp.html"
+            },
+            {
+              "name": "String",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/String.html"
+            },
+            {
+              "name": "uint",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/uint.html"
+            },
+            {
+              "name": "Vector",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/Vector.html"
+            },
+            {
+              "name": "XML",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/XML.html"
+            },
+            {
+              "name": "XMLList",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/XMLList.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Display",
+      "groups": [
+        {
+          "title": "flash.display",
+          "items": [
+            {
+              "name": "DisplayObject",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/DisplayObject.html"
+            },
+            {
+              "name": "DisplayObjectContainer",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/DisplayObjectContainer.html"
+            },
+            {
+              "name": "InteractiveObject",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/InteractiveObject.html"
+            },
+            {
+              "name": "Sprite",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/Sprite.html"
+            },
+            {
+              "name": "MovieClip",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/MovieClip.html"
+            },
+            {
+              "name": "Shape",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/Shape.html"
+            },
+            {
+              "name": "Graphics",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/Graphics.html"
+            },
+            {
+              "name": "Bitmap",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/Bitmap.html"
+            },
+            {
+              "name": "BitmapData",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/BitmapData.html"
+            },
+            {
+              "name": "Loader",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/Loader.html"
+            },
+            {
+              "name": "Stage",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/display/Stage.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "groups": [
+        {
+          "title": "flash.events",
+          "items": [
+            {
+              "name": "Event",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/Event.html"
+            },
+            {
+              "name": "EventDispatcher",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/EventDispatcher.html"
+            },
+            {
+              "name": "MouseEvent",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/MouseEvent.html"
+            },
+            {
+              "name": "KeyboardEvent",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/KeyboardEvent.html"
+            },
+            {
+              "name": "TouchEvent",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/TouchEvent.html"
+            },
+            {
+              "name": "TimerEvent",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/TimerEvent.html"
+            },
+            {
+              "name": "ProgressEvent",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/ProgressEvent.html"
+            },
+            {
+              "name": "IOErrorEvent",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/IOErrorEvent.html"
+            },
+            {
+              "name": "SecurityErrorEvent",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/events/SecurityErrorEvent.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Net",
+      "groups": [
+        {
+          "title": "flash.net",
+          "items": [
+            {
+              "name": "URLLoader",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/URLLoader.html"
+            },
+            {
+              "name": "URLRequest",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/URLRequest.html"
+            },
+            {
+              "name": "URLVariables",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/URLVariables.html"
+            },
+            {
+              "name": "URLRequestMethod",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/URLRequestMethod.html"
+            },
+            {
+              "name": "NetConnection",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/NetConnection.html"
+            },
+            {
+              "name": "NetStream",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/NetStream.html"
+            },
+            {
+              "name": "SharedObject",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/SharedObject.html"
+            },
+            {
+              "name": "Socket",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/Socket.html"
+            },
+            {
+              "name": "FileReference",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/net/FileReference.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Text",
+      "groups": [
+        {
+          "title": "flash.text",
+          "items": [
+            {
+              "name": "TextField",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/text/TextField.html"
+            },
+            {
+              "name": "TextFormat",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/text/TextFormat.html"
+            },
+            {
+              "name": "TextFieldType",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/text/TextFieldType.html"
+            },
+            {
+              "name": "TextFieldAutoSize",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/text/TextFieldAutoSize.html"
+            },
+            {
+              "name": "Font",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/text/Font.html"
+            },
+            {
+              "name": "StyleSheet",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/text/StyleSheet.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Geometry & Utils",
+      "groups": [
+        {
+          "title": "flash.geom",
+          "items": [
+            {
+              "name": "Point",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/geom/Point.html"
+            },
+            {
+              "name": "Rectangle",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/geom/Rectangle.html"
+            },
+            {
+              "name": "Matrix",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/geom/Matrix.html"
+            },
+            {
+              "name": "ColorTransform",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/geom/ColorTransform.html"
+            },
+            {
+              "name": "Transform",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/geom/Transform.html"
+            }
+          ]
+        },
+        {
+          "title": "flash.utils",
+          "items": [
+            {
+              "name": "Timer",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/utils/Timer.html"
+            },
+            {
+              "name": "ByteArray",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/utils/ByteArray.html"
+            },
+            {
+              "name": "Dictionary",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/utils/Dictionary.html"
+            },
+            {
+              "name": "Proxy",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/utils/Proxy.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Media",
+      "groups": [
+        {
+          "title": "flash.media",
+          "items": [
+            {
+              "name": "Sound",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/media/Sound.html"
+            },
+            {
+              "name": "SoundChannel",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/media/SoundChannel.html"
+            },
+            {
+              "name": "SoundTransform",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/media/SoundTransform.html"
+            },
+            {
+              "name": "Video",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/media/Video.html"
+            },
+            {
+              "name": "Camera",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/media/Camera.html"
+            },
+            {
+              "name": "Microphone",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/media/Microphone.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Filters & UI",
+      "groups": [
+        {
+          "title": "flash.filters",
+          "items": [
+            {
+              "name": "BlurFilter",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/filters/BlurFilter.html"
+            },
+            {
+              "name": "DropShadowFilter",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/filters/DropShadowFilter.html"
+            },
+            {
+              "name": "GlowFilter",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/filters/GlowFilter.html"
+            },
+            {
+              "name": "ColorMatrixFilter",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/filters/ColorMatrixFilter.html"
+            },
+            {
+              "name": "BevelFilter",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/filters/BevelFilter.html"
+            }
+          ]
+        },
+        {
+          "title": "flash.ui",
+          "items": [
+            {
+              "name": "Keyboard",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/ui/Keyboard.html"
+            },
+            {
+              "name": "Mouse",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/ui/Mouse.html"
+            },
+            {
+              "name": "ContextMenu",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/flash/ui/ContextMenu.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Language",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Statements & keywords",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/statements.html"
+            },
+            {
+              "name": "Operators",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/operators.html"
+            },
+            {
+              "name": "Top-level functions",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/package.html"
+            },
+            {
+              "name": "Compiler errors",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/compilerErrors.html"
+            },
+            {
+              "name": "Run-time errors",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/runtimeErrors.html"
+            },
+            {
+              "name": "All classes",
+              "url": "https://airsdk.dev/reference/actionscript/3.0/class-summary.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

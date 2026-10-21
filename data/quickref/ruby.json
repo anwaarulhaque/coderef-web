@@ -1,0 +1,302 @@
+{
+  "slug": "ruby",
+  "updated": "2026-10-14",
+  "title": "Ruby",
+  "category": "Languages",
+  "color": "#cc342d",
+  "language": "ruby",
+  "description": "Ruby essentials: variables, strings, arrays, hashes, blocks, control flow, classes, modules and gems.",
+  "docs": "https://docs.ruby-lang.org/en/master/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Variables and output.",
+      "rows": [
+        [
+          "Print",
+          [
+            "puts \"Hello\"",
+            "p value  # inspect"
+          ]
+        ],
+        [
+          "Variables",
+          [
+            "name = \"Ada\"",
+            "MAX = 100",
+            "a, b = 1, 2"
+          ]
+        ],
+        [
+          "Read input",
+          "name = gets.chomp"
+        ],
+        [
+          "Convert",
+          [
+            "\"42\".to_i",
+            "3.to_s",
+            "\"3.5\".to_f",
+            ":sym.to_s"
+          ]
+        ],
+        [
+          "Nil-safe call",
+          "user&.address&.city"
+        ],
+        [
+          "Default value",
+          "name ||= \"guest\""
+        ]
+      ]
+    },
+    {
+      "title": "Strings",
+      "description": "Text.",
+      "rows": [
+        [
+          "Interpolation",
+          "\"Hi #{name}, you are #{age}\""
+        ],
+        [
+          "Common methods",
+          [
+            "s.upcase",
+            "s.strip",
+            "s.length",
+            "s.reverse"
+          ]
+        ],
+        [
+          "Contains / starts with",
+          [
+            "s.include?(\"ru\")",
+            "s.start_with?(\"http\")"
+          ]
+        ],
+        [
+          "Replace",
+          [
+            "s.sub(\"a\", \"b\")",
+            "s.gsub(/\\d/, \"#\")"
+          ]
+        ],
+        [
+          "Split / join",
+          [
+            "s.split(\",\")",
+            "words.join(\", \")"
+          ]
+        ],
+        [
+          "Format",
+          "format(\"%.2f\", price)"
+        ]
+      ]
+    },
+    {
+      "title": "Arrays",
+      "description": "Ordered lists.",
+      "rows": [
+        [
+          "Create / add",
+          [
+            "nums = [3, 1, 2]",
+            "nums << 4",
+            "nums.push(5)"
+          ]
+        ],
+        [
+          "Access",
+          [
+            "nums.first",
+            "nums.last",
+            "nums[1..2]"
+          ]
+        ],
+        [
+          "Transform",
+          [
+            "nums.map { |n| n * 2 }",
+            "nums.select(&:even?)",
+            "nums.reject(&:zero?)"
+          ]
+        ],
+        [
+          "Aggregate",
+          [
+            "nums.sum",
+            "nums.max",
+            "nums.reduce(:+)"
+          ]
+        ],
+        [
+          "Sort",
+          [
+            "nums.sort",
+            "users.sort_by(&:age)",
+            "nums.sort.reverse"
+          ]
+        ],
+        [
+          "Find / check",
+          [
+            "nums.find { |n| n > 1 }",
+            "nums.include?(3)",
+            "nums.any?(&:negative?)"
+          ]
+        ],
+        [
+          "Unique / flatten",
+          [
+            "nums.uniq",
+            "nested.flatten"
+          ]
+        ],
+        [
+          "Reverse",
+          [
+            "nums.reverse",
+            "nums.reverse!  # in place"
+          ]
+        ],
+        [
+          "With index",
+          "names.each_with_index { |name, i| puts \"#{i}: #{name}\" }"
+        ],
+        [
+          "Group / count",
+          [
+            "users.group_by(&:role)",
+            "words.tally"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Hashes",
+      "description": "Key–value maps.",
+      "rows": [
+        [
+          "Create",
+          "user = { name: \"Ada\", age: 36 }"
+        ],
+        [
+          "Get / set",
+          [
+            "user[:name]",
+            "user.fetch(:email, \"n/a\")",
+            "user[:email] = \"ada@example.com\""
+          ]
+        ],
+        [
+          "Loop",
+          "user.each { |key, value| puts \"#{key}: #{value}\" }"
+        ],
+        [
+          "Transform",
+          [
+            "user.transform_values(&:to_s)",
+            "prices.select { |_, v| v > 10 }"
+          ]
+        ],
+        [
+          "Merge / keys",
+          [
+            "a.merge(b)",
+            "user.keys",
+            "user.key?(:name)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Control flow & methods",
+      "description": "Logic and reuse.",
+      "rows": [
+        [
+          "If / unless",
+          [
+            "if x > 0 then ... elsif x == 0 then ... else ... end",
+            "puts \"ok\" unless failed"
+          ]
+        ],
+        [
+          "Case",
+          "case status\nwhen :ok then \"Success\"\nwhen :err then \"Failed\"\nelse \"Unknown\"\nend"
+        ],
+        [
+          "Loops",
+          [
+            "5.times { |i| puts i }",
+            "(1..10).each { |i| }",
+            "while running do ... end"
+          ]
+        ],
+        [
+          "Method",
+          "def greet(name = \"world\")\n  \"Hello, #{name}\"\nend"
+        ],
+        [
+          "Keyword arguments",
+          "def create(name:, admin: false)\nend\ncreate(name: \"Ada\")"
+        ],
+        [
+          "Block / yield",
+          "def twice\n  yield\n  yield\nend\ntwice { puts \"hi\" }"
+        ],
+        [
+          "Lambda",
+          "square = ->(n) { n * n }\nsquare.(4)"
+        ]
+      ]
+    },
+    {
+      "title": "Classes, errors & gems",
+      "description": "Objects and tooling.",
+      "rows": [
+        [
+          "Class",
+          "class Dog\n  attr_reader :name\n\n  def initialize(name)\n    @name = name\n  end\n\n  def bark = \"Woof\"\nend"
+        ],
+        [
+          "Inheritance / module",
+          [
+            "class Puppy < Dog; end",
+            "module Greetable\n  def greet = \"Hi #{name}\"\nend\nclass Dog\n  include Greetable\nend"
+          ]
+        ],
+        [
+          "Struct / Data",
+          [
+            "Point = Struct.new(:x, :y)",
+            "Point = Data.define(:x, :y)"
+          ]
+        ],
+        [
+          "Rescue errors",
+          "begin\n  risky\nrescue ArgumentError => e\n  puts e.message\nensure\n  cleanup\nend"
+        ],
+        [
+          "Raise",
+          "raise ArgumentError, \"bad input\""
+        ],
+        [
+          "Files",
+          [
+            "File.read(\"in.txt\")",
+            "File.write(\"out.txt\", text)"
+          ]
+        ],
+        [
+          "Gems",
+          [
+            "gem install rails",
+            "bundle install",
+            "bundle exec rspec"
+          ]
+        ]
+      ]
+    }
+  ]
+}

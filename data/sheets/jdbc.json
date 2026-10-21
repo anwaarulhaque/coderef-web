@@ -1,0 +1,37 @@
+{
+  "slug": "jdbc",
+  "title": "JDBC",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for JDBC.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "JDBC (java.sql)",
+              "url": "https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/package-summary.html"
+            },
+            {
+              "name": "Wikipedia JDBC",
+              "url": "https://en.wikipedia.org/wiki/Java_Database_Connectivity"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

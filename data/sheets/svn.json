@@ -1,0 +1,405 @@
+{
+  "slug": "svn",
+  "title": "SVN",
+  "category": "Tools",
+  "color": "#809cc9",
+  "description": "Subversion client, admin and inspection commands, properties and revision keywords.",
+  "reference": "https://svnbook.red-bean.com/en/1.7/svn.ref.html",
+  "sections": [
+    {
+      "title": "Working Copy",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "checkout",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.checkout.html"
+            },
+            {
+              "name": "update",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.update.html"
+            },
+            {
+              "name": "status",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.status.html"
+            },
+            {
+              "name": "add",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.add.html"
+            },
+            {
+              "name": "delete",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.delete.html"
+            },
+            {
+              "name": "move",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.move.html"
+            },
+            {
+              "name": "copy",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.copy.html"
+            },
+            {
+              "name": "mkdir",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.mkdir.html"
+            },
+            {
+              "name": "revert",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.revert.html"
+            },
+            {
+              "name": "resolve",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.resolve.html"
+            },
+            {
+              "name": "cleanup",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.cleanup.html"
+            },
+            {
+              "name": "upgrade",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.upgrade.html"
+            },
+            {
+              "name": "switch",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.switch.html"
+            },
+            {
+              "name": "relocate",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.relocate.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Changes",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "commit",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.commit.html"
+            },
+            {
+              "name": "diff",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.diff.html"
+            },
+            {
+              "name": "patch",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.patch.html"
+            },
+            {
+              "name": "merge",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.merge.html"
+            },
+            {
+              "name": "mergeinfo",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.mergeinfo.html"
+            },
+            {
+              "name": "blame",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.blame.html"
+            },
+            {
+              "name": "log",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.log.html"
+            },
+            {
+              "name": "cat",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.cat.html"
+            },
+            {
+              "name": "info",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.info.html"
+            },
+            {
+              "name": "list",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.list.html"
+            },
+            {
+              "name": "export",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.export.html"
+            },
+            {
+              "name": "import",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.import.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Locks & Changelists",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "lock",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.lock.html"
+            },
+            {
+              "name": "unlock",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.unlock.html"
+            },
+            {
+              "name": "changelist",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.changelist.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Properties",
+      "groups": [
+        {
+          "title": "Commands",
+          "items": [
+            {
+              "name": "propset",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.propset.html"
+            },
+            {
+              "name": "propget",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.propget.html"
+            },
+            {
+              "name": "proplist",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.proplist.html"
+            },
+            {
+              "name": "propedit",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.propedit.html"
+            },
+            {
+              "name": "propdel",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.propdel.html"
+            }
+          ]
+        },
+        {
+          "title": "Reserved",
+          "items": [
+            {
+              "name": "svn:ignore",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            },
+            {
+              "name": "svn:global-ignores",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            },
+            {
+              "name": "svn:externals",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            },
+            {
+              "name": "svn:keywords",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            },
+            {
+              "name": "svn:eol-style",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            },
+            {
+              "name": "svn:executable",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            },
+            {
+              "name": "svn:mime-type",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            },
+            {
+              "name": "svn:needs-lock",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.properties.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Revision Keywords",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "HEAD",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.tour.revs.specifiers.html"
+            },
+            {
+              "name": "BASE",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.tour.revs.specifiers.html"
+            },
+            {
+              "name": "COMMITTED",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.tour.revs.specifiers.html"
+            },
+            {
+              "name": "PREV",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.tour.revs.specifiers.html"
+            },
+            {
+              "name": "{DATE}",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.tour.revs.specifiers.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "svnadmin",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "create",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.create.html"
+            },
+            {
+              "name": "dump",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.dump.html"
+            },
+            {
+              "name": "load",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.load.html"
+            },
+            {
+              "name": "hotcopy",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.hotcopy.html"
+            },
+            {
+              "name": "verify",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.verify.html"
+            },
+            {
+              "name": "recover",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.recover.html"
+            },
+            {
+              "name": "upgrade",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.upgrade.html"
+            },
+            {
+              "name": "lstxns",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.lstxns.html"
+            },
+            {
+              "name": "rmtxns",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.rmtxns.html"
+            },
+            {
+              "name": "setlog",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.setlog.html"
+            },
+            {
+              "name": "pack",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnadmin.c.pack.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "svnlook",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "author",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.author.html"
+            },
+            {
+              "name": "cat",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.cat.html"
+            },
+            {
+              "name": "changed",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.changed.html"
+            },
+            {
+              "name": "date",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.date.html"
+            },
+            {
+              "name": "diff",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.diff.html"
+            },
+            {
+              "name": "history",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.history.html"
+            },
+            {
+              "name": "info",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.info.html"
+            },
+            {
+              "name": "log",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.log.html"
+            },
+            {
+              "name": "tree",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.tree.html"
+            },
+            {
+              "name": "youngest",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnlook.c.youngest.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Other Tools",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "svnserve",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnserve.html"
+            },
+            {
+              "name": "svnsync",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnsync.html"
+            },
+            {
+              "name": "svnversion",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svnversion.html"
+            },
+            {
+              "name": "svndumpfilter",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.svndumpfilter.html"
+            },
+            {
+              "name": "mod_dav_svn",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.ref.mod_dav_svn.conf.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Guides",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Basic work cycle",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.tour.cycle.html"
+            },
+            {
+              "name": "Branching & merging",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.branchmerge.html"
+            },
+            {
+              "name": "Repository layout",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.reposadmin.planning.html"
+            },
+            {
+              "name": "Hook scripts",
+              "url": "https://svnbook.red-bean.com/en/1.7/svn.reposadmin.create.html#svn.reposadmin.create.hooks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

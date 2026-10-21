@@ -1,0 +1,45 @@
+{
+  "slug": "microformats",
+  "title": "Microformats",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Microformats.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "microformats wiki",
+              "url": "https://microformats.org/wiki/Main_Page"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://microformats.org/"
+            },
+            {
+              "name": "Wikipedia Microformats",
+              "url": "https://en.wikipedia.org/wiki/Microformats"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Microformats Cheat Sheet by Dave Child",
+              "url": "http://www.addedbytes.com/cheat-sheets/microformats-cheat-sheet/"
+            },
+            {
+              "name": "Microformats Cheat Sheet [.pdf]",
+              "url": "http://suda.co.uk/projects/microformats/cheatsheet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

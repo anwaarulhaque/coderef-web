@@ -1,0 +1,36 @@
+{
+  "slug": "scala",
+  "title": "Scala",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Scala.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Scala documentation",
+              "url": "https://docs.scala-lang.org/"
+            },
+            {
+              "name": "Scala API",
+              "url": "https://www.scala-lang.org/api/current/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.scala-lang.org/"
+            },
+            {
+              "name": "Wikipedia Scala",
+              "url": "https://en.wikipedia.org/wiki/Scala_%28programming_language%29"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

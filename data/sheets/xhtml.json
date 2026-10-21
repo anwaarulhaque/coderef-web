@@ -1,0 +1,94 @@
+{
+  "slug": "xhtml",
+  "title": "XHTML",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for XHTML.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "XHTML 1.0 (W3C)",
+              "url": "https://www.w3.org/TR/xhtml1/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/MarkUp/"
+            },
+            {
+              "name": "Wikipedia XHTML",
+              "url": "https://en.wikipedia.org/wiki/XHTML"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "HTML/XHTML in one page",
+              "url": "http://www.html.su/"
+            },
+            {
+              "name": "HTML & XHTML CheatSheet [.html]",
+              "url": "http://www.petefreitag.com/cheatsheets/xhtml/"
+            },
+            {
+              "name": "fcXHTML Reference",
+              "url": "http://www.apple.com/downloads/dashboard/developer/fcxhtmlreference.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "CSS",
+              "url": "/css/"
+            },
+            {
+              "name": "HTML DOM",
+              "url": "/html-dom/"
+            },
+            {
+              "name": "HTML",
+              "url": "/html/"
+            },
+            {
+              "name": "JavaScript",
+              "url": "/javascript/"
+            },
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "VoiceXML",
+              "url": "/voicexml/"
+            },
+            {
+              "name": "XML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XPath",
+              "url": "/xpath/"
+            },
+            {
+              "name": "XSL",
+              "url": "/xsl/"
+            },
+            {
+              "name": "XSLT",
+              "url": "/xslt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

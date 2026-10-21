@@ -1,0 +1,62 @@
+{
+  "slug": "algebra",
+  "title": "Algebra",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Algebra.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Algebra (Khan Academy)",
+              "url": "https://www.khanacademy.org/math/algebra"
+            },
+            {
+              "name": "Wikipedia Algebra",
+              "url": "https://en.wikipedia.org/wiki/Algebra"
+            },
+            {
+              "name": "Wolfram Alpha Tools",
+              "url": "http://www.wolframalpha.com/examples/Algebra.html"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Algebra Cheat Sheet by Paul Dawkins [.pdf]",
+              "url": "http://tutorial.math.lamar.edu/pdf/Algebra_Cheat_Sheet.pdf"
+            },
+            {
+              "name": "Algebra Cheat Sheet reduced by Paul Dawkins [.pdf reduced]",
+              "url": "http://tutorial.math.lamar.edu/pdf/Algebra_Cheat_Sheet_Reduced.pdf"
+            },
+            {
+              "name": "Abstract Algebra Cheat Sheet by Brendan Kidwell [.pdf]",
+              "url": "http://www.glump.net/content/abstract_algebra_cheat"
+            },
+            {
+              "name": "Review of Algebra by Thompson Brooks-Cole [.pdf]",
+              "url": "http://www.docstoc.com/docs/7389/Review-of-Algebra"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Math",
+              "url": "/math/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

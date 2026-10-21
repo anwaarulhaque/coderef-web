@@ -1,0 +1,50 @@
+{
+  "slug": "apache-ant",
+  "title": "Apache Ant",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Apache Ant.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Ant Manual",
+              "url": "https://ant.apache.org/manual/index.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://ant.apache.org/"
+            },
+            {
+              "name": "Wikipedia Apache Ant",
+              "url": "https://en.wikipedia.org/wiki/Apache_Ant"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Getting Started with Apache Ant by James Sugrue [.pdf]",
+              "url": "http://www.cs.ucsb.edu/~cappello/50/resources/rc104-010d-apacheant_0.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

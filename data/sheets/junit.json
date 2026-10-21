@@ -1,0 +1,41 @@
+{
+  "slug": "junit",
+  "title": "JUnit",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for JUnit.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "JUnit 5 User Guide",
+              "url": "https://junit.org/junit5/docs/current/user-guide/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://junit.org/"
+            },
+            {
+              "name": "Wikipedia JUnit",
+              "url": "https://en.wikipedia.org/wiki/JUnit"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

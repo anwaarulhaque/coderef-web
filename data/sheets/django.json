@@ -1,0 +1,49 @@
+{
+  "slug": "django",
+  "title": "Django",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Django.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Django documentation",
+              "url": "https://docs.djangoproject.com/en/stable/"
+            },
+            {
+              "name": "Model field reference",
+              "url": "https://docs.djangoproject.com/en/stable/ref/models/fields/"
+            },
+            {
+              "name": "Template tags & filters",
+              "url": "https://docs.djangoproject.com/en/stable/ref/templates/builtins/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.djangoproject.com/"
+            },
+            {
+              "name": "Wikipedia Django",
+              "url": "https://en.wikipedia.org/wiki/Django_%28web_framework%29"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Python",
+              "url": "/python/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

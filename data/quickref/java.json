@@ -1,0 +1,293 @@
+{
+  "slug": "java",
+  "updated": "2026-10-14",
+  "title": "Java",
+  "category": "Languages",
+  "color": "#ea2d2e",
+  "language": "java",
+  "description": "Java essentials: types, strings, arrays, collections, control flow, methods, classes, records, streams and exceptions.",
+  "docs": "https://docs.oracle.com/en/java/javase/25/docs/api/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Program structure and variables.",
+      "rows": [
+        [
+          "Hello world",
+          "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello\");\n    }\n}"
+        ],
+        [
+          "Variables",
+          [
+            "int count = 10;",
+            "double price = 9.99;",
+            "boolean active = true;",
+            "var name = \"Ada\";  // inferred"
+          ]
+        ],
+        [
+          "Constant",
+          "final int MAX = 100;"
+        ],
+        [
+          "Print",
+          [
+            "System.out.println(x);",
+            "System.out.printf(\"%s is %d%n\", name, age);"
+          ]
+        ],
+        [
+          "Read input",
+          "Scanner in = new Scanner(System.in);\nString line = in.nextLine();"
+        ],
+        [
+          "Convert types",
+          [
+            "Integer.parseInt(\"42\")",
+            "String.valueOf(42)",
+            "(int) 3.9  // 3"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Strings",
+      "description": "Text manipulation.",
+      "rows": [
+        [
+          "Length / character",
+          [
+            "s.length()",
+            "s.charAt(0)"
+          ]
+        ],
+        [
+          "Compare",
+          [
+            "s.equals(other)",
+            "s.equalsIgnoreCase(other)"
+          ]
+        ],
+        [
+          "Contains / index",
+          [
+            "s.contains(\"java\")",
+            "s.indexOf(\"a\")"
+          ]
+        ],
+        [
+          "Substring",
+          "s.substring(0, 3)"
+        ],
+        [
+          "Case / trim",
+          [
+            "s.toUpperCase()",
+            "s.strip()"
+          ]
+        ],
+        [
+          "Split / join",
+          [
+            "s.split(\",\")",
+            "String.join(\", \", list)"
+          ]
+        ],
+        [
+          "Format",
+          [
+            "String.format(\"%.2f\", price)",
+            "\"Hi %s\".formatted(name)"
+          ]
+        ],
+        [
+          "Build efficiently",
+          "var sb = new StringBuilder();\nsb.append(\"a\").append(\"b\");\nString result = sb.toString();"
+        ],
+        [
+          "Text block",
+          "String json = \"\"\"\n    { \"name\": \"Ada\" }\n    \"\"\";"
+        ]
+      ]
+    },
+    {
+      "title": "Arrays & collections",
+      "description": "Lists, maps and sets.",
+      "rows": [
+        [
+          "Array",
+          [
+            "int[] nums = {3, 1, 2};",
+            "int[] zeros = new int[5];"
+          ]
+        ],
+        [
+          "Sort an array",
+          "Arrays.sort(nums);"
+        ],
+        [
+          "List",
+          [
+            "List<String> names = new ArrayList<>();",
+            "List.of(\"a\", \"b\")  // immutable"
+          ]
+        ],
+        [
+          "Add / get / remove",
+          [
+            "names.add(\"Ada\");",
+            "names.get(0);",
+            "names.remove(\"Ada\");"
+          ]
+        ],
+        [
+          "Size / contains",
+          [
+            "names.size()",
+            "names.contains(\"Ada\")"
+          ]
+        ],
+        [
+          "Sort a list",
+          [
+            "Collections.sort(names);",
+            "names.sort(Comparator.comparing(String::length));"
+          ]
+        ],
+        [
+          "Reverse a list",
+          [
+            "Collections.reverse(names);",
+            "names.reversed()  // Java 21+ view"
+          ]
+        ],
+        [
+          "Map",
+          "Map<String, Integer> ages = new HashMap<>();\nages.put(\"Ada\", 36);\nages.getOrDefault(\"Bob\", 0);"
+        ],
+        [
+          "Loop over a map",
+          "for (var e : ages.entrySet()) {\n    System.out.println(e.getKey() + \"=\" + e.getValue());\n}"
+        ],
+        [
+          "Set",
+          "Set<String> tags = new HashSet<>(List.of(\"a\", \"b\"));"
+        ]
+      ]
+    },
+    {
+      "title": "Control flow",
+      "description": "Conditions and loops.",
+      "rows": [
+        [
+          "If / else",
+          "if (x > 0) {\n    // ...\n} else if (x == 0) {\n    // ...\n} else {\n    // ...\n}"
+        ],
+        [
+          "Ternary",
+          "String label = n % 2 == 0 ? \"even\" : \"odd\";"
+        ],
+        [
+          "Switch expression",
+          "String day = switch (n) {\n    case 1, 7 -> \"weekend\";\n    default -> \"weekday\";\n};"
+        ],
+        [
+          "For loops",
+          [
+            "for (int i = 0; i < 5; i++) { }",
+            "for (String name : names) { }"
+          ]
+        ],
+        [
+          "While",
+          "while (count < 10) {\n    count++;\n}"
+        ],
+        [
+          "Pattern matching",
+          "if (obj instanceof String s) {\n    System.out.println(s.length());\n}"
+        ]
+      ]
+    },
+    {
+      "title": "Classes & records",
+      "description": "Object-oriented code.",
+      "rows": [
+        [
+          "Class",
+          "public class Dog {\n    private final String name;\n\n    public Dog(String name) {\n        this.name = name;\n    }\n\n    public String getName() {\n        return name;\n    }\n}"
+        ],
+        [
+          "Inheritance",
+          "public class Puppy extends Dog {\n    public Puppy(String name) {\n        super(name);\n    }\n}"
+        ],
+        [
+          "Interface",
+          "interface Shape {\n    double area();\n}"
+        ],
+        [
+          "Record (immutable data)",
+          "record Point(int x, int y) {}"
+        ],
+        [
+          "Enum",
+          "enum Status { ACTIVE, DISABLED }"
+        ],
+        [
+          "Static method",
+          "public static int add(int a, int b) {\n    return a + b;\n}"
+        ]
+      ]
+    },
+    {
+      "title": "Streams & lambdas",
+      "description": "Functional-style processing.",
+      "rows": [
+        [
+          "Lambda",
+          "Comparator<String> byLength = (a, b) -> a.length() - b.length();"
+        ],
+        [
+          "Filter and map",
+          "List<String> result = names.stream()\n    .filter(n -> n.startsWith(\"A\"))\n    .map(String::toUpperCase)\n    .toList();"
+        ],
+        [
+          "Sum",
+          "int total = nums.stream().mapToInt(Integer::intValue).sum();"
+        ],
+        [
+          "Group by",
+          "Map<String, List<User>> byRole = users.stream()\n    .collect(Collectors.groupingBy(User::role));"
+        ],
+        [
+          "Optional",
+          "Optional<User> u = users.stream().findFirst();\nu.map(User::name).orElse(\"none\");"
+        ]
+      ]
+    },
+    {
+      "title": "Exceptions & files",
+      "description": "Errors and I/O.",
+      "rows": [
+        [
+          "Try / catch",
+          "try {\n    int n = Integer.parseInt(text);\n} catch (NumberFormatException e) {\n    System.err.println(e.getMessage());\n} finally {\n    cleanup();\n}"
+        ],
+        [
+          "Throw",
+          "throw new IllegalArgumentException(\"bad input\");"
+        ],
+        [
+          "Try-with-resources",
+          "try (var reader = Files.newBufferedReader(path)) {\n    // reader closes automatically\n}"
+        ],
+        [
+          "Read / write a file",
+          [
+            "String text = Files.readString(Path.of(\"in.txt\"));",
+            "Files.writeString(Path.of(\"out.txt\"), text);"
+          ]
+        ]
+      ]
+    }
+  ]
+}

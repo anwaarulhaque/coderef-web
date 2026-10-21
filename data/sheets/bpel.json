@@ -1,0 +1,32 @@
+{
+  "slug": "bpel",
+  "title": "BPEL (Web Services Business Process Execution Language)",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for BPEL.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "WS-BPEL 2.0 (OASIS)",
+              "url": "https://docs.oasis-open.org/wsbpel/2.0/OS/wsbpel-v2.0-OS.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wsbpel"
+            },
+            {
+              "name": "Wikipedia BPEL(Web Services Business Process Execution Language)",
+              "url": "https://en.wikipedia.org/wiki/Business_Process_Execution_Language"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

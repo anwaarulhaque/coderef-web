@@ -1,0 +1,37 @@
+{
+  "slug": "jpa",
+  "title": "Java Persistence API",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Java Persistence API.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Jakarta Persistence",
+              "url": "https://jakarta.ee/specifications/persistence/"
+            },
+            {
+              "name": "Wikipedia Java Persistence API",
+              "url": "https://en.wikipedia.org/wiki/Java_Persistence_API"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "ie",
+  "title": "Internet Explorer",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Internet Explorer.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IE retirement (Microsoft)",
+              "url": "https://learn.microsoft.com/en-us/lifecycle/products/internet-explorer-11"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://microsoft.com/ie/"
+            },
+            {
+              "name": "Wikipedia Internet Explorer",
+              "url": "https://en.wikipedia.org/wiki/Internet_Explorer"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Keyboard Shortcuts for Internet Explorer 6",
+              "url": "http://www.microsoft.com/enable/products/KeyboardSearch_IE6.aspx"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Firefox",
+              "url": "/firefox/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

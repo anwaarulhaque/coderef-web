@@ -1,0 +1,975 @@
+{
+  "slug": "jquery",
+  "title": "jQuery",
+  "category": "Frameworks",
+  "color": "#0769ad",
+  "description": "Selectors, DOM manipulation, traversal, events, effects and Ajax.",
+  "reference": "https://api.jquery.com/",
+  "sections": [
+    {
+      "title": "Core",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "jQuery()",
+              "url": "https://api.jquery.com/jQuery/"
+            },
+            {
+              "name": "jQuery.noConflict()",
+              "url": "https://api.jquery.com/jQuery.noConflict/"
+            },
+            {
+              "name": "jQuery.when()",
+              "url": "https://api.jquery.com/jQuery.when/"
+            },
+            {
+              "name": ".ready()",
+              "url": "https://api.jquery.com/ready/"
+            },
+            {
+              "name": "jQuery.fn.extend()",
+              "url": "https://api.jquery.com/jQuery.fn.extend/"
+            },
+            {
+              "name": "jQuery.extend()",
+              "url": "https://api.jquery.com/jQuery.extend/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Selectors",
+      "groups": [
+        {
+          "title": "Basic",
+          "items": [
+            {
+              "name": "*",
+              "url": "https://api.jquery.com/all-selector/"
+            },
+            {
+              "name": "#id",
+              "url": "https://api.jquery.com/id-selector/"
+            },
+            {
+              "name": ".class",
+              "url": "https://api.jquery.com/class-selector/"
+            },
+            {
+              "name": "element",
+              "url": "https://api.jquery.com/element-selector/"
+            },
+            {
+              "name": "sel1, sel2",
+              "url": "https://api.jquery.com/multiple-selector/"
+            }
+          ]
+        },
+        {
+          "title": "Hierarchy",
+          "items": [
+            {
+              "name": "parent > child",
+              "url": "https://api.jquery.com/child-selector/"
+            },
+            {
+              "name": "ancestor descendant",
+              "url": "https://api.jquery.com/descendant-selector/"
+            },
+            {
+              "name": "prev + next",
+              "url": "https://api.jquery.com/next-adjacent-Selector/"
+            },
+            {
+              "name": "prev ~ siblings",
+              "url": "https://api.jquery.com/next-siblings-selector/"
+            }
+          ]
+        },
+        {
+          "title": "Attribute",
+          "items": [
+            {
+              "name": "[name]",
+              "url": "https://api.jquery.com/has-attribute-selector/"
+            },
+            {
+              "name": "[name=\"value\"]",
+              "url": "https://api.jquery.com/attribute-equals-selector/"
+            },
+            {
+              "name": "[name!=\"value\"]",
+              "url": "https://api.jquery.com/attribute-not-equal-selector/"
+            },
+            {
+              "name": "[name^=\"value\"]",
+              "url": "https://api.jquery.com/attribute-starts-with-selector/"
+            },
+            {
+              "name": "[name$=\"value\"]",
+              "url": "https://api.jquery.com/attribute-ends-with-selector/"
+            },
+            {
+              "name": "[name*=\"value\"]",
+              "url": "https://api.jquery.com/attribute-contains-selector/"
+            }
+          ]
+        },
+        {
+          "title": "Filters",
+          "items": [
+            {
+              "name": ":first-child",
+              "url": "https://api.jquery.com/first-child-selector/"
+            },
+            {
+              "name": ":last-child",
+              "url": "https://api.jquery.com/last-child-selector/"
+            },
+            {
+              "name": ":nth-child()",
+              "url": "https://api.jquery.com/nth-child-selector/"
+            },
+            {
+              "name": ":only-child",
+              "url": "https://api.jquery.com/only-child-selector/"
+            },
+            {
+              "name": ":not()",
+              "url": "https://api.jquery.com/not-selector/"
+            },
+            {
+              "name": ":has()",
+              "url": "https://api.jquery.com/has-selector/"
+            },
+            {
+              "name": ":contains()",
+              "url": "https://api.jquery.com/contains-selector/"
+            },
+            {
+              "name": ":empty",
+              "url": "https://api.jquery.com/empty-selector/"
+            },
+            {
+              "name": ":parent",
+              "url": "https://api.jquery.com/parent-selector/"
+            },
+            {
+              "name": ":visible",
+              "url": "https://api.jquery.com/visible-selector/"
+            },
+            {
+              "name": ":hidden",
+              "url": "https://api.jquery.com/hidden-selector/"
+            },
+            {
+              "name": ":eq()",
+              "url": "https://api.jquery.com/eq-selector/"
+            },
+            {
+              "name": ":even",
+              "url": "https://api.jquery.com/even-selector/"
+            },
+            {
+              "name": ":odd",
+              "url": "https://api.jquery.com/odd-selector/"
+            }
+          ]
+        },
+        {
+          "title": "Forms",
+          "items": [
+            {
+              "name": ":input",
+              "url": "https://api.jquery.com/input-selector/"
+            },
+            {
+              "name": ":text",
+              "url": "https://api.jquery.com/text-selector/"
+            },
+            {
+              "name": ":checkbox",
+              "url": "https://api.jquery.com/checkbox-selector/"
+            },
+            {
+              "name": ":radio",
+              "url": "https://api.jquery.com/radio-selector/"
+            },
+            {
+              "name": ":checked",
+              "url": "https://api.jquery.com/checked-selector/"
+            },
+            {
+              "name": ":selected",
+              "url": "https://api.jquery.com/selected-selector/"
+            },
+            {
+              "name": ":disabled",
+              "url": "https://api.jquery.com/disabled-selector/"
+            },
+            {
+              "name": ":enabled",
+              "url": "https://api.jquery.com/enabled-selector/"
+            },
+            {
+              "name": ":focus",
+              "url": "https://api.jquery.com/focus-selector/"
+            },
+            {
+              "name": ":submit",
+              "url": "https://api.jquery.com/submit-selector/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Attributes & CSS",
+      "groups": [
+        {
+          "title": "Attributes",
+          "items": [
+            {
+              "name": ".attr()",
+              "url": "https://api.jquery.com/attr/"
+            },
+            {
+              "name": ".removeAttr()",
+              "url": "https://api.jquery.com/removeAttr/"
+            },
+            {
+              "name": ".prop()",
+              "url": "https://api.jquery.com/prop/"
+            },
+            {
+              "name": ".removeProp()",
+              "url": "https://api.jquery.com/removeProp/"
+            },
+            {
+              "name": ".val()",
+              "url": "https://api.jquery.com/val/"
+            },
+            {
+              "name": ".data()",
+              "url": "https://api.jquery.com/data/"
+            },
+            {
+              "name": ".removeData()",
+              "url": "https://api.jquery.com/removeData/"
+            }
+          ]
+        },
+        {
+          "title": "Classes",
+          "items": [
+            {
+              "name": ".addClass()",
+              "url": "https://api.jquery.com/addClass/"
+            },
+            {
+              "name": ".removeClass()",
+              "url": "https://api.jquery.com/removeClass/"
+            },
+            {
+              "name": ".toggleClass()",
+              "url": "https://api.jquery.com/toggleClass/"
+            },
+            {
+              "name": ".hasClass()",
+              "url": "https://api.jquery.com/hasClass/"
+            }
+          ]
+        },
+        {
+          "title": "Style & Dimensions",
+          "items": [
+            {
+              "name": ".css()",
+              "url": "https://api.jquery.com/css/"
+            },
+            {
+              "name": ".width()",
+              "url": "https://api.jquery.com/width/"
+            },
+            {
+              "name": ".height()",
+              "url": "https://api.jquery.com/height/"
+            },
+            {
+              "name": ".innerWidth()",
+              "url": "https://api.jquery.com/innerWidth/"
+            },
+            {
+              "name": ".innerHeight()",
+              "url": "https://api.jquery.com/innerHeight/"
+            },
+            {
+              "name": ".outerWidth()",
+              "url": "https://api.jquery.com/outerWidth/"
+            },
+            {
+              "name": ".outerHeight()",
+              "url": "https://api.jquery.com/outerHeight/"
+            },
+            {
+              "name": ".offset()",
+              "url": "https://api.jquery.com/offset/"
+            },
+            {
+              "name": ".position()",
+              "url": "https://api.jquery.com/position/"
+            },
+            {
+              "name": ".scrollTop()",
+              "url": "https://api.jquery.com/scrollTop/"
+            },
+            {
+              "name": ".scrollLeft()",
+              "url": "https://api.jquery.com/scrollLeft/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manipulation",
+      "groups": [
+        {
+          "title": "Content",
+          "items": [
+            {
+              "name": ".html()",
+              "url": "https://api.jquery.com/html/"
+            },
+            {
+              "name": ".text()",
+              "url": "https://api.jquery.com/text/"
+            },
+            {
+              "name": ".append()",
+              "url": "https://api.jquery.com/append/"
+            },
+            {
+              "name": ".appendTo()",
+              "url": "https://api.jquery.com/appendTo/"
+            },
+            {
+              "name": ".prepend()",
+              "url": "https://api.jquery.com/prepend/"
+            },
+            {
+              "name": ".prependTo()",
+              "url": "https://api.jquery.com/prependTo/"
+            },
+            {
+              "name": ".after()",
+              "url": "https://api.jquery.com/after/"
+            },
+            {
+              "name": ".before()",
+              "url": "https://api.jquery.com/before/"
+            },
+            {
+              "name": ".insertAfter()",
+              "url": "https://api.jquery.com/insertAfter/"
+            },
+            {
+              "name": ".insertBefore()",
+              "url": "https://api.jquery.com/insertBefore/"
+            }
+          ]
+        },
+        {
+          "title": "Wrap & Replace",
+          "items": [
+            {
+              "name": ".wrap()",
+              "url": "https://api.jquery.com/wrap/"
+            },
+            {
+              "name": ".wrapAll()",
+              "url": "https://api.jquery.com/wrapAll/"
+            },
+            {
+              "name": ".wrapInner()",
+              "url": "https://api.jquery.com/wrapInner/"
+            },
+            {
+              "name": ".unwrap()",
+              "url": "https://api.jquery.com/unwrap/"
+            },
+            {
+              "name": ".replaceWith()",
+              "url": "https://api.jquery.com/replaceWith/"
+            },
+            {
+              "name": ".replaceAll()",
+              "url": "https://api.jquery.com/replaceAll/"
+            }
+          ]
+        },
+        {
+          "title": "Copy & Remove",
+          "items": [
+            {
+              "name": ".clone()",
+              "url": "https://api.jquery.com/clone/"
+            },
+            {
+              "name": ".detach()",
+              "url": "https://api.jquery.com/detach/"
+            },
+            {
+              "name": ".empty()",
+              "url": "https://api.jquery.com/empty/"
+            },
+            {
+              "name": ".remove()",
+              "url": "https://api.jquery.com/remove/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Traversing",
+      "groups": [
+        {
+          "title": "Tree",
+          "items": [
+            {
+              "name": ".find()",
+              "url": "https://api.jquery.com/find/"
+            },
+            {
+              "name": ".children()",
+              "url": "https://api.jquery.com/children/"
+            },
+            {
+              "name": ".parent()",
+              "url": "https://api.jquery.com/parent/"
+            },
+            {
+              "name": ".parents()",
+              "url": "https://api.jquery.com/parents/"
+            },
+            {
+              "name": ".parentsUntil()",
+              "url": "https://api.jquery.com/parentsUntil/"
+            },
+            {
+              "name": ".closest()",
+              "url": "https://api.jquery.com/closest/"
+            },
+            {
+              "name": ".siblings()",
+              "url": "https://api.jquery.com/siblings/"
+            },
+            {
+              "name": ".next()",
+              "url": "https://api.jquery.com/next/"
+            },
+            {
+              "name": ".nextAll()",
+              "url": "https://api.jquery.com/nextAll/"
+            },
+            {
+              "name": ".nextUntil()",
+              "url": "https://api.jquery.com/nextUntil/"
+            },
+            {
+              "name": ".prev()",
+              "url": "https://api.jquery.com/prev/"
+            },
+            {
+              "name": ".prevAll()",
+              "url": "https://api.jquery.com/prevAll/"
+            },
+            {
+              "name": ".contents()",
+              "url": "https://api.jquery.com/contents/"
+            }
+          ]
+        },
+        {
+          "title": "Filtering",
+          "items": [
+            {
+              "name": ".eq()",
+              "url": "https://api.jquery.com/eq/"
+            },
+            {
+              "name": ".first()",
+              "url": "https://api.jquery.com/first/"
+            },
+            {
+              "name": ".last()",
+              "url": "https://api.jquery.com/last/"
+            },
+            {
+              "name": ".filter()",
+              "url": "https://api.jquery.com/filter/"
+            },
+            {
+              "name": ".not()",
+              "url": "https://api.jquery.com/not/"
+            },
+            {
+              "name": ".has()",
+              "url": "https://api.jquery.com/has/"
+            },
+            {
+              "name": ".is()",
+              "url": "https://api.jquery.com/is/"
+            },
+            {
+              "name": ".slice()",
+              "url": "https://api.jquery.com/slice/"
+            },
+            {
+              "name": ".map()",
+              "url": "https://api.jquery.com/map/"
+            }
+          ]
+        },
+        {
+          "title": "Misc",
+          "items": [
+            {
+              "name": ".add()",
+              "url": "https://api.jquery.com/add/"
+            },
+            {
+              "name": ".addBack()",
+              "url": "https://api.jquery.com/addBack/"
+            },
+            {
+              "name": ".end()",
+              "url": "https://api.jquery.com/end/"
+            },
+            {
+              "name": ".each()",
+              "url": "https://api.jquery.com/each/"
+            },
+            {
+              "name": ".get()",
+              "url": "https://api.jquery.com/get/"
+            },
+            {
+              "name": ".index()",
+              "url": "https://api.jquery.com/index/"
+            },
+            {
+              "name": ".toArray()",
+              "url": "https://api.jquery.com/toArray/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "groups": [
+        {
+          "title": "Handlers",
+          "items": [
+            {
+              "name": ".on()",
+              "url": "https://api.jquery.com/on/"
+            },
+            {
+              "name": ".off()",
+              "url": "https://api.jquery.com/off/"
+            },
+            {
+              "name": ".one()",
+              "url": "https://api.jquery.com/one/"
+            },
+            {
+              "name": ".trigger()",
+              "url": "https://api.jquery.com/trigger/"
+            },
+            {
+              "name": ".triggerHandler()",
+              "url": "https://api.jquery.com/triggerHandler/"
+            }
+          ]
+        },
+        {
+          "title": "Shorthand",
+          "items": [
+            {
+              "name": ".click()",
+              "url": "https://api.jquery.com/click/"
+            },
+            {
+              "name": ".dblclick()",
+              "url": "https://api.jquery.com/dblclick/"
+            },
+            {
+              "name": ".hover()",
+              "url": "https://api.jquery.com/hover/"
+            },
+            {
+              "name": ".keydown()",
+              "url": "https://api.jquery.com/keydown/"
+            },
+            {
+              "name": ".keyup()",
+              "url": "https://api.jquery.com/keyup/"
+            },
+            {
+              "name": ".submit()",
+              "url": "https://api.jquery.com/submit/"
+            },
+            {
+              "name": ".change()",
+              "url": "https://api.jquery.com/change/"
+            },
+            {
+              "name": ".focus()",
+              "url": "https://api.jquery.com/focus/"
+            },
+            {
+              "name": ".blur()",
+              "url": "https://api.jquery.com/blur/"
+            },
+            {
+              "name": ".resize()",
+              "url": "https://api.jquery.com/resize/"
+            },
+            {
+              "name": ".scroll()",
+              "url": "https://api.jquery.com/scroll/"
+            }
+          ]
+        },
+        {
+          "title": "Event Object",
+          "items": [
+            {
+              "name": "event.preventDefault()",
+              "url": "https://api.jquery.com/event.preventDefault/"
+            },
+            {
+              "name": "event.stopPropagation()",
+              "url": "https://api.jquery.com/event.stopPropagation/"
+            },
+            {
+              "name": "event.isDefaultPrevented()",
+              "url": "https://api.jquery.com/event.isDefaultPrevented/"
+            },
+            {
+              "name": "event.target",
+              "url": "https://api.jquery.com/event.target/"
+            },
+            {
+              "name": "event.currentTarget",
+              "url": "https://api.jquery.com/event.currentTarget/"
+            },
+            {
+              "name": "event.delegateTarget",
+              "url": "https://api.jquery.com/event.delegateTarget/"
+            },
+            {
+              "name": "event.which",
+              "url": "https://api.jquery.com/event.which/"
+            },
+            {
+              "name": "event.data",
+              "url": "https://api.jquery.com/event.data/"
+            },
+            {
+              "name": "event.type",
+              "url": "https://api.jquery.com/event.type/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Effects",
+      "groups": [
+        {
+          "title": "Basic & Fading",
+          "items": [
+            {
+              "name": ".show()",
+              "url": "https://api.jquery.com/show/"
+            },
+            {
+              "name": ".hide()",
+              "url": "https://api.jquery.com/hide/"
+            },
+            {
+              "name": ".toggle()",
+              "url": "https://api.jquery.com/toggle/"
+            },
+            {
+              "name": ".fadeIn()",
+              "url": "https://api.jquery.com/fadeIn/"
+            },
+            {
+              "name": ".fadeOut()",
+              "url": "https://api.jquery.com/fadeOut/"
+            },
+            {
+              "name": ".fadeToggle()",
+              "url": "https://api.jquery.com/fadeToggle/"
+            },
+            {
+              "name": ".fadeTo()",
+              "url": "https://api.jquery.com/fadeTo/"
+            }
+          ]
+        },
+        {
+          "title": "Sliding",
+          "items": [
+            {
+              "name": ".slideDown()",
+              "url": "https://api.jquery.com/slideDown/"
+            },
+            {
+              "name": ".slideUp()",
+              "url": "https://api.jquery.com/slideUp/"
+            },
+            {
+              "name": ".slideToggle()",
+              "url": "https://api.jquery.com/slideToggle/"
+            }
+          ]
+        },
+        {
+          "title": "Custom",
+          "items": [
+            {
+              "name": ".animate()",
+              "url": "https://api.jquery.com/animate/"
+            },
+            {
+              "name": ".stop()",
+              "url": "https://api.jquery.com/stop/"
+            },
+            {
+              "name": ".delay()",
+              "url": "https://api.jquery.com/delay/"
+            },
+            {
+              "name": ".finish()",
+              "url": "https://api.jquery.com/finish/"
+            },
+            {
+              "name": ".queue()",
+              "url": "https://api.jquery.com/queue/"
+            },
+            {
+              "name": ".dequeue()",
+              "url": "https://api.jquery.com/dequeue/"
+            },
+            {
+              "name": "jQuery.fx.off",
+              "url": "https://api.jquery.com/jQuery.fx.off/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ajax",
+      "groups": [
+        {
+          "title": "Requests",
+          "items": [
+            {
+              "name": "jQuery.ajax()",
+              "url": "https://api.jquery.com/jQuery.ajax/"
+            },
+            {
+              "name": "jQuery.get()",
+              "url": "https://api.jquery.com/jQuery.get/"
+            },
+            {
+              "name": "jQuery.post()",
+              "url": "https://api.jquery.com/jQuery.post/"
+            },
+            {
+              "name": "jQuery.getJSON()",
+              "url": "https://api.jquery.com/jQuery.getJSON/"
+            },
+            {
+              "name": "jQuery.getScript()",
+              "url": "https://api.jquery.com/jQuery.getScript/"
+            },
+            {
+              "name": ".load()",
+              "url": "https://api.jquery.com/load/"
+            }
+          ]
+        },
+        {
+          "title": "Helpers",
+          "items": [
+            {
+              "name": "jQuery.ajaxSetup()",
+              "url": "https://api.jquery.com/jQuery.ajaxSetup/"
+            },
+            {
+              "name": ".serialize()",
+              "url": "https://api.jquery.com/serialize/"
+            },
+            {
+              "name": ".serializeArray()",
+              "url": "https://api.jquery.com/serializeArray/"
+            },
+            {
+              "name": "jQuery.param()",
+              "url": "https://api.jquery.com/jQuery.param/"
+            }
+          ]
+        },
+        {
+          "title": "Global Events",
+          "items": [
+            {
+              "name": ".ajaxStart()",
+              "url": "https://api.jquery.com/ajaxStart/"
+            },
+            {
+              "name": ".ajaxStop()",
+              "url": "https://api.jquery.com/ajaxStop/"
+            },
+            {
+              "name": ".ajaxSend()",
+              "url": "https://api.jquery.com/ajaxSend/"
+            },
+            {
+              "name": ".ajaxComplete()",
+              "url": "https://api.jquery.com/ajaxComplete/"
+            },
+            {
+              "name": ".ajaxError()",
+              "url": "https://api.jquery.com/ajaxError/"
+            },
+            {
+              "name": ".ajaxSuccess()",
+              "url": "https://api.jquery.com/ajaxSuccess/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deferred",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "jQuery.Deferred()",
+              "url": "https://api.jquery.com/jQuery.Deferred/"
+            },
+            {
+              "name": "deferred.done()",
+              "url": "https://api.jquery.com/deferred.done/"
+            },
+            {
+              "name": "deferred.fail()",
+              "url": "https://api.jquery.com/deferred.fail/"
+            },
+            {
+              "name": "deferred.always()",
+              "url": "https://api.jquery.com/deferred.always/"
+            },
+            {
+              "name": "deferred.then()",
+              "url": "https://api.jquery.com/deferred.then/"
+            },
+            {
+              "name": "deferred.catch()",
+              "url": "https://api.jquery.com/deferred.catch/"
+            },
+            {
+              "name": "deferred.resolve()",
+              "url": "https://api.jquery.com/deferred.resolve/"
+            },
+            {
+              "name": "deferred.reject()",
+              "url": "https://api.jquery.com/deferred.reject/"
+            },
+            {
+              "name": "deferred.promise()",
+              "url": "https://api.jquery.com/deferred.promise/"
+            },
+            {
+              "name": "deferred.state()",
+              "url": "https://api.jquery.com/deferred.state/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Utilities",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "jQuery.each()",
+              "url": "https://api.jquery.com/jQuery.each/"
+            },
+            {
+              "name": "jQuery.map()",
+              "url": "https://api.jquery.com/jQuery.map/"
+            },
+            {
+              "name": "jQuery.grep()",
+              "url": "https://api.jquery.com/jQuery.grep/"
+            },
+            {
+              "name": "jQuery.inArray()",
+              "url": "https://api.jquery.com/jQuery.inArray/"
+            },
+            {
+              "name": "jQuery.merge()",
+              "url": "https://api.jquery.com/jQuery.merge/"
+            },
+            {
+              "name": "jQuery.makeArray()",
+              "url": "https://api.jquery.com/jQuery.makeArray/"
+            },
+            {
+              "name": "jQuery.isPlainObject()",
+              "url": "https://api.jquery.com/jQuery.isPlainObject/"
+            },
+            {
+              "name": "jQuery.isEmptyObject()",
+              "url": "https://api.jquery.com/jQuery.isEmptyObject/"
+            },
+            {
+              "name": "jQuery.contains()",
+              "url": "https://api.jquery.com/jQuery.contains/"
+            },
+            {
+              "name": "jQuery.data()",
+              "url": "https://api.jquery.com/jQuery.data/"
+            },
+            {
+              "name": "jQuery.parseHTML()",
+              "url": "https://api.jquery.com/jQuery.parseHTML/"
+            },
+            {
+              "name": "jQuery.uniqueSort()",
+              "url": "https://api.jquery.com/jQuery.uniqueSort/"
+            },
+            {
+              "name": "jQuery.globalEval()",
+              "url": "https://api.jquery.com/jQuery.globalEval/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

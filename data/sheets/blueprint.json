@@ -1,0 +1,46 @@
+{
+  "slug": "blueprint",
+  "title": "BluePrint",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for BluePrint.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Blueprint CSS (GitHub)",
+              "url": "https://github.com/joshuaclayton/blueprint-css"
+            },
+            {
+              "name": "Wikipedia BluePrint(CSS Framework)",
+              "url": "https://en.wikipedia.org/wiki/Blueprint"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Blueprint CSS by Gareth J M Saunders, based on Help Sheet v.0.3 by Alejandro Vasquez [.pdf]",
+              "url": "http://www.scribd.com/doc/3592303/Blueprint-CSS-version-071-cheat-sheet"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "CSS",
+              "url": "/css/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "bpm",
+  "title": "BPM (Business Process Modeling)",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for BPM.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "BPMN (OMG)",
+              "url": "https://www.omg.org/spec/BPMN/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.bpmn.org/"
+            },
+            {
+              "name": "Wikipedia BPM(Business Process Modeling)",
+              "url": "https://en.wikipedia.org/wiki/Business_Process_Modeling_Notation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

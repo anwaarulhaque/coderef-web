@@ -1,0 +1,74 @@
+{
+  "slug": "apache",
+  "title": "Apache",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Apache.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apache HTTP Server 2.4 Docs",
+              "url": "https://httpd.apache.org/docs/2.4/"
+            },
+            {
+              "name": "Directive Index",
+              "url": "https://httpd.apache.org/docs/2.4/mod/directives.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://httpd.apache.org/"
+            },
+            {
+              "name": "Wikipedia Apache",
+              "url": "https://en.wikipedia.org/wiki/Apache_HTTP_Server"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Apache Cheat Sheet",
+              "url": "http://www.petefreitag.com/cheatsheets/apache/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "htaccess",
+              "url": "/htaccess/"
+            },
+            {
+              "name": "mod_rewrite",
+              "url": "/mod_rewrite/"
+            },
+            {
+              "name": "Apache Ant",
+              "url": "/apache-ant/"
+            },
+            {
+              "name": "Apache Camel",
+              "url": "/apache-camel/"
+            },
+            {
+              "name": "Apache Hadoop",
+              "url": "/hadoop/"
+            },
+            {
+              "name": "Apache HBase",
+              "url": "/hbase/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "tcp",
+  "title": "TCP",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for TCP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 9293 (TCP)",
+              "url": "https://www.rfc-editor.org/rfc/rfc9293"
+            },
+            {
+              "name": "Wikipedia TCP",
+              "url": "https://en.wikipedia.org/wiki/Transmission_Control_Protocol"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "TCP Ports list",
+              "url": "http://www.gasmi.net/docs/tcp.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

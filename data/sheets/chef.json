@@ -1,0 +1,32 @@
+{
+  "slug": "chef",
+  "title": "Chef",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Chef.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Chef Documentation",
+              "url": "https://docs.chef.io/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.opscode.com/chef/"
+            },
+            {
+              "name": "Wikipedia Chef",
+              "url": "https://en.wikipedia.org/wiki/Chef_(software)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

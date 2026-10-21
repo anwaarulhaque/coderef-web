@@ -1,0 +1,33 @@
+{
+  "slug": "religion",
+  "title": "Religion",
+  "category": "Miscellaneous",
+  "description": "Reference links and cheat sheets for Religion.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Religion",
+              "url": "https://en.wikipedia.org/wiki/Religion"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "The Lord's Prayer in all languages",
+              "url": "http://www.prayer.su/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

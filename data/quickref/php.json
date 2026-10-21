@@ -1,0 +1,296 @@
+{
+  "slug": "php",
+  "updated": "2026-10-14",
+  "title": "PHP",
+  "category": "Languages",
+  "color": "#777bb4",
+  "language": "php",
+  "description": "PHP essentials: variables, strings, arrays, control flow, functions, classes, files, JSON and superglobals.",
+  "docs": "https://www.php.net/manual/en/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Variables and output.",
+      "rows": [
+        [
+          "PHP block",
+          "<?php\necho \"Hello\";"
+        ],
+        [
+          "Variables",
+          [
+            "$name = \"Ada\";",
+            "$age = 36;",
+            "const MAX = 100;"
+          ]
+        ],
+        [
+          "Output",
+          [
+            "echo $name;",
+            "print_r($array);",
+            "var_dump($value);"
+          ]
+        ],
+        [
+          "Null coalescing",
+          [
+            "$name = $_GET['name'] ?? 'guest';",
+            "$user?->address?->city"
+          ]
+        ],
+        [
+          "Type check / convert",
+          [
+            "is_numeric($x)",
+            "(int) \"42\"",
+            "intval(\"42\")"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Strings",
+      "description": "Text functions.",
+      "rows": [
+        [
+          "Interpolation",
+          "\"Hi {$user['name']}, you are $age\""
+        ],
+        [
+          "Concatenate",
+          "$full = $first . ' ' . $last;"
+        ],
+        [
+          "Length / case",
+          [
+            "strlen($s)",
+            "strtoupper($s)",
+            "ucfirst($s)"
+          ]
+        ],
+        [
+          "Contains / starts with",
+          [
+            "str_contains($s, 'php')",
+            "str_starts_with($s, 'http')"
+          ]
+        ],
+        [
+          "Replace / trim",
+          [
+            "str_replace('a', 'b', $s)",
+            "trim($s)"
+          ]
+        ],
+        [
+          "Split / join",
+          [
+            "explode(',', $s)",
+            "implode(', ', $parts)"
+          ]
+        ],
+        [
+          "Format",
+          [
+            "sprintf('%.2f', $price)",
+            "number_format(1234.5, 2)"
+          ]
+        ],
+        [
+          "Escape for HTML",
+          "htmlspecialchars($input, ENT_QUOTES, 'UTF-8')"
+        ]
+      ]
+    },
+    {
+      "title": "Arrays",
+      "description": "Lists and maps.",
+      "rows": [
+        [
+          "Indexed array",
+          [
+            "$nums = [3, 1, 2];",
+            "$nums[] = 4;  // append"
+          ]
+        ],
+        [
+          "Associative array",
+          "$user = ['name' => 'Ada', 'age' => 36];"
+        ],
+        [
+          "Loop",
+          [
+            "foreach ($nums as $n) { }",
+            "foreach ($user as $key => $value) { }"
+          ]
+        ],
+        [
+          "Count / exists",
+          [
+            "count($nums)",
+            "in_array(3, $nums)",
+            "array_key_exists('name', $user)"
+          ]
+        ],
+        [
+          "Map / filter / reduce",
+          [
+            "array_map(fn($n) => $n * 2, $nums)",
+            "array_filter($nums, fn($n) => $n > 1)",
+            "array_sum($nums)"
+          ]
+        ],
+        [
+          "Sort",
+          [
+            "sort($nums)",
+            "usort($users, fn($a, $b) => $a['age'] <=> $b['age'])"
+          ]
+        ],
+        [
+          "Reverse",
+          "array_reverse($nums)"
+        ],
+        [
+          "Merge / keys / values",
+          [
+            "array_merge($a, $b)",
+            "array_keys($user)",
+            "array_values($user)"
+          ]
+        ],
+        [
+          "Destructure",
+          "[$first, $second] = $nums;"
+        ]
+      ]
+    },
+    {
+      "title": "Control flow & functions",
+      "description": "Logic and reuse.",
+      "rows": [
+        [
+          "If / else",
+          "if ($x > 0) {\n    // ...\n} elseif ($x === 0) {\n    // ...\n} else {\n    // ...\n}"
+        ],
+        [
+          "Match",
+          "$label = match ($status) {\n    'ok' => 'Success',\n    'err' => 'Failed',\n    default => 'Unknown',\n};"
+        ],
+        [
+          "Loops",
+          [
+            "for ($i = 0; $i < 5; $i++) { }",
+            "while ($running) { }"
+          ]
+        ],
+        [
+          "Typed function",
+          "function add(int $a, int $b): int {\n    return $a + $b;\n}"
+        ],
+        [
+          "Default / named arguments",
+          [
+            "function greet(string $name = 'world') { }",
+            "greet(name: 'Ada');"
+          ]
+        ],
+        [
+          "Arrow function",
+          "$double = fn($n) => $n * 2;"
+        ]
+      ]
+    },
+    {
+      "title": "Classes",
+      "description": "Object-oriented PHP.",
+      "rows": [
+        [
+          "Class with constructor promotion",
+          "class User {\n    public function __construct(\n        public string $name,\n        private int $age = 0,\n    ) {}\n}"
+        ],
+        [
+          "Create / use",
+          [
+            "$u = new User('Ada');",
+            "$u->name"
+          ]
+        ],
+        [
+          "Inheritance / interface",
+          [
+            "class Admin extends User { }",
+            "class Dog implements Animal { }"
+          ]
+        ],
+        [
+          "Static",
+          [
+            "public static function create(): static { }",
+            "User::create()"
+          ]
+        ],
+        [
+          "Enum",
+          "enum Status: string {\n    case Active = 'active';\n    case Disabled = 'disabled';\n}"
+        ],
+        [
+          "Readonly property",
+          "public readonly string $id;"
+        ]
+      ]
+    },
+    {
+      "title": "Files, JSON & web",
+      "description": "Common tasks.",
+      "rows": [
+        [
+          "Read / write a file",
+          [
+            "file_get_contents('in.txt')",
+            "file_put_contents('out.txt', $text)"
+          ]
+        ],
+        [
+          "JSON",
+          [
+            "json_encode($data, JSON_PRETTY_PRINT)",
+            "json_decode($json, true)"
+          ]
+        ],
+        [
+          "Request data",
+          [
+            "$_GET['q']",
+            "$_POST['email']",
+            "$_SERVER['REQUEST_METHOD']"
+          ]
+        ],
+        [
+          "Sessions",
+          "session_start();\n$_SESSION['user_id'] = 7;"
+        ],
+        [
+          "Redirect",
+          "header('Location: /login');\nexit;"
+        ],
+        [
+          "Hash a password",
+          [
+            "password_hash($pw, PASSWORD_DEFAULT)",
+            "password_verify($pw, $hash)"
+          ]
+        ],
+        [
+          "Try / catch",
+          "try {\n    risky();\n} catch (Exception $e) {\n    echo $e->getMessage();\n}"
+        ],
+        [
+          "Built-in server",
+          "php -S localhost:8000"
+        ]
+      ]
+    }
+  ]
+}

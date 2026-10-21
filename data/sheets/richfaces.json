@@ -1,0 +1,45 @@
+{
+  "slug": "richfaces",
+  "title": "RickFaces",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for RickFaces.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia RichFaces",
+              "url": "https://en.wikipedia.org/wiki/RichFaces"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "AJAX",
+              "url": "/ajax/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "JavaServer Faces",
+              "url": "/jsf/"
+            },
+            {
+              "name": "Seam",
+              "url": "/seam/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

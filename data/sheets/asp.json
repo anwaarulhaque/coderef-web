@@ -1,0 +1,50 @@
+{
+  "slug": "asp",
+  "title": "ASP",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for ASP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "ASP.NET Core docs",
+              "url": "https://learn.microsoft.com/en-us/aspnet/core/"
+            },
+            {
+              "name": "Wikipedia ASP",
+              "url": "https://en.wikipedia.org/wiki/Active_Server_Pages"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "ASP / VBScript Cheat Sheet by Dave Child [.pdf]",
+              "url": "http://www.addedbytes.com/asp/asp-vbscript-cheat-sheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": ".NET",
+              "url": "/dotnet/"
+            },
+            {
+              "name": "WebMatrix",
+              "url": "/webmatrix/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

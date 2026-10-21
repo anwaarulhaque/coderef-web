@@ -1,0 +1,49 @@
+{
+  "slug": "wikipedia",
+  "title": "Wikipedia",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Wikipedia.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Official Website",
+              "url": "https://www.wikipedia.org/"
+            },
+            {
+              "name": "Wikipedia Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Wikipedia"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Wikipedia Cheatsheet",
+              "url": "https://en.wikipedia.org/wiki/Wikipedia:Cheatsheet"
+            },
+            {
+              "name": "Wiki-refcard [.png]",
+              "url": "http://meta.wikimedia.org/wiki/Help:Reference_card"
+            },
+            {
+              "name": "User contributions detail [.png]",
+              "url": "https://en.wikipedia.org/wiki/File:User_contributions_detail.png"
+            },
+            {
+              "name": "Reference card of MediaWiki editing commands [.pdf]",
+              "url": "http://commons.wikimedia.org/wiki/File:Wiki-refcard.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

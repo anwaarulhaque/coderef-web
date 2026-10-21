@@ -1,0 +1,41 @@
+{
+  "slug": "apache-cassandra",
+  "title": "Apache Cassandra",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for Apache Cassandra.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Cassandra Documentation",
+              "url": "https://cassandra.apache.org/doc/latest/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://cassandra.apache.org/"
+            },
+            {
+              "name": "Wikipedia Apache Cassandra",
+              "url": "https://en.wikipedia.org/wiki/Apache_Cassandra"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

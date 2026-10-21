@@ -1,0 +1,54 @@
+{
+  "slug": "ssi",
+  "title": "SSI",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for SSI.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "mod_include",
+              "url": "https://httpd.apache.org/docs/2.4/mod/mod_include.html"
+            },
+            {
+              "name": "SSI howto",
+              "url": "https://httpd.apache.org/docs/2.4/howto/ssi.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://httpd.apache.org/docs/2.2/mod/mod_include.html"
+            },
+            {
+              "name": "Wikipedia SSI",
+              "url": "https://en.wikipedia.org/wiki/Server_Side_Includes"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "SSI in one page",
+              "url": "http://www.ssi.su/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "wpf",
+  "title": "Windows Presentation Foundation",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Windows Presentation Foundation.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "WPF documentation",
+              "url": "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://msdn.microsoft.com/en-us/library/ms754130.aspx"
+            },
+            {
+              "name": "Wikipedia Windows Presentation Foundation",
+              "url": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "WPF Controls - A Visual Quick Start",
+              "url": "http://www.codeproject.com/KB/WPF/WPFControlsQS.aspx"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Windows",
+              "url": "/windows/"
+            },
+            {
+              "name": ".NET",
+              "url": "/dotnet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

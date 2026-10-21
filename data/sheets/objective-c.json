@@ -1,0 +1,61 @@
+{
+  "slug": "objective-c",
+  "title": "Objective-C",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Objective-C.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Programming with Objective-C",
+              "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://developer.apple.com/mac/library/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html"
+            },
+            {
+              "name": "Wikipedia Objective-C",
+              "url": "https://en.wikipedia.org/wiki/Objective-C"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "C",
+              "url": "/c/"
+            },
+            {
+              "name": "C#",
+              "url": "/csharp/"
+            },
+            {
+              "name": "C++",
+              "url": "/cpp/"
+            },
+            {
+              "name": "Cocoa",
+              "url": "/cocoa/"
+            },
+            {
+              "name": "Mac",
+              "url": "/mac/"
+            },
+            {
+              "name": "Mac OS X",
+              "url": "/osx/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

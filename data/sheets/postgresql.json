@@ -1,0 +1,86 @@
+{
+  "slug": "postgresql",
+  "title": "PostgreSQL",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for PostgreSQL.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "PostgreSQL documentation",
+              "url": "https://www.postgresql.org/docs/current/"
+            },
+            {
+              "name": "SQL commands",
+              "url": "https://www.postgresql.org/docs/current/sql-commands.html"
+            },
+            {
+              "name": "psql",
+              "url": "https://www.postgresql.org/docs/current/app-psql.html"
+            },
+            {
+              "name": "Functions & operators",
+              "url": "https://www.postgresql.org/docs/current/functions.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.postgresql.org/"
+            },
+            {
+              "name": "Wikipedia PostgreSQL",
+              "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "PostgreSQL",
+              "url": "http://www.petefreitag.com/cheatsheets/postgresql/"
+            },
+            {
+              "name": "Lorenzo Alberton. PostgreSQL cheat sheet [.gif, pdf, png]",
+              "url": "http://www.alberton.info/postgresql_cheat_sheet.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Dd2",
+              "url": "/db2/"
+            },
+            {
+              "name": "MySQL",
+              "url": "/mysql/"
+            },
+            {
+              "name": "Oracle",
+              "url": "/oracle/"
+            },
+            {
+              "name": "SQL",
+              "url": "/sql/"
+            },
+            {
+              "name": "SQLite",
+              "url": "/sqlite/"
+            },
+            {
+              "name": "Sybase",
+              "url": "/sybase/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "firebug",
+  "title": "Firebug",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Firebug.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Firefox DevTools (Firebug's successor)",
+              "url": "https://firefox-source-docs.mozilla.org/devtools-user/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://getfirebug.com/"
+            },
+            {
+              "name": "Wikipedia Firebug",
+              "url": "https://en.wikipedia.org/wiki/Firebug_(web_development)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Firefox",
+              "url": "/firefox/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

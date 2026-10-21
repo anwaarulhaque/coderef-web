@@ -1,0 +1,45 @@
+{
+  "slug": "jsf",
+  "title": "JavaServer Faces",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for JavaServer Faces.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Jakarta Faces",
+              "url": "https://jakarta.ee/specifications/faces/"
+            },
+            {
+              "name": "Wikipedia JavaServer Faces",
+              "url": "https://en.wikipedia.org/wiki/JavaServer_Faces"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "RichFaces",
+              "url": "/richfaces/"
+            },
+            {
+              "name": "Seam",
+              "url": "/seam/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "microsoft-visual-studio",
+  "title": "Microsoft Visual Studio",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Microsoft Visual Studio.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Visual Studio docs",
+              "url": "https://learn.microsoft.com/en-us/visualstudio/"
+            },
+            {
+              "name": "VS Code docs",
+              "url": "https://code.visualstudio.com/docs"
+            },
+            {
+              "name": "Wikipedia Microsoft Visual Studio",
+              "url": "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

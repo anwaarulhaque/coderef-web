@@ -1,0 +1,28 @@
+{
+  "slug": "rest",
+  "title": "REST",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for REST.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Fielding's dissertation, ch. 5",
+              "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
+            },
+            {
+              "name": "Wikipedia REST",
+              "url": "https://en.wikipedia.org/wiki/Representational_State_Transfer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

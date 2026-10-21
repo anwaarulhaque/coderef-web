@@ -1,0 +1,41 @@
+{
+  "slug": "doctrine",
+  "title": "Doctrine",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Doctrine.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Doctrine ORM docs",
+              "url": "https://www.doctrine-project.org/projects/doctrine-orm/en/current/index.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.doctrine-project.org/"
+            },
+            {
+              "name": "Wikipedia Doctrine",
+              "url": "https://en.wikipedia.org/wiki/Doctrine_(PHP)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "PHP",
+              "url": "/php/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

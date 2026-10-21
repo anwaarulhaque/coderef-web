@@ -1,0 +1,45 @@
+{
+  "slug": "cocoa",
+  "title": "Cocoa",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Cocoa.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apple Developer Documentation",
+              "url": "https://developer.apple.com/documentation/appkit"
+            },
+            {
+              "name": "http://developer.apple.com/devcenter/ios/",
+              "url": "http://developer.apple.com/devcenter/ios/"
+            },
+            {
+              "name": "Wikipedia Cocoa",
+              "url": "https://en.wikipedia.org/wiki/Cocoa_(API)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Mac OS X",
+              "url": "/osx/"
+            },
+            {
+              "name": "Objective-C",
+              "url": "/objective-c/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

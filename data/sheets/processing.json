@@ -1,0 +1,48 @@
+{
+  "slug": "processing",
+  "title": "Processing",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Processing.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Processing reference",
+              "url": "https://processing.org/reference/"
+            },
+            {
+              "name": "Official Website",
+              "url": "https://processing.org/"
+            },
+            {
+              "name": "Official p5.js Website",
+              "url": "http://p5js.org/"
+            },
+            {
+              "name": "Official p5.js Reference",
+              "url": "http://p5js.org/reference/"
+            },
+            {
+              "name": "Official Processing.py Website",
+              "url": "http://py.processing.org/"
+            },
+            {
+              "name": "Official Processing.py Reference",
+              "url": "http://py.processing.org/reference/"
+            },
+            {
+              "name": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Processing_(programming_language)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

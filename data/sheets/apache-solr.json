@@ -1,0 +1,37 @@
+{
+  "slug": "apache-solr",
+  "title": "Apache Solr",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for Apache Solr.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Solr Reference Guide",
+              "url": "https://solr.apache.org/guide/"
+            },
+            {
+              "name": "Wikipedia Apache Solr",
+              "url": "https://en.wikipedia.org/wiki/Apache_Solr"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

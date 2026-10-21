@@ -1,0 +1,37 @@
+{
+  "slug": "lisp",
+  "title": "Lisp",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Lisp.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Common Lisp HyperSpec",
+              "url": "https://www.lispworks.com/documentation/HyperSpec/Front/index.htm"
+            },
+            {
+              "name": "Wikipedia Lisp",
+              "url": "https://en.wikipedia.org/wiki/Lisp_%28programming_language%29"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Common Lisp Quick Reference [.pdf]",
+              "url": "http://clqr.boundp.org/download.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

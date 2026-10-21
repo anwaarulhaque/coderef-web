@@ -1,0 +1,74 @@
+{
+  "slug": "xml-schema",
+  "title": "XML Schema",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for XML Schema.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "XML Schema Part 1 (W3C)",
+              "url": "https://www.w3.org/TR/xmlschema11-1/"
+            },
+            {
+              "name": "XML Schema Part 2: Datatypes",
+              "url": "https://www.w3.org/TR/xmlschema11-2/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/XML/Schema"
+            },
+            {
+              "name": "Wikipedia XML Schema",
+              "url": "https://en.wikipedia.org/wiki/XML_Schema"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "XML Schema - Structures Quick Reference Card [.pdf]",
+              "url": "http://www.xml.dvint.com/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "XHTML",
+              "url": "/xhtml/"
+            },
+            {
+              "name": "XML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XPath",
+              "url": "/xpath/"
+            },
+            {
+              "name": "XSL",
+              "url": "/xsl/"
+            },
+            {
+              "name": "XSLT",
+              "url": "/xslt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

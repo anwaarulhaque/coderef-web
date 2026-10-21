@@ -1,0 +1,32 @@
+{
+  "slug": "phpstorm",
+  "title": "PhpStorm",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for PhpStorm.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "PhpStorm docs",
+              "url": "https://www.jetbrains.com/help/phpstorm/"
+            },
+            {
+              "name": "Official Website",
+              "url": "https://www.jetbrains.com/phpstorm/"
+            },
+            {
+              "name": "Wikipedia PhpStorm",
+              "url": "https://en.wikipedia.org/wiki/PhpStorm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

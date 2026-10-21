@@ -1,0 +1,32 @@
+{
+  "slug": "sendmail",
+  "title": "Sendmail",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Sendmail.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "sendmail(8)",
+              "url": "https://man.freebsd.org/cgi/man.cgi?query=sendmail&sektion=8"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.sendmail.org/"
+            },
+            {
+              "name": "Wikipedia Sendmail",
+              "url": "https://en.wikipedia.org/wiki/Sendmail"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

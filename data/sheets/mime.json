@@ -1,0 +1,41 @@
+{
+  "slug": "mime",
+  "title": "MIME",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for MIME.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IANA Media Types",
+              "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+            },
+            {
+              "name": "MDN: MIME types",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/MIME_types"
+            },
+            {
+              "name": "Wikipedia MIME",
+              "url": "https://en.wikipedia.org/wiki/MIME"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "IANA MIME Media Types",
+              "url": "http://www.iana.org/assignments/media-types/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

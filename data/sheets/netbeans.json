@@ -1,0 +1,45 @@
+{
+  "slug": "netbeans",
+  "title": "NetBeans",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for NetBeans.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apache NetBeans docs",
+              "url": "https://netbeans.apache.org/front/main/help/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.netbeans.org/"
+            },
+            {
+              "name": "Wikipedia NetBeans",
+              "url": "https://en.wikipedia.org/wiki/NetBeans"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Eclipse",
+              "url": "/eclipse/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

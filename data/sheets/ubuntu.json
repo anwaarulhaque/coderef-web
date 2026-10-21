@@ -1,0 +1,50 @@
+{
+  "slug": "ubuntu",
+  "title": "Ubuntu",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Ubuntu.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Ubuntu Server docs",
+              "url": "https://documentation.ubuntu.com/server/"
+            },
+            {
+              "name": "Wikipedia Ubuntu",
+              "url": "https://en.wikipedia.org/wiki/Ubuntu_%28Linux_distribution%29"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Ubuntu Cheat Sheet",
+              "url": "http://fosswire.com/post/2008/04/ubuntu-cheat-sheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Linux",
+              "url": "/linux/"
+            },
+            {
+              "name": "Unix",
+              "url": "/unix/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

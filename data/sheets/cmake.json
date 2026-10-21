@@ -1,0 +1,449 @@
+{
+  "slug": "cmake",
+  "title": "CMake",
+  "category": "Tools",
+  "color": "#064f8c",
+  "description": "CMake commands for targets, control flow, finding packages, variables, modules and the CLI.",
+  "reference": "https://cmake.org/cmake/help/latest/",
+  "sections": [
+    {
+      "title": "Project Setup",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "cmake_minimum_required",
+              "url": "https://cmake.org/cmake/help/latest/command/cmake_minimum_required.html"
+            },
+            {
+              "name": "project",
+              "url": "https://cmake.org/cmake/help/latest/command/project.html"
+            },
+            {
+              "name": "enable_language",
+              "url": "https://cmake.org/cmake/help/latest/command/enable_language.html"
+            },
+            {
+              "name": "include",
+              "url": "https://cmake.org/cmake/help/latest/command/include.html"
+            },
+            {
+              "name": "include_guard",
+              "url": "https://cmake.org/cmake/help/latest/command/include_guard.html"
+            },
+            {
+              "name": "option",
+              "url": "https://cmake.org/cmake/help/latest/command/option.html"
+            },
+            {
+              "name": "add_subdirectory",
+              "url": "https://cmake.org/cmake/help/latest/command/add_subdirectory.html"
+            },
+            {
+              "name": "enable_testing",
+              "url": "https://cmake.org/cmake/help/latest/command/enable_testing.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Targets",
+      "groups": [
+        {
+          "title": "Define",
+          "items": [
+            {
+              "name": "add_executable",
+              "url": "https://cmake.org/cmake/help/latest/command/add_executable.html"
+            },
+            {
+              "name": "add_library",
+              "url": "https://cmake.org/cmake/help/latest/command/add_library.html"
+            },
+            {
+              "name": "add_custom_target",
+              "url": "https://cmake.org/cmake/help/latest/command/add_custom_target.html"
+            },
+            {
+              "name": "add_custom_command",
+              "url": "https://cmake.org/cmake/help/latest/command/add_custom_command.html"
+            },
+            {
+              "name": "add_dependencies",
+              "url": "https://cmake.org/cmake/help/latest/command/add_dependencies.html"
+            },
+            {
+              "name": "add_test",
+              "url": "https://cmake.org/cmake/help/latest/command/add_test.html"
+            },
+            {
+              "name": "install",
+              "url": "https://cmake.org/cmake/help/latest/command/install.html"
+            }
+          ]
+        },
+        {
+          "title": "Configure",
+          "items": [
+            {
+              "name": "target_link_libraries",
+              "url": "https://cmake.org/cmake/help/latest/command/target_link_libraries.html"
+            },
+            {
+              "name": "target_include_directories",
+              "url": "https://cmake.org/cmake/help/latest/command/target_include_directories.html"
+            },
+            {
+              "name": "target_compile_definitions",
+              "url": "https://cmake.org/cmake/help/latest/command/target_compile_definitions.html"
+            },
+            {
+              "name": "target_compile_options",
+              "url": "https://cmake.org/cmake/help/latest/command/target_compile_options.html"
+            },
+            {
+              "name": "target_compile_features",
+              "url": "https://cmake.org/cmake/help/latest/command/target_compile_features.html"
+            },
+            {
+              "name": "target_sources",
+              "url": "https://cmake.org/cmake/help/latest/command/target_sources.html"
+            },
+            {
+              "name": "target_link_options",
+              "url": "https://cmake.org/cmake/help/latest/command/target_link_options.html"
+            },
+            {
+              "name": "target_precompile_headers",
+              "url": "https://cmake.org/cmake/help/latest/command/target_precompile_headers.html"
+            },
+            {
+              "name": "set_target_properties",
+              "url": "https://cmake.org/cmake/help/latest/command/set_target_properties.html"
+            },
+            {
+              "name": "get_target_property",
+              "url": "https://cmake.org/cmake/help/latest/command/get_target_property.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Control Flow",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "if",
+              "url": "https://cmake.org/cmake/help/latest/command/if.html"
+            },
+            {
+              "name": "elseif",
+              "url": "https://cmake.org/cmake/help/latest/command/elseif.html"
+            },
+            {
+              "name": "else",
+              "url": "https://cmake.org/cmake/help/latest/command/else.html"
+            },
+            {
+              "name": "endif",
+              "url": "https://cmake.org/cmake/help/latest/command/endif.html"
+            },
+            {
+              "name": "foreach",
+              "url": "https://cmake.org/cmake/help/latest/command/foreach.html"
+            },
+            {
+              "name": "while",
+              "url": "https://cmake.org/cmake/help/latest/command/while.html"
+            },
+            {
+              "name": "break",
+              "url": "https://cmake.org/cmake/help/latest/command/break.html"
+            },
+            {
+              "name": "continue",
+              "url": "https://cmake.org/cmake/help/latest/command/continue.html"
+            },
+            {
+              "name": "return",
+              "url": "https://cmake.org/cmake/help/latest/command/return.html"
+            },
+            {
+              "name": "function",
+              "url": "https://cmake.org/cmake/help/latest/command/function.html"
+            },
+            {
+              "name": "macro",
+              "url": "https://cmake.org/cmake/help/latest/command/macro.html"
+            },
+            {
+              "name": "block",
+              "url": "https://cmake.org/cmake/help/latest/command/block.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variables & Strings",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "set",
+              "url": "https://cmake.org/cmake/help/latest/command/set.html"
+            },
+            {
+              "name": "unset",
+              "url": "https://cmake.org/cmake/help/latest/command/unset.html"
+            },
+            {
+              "name": "list",
+              "url": "https://cmake.org/cmake/help/latest/command/list.html"
+            },
+            {
+              "name": "string",
+              "url": "https://cmake.org/cmake/help/latest/command/string.html"
+            },
+            {
+              "name": "math",
+              "url": "https://cmake.org/cmake/help/latest/command/math.html"
+            },
+            {
+              "name": "cmake_path",
+              "url": "https://cmake.org/cmake/help/latest/command/cmake_path.html"
+            },
+            {
+              "name": "file",
+              "url": "https://cmake.org/cmake/help/latest/command/file.html"
+            },
+            {
+              "name": "configure_file",
+              "url": "https://cmake.org/cmake/help/latest/command/configure_file.html"
+            },
+            {
+              "name": "message",
+              "url": "https://cmake.org/cmake/help/latest/command/message.html"
+            },
+            {
+              "name": "set_property",
+              "url": "https://cmake.org/cmake/help/latest/command/set_property.html"
+            },
+            {
+              "name": "get_property",
+              "url": "https://cmake.org/cmake/help/latest/command/get_property.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Locating Resources",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "find_package",
+              "url": "https://cmake.org/cmake/help/latest/command/find_package.html"
+            },
+            {
+              "name": "find_library",
+              "url": "https://cmake.org/cmake/help/latest/command/find_library.html"
+            },
+            {
+              "name": "find_path",
+              "url": "https://cmake.org/cmake/help/latest/command/find_path.html"
+            },
+            {
+              "name": "find_program",
+              "url": "https://cmake.org/cmake/help/latest/command/find_program.html"
+            },
+            {
+              "name": "find_file",
+              "url": "https://cmake.org/cmake/help/latest/command/find_file.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legacy Directory Commands",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "include_directories",
+              "url": "https://cmake.org/cmake/help/latest/command/include_directories.html"
+            },
+            {
+              "name": "link_directories",
+              "url": "https://cmake.org/cmake/help/latest/command/link_directories.html"
+            },
+            {
+              "name": "add_compile_options",
+              "url": "https://cmake.org/cmake/help/latest/command/add_compile_options.html"
+            },
+            {
+              "name": "add_definitions",
+              "url": "https://cmake.org/cmake/help/latest/command/add_definitions.html"
+            },
+            {
+              "name": "link_libraries",
+              "url": "https://cmake.org/cmake/help/latest/command/link_libraries.html"
+            },
+            {
+              "name": "execute_process",
+              "url": "https://cmake.org/cmake/help/latest/command/execute_process.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Common Variables",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "CMAKE_BUILD_TYPE",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html"
+            },
+            {
+              "name": "CMAKE_CXX_STANDARD",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_CXX_STANDARD.html"
+            },
+            {
+              "name": "CMAKE_SOURCE_DIR",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_SOURCE_DIR.html"
+            },
+            {
+              "name": "CMAKE_BINARY_DIR",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_BINARY_DIR.html"
+            },
+            {
+              "name": "CMAKE_CURRENT_SOURCE_DIR",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_CURRENT_SOURCE_DIR.html"
+            },
+            {
+              "name": "CMAKE_CURRENT_BINARY_DIR",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_CURRENT_BINARY_DIR.html"
+            },
+            {
+              "name": "CMAKE_INSTALL_PREFIX",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_INSTALL_PREFIX.html"
+            },
+            {
+              "name": "CMAKE_PREFIX_PATH",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_PREFIX_PATH.html"
+            },
+            {
+              "name": "CMAKE_MODULE_PATH",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_MODULE_PATH.html"
+            },
+            {
+              "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html"
+            },
+            {
+              "name": "CMAKE_CXX_COMPILER",
+              "url": "https://cmake.org/cmake/help/latest/variable/CMAKE_CXX_COMPILER.html"
+            },
+            {
+              "name": "PROJECT_NAME",
+              "url": "https://cmake.org/cmake/help/latest/variable/PROJECT_NAME.html"
+            },
+            {
+              "name": "PROJECT_SOURCE_DIR",
+              "url": "https://cmake.org/cmake/help/latest/variable/PROJECT_SOURCE_DIR.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modules",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "FetchContent",
+              "url": "https://cmake.org/cmake/help/latest/module/FetchContent.html"
+            },
+            {
+              "name": "ExternalProject",
+              "url": "https://cmake.org/cmake/help/latest/module/ExternalProject.html"
+            },
+            {
+              "name": "GNUInstallDirs",
+              "url": "https://cmake.org/cmake/help/latest/module/GNUInstallDirs.html"
+            },
+            {
+              "name": "CMakePackageConfigHelpers",
+              "url": "https://cmake.org/cmake/help/latest/module/CMakePackageConfigHelpers.html"
+            },
+            {
+              "name": "CTest",
+              "url": "https://cmake.org/cmake/help/latest/module/CTest.html"
+            },
+            {
+              "name": "CPack",
+              "url": "https://cmake.org/cmake/help/latest/module/CPack.html"
+            },
+            {
+              "name": "CheckIncludeFile",
+              "url": "https://cmake.org/cmake/help/latest/module/CheckIncludeFile.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CLI & Manuals",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "cmake -S . -B build",
+              "url": "https://cmake.org/cmake/help/latest/manual/cmake.1.html"
+            },
+            {
+              "name": "cmake --build build",
+              "url": "https://cmake.org/cmake/help/latest/manual/cmake.1.html#build-a-project"
+            },
+            {
+              "name": "cmake --install build",
+              "url": "https://cmake.org/cmake/help/latest/manual/cmake.1.html#install-a-project"
+            },
+            {
+              "name": "cmake --preset",
+              "url": "https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html"
+            },
+            {
+              "name": "ctest",
+              "url": "https://cmake.org/cmake/help/latest/manual/ctest.1.html"
+            },
+            {
+              "name": "cpack",
+              "url": "https://cmake.org/cmake/help/latest/manual/cpack.1.html"
+            },
+            {
+              "name": "Generator expressions",
+              "url": "https://cmake.org/cmake/help/latest/manual/cmake-generator-expressions.7.html"
+            },
+            {
+              "name": "Language",
+              "url": "https://cmake.org/cmake/help/latest/manual/cmake-language.7.html"
+            },
+            {
+              "name": "Build system",
+              "url": "https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

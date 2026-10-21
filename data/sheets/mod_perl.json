@@ -1,0 +1,45 @@
+{
+  "slug": "mod_perl",
+  "title": "mod_perl",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for mod_perl.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "mod_perl 2.0 docs",
+              "url": "https://perl.apache.org/docs/2.0/index.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://perl.apache.org/"
+            },
+            {
+              "name": "Wikipedia mod_perl",
+              "url": "https://en.wikipedia.org/wiki/Mod_perl"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            },
+            {
+              "name": "Perl",
+              "url": "/perl/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

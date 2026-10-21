@@ -1,0 +1,469 @@
+{
+  "slug": "regex",
+  "title": "RegExp",
+  "category": "Tools",
+  "color": "#8b5cf6",
+  "description": "Regular expression syntax: classes, anchors, quantifiers, groups, lookarounds and flags.",
+  "reference": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions",
+  "sections": [
+    {
+      "title": "Character Classes",
+      "groups": [
+        {
+          "title": "Shorthand",
+          "items": [
+            {
+              "name": ".",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Wildcard"
+            },
+            {
+              "name": "\\d",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape"
+            },
+            {
+              "name": "\\D",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape"
+            },
+            {
+              "name": "\\w",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape"
+            },
+            {
+              "name": "\\W",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape"
+            },
+            {
+              "name": "\\s",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape"
+            },
+            {
+              "name": "\\S",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape"
+            }
+          ]
+        },
+        {
+          "title": "Sets",
+          "items": [
+            {
+              "name": "[abc]",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class"
+            },
+            {
+              "name": "[^abc]",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class"
+            },
+            {
+              "name": "[a-z]",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class"
+            },
+            {
+              "name": "[A-Z0-9]",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class"
+            },
+            {
+              "name": "[\\s\\S]",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class"
+            }
+          ]
+        },
+        {
+          "title": "Unicode",
+          "items": [
+            {
+              "name": "\\p{L}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+            },
+            {
+              "name": "\\p{Lu}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+            },
+            {
+              "name": "\\p{N}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+            },
+            {
+              "name": "\\p{Script=Greek}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+            },
+            {
+              "name": "\\P{L}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Anchors & Boundaries",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "^",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Input_boundary_assertion"
+            },
+            {
+              "name": "$",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Input_boundary_assertion"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "name": "\\b",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Word_boundary_assertion"
+            },
+            {
+              "name": "\\B",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Word_boundary_assertion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lookaround",
+      "groups": [
+        {
+          "title": "Lookahead",
+          "items": [
+            {
+              "name": "(?=x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion"
+            },
+            {
+              "name": "(?!x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion"
+            }
+          ]
+        },
+        {
+          "title": "Lookbehind",
+          "items": [
+            {
+              "name": "(?<=x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookbehind_assertion"
+            },
+            {
+              "name": "(?<!x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookbehind_assertion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quantifiers",
+      "groups": [
+        {
+          "title": "Greedy",
+          "items": [
+            {
+              "name": "*",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "+",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "?",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "{n}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "{n,}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "{n,m}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            }
+          ]
+        },
+        {
+          "title": "Lazy",
+          "items": [
+            {
+              "name": "*?",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "+?",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "??",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            },
+            {
+              "name": "{n,m}?",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Groups & References",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "(x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Capturing_group"
+            },
+            {
+              "name": "(?:x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Non-capturing_group"
+            },
+            {
+              "name": "(?<name>x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group"
+            },
+            {
+              "name": "\\1",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Backreference"
+            },
+            {
+              "name": "\\k<name>",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_backreference"
+            },
+            {
+              "name": "x|y",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Disjunction"
+            },
+            {
+              "name": "(?i:x)",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Modifier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Escapes",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "\\t",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\n",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\r",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\v",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\f",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\0",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\xhh",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\uhhhh",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\u{hhhh}",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\cX",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\.",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\\\",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            },
+            {
+              "name": "\\/",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flags",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "g  global",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global"
+            },
+            {
+              "name": "i  ignoreCase",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase"
+            },
+            {
+              "name": "m  multiline",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline"
+            },
+            {
+              "name": "s  dotAll",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll"
+            },
+            {
+              "name": "u  unicode",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode"
+            },
+            {
+              "name": "v  unicodeSets",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicodeSets"
+            },
+            {
+              "name": "y  sticky",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky"
+            },
+            {
+              "name": "d  hasIndices",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/hasIndices"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JavaScript Methods",
+      "groups": [
+        {
+          "title": "RegExp",
+          "items": [
+            {
+              "name": "test()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test"
+            },
+            {
+              "name": "exec()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec"
+            },
+            {
+              "name": "lastIndex",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex"
+            },
+            {
+              "name": "source",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source"
+            },
+            {
+              "name": "flags",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags"
+            },
+            {
+              "name": "escape()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/escape"
+            }
+          ]
+        },
+        {
+          "title": "String",
+          "items": [
+            {
+              "name": "match()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match"
+            },
+            {
+              "name": "matchAll()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/matchAll"
+            },
+            {
+              "name": "replace()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"
+            },
+            {
+              "name": "replaceAll()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll"
+            },
+            {
+              "name": "search()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search"
+            },
+            {
+              "name": "split()",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+            }
+          ]
+        },
+        {
+          "title": "Replacement Patterns",
+          "items": [
+            {
+              "name": "$&",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_the_replacement"
+            },
+            {
+              "name": "$1",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_the_replacement"
+            },
+            {
+              "name": "$<name>",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_the_replacement"
+            },
+            {
+              "name": "$`",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_the_replacement"
+            },
+            {
+              "name": "$'",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_the_replacement"
+            },
+            {
+              "name": "$$",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#specifying_a_string_as_the_replacement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Guides",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Regular expressions guide",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions"
+            },
+            {
+              "name": "Cheatsheet",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet"
+            },
+            {
+              "name": "Groups and backreferences",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Groups_and_backreferences"
+            },
+            {
+              "name": "Assertions",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Assertions"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

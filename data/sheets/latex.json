@@ -1,0 +1,62 @@
+{
+  "slug": "latex",
+  "title": "LaTeX",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for LaTeX.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "LaTeX Project",
+              "url": "https://www.latex-project.org/help/documentation/"
+            },
+            {
+              "name": "Overleaf docs",
+              "url": "https://www.overleaf.com/learn"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.latex-project.org/"
+            },
+            {
+              "name": "Wikipedia LaTeX",
+              "url": "https://en.wikipedia.org/wiki/LaTeX"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Latex cheat sheet [.pdf]",
+              "url": "http://www.stdout.org/~winston/latex/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "TeX",
+              "url": "/tex/"
+            },
+            {
+              "name": "LaTeX-Suite",
+              "url": "/latex-suite/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "yahoo",
+  "title": "Yahoo",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Yahoo.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Official Website",
+              "url": "http://www.yahoo.com/"
+            },
+            {
+              "name": "Wikipedia Yahoo",
+              "url": "https://en.wikipedia.org/wiki/Yahoo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

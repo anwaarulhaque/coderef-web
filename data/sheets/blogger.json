@@ -1,0 +1,234 @@
+{
+  "slug": "blogger",
+  "title": "Blogger",
+  "category": "Applications",
+  "color": "#ff5722",
+  "description": "Blogger API v3 resources and methods, plus help for themes, layouts and gadgets.",
+  "reference": "https://developers.google.com/blogger",
+  "sections": [
+    {
+      "title": "API Resources",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "blogs",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/blogs"
+            },
+            {
+              "name": "posts",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts"
+            },
+            {
+              "name": "comments",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments"
+            },
+            {
+              "name": "pages",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages"
+            },
+            {
+              "name": "users",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/users"
+            },
+            {
+              "name": "blogUserInfos",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/blogUserInfos"
+            },
+            {
+              "name": "postUserInfos",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/postUserInfos"
+            },
+            {
+              "name": "pageViews",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pageViews"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Posts",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "posts.list",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/list"
+            },
+            {
+              "name": "posts.get",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/get"
+            },
+            {
+              "name": "posts.search",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/search"
+            },
+            {
+              "name": "posts.insert",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/insert"
+            },
+            {
+              "name": "posts.patch",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/patch"
+            },
+            {
+              "name": "posts.update",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/update"
+            },
+            {
+              "name": "posts.delete",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/delete"
+            },
+            {
+              "name": "posts.publish",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/publish"
+            },
+            {
+              "name": "posts.revert",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/revert"
+            },
+            {
+              "name": "posts.getByPath",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/posts/getByPath"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Blogs & Pages",
+      "groups": [
+        {
+          "title": "Blogs",
+          "items": [
+            {
+              "name": "blogs.get",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/blogs/get"
+            },
+            {
+              "name": "blogs.getByUrl",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/blogs/getByUrl"
+            },
+            {
+              "name": "blogs.listByUser",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/blogs/listByUser"
+            }
+          ]
+        },
+        {
+          "title": "Pages",
+          "items": [
+            {
+              "name": "pages.list",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/list"
+            },
+            {
+              "name": "pages.get",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/get"
+            },
+            {
+              "name": "pages.insert",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/insert"
+            },
+            {
+              "name": "pages.patch",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/patch"
+            },
+            {
+              "name": "pages.update",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/update"
+            },
+            {
+              "name": "pages.delete",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/delete"
+            },
+            {
+              "name": "pages.publish",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/publish"
+            },
+            {
+              "name": "pages.revert",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/pages/revert"
+            }
+          ]
+        },
+        {
+          "title": "Comments",
+          "items": [
+            {
+              "name": "comments.list",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments/list"
+            },
+            {
+              "name": "comments.get",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments/get"
+            },
+            {
+              "name": "comments.listByBlog",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments/listByBlog"
+            },
+            {
+              "name": "comments.approve",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments/approve"
+            },
+            {
+              "name": "comments.markAsSpam",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments/markAsSpam"
+            },
+            {
+              "name": "comments.removeContent",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments/removeContent"
+            },
+            {
+              "name": "comments.delete",
+              "url": "https://developers.google.com/blogger/docs/3.0/reference/comments/delete"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Developer Guides",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Getting started",
+              "url": "https://developers.google.com/blogger/docs/3.0/getting_started"
+            },
+            {
+              "name": "Using the API",
+              "url": "https://developers.google.com/blogger/docs/3.0/using"
+            },
+            {
+              "name": "Performance tips",
+              "url": "https://developers.google.com/blogger/docs/3.0/performance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Help Center",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Blogger Help",
+              "url": "https://support.google.com/blogger/"
+            },
+            {
+              "name": "Change your theme",
+              "url": "https://support.google.com/blogger/answer/176245"
+            },
+            {
+              "name": "Layout & gadgets",
+              "url": "https://support.google.com/blogger/answer/46888"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

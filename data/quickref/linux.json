@@ -1,0 +1,370 @@
+{
+  "slug": "linux",
+  "updated": "2026-10-14",
+  "title": "Linux Commands",
+  "category": "Tools",
+  "color": "#fcc624",
+  "language": "bash",
+  "description": "Terminal commands for files, viewing and searching text, permissions, processes, networking, archives and packages.",
+  "docs": "https://man7.org/linux/man-pages/",
+  "sections": [
+    {
+      "title": "Files & directories",
+      "description": "Move around and manage files.",
+      "rows": [
+        [
+          "Where am I / list files",
+          [
+            "pwd",
+            "ls -la"
+          ]
+        ],
+        [
+          "Change directory",
+          [
+            "cd projects",
+            "cd ..",
+            "cd ~",
+            "cd -"
+          ]
+        ],
+        [
+          "Create a directory",
+          [
+            "mkdir docs",
+            "mkdir -p a/b/c"
+          ]
+        ],
+        [
+          "Create an empty file",
+          "touch notes.txt"
+        ],
+        [
+          "Copy",
+          [
+            "cp a.txt b.txt",
+            "cp -r src/ backup/"
+          ]
+        ],
+        [
+          "Move / rename",
+          "mv old.txt new.txt"
+        ],
+        [
+          "Delete",
+          [
+            "rm file.txt",
+            "rm -r folder/",
+            "rmdir empty-folder"
+          ]
+        ],
+        [
+          "Symbolic link",
+          "ln -s /path/to/target link-name"
+        ],
+        [
+          "Find files",
+          [
+            "find . -name \"*.log\"",
+            "find . -type f -size +100M"
+          ]
+        ],
+        [
+          "Disk usage",
+          [
+            "df -h",
+            "du -sh *"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Viewing & searching text",
+      "description": "Read files and search inside them.",
+      "rows": [
+        [
+          "Print a file",
+          "cat file.txt"
+        ],
+        [
+          "Page through a file",
+          "less file.txt"
+        ],
+        [
+          "First / last lines",
+          [
+            "head -n 20 file.txt",
+            "tail -n 20 file.txt"
+          ]
+        ],
+        [
+          "Follow a log",
+          "tail -f /var/log/syslog"
+        ],
+        [
+          "Search text",
+          [
+            "grep \"error\" app.log",
+            "grep -rin \"todo\" src/"
+          ]
+        ],
+        [
+          "Count lines / words",
+          "wc -l file.txt"
+        ],
+        [
+          "Sort and de-duplicate",
+          [
+            "sort names.txt | uniq",
+            "sort | uniq -c | sort -nr"
+          ]
+        ],
+        [
+          "Cut columns",
+          "cut -d, -f1,3 data.csv"
+        ],
+        [
+          "Find and replace in a file",
+          "sed -i 's/old/new/g' file.txt"
+        ],
+        [
+          "Compare files",
+          "diff a.txt b.txt"
+        ]
+      ]
+    },
+    {
+      "title": "Pipes & redirection",
+      "description": "Connect commands together.",
+      "rows": [
+        [
+          "Write output to a file",
+          [
+            "ls > files.txt",
+            "echo hi >> log.txt  # append"
+          ]
+        ],
+        [
+          "Redirect errors",
+          [
+            "cmd 2> errors.txt",
+            "cmd > all.txt 2>&1"
+          ]
+        ],
+        [
+          "Pipe output into another command",
+          "ps aux | grep node"
+        ],
+        [
+          "Run if the previous succeeded",
+          "npm test && npm run build"
+        ],
+        [
+          "Run in the background",
+          [
+            "long-task &",
+            "nohup long-task &"
+          ]
+        ],
+        [
+          "Use output as an argument",
+          "echo \"Today is $(date +%F)\""
+        ],
+        [
+          "Run a command on many files",
+          "find . -name \"*.tmp\" -print0 | xargs -0 rm"
+        ]
+      ]
+    },
+    {
+      "title": "Permissions & users",
+      "description": "Who can do what.",
+      "rows": [
+        [
+          "Make a script executable",
+          "chmod +x deploy.sh"
+        ],
+        [
+          "Set permissions numerically",
+          [
+            "chmod 644 file.txt   # rw-r--r--",
+            "chmod 755 dir/      # rwxr-xr-x"
+          ]
+        ],
+        [
+          "Change owner",
+          "sudo chown -R www-data:www-data /var/www"
+        ],
+        [
+          "Run as administrator",
+          "sudo apt update"
+        ],
+        [
+          "Who am I",
+          [
+            "whoami",
+            "id"
+          ]
+        ],
+        [
+          "Switch user",
+          "su - username"
+        ]
+      ]
+    },
+    {
+      "title": "Processes & system",
+      "description": "What's running and how the machine is doing.",
+      "rows": [
+        [
+          "List processes",
+          [
+            "ps aux",
+            "top",
+            "htop"
+          ]
+        ],
+        [
+          "Find a process",
+          [
+            "pgrep -a node",
+            "ps aux | grep node"
+          ]
+        ],
+        [
+          "Stop a process",
+          [
+            "kill 1234",
+            "kill -9 1234",
+            "pkill node"
+          ]
+        ],
+        [
+          "What's using a port",
+          [
+            "sudo lsof -i :3000",
+            "ss -ltnp"
+          ]
+        ],
+        [
+          "Memory / uptime",
+          [
+            "free -h",
+            "uptime"
+          ]
+        ],
+        [
+          "Services (systemd)",
+          [
+            "sudo systemctl status nginx",
+            "sudo systemctl restart nginx",
+            "journalctl -u nginx -f"
+          ]
+        ],
+        [
+          "Environment variables",
+          [
+            "echo $PATH",
+            "export API_KEY=abc123"
+          ]
+        ],
+        [
+          "Command history",
+          [
+            "history",
+            "Ctrl+R   # search history"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Networking",
+      "description": "Connections and downloads.",
+      "rows": [
+        [
+          "Make an HTTP request",
+          [
+            "curl https://example.com",
+            "curl -I https://example.com  # headers"
+          ]
+        ],
+        [
+          "Download a file",
+          [
+            "curl -O https://example.com/file.zip",
+            "wget https://example.com/file.zip"
+          ]
+        ],
+        [
+          "Check connectivity",
+          "ping -c 4 example.com"
+        ],
+        [
+          "My IP addresses",
+          "ip addr"
+        ],
+        [
+          "DNS lookup",
+          "dig example.com"
+        ],
+        [
+          "SSH into a server",
+          [
+            "ssh user@host",
+            "ssh -i ~/.ssh/key.pem user@host"
+          ]
+        ],
+        [
+          "Copy files over SSH",
+          [
+            "scp file.txt user@host:/tmp/",
+            "rsync -avz src/ user@host:/srv/app/"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Archives & packages",
+      "description": "Compress files and install software.",
+      "rows": [
+        [
+          "Create a .tar.gz",
+          "tar -czvf archive.tar.gz folder/"
+        ],
+        [
+          "Extract a .tar.gz",
+          "tar -xzvf archive.tar.gz"
+        ],
+        [
+          "Zip / unzip",
+          [
+            "zip -r archive.zip folder/",
+            "unzip archive.zip"
+          ]
+        ],
+        [
+          "Install (Debian/Ubuntu)",
+          [
+            "sudo apt update",
+            "sudo apt install git"
+          ]
+        ],
+        [
+          "Install (Fedora)",
+          "sudo dnf install git"
+        ],
+        [
+          "Install (Arch)",
+          "sudo pacman -S git"
+        ],
+        [
+          "Get help for a command",
+          [
+            "man tar",
+            "tar --help"
+          ]
+        ]
+      ]
+    }
+  ]
+}

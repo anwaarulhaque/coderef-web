@@ -1,0 +1,542 @@
+{
+  "slug": "underscorejs",
+  "title": "Underscore.js",
+  "category": "Frameworks",
+  "color": "#0371b5",
+  "description": "Underscore.js helpers for collections, arrays, functions, objects and utilities.",
+  "reference": "https://underscorejs.org/",
+  "sections": [
+    {
+      "title": "Collections",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "_.each",
+              "url": "https://underscorejs.org/#each"
+            },
+            {
+              "name": "_.map",
+              "url": "https://underscorejs.org/#map"
+            },
+            {
+              "name": "_.reduce",
+              "url": "https://underscorejs.org/#reduce"
+            },
+            {
+              "name": "_.reduceRight",
+              "url": "https://underscorejs.org/#reduceRight"
+            },
+            {
+              "name": "_.find",
+              "url": "https://underscorejs.org/#find"
+            },
+            {
+              "name": "_.filter",
+              "url": "https://underscorejs.org/#filter"
+            },
+            {
+              "name": "_.findWhere",
+              "url": "https://underscorejs.org/#findWhere"
+            },
+            {
+              "name": "_.where",
+              "url": "https://underscorejs.org/#where"
+            },
+            {
+              "name": "_.reject",
+              "url": "https://underscorejs.org/#reject"
+            },
+            {
+              "name": "_.every",
+              "url": "https://underscorejs.org/#every"
+            },
+            {
+              "name": "_.some",
+              "url": "https://underscorejs.org/#some"
+            },
+            {
+              "name": "_.contains",
+              "url": "https://underscorejs.org/#contains"
+            },
+            {
+              "name": "_.invoke",
+              "url": "https://underscorejs.org/#invoke"
+            },
+            {
+              "name": "_.pluck",
+              "url": "https://underscorejs.org/#pluck"
+            },
+            {
+              "name": "_.max",
+              "url": "https://underscorejs.org/#max"
+            },
+            {
+              "name": "_.min",
+              "url": "https://underscorejs.org/#min"
+            },
+            {
+              "name": "_.sortBy",
+              "url": "https://underscorejs.org/#sortBy"
+            },
+            {
+              "name": "_.groupBy",
+              "url": "https://underscorejs.org/#groupBy"
+            },
+            {
+              "name": "_.indexBy",
+              "url": "https://underscorejs.org/#indexBy"
+            },
+            {
+              "name": "_.countBy",
+              "url": "https://underscorejs.org/#countBy"
+            },
+            {
+              "name": "_.shuffle",
+              "url": "https://underscorejs.org/#shuffle"
+            },
+            {
+              "name": "_.sample",
+              "url": "https://underscorejs.org/#sample"
+            },
+            {
+              "name": "_.toArray",
+              "url": "https://underscorejs.org/#toArray"
+            },
+            {
+              "name": "_.size",
+              "url": "https://underscorejs.org/#size"
+            },
+            {
+              "name": "_.partition",
+              "url": "https://underscorejs.org/#partition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arrays",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "_.first",
+              "url": "https://underscorejs.org/#first"
+            },
+            {
+              "name": "_.initial",
+              "url": "https://underscorejs.org/#initial"
+            },
+            {
+              "name": "_.last",
+              "url": "https://underscorejs.org/#last"
+            },
+            {
+              "name": "_.rest",
+              "url": "https://underscorejs.org/#rest"
+            },
+            {
+              "name": "_.compact",
+              "url": "https://underscorejs.org/#compact"
+            },
+            {
+              "name": "_.flatten",
+              "url": "https://underscorejs.org/#flatten"
+            },
+            {
+              "name": "_.without",
+              "url": "https://underscorejs.org/#without"
+            },
+            {
+              "name": "_.union",
+              "url": "https://underscorejs.org/#union"
+            },
+            {
+              "name": "_.intersection",
+              "url": "https://underscorejs.org/#intersection"
+            },
+            {
+              "name": "_.difference",
+              "url": "https://underscorejs.org/#difference"
+            },
+            {
+              "name": "_.uniq",
+              "url": "https://underscorejs.org/#uniq"
+            },
+            {
+              "name": "_.zip",
+              "url": "https://underscorejs.org/#zip"
+            },
+            {
+              "name": "_.unzip",
+              "url": "https://underscorejs.org/#unzip"
+            },
+            {
+              "name": "_.object",
+              "url": "https://underscorejs.org/#object"
+            },
+            {
+              "name": "_.chunk",
+              "url": "https://underscorejs.org/#chunk"
+            },
+            {
+              "name": "_.indexOf",
+              "url": "https://underscorejs.org/#indexOf"
+            },
+            {
+              "name": "_.lastIndexOf",
+              "url": "https://underscorejs.org/#lastIndexOf"
+            },
+            {
+              "name": "_.sortedIndex",
+              "url": "https://underscorejs.org/#sortedIndex"
+            },
+            {
+              "name": "_.findIndex",
+              "url": "https://underscorejs.org/#findIndex"
+            },
+            {
+              "name": "_.findLastIndex",
+              "url": "https://underscorejs.org/#findLastIndex"
+            },
+            {
+              "name": "_.range",
+              "url": "https://underscorejs.org/#range"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "_.bind",
+              "url": "https://underscorejs.org/#bind"
+            },
+            {
+              "name": "_.bindAll",
+              "url": "https://underscorejs.org/#bindAll"
+            },
+            {
+              "name": "_.partial",
+              "url": "https://underscorejs.org/#partial"
+            },
+            {
+              "name": "_.memoize",
+              "url": "https://underscorejs.org/#memoize"
+            },
+            {
+              "name": "_.delay",
+              "url": "https://underscorejs.org/#delay"
+            },
+            {
+              "name": "_.defer",
+              "url": "https://underscorejs.org/#defer"
+            },
+            {
+              "name": "_.throttle",
+              "url": "https://underscorejs.org/#throttle"
+            },
+            {
+              "name": "_.debounce",
+              "url": "https://underscorejs.org/#debounce"
+            },
+            {
+              "name": "_.once",
+              "url": "https://underscorejs.org/#once"
+            },
+            {
+              "name": "_.after",
+              "url": "https://underscorejs.org/#after"
+            },
+            {
+              "name": "_.before",
+              "url": "https://underscorejs.org/#before"
+            },
+            {
+              "name": "_.wrap",
+              "url": "https://underscorejs.org/#wrap"
+            },
+            {
+              "name": "_.negate",
+              "url": "https://underscorejs.org/#negate"
+            },
+            {
+              "name": "_.compose",
+              "url": "https://underscorejs.org/#compose"
+            },
+            {
+              "name": "_.restArguments",
+              "url": "https://underscorejs.org/#restArguments"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Objects",
+      "groups": [
+        {
+          "title": "Access",
+          "items": [
+            {
+              "name": "_.keys",
+              "url": "https://underscorejs.org/#keys"
+            },
+            {
+              "name": "_.allKeys",
+              "url": "https://underscorejs.org/#allKeys"
+            },
+            {
+              "name": "_.values",
+              "url": "https://underscorejs.org/#values"
+            },
+            {
+              "name": "_.mapObject",
+              "url": "https://underscorejs.org/#mapObject"
+            },
+            {
+              "name": "_.pairs",
+              "url": "https://underscorejs.org/#pairs"
+            },
+            {
+              "name": "_.invert",
+              "url": "https://underscorejs.org/#invert"
+            },
+            {
+              "name": "_.create",
+              "url": "https://underscorejs.org/#create"
+            },
+            {
+              "name": "_.functions",
+              "url": "https://underscorejs.org/#functions"
+            },
+            {
+              "name": "_.findKey",
+              "url": "https://underscorejs.org/#findKey"
+            },
+            {
+              "name": "_.extend",
+              "url": "https://underscorejs.org/#extend"
+            },
+            {
+              "name": "_.extendOwn",
+              "url": "https://underscorejs.org/#extendOwn"
+            },
+            {
+              "name": "_.pick",
+              "url": "https://underscorejs.org/#pick"
+            },
+            {
+              "name": "_.omit",
+              "url": "https://underscorejs.org/#omit"
+            },
+            {
+              "name": "_.defaults",
+              "url": "https://underscorejs.org/#defaults"
+            },
+            {
+              "name": "_.clone",
+              "url": "https://underscorejs.org/#clone"
+            },
+            {
+              "name": "_.tap",
+              "url": "https://underscorejs.org/#tap"
+            },
+            {
+              "name": "_.has",
+              "url": "https://underscorejs.org/#has"
+            },
+            {
+              "name": "_.property",
+              "url": "https://underscorejs.org/#property"
+            },
+            {
+              "name": "_.propertyOf",
+              "url": "https://underscorejs.org/#propertyOf"
+            },
+            {
+              "name": "_.matcher",
+              "url": "https://underscorejs.org/#matcher"
+            }
+          ]
+        },
+        {
+          "title": "Type Checks",
+          "items": [
+            {
+              "name": "_.isEqual",
+              "url": "https://underscorejs.org/#isEqual"
+            },
+            {
+              "name": "_.isMatch",
+              "url": "https://underscorejs.org/#isMatch"
+            },
+            {
+              "name": "_.isEmpty",
+              "url": "https://underscorejs.org/#isEmpty"
+            },
+            {
+              "name": "_.isElement",
+              "url": "https://underscorejs.org/#isElement"
+            },
+            {
+              "name": "_.isArray",
+              "url": "https://underscorejs.org/#isArray"
+            },
+            {
+              "name": "_.isObject",
+              "url": "https://underscorejs.org/#isObject"
+            },
+            {
+              "name": "_.isArguments",
+              "url": "https://underscorejs.org/#isArguments"
+            },
+            {
+              "name": "_.isFunction",
+              "url": "https://underscorejs.org/#isFunction"
+            },
+            {
+              "name": "_.isString",
+              "url": "https://underscorejs.org/#isString"
+            },
+            {
+              "name": "_.isNumber",
+              "url": "https://underscorejs.org/#isNumber"
+            },
+            {
+              "name": "_.isFinite",
+              "url": "https://underscorejs.org/#isFinite"
+            },
+            {
+              "name": "_.isBoolean",
+              "url": "https://underscorejs.org/#isBoolean"
+            },
+            {
+              "name": "_.isDate",
+              "url": "https://underscorejs.org/#isDate"
+            },
+            {
+              "name": "_.isRegExp",
+              "url": "https://underscorejs.org/#isRegExp"
+            },
+            {
+              "name": "_.isError",
+              "url": "https://underscorejs.org/#isError"
+            },
+            {
+              "name": "_.isSymbol",
+              "url": "https://underscorejs.org/#isSymbol"
+            },
+            {
+              "name": "_.isMap",
+              "url": "https://underscorejs.org/#isMap"
+            },
+            {
+              "name": "_.isSet",
+              "url": "https://underscorejs.org/#isSet"
+            },
+            {
+              "name": "_.isNaN",
+              "url": "https://underscorejs.org/#isNaN"
+            },
+            {
+              "name": "_.isNull",
+              "url": "https://underscorejs.org/#isNull"
+            },
+            {
+              "name": "_.isUndefined",
+              "url": "https://underscorejs.org/#isUndefined"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Utility",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "_.noConflict",
+              "url": "https://underscorejs.org/#noConflict"
+            },
+            {
+              "name": "_.identity",
+              "url": "https://underscorejs.org/#identity"
+            },
+            {
+              "name": "_.constant",
+              "url": "https://underscorejs.org/#constant"
+            },
+            {
+              "name": "_.noop",
+              "url": "https://underscorejs.org/#noop"
+            },
+            {
+              "name": "_.times",
+              "url": "https://underscorejs.org/#times"
+            },
+            {
+              "name": "_.random",
+              "url": "https://underscorejs.org/#random"
+            },
+            {
+              "name": "_.mixin",
+              "url": "https://underscorejs.org/#mixin"
+            },
+            {
+              "name": "_.iteratee",
+              "url": "https://underscorejs.org/#iteratee"
+            },
+            {
+              "name": "_.uniqueId",
+              "url": "https://underscorejs.org/#uniqueId"
+            },
+            {
+              "name": "_.escape",
+              "url": "https://underscorejs.org/#escape"
+            },
+            {
+              "name": "_.unescape",
+              "url": "https://underscorejs.org/#unescape"
+            },
+            {
+              "name": "_.result",
+              "url": "https://underscorejs.org/#result"
+            },
+            {
+              "name": "_.now",
+              "url": "https://underscorejs.org/#now"
+            },
+            {
+              "name": "_.template",
+              "url": "https://underscorejs.org/#template"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chaining",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "_.chain",
+              "url": "https://underscorejs.org/#chain"
+            },
+            {
+              "name": "_.value",
+              "url": "https://underscorejs.org/#value"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

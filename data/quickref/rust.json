@@ -1,0 +1,230 @@
+{
+  "slug": "rust",
+  "updated": "2026-10-14",
+  "title": "Rust",
+  "category": "Languages",
+  "color": "#ce422b",
+  "language": "rust",
+  "description": "Rust essentials: variables, ownership and borrowing, strings, vectors, structs, enums, matching, traits, errors and Cargo.",
+  "docs": "https://doc.rust-lang.org/std/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Programs and variables.",
+      "rows": [
+        [
+          "Hello world",
+          "fn main() {\n    println!(\"Hello\");\n}"
+        ],
+        [
+          "Variables",
+          [
+            "let x = 5;          // immutable",
+            "let mut count = 0;  // mutable",
+            "const MAX: u32 = 100;"
+          ]
+        ],
+        [
+          "Types",
+          [
+            "let n: i32 = -5;",
+            "let f: f64 = 3.5;",
+            "let ok: bool = true;"
+          ]
+        ],
+        [
+          "Print / format",
+          [
+            "println!(\"{name} is {age}\");",
+            "println!(\"{:?}\", value);  // debug",
+            "format!(\"{:.2}\", price)"
+          ]
+        ],
+        [
+          "Convert",
+          [
+            "let n: i32 = \"42\".parse().unwrap();",
+            "n.to_string()",
+            "x as f64"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Ownership & borrowing",
+      "description": "Rust's memory model.",
+      "rows": [
+        [
+          "Move",
+          "let a = String::from(\"hi\");\nlet b = a;  // a can no longer be used"
+        ],
+        [
+          "Clone",
+          "let b = a.clone();"
+        ],
+        [
+          "Borrow (read)",
+          "fn len(s: &str) -> usize { s.len() }\nlen(&name);"
+        ],
+        [
+          "Borrow (write)",
+          "fn push(v: &mut Vec<i32>) { v.push(1); }\npush(&mut nums);"
+        ],
+        [
+          "Lifetimes",
+          "fn longest<'a>(a: &'a str, b: &'a str) -> &'a str { }"
+        ]
+      ]
+    },
+    {
+      "title": "Strings & collections",
+      "description": "Text, vectors and maps.",
+      "rows": [
+        [
+          "String / &str",
+          [
+            "let s = String::from(\"Ada\");",
+            "let slice: &str = &s[0..2];"
+          ]
+        ],
+        [
+          "Append",
+          [
+            "s.push_str(\" Lovelace\");",
+            "let full = format!(\"{a} {b}\");"
+          ]
+        ],
+        [
+          "Vector",
+          [
+            "let mut v = vec![3, 1, 2];",
+            "v.push(4);",
+            "v.sort();"
+          ]
+        ],
+        [
+          "Iterate",
+          [
+            "for n in &v { }",
+            "for (i, n) in v.iter().enumerate() { }"
+          ]
+        ],
+        [
+          "Map / filter / collect",
+          "let doubled: Vec<i32> = v.iter().filter(|n| **n > 1).map(|n| n * 2).collect();"
+        ],
+        [
+          "Sum",
+          "let total: i32 = v.iter().sum();"
+        ],
+        [
+          "Reverse",
+          [
+            "v.reverse();",
+            "v.iter().rev()"
+          ]
+        ],
+        [
+          "HashMap",
+          "use std::collections::HashMap;\nlet mut ages = HashMap::new();\nages.insert(\"Ada\", 36);\nages.get(\"Ada\");"
+        ],
+        [
+          "Count with entry",
+          "*counts.entry(word).or_insert(0) += 1;"
+        ]
+      ]
+    },
+    {
+      "title": "Structs, enums & matching",
+      "description": "Data types.",
+      "rows": [
+        [
+          "Struct",
+          "#[derive(Debug, Clone)]\nstruct User {\n    name: String,\n    age: u32,\n}"
+        ],
+        [
+          "Methods",
+          "impl User {\n    fn new(name: &str) -> Self {\n        Self { name: name.into(), age: 0 }\n    }\n    fn greet(&self) -> String {\n        format!(\"Hi {}\", self.name)\n    }\n}"
+        ],
+        [
+          "Enum with data",
+          "enum Shape {\n    Circle(f64),\n    Rect { w: f64, h: f64 },\n}"
+        ],
+        [
+          "Match",
+          "match shape {\n    Shape::Circle(r) => 3.14 * r * r,\n    Shape::Rect { w, h } => w * h,\n}"
+        ],
+        [
+          "If let",
+          "if let Some(user) = find(id) {\n    println!(\"{}\", user.name);\n}"
+        ],
+        [
+          "Trait",
+          "trait Area {\n    fn area(&self) -> f64;\n}\nimpl Area for Shape { fn area(&self) -> f64 { 0.0 } }"
+        ]
+      ]
+    },
+    {
+      "title": "Errors",
+      "description": "Option and Result.",
+      "rows": [
+        [
+          "Option",
+          [
+            "let x: Option<i32> = Some(5);",
+            "x.unwrap_or(0)"
+          ]
+        ],
+        [
+          "Result",
+          "fn parse(s: &str) -> Result<i32, std::num::ParseIntError> {\n    s.parse::<i32>()\n}"
+        ],
+        [
+          "Propagate with ?",
+          "fn read() -> Result<String, std::io::Error> {\n    let text = std::fs::read_to_string(\"in.txt\")?;\n    Ok(text)\n}"
+        ],
+        [
+          "Handle",
+          "match parse(\"42\") {\n    Ok(n) => println!(\"{n}\"),\n    Err(e) => eprintln!(\"{e}\"),\n}"
+        ],
+        [
+          "Panic",
+          [
+            "panic!(\"unrecoverable\");",
+            "value.expect(\"value should exist\")"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Cargo",
+      "description": "Build tool and packages.",
+      "rows": [
+        [
+          "New project",
+          "cargo new my_app"
+        ],
+        [
+          "Run / build / test",
+          [
+            "cargo run",
+            "cargo build --release",
+            "cargo test"
+          ]
+        ],
+        [
+          "Add a crate",
+          "cargo add serde --features derive"
+        ],
+        [
+          "Check / lint / format",
+          [
+            "cargo check",
+            "cargo clippy",
+            "cargo fmt"
+          ]
+        ]
+      ]
+    }
+  ]
+}

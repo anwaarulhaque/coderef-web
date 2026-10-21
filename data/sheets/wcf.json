@@ -1,0 +1,49 @@
+{
+  "slug": "wcf",
+  "title": "Windows Communication Foundation",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Windows Communication Foundation.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "WCF documentation",
+              "url": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/"
+            },
+            {
+              "name": "CoreWCF",
+              "url": "https://github.com/CoreWCF/CoreWCF"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://msdn.microsoft.com/en-us/netframework/aa663324.aspx"
+            },
+            {
+              "name": "Wikipedia Windows Communication Foundation",
+              "url": "https://en.wikipedia.org/wiki/Windows_Communication_Foundation"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Windows",
+              "url": "/windows/"
+            },
+            {
+              "name": ".NET",
+              "url": "/dotnet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

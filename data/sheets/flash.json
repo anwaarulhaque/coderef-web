@@ -1,0 +1,53 @@
+{
+  "slug": "flash",
+  "title": "Flash",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Flash.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Adobe Flash Player EOL",
+              "url": "https://www.adobe.com/products/flashplayer/end-of-life.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.adobe.com/products/flash/"
+            },
+            {
+              "name": "Wikipedia Flash",
+              "url": "https://en.wikipedia.org/wiki/Adobe_Flash"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Adobe Systems",
+              "url": "/adobe/"
+            },
+            {
+              "name": "Flash Catalyst",
+              "url": "/flash-catalyst/"
+            },
+            {
+              "name": "Flex",
+              "url": "/flex/"
+            },
+            {
+              "name": "Silverlight",
+              "url": "/silverlight/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "redhat",
+  "title": "RedHat",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for RedHat.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Red Hat Enterprise Linux docs",
+              "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.redhat.com/"
+            },
+            {
+              "name": "Wikipedia RedHat",
+              "url": "https://en.wikipedia.org/wiki/RedHat"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "RedHat/Fedora command cheat sheet",
+              "url": "http://jd40c.com/linux.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Fedora",
+              "url": "/fedora/"
+            },
+            {
+              "name": "Linux",
+              "url": "/linux/"
+            },
+            {
+              "name": "rpm",
+              "url": "/rpm/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

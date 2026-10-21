@@ -1,0 +1,851 @@
+{
+  "slug": "nodejs",
+  "title": "Node.js",
+  "category": "Frameworks",
+  "color": "#5fa04e",
+  "description": "Core Node.js modules: fs, path, http, events, process, streams, crypto and more.",
+  "reference": "https://nodejs.org/api/",
+  "sections": [
+    {
+      "title": "fs",
+      "groups": [
+        {
+          "title": "Callback",
+          "items": [
+            {
+              "name": "fs.readFile()",
+              "url": "https://nodejs.org/api/fs.html#fsreadfilepath-options-callback"
+            },
+            {
+              "name": "fs.writeFile()",
+              "url": "https://nodejs.org/api/fs.html#fswritefilefile-data-options-callback"
+            },
+            {
+              "name": "fs.appendFile()",
+              "url": "https://nodejs.org/api/fs.html#fsappendfilepath-data-options-callback"
+            },
+            {
+              "name": "fs.readdir()",
+              "url": "https://nodejs.org/api/fs.html#fsreaddirpath-options-callback"
+            },
+            {
+              "name": "fs.mkdir()",
+              "url": "https://nodejs.org/api/fs.html#fsmkdirpath-options-callback"
+            },
+            {
+              "name": "fs.rm()",
+              "url": "https://nodejs.org/api/fs.html#fsrmpath-options-callback"
+            },
+            {
+              "name": "fs.rename()",
+              "url": "https://nodejs.org/api/fs.html#fsrenameoldpath-newpath-callback"
+            },
+            {
+              "name": "fs.stat()",
+              "url": "https://nodejs.org/api/fs.html#fsstatpath-options-callback"
+            },
+            {
+              "name": "fs.watch()",
+              "url": "https://nodejs.org/api/fs.html#fswatchfilename-options-listener"
+            },
+            {
+              "name": "fs.createReadStream()",
+              "url": "https://nodejs.org/api/fs.html#fscreatereadstreampath-options"
+            },
+            {
+              "name": "fs.createWriteStream()",
+              "url": "https://nodejs.org/api/fs.html#fscreatewritestreampath-options"
+            }
+          ]
+        },
+        {
+          "title": "Sync",
+          "items": [
+            {
+              "name": "fs.existsSync()",
+              "url": "https://nodejs.org/api/fs.html#fsexistssyncpath"
+            },
+            {
+              "name": "fs.readFileSync()",
+              "url": "https://nodejs.org/api/fs.html#fsreadfilesyncpath-options"
+            },
+            {
+              "name": "fs.writeFileSync()",
+              "url": "https://nodejs.org/api/fs.html#fswritefilesyncfile-data-options"
+            },
+            {
+              "name": "fs.readdirSync()",
+              "url": "https://nodejs.org/api/fs.html#fsreaddirsyncpath-options"
+            },
+            {
+              "name": "fs.mkdirSync()",
+              "url": "https://nodejs.org/api/fs.html#fsmkdirsyncpath-options"
+            },
+            {
+              "name": "fs.rmSync()",
+              "url": "https://nodejs.org/api/fs.html#fsrmsyncpath-options"
+            }
+          ]
+        },
+        {
+          "title": "Promises",
+          "items": [
+            {
+              "name": "fsPromises.readFile()",
+              "url": "https://nodejs.org/api/fs.html#fspromisesreadfilepath-options"
+            },
+            {
+              "name": "fsPromises.writeFile()",
+              "url": "https://nodejs.org/api/fs.html#fspromiseswritefilefile-data-options"
+            },
+            {
+              "name": "fsPromises.readdir()",
+              "url": "https://nodejs.org/api/fs.html#fspromisesreaddirpath-options"
+            },
+            {
+              "name": "fsPromises.mkdir()",
+              "url": "https://nodejs.org/api/fs.html#fspromisesmkdirpath-options"
+            },
+            {
+              "name": "fsPromises.rm()",
+              "url": "https://nodejs.org/api/fs.html#fspromisesrmpath-options"
+            },
+            {
+              "name": "fsPromises.stat()",
+              "url": "https://nodejs.org/api/fs.html#fspromisesstatpath-options"
+            },
+            {
+              "name": "fsPromises.cp()",
+              "url": "https://nodejs.org/api/fs.html#fspromisescpsrc-dest-options"
+            },
+            {
+              "name": "fsPromises.glob()",
+              "url": "https://nodejs.org/api/fs.html#fspromisesglobpattern-options"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "path",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "path.join()",
+              "url": "https://nodejs.org/api/path.html#pathjoinpaths"
+            },
+            {
+              "name": "path.resolve()",
+              "url": "https://nodejs.org/api/path.html#pathresolvepaths"
+            },
+            {
+              "name": "path.dirname()",
+              "url": "https://nodejs.org/api/path.html#pathdirnamepath"
+            },
+            {
+              "name": "path.basename()",
+              "url": "https://nodejs.org/api/path.html#pathbasenamepath-suffix"
+            },
+            {
+              "name": "path.extname()",
+              "url": "https://nodejs.org/api/path.html#pathextnamepath"
+            },
+            {
+              "name": "path.parse()",
+              "url": "https://nodejs.org/api/path.html#pathparsepath"
+            },
+            {
+              "name": "path.format()",
+              "url": "https://nodejs.org/api/path.html#pathformatpathobject"
+            },
+            {
+              "name": "path.normalize()",
+              "url": "https://nodejs.org/api/path.html#pathnormalizepath"
+            },
+            {
+              "name": "path.relative()",
+              "url": "https://nodejs.org/api/path.html#pathrelativefrom-to"
+            },
+            {
+              "name": "path.isAbsolute()",
+              "url": "https://nodejs.org/api/path.html#pathisabsolutepath"
+            },
+            {
+              "name": "path.sep",
+              "url": "https://nodejs.org/api/path.html#pathsep"
+            },
+            {
+              "name": "path.delimiter",
+              "url": "https://nodejs.org/api/path.html#pathdelimiter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "http",
+      "groups": [
+        {
+          "title": "Module",
+          "items": [
+            {
+              "name": "http.createServer()",
+              "url": "https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener"
+            },
+            {
+              "name": "http.request()",
+              "url": "https://nodejs.org/api/http.html#httprequesturl-options-callback"
+            },
+            {
+              "name": "http.get()",
+              "url": "https://nodejs.org/api/http.html#httpgeturl-options-callback"
+            },
+            {
+              "name": "http.STATUS_CODES",
+              "url": "https://nodejs.org/api/http.html#httpstatus_codes"
+            }
+          ]
+        },
+        {
+          "title": "Server & Messages",
+          "items": [
+            {
+              "name": "http.Server",
+              "url": "https://nodejs.org/api/http.html#class-httpserver"
+            },
+            {
+              "name": "server.listen()",
+              "url": "https://nodejs.org/api/http.html#serverlisten"
+            },
+            {
+              "name": "server.close()",
+              "url": "https://nodejs.org/api/http.html#serverclosecallback"
+            },
+            {
+              "name": "http.IncomingMessage",
+              "url": "https://nodejs.org/api/http.html#class-httpincomingmessage"
+            },
+            {
+              "name": "message.headers",
+              "url": "https://nodejs.org/api/http.html#messageheaders"
+            },
+            {
+              "name": "message.method",
+              "url": "https://nodejs.org/api/http.html#messagemethod"
+            },
+            {
+              "name": "message.url",
+              "url": "https://nodejs.org/api/http.html#messageurl"
+            },
+            {
+              "name": "http.ServerResponse",
+              "url": "https://nodejs.org/api/http.html#class-httpserverresponse"
+            },
+            {
+              "name": "response.writeHead()",
+              "url": "https://nodejs.org/api/http.html#responsewriteheadstatuscode-statusmessage-headers"
+            },
+            {
+              "name": "response.setHeader()",
+              "url": "https://nodejs.org/api/http.html#responsesetheadername-value"
+            },
+            {
+              "name": "response.write()",
+              "url": "https://nodejs.org/api/http.html#responsewritechunk-encoding-callback"
+            },
+            {
+              "name": "response.end()",
+              "url": "https://nodejs.org/api/http.html#responseenddata-encoding-callback"
+            },
+            {
+              "name": "response.statusCode",
+              "url": "https://nodejs.org/api/http.html#responsestatuscode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "events",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "EventEmitter",
+              "url": "https://nodejs.org/api/events.html#class-eventemitter"
+            },
+            {
+              "name": "emitter.on()",
+              "url": "https://nodejs.org/api/events.html#emitteroneventname-listener"
+            },
+            {
+              "name": "emitter.once()",
+              "url": "https://nodejs.org/api/events.html#emitteronceeventname-listener"
+            },
+            {
+              "name": "emitter.emit()",
+              "url": "https://nodejs.org/api/events.html#emitteremiteventname-args"
+            },
+            {
+              "name": "emitter.off()",
+              "url": "https://nodejs.org/api/events.html#emitteroffeventname-listener"
+            },
+            {
+              "name": "emitter.removeAllListeners()",
+              "url": "https://nodejs.org/api/events.html#emitterremovealllistenerseventname"
+            },
+            {
+              "name": "emitter.listenerCount()",
+              "url": "https://nodejs.org/api/events.html#emitterlistenercounteventname-listener"
+            },
+            {
+              "name": "emitter.setMaxListeners()",
+              "url": "https://nodejs.org/api/events.html#emittersetmaxlistenersn"
+            },
+            {
+              "name": "events.once()",
+              "url": "https://nodejs.org/api/events.html#eventsonceemitter-name-options"
+            },
+            {
+              "name": "events.on()",
+              "url": "https://nodejs.org/api/events.html#eventsonemitter-eventname-options"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "process",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "process.argv",
+              "url": "https://nodejs.org/api/process.html#processargv"
+            },
+            {
+              "name": "process.env",
+              "url": "https://nodejs.org/api/process.html#processenv"
+            },
+            {
+              "name": "process.cwd()",
+              "url": "https://nodejs.org/api/process.html#processcwd"
+            },
+            {
+              "name": "process.exit()",
+              "url": "https://nodejs.org/api/process.html#processexitcode"
+            },
+            {
+              "name": "process.exitCode",
+              "url": "https://nodejs.org/api/process.html#processexitcode"
+            },
+            {
+              "name": "process.nextTick()",
+              "url": "https://nodejs.org/api/process.html#processnexttickcallback-args"
+            },
+            {
+              "name": "process.pid",
+              "url": "https://nodejs.org/api/process.html#processpid"
+            },
+            {
+              "name": "process.platform",
+              "url": "https://nodejs.org/api/process.html#processplatform"
+            },
+            {
+              "name": "process.memoryUsage()",
+              "url": "https://nodejs.org/api/process.html#processmemoryusage"
+            },
+            {
+              "name": "process.hrtime.bigint()",
+              "url": "https://nodejs.org/api/process.html#processhrtimebigint"
+            },
+            {
+              "name": "process.stdin",
+              "url": "https://nodejs.org/api/process.html#processstdin"
+            },
+            {
+              "name": "process.stdout",
+              "url": "https://nodejs.org/api/process.html#processstdout"
+            },
+            {
+              "name": "process.stderr",
+              "url": "https://nodejs.org/api/process.html#processstderr"
+            },
+            {
+              "name": "'exit'",
+              "url": "https://nodejs.org/api/process.html#event-exit"
+            },
+            {
+              "name": "'uncaughtException'",
+              "url": "https://nodejs.org/api/process.html#event-uncaughtexception"
+            },
+            {
+              "name": "'unhandledRejection'",
+              "url": "https://nodejs.org/api/process.html#event-unhandledrejection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "child_process",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "child_process.spawn()",
+              "url": "https://nodejs.org/api/child_process.html#child_processspawncommand-args-options"
+            },
+            {
+              "name": "child_process.exec()",
+              "url": "https://nodejs.org/api/child_process.html#child_processexeccommand-options-callback"
+            },
+            {
+              "name": "child_process.execFile()",
+              "url": "https://nodejs.org/api/child_process.html#child_processexecfilefile-args-options-callback"
+            },
+            {
+              "name": "child_process.fork()",
+              "url": "https://nodejs.org/api/child_process.html#child_processforkmodulepath-args-options"
+            },
+            {
+              "name": "child_process.execSync()",
+              "url": "https://nodejs.org/api/child_process.html#child_processexecsynccommand-options"
+            },
+            {
+              "name": "child_process.spawnSync()",
+              "url": "https://nodejs.org/api/child_process.html#child_processspawnsynccommand-args-options"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Buffer",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "Buffer.from()",
+              "url": "https://nodejs.org/api/buffer.html#static-method-bufferfromstring-encoding"
+            },
+            {
+              "name": "Buffer.alloc()",
+              "url": "https://nodejs.org/api/buffer.html#static-method-bufferallocsize-fill-encoding"
+            },
+            {
+              "name": "Buffer.concat()",
+              "url": "https://nodejs.org/api/buffer.html#static-method-bufferconcatlist-totallength"
+            },
+            {
+              "name": "Buffer.byteLength()",
+              "url": "https://nodejs.org/api/buffer.html#static-method-bufferbytelengthstring-encoding"
+            },
+            {
+              "name": "Buffer.isBuffer()",
+              "url": "https://nodejs.org/api/buffer.html#static-method-bufferisbufferobj"
+            },
+            {
+              "name": "buf.toString()",
+              "url": "https://nodejs.org/api/buffer.html#buftostringencoding-start-end"
+            },
+            {
+              "name": "buf.subarray()",
+              "url": "https://nodejs.org/api/buffer.html#bufsubarraystart-end"
+            },
+            {
+              "name": "buf.equals()",
+              "url": "https://nodejs.org/api/buffer.html#bufequalsotherbuffer"
+            },
+            {
+              "name": "buf.length",
+              "url": "https://nodejs.org/api/buffer.html#buflength"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "stream",
+      "groups": [
+        {
+          "title": "Classes",
+          "items": [
+            {
+              "name": "stream.Readable",
+              "url": "https://nodejs.org/api/stream.html#class-streamreadable"
+            },
+            {
+              "name": "stream.Writable",
+              "url": "https://nodejs.org/api/stream.html#class-streamwritable"
+            },
+            {
+              "name": "stream.Duplex",
+              "url": "https://nodejs.org/api/stream.html#class-streamduplex"
+            },
+            {
+              "name": "stream.Transform",
+              "url": "https://nodejs.org/api/stream.html#class-streamtransform"
+            }
+          ]
+        },
+        {
+          "title": "Functions",
+          "items": [
+            {
+              "name": "stream.pipeline()",
+              "url": "https://nodejs.org/api/stream.html#streampipelinesource-transforms-destination-callback"
+            },
+            {
+              "name": "stream.finished()",
+              "url": "https://nodejs.org/api/stream.html#streamfinishedstream-options-callback"
+            },
+            {
+              "name": "readable.pipe()",
+              "url": "https://nodejs.org/api/stream.html#readablepipedestination-options"
+            },
+            {
+              "name": "readable.read()",
+              "url": "https://nodejs.org/api/stream.html#readablereadsize"
+            },
+            {
+              "name": "writable.write()",
+              "url": "https://nodejs.org/api/stream.html#writablewritechunk-encoding-callback"
+            },
+            {
+              "name": "writable.end()",
+              "url": "https://nodejs.org/api/stream.html#writableendchunk-encoding-callback"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "os",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "os.cpus()",
+              "url": "https://nodejs.org/api/os.html#oscpus"
+            },
+            {
+              "name": "os.platform()",
+              "url": "https://nodejs.org/api/os.html#osplatform"
+            },
+            {
+              "name": "os.arch()",
+              "url": "https://nodejs.org/api/os.html#osarch"
+            },
+            {
+              "name": "os.homedir()",
+              "url": "https://nodejs.org/api/os.html#oshomedir"
+            },
+            {
+              "name": "os.tmpdir()",
+              "url": "https://nodejs.org/api/os.html#ostmpdir"
+            },
+            {
+              "name": "os.hostname()",
+              "url": "https://nodejs.org/api/os.html#oshostname"
+            },
+            {
+              "name": "os.totalmem()",
+              "url": "https://nodejs.org/api/os.html#ostotalmem"
+            },
+            {
+              "name": "os.freemem()",
+              "url": "https://nodejs.org/api/os.html#osfreemem"
+            },
+            {
+              "name": "os.uptime()",
+              "url": "https://nodejs.org/api/os.html#osuptime"
+            },
+            {
+              "name": "os.networkInterfaces()",
+              "url": "https://nodejs.org/api/os.html#osnetworkinterfaces"
+            },
+            {
+              "name": "os.EOL",
+              "url": "https://nodejs.org/api/os.html#oseol"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "url",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "URL",
+              "url": "https://nodejs.org/api/url.html#class-url"
+            },
+            {
+              "name": "URLSearchParams",
+              "url": "https://nodejs.org/api/url.html#class-urlsearchparams"
+            },
+            {
+              "name": "url.fileURLToPath()",
+              "url": "https://nodejs.org/api/url.html#urlfileurltopathurl-options"
+            },
+            {
+              "name": "url.pathToFileURL()",
+              "url": "https://nodejs.org/api/url.html#urlpathtofileurlpath-options"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "util",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "util.promisify()",
+              "url": "https://nodejs.org/api/util.html#utilpromisifyoriginal"
+            },
+            {
+              "name": "util.inspect()",
+              "url": "https://nodejs.org/api/util.html#utilinspectobject-options"
+            },
+            {
+              "name": "util.format()",
+              "url": "https://nodejs.org/api/util.html#utilformatformat-args"
+            },
+            {
+              "name": "util.parseArgs()",
+              "url": "https://nodejs.org/api/util.html#utilparseargsconfig"
+            },
+            {
+              "name": "util.styleText()",
+              "url": "https://nodejs.org/api/util.html#utilstyletextformat-text-options"
+            },
+            {
+              "name": "util.isDeepStrictEqual()",
+              "url": "https://nodejs.org/api/util.html#utilisdeepstrictequalval1-val2-options"
+            },
+            {
+              "name": "util.types",
+              "url": "https://nodejs.org/api/util.html#utiltypes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "crypto",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "crypto.randomUUID()",
+              "url": "https://nodejs.org/api/crypto.html#cryptorandomuuidoptions"
+            },
+            {
+              "name": "crypto.randomBytes()",
+              "url": "https://nodejs.org/api/crypto.html#cryptorandombytessize-callback"
+            },
+            {
+              "name": "crypto.randomInt()",
+              "url": "https://nodejs.org/api/crypto.html#cryptorandomintmin-max-callback"
+            },
+            {
+              "name": "crypto.createHash()",
+              "url": "https://nodejs.org/api/crypto.html#cryptocreatehashalgorithm-options"
+            },
+            {
+              "name": "crypto.createHmac()",
+              "url": "https://nodejs.org/api/crypto.html#cryptocreatehmacalgorithm-key-options"
+            },
+            {
+              "name": "crypto.scrypt()",
+              "url": "https://nodejs.org/api/crypto.html#cryptoscryptpassword-salt-keylen-options-callback"
+            },
+            {
+              "name": "crypto.timingSafeEqual()",
+              "url": "https://nodejs.org/api/crypto.html#cryptotimingsafeequala-b"
+            },
+            {
+              "name": "crypto.webcrypto",
+              "url": "https://nodejs.org/api/crypto.html#cryptowebcrypto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Timers",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "setTimeout()",
+              "url": "https://nodejs.org/api/timers.html#settimeoutcallback-delay-args"
+            },
+            {
+              "name": "setInterval()",
+              "url": "https://nodejs.org/api/timers.html#setintervalcallback-delay-args"
+            },
+            {
+              "name": "setImmediate()",
+              "url": "https://nodejs.org/api/timers.html#setimmediatecallback-args"
+            },
+            {
+              "name": "clearTimeout()",
+              "url": "https://nodejs.org/api/timers.html#cleartimeouttimeout"
+            },
+            {
+              "name": "clearInterval()",
+              "url": "https://nodejs.org/api/timers.html#clearintervaltimeout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modules",
+      "groups": [
+        {
+          "title": "CommonJS",
+          "items": [
+            {
+              "name": "require()",
+              "url": "https://nodejs.org/api/modules.html#requireid"
+            },
+            {
+              "name": "module.exports",
+              "url": "https://nodejs.org/api/modules.html#moduleexports"
+            },
+            {
+              "name": "__dirname",
+              "url": "https://nodejs.org/api/modules.html#__dirname"
+            },
+            {
+              "name": "__filename",
+              "url": "https://nodejs.org/api/modules.html#__filename"
+            },
+            {
+              "name": "require.resolve()",
+              "url": "https://nodejs.org/api/modules.html#requireresolverequest-options"
+            }
+          ]
+        },
+        {
+          "title": "ES Modules",
+          "items": [
+            {
+              "name": "import.meta.dirname",
+              "url": "https://nodejs.org/api/esm.html#importmetadirname"
+            },
+            {
+              "name": "import.meta.filename",
+              "url": "https://nodejs.org/api/esm.html#importmetafilename"
+            },
+            {
+              "name": "import.meta.url",
+              "url": "https://nodejs.org/api/esm.html#importmetaurl"
+            },
+            {
+              "name": "import.meta.resolve()",
+              "url": "https://nodejs.org/api/esm.html#importmetaresolvespecifier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "More Modules",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "assert",
+              "url": "https://nodejs.org/api/assert.html"
+            },
+            {
+              "name": "async_hooks",
+              "url": "https://nodejs.org/api/async_hooks.html"
+            },
+            {
+              "name": "cluster",
+              "url": "https://nodejs.org/api/cluster.html"
+            },
+            {
+              "name": "dns",
+              "url": "https://nodejs.org/api/dns.html"
+            },
+            {
+              "name": "net",
+              "url": "https://nodejs.org/api/net.html"
+            },
+            {
+              "name": "readline",
+              "url": "https://nodejs.org/api/readline.html"
+            },
+            {
+              "name": "sqlite",
+              "url": "https://nodejs.org/api/sqlite.html"
+            },
+            {
+              "name": "test",
+              "url": "https://nodejs.org/api/test.html"
+            },
+            {
+              "name": "worker_threads",
+              "url": "https://nodejs.org/api/worker_threads.html"
+            },
+            {
+              "name": "zlib",
+              "url": "https://nodejs.org/api/zlib.html"
+            },
+            {
+              "name": "vm",
+              "url": "https://nodejs.org/api/vm.html"
+            },
+            {
+              "name": "querystring",
+              "url": "https://nodejs.org/api/querystring.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CLI",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "node --watch",
+              "url": "https://nodejs.org/api/cli.html#--watch"
+            },
+            {
+              "name": "node --test",
+              "url": "https://nodejs.org/api/cli.html#--test"
+            },
+            {
+              "name": "node --env-file",
+              "url": "https://nodejs.org/api/cli.html#--env-filefile"
+            },
+            {
+              "name": "node --inspect",
+              "url": "https://nodejs.org/api/cli.html#--inspecthostport"
+            },
+            {
+              "name": "node -e",
+              "url": "https://nodejs.org/api/cli.html#-e---eval-script"
+            },
+            {
+              "name": "node --run",
+              "url": "https://nodejs.org/api/cli.html#--run"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

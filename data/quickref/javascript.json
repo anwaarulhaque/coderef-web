@@ -1,0 +1,561 @@
+{
+  "slug": "javascript",
+  "updated": "2026-10-14",
+  "title": "JavaScript",
+  "category": "Languages",
+  "color": "#f0db4f",
+  "language": "javascript",
+  "description": "Modern JavaScript: variables, strings, arrays, objects, functions, async/await, classes, modules and the DOM.",
+  "docs": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  "try": {
+    "label": "Try it Yourself",
+    "href": "/javascript-compiler/"
+  },
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Variables, output and types.",
+      "rows": [
+        [
+          "Constant / variable",
+          [
+            "const x = 10;",
+            "let count = 0;"
+          ]
+        ],
+        [
+          "Log to the console",
+          [
+            "console.log(value);",
+            "console.table(rows);"
+          ]
+        ],
+        [
+          "Comments",
+          [
+            "// single line",
+            "/* multi-line */"
+          ]
+        ],
+        [
+          "Check a type",
+          [
+            "typeof x",
+            "Array.isArray(x)",
+            "x instanceof Date"
+          ]
+        ],
+        [
+          "Strict equality",
+          [
+            "a === b",
+            "a !== b"
+          ]
+        ],
+        [
+          "Default for null/undefined",
+          "const name = input ?? \"guest\";"
+        ],
+        [
+          "Optional chaining",
+          "user?.address?.city"
+        ],
+        [
+          "Destructuring",
+          [
+            "const { name, age } = user;",
+            "const [first, ...rest] = items;"
+          ]
+        ],
+        [
+          "Spread",
+          [
+            "const copy = { ...user, age: 37 };",
+            "const all = [...a, ...b];"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Numbers & conversion",
+      "description": "Math and converting values.",
+      "rows": [
+        [
+          "String to number",
+          [
+            "Number(\"42\")",
+            "parseInt(\"42px\", 10)",
+            "parseFloat(\"3.5\")"
+          ]
+        ],
+        [
+          "Number to string",
+          [
+            "String(42)",
+            "n.toString()",
+            "n.toFixed(2)"
+          ]
+        ],
+        [
+          "Round",
+          [
+            "Math.round(x)",
+            "Math.floor(x)",
+            "Math.ceil(x)",
+            "Math.trunc(x)"
+          ]
+        ],
+        [
+          "Random integer 1–6",
+          "Math.floor(Math.random() * 6) + 1"
+        ],
+        [
+          "Min / max",
+          [
+            "Math.min(...nums)",
+            "Math.max(...nums)"
+          ]
+        ],
+        [
+          "Format a number",
+          [
+            "n.toLocaleString(\"en-US\")",
+            "new Intl.NumberFormat(\"en\", { style: \"currency\", currency: \"USD\" }).format(9.5)"
+          ]
+        ],
+        [
+          "Is it a number?",
+          [
+            "Number.isNaN(x)",
+            "Number.isInteger(x)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Strings",
+      "description": "Working with text.",
+      "rows": [
+        [
+          "Template literal",
+          "`Hi ${name}, you are ${age}`"
+        ],
+        [
+          "Length",
+          "text.length"
+        ],
+        [
+          "Upper / lower case",
+          [
+            "text.toUpperCase()",
+            "text.toLowerCase()"
+          ]
+        ],
+        [
+          "Trim",
+          [
+            "text.trim()",
+            "text.trimStart()",
+            "text.trimEnd()"
+          ]
+        ],
+        [
+          "Contains / starts / ends",
+          [
+            "text.includes(\"js\")",
+            "text.startsWith(\"http\")",
+            "text.endsWith(\".js\")"
+          ]
+        ],
+        [
+          "Replace all",
+          [
+            "text.replaceAll(\"a\", \"b\")",
+            "text.replace(/a/g, \"b\")"
+          ]
+        ],
+        [
+          "Split / join",
+          [
+            "text.split(\",\")",
+            "words.join(\", \")"
+          ]
+        ],
+        [
+          "Slice",
+          [
+            "text.slice(0, 3)",
+            "text.slice(-3)",
+            "text.at(-1)"
+          ]
+        ],
+        [
+          "Pad",
+          [
+            "\"5\".padStart(3, \"0\")  // \"005\""
+          ]
+        ],
+        [
+          "Repeat",
+          "\"-\".repeat(20)"
+        ]
+      ]
+    },
+    {
+      "title": "Arrays",
+      "description": "Creating, changing and transforming arrays.",
+      "rows": [
+        [
+          "Create",
+          [
+            "const nums = [3, 1, 2];",
+            "Array.from({ length: 5 }, (_, i) => i)"
+          ]
+        ],
+        [
+          "First / last",
+          [
+            "nums[0]",
+            "nums.at(-1)"
+          ]
+        ],
+        [
+          "Add / remove at the end",
+          [
+            "nums.push(4)",
+            "nums.pop()"
+          ]
+        ],
+        [
+          "Add / remove at the start",
+          [
+            "nums.unshift(0)",
+            "nums.shift()"
+          ]
+        ],
+        [
+          "Remove by index",
+          "nums.splice(index, 1)"
+        ],
+        [
+          "Transform each item",
+          "nums.map((n) => n * 2)"
+        ],
+        [
+          "Keep matching items",
+          "nums.filter((n) => n > 1)"
+        ],
+        [
+          "Find an item",
+          [
+            "users.find((u) => u.id === 7)",
+            "nums.findIndex((n) => n > 1)"
+          ]
+        ],
+        [
+          "Check items",
+          [
+            "nums.includes(2)",
+            "nums.some((n) => n < 0)",
+            "nums.every((n) => n > 0)"
+          ]
+        ],
+        [
+          "Sum",
+          "nums.reduce((total, n) => total + n, 0)"
+        ],
+        [
+          "Sort numbers",
+          [
+            "nums.sort((a, b) => a - b)",
+            "nums.toSorted((a, b) => a - b)  // copy"
+          ]
+        ],
+        [
+          "Sort strings",
+          "names.sort((a, b) => a.localeCompare(b))"
+        ],
+        [
+          "Remove duplicates",
+          "[...new Set(items)]"
+        ],
+        [
+          "Reverse",
+          [
+            "nums.reverse()",
+            "nums.toReversed()  // copy"
+          ]
+        ],
+        [
+          "Flatten",
+          "nested.flat(Infinity)"
+        ],
+        [
+          "Group by",
+          "Object.groupBy(users, (u) => u.role)"
+        ],
+        [
+          "Loop",
+          [
+            "for (const item of items) { }",
+            "items.forEach((item, i) => { });"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Objects",
+      "description": "Key–value data.",
+      "rows": [
+        [
+          "Create",
+          "const user = { name: \"Ada\", age: 36 };"
+        ],
+        [
+          "Read / write a property",
+          [
+            "user.name",
+            "user[\"name\"]",
+            "user.email = \"ada@example.com\";"
+          ]
+        ],
+        [
+          "Delete a property",
+          "delete user.age;"
+        ],
+        [
+          "Has a property",
+          [
+            "\"name\" in user",
+            "Object.hasOwn(user, \"name\")"
+          ]
+        ],
+        [
+          "Keys / values / entries",
+          [
+            "Object.keys(user)",
+            "Object.values(user)",
+            "Object.entries(user)"
+          ]
+        ],
+        [
+          "Loop over entries",
+          "for (const [key, value] of Object.entries(user)) { }"
+        ],
+        [
+          "Merge / copy",
+          [
+            "{ ...a, ...b }",
+            "structuredClone(user)  // deep copy"
+          ]
+        ],
+        [
+          "From entries",
+          "Object.fromEntries(pairs)"
+        ],
+        [
+          "Map (any key type)",
+          [
+            "const map = new Map();",
+            "map.set(key, value); map.get(key);"
+          ]
+        ],
+        [
+          "JSON",
+          [
+            "JSON.stringify(user, null, 2)",
+            "JSON.parse(text)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Control flow",
+      "description": "Conditions and loops.",
+      "rows": [
+        [
+          "If / else",
+          "if (x > 0) {\n  // ...\n} else if (x === 0) {\n  // ...\n} else {\n  // ...\n}"
+        ],
+        [
+          "Ternary",
+          "const label = n % 2 === 0 ? \"even\" : \"odd\";"
+        ],
+        [
+          "Switch",
+          "switch (status) {\n  case \"ok\":\n    done();\n    break;\n  default:\n    retry();\n}"
+        ],
+        [
+          "For loop",
+          "for (let i = 0; i < 5; i++) { }"
+        ],
+        [
+          "While loop",
+          "while (count < 10) {\n  count++;\n}"
+        ],
+        [
+          "Try / catch",
+          "try {\n  risky();\n} catch (err) {\n  console.error(err);\n} finally {\n  cleanup();\n}"
+        ],
+        [
+          "Throw an error",
+          "throw new Error(\"Something went wrong\");"
+        ]
+      ]
+    },
+    {
+      "title": "Functions",
+      "description": "Declaring and calling functions.",
+      "rows": [
+        [
+          "Function declaration",
+          "function add(a, b) {\n  return a + b;\n}"
+        ],
+        [
+          "Arrow function",
+          [
+            "const add = (a, b) => a + b;",
+            "const toObj = (x) => ({ x });"
+          ]
+        ],
+        [
+          "Default parameter",
+          "function greet(name = \"world\") { }"
+        ],
+        [
+          "Rest parameters",
+          "function sum(...nums) { }"
+        ],
+        [
+          "Callback",
+          "button.addEventListener(\"click\", () => { });"
+        ],
+        [
+          "Timers",
+          [
+            "setTimeout(fn, 1000);",
+            "const id = setInterval(fn, 1000); clearInterval(id);"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Async",
+      "description": "Promises, async/await and fetch.",
+      "rows": [
+        [
+          "Async function",
+          "async function load() {\n  const res = await fetch(\"/api/users\");\n  return res.json();\n}"
+        ],
+        [
+          "Handle errors",
+          "try {\n  const data = await load();\n} catch (err) {\n  console.error(err);\n}"
+        ],
+        [
+          "Run in parallel",
+          "const [a, b] = await Promise.all([loadA(), loadB()]);"
+        ],
+        [
+          "POST JSON",
+          "await fetch(\"/api/users\", {\n  method: \"POST\",\n  headers: { \"Content-Type\": \"application/json\" },\n  body: JSON.stringify(user),\n});"
+        ],
+        [
+          "Wait (sleep)",
+          "await new Promise((r) => setTimeout(r, 500));"
+        ],
+        [
+          "Promise chain",
+          "load().then((data) => show(data)).catch(console.error);"
+        ]
+      ]
+    },
+    {
+      "title": "Classes & modules",
+      "description": "Classes and ES modules.",
+      "rows": [
+        [
+          "Class",
+          "class Dog {\n  constructor(name) {\n    this.name = name;\n  }\n  bark() {\n    return \"Woof\";\n  }\n}"
+        ],
+        [
+          "Inheritance",
+          "class Puppy extends Dog {\n  bark() {\n    return super.bark() + \"!\";\n  }\n}"
+        ],
+        [
+          "Private field / static",
+          [
+            "#secret = 1;",
+            "static create() { return new Dog(\"Rex\"); }"
+          ]
+        ],
+        [
+          "Export",
+          [
+            "export function add() { }",
+            "export default App;"
+          ]
+        ],
+        [
+          "Import",
+          [
+            "import { add } from \"./math.js\";",
+            "import App from \"./App.js\";"
+          ]
+        ],
+        [
+          "Dynamic import",
+          "const { add } = await import(\"./math.js\");"
+        ]
+      ]
+    },
+    {
+      "title": "DOM",
+      "description": "Working with the page in the browser.",
+      "rows": [
+        [
+          "Select elements",
+          [
+            "document.querySelector(\".card\")",
+            "document.querySelectorAll(\"li\")"
+          ]
+        ],
+        [
+          "Change text / HTML",
+          [
+            "el.textContent = \"Hi\";",
+            "el.innerHTML = \"<b>Hi</b>\";"
+          ]
+        ],
+        [
+          "Classes",
+          [
+            "el.classList.add(\"active\")",
+            "el.classList.toggle(\"open\")"
+          ]
+        ],
+        [
+          "Attributes",
+          [
+            "el.setAttribute(\"aria-hidden\", \"true\")",
+            "el.dataset.id"
+          ]
+        ],
+        [
+          "Create and add an element",
+          "const li = document.createElement(\"li\");\nli.textContent = \"New\";\nlist.append(li);"
+        ],
+        [
+          "Listen for events",
+          "el.addEventListener(\"click\", (event) => {\n  event.preventDefault();\n});"
+        ],
+        [
+          "Local storage",
+          [
+            "localStorage.setItem(\"theme\", \"dark\");",
+            "localStorage.getItem(\"theme\")"
+          ]
+        ]
+      ]
+    }
+  ]
+}

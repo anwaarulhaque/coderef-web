@@ -1,0 +1,78 @@
+{
+  "slug": "sqlserver",
+  "title": "SQL Server",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for SQL Server.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "SQL Server docs",
+              "url": "https://learn.microsoft.com/en-us/sql/sql-server/"
+            },
+            {
+              "name": "T-SQL reference",
+              "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-reference"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.microsoft.com/sql/"
+            },
+            {
+              "name": "Wikipedia SQL Server",
+              "url": "https://en.wikipedia.org/wiki/Microsoft_SQL_Server"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "SQL Server Cheat Sheet [.png, pdf]",
+              "url": "http://www.addedbytes.com/cheat-sheets/sql-server-cheat-sheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Dd2",
+              "url": "/db2/"
+            },
+            {
+              "name": "MySQL",
+              "url": "/mysql/"
+            },
+            {
+              "name": "Oracle",
+              "url": "/oracle/"
+            },
+            {
+              "name": "PostgreSQL",
+              "url": "/postgresql/"
+            },
+            {
+              "name": "SQL",
+              "url": "/sql/"
+            },
+            {
+              "name": "SQLite",
+              "url": "/sqlite/"
+            },
+            {
+              "name": "Sybase",
+              "url": "/sybase/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

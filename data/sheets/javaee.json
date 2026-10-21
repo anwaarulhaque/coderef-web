@@ -1,0 +1,37 @@
+{
+  "slug": "javaee",
+  "title": "Java EE",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Java EE.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Jakarta EE Specifications",
+              "url": "https://jakarta.ee/specifications/"
+            },
+            {
+              "name": "Wikipedia Java EE",
+              "url": "https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

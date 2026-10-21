@@ -1,0 +1,37 @@
+{
+  "slug": "qt",
+  "title": "Qt",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Qt.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Qt documentation",
+              "url": "https://doc.qt.io/"
+            },
+            {
+              "name": "Wikipedia Qt",
+              "url": "https://en.wikipedia.org/wiki/Qt_Creator"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "C++",
+              "url": "/cpp/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

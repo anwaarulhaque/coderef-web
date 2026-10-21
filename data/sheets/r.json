@@ -1,0 +1,603 @@
+{
+  "slug": "r",
+  "title": "R",
+  "category": "Languages",
+  "color": "#276dc3",
+  "description": "Base R for help, I/O, data structures, apply functions, strings, statistics and plotting.",
+  "reference": "https://cran.r-project.org/manuals.html",
+  "sections": [
+    {
+      "title": "Help & Session",
+      "groups": [
+        {
+          "title": "Help",
+          "items": [
+            {
+              "name": "help()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/help"
+            },
+            {
+              "name": "help.search()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/help.search"
+            },
+            {
+              "name": "example()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/example"
+            },
+            {
+              "name": "apropos()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/apropos"
+            },
+            {
+              "name": "vignette()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/vignette"
+            },
+            {
+              "name": "args()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/args"
+            }
+          ]
+        },
+        {
+          "title": "Session",
+          "items": [
+            {
+              "name": "str()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/str"
+            },
+            {
+              "name": "summary()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/summary"
+            },
+            {
+              "name": "class()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/class"
+            },
+            {
+              "name": "ls()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/ls"
+            },
+            {
+              "name": "rm()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/rm"
+            },
+            {
+              "name": "getwd()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/getwd"
+            },
+            {
+              "name": "setwd()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/setwd"
+            },
+            {
+              "name": "library()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/library"
+            },
+            {
+              "name": "require()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/require"
+            },
+            {
+              "name": "sessionInfo()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/sessionInfo"
+            }
+          ]
+        },
+        {
+          "title": "Packages",
+          "items": [
+            {
+              "name": "install.packages()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/install.packages"
+            },
+            {
+              "name": "update.packages()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/update.packages"
+            },
+            {
+              "name": "installed.packages()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/installed.packages"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Input / Output",
+      "groups": [
+        {
+          "title": "Files",
+          "items": [
+            {
+              "name": "read.csv()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/read.csv"
+            },
+            {
+              "name": "read.table()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/read.table"
+            },
+            {
+              "name": "write.csv()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/write.csv"
+            },
+            {
+              "name": "write.table()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/write.table"
+            }
+          ]
+        },
+        {
+          "title": "Base",
+          "items": [
+            {
+              "name": "readRDS()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/readRDS"
+            },
+            {
+              "name": "saveRDS()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/saveRDS"
+            },
+            {
+              "name": "load()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/load"
+            },
+            {
+              "name": "save()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/save"
+            },
+            {
+              "name": "readLines()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/readLines"
+            },
+            {
+              "name": "writeLines()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/writeLines"
+            },
+            {
+              "name": "scan()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/scan"
+            },
+            {
+              "name": "print()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/print"
+            },
+            {
+              "name": "cat()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/cat"
+            },
+            {
+              "name": "sink()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/sink"
+            },
+            {
+              "name": "file.exists()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/file.exists"
+            },
+            {
+              "name": "list.files()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/list.files"
+            },
+            {
+              "name": "source()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Creation",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "c()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/c"
+            },
+            {
+              "name": "vector()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/vector"
+            },
+            {
+              "name": "seq()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/seq"
+            },
+            {
+              "name": "rep()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/rep"
+            },
+            {
+              "name": "matrix()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/matrix"
+            },
+            {
+              "name": "array()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/array"
+            },
+            {
+              "name": "list()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/list"
+            },
+            {
+              "name": "data.frame()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/data.frame"
+            },
+            {
+              "name": "factor()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/factor"
+            },
+            {
+              "name": "numeric()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/numeric"
+            },
+            {
+              "name": "character()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/character"
+            },
+            {
+              "name": "cbind()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/cbind"
+            },
+            {
+              "name": "rbind()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/rbind"
+            },
+            {
+              "name": "as.numeric()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/as.numeric"
+            },
+            {
+              "name": "as.character()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/as.character"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Manipulation",
+      "groups": [
+        {
+          "title": "Subset & Sort",
+          "items": [
+            {
+              "name": "subset()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/subset"
+            },
+            {
+              "name": "merge()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/merge"
+            },
+            {
+              "name": "order()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/order"
+            },
+            {
+              "name": "sort()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/sort"
+            },
+            {
+              "name": "unique()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/unique"
+            },
+            {
+              "name": "table()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/table"
+            },
+            {
+              "name": "which()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/which"
+            },
+            {
+              "name": "ifelse()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/ifelse"
+            },
+            {
+              "name": "split()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/split"
+            },
+            {
+              "name": "do.call()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/do.call"
+            },
+            {
+              "name": "head()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/head"
+            },
+            {
+              "name": "tail()",
+              "url": "https://www.rdocumentation.org/packages/utils/topics/tail"
+            }
+          ]
+        },
+        {
+          "title": "Apply Family",
+          "items": [
+            {
+              "name": "apply()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/apply"
+            },
+            {
+              "name": "lapply()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/lapply"
+            },
+            {
+              "name": "sapply()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/sapply"
+            },
+            {
+              "name": "vapply()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/vapply"
+            },
+            {
+              "name": "mapply()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/mapply"
+            },
+            {
+              "name": "tapply()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/tapply"
+            },
+            {
+              "name": "Reduce()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/Reduce"
+            },
+            {
+              "name": "Filter()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/Filter"
+            },
+            {
+              "name": "Map()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/Map"
+            }
+          ]
+        },
+        {
+          "title": "Aggregate",
+          "items": [
+            {
+              "name": "aggregate()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/aggregate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Strings",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "paste()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/paste"
+            },
+            {
+              "name": "paste0()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/paste0"
+            },
+            {
+              "name": "sprintf()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/sprintf"
+            },
+            {
+              "name": "nchar()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/nchar"
+            },
+            {
+              "name": "substr()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/substr"
+            },
+            {
+              "name": "gsub()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/gsub"
+            },
+            {
+              "name": "sub()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/sub"
+            },
+            {
+              "name": "grepl()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/grepl"
+            },
+            {
+              "name": "regmatches()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/regmatches"
+            },
+            {
+              "name": "strsplit()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/strsplit"
+            },
+            {
+              "name": "toupper()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/toupper"
+            },
+            {
+              "name": "tolower()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/tolower"
+            },
+            {
+              "name": "trimws()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/trimws"
+            },
+            {
+              "name": "format()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/format"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Statistics",
+      "groups": [
+        {
+          "title": "Descriptive",
+          "items": [
+            {
+              "name": "mean()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/mean"
+            }
+          ]
+        },
+        {
+          "title": "stats",
+          "items": [
+            {
+              "name": "median()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/median"
+            },
+            {
+              "name": "sd()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/sd"
+            },
+            {
+              "name": "var()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/var"
+            },
+            {
+              "name": "quantile()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/quantile"
+            },
+            {
+              "name": "cor()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/cor"
+            },
+            {
+              "name": "lm()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/lm"
+            },
+            {
+              "name": "glm()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/glm"
+            },
+            {
+              "name": "t.test()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/t.test"
+            },
+            {
+              "name": "chisq.test()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/chisq.test"
+            },
+            {
+              "name": "anova()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/anova"
+            },
+            {
+              "name": "predict()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/predict"
+            },
+            {
+              "name": "rnorm()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/rnorm"
+            },
+            {
+              "name": "runif()",
+              "url": "https://www.rdocumentation.org/packages/stats/topics/runif"
+            }
+          ]
+        },
+        {
+          "title": "Random",
+          "items": [
+            {
+              "name": "sample()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/sample"
+            },
+            {
+              "name": "set.seed()",
+              "url": "https://www.rdocumentation.org/packages/base/topics/set.seed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Plotting",
+      "groups": [
+        {
+          "title": "graphics",
+          "items": [
+            {
+              "name": "plot()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/plot"
+            },
+            {
+              "name": "hist()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/hist"
+            },
+            {
+              "name": "boxplot()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/boxplot"
+            },
+            {
+              "name": "barplot()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/barplot"
+            },
+            {
+              "name": "lines()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/lines"
+            },
+            {
+              "name": "points()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/points"
+            },
+            {
+              "name": "abline()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/abline"
+            },
+            {
+              "name": "legend()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/legend"
+            },
+            {
+              "name": "par()",
+              "url": "https://www.rdocumentation.org/packages/graphics/topics/par"
+            }
+          ]
+        },
+        {
+          "title": "Devices",
+          "items": [
+            {
+              "name": "pdf()",
+              "url": "https://www.rdocumentation.org/packages/grDevices/topics/pdf"
+            },
+            {
+              "name": "png()",
+              "url": "https://www.rdocumentation.org/packages/grDevices/topics/png"
+            },
+            {
+              "name": "dev.off()",
+              "url": "https://www.rdocumentation.org/packages/grDevices/topics/dev.off"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manuals",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "An Introduction to R",
+              "url": "https://cran.r-project.org/doc/manuals/r-release/R-intro.html"
+            },
+            {
+              "name": "R Language Definition",
+              "url": "https://cran.r-project.org/doc/manuals/r-release/R-lang.html"
+            },
+            {
+              "name": "R Data Import/Export",
+              "url": "https://cran.r-project.org/doc/manuals/r-release/R-data.html"
+            },
+            {
+              "name": "Writing R Extensions",
+              "url": "https://cran.r-project.org/doc/manuals/r-release/R-exts.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

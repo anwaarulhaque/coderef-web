@@ -1,0 +1,153 @@
+{
+  "slug": "npm",
+  "updated": "2026-10-14",
+  "title": "npm & Node",
+  "category": "Tools",
+  "color": "#cb3837",
+  "language": "bash",
+  "description": "npm commands for installing, updating and publishing packages, running scripts, and handy Node.js CLI flags.",
+  "docs": "https://docs.npmjs.com/cli/",
+  "sections": [
+    {
+      "title": "Projects & installing",
+      "description": "Set up and add dependencies.",
+      "rows": [
+        [
+          "Create package.json",
+          [
+            "npm init",
+            "npm init -y"
+          ]
+        ],
+        [
+          "Install all dependencies",
+          [
+            "npm install",
+            "npm ci   # clean, from lockfile"
+          ]
+        ],
+        [
+          "Add a dependency",
+          [
+            "npm install express",
+            "npm install -D typescript"
+          ]
+        ],
+        [
+          "Install a specific version",
+          "npm install react@18.3.1"
+        ],
+        [
+          "Install globally",
+          "npm install -g serve"
+        ],
+        [
+          "Remove a package",
+          "npm uninstall express"
+        ]
+      ]
+    },
+    {
+      "title": "Scripts & running",
+      "description": "Run tasks and tools.",
+      "rows": [
+        [
+          "Run a script",
+          [
+            "npm run build",
+            "npm test",
+            "npm start"
+          ]
+        ],
+        [
+          "Pass arguments to a script",
+          "npm run test -- --watch"
+        ],
+        [
+          "Run a package without installing",
+          "npx create-next-app@latest"
+        ],
+        [
+          "Run a Node file",
+          [
+            "node app.js",
+            "node --watch app.js"
+          ]
+        ],
+        [
+          "Load a .env file (Node 20.6+)",
+          "node --env-file=.env app.js"
+        ],
+        [
+          "Run Node's test runner",
+          "node --test"
+        ]
+      ]
+    },
+    {
+      "title": "Maintenance",
+      "description": "Keep dependencies healthy.",
+      "rows": [
+        [
+          "See outdated packages",
+          "npm outdated"
+        ],
+        [
+          "Update within ranges",
+          "npm update"
+        ],
+        [
+          "Check for vulnerabilities",
+          [
+            "npm audit",
+            "npm audit fix"
+          ]
+        ],
+        [
+          "Why is this installed?",
+          "npm explain lodash"
+        ],
+        [
+          "List installed packages",
+          [
+            "npm ls",
+            "npm ls --depth=0"
+          ]
+        ],
+        [
+          "Clear the cache",
+          "npm cache clean --force"
+        ]
+      ]
+    },
+    {
+      "title": "Publishing",
+      "description": "Share a package.",
+      "rows": [
+        [
+          "Log in",
+          "npm login"
+        ],
+        [
+          "Bump the version",
+          [
+            "npm version patch",
+            "npm version minor",
+            "npm version major"
+          ]
+        ],
+        [
+          "Publish",
+          [
+            "npm publish",
+            "npm publish --access public  # scoped"
+          ]
+        ],
+        [
+          "Preview what gets published",
+          "npm pack --dry-run"
+        ]
+      ]
+    }
+  ]
+}

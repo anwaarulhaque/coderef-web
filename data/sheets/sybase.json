@@ -1,0 +1,65 @@
+{
+  "slug": "sybase",
+  "title": "Sybase",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for Sybase.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "SAP ASE documentation",
+              "url": "https://help.sap.com/docs/SAP_ASE"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.sybase.com/"
+            },
+            {
+              "name": "Wikipedia Sybase",
+              "url": "https://en.wikipedia.org/wiki/Sybase_SQL_Server"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Dd2",
+              "url": "/db2/"
+            },
+            {
+              "name": "MySQL",
+              "url": "/mysql/"
+            },
+            {
+              "name": "Oracle",
+              "url": "/oracle/"
+            },
+            {
+              "name": "PostgreSQL",
+              "url": "/postgresql/"
+            },
+            {
+              "name": "SQL",
+              "url": "/sql/"
+            },
+            {
+              "name": "SQL Server",
+              "url": "/sqlserver/"
+            },
+            {
+              "name": "SQLite",
+              "url": "/sqlite/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

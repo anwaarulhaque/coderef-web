@@ -1,0 +1,439 @@
+{
+  "slug": "docker",
+  "title": "Docker",
+  "category": "Tools",
+  "color": "#1d63ed",
+  "description": "Docker CLI for containers, images, volumes, networks and Compose, plus Dockerfile instructions.",
+  "reference": "https://docs.docker.com/reference/",
+  "sections": [
+    {
+      "title": "Containers",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "docker run",
+              "url": "https://docs.docker.com/reference/cli/docker/container/run/"
+            },
+            {
+              "name": "docker ps",
+              "url": "https://docs.docker.com/reference/cli/docker/container/ls/"
+            },
+            {
+              "name": "docker start",
+              "url": "https://docs.docker.com/reference/cli/docker/container/start/"
+            },
+            {
+              "name": "docker stop",
+              "url": "https://docs.docker.com/reference/cli/docker/container/stop/"
+            },
+            {
+              "name": "docker restart",
+              "url": "https://docs.docker.com/reference/cli/docker/container/restart/"
+            },
+            {
+              "name": "docker rm",
+              "url": "https://docs.docker.com/reference/cli/docker/container/rm/"
+            },
+            {
+              "name": "docker exec",
+              "url": "https://docs.docker.com/reference/cli/docker/container/exec/"
+            },
+            {
+              "name": "docker logs",
+              "url": "https://docs.docker.com/reference/cli/docker/container/logs/"
+            },
+            {
+              "name": "docker inspect",
+              "url": "https://docs.docker.com/reference/cli/docker/inspect/"
+            },
+            {
+              "name": "docker cp",
+              "url": "https://docs.docker.com/reference/cli/docker/container/cp/"
+            },
+            {
+              "name": "docker stats",
+              "url": "https://docs.docker.com/reference/cli/docker/container/stats/"
+            },
+            {
+              "name": "docker top",
+              "url": "https://docs.docker.com/reference/cli/docker/container/top/"
+            },
+            {
+              "name": "docker attach",
+              "url": "https://docs.docker.com/reference/cli/docker/container/attach/"
+            },
+            {
+              "name": "docker kill",
+              "url": "https://docs.docker.com/reference/cli/docker/container/kill/"
+            },
+            {
+              "name": "docker pause",
+              "url": "https://docs.docker.com/reference/cli/docker/container/pause/"
+            },
+            {
+              "name": "docker rename",
+              "url": "https://docs.docker.com/reference/cli/docker/container/rename/"
+            },
+            {
+              "name": "docker container prune",
+              "url": "https://docs.docker.com/reference/cli/docker/container/prune/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Images",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "docker build",
+              "url": "https://docs.docker.com/reference/cli/docker/buildx/build/"
+            },
+            {
+              "name": "docker pull",
+              "url": "https://docs.docker.com/reference/cli/docker/image/pull/"
+            },
+            {
+              "name": "docker push",
+              "url": "https://docs.docker.com/reference/cli/docker/image/push/"
+            },
+            {
+              "name": "docker images",
+              "url": "https://docs.docker.com/reference/cli/docker/image/ls/"
+            },
+            {
+              "name": "docker rmi",
+              "url": "https://docs.docker.com/reference/cli/docker/image/rm/"
+            },
+            {
+              "name": "docker tag",
+              "url": "https://docs.docker.com/reference/cli/docker/image/tag/"
+            },
+            {
+              "name": "docker history",
+              "url": "https://docs.docker.com/reference/cli/docker/image/history/"
+            },
+            {
+              "name": "docker save",
+              "url": "https://docs.docker.com/reference/cli/docker/image/save/"
+            },
+            {
+              "name": "docker load",
+              "url": "https://docs.docker.com/reference/cli/docker/image/load/"
+            },
+            {
+              "name": "docker import",
+              "url": "https://docs.docker.com/reference/cli/docker/image/import/"
+            },
+            {
+              "name": "docker image prune",
+              "url": "https://docs.docker.com/reference/cli/docker/image/prune/"
+            },
+            {
+              "name": "docker search",
+              "url": "https://docs.docker.com/reference/cli/docker/search/"
+            },
+            {
+              "name": "docker login",
+              "url": "https://docs.docker.com/reference/cli/docker/login/"
+            },
+            {
+              "name": "docker logout",
+              "url": "https://docs.docker.com/reference/cli/docker/logout/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Volumes & Networks",
+      "groups": [
+        {
+          "title": "Volumes",
+          "items": [
+            {
+              "name": "volume create",
+              "url": "https://docs.docker.com/reference/cli/docker/volume/create/"
+            },
+            {
+              "name": "volume ls",
+              "url": "https://docs.docker.com/reference/cli/docker/volume/ls/"
+            },
+            {
+              "name": "volume inspect",
+              "url": "https://docs.docker.com/reference/cli/docker/volume/inspect/"
+            },
+            {
+              "name": "volume rm",
+              "url": "https://docs.docker.com/reference/cli/docker/volume/rm/"
+            },
+            {
+              "name": "volume prune",
+              "url": "https://docs.docker.com/reference/cli/docker/volume/prune/"
+            }
+          ]
+        },
+        {
+          "title": "Networks",
+          "items": [
+            {
+              "name": "network create",
+              "url": "https://docs.docker.com/reference/cli/docker/network/create/"
+            },
+            {
+              "name": "network ls",
+              "url": "https://docs.docker.com/reference/cli/docker/network/ls/"
+            },
+            {
+              "name": "network inspect",
+              "url": "https://docs.docker.com/reference/cli/docker/network/inspect/"
+            },
+            {
+              "name": "network connect",
+              "url": "https://docs.docker.com/reference/cli/docker/network/connect/"
+            },
+            {
+              "name": "network disconnect",
+              "url": "https://docs.docker.com/reference/cli/docker/network/disconnect/"
+            },
+            {
+              "name": "network rm",
+              "url": "https://docs.docker.com/reference/cli/docker/network/rm/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compose",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "docker compose up",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/up/"
+            },
+            {
+              "name": "docker compose down",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/down/"
+            },
+            {
+              "name": "docker compose ps",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/ps/"
+            },
+            {
+              "name": "docker compose logs",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/logs/"
+            },
+            {
+              "name": "docker compose build",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/build/"
+            },
+            {
+              "name": "docker compose exec",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/exec/"
+            },
+            {
+              "name": "docker compose run",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/run/"
+            },
+            {
+              "name": "docker compose pull",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/pull/"
+            },
+            {
+              "name": "docker compose config",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/config/"
+            },
+            {
+              "name": "docker compose restart",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/restart/"
+            },
+            {
+              "name": "docker compose stop",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/stop/"
+            },
+            {
+              "name": "docker compose watch",
+              "url": "https://docs.docker.com/reference/cli/docker/compose/watch/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "System",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "docker info",
+              "url": "https://docs.docker.com/reference/cli/docker/system/info/"
+            },
+            {
+              "name": "docker version",
+              "url": "https://docs.docker.com/reference/cli/docker/version/"
+            },
+            {
+              "name": "docker system df",
+              "url": "https://docs.docker.com/reference/cli/docker/system/df/"
+            },
+            {
+              "name": "docker system prune",
+              "url": "https://docs.docker.com/reference/cli/docker/system/prune/"
+            },
+            {
+              "name": "docker context ls",
+              "url": "https://docs.docker.com/reference/cli/docker/context/ls/"
+            },
+            {
+              "name": "docker builder prune",
+              "url": "https://docs.docker.com/reference/cli/docker/builder/prune/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dockerfile",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "FROM",
+              "url": "https://docs.docker.com/reference/dockerfile/#from"
+            },
+            {
+              "name": "RUN",
+              "url": "https://docs.docker.com/reference/dockerfile/#run"
+            },
+            {
+              "name": "CMD",
+              "url": "https://docs.docker.com/reference/dockerfile/#cmd"
+            },
+            {
+              "name": "ENTRYPOINT",
+              "url": "https://docs.docker.com/reference/dockerfile/#entrypoint"
+            },
+            {
+              "name": "COPY",
+              "url": "https://docs.docker.com/reference/dockerfile/#copy"
+            },
+            {
+              "name": "ADD",
+              "url": "https://docs.docker.com/reference/dockerfile/#add"
+            },
+            {
+              "name": "WORKDIR",
+              "url": "https://docs.docker.com/reference/dockerfile/#workdir"
+            },
+            {
+              "name": "ENV",
+              "url": "https://docs.docker.com/reference/dockerfile/#env"
+            },
+            {
+              "name": "ARG",
+              "url": "https://docs.docker.com/reference/dockerfile/#arg"
+            },
+            {
+              "name": "EXPOSE",
+              "url": "https://docs.docker.com/reference/dockerfile/#expose"
+            },
+            {
+              "name": "VOLUME",
+              "url": "https://docs.docker.com/reference/dockerfile/#volume"
+            },
+            {
+              "name": "USER",
+              "url": "https://docs.docker.com/reference/dockerfile/#user"
+            },
+            {
+              "name": "LABEL",
+              "url": "https://docs.docker.com/reference/dockerfile/#label"
+            },
+            {
+              "name": "HEALTHCHECK",
+              "url": "https://docs.docker.com/reference/dockerfile/#healthcheck"
+            },
+            {
+              "name": "SHELL",
+              "url": "https://docs.docker.com/reference/dockerfile/#shell"
+            },
+            {
+              "name": "ONBUILD",
+              "url": "https://docs.docker.com/reference/dockerfile/#onbuild"
+            },
+            {
+              "name": "STOPSIGNAL",
+              "url": "https://docs.docker.com/reference/dockerfile/#stopsignal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Compose File",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "image",
+              "url": "https://docs.docker.com/reference/compose-file/services/#image"
+            },
+            {
+              "name": "build",
+              "url": "https://docs.docker.com/reference/compose-file/services/#build"
+            },
+            {
+              "name": "ports",
+              "url": "https://docs.docker.com/reference/compose-file/services/#ports"
+            },
+            {
+              "name": "environment",
+              "url": "https://docs.docker.com/reference/compose-file/services/#environment"
+            },
+            {
+              "name": "env_file",
+              "url": "https://docs.docker.com/reference/compose-file/services/#env_file"
+            },
+            {
+              "name": "depends_on",
+              "url": "https://docs.docker.com/reference/compose-file/services/#depends_on"
+            },
+            {
+              "name": "volumes",
+              "url": "https://docs.docker.com/reference/compose-file/services/#volumes"
+            },
+            {
+              "name": "command",
+              "url": "https://docs.docker.com/reference/compose-file/services/#command"
+            },
+            {
+              "name": "entrypoint",
+              "url": "https://docs.docker.com/reference/compose-file/services/#entrypoint"
+            },
+            {
+              "name": "restart",
+              "url": "https://docs.docker.com/reference/compose-file/services/#restart"
+            },
+            {
+              "name": "healthcheck",
+              "url": "https://docs.docker.com/reference/compose-file/services/#healthcheck"
+            },
+            {
+              "name": "networks",
+              "url": "https://docs.docker.com/reference/compose-file/services/#networks"
+            },
+            {
+              "name": "profiles",
+              "url": "https://docs.docker.com/reference/compose-file/services/#profiles"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

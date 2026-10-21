@@ -1,0 +1,37 @@
+{
+  "slug": "glassfish",
+  "title": "GlassFish",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for GlassFish.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Eclipse GlassFish docs",
+              "url": "https://glassfish.org/documentation"
+            },
+            {
+              "name": "Wikipedia GlassFish",
+              "url": "https://en.wikipedia.org/wiki/GlassFish"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

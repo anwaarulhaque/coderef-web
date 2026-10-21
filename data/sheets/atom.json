@@ -1,0 +1,32 @@
+{
+  "slug": "atom",
+  "title": "Atom",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Atom.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 4287 (Atom)",
+              "url": "https://www.rfc-editor.org/rfc/rfc4287"
+            },
+            {
+              "name": "RSS 2.0 Specification",
+              "url": "https://www.rssboard.org/rss-specification"
+            },
+            {
+              "name": "Wikipedia Atom",
+              "url": "https://en.wikipedia.org/wiki/Atom_(standard)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

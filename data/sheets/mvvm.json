@@ -1,0 +1,28 @@
+{
+  "slug": "mvvm",
+  "title": "MVVM",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for MVVM.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MVVM (Microsoft Learn)",
+              "url": "https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm"
+            },
+            {
+              "name": "Wikipedia MVVM",
+              "url": "https://en.wikipedia.org/wiki/Model_View_ViewModel"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

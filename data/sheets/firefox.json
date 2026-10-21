@@ -1,0 +1,58 @@
+{
+  "slug": "firefox",
+  "title": "Firefox",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Firefox.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Firefox keyboard shortcuts",
+              "url": "https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.mozilla.com/firefox/"
+            },
+            {
+              "name": "Wikipedia Firefox",
+              "url": "https://en.wikipedia.org/wiki/Firefox"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "MOZILLA FIREFOX CHEAT SHEET",
+              "url": "http://lesliefranke.com/files/reference/firefoxcheatsheet.html"
+            },
+            {
+              "name": "Firefox Keyboard Shortcuts [.pdf]",
+              "url": "http://websupportblog.wordpress.com/files/2006/10/firefox-shortcuts.pdf"
+            },
+            {
+              "name": "Firefox Shortcuts Sheet",
+              "url": "http://www.mouserunner.com/FF_Shortcuts1Printable.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Firebug",
+              "url": "/firebug/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

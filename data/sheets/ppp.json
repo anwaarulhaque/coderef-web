@@ -1,0 +1,28 @@
+{
+  "slug": "ppp",
+  "title": "PPP",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for PPP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 1661 (PPP)",
+              "url": "https://www.rfc-editor.org/rfc/rfc1661"
+            },
+            {
+              "name": "Wikipedia PPP",
+              "url": "https://en.wikipedia.org/wiki/Point-to-Point_Protocol"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

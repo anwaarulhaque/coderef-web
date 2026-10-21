@@ -1,0 +1,36 @@
+{
+  "slug": "firefox-add-ons",
+  "title": "Firefox Add-Ons",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Firefox Add-Ons.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Firefox Add-ons",
+              "url": "https://addons.mozilla.org/"
+            },
+            {
+              "name": "Extension Workshop",
+              "url": "https://extensionworkshop.com/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://addons.mozilla.org/"
+            },
+            {
+              "name": "Wikipedia Firefox Add-Ons",
+              "url": "https://en.wikipedia.org/wiki/Mozilla_Add-ons"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

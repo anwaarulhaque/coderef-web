@@ -1,0 +1,49 @@
+{
+  "slug": "gwt",
+  "title": "GWT (Google Web Toolkit)",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for GWT.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "GWT documentation",
+              "url": "https://www.gwtproject.org/doc/latest/DevGuide.html"
+            },
+            {
+              "name": "Wikipedia GWT(Google Web Toolkit)",
+              "url": "https://en.wikipedia.org/wiki/Google_Web_Toolkit"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "AJAX",
+              "url": "/ajax/"
+            },
+            {
+              "name": "Google",
+              "url": "/google/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "JavaScript",
+              "url": "/javascript/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

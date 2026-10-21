@@ -1,0 +1,62 @@
+{
+  "slug": "statistics",
+  "title": "Statistics",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Statistics.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "NIST Engineering Statistics Handbook",
+              "url": "https://www.itl.nist.gov/div898/handbook/"
+            },
+            {
+              "name": "Wolfram Alpha Tools",
+              "url": "http://www.wolframalpha.com/examples/Statistics.html"
+            },
+            {
+              "name": "Wikipedia Statistics",
+              "url": "https://en.wikipedia.org/wiki/Statistics"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Statistics Reference Cheatsheet: The Basic Principles Of Statistics For Introductory Courses [.pdf]",
+              "url": "http://www.scribd.com/doc/427513/Statistics-Reference-Cheatsheet"
+            },
+            {
+              "name": "Statistics Cheat Sheet [.pdf, doc]",
+              "url": "http://www.docstoc.com/docs/2479020/Statistics-Cheat-Sheet"
+            },
+            {
+              "name": "Engineering Statistics Cheat Sheet #1 [.pdf]",
+              "url": "http://www.docstoc.com/docs/9654895/Statistics-Cheat"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Math",
+              "url": "/math/"
+            },
+            {
+              "name": "R",
+              "url": "/r/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

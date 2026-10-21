@@ -1,0 +1,50 @@
+{
+  "slug": "trigonometry",
+  "title": "Trigonometry",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Trigonometry.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Trigonometry (Khan Academy)",
+              "url": "https://www.khanacademy.org/math/trigonometry"
+            },
+            {
+              "name": "Wikipedia Trigonometry",
+              "url": "https://en.wikipedia.org/wiki/Trigonometry"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Trig Cheat Sheet by Paul Dawkins [.pdf, pdf reduced]",
+              "url": "http://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet.pdf"
+            },
+            {
+              "name": "Trig Cheat Sheet reduced [.pdf]",
+              "url": "http://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet_Reduced.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Math",
+              "url": "/math/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

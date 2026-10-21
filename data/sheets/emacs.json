@@ -1,0 +1,45 @@
+{
+  "slug": "emacs",
+  "title": "Emacs",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Emacs.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "GNU Emacs Manual",
+              "url": "https://www.gnu.org/software/emacs/manual/html_node/emacs/"
+            },
+            {
+              "name": "Emacs Reference Card",
+              "url": "https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.gnu.org/software/emacs/"
+            },
+            {
+              "name": "Wikipedia Emacs",
+              "url": "https://en.wikipedia.org/wiki/Emacs"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Bash Emacs Editing Mode Cheat Sheet [.pdf]",
+              "url": "http://www.catonmat.net/blog/bash-emacs-editing-mode-cheat-sheet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

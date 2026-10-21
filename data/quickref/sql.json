@@ -1,0 +1,288 @@
+{
+  "slug": "sql",
+  "updated": "2026-10-14",
+  "title": "SQL",
+  "category": "Databases",
+  "color": "#00758f",
+  "language": "sql",
+  "description": "SQL queries: SELECT, filtering, sorting, joins, grouping, inserts, updates, schema changes and transactions.",
+  "docs": "https://www.postgresql.org/docs/current/sql-commands.html",
+  "sections": [
+    {
+      "title": "Querying",
+      "description": "Reading rows with SELECT.",
+      "rows": [
+        [
+          "Select all columns",
+          "SELECT * FROM users;"
+        ],
+        [
+          "Select some columns",
+          "SELECT id, name FROM users;"
+        ],
+        [
+          "Rename a column",
+          "SELECT name AS full_name FROM users;"
+        ],
+        [
+          "Unique values",
+          "SELECT DISTINCT country FROM users;"
+        ],
+        [
+          "Limit rows",
+          [
+            "SELECT * FROM users LIMIT 10;",
+            "SELECT * FROM users LIMIT 10 OFFSET 20;"
+          ]
+        ],
+        [
+          "Sort",
+          [
+            "SELECT * FROM users ORDER BY created_at DESC;",
+            "ORDER BY last_name, first_name"
+          ]
+        ],
+        [
+          "Count rows",
+          "SELECT COUNT(*) FROM users;"
+        ]
+      ]
+    },
+    {
+      "title": "Filtering",
+      "description": "Choosing rows with WHERE.",
+      "rows": [
+        [
+          "Equals / not equals",
+          [
+            "WHERE country = 'IN'",
+            "WHERE status <> 'banned'"
+          ]
+        ],
+        [
+          "Comparison",
+          "WHERE age >= 18"
+        ],
+        [
+          "AND / OR",
+          "WHERE age >= 18 AND country = 'IN'"
+        ],
+        [
+          "In a list",
+          "WHERE country IN ('IN', 'US', 'UK')"
+        ],
+        [
+          "Between",
+          "WHERE price BETWEEN 10 AND 20"
+        ],
+        [
+          "Pattern match",
+          [
+            "WHERE email LIKE '%@gmail.com'",
+            "WHERE name ILIKE 'a%'  -- PostgreSQL, case-insensitive"
+          ]
+        ],
+        [
+          "NULL checks",
+          [
+            "WHERE deleted_at IS NULL",
+            "WHERE phone IS NOT NULL"
+          ]
+        ],
+        [
+          "Subquery",
+          "WHERE id IN (SELECT user_id FROM orders)"
+        ],
+        [
+          "Exists",
+          "WHERE EXISTS (SELECT 1 FROM orders o WHERE o.user_id = users.id)"
+        ]
+      ]
+    },
+    {
+      "title": "Joins",
+      "description": "Combining tables.",
+      "rows": [
+        [
+          "Inner join",
+          "SELECT u.name, o.total\nFROM users u\nJOIN orders o ON o.user_id = u.id;"
+        ],
+        [
+          "Left join (keep all left rows)",
+          "SELECT u.name, o.total\nFROM users u\nLEFT JOIN orders o ON o.user_id = u.id;"
+        ],
+        [
+          "Rows with no match",
+          "SELECT u.*\nFROM users u\nLEFT JOIN orders o ON o.user_id = u.id\nWHERE o.id IS NULL;"
+        ],
+        [
+          "Full outer join",
+          "SELECT * FROM a FULL OUTER JOIN b ON a.id = b.id;"
+        ],
+        [
+          "Self join",
+          "SELECT e.name, m.name AS manager\nFROM employees e\nJOIN employees m ON e.manager_id = m.id;"
+        ],
+        [
+          "Combine result sets",
+          [
+            "SELECT email FROM users UNION SELECT email FROM leads;",
+            "UNION ALL  -- keeps duplicates"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Grouping & aggregates",
+      "description": "Summarising data.",
+      "rows": [
+        [
+          "Aggregate functions",
+          "SELECT COUNT(*), SUM(total), AVG(total), MIN(total), MAX(total)\nFROM orders;"
+        ],
+        [
+          "Group by",
+          "SELECT country, COUNT(*) AS users\nFROM users\nGROUP BY country;"
+        ],
+        [
+          "Filter groups",
+          "SELECT country, COUNT(*)\nFROM users\nGROUP BY country\nHAVING COUNT(*) > 100;"
+        ],
+        [
+          "Conditional value",
+          "SELECT name,\n  CASE WHEN age < 18 THEN 'minor' ELSE 'adult' END AS age_group\nFROM users;"
+        ],
+        [
+          "Default for NULL",
+          "SELECT COALESCE(nickname, name) FROM users;"
+        ],
+        [
+          "Row number / ranking",
+          "SELECT name, total,\n  ROW_NUMBER() OVER (ORDER BY total DESC) AS rank\nFROM orders;"
+        ],
+        [
+          "Running total",
+          "SUM(total) OVER (ORDER BY created_at)"
+        ],
+        [
+          "Common table expression",
+          "WITH big_orders AS (\n  SELECT * FROM orders WHERE total > 1000\n)\nSELECT * FROM big_orders;"
+        ]
+      ]
+    },
+    {
+      "title": "Changing data",
+      "description": "INSERT, UPDATE and DELETE.",
+      "rows": [
+        [
+          "Insert a row",
+          "INSERT INTO users (name, email)\nVALUES ('Ada', 'ada@example.com');"
+        ],
+        [
+          "Insert many rows",
+          "INSERT INTO users (name) VALUES ('Ada'), ('Grace'), ('Linus');"
+        ],
+        [
+          "Insert from a query",
+          "INSERT INTO archive SELECT * FROM orders WHERE created_at < '2024-01-01';"
+        ],
+        [
+          "Update rows",
+          "UPDATE users SET status = 'active' WHERE id = 7;"
+        ],
+        [
+          "Delete rows",
+          "DELETE FROM sessions WHERE expires_at < NOW();"
+        ],
+        [
+          "Upsert (PostgreSQL)",
+          "INSERT INTO users (email, name) VALUES ('a@x.com', 'Ada')\nON CONFLICT (email) DO UPDATE SET name = EXCLUDED.name;"
+        ],
+        [
+          "Return changed rows (PostgreSQL)",
+          "UPDATE users SET name = 'Ada' WHERE id = 1 RETURNING *;"
+        ]
+      ]
+    },
+    {
+      "title": "Schema",
+      "description": "Creating and changing tables.",
+      "rows": [
+        [
+          "Create a table",
+          "CREATE TABLE users (\n  id SERIAL PRIMARY KEY,\n  email VARCHAR(255) UNIQUE NOT NULL,\n  name TEXT,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);"
+        ],
+        [
+          "Foreign key",
+          "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+        ],
+        [
+          "Add a column",
+          "ALTER TABLE users ADD COLUMN phone TEXT;"
+        ],
+        [
+          "Rename / drop a column",
+          [
+            "ALTER TABLE users RENAME COLUMN phone TO mobile;",
+            "ALTER TABLE users DROP COLUMN mobile;"
+          ]
+        ],
+        [
+          "Create an index",
+          [
+            "CREATE INDEX idx_users_email ON users(email);",
+            "CREATE UNIQUE INDEX ..."
+          ]
+        ],
+        [
+          "Drop a table",
+          [
+            "DROP TABLE users;",
+            "DROP TABLE IF EXISTS users;"
+          ]
+        ],
+        [
+          "Empty a table",
+          "TRUNCATE TABLE logs;"
+        ],
+        [
+          "Create a view",
+          "CREATE VIEW active_users AS\nSELECT * FROM users WHERE status = 'active';"
+        ]
+      ]
+    },
+    {
+      "title": "Transactions & admin",
+      "description": "Safety and inspection.",
+      "rows": [
+        [
+          "Transaction",
+          "BEGIN;\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nCOMMIT;  -- or ROLLBACK;"
+        ],
+        [
+          "Explain a query",
+          [
+            "EXPLAIN SELECT * FROM users WHERE email = 'a@x.com';",
+            "EXPLAIN ANALYZE ..."
+          ]
+        ],
+        [
+          "Create a user (PostgreSQL)",
+          "CREATE USER app WITH PASSWORD 'secret';"
+        ],
+        [
+          "Grant access",
+          "GRANT SELECT, INSERT ON users TO app;"
+        ],
+        [
+          "List tables",
+          [
+            "\\dt               -- psql",
+            "SHOW TABLES;       -- MySQL",
+            ".tables            -- SQLite"
+          ]
+        ]
+      ]
+    }
+  ]
+}

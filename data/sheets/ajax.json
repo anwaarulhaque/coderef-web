@@ -1,0 +1,82 @@
+{
+  "slug": "ajax",
+  "title": "AJAX",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for AJAX.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MDN: Fetch API",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+            },
+            {
+              "name": "MDN: XMLHttpRequest",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"
+            },
+            {
+              "name": "Wikipedia AJAX",
+              "url": "https://en.wikipedia.org/wiki/AJAX"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "JavaScript Cheat Sheet [.pdf]",
+              "url": "http://www.addedbytes.com/cheat-sheets/javascript-cheat-sheet/"
+            },
+            {
+              "name": "JavaScript in one page",
+              "url": "http://www.javascript.su/"
+            },
+            {
+              "name": "AJAX Activity Indicators",
+              "url": "http://www.ajax.su/ajax_activity_indicators.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "CSS",
+              "url": "/css/"
+            },
+            {
+              "name": "DOM",
+              "url": "/html-dom/"
+            },
+            {
+              "name": "GWT",
+              "url": "/gwt/"
+            },
+            {
+              "name": "JavaScript",
+              "url": "/javascript/"
+            },
+            {
+              "name": "jQuery",
+              "url": "/jquery/"
+            },
+            {
+              "name": "Prototype",
+              "url": "/prototype/"
+            },
+            {
+              "name": "RichFaces",
+              "url": "/richfaces/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

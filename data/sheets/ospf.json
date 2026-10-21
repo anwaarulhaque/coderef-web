@@ -1,0 +1,28 @@
+{
+  "slug": "ospf",
+  "title": "OSPF",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for OSPF.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 2328 (OSPFv2)",
+              "url": "https://www.rfc-editor.org/rfc/rfc2328"
+            },
+            {
+              "name": "Wikipedia OSPF",
+              "url": "https://en.wikipedia.org/wiki/Ospf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

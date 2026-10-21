@@ -1,0 +1,28 @@
+{
+  "slug": "eigrp",
+  "title": "EIGRP",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for EIGRP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 7868 (EIGRP)",
+              "url": "https://www.rfc-editor.org/rfc/rfc7868"
+            },
+            {
+              "name": "Wikipedia EIGRP",
+              "url": "https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

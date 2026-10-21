@@ -1,0 +1,45 @@
+{
+  "slug": "bazaar",
+  "title": "Bazaar",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Bazaar.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Breezy (Bazaar) docs",
+              "url": "https://www.breezy-vcs.org/"
+            },
+            {
+              "name": "Wikipedia Bazaar",
+              "url": "https://en.wikipedia.org/wiki/Bazaar_%28software%29"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "CVS",
+              "url": "/cvs/"
+            },
+            {
+              "name": "Git",
+              "url": "/git/"
+            },
+            {
+              "name": "SVN",
+              "url": "/svn/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

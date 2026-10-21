@@ -1,0 +1,24 @@
+{
+  "slug": "numbers",
+  "title": "Numbers",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Numbers.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Numbers",
+              "url": "https://en.wikipedia.org/wiki/Number"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

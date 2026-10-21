@@ -1,0 +1,28 @@
+{
+  "slug": "ieee80211",
+  "title": "IEEE 802.11",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for IEEE 802.11.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "IEEE 802.11 Working Group",
+              "url": "https://www.ieee802.org/11/"
+            },
+            {
+              "name": "Wikipedia IEEE 802.11",
+              "url": "https://en.wikipedia.org/wiki/IEEE_802.11"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,765 @@
+{
+  "slug": "mysql",
+  "title": "MySQL",
+  "category": "Databases",
+  "color": "#00758f",
+  "description": "MySQL 8.4 statements, functions, data types and command-line tools.",
+  "reference": "https://dev.mysql.com/doc/refman/8.4/en/",
+  "sections": [
+    {
+      "title": "Data Definition",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "CREATE DATABASE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-database.html"
+            },
+            {
+              "name": "CREATE TABLE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-table.html"
+            },
+            {
+              "name": "ALTER TABLE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/alter-table.html"
+            },
+            {
+              "name": "DROP TABLE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/drop-table.html"
+            },
+            {
+              "name": "TRUNCATE TABLE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/truncate-table.html"
+            },
+            {
+              "name": "RENAME TABLE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/rename-table.html"
+            },
+            {
+              "name": "CREATE INDEX",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-index.html"
+            },
+            {
+              "name": "DROP INDEX",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/drop-index.html"
+            },
+            {
+              "name": "CREATE VIEW",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-view.html"
+            },
+            {
+              "name": "CREATE PROCEDURE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-procedure.html"
+            },
+            {
+              "name": "CREATE FUNCTION",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-function.html"
+            },
+            {
+              "name": "CREATE TRIGGER",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-trigger.html"
+            },
+            {
+              "name": "CREATE EVENT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-event.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Manipulation",
+      "groups": [
+        {
+          "title": "Statements",
+          "items": [
+            {
+              "name": "SELECT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/select.html"
+            },
+            {
+              "name": "INSERT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/insert.html"
+            },
+            {
+              "name": "UPDATE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/update.html"
+            },
+            {
+              "name": "DELETE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/delete.html"
+            },
+            {
+              "name": "REPLACE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/replace.html"
+            },
+            {
+              "name": "CALL",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/call.html"
+            },
+            {
+              "name": "LOAD DATA",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/load-data.html"
+            }
+          ]
+        },
+        {
+          "title": "Clauses",
+          "items": [
+            {
+              "name": "WHERE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/select.html"
+            },
+            {
+              "name": "GROUP BY",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/group-by-modifiers.html"
+            },
+            {
+              "name": "HAVING",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/select.html"
+            },
+            {
+              "name": "ORDER BY",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/sorting-rows.html"
+            },
+            {
+              "name": "LIMIT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/limit-optimization.html"
+            },
+            {
+              "name": "JOIN",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/join.html"
+            },
+            {
+              "name": "UNION",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/union.html"
+            },
+            {
+              "name": "WITH (CTE)",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/with.html"
+            },
+            {
+              "name": "Subqueries",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/subqueries.html"
+            },
+            {
+              "name": "ON DUPLICATE KEY UPDATE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/insert-on-duplicate.html"
+            },
+            {
+              "name": "LIKE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-comparison-functions.html#operator_like"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transactions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "START TRANSACTION",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/commit.html"
+            },
+            {
+              "name": "COMMIT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/commit.html"
+            },
+            {
+              "name": "ROLLBACK",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/commit.html"
+            },
+            {
+              "name": "SAVEPOINT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/savepoint.html"
+            },
+            {
+              "name": "LOCK TABLES",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/lock-tables.html"
+            },
+            {
+              "name": "SET TRANSACTION",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/set-transaction.html"
+            },
+            {
+              "name": "SELECT ... FOR UPDATE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/innodb-locking-reads.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Administration",
+      "groups": [
+        {
+          "title": "Users",
+          "items": [
+            {
+              "name": "CREATE USER",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/create-user.html"
+            },
+            {
+              "name": "ALTER USER",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/alter-user.html"
+            },
+            {
+              "name": "DROP USER",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/drop-user.html"
+            },
+            {
+              "name": "GRANT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/grant.html"
+            },
+            {
+              "name": "REVOKE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/revoke.html"
+            },
+            {
+              "name": "SHOW GRANTS",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-grants.html"
+            }
+          ]
+        },
+        {
+          "title": "Inspect",
+          "items": [
+            {
+              "name": "SHOW DATABASES",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-databases.html"
+            },
+            {
+              "name": "SHOW TABLES",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-tables.html"
+            },
+            {
+              "name": "SHOW COLUMNS",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-columns.html"
+            },
+            {
+              "name": "SHOW CREATE TABLE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-create-table.html"
+            },
+            {
+              "name": "SHOW INDEX",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-index.html"
+            },
+            {
+              "name": "SHOW PROCESSLIST",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-processlist.html"
+            },
+            {
+              "name": "SHOW VARIABLES",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/show-variables.html"
+            },
+            {
+              "name": "DESCRIBE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/explain.html"
+            },
+            {
+              "name": "EXPLAIN",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/explain.html"
+            },
+            {
+              "name": "USE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/use.html"
+            },
+            {
+              "name": "SET",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/set-variable.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Functions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "CONCAT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_concat"
+            },
+            {
+              "name": "CONCAT_WS()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_concat-ws"
+            },
+            {
+              "name": "LENGTH()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_length"
+            },
+            {
+              "name": "CHAR_LENGTH()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_char-length"
+            },
+            {
+              "name": "LOWER()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_lower"
+            },
+            {
+              "name": "UPPER()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_upper"
+            },
+            {
+              "name": "SUBSTRING()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_substring"
+            },
+            {
+              "name": "LEFT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_left"
+            },
+            {
+              "name": "RIGHT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_right"
+            },
+            {
+              "name": "TRIM()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_trim"
+            },
+            {
+              "name": "LTRIM()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_ltrim"
+            },
+            {
+              "name": "RTRIM()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_rtrim"
+            },
+            {
+              "name": "REPLACE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_replace"
+            },
+            {
+              "name": "INSTR()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_instr"
+            },
+            {
+              "name": "LOCATE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_locate"
+            },
+            {
+              "name": "LPAD()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_lpad"
+            },
+            {
+              "name": "RPAD()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_rpad"
+            },
+            {
+              "name": "REVERSE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_reverse"
+            },
+            {
+              "name": "REPEAT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_repeat"
+            },
+            {
+              "name": "FORMAT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html#function_format"
+            }
+          ]
+        },
+        {
+          "title": "Regex",
+          "items": [
+            {
+              "name": "REGEXP_LIKE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/regexp.html#function_regexp-like"
+            },
+            {
+              "name": "REGEXP_REPLACE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/regexp.html#function_regexp-replace"
+            },
+            {
+              "name": "REGEXP_SUBSTR()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/regexp.html#function_regexp-substr"
+            },
+            {
+              "name": "REGEXP_INSTR()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/regexp.html#function_regexp-instr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Numeric Functions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "ABS()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_abs"
+            },
+            {
+              "name": "CEIL()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_ceil"
+            },
+            {
+              "name": "FLOOR()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_floor"
+            },
+            {
+              "name": "ROUND()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_round"
+            },
+            {
+              "name": "TRUNCATE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_truncate"
+            },
+            {
+              "name": "MOD()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_mod"
+            },
+            {
+              "name": "POW()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_pow"
+            },
+            {
+              "name": "SQRT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_sqrt"
+            },
+            {
+              "name": "RAND()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_rand"
+            },
+            {
+              "name": "SIGN()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html#function_sign"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Date & Time Functions",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "NOW()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_now"
+            },
+            {
+              "name": "CURDATE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_curdate"
+            },
+            {
+              "name": "CURTIME()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_curtime"
+            },
+            {
+              "name": "DATE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_date"
+            },
+            {
+              "name": "DATE_ADD()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_date-add"
+            },
+            {
+              "name": "DATE_SUB()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_date-sub"
+            },
+            {
+              "name": "DATEDIFF()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_datediff"
+            },
+            {
+              "name": "DATE_FORMAT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_date-format"
+            },
+            {
+              "name": "STR_TO_DATE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_str-to-date"
+            },
+            {
+              "name": "YEAR()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_year"
+            },
+            {
+              "name": "MONTH()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_month"
+            },
+            {
+              "name": "DAY()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_day"
+            },
+            {
+              "name": "DAYOFWEEK()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_dayofweek"
+            },
+            {
+              "name": "LAST_DAY()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_last-day"
+            },
+            {
+              "name": "TIMESTAMPDIFF()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_timestampdiff"
+            },
+            {
+              "name": "UNIX_TIMESTAMP()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_unix-timestamp"
+            },
+            {
+              "name": "FROM_UNIXTIME()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_from-unixtime"
+            },
+            {
+              "name": "CONVERT_TZ()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_convert-tz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aggregate & Window",
+      "groups": [
+        {
+          "title": "Aggregate",
+          "items": [
+            {
+              "name": "COUNT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_count"
+            },
+            {
+              "name": "SUM()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_sum"
+            },
+            {
+              "name": "AVG()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_avg"
+            },
+            {
+              "name": "MIN()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_min"
+            },
+            {
+              "name": "MAX()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_max"
+            },
+            {
+              "name": "GROUP_CONCAT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_group-concat"
+            },
+            {
+              "name": "JSON_ARRAYAGG()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_json-arrayagg"
+            },
+            {
+              "name": "JSON_OBJECTAGG()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html#function_json-objectagg"
+            }
+          ]
+        },
+        {
+          "title": "Window",
+          "items": [
+            {
+              "name": "ROW_NUMBER()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_row-number"
+            },
+            {
+              "name": "RANK()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_rank"
+            },
+            {
+              "name": "DENSE_RANK()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_dense-rank"
+            },
+            {
+              "name": "LAG()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_lag"
+            },
+            {
+              "name": "LEAD()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_lead"
+            },
+            {
+              "name": "FIRST_VALUE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_first-value"
+            },
+            {
+              "name": "LAST_VALUE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_last-value"
+            },
+            {
+              "name": "NTILE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html#function_ntile"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flow Control",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "CASE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/flow-control-functions.html#operator_case"
+            },
+            {
+              "name": "IF()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/flow-control-functions.html#function_if"
+            },
+            {
+              "name": "IFNULL()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/flow-control-functions.html#function_ifnull"
+            },
+            {
+              "name": "NULLIF()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/flow-control-functions.html#function_nullif"
+            },
+            {
+              "name": "COALESCE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/comparison-operators.html#function_coalesce"
+            },
+            {
+              "name": "GREATEST()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/comparison-operators.html#function_greatest"
+            },
+            {
+              "name": "LEAST()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/comparison-operators.html#function_least"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JSON",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "JSON_OBJECT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-creation-functions.html#function_json-object"
+            },
+            {
+              "name": "JSON_ARRAY()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-creation-functions.html#function_json-array"
+            },
+            {
+              "name": "JSON_EXTRACT()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-search-functions.html#function_json-extract"
+            },
+            {
+              "name": "->>",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-search-functions.html#operator_json-inline-path"
+            },
+            {
+              "name": "JSON_CONTAINS()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-search-functions.html#function_json-contains"
+            },
+            {
+              "name": "JSON_SET()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-modification-functions.html#function_json-set"
+            },
+            {
+              "name": "JSON_REMOVE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-modification-functions.html#function_json-remove"
+            },
+            {
+              "name": "JSON_TABLE()",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json-table-functions.html#function_json-table"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Data Types",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "INT / BIGINT",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/integer-types.html"
+            },
+            {
+              "name": "DECIMAL",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/fixed-point-types.html"
+            },
+            {
+              "name": "FLOAT / DOUBLE",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/floating-point-types.html"
+            },
+            {
+              "name": "BOOLEAN",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/numeric-type-syntax.html"
+            },
+            {
+              "name": "CHAR / VARCHAR",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/char.html"
+            },
+            {
+              "name": "TEXT / BLOB",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/blob.html"
+            },
+            {
+              "name": "ENUM",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/enum.html"
+            },
+            {
+              "name": "SET",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/set.html"
+            },
+            {
+              "name": "DATE / DATETIME / TIMESTAMP",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/datetime.html"
+            },
+            {
+              "name": "TIME",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/time.html"
+            },
+            {
+              "name": "JSON",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/json.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Command-Line Tools",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "mysql",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mysql.html"
+            },
+            {
+              "name": "mysqldump",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mysqldump.html"
+            },
+            {
+              "name": "mysqladmin",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mysqladmin.html"
+            },
+            {
+              "name": "mysqlimport",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mysqlimport.html"
+            },
+            {
+              "name": "mysqlcheck",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mysqlcheck.html"
+            },
+            {
+              "name": "mysqlshow",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mysqlshow.html"
+            },
+            {
+              "name": "mysqlbinlog",
+              "url": "https://dev.mysql.com/doc/refman/8.4/en/mysqlbinlog.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "ascii",
+  "title": "ASCII",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for ASCII.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "ASCII table (Wikipedia)",
+              "url": "https://en.wikipedia.org/wiki/ASCII"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "ASCII Character Codes Table & Cheat Sheet",
+              "url": "http://www.petefreitag.com/cheatsheets/ascii-codes/"
+            },
+            {
+              "name": "Web ASCII, aka Windows-1252 Character Encoding by Bob Stein, VisiBone",
+              "url": "http://www.visibone.com/htmlref/char/webascii.htm"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Characters",
+              "url": "/characters/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

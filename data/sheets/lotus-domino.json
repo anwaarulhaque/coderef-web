@@ -1,0 +1,37 @@
+{
+  "slug": "lotus-domino",
+  "title": "Lotus Domino",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Lotus Domino.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Official Website",
+              "url": "http://www.ibm.com/software/lotus/products/domino/"
+            },
+            {
+              "name": "Wikipedia Lotus Domino",
+              "url": "https://en.wikipedia.org/wiki/IBM_Lotus_Domino"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Lotus Domino URL sheet",
+              "url": "http://www.ibm.com/developerworks/lotus/library/ls-Domino_URL_cheat_sheet/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

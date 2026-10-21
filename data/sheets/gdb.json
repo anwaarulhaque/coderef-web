@@ -1,0 +1,49 @@
+{
+  "slug": "gdb",
+  "title": "GDB (GNU Debugger)",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for GDB.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "GDB documentation",
+              "url": "https://sourceware.org/gdb/current/onlinedocs/gdb/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.gnu.org/software/gdb/"
+            },
+            {
+              "name": "Wikipedia GDB",
+              "url": "https://en.wikipedia.org/wiki/GNU_Debugger"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "C",
+              "url": "/c/"
+            },
+            {
+              "name": "C++",
+              "url": "/cpp/"
+            },
+            {
+              "name": "Fortran",
+              "url": "/fortran/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "slug": "sqlite",
+  "title": "SQLite",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for SQLite.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "SQLite documentation",
+              "url": "https://www.sqlite.org/docs.html"
+            },
+            {
+              "name": "SQL syntax",
+              "url": "https://www.sqlite.org/lang.html"
+            },
+            {
+              "name": "CLI (sqlite3)",
+              "url": "https://www.sqlite.org/cli.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.sqlite.org/"
+            },
+            {
+              "name": "Wikipedia SQLite",
+              "url": "https://en.wikipedia.org/wiki/SQLite"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Syntax Diagrams For SQLite",
+              "url": "http://www.sqlite.org/syntaxdiagrams.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Dd2",
+              "url": "/db2/"
+            },
+            {
+              "name": "MySQL",
+              "url": "/mysql/"
+            },
+            {
+              "name": "Oracle",
+              "url": "/oracle/"
+            },
+            {
+              "name": "PostgreSQL",
+              "url": "/postgresql/"
+            },
+            {
+              "name": "SQL",
+              "url": "/sql/"
+            },
+            {
+              "name": "SQL Server",
+              "url": "/sqlserver/"
+            },
+            {
+              "name": "Sybase",
+              "url": "/sybase/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

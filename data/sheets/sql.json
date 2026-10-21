@@ -1,0 +1,90 @@
+{
+  "slug": "sql",
+  "title": "SQL",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for SQL.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "PostgreSQL SQL commands",
+              "url": "https://www.postgresql.org/docs/current/sql-commands.html"
+            },
+            {
+              "name": "SQLite SQL syntax",
+              "url": "https://www.sqlite.org/lang.html"
+            },
+            {
+              "name": "Wikipedia SQL",
+              "url": "https://en.wikipedia.org/wiki/SQL"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "SQL in one page",
+              "url": "http://www.sql.su/"
+            },
+            {
+              "name": "SQL Cheatsheet",
+              "url": "http://www.3gwt.net/demo/SQL_redux.html"
+            },
+            {
+              "name": "SQL Injection Cheat Sheet",
+              "url": "http://www.ntobjectives.com/files/SQL_Injection_Cheat_Sheet.pdf"
+            },
+            {
+              "name": "SQL Injection",
+              "url": "http://www.websec.ca/kb/sql_injection"
+            },
+            {
+              "name": "SQL Cheat Sheet [.pdf]",
+              "url": "http://www.sql-tutorial.net/SQL-Cheat-Sheet.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Db2",
+              "url": "/db2/"
+            },
+            {
+              "name": "MySQL",
+              "url": "/mysql/"
+            },
+            {
+              "name": "Oracle",
+              "url": "/oracle/"
+            },
+            {
+              "name": "PostgreSQL",
+              "url": "/postgresql/"
+            },
+            {
+              "name": "SQL Server",
+              "url": "/sqlserver/"
+            },
+            {
+              "name": "SQLite",
+              "url": "/sqlite/"
+            },
+            {
+              "name": "Sybase",
+              "url": "/sybase/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

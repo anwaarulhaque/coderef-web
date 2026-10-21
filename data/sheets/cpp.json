@@ -1,0 +1,86 @@
+{
+  "slug": "cpp",
+  "title": "C++",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for C++.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "cppreference: C++",
+              "url": "https://en.cppreference.com/w/cpp"
+            },
+            {
+              "name": "C++ Core Guidelines",
+              "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+            },
+            {
+              "name": "Wikipedia C++",
+              "url": "https://en.wikipedia.org/wiki/C%2B%2B"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Cheat Sheet: Unicode-enabling Microsoft C/C++ Source Code",
+              "url": "http://www.i18nguy.com/unicode/c-unicode.html"
+            },
+            {
+              "name": "Understanding C++/Quick Reference",
+              "url": "http://en.wikibooks.org/wiki/Understanding_C%2B%2B/Quick_Reference"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": ".NET",
+              "url": "/dotnet/"
+            },
+            {
+              "name": "ASP",
+              "url": "/asp/"
+            },
+            {
+              "name": "C",
+              "url": "/c/"
+            },
+            {
+              "name": "C#",
+              "url": "/csharp/"
+            },
+            {
+              "name": "GDB",
+              "url": "/gdb/"
+            },
+            {
+              "name": "MFC",
+              "url": "/mfc/"
+            },
+            {
+              "name": "Objective-C",
+              "url": "/objective-c/"
+            },
+            {
+              "name": "OpenMP",
+              "url": "/openmp/"
+            },
+            {
+              "name": "Qt",
+              "url": "/qt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

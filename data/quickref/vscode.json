@@ -1,0 +1,588 @@
+{
+  "slug": "vscode",
+  "updated": "2026-10-14",
+  "title": "VS Code Shortcuts",
+  "category": "Tools",
+  "color": "#007acc",
+  "language": "keys",
+  "columns": [
+    "Action",
+    "Windows / Linux",
+    "macOS"
+  ],
+  "keys": true,
+  "description": "Default Visual Studio Code keyboard shortcuts for Windows/Linux and macOS: editing, multi-cursor, navigation, search, panels and debugging.",
+  "docs": "https://code.visualstudio.com/docs/getstarted/keybindings",
+  "note": "Linux uses the Windows keys except where noted. Ctrl+K Ctrl+S opens the shortcut editor, where you can search and rebind anything.",
+  "try": {
+    "label": "Official keyboard shortcut PDFs",
+    "href": "https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_keyboard-reference-sheets"
+  },
+  "sections": [
+    {
+      "title": "Essentials",
+      "description": "The few shortcuts that unlock everything else.",
+      "rows": [
+        [
+          "Command Palette",
+          [
+            "Ctrl+Shift+P",
+            "F1"
+          ],
+          "⇧⌘P"
+        ],
+        [
+          "Quick Open (go to file)",
+          "Ctrl+P",
+          "⌘P"
+        ],
+        [
+          "Settings",
+          "Ctrl+,",
+          "⌘,"
+        ],
+        [
+          "Keyboard Shortcuts editor",
+          "Ctrl+K Ctrl+S",
+          "⌘K ⌘S"
+        ],
+        [
+          "Toggle sidebar",
+          "Ctrl+B",
+          "⌘B"
+        ],
+        [
+          "Toggle terminal",
+          "Ctrl+`",
+          "⌃`"
+        ],
+        [
+          "New terminal",
+          "Ctrl+Shift+`",
+          "⌃⇧`"
+        ],
+        [
+          "Toggle bottom panel",
+          "Ctrl+J",
+          "⌘J"
+        ],
+        [
+          "Zen mode",
+          "Ctrl+K Z",
+          "⌘K Z"
+        ],
+        [
+          "New window",
+          "Ctrl+Shift+N",
+          "⇧⌘N"
+        ]
+      ]
+    },
+    {
+      "title": "Basic editing",
+      "description": "Lines, comments and indentation.",
+      "rows": [
+        [
+          "Cut / copy line (no selection)",
+          [
+            "Ctrl+X",
+            "Ctrl+C"
+          ],
+          [
+            "⌘X",
+            "⌘C"
+          ]
+        ],
+        [
+          "Delete line",
+          "Ctrl+Shift+K",
+          "⇧⌘K"
+        ],
+        [
+          "Move line up / down",
+          [
+            "Alt+↑",
+            "Alt+↓"
+          ],
+          [
+            "⌥↑",
+            "⌥↓"
+          ]
+        ],
+        [
+          "Copy line up / down",
+          [
+            "Shift+Alt+↑",
+            "Shift+Alt+↓"
+          ],
+          [
+            "⇧⌥↑",
+            "⇧⌥↓"
+          ]
+        ],
+        [
+          "Insert line below / above",
+          [
+            "Ctrl+Enter",
+            "Ctrl+Shift+Enter"
+          ],
+          [
+            "⌘Enter",
+            "⇧⌘Enter"
+          ]
+        ],
+        [
+          "Toggle line comment",
+          "Ctrl+/",
+          "⌘/"
+        ],
+        [
+          "Toggle block comment",
+          "Shift+Alt+A",
+          "⇧⌥A"
+        ],
+        [
+          "Indent / outdent line",
+          [
+            "Ctrl+]",
+            "Ctrl+["
+          ],
+          [
+            "⌘]",
+            "⌘["
+          ]
+        ],
+        [
+          "Jump to matching bracket",
+          "Ctrl+Shift+\\",
+          "⇧⌘\\"
+        ],
+        [
+          "Fold / unfold region",
+          [
+            "Ctrl+Shift+[",
+            "Ctrl+Shift+]"
+          ],
+          [
+            "⌥⌘[",
+            "⌥⌘]"
+          ]
+        ],
+        [
+          "Fold all / unfold all",
+          [
+            "Ctrl+K Ctrl+0",
+            "Ctrl+K Ctrl+J"
+          ],
+          [
+            "⌘K ⌘0",
+            "⌘K ⌘J"
+          ]
+        ],
+        [
+          "Undo / redo",
+          [
+            "Ctrl+Z",
+            "Ctrl+Y"
+          ],
+          [
+            "⌘Z",
+            "⇧⌘Z"
+          ]
+        ],
+        [
+          "Toggle word wrap",
+          "Alt+Z",
+          "⌥Z"
+        ]
+      ]
+    },
+    {
+      "title": "Multi-cursor & selection",
+      "description": "Edit many places at once.",
+      "rows": [
+        [
+          "Add cursor at click",
+          "Alt+Click",
+          "⌥Click"
+        ],
+        [
+          "Add cursor above / below",
+          [
+            "Ctrl+Alt+↑",
+            "Ctrl+Alt+↓"
+          ],
+          [
+            "⌥⌘↑",
+            "⌥⌘↓"
+          ]
+        ],
+        [
+          "Select next occurrence",
+          "Ctrl+D",
+          "⌘D"
+        ],
+        [
+          "Select all occurrences",
+          "Ctrl+Shift+L",
+          "⇧⌘L"
+        ],
+        [
+          "Skip this occurrence",
+          "Ctrl+K Ctrl+D",
+          "⌘K ⌘D"
+        ],
+        [
+          "Undo last cursor",
+          "Ctrl+U",
+          "⌘U"
+        ],
+        [
+          "Cursor at end of each selected line",
+          "Shift+Alt+I",
+          "⇧⌥I"
+        ],
+        [
+          "Select current line",
+          "Ctrl+L",
+          "⌘L"
+        ],
+        [
+          "Column (box) selection",
+          "Shift+Alt+Drag",
+          "⇧⌥Drag"
+        ],
+        [
+          "Expand / shrink selection",
+          [
+            "Shift+Alt+→",
+            "Shift+Alt+←"
+          ],
+          [
+            "⌃⇧⌘→",
+            "⌃⇧⌘←"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Navigation",
+      "description": "Move around code quickly.",
+      "rows": [
+        [
+          "Go to line",
+          "Ctrl+G",
+          "⌃G"
+        ],
+        [
+          "Go to symbol in file",
+          "Ctrl+Shift+O",
+          "⇧⌘O"
+        ],
+        [
+          "Go to symbol in workspace",
+          "Ctrl+T",
+          "⌘T"
+        ],
+        [
+          "Go to definition",
+          "F12",
+          "F12"
+        ],
+        [
+          "Peek definition",
+          "Alt+F12",
+          "⌥F12"
+        ],
+        [
+          "Show all references",
+          "Shift+F12",
+          "⇧F12"
+        ],
+        [
+          "Go back / forward",
+          [
+            "Alt+←",
+            "Alt+→"
+          ],
+          [
+            "⌃-",
+            "⌃⇧-"
+          ]
+        ],
+        [
+          "Next / previous problem",
+          [
+            "F8",
+            "Shift+F8"
+          ],
+          [
+            "F8",
+            "⇧F8"
+          ]
+        ],
+        [
+          "Start / end of file",
+          [
+            "Ctrl+Home",
+            "Ctrl+End"
+          ],
+          [
+            "⌘↑",
+            "⌘↓"
+          ]
+        ],
+        [
+          "Switch between open files",
+          "Ctrl+Tab",
+          "⌃Tab"
+        ]
+      ]
+    },
+    {
+      "title": "Search & replace",
+      "description": "In a file and across the project.",
+      "rows": [
+        [
+          "Find",
+          "Ctrl+F",
+          "⌘F"
+        ],
+        [
+          "Replace",
+          "Ctrl+H",
+          "⌥⌘F"
+        ],
+        [
+          "Find next / previous",
+          [
+            "F3",
+            "Shift+F3"
+          ],
+          [
+            "⌘G",
+            "⇧⌘G"
+          ]
+        ],
+        [
+          "Select all matches of Find",
+          "Alt+Enter",
+          "⌥Enter"
+        ],
+        [
+          "Search in files",
+          "Ctrl+Shift+F",
+          "⇧⌘F"
+        ],
+        [
+          "Replace in files",
+          "Ctrl+Shift+H",
+          "⇧⌘H"
+        ]
+      ]
+    },
+    {
+      "title": "Code intelligence",
+      "description": "Suggestions, formatting and refactoring.",
+      "rows": [
+        [
+          "Trigger suggestions",
+          "Ctrl+Space",
+          "⌃Space"
+        ],
+        [
+          "Parameter hints",
+          "Ctrl+Shift+Space",
+          "⇧⌘Space"
+        ],
+        [
+          "Quick fix / code actions",
+          "Ctrl+.",
+          "⌘."
+        ],
+        [
+          "Rename symbol",
+          "F2",
+          "F2"
+        ],
+        [
+          "Format document",
+          [
+            "Shift+Alt+F",
+            "Ctrl+Shift+I (Linux)"
+          ],
+          "⇧⌥F"
+        ],
+        [
+          "Format selection",
+          "Ctrl+K Ctrl+F",
+          "⌘K ⌘F"
+        ],
+        [
+          "Show hover info",
+          "Ctrl+K Ctrl+I",
+          "⌘K ⌘I"
+        ],
+        [
+          "Trim trailing whitespace",
+          "Ctrl+K Ctrl+X",
+          "⌘K ⌘X"
+        ]
+      ]
+    },
+    {
+      "title": "Editors & files",
+      "description": "Tabs, splits and saving.",
+      "rows": [
+        [
+          "Save / save all",
+          [
+            "Ctrl+S",
+            "Ctrl+K S"
+          ],
+          [
+            "⌘S",
+            "⌥⌘S"
+          ]
+        ],
+        [
+          "Close editor",
+          "Ctrl+W",
+          "⌘W"
+        ],
+        [
+          "Reopen closed editor",
+          "Ctrl+Shift+T",
+          "⇧⌘T"
+        ],
+        [
+          "Split editor",
+          "Ctrl+\\",
+          "⌘\\"
+        ],
+        [
+          "Focus editor group 1 / 2 / 3",
+          [
+            "Ctrl+1",
+            "Ctrl+2",
+            "Ctrl+3"
+          ],
+          [
+            "⌘1",
+            "⌘2",
+            "⌘3"
+          ]
+        ],
+        [
+          "Next / previous tab",
+          [
+            "Ctrl+PageDown",
+            "Ctrl+PageUp"
+          ],
+          [
+            "⌥⌘→",
+            "⌥⌘←"
+          ]
+        ],
+        [
+          "Keep preview tab open",
+          "Ctrl+K Enter",
+          "⌘K Enter"
+        ],
+        [
+          "New file",
+          "Ctrl+N",
+          "⌘N"
+        ],
+        [
+          "Markdown preview to the side",
+          "Ctrl+K V",
+          "⌘K V"
+        ]
+      ]
+    },
+    {
+      "title": "Views",
+      "description": "Open sidebar views and panels.",
+      "rows": [
+        [
+          "Explorer",
+          "Ctrl+Shift+E",
+          "⇧⌘E"
+        ],
+        [
+          "Search",
+          "Ctrl+Shift+F",
+          "⇧⌘F"
+        ],
+        [
+          "Source Control",
+          "Ctrl+Shift+G",
+          "⌃⇧G"
+        ],
+        [
+          "Run and Debug",
+          "Ctrl+Shift+D",
+          "⇧⌘D"
+        ],
+        [
+          "Extensions",
+          "Ctrl+Shift+X",
+          "⇧⌘X"
+        ],
+        [
+          "Problems",
+          "Ctrl+Shift+M",
+          "⇧⌘M"
+        ],
+        [
+          "Output",
+          "Ctrl+Shift+U",
+          "⇧⌘U"
+        ]
+      ]
+    },
+    {
+      "title": "Debugging",
+      "description": "Run, step and inspect.",
+      "rows": [
+        [
+          "Start / continue",
+          "F5",
+          "F5"
+        ],
+        [
+          "Run without debugging",
+          "Ctrl+F5",
+          "⌃F5"
+        ],
+        [
+          "Stop",
+          "Shift+F5",
+          "⇧F5"
+        ],
+        [
+          "Toggle breakpoint",
+          "F9",
+          "F9"
+        ],
+        [
+          "Step over",
+          "F10",
+          "F10"
+        ],
+        [
+          "Step into / out",
+          [
+            "F11",
+            "Shift+F11"
+          ],
+          [
+            "F11",
+            "⇧F11"
+          ]
+        ]
+      ]
+    }
+  ]
+}

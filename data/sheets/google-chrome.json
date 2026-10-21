@@ -1,0 +1,54 @@
+{
+  "slug": "google-chrome",
+  "title": "Google Chrome",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Google Chrome.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Chrome keyboard shortcuts",
+              "url": "https://support.google.com/chrome/answer/157179"
+            },
+            {
+              "name": "Chrome DevTools",
+              "url": "https://developer.chrome.com/docs/devtools/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.google.com/chrome/"
+            },
+            {
+              "name": "Wikipedia Google Chrome",
+              "url": "https://en.wikipedia.org/wiki/Google_Chrome"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Chrome Devtools Cheat Sheet",
+              "url": "http://anti-code.com/devtools-cheatsheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Google",
+              "url": "/google/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

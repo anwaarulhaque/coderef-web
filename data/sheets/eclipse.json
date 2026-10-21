@@ -1,0 +1,58 @@
+{
+  "slug": "eclipse",
+  "title": "Eclipse",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Eclipse.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Eclipse IDE docs",
+              "url": "https://help.eclipse.org/latest/index.jsp"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.eclipse.org/"
+            },
+            {
+              "name": "Wikipedia Eclipse",
+              "url": "https://en.wikipedia.org/wiki/Eclipse_%28software%29"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Eclipse Keyboard Shortcuts [.pdf, rtf]",
+              "url": "http://eclipse-tools.sourceforge.net/shortcuts.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "BIRT",
+              "url": "/birt/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "NetBeans",
+              "url": "/netbeans/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

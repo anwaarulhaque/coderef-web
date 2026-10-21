@@ -1,0 +1,28 @@
+{
+  "slug": "rip",
+  "title": "RIP",
+  "category": "Networking",
+  "description": "Reference links and cheat sheets for RIP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "RFC 2453 (RIPv2)",
+              "url": "https://www.rfc-editor.org/rfc/rfc2453"
+            },
+            {
+              "name": "Wikipedia RIP",
+              "url": "https://en.wikipedia.org/wiki/RIPv2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

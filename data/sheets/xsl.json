@@ -1,0 +1,61 @@
+{
+  "slug": "xsl",
+  "title": "XSL",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for XSL.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "XSL-FO 1.1 (W3C)",
+              "url": "https://www.w3.org/TR/xsl11/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.w3.org/Style/XSL/"
+            },
+            {
+              "name": "Wikipedia XSL",
+              "url": "https://en.wikipedia.org/wiki/Extensible_Stylesheet_Language"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "MathML",
+              "url": "/mathml/"
+            },
+            {
+              "name": "XHTML",
+              "url": "/xhtml/"
+            },
+            {
+              "name": "XML",
+              "url": "/xml/"
+            },
+            {
+              "name": "XML Schema",
+              "url": "/xml-schema/"
+            },
+            {
+              "name": "XPath",
+              "url": "/xpath/"
+            },
+            {
+              "name": "XSLT",
+              "url": "/xslt/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

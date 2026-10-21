@@ -1,0 +1,53 @@
+{
+  "slug": "maple",
+  "title": "Maple",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Maple.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Maple Help",
+              "url": "https://www.maplesoft.com/support/help/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.maplesoft.com/products/maple/"
+            },
+            {
+              "name": "Wikipedia Maple",
+              "url": "https://en.wikipedia.org/wiki/Maple_(software)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Math",
+              "url": "/math/"
+            },
+            {
+              "name": "Mathematica",
+              "url": "/mathematica/"
+            },
+            {
+              "name": "MATLAB",
+              "url": "/matlab/"
+            },
+            {
+              "name": "Maxima",
+              "url": "/maxima/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

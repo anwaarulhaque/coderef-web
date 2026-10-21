@@ -1,0 +1,53 @@
+{
+  "slug": "ocaml",
+  "title": "OCaml",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for OCaml.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "OCaml manual",
+              "url": "https://ocaml.org/manual/"
+            },
+            {
+              "name": "OCaml docs",
+              "url": "https://ocaml.org/docs"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://ocaml.org/"
+            },
+            {
+              "name": "Wikipedia OCaml",
+              "url": "https://en.wikipedia.org/wiki/OCaml"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Clojure",
+              "url": "/clojure/"
+            },
+            {
+              "name": "Erlang",
+              "url": "/erlang/"
+            },
+            {
+              "name": "Haskell",
+              "url": "/haskell/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

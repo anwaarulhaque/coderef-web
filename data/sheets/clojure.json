@@ -1,0 +1,61 @@
+{
+  "slug": "clojure",
+  "title": "Clojure",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Clojure.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Clojure Reference",
+              "url": "https://clojure.org/reference/reader"
+            },
+            {
+              "name": "ClojureDocs",
+              "url": "https://clojuredocs.org/"
+            },
+            {
+              "name": "Clojure Cheatsheet",
+              "url": "https://clojure.org/api/cheatsheet"
+            },
+            {
+              "name": "Official website's cheat sheet",
+              "url": "http://clojure.org/cheatsheet"
+            },
+            {
+              "name": "Official website",
+              "url": "http://clojure.org/"
+            },
+            {
+              "name": "Wikipedia: Clojure",
+              "url": "https://ru.wikipedia.org/wiki/Clojure"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Erlang",
+              "url": "/erlang/"
+            },
+            {
+              "name": "Haskell",
+              "url": "/haskell/"
+            },
+            {
+              "name": "OCaml",
+              "url": "/ocaml/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

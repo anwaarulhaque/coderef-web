@@ -1,0 +1,37 @@
+{
+  "slug": "smile",
+  "title": "Smile",
+  "category": "Miscellaneous",
+  "description": "Reference links and cheat sheets for Smile.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Smile",
+              "url": "https://en.wikipedia.org/wiki/Emoticon"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "THE CANONICAL SMILEY (AND 1-LINE SYMBOL) LIST",
+              "url": "http://www.iconsfree.org/free-icons/language/eng/c/getArticle/articleName/canonicalSmileyList/canonical-smiley-list.html"
+            },
+            {
+              "name": "Japanese Smileys (Emoticons)",
+              "url": "http://www.iconsfree.org/free-icons/language/eng/c/getArticle/articleName/japaneseSmileysEmoticons/japanese-smileys-emoticons.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

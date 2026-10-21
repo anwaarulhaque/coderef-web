@@ -1,0 +1,37 @@
+{
+  "slug": "probability-theory",
+  "title": "Probability Theory",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Probability Theory.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Probability (Khan Academy)",
+              "url": "https://www.khanacademy.org/math/statistics-probability/probability-library"
+            },
+            {
+              "name": "Wikipedia Probability Theory",
+              "url": "https://en.wikipedia.org/wiki/Probability_theory"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Math",
+              "url": "/math/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

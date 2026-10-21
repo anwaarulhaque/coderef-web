@@ -1,0 +1,33 @@
+{
+  "slug": "logic",
+  "title": "Logic",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Logic.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Logic",
+              "url": "https://en.wikipedia.org/wiki/Logic"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Logic gate",
+              "url": "https://en.wikipedia.org/wiki/Logic_gate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

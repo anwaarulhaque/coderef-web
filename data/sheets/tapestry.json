@@ -1,0 +1,49 @@
+{
+  "slug": "tapestry",
+  "title": "Tapestry",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Tapestry.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apache Tapestry",
+              "url": "https://tapestry.apache.org/documentation.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://tapestry.apache.org/"
+            },
+            {
+              "name": "Wikipedia Tapestry",
+              "url": "https://en.wikipedia.org/wiki/Tapestry_(programming)"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            },
+            {
+              "name": "Design Pattern",
+              "url": "/design-pattern/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

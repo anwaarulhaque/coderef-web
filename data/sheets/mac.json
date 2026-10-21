@@ -1,0 +1,37 @@
+{
+  "slug": "mac",
+  "title": "Mac",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Mac.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Mac keyboard shortcuts",
+              "url": "https://support.apple.com/en-us/102650"
+            },
+            {
+              "name": "Wikipedia Mac",
+              "url": "https://en.wikipedia.org/wiki/Macintosh"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Mac OS X",
+              "url": "/osx/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

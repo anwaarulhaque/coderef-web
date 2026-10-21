@@ -1,0 +1,269 @@
+{
+  "slug": "regex",
+  "updated": "2026-10-14",
+  "title": "Regex",
+  "category": "Tools",
+  "color": "#8b5cf6",
+  "language": "regex",
+  "description": "Regular expressions: character classes, anchors, quantifiers, groups, lookarounds, flags and ready-made patterns.",
+  "docs": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions",
+  "try": {
+    "label": "Test patterns in the Regex Tester",
+    "href": "/regex-tester/"
+  },
+  "sections": [
+    {
+      "title": "Characters",
+      "description": "What to match.",
+      "rows": [
+        [
+          "Any character except newline",
+          "."
+        ],
+        [
+          "Digit / not a digit",
+          [
+            "\\d",
+            "\\D"
+          ]
+        ],
+        [
+          "Word character / not",
+          [
+            "\\w",
+            "\\W"
+          ]
+        ],
+        [
+          "Whitespace / not",
+          [
+            "\\s",
+            "\\S"
+          ]
+        ],
+        [
+          "One of these characters",
+          "[aeiou]"
+        ],
+        [
+          "Not one of these",
+          "[^aeiou]"
+        ],
+        [
+          "A range",
+          [
+            "[a-z]",
+            "[A-Z0-9]"
+          ]
+        ],
+        [
+          "Escape a special character",
+          [
+            "\\.",
+            "\\*",
+            "\\(",
+            "\\\\"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Anchors",
+      "description": "Where to match.",
+      "rows": [
+        [
+          "Start / end of string",
+          [
+            "^",
+            "$"
+          ]
+        ],
+        [
+          "Start / end of each line",
+          "^ and $ with the m flag"
+        ],
+        [
+          "Word boundary",
+          "\\bcat\\b"
+        ]
+      ]
+    },
+    {
+      "title": "Quantifiers",
+      "description": "How many times.",
+      "rows": [
+        [
+          "Zero or more",
+          "a*"
+        ],
+        [
+          "One or more",
+          "a+"
+        ],
+        [
+          "Optional",
+          "colou?r"
+        ],
+        [
+          "Exactly n",
+          "\\d{4}"
+        ],
+        [
+          "n or more / between n and m",
+          [
+            "\\d{2,}",
+            "\\d{2,4}"
+          ]
+        ],
+        [
+          "As few as possible (lazy)",
+          [
+            "<.+?>",
+            "\\d+?"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Groups & lookarounds",
+      "description": "Capture and assert.",
+      "rows": [
+        [
+          "Capture group",
+          "(\\d{3})-(\\d{4})"
+        ],
+        [
+          "Named group",
+          "(?<year>\\d{4})-(?<month>\\d{2})"
+        ],
+        [
+          "Group without capturing",
+          "(?:https?)://"
+        ],
+        [
+          "Either / or",
+          "cat|dog"
+        ],
+        [
+          "Repeat a captured group",
+          "(\\w)\\1  # doubled letter"
+        ],
+        [
+          "Followed by / not followed by",
+          [
+            "\\d+(?=px)",
+            "\\d+(?!px)"
+          ]
+        ],
+        [
+          "Preceded by / not preceded by",
+          [
+            "(?<=\\$)\\d+",
+            "(?<!\\$)\\d+"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Flags",
+      "description": "Change how the pattern matches.",
+      "rows": [
+        [
+          "Find all matches",
+          "/pattern/g"
+        ],
+        [
+          "Ignore case",
+          "/pattern/i"
+        ],
+        [
+          "^ and $ per line",
+          "/pattern/m"
+        ],
+        [
+          "Dot matches newline",
+          "/pattern/s"
+        ],
+        [
+          "Unicode",
+          [
+            "/\\p{L}+/u",
+            "/[\\p{Emoji}]/v"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Common patterns",
+      "description": "Starting points — adjust to your needs.",
+      "rows": [
+        [
+          "Email (simple)",
+          "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+        ],
+        [
+          "URL",
+          "https?:\\/\\/[\\w.-]+(?:\\.[\\w.-]+)+[\\w\\-._~:/?#[\\]@!$&'()*+,;=]*"
+        ],
+        [
+          "Date (YYYY-MM-DD)",
+          "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+        ],
+        [
+          "Time (24h HH:MM)",
+          "^([01]\\d|2[0-3]):[0-5]\\d$"
+        ],
+        [
+          "Hex color",
+          "^#(?:[0-9a-fA-F]{3}){1,2}$"
+        ],
+        [
+          "IPv4 address",
+          "^((25[0-5]|2[0-4]\\d|1?\\d?\\d)\\.){3}(25[0-5]|2[0-4]\\d|1?\\d?\\d)$"
+        ],
+        [
+          "Strong password (8+, upper, lower, digit)",
+          "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$"
+        ],
+        [
+          "Slug",
+          "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        ],
+        [
+          "Whitespace at either end",
+          "^\\s+|\\s+$"
+        ]
+      ]
+    },
+    {
+      "title": "Using regex in JavaScript",
+      "description": "Apply patterns in code.",
+      "rows": [
+        [
+          "Test for a match",
+          "/^\\d+$/.test(input)"
+        ],
+        [
+          "Get the first match",
+          "const m = text.match(/(\\d+)/); m?.[1]"
+        ],
+        [
+          "All matches with groups",
+          "for (const m of text.matchAll(/(\\w+)@(\\w+)/g)) { }"
+        ],
+        [
+          "Replace with groups",
+          "text.replace(/(\\w+) (\\w+)/, \"$2 $1\")"
+        ],
+        [
+          "Split on a pattern",
+          "text.split(/\\s*,\\s*/)"
+        ],
+        [
+          "Build from a string",
+          "new RegExp(`^${word}$`, \"i\")"
+        ]
+      ]
+    }
+  ]
+}

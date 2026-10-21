@@ -1,0 +1,49 @@
+{
+  "slug": "bowler",
+  "title": "Bowler",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for Bowler.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Improve this Cheat-Sheet",
+              "url": "https://github.com/NeuronRobotics/overthecs.github.io/blob/master/_posts/detail/2016-02-14-bowler.html"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Clojure",
+              "url": "/clojure/"
+            },
+            {
+              "name": "Groovy",
+              "url": "/groovy/"
+            },
+            {
+              "name": "Python",
+              "url": "/python/"
+            },
+            {
+              "name": "Java",
+              "url": "/java/"
+            },
+            {
+              "name": "OpenCV",
+              "url": "/opencv/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

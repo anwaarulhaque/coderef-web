@@ -1,0 +1,49 @@
+{
+  "slug": "flash-catalyst",
+  "title": "Flash Catalyst",
+  "category": "Applications",
+  "description": "Reference links and cheat sheets for Flash Catalyst.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Official Website",
+              "url": "http://www.adobe.com/products/flashcatalyst/"
+            },
+            {
+              "name": "Wikipedia Flash Catalyst",
+              "url": "https://en.wikipedia.org/wiki/Adobe_Flash_Catalyst"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Adobe Systems",
+              "url": "/adobe/"
+            },
+            {
+              "name": "Flash",
+              "url": "/flash/"
+            },
+            {
+              "name": "Flex",
+              "url": "/flex/"
+            },
+            {
+              "name": "Silverlight",
+              "url": "/silverlight/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

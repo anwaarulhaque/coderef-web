@@ -1,0 +1,41 @@
+{
+  "slug": "dtd",
+  "title": "DTD (Document Type Declaration)",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for DTD.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "XML 1.0: Document Type Declaration",
+              "url": "https://www.w3.org/TR/xml/#dt-doctype"
+            },
+            {
+              "name": "Wikipedia Document Type Declaration",
+              "url": "https://en.wikipedia.org/wiki/Document_Type_Declaration"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Recommended DTDs to use in your Web document",
+              "url": "http://www.w3.org/QA/2002/04/valid-dtd-list.html"
+            },
+            {
+              "name": "DTD in one page",
+              "url": "http://www.xml.su/dtd.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

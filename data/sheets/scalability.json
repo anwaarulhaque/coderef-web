@@ -1,0 +1,33 @@
+{
+  "slug": "scalability",
+  "title": "Scalability",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for Scalability.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Scalability",
+              "url": "https://en.wikipedia.org/wiki/High_availability"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Cloud Computing",
+              "url": "/cloud-computing/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

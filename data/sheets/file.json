@@ -1,0 +1,28 @@
+{
+  "slug": "file",
+  "title": "File",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for File.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "file(1)",
+              "url": "https://man7.org/linux/man-pages/man1/file.1.html"
+            },
+            {
+              "name": "Wikipedia File",
+              "url": "https://en.wikipedia.org/wiki/Computer_file"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

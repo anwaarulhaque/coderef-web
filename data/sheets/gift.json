@@ -1,0 +1,24 @@
+{
+  "slug": "gift",
+  "title": "Gift",
+  "category": "Miscellaneous",
+  "description": "Reference links and cheat sheets for Gift.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wikipedia Gift",
+              "url": "https://en.wikipedia.org/wiki/Gift"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

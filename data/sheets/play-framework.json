@@ -1,0 +1,28 @@
+{
+  "slug": "play-framework",
+  "title": "Play Framework",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Play Framework.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Play Framework docs",
+              "url": "https://www.playframework.com/documentation/latest/Home"
+            },
+            {
+              "name": "Wikipedia Play Framework",
+              "url": "https://en.wikipedia.org/wiki/Play_Framework"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

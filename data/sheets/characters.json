@@ -1,0 +1,798 @@
+{
+  "slug": "characters",
+  "title": "Characters",
+  "category": "Web",
+  "color": "#64748b",
+  "description": "Special characters with their HTML entities: arrows, math, currency, punctuation, Greek and symbols.",
+  "reference": "https://html.spec.whatwg.org/multipage/named-characters.html",
+  "sections": [
+    {
+      "title": "Punctuation & Typography",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "&  &amp;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0026"
+            },
+            {
+              "name": "<  &lt;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=003C"
+            },
+            {
+              "name": ">  &gt;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=003E"
+            },
+            {
+              "name": "\"  &quot;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0022"
+            },
+            {
+              "name": "'  &apos;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0027"
+            },
+            {
+              "name": "   &nbsp;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A0"
+            },
+            {
+              "name": "–  &ndash;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2013"
+            },
+            {
+              "name": "—  &mdash;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2014"
+            },
+            {
+              "name": "…  &hellip;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2026"
+            },
+            {
+              "name": "‘  &lsquo;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2018"
+            },
+            {
+              "name": "’  &rsquo;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2019"
+            },
+            {
+              "name": "“  &ldquo;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=201C"
+            },
+            {
+              "name": "”  &rdquo;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=201D"
+            },
+            {
+              "name": "«  &laquo;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00AB"
+            },
+            {
+              "name": "»  &raquo;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00BB"
+            },
+            {
+              "name": "•  &bull;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2022"
+            },
+            {
+              "name": "·  &middot;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00B7"
+            },
+            {
+              "name": "¶  &para;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00B6"
+            },
+            {
+              "name": "§  &sect;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A7"
+            },
+            {
+              "name": "†  &dagger;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2020"
+            },
+            {
+              "name": "‡  &Dagger;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2021"
+            },
+            {
+              "name": "¡  &iexcl;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A1"
+            },
+            {
+              "name": "¿  &iquest;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00BF"
+            },
+            {
+              "name": "′  &prime;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2032"
+            },
+            {
+              "name": "″  &Prime;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2033"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Legal & Marks",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "©  &copy;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A9"
+            },
+            {
+              "name": "®  &reg;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00AE"
+            },
+            {
+              "name": "™  &trade;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2122"
+            },
+            {
+              "name": "℠  &#x2120;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2120"
+            },
+            {
+              "name": "°  &deg;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00B0"
+            },
+            {
+              "name": "℃  &#x2103;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2103"
+            },
+            {
+              "name": "℉  &#x2109;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2109"
+            },
+            {
+              "name": "№  &#x2116;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2116"
+            },
+            {
+              "name": "℗  &#x2117;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2117"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Currency",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "$  &dollar;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0024"
+            },
+            {
+              "name": "¢  &cent;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A2"
+            },
+            {
+              "name": "£  &pound;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A3"
+            },
+            {
+              "name": "€  &euro;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20AC"
+            },
+            {
+              "name": "¥  &yen;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A5"
+            },
+            {
+              "name": "₹  &#x20B9;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20B9"
+            },
+            {
+              "name": "₩  &#x20A9;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20A9"
+            },
+            {
+              "name": "₽  &#x20BD;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20BD"
+            },
+            {
+              "name": "₺  &#x20BA;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20BA"
+            },
+            {
+              "name": "₿  &#x20BF;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20BF"
+            },
+            {
+              "name": "¤  &curren;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00A4"
+            },
+            {
+              "name": "₱  &#x20B1;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20B1"
+            },
+            {
+              "name": "₫  &#x20AB;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20AB"
+            },
+            {
+              "name": "₦  &#x20A6;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=20A6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Math",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "±  &plusmn;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00B1"
+            },
+            {
+              "name": "×  &times;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00D7"
+            },
+            {
+              "name": "÷  &divide;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00F7"
+            },
+            {
+              "name": "≠  &ne;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2260"
+            },
+            {
+              "name": "≈  &asymp;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2248"
+            },
+            {
+              "name": "≤  &le;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2264"
+            },
+            {
+              "name": "≥  &ge;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2265"
+            },
+            {
+              "name": "∞  &infin;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=221E"
+            },
+            {
+              "name": "√  &radic;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=221A"
+            },
+            {
+              "name": "∑  &sum;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2211"
+            },
+            {
+              "name": "∏  &prod;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=220F"
+            },
+            {
+              "name": "∫  &int;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=222B"
+            },
+            {
+              "name": "∂  &part;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2202"
+            },
+            {
+              "name": "∆  &#x2206;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2206"
+            },
+            {
+              "name": "∇  &nabla;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2207"
+            },
+            {
+              "name": "∈  &isin;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2208"
+            },
+            {
+              "name": "∉  &notin;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2209"
+            },
+            {
+              "name": "∩  &cap;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2229"
+            },
+            {
+              "name": "∪  &cup;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=222A"
+            },
+            {
+              "name": "⊂  &sub;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2282"
+            },
+            {
+              "name": "⊃  &sup;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2283"
+            },
+            {
+              "name": "∀  &forall;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2200"
+            },
+            {
+              "name": "∃  &exist;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2203"
+            },
+            {
+              "name": "∅  &empty;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2205"
+            },
+            {
+              "name": "¬  &not;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00AC"
+            },
+            {
+              "name": "∧  &and;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2227"
+            },
+            {
+              "name": "∨  &or;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2228"
+            },
+            {
+              "name": "≡  &equiv;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2261"
+            },
+            {
+              "name": "∝  &prop;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=221D"
+            },
+            {
+              "name": "‰  &permil;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2030"
+            },
+            {
+              "name": "½  &frac12;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00BD"
+            },
+            {
+              "name": "¼  &frac14;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00BC"
+            },
+            {
+              "name": "¾  &frac34;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00BE"
+            },
+            {
+              "name": "²  &sup2;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00B2"
+            },
+            {
+              "name": "³  &sup3;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00B3"
+            },
+            {
+              "name": "µ  &micro;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00B5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arrows",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "←  &larr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2190"
+            },
+            {
+              "name": "→  &rarr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2192"
+            },
+            {
+              "name": "↑  &uarr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2191"
+            },
+            {
+              "name": "↓  &darr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2193"
+            },
+            {
+              "name": "↔  &harr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2194"
+            },
+            {
+              "name": "↕  &#x2195;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2195"
+            },
+            {
+              "name": "⇐  &lArr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21D0"
+            },
+            {
+              "name": "⇒  &rArr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21D2"
+            },
+            {
+              "name": "⇑  &uArr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21D1"
+            },
+            {
+              "name": "⇓  &dArr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21D3"
+            },
+            {
+              "name": "⇔  &hArr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21D4"
+            },
+            {
+              "name": "↵  &crarr;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21B5"
+            },
+            {
+              "name": "↩  &#x21A9;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21A9"
+            },
+            {
+              "name": "↻  &#x21BB;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21BB"
+            },
+            {
+              "name": "➜  &#x279C;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=279C"
+            },
+            {
+              "name": "⟶  &#x27F6;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=27F6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Greek",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "α  &alpha;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03B1"
+            },
+            {
+              "name": "β  &beta;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03B2"
+            },
+            {
+              "name": "γ  &gamma;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03B3"
+            },
+            {
+              "name": "δ  &delta;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03B4"
+            },
+            {
+              "name": "ε  &epsilon;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03B5"
+            },
+            {
+              "name": "θ  &theta;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03B8"
+            },
+            {
+              "name": "λ  &lambda;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03BB"
+            },
+            {
+              "name": "μ  &mu;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03BC"
+            },
+            {
+              "name": "π  &pi;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C0"
+            },
+            {
+              "name": "ρ  &rho;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C1"
+            },
+            {
+              "name": "σ  &sigma;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C3"
+            },
+            {
+              "name": "τ  &tau;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C4"
+            },
+            {
+              "name": "φ  &phi;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C6"
+            },
+            {
+              "name": "χ  &chi;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C7"
+            },
+            {
+              "name": "ψ  &psi;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C8"
+            },
+            {
+              "name": "ω  &omega;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03C9"
+            },
+            {
+              "name": "Γ  &Gamma;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0393"
+            },
+            {
+              "name": "Δ  &Delta;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0394"
+            },
+            {
+              "name": "Θ  &Theta;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0398"
+            },
+            {
+              "name": "Λ  &Lambda;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=039B"
+            },
+            {
+              "name": "Π  &Pi;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03A0"
+            },
+            {
+              "name": "Σ  &Sigma;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03A3"
+            },
+            {
+              "name": "Φ  &Phi;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03A6"
+            },
+            {
+              "name": "Ψ  &Psi;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03A8"
+            },
+            {
+              "name": "Ω  &Omega;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=03A9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shapes & Symbols",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "■  &#x25A0;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=25A0"
+            },
+            {
+              "name": "□  &#x25A1;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=25A1"
+            },
+            {
+              "name": "▲  &#x25B2;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=25B2"
+            },
+            {
+              "name": "▼  &#x25BC;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=25BC"
+            },
+            {
+              "name": "◆  &#x25C6;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=25C6"
+            },
+            {
+              "name": "●  &#x25CF;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=25CF"
+            },
+            {
+              "name": "○  &#x25CB;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=25CB"
+            },
+            {
+              "name": "★  &#x2605;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2605"
+            },
+            {
+              "name": "☆  &#x2606;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2606"
+            },
+            {
+              "name": "♠  &spades;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2660"
+            },
+            {
+              "name": "♣  &clubs;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2663"
+            },
+            {
+              "name": "♥  &hearts;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2665"
+            },
+            {
+              "name": "♦  &diams;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2666"
+            },
+            {
+              "name": "✓  &check;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2713"
+            },
+            {
+              "name": "✗  &#x2717;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2717"
+            },
+            {
+              "name": "☐  &#x2610;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2610"
+            },
+            {
+              "name": "☑  &#x2611;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2611"
+            },
+            {
+              "name": "☀  &#x2600;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2600"
+            },
+            {
+              "name": "☁  &#x2601;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2601"
+            },
+            {
+              "name": "☂  &#x2602;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2602"
+            },
+            {
+              "name": "☎  &#x260E;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=260E"
+            },
+            {
+              "name": "✉  &#x2709;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2709"
+            },
+            {
+              "name": "✂  &#x2702;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2702"
+            },
+            {
+              "name": "⌘  &#x2318;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2318"
+            },
+            {
+              "name": "⌥  &#x2325;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=2325"
+            },
+            {
+              "name": "⇧  &#x21E7;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=21E7"
+            },
+            {
+              "name": "⌫  &#x232B;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=232B"
+            },
+            {
+              "name": "⏎  &#x23CE;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=23CE"
+            },
+            {
+              "name": "♪  &#x266A;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=266A"
+            },
+            {
+              "name": "♫  &#x266B;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=266B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Accented Letters",
+      "groups": [
+        {
+          "items": [
+            {
+              "name": "á  &aacute;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E1"
+            },
+            {
+              "name": "à  &agrave;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E0"
+            },
+            {
+              "name": "â  &acirc;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E2"
+            },
+            {
+              "name": "ä  &auml;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E4"
+            },
+            {
+              "name": "ã  &atilde;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E3"
+            },
+            {
+              "name": "å  &aring;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E5"
+            },
+            {
+              "name": "æ  &aelig;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E6"
+            },
+            {
+              "name": "ç  &ccedil;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E7"
+            },
+            {
+              "name": "é  &eacute;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E9"
+            },
+            {
+              "name": "è  &egrave;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00E8"
+            },
+            {
+              "name": "ê  &ecirc;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00EA"
+            },
+            {
+              "name": "ë  &euml;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00EB"
+            },
+            {
+              "name": "í  &iacute;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00ED"
+            },
+            {
+              "name": "ï  &iuml;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00EF"
+            },
+            {
+              "name": "ñ  &ntilde;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00F1"
+            },
+            {
+              "name": "ó  &oacute;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00F3"
+            },
+            {
+              "name": "ö  &ouml;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00F6"
+            },
+            {
+              "name": "ø  &oslash;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00F8"
+            },
+            {
+              "name": "œ  &oelig;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=0153"
+            },
+            {
+              "name": "ß  &szlig;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00DF"
+            },
+            {
+              "name": "ú  &uacute;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00FA"
+            },
+            {
+              "name": "ü  &uuml;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00FC"
+            },
+            {
+              "name": "ý  &yacute;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00FD"
+            },
+            {
+              "name": "ÿ  &yuml;",
+              "url": "https://util.unicode.org/UnicodeJsps/character.jsp?a=00FF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

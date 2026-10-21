@@ -1,0 +1,238 @@
+{
+  "container-queries": {
+    "language": "css",
+    "code": ".card-list {\n  container-type: inline-size;\n  container-name: cards;\n}\n\n/* Lay the card out horizontally once its container is wide enough */\n@container cards (min-width: 400px) {\n  .card {\n    display: grid;\n    grid-template-columns: 120px 1fr;\n  }\n}"
+  },
+  "container-style-queries": {
+    "language": "css",
+    "code": ".card-list { --variant: compact; }\n\n@container style(--variant: compact) {\n  .card { padding: 4px; font-size: 0.875rem; }\n}"
+  },
+  "has": {
+    "language": "css",
+    "code": "/* Style a card differently when it contains an image */\n.card:has(img) {\n  grid-template-rows: 200px auto;\n}\n\n/* Highlight a form field's label when its input is invalid */\nlabel:has(+ input:user-invalid) {\n  color: crimson;\n}"
+  },
+  "nesting": {
+    "language": "css",
+    "code": ".card {\n  padding: 1rem;\n\n  & h2 { margin: 0; }\n\n  &:hover { box-shadow: 0 2px 8px rgb(0 0 0 / 0.2); }\n\n  @media (width > 600px) {\n    padding: 2rem;\n  }\n}"
+  },
+  "grid": {
+    "language": "css",
+    "code": ".layout {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n  gap: 1rem;\n}\n\n.layout > .featured {\n  grid-column: span 2;\n}"
+  },
+  "subgrid": {
+    "language": "css",
+    "code": ".cards {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}\n\n/* Each card's rows line up with its siblings' rows */\n.card {\n  display: grid;\n  grid-row: span 3;\n  grid-template-rows: subgrid;\n}"
+  },
+  "flexbox": {
+    "language": "css",
+    "code": ".toolbar {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.toolbar .search {\n  flex: 1;\n}"
+  },
+  "flexbox-gap": {
+    "language": "css",
+    "code": ".tags {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 8px 12px; /* row-gap column-gap */\n}"
+  },
+  "dialog": {
+    "language": "html",
+    "code": "<dialog id=\"confirm\">\n  <form method=\"dialog\">\n    <p>Delete this file?</p>\n    <button value=\"cancel\">Cancel</button>\n    <button value=\"ok\">Delete</button>\n  </form>\n</dialog>\n\n<script>\n  const dialog = document.getElementById(\"confirm\");\n  dialog.showModal(); // modal, with ::backdrop and focus trapping\n  dialog.addEventListener(\"close\", () => console.log(dialog.returnValue));\n</script>"
+  },
+  "popover": {
+    "language": "html",
+    "code": "<button popovertarget=\"menu\">Open menu</button>\n\n<div id=\"menu\" popover>\n  <a href=\"/profile\">Profile</a>\n  <a href=\"/logout\">Log out</a>\n</div>\n\n<!-- Light-dismiss, top layer and Esc-to-close come for free. -->"
+  },
+  "view-transitions": {
+    "language": "js",
+    "code": "function updateView(render) {\n  if (!document.startViewTransition) {\n    render(); // fallback: update without animation\n    return;\n  }\n  document.startViewTransition(() => render());\n}\n\n/* CSS: customise the default cross-fade */\n/* ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 300ms; } */"
+  },
+  "cross-document-view-transitions": {
+    "language": "css",
+    "code": "/* Opt in on both the old and the new page */\n@view-transition {\n  navigation: auto;\n}\n\n/* Morph the same element between pages */\n.hero-image {\n  view-transition-name: hero;\n}"
+  },
+  "fetch": {
+    "language": "js",
+    "code": "const response = await fetch(\"/api/users\", {\n  method: \"POST\",\n  headers: { \"Content-Type\": \"application/json\" },\n  body: JSON.stringify({ name: \"Ada\" }),\n});\n\nif (!response.ok) throw new Error(`HTTP ${response.status}`);\nconst user = await response.json();"
+  },
+  "intersection-observer": {
+    "language": "js",
+    "code": "const observer = new IntersectionObserver((entries) => {\n  for (const entry of entries) {\n    if (entry.isIntersecting) {\n      entry.target.classList.add(\"visible\");\n      observer.unobserve(entry.target);\n    }\n  }\n}, { rootMargin: \"0px 0px -10% 0px\" });\n\ndocument.querySelectorAll(\".reveal\").forEach((el) => observer.observe(el));"
+  },
+  "resize-observer": {
+    "language": "js",
+    "code": "const observer = new ResizeObserver((entries) => {\n  for (const entry of entries) {\n    const { inlineSize } = entry.contentBoxSize[0];\n    entry.target.dataset.size = inlineSize > 600 ? \"large\" : \"small\";\n  }\n});\n\nobserver.observe(document.querySelector(\".chart\"));"
+  },
+  "mutationobserver": {
+    "language": "js",
+    "code": "const observer = new MutationObserver((mutations) => {\n  for (const m of mutations) console.log(m.type, m.addedNodes);\n});\n\nobserver.observe(document.body, { childList: true, subtree: true });\n// later: observer.disconnect();"
+  },
+  "async-await": {
+    "language": "js",
+    "code": "async function loadUser(id) {\n  try {\n    const res = await fetch(`/api/users/${id}`);\n    return await res.json();\n  } catch (err) {\n    console.error(\"Failed to load user\", err);\n  }\n}"
+  },
+  "promise-any": {
+    "language": "js",
+    "code": "// Resolves with the first mirror that responds successfully\nconst fastest = await Promise.any([\n  fetch(\"https://mirror-a.example/data.json\"),\n  fetch(\"https://mirror-b.example/data.json\"),\n]);"
+  },
+  "nullish-coalescing": {
+    "language": "js",
+    "code": "const timeout = options.timeout ?? 3000; // keeps 0, unlike ||\nsettings.theme ??= \"light\";            // assign only if null/undefined"
+  },
+  "structured-clone": {
+    "language": "js",
+    "code": "const original = { date: new Date(), tags: new Set([\"a\"]), nested: { n: 1 } };\nconst copy = structuredClone(original); // deep copy, keeps Date/Set/Map\ncopy.nested.n = 2;\nconsole.log(original.nested.n); // 1"
+  },
+  "top-level-await": {
+    "language": "js",
+    "code": "// In an ES module (type=\"module\"), no async wrapper needed\nconst config = await fetch(\"/config.json\").then((r) => r.json());\nexport default config;"
+  },
+  "import-maps": {
+    "language": "html",
+    "code": "<script type=\"importmap\">\n  {\n    \"imports\": {\n      \"lodash\": \"https://cdn.jsdelivr.net/npm/lodash-es@4.17.21/lodash.js\"\n    }\n  }\n</script>\n\n<script type=\"module\">\n  import { debounce } from \"lodash\";\n</script>"
+  },
+  "aspect-ratio": {
+    "language": "css",
+    "code": ".video {\n  width: 100%;\n  aspect-ratio: 16 / 9;\n}\n\n.avatar {\n  width: 48px;\n  aspect-ratio: 1;\n  object-fit: cover;\n}"
+  },
+  "custom-properties": {
+    "language": "css",
+    "code": ":root {\n  --brand: #2563eb;\n  --space: 8px;\n}\n\n.button {\n  background: var(--brand);\n  padding: calc(var(--space) * 1.5) calc(var(--space) * 3);\n}\n\n.button.danger { --brand: #dc2626; }"
+  },
+  "color-mix": {
+    "language": "css",
+    "code": ".button:hover {\n  /* 20% darker version of the brand color */\n  background: color-mix(in oklab, var(--brand), black 20%);\n}\n\n.badge {\n  background: color-mix(in srgb, var(--brand) 15%, transparent);\n}"
+  },
+  "oklab": {
+    "language": "css",
+    "code": ":root {\n  --accent: oklch(62% 0.19 260);\n  /* same hue, lighter — perceptually even */\n  --accent-soft: oklch(90% 0.05 260);\n}"
+  },
+  "light-dark": {
+    "language": "css",
+    "code": ":root {\n  color-scheme: light dark;\n}\n\nbody {\n  background: light-dark(#ffffff, #0f1115);\n  color: light-dark(#111111, #e8eaee);\n}"
+  },
+  "text-wrap-balance": {
+    "language": "css",
+    "code": "h1, h2, h3 {\n  text-wrap: balance; /* even line lengths for headings */\n}\n\np {\n  text-wrap: pretty; /* avoid orphans in body text */\n}"
+  },
+  "scroll-snap": {
+    "language": "css",
+    "code": ".carousel {\n  display: flex;\n  overflow-x: auto;\n  scroll-snap-type: x mandatory;\n}\n\n.carousel > .slide {\n  flex: 0 0 100%;\n  scroll-snap-align: start;\n}"
+  },
+  "scroll-driven-animations": {
+    "language": "css",
+    "code": "@keyframes grow {\n  from { transform: scaleX(0); }\n  to   { transform: scaleX(1); }\n}\n\n/* Reading progress bar driven by page scroll */\n.progress {\n  transform-origin: left;\n  animation: grow linear;\n  animation-timeline: scroll(root);\n}"
+  },
+  "anchor-positioning": {
+    "language": "css",
+    "code": ".trigger {\n  anchor-name: --menu-anchor;\n}\n\n.menu {\n  position: absolute;\n  position-anchor: --menu-anchor;\n  top: anchor(bottom);\n  left: anchor(left);\n  position-try-fallbacks: flip-block;\n}"
+  },
+  "cascade-layers": {
+    "language": "css",
+    "code": "@layer reset, base, components, utilities;\n\n@layer base {\n  a { color: steelblue; }\n}\n\n@layer utilities {\n  .text-red { color: red; } /* wins over earlier layers */\n}"
+  },
+  "logical-properties": {
+    "language": "css",
+    "code": ".card {\n  margin-block: 1rem;        /* top & bottom */\n  padding-inline: 1.5rem;    /* left & right in LTR, flipped in RTL */\n  border-inline-start: 4px solid var(--brand);\n}"
+  },
+  "declarative-shadow-dom": {
+    "language": "html",
+    "code": "<user-card>\n  <template shadowrootmode=\"open\">\n    <style>:host { display: block; border: 1px solid #ccc; }</style>\n    <slot name=\"name\"></slot>\n  </template>\n  <span slot=\"name\">Ada Lovelace</span>\n</user-card>"
+  },
+  "template": {
+    "language": "html",
+    "code": "<template id=\"row\">\n  <tr><td class=\"name\"></td><td class=\"email\"></td></tr>\n</template>\n\n<script>\n  const tpl = document.getElementById(\"row\");\n  const row = tpl.content.cloneNode(true);\n  row.querySelector(\".name\").textContent = \"Ada\";\n  document.querySelector(\"tbody\").append(row);\n</script>"
+  },
+  "service-workers": {
+    "language": "js",
+    "code": "// main.js\nif (\"serviceWorker\" in navigator) {\n  navigator.serviceWorker.register(\"/sw.js\");\n}\n\n// sw.js — cache-first for static assets\nself.addEventListener(\"fetch\", (event) => {\n  event.respondWith(\n    caches.match(event.request).then((hit) => hit ?? fetch(event.request)),\n  );\n});"
+  },
+  "websockets": {
+    "language": "js",
+    "code": "const socket = new WebSocket(\"wss://example.com/chat\");\n\nsocket.addEventListener(\"open\", () => socket.send(JSON.stringify({ hello: \"world\" })));\nsocket.addEventListener(\"message\", (event) => console.log(JSON.parse(event.data)));\nsocket.addEventListener(\"close\", () => console.log(\"disconnected\"));"
+  },
+  "broadcast-channel": {
+    "language": "js",
+    "code": "// Every tab on the same origin that opens this channel gets the message\nconst channel = new BroadcastChannel(\"auth\");\n\nchannel.postMessage({ type: \"logout\" });\nchannel.onmessage = (e) => {\n  if (e.data.type === \"logout\") location.assign(\"/login\");\n};"
+  },
+  "localstorage": {
+    "language": "js",
+    "code": "try {\n  localStorage.setItem(\"theme\", \"dark\");\n  const theme = localStorage.getItem(\"theme\") ?? \"light\";\n} catch {\n  // storage can be disabled (private mode, blocked cookies)\n}"
+  },
+  "indexeddb": {
+    "language": "js",
+    "code": "const request = indexedDB.open(\"notes\", 1);\n\nrequest.onupgradeneeded = () => {\n  request.result.createObjectStore(\"notes\", { keyPath: \"id\", autoIncrement: true });\n};\n\nrequest.onsuccess = () => {\n  const tx = request.result.transaction(\"notes\", \"readwrite\");\n  tx.objectStore(\"notes\").add({ text: \"Hello\", created: Date.now() });\n};"
+  },
+  "loading-lazy": {
+    "language": "html",
+    "code": "<img src=\"photo.jpg\" alt=\"…\" width=\"800\" height=\"600\" loading=\"lazy\">\n\n<iframe src=\"https://www.example.com/embed\" loading=\"lazy\"></iframe>"
+  },
+  "srcset": {
+    "language": "html",
+    "code": "<img\n  src=\"photo-800.jpg\"\n  srcset=\"photo-400.jpg 400w, photo-800.jpg 800w, photo-1600.jpg 1600w\"\n  sizes=\"(max-width: 600px) 100vw, 50vw\"\n  alt=\"…\">"
+  },
+  "picture": {
+    "language": "html",
+    "code": "<picture>\n  <source type=\"image/avif\" srcset=\"photo.avif\">\n  <source type=\"image/webp\" srcset=\"photo.webp\">\n  <img src=\"photo.jpg\" alt=\"…\" width=\"800\" height=\"600\">\n</picture>"
+  },
+  "webp": {
+    "language": "html",
+    "code": "<picture>\n  <source type=\"image/webp\" srcset=\"photo.webp\">\n  <img src=\"photo.jpg\" alt=\"…\">\n</picture>"
+  },
+  "avif": {
+    "language": "html",
+    "code": "<picture>\n  <source type=\"image/avif\" srcset=\"photo.avif\">\n  <img src=\"photo.jpg\" alt=\"…\">\n</picture>"
+  },
+  "array-at": {
+    "language": "js",
+    "code": "const items = [\"a\", \"b\", \"c\"];\nitems.at(0);  // \"a\"\nitems.at(-1); // \"c\" — last item, no items[items.length - 1]"
+  },
+  "array-findlast": {
+    "language": "js",
+    "code": "const events = [{ ok: true }, { ok: false, id: 2 }, { ok: false, id: 3 }];\nevents.findLast((e) => !e.ok);      // { ok: false, id: 3 }\nevents.findLastIndex((e) => !e.ok); // 2"
+  },
+  "promise-withresolvers": {
+    "language": "js",
+    "code": "const { promise, resolve, reject } = Promise.withResolvers();\n\nbutton.addEventListener(\"click\", () => resolve(\"clicked\"), { once: true });\nsetTimeout(() => reject(new Error(\"timeout\")), 5000);\n\nconsole.log(await promise);"
+  },
+  "set-methods": {
+    "language": "js",
+    "code": "const a = new Set([1, 2, 3]);\nconst b = new Set([2, 3, 4]);\n\na.union(b);               // Set {1, 2, 3, 4}\na.intersection(b);        // Set {2, 3}\na.difference(b);          // Set {1}\na.isSubsetOf(new Set([1, 2, 3, 4])); // true"
+  },
+  "iterator-methods": {
+    "language": "js",
+    "code": "function* naturals() {\n  let n = 1;\n  while (true) yield n++;\n}\n\nconst firstEvenSquares = naturals()\n  .filter((n) => n % 2 === 0)\n  .map((n) => n * n)\n  .take(3)\n  .toArray(); // [4, 16, 36]"
+  },
+  "is": {
+    "language": "css",
+    "code": "/* Instead of: header a:hover, nav a:hover, footer a:hover */\n:is(header, nav, footer) a:hover {\n  text-decoration: underline;\n}"
+  },
+  "where": {
+    "language": "css",
+    "code": "/* Zero specificity — easy for users of your library to override */\n:where(.btn) {\n  padding: 8px 16px;\n  border-radius: 6px;\n}"
+  },
+  "focus-visible": {
+    "language": "css",
+    "code": "button:focus {\n  outline: none;\n}\n\n/* Only show the ring for keyboard focus, not mouse clicks */\nbutton:focus-visible {\n  outline: 2px solid var(--brand);\n  outline-offset: 2px;\n}"
+  },
+  "details-name": {
+    "language": "html",
+    "code": "<!-- Opening one closes the others (accordion) -->\n<details name=\"faq\">\n  <summary>Shipping</summary>\n  <p>…</p>\n</details>\n<details name=\"faq\">\n  <summary>Returns</summary>\n  <p>…</p>\n</details>"
+  },
+  "inert": {
+    "language": "html",
+    "code": "<!-- Everything behind the drawer can't be clicked or focused -->\n<main inert>…</main>\n<aside class=\"drawer\">…</aside>\n\n<script>\n  document.querySelector(\"main\").inert = false; // when the drawer closes\n</script>"
+  },
+  "intl-segmenter": {
+    "language": "js",
+    "code": "const segmenter = new Intl.Segmenter(\"en\", { granularity: \"word\" });\nconst words = [...segmenter.segment(\"Hello, world! 👋\")]\n  .filter((s) => s.isWordLike)\n  .map((s) => s.segment); // [\"Hello\", \"world\"]"
+  },
+  "temporal": {
+    "language": "js",
+    "code": "const today = Temporal.Now.plainDateISO();\nconst due = today.add({ days: 30 });\nconst meeting = Temporal.ZonedDateTime.from(\"2026-10-14T09:00[Asia/Kolkata]\");\nconsole.log(due.toString(), meeting.withTimeZone(\"Europe/London\").toString());"
+  },
+  "webgpu": {
+    "language": "js",
+    "code": "if (!navigator.gpu) throw new Error(\"WebGPU not supported\");\n\nconst adapter = await navigator.gpu.requestAdapter();\nconst device = await adapter.requestDevice();\nconst context = canvas.getContext(\"webgpu\");\ncontext.configure({ device, format: navigator.gpu.getPreferredCanvasFormat() });"
+  },
+  "css-object-model": {
+    "language": "js",
+    "code": "const sheet = new CSSStyleSheet();\nsheet.replaceSync(\".highlight { background: yellow; }\");\ndocument.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];"
+  }
+}

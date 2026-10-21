@@ -1,0 +1,57 @@
+{
+  "slug": "mathematica",
+  "title": "Mathematica",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Mathematica.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Wolfram Language docs",
+              "url": "https://reference.wolfram.com/language/"
+            },
+            {
+              "name": "Wolfram Alpha Tools",
+              "url": "http://www.wolfram.com/products/mathematica/"
+            },
+            {
+              "name": "Wikipedia Mathematica",
+              "url": "https://en.wikipedia.org/wiki/Mathematica"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Maple",
+              "url": "/maple/"
+            },
+            {
+              "name": "Math",
+              "url": "/math/"
+            },
+            {
+              "name": "Mathomatic",
+              "url": "/mathomatic/"
+            },
+            {
+              "name": "MATLAB",
+              "url": "/matlab/"
+            },
+            {
+              "name": "Maxima",
+              "url": "/maxima/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

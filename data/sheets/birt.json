@@ -1,0 +1,41 @@
+{
+  "slug": "birt",
+  "title": "BIRT",
+  "category": "Concepts",
+  "description": "Reference links and cheat sheets for BIRT.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Eclipse BIRT",
+              "url": "https://eclipse-birt.github.io/birt-website/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.eclipse.org/birt/"
+            },
+            {
+              "name": "Wikipedia BIRT",
+              "url": "https://en.wikipedia.org/wiki/BIRT_Project"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Eclipse",
+              "url": "/eclipse/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

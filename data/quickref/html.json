@@ -1,0 +1,279 @@
+{
+  "slug": "html",
+  "updated": "2026-10-14",
+  "title": "HTML",
+  "category": "Web",
+  "color": "#e34f26",
+  "language": "html",
+  "description": "HTML for page structure, text, links, images, lists, tables, forms, media and the document head.",
+  "docs": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  "try": {
+    "label": "Try it Yourself",
+    "href": "/html-editor/"
+  },
+  "sections": [
+    {
+      "title": "Page skeleton",
+      "description": "Every page starts here.",
+      "rows": [
+        [
+          "Basic document",
+          "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>My page</title>\n</head>\n<body>\n\n</body>\n</html>"
+        ],
+        [
+          "Link a stylesheet",
+          "<link rel=\"stylesheet\" href=\"styles.css\">"
+        ],
+        [
+          "Load a script",
+          [
+            "<script src=\"app.js\" defer></script>",
+            "<script type=\"module\" src=\"main.js\"></script>"
+          ]
+        ],
+        [
+          "Page description",
+          "<meta name=\"description\" content=\"…\">"
+        ],
+        [
+          "Favicon",
+          "<link rel=\"icon\" href=\"/favicon.ico\">"
+        ]
+      ]
+    },
+    {
+      "title": "Structure",
+      "description": "Semantic layout elements.",
+      "rows": [
+        [
+          "Page regions",
+          "<header>…</header>\n<nav>…</nav>\n<main>…</main>\n<footer>…</footer>"
+        ],
+        [
+          "Content blocks",
+          [
+            "<article>…</article>",
+            "<section>…</section>",
+            "<aside>…</aside>"
+          ]
+        ],
+        [
+          "Generic containers",
+          [
+            "<div>…</div>",
+            "<span>…</span>"
+          ]
+        ],
+        [
+          "Headings",
+          "<h1>Title</h1> … <h6>Small heading</h6>"
+        ]
+      ]
+    },
+    {
+      "title": "Text",
+      "description": "Paragraphs and inline formatting.",
+      "rows": [
+        [
+          "Paragraph / line break",
+          [
+            "<p>Text</p>",
+            "<br>"
+          ]
+        ],
+        [
+          "Emphasis",
+          [
+            "<strong>important</strong>",
+            "<em>stressed</em>"
+          ]
+        ],
+        [
+          "Code",
+          [
+            "<code>npm install</code>",
+            "<pre><code>…</code></pre>"
+          ]
+        ],
+        [
+          "Quote",
+          [
+            "<blockquote cite=\"…\">…</blockquote>",
+            "<q>inline quote</q>"
+          ]
+        ],
+        [
+          "Highlight / small print",
+          [
+            "<mark>highlight</mark>",
+            "<small>fine print</small>"
+          ]
+        ],
+        [
+          "Abbreviation",
+          "<abbr title=\"HyperText Markup Language\">HTML</abbr>"
+        ],
+        [
+          "Date / time",
+          "<time datetime=\"2026-10-14\">Oct 14</time>"
+        ],
+        [
+          "Keyboard key",
+          "<kbd>Ctrl</kbd> + <kbd>C</kbd>"
+        ]
+      ]
+    },
+    {
+      "title": "Links & images",
+      "description": "Hyperlinks and pictures.",
+      "rows": [
+        [
+          "Link",
+          "<a href=\"https://example.com\">Visit</a>"
+        ],
+        [
+          "Open in a new tab",
+          "<a href=\"…\" target=\"_blank\" rel=\"noopener noreferrer\">…</a>"
+        ],
+        [
+          "Email / phone link",
+          [
+            "<a href=\"mailto:hi@example.com\">Email</a>",
+            "<a href=\"tel:+15551234\">Call</a>"
+          ]
+        ],
+        [
+          "Link to a section",
+          [
+            "<a href=\"#pricing\">Pricing</a>",
+            "<section id=\"pricing\">"
+          ]
+        ],
+        [
+          "Image",
+          "<img src=\"photo.jpg\" alt=\"Description\" width=\"800\" height=\"600\">"
+        ],
+        [
+          "Lazy-load an image",
+          "<img src=\"photo.jpg\" alt=\"…\" loading=\"lazy\">"
+        ],
+        [
+          "Image with caption",
+          "<figure>\n  <img src=\"chart.png\" alt=\"…\">\n  <figcaption>Sales by month</figcaption>\n</figure>"
+        ]
+      ]
+    },
+    {
+      "title": "Lists & tables",
+      "description": "Structured content.",
+      "rows": [
+        [
+          "Bulleted list",
+          "<ul>\n  <li>One</li>\n  <li>Two</li>\n</ul>"
+        ],
+        [
+          "Numbered list",
+          "<ol>\n  <li>First</li>\n  <li>Second</li>\n</ol>"
+        ],
+        [
+          "Description list",
+          "<dl>\n  <dt>Term</dt>\n  <dd>Definition</dd>\n</dl>"
+        ],
+        [
+          "Table",
+          "<table>\n  <thead>\n    <tr><th>Name</th><th>Age</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Ada</td><td>36</td></tr>\n  </tbody>\n</table>"
+        ],
+        [
+          "Span columns / rows",
+          [
+            "<td colspan=\"2\">",
+            "<td rowspan=\"3\">"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Forms",
+      "description": "Collecting input.",
+      "rows": [
+        [
+          "Form",
+          "<form action=\"/signup\" method=\"post\">…</form>"
+        ],
+        [
+          "Labelled text input",
+          "<label for=\"email\">Email</label>\n<input id=\"email\" name=\"email\" type=\"email\" required>"
+        ],
+        [
+          "Input types",
+          [
+            "type=\"text\"",
+            "type=\"password\"",
+            "type=\"number\"",
+            "type=\"date\"",
+            "type=\"checkbox\"",
+            "type=\"file\""
+          ]
+        ],
+        [
+          "Textarea",
+          "<textarea name=\"message\" rows=\"4\"></textarea>"
+        ],
+        [
+          "Dropdown",
+          "<select name=\"plan\">\n  <option value=\"free\">Free</option>\n  <option value=\"pro\" selected>Pro</option>\n</select>"
+        ],
+        [
+          "Radio buttons",
+          "<input type=\"radio\" id=\"a\" name=\"size\" value=\"s\">\n<label for=\"a\">Small</label>"
+        ],
+        [
+          "Button",
+          [
+            "<button type=\"submit\">Send</button>",
+            "<button type=\"button\">Click</button>"
+          ]
+        ],
+        [
+          "Validation attributes",
+          [
+            "required",
+            "minlength=\"8\"",
+            "pattern=\"[0-9]{6}\"",
+            "min=\"1\" max=\"10\""
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Media & interactive",
+      "description": "Embeds and built-in widgets.",
+      "rows": [
+        [
+          "Video",
+          "<video src=\"clip.mp4\" controls width=\"640\"></video>"
+        ],
+        [
+          "Audio",
+          "<audio src=\"song.mp3\" controls></audio>"
+        ],
+        [
+          "Embed a page",
+          "<iframe src=\"https://…\" title=\"…\" loading=\"lazy\"></iframe>"
+        ],
+        [
+          "Expandable section",
+          "<details>\n  <summary>More info</summary>\n  <p>Hidden content</p>\n</details>"
+        ],
+        [
+          "Dialog",
+          "<dialog id=\"modal\">…</dialog>\n<script>modal.showModal()</script>"
+        ],
+        [
+          "Popover (no JavaScript)",
+          "<button popovertarget=\"menu\">Menu</button>\n<div id=\"menu\" popover>…</div>"
+        ]
+      ]
+    }
+  ]
+}

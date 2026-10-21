@@ -1,0 +1,41 @@
+{
+  "slug": "physics",
+  "title": "Physics",
+  "category": "Science & Math",
+  "description": "Reference links and cheat sheets for Physics.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "NIST Fundamental Physical Constants",
+              "url": "https://physics.nist.gov/cuu/Constants/"
+            },
+            {
+              "name": "Wolfram Alpha Tools",
+              "url": "http://www.wolframalpha.com/examples/Physics.html"
+            },
+            {
+              "name": "Wikipedia Physics",
+              "url": "https://en.wikipedia.org/wiki/Physics"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Physics Equations [.pdf]",
+              "url": "http://www.scribd.com/doc/32514/Physics-Equations"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "slug": "csharp",
+  "updated": "2026-10-14",
+  "title": "C#",
+  "category": "Languages",
+  "color": "#68217a",
+  "language": "csharp",
+  "description": "C# essentials: variables, strings, collections, LINQ, classes, records, async/await, exceptions and the dotnet CLI.",
+  "docs": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Programs and variables.",
+      "rows": [
+        [
+          "Hello world (top-level)",
+          "Console.WriteLine(\"Hello\");"
+        ],
+        [
+          "Variables",
+          [
+            "int count = 10;",
+            "var name = \"Ada\";",
+            "const int Max = 100;"
+          ]
+        ],
+        [
+          "Nullable",
+          [
+            "int? age = null;",
+            "string? nickname = null;"
+          ]
+        ],
+        [
+          "Read input",
+          "string? line = Console.ReadLine();"
+        ],
+        [
+          "Convert",
+          [
+            "int.Parse(\"42\")",
+            "int.TryParse(text, out var n)",
+            "42.ToString()"
+          ]
+        ],
+        [
+          "Null handling",
+          [
+            "name ?? \"guest\"",
+            "user?.Address?.City"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Strings",
+      "description": "Text.",
+      "rows": [
+        [
+          "Interpolation",
+          "$\"Hi {name}, you are {age}\""
+        ],
+        [
+          "Format a number",
+          "$\"{price:C}\", $\"{ratio:P1}\", $\"{n:N0}\""
+        ],
+        [
+          "Common methods",
+          [
+            "s.ToUpper()",
+            "s.Trim()",
+            "s.Contains(\"x\")",
+            "s.Replace(\"a\", \"b\")"
+          ]
+        ],
+        [
+          "Split / join",
+          [
+            "s.Split(',')",
+            "string.Join(\", \", names)"
+          ]
+        ],
+        [
+          "Raw string literal",
+          "var json = \"\"\"\n    { \"name\": \"Ada\" }\n    \"\"\";"
+        ]
+      ]
+    },
+    {
+      "title": "Collections & LINQ",
+      "description": "Lists, dictionaries and queries.",
+      "rows": [
+        [
+          "List",
+          [
+            "var nums = new List<int> { 3, 1, 2 };",
+            "nums.Add(4);",
+            "nums.Remove(1);"
+          ]
+        ],
+        [
+          "Dictionary",
+          "var ages = new Dictionary<string, int> { [\"Ada\"] = 36 };\nages.TryGetValue(\"Bob\", out var age);"
+        ],
+        [
+          "Array",
+          "int[] scores = [90, 85, 77];"
+        ],
+        [
+          "Filter / map",
+          "var names = users.Where(u => u.Age > 18).Select(u => u.Name).ToList();"
+        ],
+        [
+          "Sort",
+          [
+            "users.OrderBy(u => u.Name)",
+            "OrderByDescending(u => u.Age)"
+          ]
+        ],
+        [
+          "Reverse",
+          [
+            "nums.Reverse();",
+            "nums.AsEnumerable().Reverse()"
+          ]
+        ],
+        [
+          "Aggregate",
+          [
+            "nums.Sum()",
+            "nums.Average()",
+            "nums.Max()"
+          ]
+        ],
+        [
+          "First / any",
+          [
+            "users.FirstOrDefault(u => u.Id == 7)",
+            "users.Any(u => u.IsAdmin)"
+          ]
+        ],
+        [
+          "Group by",
+          "users.GroupBy(u => u.Role)"
+        ]
+      ]
+    },
+    {
+      "title": "Control flow",
+      "description": "Conditions and loops.",
+      "rows": [
+        [
+          "If / else",
+          "if (x > 0) { } else if (x == 0) { } else { }"
+        ],
+        [
+          "Switch expression",
+          "var label = n switch\n{\n    0 => \"zero\",\n    > 0 => \"positive\",\n    _ => \"negative\",\n};"
+        ],
+        [
+          "Loops",
+          [
+            "for (var i = 0; i < 5; i++) { }",
+            "foreach (var item in items) { }",
+            "while (running) { }"
+          ]
+        ],
+        [
+          "Pattern matching",
+          "if (shape is Circle { Radius: > 10 } c) { }"
+        ]
+      ]
+    },
+    {
+      "title": "Types",
+      "description": "Classes, records and interfaces.",
+      "rows": [
+        [
+          "Class with properties",
+          "public class User\n{\n    public required string Name { get; init; }\n    public int Age { get; set; }\n}"
+        ],
+        [
+          "Primary constructor",
+          "public class Dog(string name)\n{\n    public string Bark() => $\"{name}: Woof\";\n}"
+        ],
+        [
+          "Record",
+          "public record Point(int X, int Y);"
+        ],
+        [
+          "Interface",
+          "public interface IShape { double Area(); }"
+        ],
+        [
+          "Inheritance",
+          "public class Puppy : Dog { }"
+        ],
+        [
+          "Enum",
+          "public enum Status { Active, Disabled }"
+        ]
+      ]
+    },
+    {
+      "title": "Async & errors",
+      "description": "Tasks and exceptions.",
+      "rows": [
+        [
+          "Async method",
+          "public async Task<string> LoadAsync()\n{\n    using var http = new HttpClient();\n    return await http.GetStringAsync(url);\n}"
+        ],
+        [
+          "Run in parallel",
+          "await Task.WhenAll(LoadA(), LoadB());"
+        ],
+        [
+          "Try / catch",
+          "try\n{\n    Risky();\n}\ncatch (InvalidOperationException ex)\n{\n    Console.WriteLine(ex.Message);\n}\nfinally\n{\n    Cleanup();\n}"
+        ],
+        [
+          "Files",
+          [
+            "File.ReadAllText(\"in.txt\")",
+            "File.WriteAllText(\"out.txt\", text)"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "dotnet CLI",
+      "description": "Create and run projects.",
+      "rows": [
+        [
+          "New console app",
+          "dotnet new console -n MyApp"
+        ],
+        [
+          "Run / build / test",
+          [
+            "dotnet run",
+            "dotnet build",
+            "dotnet test"
+          ]
+        ],
+        [
+          "Add a package",
+          "dotnet add package Newtonsoft.Json"
+        ],
+        [
+          "Publish",
+          "dotnet publish -c Release"
+        ]
+      ]
+    }
+  ]
+}

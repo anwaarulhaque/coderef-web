@@ -1,0 +1,46 @@
+{
+  "slug": "vi",
+  "title": "Vi",
+  "category": "Tools",
+  "description": "Reference links and cheat sheets for Vi.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "vi (POSIX)",
+              "url": "https://pubs.opengroup.org/onlinepubs/9799919799/utilities/vi.html"
+            },
+            {
+              "name": "Wikipedia Vi",
+              "url": "https://en.wikipedia.org/wiki/Vi"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Working Productively in Bash’s Vi Command Line Editing Mode (with Cheat Sheet) [.html, pdf, tex, txt]",
+              "url": "http://www.catonmat.net/blog/bash-vi-editing-mode-cheat-sheet/"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Vim",
+              "url": "/vim/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

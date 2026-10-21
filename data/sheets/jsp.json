@@ -1,0 +1,50 @@
+{
+  "slug": "jsp",
+  "title": "JSP",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for JSP.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Jakarta Pages",
+              "url": "https://jakarta.ee/specifications/pages/"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://java.sun.com/products/jsp/"
+            },
+            {
+              "name": "Wikipedia JSP",
+              "url": "https://en.wikipedia.org/wiki/JavaServer_Pages"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "JSP™ SYNTAX version 2.0 [.pdf]",
+              "url": "http://java.sun.com/products/jsp/syntax/2.0/card20.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Java",
+              "url": "/java/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

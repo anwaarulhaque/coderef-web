@@ -1,0 +1,45 @@
+{
+  "slug": "visualbasic",
+  "title": "Visual Basic",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Visual Basic.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Visual Basic docs",
+              "url": "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
+            },
+            {
+              "name": "Wikipedia Visual Basic",
+              "url": "https://en.wikipedia.org/wiki/Visual_Basic"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": ".NET",
+              "url": "/dotnet/"
+            },
+            {
+              "name": "ASP",
+              "url": "/asp/"
+            },
+            {
+              "name": "C#",
+              "url": "/csharp/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

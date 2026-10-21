@@ -1,0 +1,45 @@
+{
+  "slug": "erlang",
+  "title": "Erlang",
+  "category": "Languages",
+  "description": "Reference links and cheat sheets for Erlang.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Erlang/OTP documentation",
+              "url": "https://www.erlang.org/docs"
+            },
+            {
+              "name": "Wikipedia Erlang",
+              "url": "https://en.wikipedia.org/wiki/Erlang_%28programming_language%29"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Clojure",
+              "url": "/clojure/"
+            },
+            {
+              "name": "Haskell",
+              "url": "/haskell/"
+            },
+            {
+              "name": "OCaml",
+              "url": "/ocaml/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

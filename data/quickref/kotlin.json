@@ -1,0 +1,183 @@
+{
+  "slug": "kotlin",
+  "updated": "2026-10-14",
+  "title": "Kotlin",
+  "category": "Languages",
+  "color": "#7f52ff",
+  "language": "kotlin",
+  "description": "Kotlin essentials: val/var, null safety, strings, collections, control flow, functions, data classes and coroutines.",
+  "docs": "https://kotlinlang.org/docs/home.html",
+  "sections": [
+    {
+      "title": "Basics",
+      "description": "Variables and output.",
+      "rows": [
+        [
+          "Main function",
+          "fun main() {\n    println(\"Hello\")\n}"
+        ],
+        [
+          "Read-only / mutable",
+          [
+            "val name = \"Ada\"",
+            "var count = 0"
+          ]
+        ],
+        [
+          "String template",
+          "\"$name is ${age + 1}\""
+        ],
+        [
+          "Convert",
+          [
+            "\"42\".toInt()",
+            "\"x\".toIntOrNull()",
+            "42.toString()"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Null safety",
+      "description": "Handling missing values.",
+      "rows": [
+        [
+          "Nullable type",
+          "var nickname: String? = null"
+        ],
+        [
+          "Safe call / Elvis",
+          [
+            "nickname?.length",
+            "val name = nickname ?: \"guest\""
+          ]
+        ],
+        [
+          "Smart cast",
+          "if (nickname != null) {\n    println(nickname.length)\n}"
+        ],
+        [
+          "Let",
+          "user?.let { println(it.name) }"
+        ]
+      ]
+    },
+    {
+      "title": "Collections",
+      "description": "Lists, maps and sets.",
+      "rows": [
+        [
+          "Lists",
+          [
+            "val nums = listOf(3, 1, 2)",
+            "val mutable = mutableListOf<Int>()"
+          ]
+        ],
+        [
+          "Transform",
+          [
+            "nums.map { it * 2 }",
+            "nums.filter { it > 1 }",
+            "nums.sum()"
+          ]
+        ],
+        [
+          "Sort",
+          [
+            "nums.sorted()",
+            "users.sortedBy { it.age }"
+          ]
+        ],
+        [
+          "Reverse",
+          "nums.reversed()"
+        ],
+        [
+          "Find / group",
+          [
+            "users.find { it.id == 7 }",
+            "users.groupBy { it.role }"
+          ]
+        ],
+        [
+          "Map",
+          [
+            "val ages = mapOf(\"Ada\" to 36)",
+            "ages.getOrDefault(\"Bob\", 0)"
+          ]
+        ],
+        [
+          "Loop",
+          [
+            "for (n in nums) { }",
+            "for ((i, n) in nums.withIndex()) { }",
+            "for (i in 0 until 5) { }"
+          ]
+        ]
+      ]
+    },
+    {
+      "title": "Control flow & functions",
+      "description": "Logic and reuse.",
+      "rows": [
+        [
+          "If as expression",
+          "val label = if (n % 2 == 0) \"even\" else \"odd\""
+        ],
+        [
+          "When",
+          "val desc = when (n) {\n    0 -> \"zero\"\n    in 1..9 -> \"small\"\n    else -> \"big\"\n}"
+        ],
+        [
+          "Function",
+          [
+            "fun add(a: Int, b: Int): Int = a + b",
+            "fun greet(name: String = \"world\") { }"
+          ]
+        ],
+        [
+          "Lambda",
+          "val square = { n: Int -> n * n }"
+        ],
+        [
+          "Extension function",
+          "fun String.shout() = uppercase() + \"!\""
+        ]
+      ]
+    },
+    {
+      "title": "Classes & coroutines",
+      "description": "Types and async code.",
+      "rows": [
+        [
+          "Data class",
+          "data class User(val name: String, val age: Int)"
+        ],
+        [
+          "Class with init",
+          "class Dog(val name: String) {\n    fun bark() = \"Woof\"\n}"
+        ],
+        [
+          "Inheritance",
+          "open class Animal\nclass Dog : Animal()"
+        ],
+        [
+          "Sealed class",
+          "sealed interface Result\ndata class Ok(val value: Int) : Result\ndata class Err(val message: String) : Result"
+        ],
+        [
+          "Object (singleton)",
+          "object Config { val port = 8080 }"
+        ],
+        [
+          "Coroutine",
+          "suspend fun load(): String { delay(500); return \"done\" }\n\nrunBlocking { println(load()) }"
+        ],
+        [
+          "Try / catch",
+          "val n = try { text.toInt() } catch (e: NumberFormatException) { 0 }"
+        ]
+      ]
+    }
+  ]
+}

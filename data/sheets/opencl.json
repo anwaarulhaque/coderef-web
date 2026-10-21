@@ -1,0 +1,28 @@
+{
+  "slug": "opencl",
+  "title": "OpenCL",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for OpenCL.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "OpenCL Registry (Khronos)",
+              "url": "https://registry.khronos.org/OpenCL/"
+            },
+            {
+              "name": "Wikipedia OpenCL",
+              "url": "https://en.wikipedia.org/wiki/OpenCL"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

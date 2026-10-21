@@ -1,0 +1,49 @@
+{
+  "slug": "ado-net",
+  "title": "Ado.Net",
+  "category": "Frameworks",
+  "description": "Reference links and cheat sheets for Ado.Net.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "ADO.NET docs",
+              "url": "https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/"
+            },
+            {
+              "name": "Official",
+              "url": "http://msdn.microsoft.com/en-us/library/aa286484.aspx"
+            },
+            {
+              "name": "Wikipedia Ado.Net",
+              "url": "https://en.wikipedia.org/wiki/ADO.NET"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": ".NET",
+              "url": "/dotnet/"
+            },
+            {
+              "name": "ASP",
+              "url": "/asp/"
+            },
+            {
+              "name": "C#",
+              "url": "/csharp/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "openssh",
+  "title": "OpenSSH",
+  "category": "Systems",
+  "description": "Reference links and cheat sheets for OpenSSH.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "ssh(1)",
+              "url": "https://man.openbsd.org/ssh"
+            },
+            {
+              "name": "ssh_config(5)",
+              "url": "https://man.openbsd.org/ssh_config"
+            },
+            {
+              "name": "sshd_config(5)",
+              "url": "https://man.openbsd.org/sshd_config"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://www.openssh.org/"
+            },
+            {
+              "name": "Wikipedia OpenSSH",
+              "url": "https://en.wikipedia.org/wiki/OpenSSH"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

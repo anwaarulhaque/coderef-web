@@ -1,0 +1,45 @@
+{
+  "slug": "lucene",
+  "title": "Lucene",
+  "category": "Databases",
+  "description": "Reference links and cheat sheets for Lucene.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "Apache Lucene docs",
+              "url": "https://lucene.apache.org/core/documentation.html"
+            },
+            {
+              "name": "Official Website",
+              "url": "http://lucene.apache.org/"
+            },
+            {
+              "name": "Wikipedia Lucene",
+              "url": "https://en.wikipedia.org/wiki/Lucene"
+            }
+          ]
+        },
+        {
+          "title": "Related",
+          "items": [
+            {
+              "name": "Apache",
+              "url": "/apache/"
+            },
+            {
+              "name": "Apache Solr",
+              "url": "/apache-solr/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

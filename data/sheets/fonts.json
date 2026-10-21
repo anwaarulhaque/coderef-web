@@ -1,0 +1,45 @@
+{
+  "slug": "fonts",
+  "title": "Fonts",
+  "category": "Web",
+  "description": "Reference links and cheat sheets for Fonts.",
+  "color": "#94a3b8",
+  "kind": "links",
+  "sections": [
+    {
+      "title": "Resources",
+      "groups": [
+        {
+          "title": "Official & Reference",
+          "items": [
+            {
+              "name": "MDN: CSS fonts",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts"
+            },
+            {
+              "name": "Google Fonts",
+              "url": "https://fonts.google.com/"
+            },
+            {
+              "name": "Wikipedia Fonts",
+              "url": "https://en.wikipedia.org/wiki/Fonts"
+            }
+          ]
+        },
+        {
+          "title": "Cheat Sheets",
+          "items": [
+            {
+              "name": "Free Unicode Fonts",
+              "url": "http://www.font.su/"
+            },
+            {
+              "name": "Web Designer's Color Card/Font Card",
+              "url": "http://www.visibone.com/color/card.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "slug": "flexbox",
+  "title": "Flexbox",
+  "category": "Web",
+  "color": "#14b8a6",
+  "kind": "visual",
+  "description": "Visual cheat sheet for CSS Flexible Box Layout — every property with live previews you can copy. The dashed box is the flex container.",
+  "reference": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout",
+  "sections": [
+    {
+      "title": "Flex container",
+      "groups": [
+        {
+          "title": "display",
+          "description": "flex lays children out in a row. inline-flex does the same, but the container only takes the width it needs.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+          "demo": {
+            "base": "gap: 4px; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "width: 26px; height: 26px;"
+          },
+          "items": [
+            {
+              "name": "display: block;"
+            },
+            {
+              "name": "display: flex;"
+            },
+            {
+              "name": "display: inline-flex;"
+            }
+          ]
+        },
+        {
+          "title": "flex-direction",
+          "description": "Sets the main axis — the direction items flow in.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "width: 26px; height: 26px;"
+          },
+          "items": [
+            {
+              "name": "flex-direction: row;"
+            },
+            {
+              "name": "flex-direction: row-reverse;"
+            },
+            {
+              "name": "flex-direction: column;"
+            },
+            {
+              "name": "flex-direction: column-reverse;"
+            }
+          ]
+        },
+        {
+          "title": "flex-wrap",
+          "description": "nowrap squeezes every item onto one line; wrap moves items that don't fit onto new lines.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 7,
+            "itemBase": "width: 28%; height: 22px;"
+          },
+          "items": [
+            {
+              "name": "flex-wrap: nowrap;"
+            },
+            {
+              "name": "flex-wrap: wrap;"
+            },
+            {
+              "name": "flex-wrap: wrap-reverse;"
+            }
+          ]
+        },
+        {
+          "title": "flex-flow",
+          "description": "Shorthand for flex-direction and flex-wrap.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 7,
+            "itemBase": "width: 28%; height: 22px;"
+          },
+          "items": [
+            {
+              "name": "flex-flow: row wrap;"
+            },
+            {
+              "name": "flex-flow: row-reverse wrap;"
+            },
+            {
+              "name": "flex-flow: column wrap;"
+            },
+            {
+              "name": "flex-flow: column-reverse wrap;"
+            }
+          ]
+        },
+        {
+          "title": "justify-content",
+          "description": "Distributes items and free space along the main axis.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "width: 26px; height: 26px;"
+          },
+          "items": [
+            {
+              "name": "justify-content: flex-start;"
+            },
+            {
+              "name": "justify-content: center;"
+            },
+            {
+              "name": "justify-content: flex-end;"
+            },
+            {
+              "name": "justify-content: space-between;"
+            },
+            {
+              "name": "justify-content: space-around;"
+            },
+            {
+              "name": "justify-content: space-evenly;"
+            }
+          ]
+        },
+        {
+          "title": "align-items",
+          "description": "Aligns items on the cross axis. Items here have different heights so you can see the difference.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-items",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "width: 26px;",
+            "itemStyles": [
+              "min-height: 26px; font-size: 16px",
+              "min-height: 50px",
+              "min-height: 18px; font-size: 9px"
+            ]
+          },
+          "items": [
+            {
+              "name": "align-items: flex-start;"
+            },
+            {
+              "name": "align-items: center;"
+            },
+            {
+              "name": "align-items: flex-end;"
+            },
+            {
+              "name": "align-items: stretch;"
+            },
+            {
+              "name": "align-items: baseline;"
+            }
+          ]
+        },
+        {
+          "title": "align-content",
+          "description": "Distributes wrapped lines on the cross axis (only matters when items wrap).",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box; flex-wrap: wrap;",
+            "items": 6,
+            "itemBase": "width: 28%; min-height: 18px;"
+          },
+          "items": [
+            {
+              "name": "align-content: flex-start;"
+            },
+            {
+              "name": "align-content: center;"
+            },
+            {
+              "name": "align-content: flex-end;"
+            },
+            {
+              "name": "align-content: space-between;"
+            },
+            {
+              "name": "align-content: space-around;"
+            },
+            {
+              "name": "align-content: stretch;"
+            }
+          ]
+        },
+        {
+          "title": "gap",
+          "description": "Space between items and between wrapped lines — never at the edges.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/gap",
+          "demo": {
+            "base": "display: flex; flex-wrap: wrap; align-content: flex-start; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 6,
+            "itemBase": "width: 24%; height: 22px;"
+          },
+          "items": [
+            {
+              "name": "gap: 0;"
+            },
+            {
+              "name": "gap: 8px;"
+            },
+            {
+              "name": "row-gap: 16px;\ncolumn-gap: 2px;"
+            },
+            {
+              "name": "row-gap: 2px;\ncolumn-gap: 16px;"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Flex items",
+      "groups": [
+        {
+          "title": "order",
+          "description": "Moves an item earlier or later than its position in the HTML. Default is 0.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/order",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 4,
+            "itemBase": "width: 26px; height: 26px;",
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "order: 0;"
+            },
+            {
+              "name": "order: -1;"
+            },
+            {
+              "name": "order: 1;"
+            }
+          ]
+        },
+        {
+          "title": "flex-grow",
+          "description": "How much of the free space an item takes. Here the other items have flex-grow: 1.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "width: 26px; height: 26px;",
+            "itemStyles": [
+              "flex-grow: 1",
+              "",
+              "flex-grow: 1"
+            ],
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "flex-grow: 0;"
+            },
+            {
+              "name": "flex-grow: 1;"
+            },
+            {
+              "name": "flex-grow: 2;"
+            },
+            {
+              "name": "flex-grow: 4;"
+            }
+          ]
+        },
+        {
+          "title": "flex-shrink",
+          "description": "How much an item gives up when there isn't enough room. Each item here wants 50% of the width.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "width: 50%; height: 26px;",
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "flex-shrink: 1;"
+            },
+            {
+              "name": "flex-shrink: 0;"
+            },
+            {
+              "name": "flex-shrink: 4;"
+            }
+          ]
+        },
+        {
+          "title": "flex-basis",
+          "description": "The item's starting size on the main axis, before free space is shared out.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "height: 26px;",
+            "itemStyles": [
+              "width: 26px",
+              "",
+              "width: 26px"
+            ],
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "flex-basis: auto;"
+            },
+            {
+              "name": "flex-basis: 48px;"
+            },
+            {
+              "name": "flex-basis: 50%;"
+            },
+            {
+              "name": "flex-basis: 0;\nflex-grow: 1;"
+            }
+          ]
+        },
+        {
+          "title": "flex",
+          "description": "Shorthand for flex-grow, flex-shrink and flex-basis. The other items here have flex: 1.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/flex",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "height: 26px;",
+            "itemStyles": [
+              "flex: 1",
+              "",
+              "flex: 1"
+            ],
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "flex: 1;"
+            },
+            {
+              "name": "flex: 2;"
+            },
+            {
+              "name": "flex: none;"
+            },
+            {
+              "name": "flex: 0 0 50%;"
+            }
+          ]
+        },
+        {
+          "title": "align-self",
+          "description": "Overrides align-items for one item. The container here uses align-items: flex-start.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/align-self",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box; align-items: flex-start;",
+            "items": 3,
+            "itemBase": "width: 26px; min-height: 26px;",
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "align-self: auto;"
+            },
+            {
+              "name": "align-self: center;"
+            },
+            {
+              "name": "align-self: flex-end;"
+            },
+            {
+              "name": "align-self: stretch;"
+            }
+          ]
+        },
+        {
+          "title": "margin: auto",
+          "description": "An auto margin soaks up all free space on that side — the easy way to push items apart.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/margin",
+          "demo": {
+            "base": "display: flex; gap: 4px; height: 100%; padding: 4px; box-sizing: border-box;",
+            "items": 3,
+            "itemBase": "width: 26px; height: 26px;",
+            "target": 1
+          },
+          "items": [
+            {
+              "name": "margin-left: auto;"
+            },
+            {
+              "name": "margin-right: auto;"
+            },
+            {
+              "name": "margin: auto;"
+            },
+            {
+              "name": "margin-top: auto;"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
