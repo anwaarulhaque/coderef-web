@@ -21,7 +21,7 @@ interface ToolBannerCard {
 const FEATURED_TOOLS: ToolBannerCard[] = [
   {
     id: "colors",
-    href: "/colors/",
+    href: "/realtime-colors/",
     title: "Realtime Colors Studio",
     subtitle: "Live Palette Generator & UI Previewer",
     description:

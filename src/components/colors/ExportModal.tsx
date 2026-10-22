@@ -26,7 +26,7 @@ export function ExportModal({ palette, fontPair, isOpen, onClose }: ExportModalP
   if (!isOpen) return null;
 
   const currentUrl = typeof window !== "undefined" ? window.location.origin : "https://coderef.xyz";
-  const shareLink = `${currentUrl}/colors/${buildPaletteQuery(palette, fontPair.id)}`;
+  const shareLink = `${currentUrl}/realtime-colors/${buildPaletteQuery(palette, fontPair.id)}`;
 
   let content = "";
   switch (tab) {

@@ -64,7 +64,7 @@ export const NAV: NavGroup[] = [
   {
     label: "Tools & Studio",
     featured: {
-      href: "/colors/",
+      href: "/realtime-colors/",
       title: "Realtime Colors Studio",
       tagline: "Live Palette & UI Previewer",
       description: "Generate harmonious accessible palettes and preview in real time on authentic modern web apps, dashboards, and blogs.",
@@ -84,7 +84,7 @@ export const NAV: NavGroup[] = [
       {
         title: "Developer Utilities",
         items: [
-          { href: "/colors/", label: "Realtime Colors", description: "Color palette generator, contrast checker & template previewer", badge: "NEW" },
+          { href: "/realtime-colors/", label: "Realtime Colors", description: "Color palette generator, contrast checker & template previewer", badge: "NEW" },
           { href: "/json-formatter/", label: "JSON Formatter", description: "Format, validate, repair, convert, and query JSON" },
           { href: "/markdown/", label: "Markdown Editor", description: "Live preview, table builder, and export to .md or .html" },
           { href: "/regex-tester/", label: "Regex Tester", description: "Real-time regex match tester, highlights & explanations" },
@@ -104,7 +104,7 @@ export const NAV: NavGroup[] = [
   },
   {
     label: "Realtime Colors",
-    href: "/colors/",
+    href: "/realtime-colors/",
     badge: "NEW",
     highlight: true,
   },

@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/quick-reference/", 0.9, "weekly"),
     entry("/browser-support/", 0.9, "weekly"),
     entry("/browser-support/compare/", 0.7),
-    entry("/colors/", 0.9),
+    entry("/realtime-colors/", 0.9),
     entry("/sitemap/", 0.7),
     entry("/json-formatter/", 0.9),
     entry("/try-it/", 0.9),

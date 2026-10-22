@@ -27,7 +27,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
   {
     title: "Tools",
     links: [
-      { href: "/colors/", label: "Realtime Colors" },
+      { href: "/realtime-colors/", label: "Realtime Colors" },
       { href: "/json-formatter/", label: "JSON Formatter" },
       { href: "/markdown/", label: "Markdown Editor" },
       { href: "/regex-tester/", label: "Regex Tester" },

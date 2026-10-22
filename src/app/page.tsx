@@ -21,7 +21,7 @@ export default function Home() {
   // Interactive tools have their own routes but are listed alongside the sheets.
   const tools: SheetSummary[] = [
     {
-      slug: "colors",
+      slug: "realtime-colors",
       title: "Realtime Colors Studio",
       category: "Tools",
       description: "Live color palette generator, WCAG contrast checker, and instant UI previewer on authentic templates.",

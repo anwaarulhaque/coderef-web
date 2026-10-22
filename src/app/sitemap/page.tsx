@@ -19,7 +19,7 @@ export default function SitemapPage() {
   const compatFeatures = getCompatFeatures().slice(0, 48); // Top features
 
   const tools = [
-    { href: "/colors/", title: "Realtime Colors Studio", desc: "Live color palette generator, WCAG contrast audits, and instant template previewer" },
+    { href: "/realtime-colors/", title: "Realtime Colors Studio", desc: "Live color palette generator, WCAG contrast audits, and instant template previewer" },
     { href: "/json-formatter/", title: "JSON Formatter", desc: "Format, validate, repair, convert (YAML/XML/CSV/TypeScript) and compare JSON" },
     { href: "/try-it/", title: "HTML, CSS & JS Playground", desc: "All-in-one web editor with live rendering and console output" },
     { href: "/markdown/", title: "Markdown Editor & Cheat Sheet", desc: "Live preview, interactive table builder, and syntax cheat sheet" },
