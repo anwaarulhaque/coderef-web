@@ -1,0 +1,276 @@
+---
+name: Mistral AI
+colors:
+  foreground: '#000000'
+  border: '#e4e3de'
+  surface-brand-secondary: '#f5f4ef'
+  surface-brand-primary: '#fbfbf8'
+typography:
+  body:
+    fontSize: 16px
+    fontWeight: 400
+    lineHeight: 1.5
+    use: Public-site body, list, card, and product-pricing copy
+  control:
+    fontSize: 16px
+    fontWeight: 500
+    lineHeight: 1.5
+    letterSpacing: 0.16px
+    use: Header controls and compact links
+  display:
+    fontSize: 56px
+    fontWeight: 500
+    lineHeight: 1.07
+    letterSpacing: '-0.56px'
+    use: Observed large public-marketing headings
+  eyebrow:
+    fontSize: 11px
+    fontWeight: 400
+    lineHeight: 1.45
+    use: Small uppercase label on the public marketing surface
+rounded:
+  sharp: 0px
+  sm: 4px
+  md: 6px
+  lg: 8px
+spacing:
+  xs: 2
+  sm: 4
+  md: 8
+  lg: 16
+  xl: 24
+components:
+  pricing-plan:
+    type: card
+    backgroundColor: '#fbfbf8'
+    textColor: '#000000'
+    border: '1px solid #e4e3de'
+    rounded: 0px
+    typography: 16px / 400 / Inter
+    use: Pricing-plan shell
+  disabled-compact-control:
+    type: button
+    backgroundColor: rgba(7, 7, 11, 0.1)
+    textColor: oklch(0.552 0.016 285.938)
+    rounded: 6px
+    padding: 4px
+    typography: 16px / 400 / Inter
+    states: disabled DOM state observed
+    use: Disabled compact pricing control
+fonts:
+  roles:
+    ui: Inter
+    display: ALTMistral
+    mono: Space Mono
+---
+
+# Mistral AI — Design Reference
+
+## Overview
+
+### Visual Theme & Atmosphere
+
+Mistral AI builds frontier models, developer tools, applications, and compute for people and organizations that need control over how they use AI. Its official about page frames the company as a European, open and responsible alternative born in 2023, while its public site currently expresses that position with restrained, almost editorial web chrome: black text, pale near-white or warm-gray surfaces, fine `#e4e3de` rules, and a mix of proprietary-feeling display lettering with Inter for practical reading. The captured home and pricing pages are not a product-app audit: they are separate public marketing and commercial-pricing surfaces. Official brand guidance supplies a distinct asset layer—the pixel-cat emblem, a preferred gradient logo, monochrome variants, and colorful model illustrations—but its artwork is not promoted into the live UI palette without a computed source.
+
+- **Structured neutrality:** current captured chrome is led by black, soft off-whites, and fine neutral dividers.
+- **Type as contrast:** `ALTMistral` supplies high-visibility headings and controls; Inter carries repeated reading and transactional copy.
+- **Asset/UI boundary:** the official gradient logo and model artwork establish identity, but their colors are not claimed as current generic UI tokens.
+
+### Primary tasks
+
+- Build or customize an AI system on Mistral models
+- Deploy a tailored AI system with ownership and production reliability
+- Compare pricing plans and set a purchase quantity
+
+### Brand Narrative
+
+Mistral’s official account traces the company to April 2023, when its co-founders set out to build a European AI company around openness, transparency, cost efficiency, responsibility, and user control. Its present offer extends beyond models to developer tools, applications, and compute, with enterprise and government work positioned around ownership and production reliability. The public brand system is correspondingly more than a logo: the official guidance describes a pixel-cat emblem, controlled gradient and monochrome logo variants, and colorful small-scale model illustrations. Those assets explain the brand’s visual identity, while the token layer above remains limited to the current captured public pages.
+
+### Principles
+
+1. **Put control with the user.** *UI implication:* explain ownership, deployment, and capability boundaries concretely rather than hiding them in generic AI claims.
+2. **Be rigorous and direct.** *UI implication:* favor structured labels, specific actions, and readable information hierarchy over ornamental copy.
+3. **Make complex systems usable.** *UI implication:* keep commercial choices and quantities legible with clear rows, dividers, and restrained controls.
+4. **Keep brand art distinct from interface evidence.** *UI implication:* use supplied gradient logos or illustrations only under official guidance; do not synthesize an orange semantic UI system from artwork.
+
+### Personas
+
+The official material identifies stakeholder groups rather than named user personas; the following are evidence-based groups, not fictional profiles.
+
+- **Enterprise and government teams:** organizations in high-stakes industries that need tailored systems, control, ownership, and production reliability.
+- **Developers and product builders:** people using Mistral models, developer tools, applications, and compute to build or customize AI systems.
+- **Research, product, and engineering collaborators:** internal teams and candidates working under the stated expectations of audacity, rigor, customer centricity, speed, and low-ego ownership.
+
+## Colors
+
+### Current public-web observations
+
+- **Foreground** (`#000000`): repeated text and border color on the captured home and pricing records.
+- **Divider** (`#e4e3de`): repeated one-pixel navigation, list-row, pricing-plan, and segmented-control border.
+- **Brand-secondary surface** (`#f5f4ef`): observed on pricing plan and segmented-shell treatments.
+- **Brand-primary surface** (`#fbfbf8`): observed on a pricing-plan shell and an expanded header-control treatment.
+
+The official brand page documents gradient, black, and white logo variants plus colorful model illustrations, but it does not publish the numeric artwork colors in the inspected text. Those brand assets remain an identity source, not an inferred semantic or interaction palette. No success, warning, error, dark-mode, focus, or hover color token is established by this capture.
+
+## Typography
+
+### Evidence classes
+
+- **Live computed public-web use:** `Inter` is loaded with high confidence, has 632 visible uses, and has a matching Mistral-hosted variable-font source. It is observed in body, list, card, input, tab, and button roles.
+- **Live computed public-web use:** `ALTMistral` is loaded with high confidence, has 560 visible uses and matching Mistral-hosted Regular, Medium, Semibold, and italic WOFF/WOFF2 sources. It appears in public-marketing display, badges, body, and header-control roles.
+- **Live computed public-web use:** `Space Mono` is loaded with high confidence, has 38 visible uses, and has a matching Mistral-hosted source. The capture confines it to small body/card-label contexts.
+- **Declared-only:** `Source Sans 3` has seven `@font-face` source URLs through the consent-provider domain but zero visible captured uses. It is not a typography token.
+- **Documentation chrome:**  was consulted only as an official documentation domain. No supplied computed-style or FontFaceSet record supports promoting its chrome or a docs family into this reference.
+- **Licence boundary:** Mistral’s brand guidance says its name, trademarks, logos, icons, and identifying assets are its property; it does not publish a downstream reuse licence for the captured font files. Keep font metadata, but do not substitute another font and do not treat these URLs as reusable project assets.
+
+### Measured public-web hierarchy
+
+| Role | Family | Size | Weight | Line height | Tracking | Provenance |
+|---|---|---:|---:|---:|---:|---|
+| Large marketing heading | ALTMistral | 56px | 500 | 60px | -0.56px | captured home body elements |
+| Marketing heading | ALTMistral | 44px | 500 | 52px | -0.44px | captured home body elements |
+| Control label | ALTMistral | 16px | 500 | 24px | 0.16px | `home::[data-omd-capture="55"]` |
+| Compact link/label | ALTMistral | 14px | 500 | 20px | 0.28px | `home::[data-omd-capture="126"]` |
+| Body, list, and card copy | Inter | 16px | 400 | 24px | normal | captured home and pricing elements |
+| Small label | Space Mono | 11px | 400 | 16px | normal | `home::p.text-eyebrow-small` |
+
+## Layout
+
+The supplied evidence recurs at 2px, 4px, 8px, 16px, and 24px. The highest-frequency values are 16px for rows and card/control spacing, 8px for gaps, and 4px for compact labels. This is an observed public-web rhythm, not a released spacing scale or responsive specification. The capture does not establish a sitewide max width, grid, or authenticated-product layout.
+
+### Responsive Behavior
+
+Only the supplied desktop public-surface evidence is in scope. It exposes a horizontally scrollable pricing navigation shell and responsive utility classes in markup, but it does not establish breakpoints, mobile navigation behavior, touch-target policy, reflow rules, or an authenticated-product responsive contract.
+
+## Elevation & Depth
+
+The representative pricing plans, rows, tabs, and inputs in this bundle report `box-shadow: none`. No global shadow scale, modal elevation, overlay treatment, or animation layer is claimed.
+
+## Motion & Easing
+
+No computed transition duration, easing token, motion rule, or reduced-motion behavior is promoted from this evidence. Class names that include transition utilities are not a measured motion specification.
+
+## Components
+
+All components below preserve their public-surface and selector provenance. The collector records `interactionCount: 0` and an empty `interactions[]`; class names mentioning hover do not establish a hover value. The one disabled row is a captured disabled DOM state, not a complete state or behavior specification.
+
+### Header controls
+
+**Public header control**
+- Background: transparent
+- Text: `#000000`
+- Border: `1px solid #e4e3de` on the right edge
+- Radius: `0px`
+- Padding: `0px 16px`
+- Font: `16px / 500 / ALTMistral`
+- Use: `home::[data-omd-capture="55"]`; 48px-high public header control on home and pricing
+
+### List rows
+
+**Expandable/list row**
+- Background: transparent
+- Text: `#000000`
+- Border: `1px solid #e4e3de` on the bottom edge
+- Radius: `0px`
+- Padding: `16px`
+- Font: `16px / 400 / Inter`
+- Use: `home::[data-omd-capture="1"]`; full-width row observed across the captured public surfaces
+
+### Pricing plans
+
+**Primary-surface plan shell**
+- Background: `#fbfbf8`
+- Text: `oklch(0.21 0.006 285.885)`
+- Border: `1px solid #e4e3de`
+- Radius: `0px`
+- Font: `16px / 400 / Inter`
+- Use: `pricing::mistral-block-card-plan`; public pricing-plan shell
+
+**Secondary-surface plan shell**
+- Background: `#f5f4ef`
+- Text: `oklch(0.21 0.006 285.885)`
+- Border: `1px solid #e4e3de`
+- Radius: `0px`
+- Font: `16px / 400 / Inter`
+- Use: `pricing::mistral-block-card-plan`; alternate captured public pricing-plan shell
+
+### Segmented navigation shell
+
+**Pricing navigation container**
+- Background: `#f5f4ef`
+- Text: `#000000`
+- Border: `1px solid #e4e3de`
+- Radius: `6px`
+- Padding: `6px`
+- Font: `16px / 400 / Inter`
+- Use: `pricing::mistral-atom-navigation-tabs`; a container observation, not a child-tab active/inactive claim
+
+### Quantity input
+
+**Pricing number input**
+- Background: transparent
+- Text: `oklch(0.21 0.006 285.885)`
+- Border: `1px solid oklch(0.21 0.006 285.885)` on the bottom edge
+- Radius: `0px`
+- Font: `16px / 400 / Inter`
+- Use: `pricing::[data-omd-capture="74"]`; number input in the public pricing surface
+
+### Compact control
+
+**Disabled compact control**
+- Background: `rgba(7, 7, 11, 0.1)`
+- Text: `oklch(0.552 0.016 285.938)`
+- Radius: `6px`
+- Padding: `4px`
+- Font: `16px / 400 / Inter`
+- Use: `pricing::[data-omd-capture="75"]`; disabled DOM control on the public pricing surface
+- Disabled: present in the captured DOM; no interaction transition was recorded
+
+---
+
+Legacy claims were rolled back where absent from current Tier 1 evidence.
+
+### States
+
+The supplied capture records one disabled compact control at `pricing::[data-omd-capture="75"]`, with `rgba(7, 7, 11, 0.1)` background, `oklch(0.552 0.016 285.938)` text, 6px radius, and 4px padding. It does not supply empty, loading, success, error, validation, toast, dialog, or skeleton states. Those state groups are intentionally omitted rather than inferred.
+
+## Do's and Don'ts
+
+### Do
+
+- Use the captured public-web neutrals and one-pixel `#e4e3de` dividers only in the documented public-web scope.
+- Pair ALTMistral, Inter, and Space Mono only when the target has a legitimate right to load those exact families.
+- Preserve selector and surface boundaries when borrowing a row, pricing-plan, tab-shell, or quantity-input treatment.
+- Treat the official gradient logo and colorful model art as brand assets rather than unmeasured UI color tokens.
+
+### Don't
+
+- Do not restore the earlier orange/golden palette, Arial, all-0px rule, or warm-shadow system without fresh Tier 1 evidence.
+- Do not treat Source Sans 3, documentation chrome, or a system fallback as a Mistral UI family.
+- Do not invent active tabs, hover colors, focus rings, menus, dialogs, errors, breakpoints, or additional price-plan variants.
+- Do not use the captured font URLs as a downstream redistribution licence.
+
+## Voice & Tone
+
+Official language is direct, technically ambitious, and oriented toward access and control: Mistral says it exists to put frontier AI in everyone’s hands, while its careers page asks for structured, direct communication that values content over tone. This supports product-led, specific public language; it is not evidence for a comprehensive error-copy or conversational-assistant style guide.
+
+| Context | First-party direction |
+|---|---|
+| Mission | Frame AI as open, controllable, and capable of solving hard problems. |
+| Enterprise and public-sector work | Describe the concrete stakes: control, ownership, reliability, and tailored systems. |
+| Internal culture | Prefer rigor, directness, ownership, speed, and low-ego collaboration. |
+
+**Voice samples**
+- “Putting frontier AI in everyone's hands.” <!-- official about page, 2026-07-13 -->
+- “Mission-critical AI for enterprises and governments.” <!-- official about page, 2026-07-13 -->
+- “Build the future of frontier AI.” <!-- official careers page, 2026-07-13 -->
+
+## Agent Prompt Guide
+
+For a Mistral-like public commercial page, begin with a quiet `#fbfbf8` or `#f5f4ef` surface, black content, thin `#e4e3de` dividers, Inter for repeated reading, and ALTMistral only where it can be legally loaded. Use square list and pricing-plan shells plus the observed 6px segmented container; do not recreate Mistral’s product, documentation, or brand artwork from this limited public-web reference.
+
+## Governance
+
+### Known Gaps
+
+- **Contrast, `disabled-compact-control`.** Text `#71717b` on `#07070b1a` measures 4.17:1, below the WCAG AA 4.5:1 minimum for normal-size text. Recorded as measured, not adjusted.

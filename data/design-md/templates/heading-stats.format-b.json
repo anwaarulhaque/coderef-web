@@ -1,0 +1,125 @@
+{
+  "documents": 505,
+  "min_share": 0.4,
+  "sections": [
+    {
+      "title": "Visual Theme & Atmosphere",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Color Palette & Roles",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Typography Rules",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Hierarchy",
+          "share": 0.416
+        },
+        {
+          "title": "Principles",
+          "share": 0.414
+        },
+        {
+          "title": "Font Family",
+          "share": 0.412
+        }
+      ]
+    },
+    {
+      "title": "Component Stylings",
+      "share": 0.889,
+      "subsections": [
+        {
+          "title": "Buttons",
+          "share": 0.47
+        },
+        {
+          "title": "Navigation",
+          "share": 0.452
+        },
+        {
+          "title": "Distinctive Components",
+          "share": 0.445
+        },
+        {
+          "title": "Input Fields",
+          "share": 0.43
+        }
+      ]
+    },
+    {
+      "title": "Layout Principles",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Spacing System",
+          "share": 0.418
+        },
+        {
+          "title": "Whitespace Philosophy",
+          "share": 0.416
+        },
+        {
+          "title": "Grid & Container",
+          "share": 0.414
+        },
+        {
+          "title": "Border Radius Scale",
+          "share": 0.414
+        }
+      ]
+    },
+    {
+      "title": "Depth & Elevation",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Do's and Don'ts",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Do",
+          "share": 0.418
+        },
+        {
+          "title": "Don't",
+          "share": 0.418
+        }
+      ]
+    },
+    {
+      "title": "Responsive Behavior",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Touch Targets",
+          "share": 0.41
+        }
+      ]
+    },
+    {
+      "title": "Agent Prompt Guide",
+      "share": 0.968,
+      "subsections": []
+    }
+  ],
+  "all_h2": {
+    "Visual Theme & Atmosphere": 505,
+    "Color Palette & Roles": 505,
+    "Typography Rules": 505,
+    "Layout Principles": 505,
+    "Depth & Elevation": 505,
+    "Do's and Don'ts": 505,
+    "Responsive Behavior": 505,
+    "Agent Prompt Guide": 489,
+    "Component Stylings": 449,
+    "Component Styling": 56,
+    "Quick Reference Cheat Sheet": 16
+  }
+}

@@ -53,6 +53,13 @@ export const NAV: NavGroup[] = [
         ],
       },
       {
+        title: "DESIGN.md Library",
+        items: [
+          { href: "/design-md/", label: "DESIGN.md Library", description: "1,000+ design systems for AI coding agents", badge: "NEW" },
+          { href: "/design-md/templates/", label: "DESIGN.md Templates", description: "Blank design system files to fill in for your brand" },
+        ],
+      },
+      {
         title: "Web Standards & Compatibility",
         items: [
           { href: "/browser-support/", label: "Browser Support", description: "Baseline status & compatibility data for 1,200+ web features" },

@@ -1,0 +1,183 @@
+{
+  "documents": 73,
+  "min_share": 0.4,
+  "sections": [
+    {
+      "title": "Overview",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Colors",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Brand & Accent",
+          "share": 0.986
+        },
+        {
+          "title": "Surface",
+          "share": 0.986
+        },
+        {
+          "title": "Text",
+          "share": 0.986
+        },
+        {
+          "title": "Semantic",
+          "share": 0.836
+        }
+      ]
+    },
+    {
+      "title": "Typography",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Font Family",
+          "share": 1.0
+        },
+        {
+          "title": "Hierarchy",
+          "share": 1.0
+        },
+        {
+          "title": "Principles",
+          "share": 1.0
+        },
+        {
+          "title": "Note on Font Substitutes",
+          "share": 0.89
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Spacing System",
+          "share": 1.0
+        },
+        {
+          "title": "Grid & Container",
+          "share": 1.0
+        },
+        {
+          "title": "Whitespace Philosophy",
+          "share": 0.904
+        }
+      ]
+    },
+    {
+      "title": "Elevation & Depth",
+      "share": 0.986,
+      "subsections": [
+        {
+          "title": "Decorative Depth",
+          "share": 0.917
+        }
+      ]
+    },
+    {
+      "title": "Shapes",
+      "share": 0.986,
+      "subsections": [
+        {
+          "title": "Border Radius Scale",
+          "share": 0.986
+        },
+        {
+          "title": "Photography Geometry",
+          "share": 0.681
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Buttons",
+          "share": 0.973
+        },
+        {
+          "title": "Inputs & Forms",
+          "share": 0.849
+        },
+        {
+          "title": "Cards & Containers",
+          "share": 0.822
+        },
+        {
+          "title": "Navigation",
+          "share": 0.726
+        },
+        {
+          "title": "Signature Components",
+          "share": 0.562
+        }
+      ]
+    },
+    {
+      "title": "Do's and Don'ts",
+      "share": 0.986,
+      "subsections": [
+        {
+          "title": "Do",
+          "share": 1.0
+        },
+        {
+          "title": "Don't",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "title": "Responsive Behavior",
+      "share": 0.699,
+      "subsections": [
+        {
+          "title": "Touch Targets",
+          "share": 1.0
+        },
+        {
+          "title": "Collapsing Strategy",
+          "share": 1.0
+        },
+        {
+          "title": "Breakpoints",
+          "share": 0.98
+        },
+        {
+          "title": "Image Behavior",
+          "share": 0.824
+        }
+      ]
+    },
+    {
+      "title": "Iteration Guide",
+      "share": 0.685,
+      "subsections": []
+    },
+    {
+      "title": "Known Gaps",
+      "share": 0.589,
+      "subsections": []
+    }
+  ],
+  "all_h2": {
+    "Overview": 73,
+    "Colors": 73,
+    "Typography": 73,
+    "Layout": 73,
+    "Components": 73,
+    "Elevation & Depth": 72,
+    "Shapes": 72,
+    "Do's and Don'ts": 72,
+    "Responsive Behavior": 51,
+    "Iteration Guide": 50,
+    "Known Gaps": 43,
+    "Elevation": 1
+  }
+}

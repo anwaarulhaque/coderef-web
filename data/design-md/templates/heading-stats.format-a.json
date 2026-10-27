@@ -1,0 +1,172 @@
+{
+  "documents": 522,
+  "min_share": 0.4,
+  "sections": [
+    {
+      "title": "Overview",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Visual Theme & Atmosphere",
+          "share": 0.998
+        },
+        {
+          "title": "Brand Narrative",
+          "share": 0.992
+        },
+        {
+          "title": "Principles",
+          "share": 0.989
+        },
+        {
+          "title": "Personas",
+          "share": 0.985
+        },
+        {
+          "title": "Primary tasks",
+          "share": 0.845
+        }
+      ]
+    },
+    {
+      "title": "Colors",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Typography",
+      "share": 0.981,
+      "subsections": [
+        {
+          "title": "Font Family",
+          "share": 0.627
+        },
+        {
+          "title": "Hierarchy",
+          "share": 0.484
+        },
+        {
+          "title": "Principles",
+          "share": 0.475
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "share": 0.996,
+      "subsections": [
+        {
+          "title": "Responsive Behavior",
+          "share": 0.938
+        },
+        {
+          "title": "Border Radius Scale",
+          "share": 0.462
+        },
+        {
+          "title": "Spacing System",
+          "share": 0.456
+        },
+        {
+          "title": "Grid & Container",
+          "share": 0.452
+        },
+        {
+          "title": "Whitespace Philosophy",
+          "share": 0.442
+        }
+      ]
+    },
+    {
+      "title": "Elevation & Depth",
+      "share": 0.989,
+      "subsections": [
+        {
+          "title": "Values kept in prose",
+          "share": 0.599
+        }
+      ]
+    },
+    {
+      "title": "Motion & Easing",
+      "share": 0.992,
+      "subsections": []
+    },
+    {
+      "title": "Components",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "States",
+          "share": 0.983
+        },
+        {
+          "title": "Buttons",
+          "share": 0.523
+        }
+      ]
+    },
+    {
+      "title": "Do's and Don'ts",
+      "share": 0.973,
+      "subsections": [
+        {
+          "title": "Do",
+          "share": 0.969
+        },
+        {
+          "title": "Don't",
+          "share": 0.969
+        }
+      ]
+    },
+    {
+      "title": "Voice & Tone",
+      "share": 0.996,
+      "subsections": []
+    },
+    {
+      "title": "Agent Prompt Guide",
+      "share": 0.937,
+      "subsections": [
+        {
+          "title": "Example Component Prompts",
+          "share": 0.712
+        },
+        {
+          "title": "Quick Color Reference",
+          "share": 0.706
+        },
+        {
+          "title": "Iteration Guide",
+          "share": 0.536
+        }
+      ]
+    },
+    {
+      "title": "Governance",
+      "share": 0.705,
+      "subsections": [
+        {
+          "title": "Known Gaps",
+          "share": 0.984
+        }
+      ]
+    }
+  ],
+  "all_h2": {
+    "Overview": 522,
+    "Colors": 522,
+    "Components": 522,
+    "Layout": 520,
+    "Voice & Tone": 520,
+    "Motion & Easing": 518,
+    "Elevation & Depth": 516,
+    "Typography": 512,
+    "Do's and Don'ts": 508,
+    "Agent Prompt Guide": 489,
+    "Governance": 368,
+    "Shapes": 11,
+    "CJK Typesetting": 1
+  }
+}

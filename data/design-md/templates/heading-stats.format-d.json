@@ -1,0 +1,152 @@
+{
+  "documents": 16,
+  "min_share": 0.4,
+  "sections": [
+    {
+      "title": "Theme Overview",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Color Palette",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Semantic Roles",
+          "share": 0.75
+        }
+      ]
+    },
+    {
+      "title": "Typography & ASCII Art",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Text Hierarchy",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "title": "Borders & Box Drawing",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Parts Table",
+          "share": 1.0
+        },
+        {
+          "title": "Primary Border",
+          "share": 0.875
+        },
+        {
+          "title": "Dividers",
+          "share": 0.812
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Status Bar",
+          "share": 0.688
+        },
+        {
+          "title": "Buttons / Actions",
+          "share": 0.625
+        },
+        {
+          "title": "Input Fields",
+          "share": 0.625
+        },
+        {
+          "title": "Tables",
+          "share": 0.625
+        },
+        {
+          "title": "Lists / Menus",
+          "share": 0.625
+        },
+        {
+          "title": "Panels / Cards",
+          "share": 0.625
+        }
+      ]
+    },
+    {
+      "title": "Layout & Spacing",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Alignment Principles",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "title": "Icons & Indicators",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Animation & Motion",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Transitions",
+          "share": 1.0
+        },
+        {
+          "title": "Progress",
+          "share": 0.938
+        },
+        {
+          "title": "Spinners",
+          "share": 0.875
+        }
+      ]
+    },
+    {
+      "title": "Agent Prompt Guide",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Quick Reference",
+          "share": 1.0
+        },
+        {
+          "title": "Example Prompts",
+          "share": 1.0
+        }
+      ]
+    },
+    {
+      "title": "Do's and Don'ts",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Do",
+          "share": 1.0
+        },
+        {
+          "title": "Don't",
+          "share": 1.0
+        }
+      ]
+    }
+  ],
+  "all_h2": {
+    "Theme Overview": 16,
+    "Color Palette": 16,
+    "Typography & ASCII Art": 16,
+    "Borders & Box Drawing": 16,
+    "Components": 16,
+    "Layout & Spacing": 16,
+    "Icons & Indicators": 16,
+    "Animation & Motion": 16,
+    "Agent Prompt Guide": 16,
+    "Do's and Don'ts": 16
+  }
+}

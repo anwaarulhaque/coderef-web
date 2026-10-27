@@ -13,8 +13,9 @@ const KIND_LABEL: Record<SearchKind, string> = {
   feature: "Browser support",
   abbr: "HTML & CSS abbreviations",
   markdown: "Markdown",
+  design: "DESIGN.md library",
 };
-const KIND_ORDER: SearchKind[] = ["page", "sheet", "snippet", "entry", "feature", "markdown", "abbr"];
+const KIND_ORDER: SearchKind[] = ["page", "sheet", "snippet", "entry", "design", "feature", "markdown", "abbr"];
 const PER_GROUP = 6;
 
 let indexPromise: Promise<SearchEntry[]> | null = null;

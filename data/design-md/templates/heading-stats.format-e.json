@@ -1,0 +1,59 @@
+{
+  "documents": 3,
+  "min_share": 0.4,
+  "sections": [
+    {
+      "title": "Brand & Style",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Colors",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Typography",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Layout & Spacing",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Elevation & Depth",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Shapes",
+      "share": 1.0,
+      "subsections": []
+    },
+    {
+      "title": "Components",
+      "share": 1.0,
+      "subsections": [
+        {
+          "title": "Action Elements",
+          "share": 0.667
+        },
+        {
+          "title": "Typography Application",
+          "share": 0.667
+        }
+      ]
+    }
+  ],
+  "all_h2": {
+    "Brand & Style": 3,
+    "Colors": 3,
+    "Typography": 3,
+    "Layout & Spacing": 3,
+    "Elevation & Depth": 3,
+    "Shapes": 3,
+    "Components": 3
+  }
+}

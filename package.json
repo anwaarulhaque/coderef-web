@@ -9,7 +9,10 @@
     "lint": "eslint",
     "deploy": "next build && wrangler deploy",
     "deploy:aws": "powershell -ExecutionPolicy Bypass -File scripts/deploy-aws.ps1",
-    "preview:cf": "next build && wrangler dev"
+    "preview:cf": "next build && wrangler dev",
+    "sync:design-md": "node scripts/sync-design-md.mjs",
+    "design-md:sites": "node scripts/design-md-sites.mjs",
+    "design-md:shots": "node scripts/screenshot-design-md.mjs"
   },
   "dependencies": {
     "@codemirror/commands": "6.11.1",
@@ -39,7 +42,7 @@
     "markdown-it-sub": "2.0.0",
     "markdown-it-sup": "2.0.0",
     "markdown-it-task-lists": "2.1.1",
-    "next": "16.4.0",
+    "next": "16.4.3",
     "papaparse": "5.7.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
@@ -53,7 +56,9 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.4.0",
+    "eslint-config-next": "16.4.3",
+    "playwright-core": "^1.64.1",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4",
     "typescript": "^5",
     "web-features": "3.42.0",

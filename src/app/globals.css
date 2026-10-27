@@ -159,6 +159,10 @@ body {
 .md-preview .footnotes-sep { margin: 1.5em 0 1em; }
 .md-preview .footnote-ref a, .md-preview .footnote-backref { text-decoration: none; }
 
+/* DESIGN.md library documents: anchors land below the sticky header; long tables scroll. */
+.design-doc h2 { scroll-margin-top: 5rem; }
+.design-doc table { font-size: 0.875em; }
+
 /* Printing (Quick Reference "Print / PDF"): just the content, black on white. */
 @media print {
   .no-print { display: none !important; }

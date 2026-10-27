@@ -1,0 +1,2274 @@
+{
+  "brands/104": {
+    "h": 900,
+    "v": "mvqn67x9"
+  },
+  "brands/3o3": {
+    "h": 6271,
+    "v": "mvqn6t5r"
+  },
+  "brands/42dot": {
+    "h": 9411,
+    "v": "mvqn6rbx"
+  },
+  "brands/591": {
+    "h": 6911,
+    "v": "mvqn6i9t"
+  },
+  "brands/8percent": {
+    "h": 4037,
+    "v": "mvqn6jmq"
+  },
+  "brands/abema": {
+    "h": 900,
+    "v": "mvqp59zc"
+  },
+  "brands/ably": {
+    "h": 900,
+    "v": "mvqn6tp6"
+  },
+  "brands/adobe": {
+    "h": 900,
+    "v": "mvqn6u84"
+  },
+  "brands/adyen": {
+    "h": 11488,
+    "v": "mvqn77es"
+  },
+  "brands/airbridge": {
+    "h": 11388,
+    "v": "mvqn7axb"
+  },
+  "brands/airtable": {
+    "h": 7785,
+    "v": "mvqn74j5"
+  },
+  "brands/alan": {
+    "h": 12000,
+    "v": "mvqn7k6s"
+  },
+  "brands/amazingtalker": {
+    "h": 10745,
+    "v": "mvqn7p2m"
+  },
+  "brands/appier": {
+    "h": 6651,
+    "v": "mvqp5gw5"
+  },
+  "brands/apple": {
+    "h": 5955,
+    "v": "mvqmvgtw"
+  },
+  "brands/asana": {
+    "h": 8440,
+    "v": "mvqn8ht3"
+  },
+  "brands/avanza": {
+    "h": 5906,
+    "v": "mvqn8044"
+  },
+  "brands/baemin": {
+    "h": 900,
+    "v": "mvqn85mu"
+  },
+  "brands/bbc": {
+    "h": 12000,
+    "v": "mvqp5t1u"
+  },
+  "brands/bigin": {
+    "h": 7208,
+    "v": "mvqp61x8"
+  },
+  "brands/bito": {
+    "h": 5090,
+    "v": "mvqn9b3y"
+  },
+  "brands/bitpanda": {
+    "h": 6783,
+    "v": "mvqn96kc"
+  },
+  "brands/blinkist": {
+    "h": 900,
+    "v": "mvqn9ih5"
+  },
+  "brands/bloomandwild": {
+    "h": 1021,
+    "v": "mvqn9af2"
+  },
+  "brands/bolt": {
+    "h": 11482,
+    "v": "mvqn9um1"
+  },
+  "brands/booth": {
+    "h": 7173,
+    "v": "mvqn9pwq"
+  },
+  "brands/buzzvil": {
+    "h": 7878,
+    "v": "mvqn9yuc"
+  },
+  "brands/cabify": {
+    "h": 900,
+    "v": "mvqn9scl"
+  },
+  "brands/caddi": {
+    "h": 6762,
+    "v": "mvqp6r0o"
+  },
+  "brands/cafe24": {
+    "h": 900,
+    "v": "mvqna30a"
+  },
+  "brands/cal": {
+    "h": 8449,
+    "v": "mvqnatny"
+  },
+  "brands/celonis": {
+    "h": 900,
+    "v": "mvqnadbj"
+  },
+  "brands/citymapper": {
+    "h": 4622,
+    "v": "mvqnanqx"
+  },
+  "brands/cloudflare": {
+    "h": 7012,
+    "v": "mvqnawig"
+  },
+  "brands/coconala": {
+    "h": 9162,
+    "v": "mvqnb87b"
+  },
+  "brands/codeit": {
+    "h": 10978,
+    "v": "mvqnboty"
+  },
+  "brands/coinbase": {
+    "h": 900,
+    "v": "mvqnb7yf"
+  },
+  "brands/cookpad": {
+    "h": 1947,
+    "v": "mvqnbcbz"
+  },
+  "brands/coolblue": {
+    "h": 900,
+    "v": "mvqnbbwe"
+  },
+  "brands/crowdworks": {
+    "h": 12000,
+    "v": "mvqnc8hh"
+  },
+  "brands/ctrip": {
+    "h": 900,
+    "v": "mvqp721n"
+  },
+  "brands/cybozu": {
+    "h": 4481,
+    "v": "mvqp7f21"
+  },
+  "brands/dcard": {
+    "h": 1021,
+    "v": "mvqncd30"
+  },
+  "brands/dealicious": {
+    "h": 900,
+    "v": "mvqncfd3"
+  },
+  "brands/deepl": {
+    "h": 8783,
+    "v": "mvqncrb2"
+  },
+  "brands/deepseek": {
+    "h": 900,
+    "v": "mvqncgeh"
+  },
+  "brands/deliveroo": {
+    "h": 2841,
+    "v": "mvqp7lcc"
+  },
+  "brands/dell": {
+    "h": 900,
+    "v": "mvqncjk5"
+  },
+  "brands/discord": {
+    "h": 8135,
+    "v": "mvqnd218"
+  },
+  "brands/dji": {
+    "h": 6169,
+    "v": "mvqndlxh"
+  },
+  "brands/dmm": {
+    "h": 5807,
+    "v": "mvqndxcf"
+  },
+  "brands/doctolib": {
+    "h": 900,
+    "v": "mvqnddq3"
+  },
+  "brands/douyin": {
+    "h": 900,
+    "v": "mvqndweh"
+  },
+  "brands/drdiary": {
+    "h": 8755,
+    "v": "mvqndv3n"
+  },
+  "brands/duolingo": {
+    "h": 7803,
+    "v": "mvqnebfz"
+  },
+  "brands/ecosia": {
+    "h": 900,
+    "v": "mvqne7da"
+  },
+  "brands/elice": {
+    "h": 8053,
+    "v": "mvqnectf"
+  },
+  "brands/fastcampus": {
+    "h": 12000,
+    "v": "mvqp8hy1"
+  },
+  "brands/finda": {
+    "h": 7611,
+    "v": "mvqnex2b"
+  },
+  "brands/firstory": {
+    "h": 9890,
+    "v": "mvqnf08b"
+  },
+  "brands/fitpet": {
+    "h": 7316,
+    "v": "mvqp8e7h"
+  },
+  "brands/flex": {
+    "h": 9139,
+    "v": "mvqnf93i"
+  },
+  "brands/flixbus": {
+    "h": 3722,
+    "v": "mvqp8u19"
+  },
+  "brands/ft": {
+    "h": 900,
+    "v": "mvqnfmyg"
+  },
+  "brands/gaudiolab": {
+    "h": 8141,
+    "v": "mvqnfvea"
+  },
+  "brands/gaudiy": {
+    "h": 4474,
+    "v": "mvqnfzy8"
+  },
+  "brands/genie": {
+    "h": 2524,
+    "v": "mvqngr2d"
+  },
+  "brands/getyourguide": {
+    "h": 900,
+    "v": "mvqnfycq"
+  },
+  "brands/github": {
+    "h": 11645,
+    "v": "mvqngipi"
+  },
+  "brands/gmarket": {
+    "h": 900,
+    "v": "mvqngchv"
+  },
+  "brands/gogoro": {
+    "h": 10402,
+    "v": "mvqp981w"
+  },
+  "brands/goorm": {
+    "h": 10534,
+    "v": "mvqngrw0"
+  },
+  "brands/gousto": {
+    "h": 7713,
+    "v": "mvqngymw"
+  },
+  "brands/greencar": {
+    "h": 916,
+    "v": "mvqngzei"
+  },
+  "brands/hackle": {
+    "h": 6324,
+    "v": "mvqnhfu4"
+  },
+  "brands/hahow": {
+    "h": 7657,
+    "v": "mvqp9i7q"
+  },
+  "brands/hatena": {
+    "h": 9442,
+    "v": "mvqni5zl"
+  },
+  "brands/heydealer": {
+    "h": 6586,
+    "v": "mvqnhmzw"
+  },
+  "brands/hp": {
+    "h": 3578,
+    "v": "mvqni116"
+  },
+  "brands/huawei": {
+    "h": 4421,
+    "v": "mvqni7xo"
+  },
+  "brands/hubspot": {
+    "h": 6699,
+    "v": "mvqniekz"
+  },
+  "brands/humanscape": {
+    "h": 6322,
+    "v": "mvqnik4e"
+  },
+  "brands/hyperconnect": {
+    "h": 3799,
+    "v": "mvqnikwi"
+  },
+  "brands/ibm": {
+    "h": 4605,
+    "v": "mvqp9p2i"
+  },
+  "brands/ikala": {
+    "h": 5998,
+    "v": "mvqnj84j"
+  },
+  "brands/ikea": {
+    "h": 10731,
+    "v": "mvqnixow"
+  },
+  "brands/imweb": {
+    "h": 9902,
+    "v": "mvqpa7p3"
+  },
+  "brands/intercom": {
+    "h": 9653,
+    "v": "mvqnjcfe"
+  },
+  "brands/jal": {
+    "h": 900,
+    "v": "mvqnjat3"
+  },
+  "brands/jumpit": {
+    "h": 2194,
+    "v": "mvqnjmjx"
+  },
+  "brands/kakaopay": {
+    "h": 900,
+    "v": "mvqnjffx"
+  },
+  "brands/kcd": {
+    "h": 5869,
+    "v": "mvqnjr2k"
+  },
+  "brands/kdan": {
+    "h": 4256,
+    "v": "mvqnjys9"
+  },
+  "brands/kia": {
+    "h": 5429,
+    "v": "mvqnk1x3"
+  },
+  "brands/kkday": {
+    "h": 900,
+    "v": "mvqnjzn0"
+  },
+  "brands/klarna": {
+    "h": 900,
+    "v": "mvqnjvyi"
+  },
+  "brands/komoot": {
+    "h": 12000,
+    "v": "mvqnkdw4"
+  },
+  "brands/krds": {
+    "h": 3746,
+    "v": "mvqpbb4d"
+  },
+  "brands/kurly": {
+    "h": 12000,
+    "v": "mvqnkw6y"
+  },
+  "brands/kyobobook": {
+    "h": 9373,
+    "v": "mvqnkxqo"
+  },
+  "brands/laundrygo": {
+    "h": 900,
+    "v": "mvqnkzug"
+  },
+  "brands/layerx": {
+    "h": 8479,
+    "v": "mvqnl8dx"
+  },
+  "brands/lego": {
+    "h": 900,
+    "v": "mvqnl91t"
+  },
+  "brands/likelion": {
+    "h": 3101,
+    "v": "mvqnlnu8"
+  },
+  "brands/line": {
+    "h": 9778,
+    "v": "mvqpb6me"
+  },
+  "brands/linear.app": {
+    "h": 9960,
+    "v": "mvqnlma8"
+  },
+  "brands/liner": {
+    "h": 10813,
+    "v": "mvqnm7gp"
+  },
+  "brands/loglass": {
+    "h": 8557,
+    "v": "mvqnmeny"
+  },
+  "brands/lunit": {
+    "h": 7848,
+    "v": "mvqnm4ni"
+  },
+  "brands/maicoin": {
+    "h": 900,
+    "v": "mvqnm9y2"
+  },
+  "brands/mailchimp": {
+    "h": 900,
+    "v": "mvqnmi00"
+  },
+  "brands/makinarocks": {
+    "h": 5565,
+    "v": "mvqnmnvq"
+  },
+  "brands/malt": {
+    "h": 900,
+    "v": "mvqnmln0"
+  },
+  "brands/medibloc": {
+    "h": 11122,
+    "v": "mvqnn4nv"
+  },
+  "brands/melon": {
+    "h": 1360,
+    "v": "mvqnmulr"
+  },
+  "brands/mercury": {
+    "h": 11669,
+    "v": "mvqnn56h"
+  },
+  "brands/meta": {
+    "h": 7362,
+    "v": "mvqnndxe"
+  },
+  "brands/mikan": {
+    "h": 9724,
+    "v": "mvqnnaqq"
+  },
+  "brands/mildang": {
+    "h": 10923,
+    "v": "mvqnnloa"
+  },
+  "brands/mintlify": {
+    "h": 8451,
+    "v": "mvqnnkf8"
+  },
+  "brands/mistral.ai": {
+    "h": 6210,
+    "v": "mvqnnnxp"
+  },
+  "brands/modusign": {
+    "h": 5376,
+    "v": "mvqnnspl"
+  },
+  "brands/money-forward": {
+    "h": 900,
+    "v": "mvqnno4o"
+  },
+  "brands/monzo": {
+    "h": 12000,
+    "v": "mvqnnxnj"
+  },
+  "brands/moreh": {
+    "h": 3950,
+    "v": "mvqno42c"
+  },
+  "brands/moze": {
+    "h": 10297,
+    "v": "mvqno5pg"
+  },
+  "brands/musinsa": {
+    "h": 900,
+    "v": "mvqno7vm"
+  },
+  "brands/mustit": {
+    "h": 11462,
+    "v": "mvqnonmo"
+  },
+  "brands/n26": {
+    "h": 900,
+    "v": "mvqnoccy"
+  },
+  "brands/n8n": {
+    "h": 9199,
+    "v": "mvqnofyo"
+  },
+  "brands/ncsoft": {
+    "h": 4355,
+    "v": "mvqnolp0"
+  },
+  "brands/neosapience": {
+    "h": 3869,
+    "v": "mvqnoi1w"
+  },
+  "brands/newspicks": {
+    "h": 12000,
+    "v": "mvqnoznn"
+  },
+  "brands/nexon": {
+    "h": 2192,
+    "v": "mvqnorp9"
+  },
+  "brands/nhs": {
+    "h": 3096,
+    "v": "mvqnp09m"
+  },
+  "brands/nike": {
+    "h": 4691,
+    "v": "mvqnp475"
+  },
+  "brands/nintendo": {
+    "h": 2605,
+    "v": "mvqnoxnq"
+  },
+  "brands/note": {
+    "h": 1423,
+    "v": "mvqnp61x"
+  },
+  "brands/notion": {
+    "h": 4687,
+    "v": "mvqmvnlx"
+  },
+  "brands/ns": {
+    "h": 3600,
+    "v": "mvqnp9iw"
+  },
+  "brands/nulab": {
+    "h": 8327,
+    "v": "mvqnplck"
+  },
+  "brands/nvidia": {
+    "h": 7373,
+    "v": "mvqnpqb8"
+  },
+  "brands/ocado": {
+    "h": 900,
+    "v": "mvqnph9x"
+  },
+  "brands/opencode.ai": {
+    "h": 4113,
+    "v": "mvqnpfy1"
+  },
+  "brands/otto": {
+    "h": 8881,
+    "v": "mvqnq6q5"
+  },
+  "brands/pairs": {
+    "h": 900,
+    "v": "mvqnplco"
+  },
+  "brands/patreon": {
+    "h": 7430,
+    "v": "mvqnpznu"
+  },
+  "brands/patternfly": {
+    "h": 900,
+    "v": "mvqnpr7f"
+  },
+  "brands/payfit": {
+    "h": 9794,
+    "v": "mvqnq35s"
+  },
+  "brands/payhere": {
+    "h": 12000,
+    "v": "mvqnqa3x"
+  },
+  "brands/paypay": {
+    "h": 11383,
+    "v": "mvqnqndn"
+  },
+  "brands/pchome": {
+    "h": 6773,
+    "v": "mvqnqptz"
+  },
+  "brands/pennylane": {
+    "h": 12000,
+    "v": "mvqnqqkw"
+  },
+  "brands/peoplefund": {
+    "h": 3508,
+    "v": "mvqnqk11"
+  },
+  "brands/pepabo": {
+    "h": 8032,
+    "v": "mvqnqx1g"
+  },
+  "brands/petfriends": {
+    "h": 4848,
+    "v": "mvqnr0mj"
+  },
+  "brands/pixiv": {
+    "h": 900,
+    "v": "mvqnr1pe"
+  },
+  "brands/plaid": {
+    "h": 9117,
+    "v": "mvqnrax5"
+  },
+  "brands/portaly": {
+    "h": 6274,
+    "v": "mvqnrckc"
+  },
+  "brands/portone": {
+    "h": 8325,
+    "v": "mvqnrfer"
+  },
+  "brands/posthog": {
+    "h": 900,
+    "v": "mvqnragh"
+  },
+  "brands/postype": {
+    "h": 7255,
+    "v": "mvqnrka3"
+  },
+  "brands/pozalabs": {
+    "h": 900,
+    "v": "mvqnrfrq"
+  },
+  "brands/protopie": {
+    "h": 9295,
+    "v": "mvqnrpmx"
+  },
+  "brands/publy": {
+    "h": 4282,
+    "v": "mvqpbzh8"
+  },
+  "brands/qanda": {
+    "h": 900,
+    "v": "mvqnrl6s"
+  },
+  "brands/qiita": {
+    "h": 7705,
+    "v": "mvqns4ng"
+  },
+  "brands/qonto": {
+    "h": 9421,
+    "v": "mvqnsl48"
+  },
+  "brands/queenit": {
+    "h": 3509,
+    "v": "mvqns1yd"
+  },
+  "brands/quotabook": {
+    "h": 12000,
+    "v": "mvqnscjk"
+  },
+  "brands/rakuten": {
+    "h": 5272,
+    "v": "mvqpcmuw"
+  },
+  "brands/ramp": {
+    "h": 12000,
+    "v": "mvqnstxy"
+  },
+  "brands/raycast": {
+    "h": 12000,
+    "v": "mvqnsx8l"
+  },
+  "brands/readmoo": {
+    "h": 10743,
+    "v": "mvqntf6o"
+  },
+  "brands/rebellions": {
+    "h": 8245,
+    "v": "mvqnt9l1"
+  },
+  "brands/replicate": {
+    "h": 7878,
+    "v": "mvqntjed"
+  },
+  "brands/resend": {
+    "h": 12000,
+    "v": "mvqnu0o3"
+  },
+  "brands/retool": {
+    "h": 9683,
+    "v": "mvqntlxc"
+  },
+  "brands/revolut": {
+    "h": 900,
+    "v": "mvqntu7h"
+  },
+  "brands/richart": {
+    "h": 7650,
+    "v": "mvqnuh7m"
+  },
+  "brands/robinhood": {
+    "h": 8060,
+    "v": "mvqnu4c6"
+  },
+  "brands/runwayml": {
+    "h": 5144,
+    "v": "mvqnu777"
+  },
+  "brands/sainsburys": {
+    "h": 900,
+    "v": "mvqnu51o"
+  },
+  "brands/salesforce": {
+    "h": 900,
+    "v": "mvqnu8cc"
+  },
+  "brands/samsung": {
+    "h": 7195,
+    "v": "mvqnuljc"
+  },
+  "brands/sanity": {
+    "h": 12000,
+    "v": "mvqnuuz4"
+  },
+  "brands/sansan": {
+    "h": 5442,
+    "v": "mvqnuiya"
+  },
+  "brands/satispay": {
+    "h": 9769,
+    "v": "mvqnur5q"
+  },
+  "brands/scatterlab": {
+    "h": 10718,
+    "v": "mvqnuxt6"
+  },
+  "brands/selectstar": {
+    "h": 7039,
+    "v": "mvqnv30f"
+  },
+  "brands/sendbird": {
+    "h": 1256,
+    "v": "mvqnvkr5"
+  },
+  "brands/shiftee": {
+    "h": 12000,
+    "v": "mvqnvbdj"
+  },
+  "brands/shiftup": {
+    "h": 4775,
+    "v": "mvqnves5"
+  },
+  "brands/sionic": {
+    "h": 9422,
+    "v": "mvqnvjhu"
+  },
+  "brands/skyscanner": {
+    "h": 900,
+    "v": "mvqnvfe7"
+  },
+  "brands/smartbank": {
+    "h": 7202,
+    "v": "mvqnvq2l"
+  },
+  "brands/smarthr": {
+    "h": 12000,
+    "v": "mvqnvw19"
+  },
+  "brands/smartnews": {
+    "h": 5712,
+    "v": "mvqnvre3"
+  },
+  "brands/snapchat": {
+    "h": 3243,
+    "v": "mvqnvq3q"
+  },
+  "brands/socar": {
+    "h": 4271,
+    "v": "mvqnw1al"
+  },
+  "brands/soomgo": {
+    "h": 900,
+    "v": "mvqnvszc"
+  },
+  "brands/sparkful": {
+    "h": 8755,
+    "v": "mvqnw0ez"
+  },
+  "brands/spendesk": {
+    "h": 9932,
+    "v": "mvqnw74q"
+  },
+  "brands/squeezebits": {
+    "h": 5485,
+    "v": "mvqnw9ea"
+  },
+  "brands/ssg": {
+    "h": 900,
+    "v": "mvqnw49f"
+  },
+  "brands/stayfolio": {
+    "h": 9457,
+    "v": "mvqnwphq"
+  },
+  "brands/stibee": {
+    "h": 900,
+    "v": "mvqnwfu0"
+  },
+  "brands/stores": {
+    "h": 10366,
+    "v": "mvqpdpvb"
+  },
+  "brands/storytel": {
+    "h": 5601,
+    "v": "mvqnx9ee"
+  },
+  "brands/studysapuri": {
+    "h": 3660,
+    "v": "mvqnxckt"
+  },
+  "brands/sumup": {
+    "h": 12000,
+    "v": "mvqnx8zx"
+  },
+  "brands/superhuman": {
+    "h": 6446,
+    "v": "mvqnxmav"
+  },
+  "brands/tabling": {
+    "h": 900,
+    "v": "mvqnxc5w"
+  },
+  "brands/taiwanmobile": {
+    "h": 4495,
+    "v": "mvqnxq15"
+  },
+  "brands/teamblind": {
+    "h": 900,
+    "v": "mvqnxg61"
+  },
+  "brands/tellingme": {
+    "h": 900,
+    "v": "mvqnxkx2"
+  },
+  "brands/theguardian": {
+    "h": 900,
+    "v": "mvqnxpu2"
+  },
+  "brands/timee": {
+    "h": 12000,
+    "v": "mvqpejme"
+  },
+  "brands/tmap": {
+    "h": 4985,
+    "v": "mvqnxxue"
+  },
+  "brands/together.ai": {
+    "h": 5816,
+    "v": "mvqnyins"
+  },
+  "brands/toogoodtogo": {
+    "h": 900,
+    "v": "mvqnyemo"
+  },
+  "brands/toss": {
+    "h": 12000,
+    "v": "mvqnyv0t"
+  },
+  "brands/tossbank": {
+    "h": 3923,
+    "v": "mvqnz0ns"
+  },
+  "brands/triple": {
+    "h": 10878,
+    "v": "mvqnzewu"
+  },
+  "brands/trivago": {
+    "h": 900,
+    "v": "mvqnyuzz"
+  },
+  "brands/tumblbug": {
+    "h": 900,
+    "v": "mvqnyxp5"
+  },
+  "brands/tving": {
+    "h": 8781,
+    "v": "mvqnzmm9"
+  },
+  "brands/twilio": {
+    "h": 6754,
+    "v": "mvqnzoc6"
+  },
+  "brands/typed": {
+    "h": 900,
+    "v": "mvqnz46d"
+  },
+  "brands/typeform": {
+    "h": 900,
+    "v": "mvqnzkq5"
+  },
+  "brands/ubie": {
+    "h": 5013,
+    "v": "mvqo08q2"
+  },
+  "brands/uniqlo": {
+    "h": 900,
+    "v": "mvqnzoyg"
+  },
+  "brands/upstage": {
+    "h": 6799,
+    "v": "mvqnzvoo"
+  },
+  "brands/vercel": {
+    "h": 5930,
+    "v": "mvqmvhgp"
+  },
+  "brands/vinted": {
+    "h": 3616,
+    "v": "mvqo0404"
+  },
+  "brands/vipps": {
+    "h": 4653,
+    "v": "mvqnzyz6"
+  },
+  "brands/vuno": {
+    "h": 6143,
+    "v": "mvqpewel"
+  },
+  "brands/wantedly": {
+    "h": 4587,
+    "v": "mvqpfav7"
+  },
+  "brands/watcha": {
+    "h": 900,
+    "v": "mvqo078p"
+  },
+  "brands/wconcept": {
+    "h": 12000,
+    "v": "mvqo11bs"
+  },
+  "brands/webflow": {
+    "h": 7617,
+    "v": "mvqpfefb"
+  },
+  "brands/wetransfer": {
+    "h": 900,
+    "v": "mvqo1qut"
+  },
+  "brands/weverse": {
+    "h": 9991,
+    "v": "mvqo1h6s"
+  },
+  "brands/wired": {
+    "h": 8350,
+    "v": "mvqpg3z3"
+  },
+  "brands/wise": {
+    "h": 11655,
+    "v": "mvqo1oeo"
+  },
+  "brands/wisetracker": {
+    "h": 8986,
+    "v": "mvqo1x4o"
+  },
+  "brands/wolt": {
+    "h": 6318,
+    "v": "mvqo1zwe"
+  },
+  "brands/workday": {
+    "h": 9360,
+    "v": "mvqo3ge7"
+  },
+  "brands/wps": {
+    "h": 900,
+    "v": "mvqo2epr"
+  },
+  "brands/wrtn": {
+    "h": 9157,
+    "v": "mvqo2d53"
+  },
+  "brands/x.ai": {
+    "h": 1021,
+    "v": "mvqo29bz"
+  },
+  "brands/xrex": {
+    "h": 12000,
+    "v": "mvqo2owa"
+  },
+  "brands/yogiyo": {
+    "h": 900,
+    "v": "mvqo2hlp"
+  },
+  "brands/zalando": {
+    "h": 900,
+    "v": "mvqo2tff"
+  },
+  "brands/zara": {
+    "h": 900,
+    "v": "mvqo2r7a"
+  },
+  "brands/zhihu": {
+    "h": 900,
+    "v": "mvqo34jw"
+  },
+  "brands/zigbang": {
+    "h": 900,
+    "v": "mvqo32gj"
+  },
+  "indie/a-fresh.website": {
+    "h": 5577,
+    "v": "mvqo314s"
+  },
+  "indie/abhijitrout.in": {
+    "h": 6228,
+    "v": "mvqo3b5d"
+  },
+  "indie/abjt.dev": {
+    "h": 900,
+    "v": "mvqmvo5f"
+  },
+  "indie/aconiti.com": {
+    "h": 900,
+    "v": "mvqo376v"
+  },
+  "indie/adaline.ai": {
+    "h": 12000,
+    "v": "mvqo40r3"
+  },
+  "indie/adasilv2.framer.website": {
+    "h": 4136,
+    "v": "mvqo3fsi"
+  },
+  "indie/agentation.dev": {
+    "h": 2695,
+    "v": "mvqo3hpy"
+  },
+  "indie/aistudio.google.com": {
+    "h": 5215,
+    "v": "mvqo3obt"
+  },
+  "indie/aiverse.design": {
+    "h": 9779,
+    "v": "mvqo3rdh"
+  },
+  "indie/albumpalette.vercel.app": {
+    "h": 900,
+    "v": "mvqo3mcc"
+  },
+  "indie/alexandravaldivieso.com": {
+    "h": 5522,
+    "v": "mvqpgatz"
+  },
+  "indie/ameji.framer.website": {
+    "h": 3628,
+    "v": "mvqo3w1f"
+  },
+  "indie/amelieschlueter.com": {
+    "h": 2341,
+    "v": "mvqo40fr"
+  },
+  "indie/amie.so": {
+    "h": 12000,
+    "v": "mvqo47m5"
+  },
+  "indie/anara.com": {
+    "h": 11261,
+    "v": "mvqo4gp9"
+  },
+  "indie/andreaskruszakin.com": {
+    "h": 900,
+    "v": "mvqo466n"
+  },
+  "indie/animejs.com": {
+    "h": 12000,
+    "v": "mvqo4hhh"
+  },
+  "indie/antimetal.com": {
+    "h": 9801,
+    "v": "mvqo4mw7"
+  },
+  "indie/apossible.com": {
+    "h": 900,
+    "v": "mvqo4l7r"
+  },
+  "indie/apple.com": {
+    "h": 5955,
+    "v": "mvqo4pld"
+  },
+  "indie/arcade.la": {
+    "h": 900,
+    "v": "mvqo4q5r"
+  },
+  "indie/attio.com": {
+    "h": 12000,
+    "v": "mvqo4z1m"
+  },
+  "indie/aura.build": {
+    "h": 2617,
+    "v": "mvqo4uv3"
+  },
+  "indie/awsmd.com": {
+    "h": 11610,
+    "v": "mvqo5cjf"
+  },
+  "indie/ayocin.com": {
+    "h": 1021,
+    "v": "mvqo4tp6"
+  },
+  "indie/baked.design": {
+    "h": 12000,
+    "v": "mvqo56ny"
+  },
+  "indie/basedash.com": {
+    "h": 9147,
+    "v": "mvqo5cxv"
+  },
+  "indie/basement.studio": {
+    "h": 6714,
+    "v": "mvqo5kb5"
+  },
+  "indie/becomeautonomous.com": {
+    "h": 900,
+    "v": "mvqo5h95"
+  },
+  "indie/bedes.qui.gg": {
+    "h": 1393,
+    "v": "mvqo5ldf"
+  },
+  "indie/bedintentions.com": {
+    "h": 7865,
+    "v": "mvqo6fve"
+  },
+  "indie/benissen.com": {
+    "h": 900,
+    "v": "mvqo5o6n"
+  },
+  "indie/bfcm.stripe.com": {
+    "h": 3921,
+    "v": "mvqo605k"
+  },
+  "indie/borabaloglu.com": {
+    "h": 900,
+    "v": "mvqo5pum"
+  },
+  "indie/brand-generator.stoyanov.works": {
+    "h": 900,
+    "v": "mvqo5rqf"
+  },
+  "indie/brianlovin.com": {
+    "h": 1572,
+    "v": "mvqo5uay"
+  },
+  "indie/buka.studio": {
+    "h": 1403,
+    "v": "mvqo5y62"
+  },
+  "indie/busybeehoney.com": {
+    "h": 1021,
+    "v": "mvqo5x7t"
+  },
+  "indie/bychudy.com": {
+    "h": 900,
+    "v": "mvqo61yv"
+  },
+  "indie/bygideon.com": {
+    "h": 2060,
+    "v": "mvqo646a"
+  },
+  "indie/cedric.design": {
+    "h": 2401,
+    "v": "mvqo684j"
+  },
+  "indie/chanhdai.com": {
+    "h": 8673,
+    "v": "mvqo6dr1"
+  },
+  "indie/charlieosborne.co": {
+    "h": 12000,
+    "v": "mvqo6ivh"
+  },
+  "indie/chester.how": {
+    "h": 2796,
+    "v": "mvqo6hv8"
+  },
+  "indie/chronark.com": {
+    "h": 900,
+    "v": "mvqo6jfs"
+  },
+  "indie/coderabbit.ai": {
+    "h": 10376,
+    "v": "mvqo7tp3"
+  },
+  "indie/comingsoonnewyork.com": {
+    "h": 7998,
+    "v": "mvqpgyf2"
+  },
+  "indie/componine.com": {
+    "h": 5865,
+    "v": "mvqo7rbi"
+  },
+  "indie/composio.dev": {
+    "h": 12000,
+    "v": "mvqo7nnj"
+  },
+  "indie/contra.com": {
+    "h": 5948,
+    "v": "mvqo80y8"
+  },
+  "indie/cossistant.com": {
+    "h": 5608,
+    "v": "mvqo80d8"
+  },
+  "indie/danielsun.space": {
+    "h": 5569,
+    "v": "mvqo8c1f"
+  },
+  "indie/dannpetty.com": {
+    "h": 8659,
+    "v": "mvqo8b2l"
+  },
+  "indie/dapper.agency": {
+    "h": 9353,
+    "v": "mvqoa1b1"
+  },
+  "indie/daylightcomputer.com": {
+    "h": 12000,
+    "v": "mvqo9a4h"
+  },
+  "indie/decagon.ai": {
+    "h": 8646,
+    "v": "mvqo8qaw"
+  },
+  "indie/designme.agency": {
+    "h": 12000,
+    "v": "mvqo8nnq"
+  },
+  "indie/designownow.com": {
+    "h": 10791,
+    "v": "mvqo9e1b"
+  },
+  "indie/devstarterpack.io": {
+    "h": 2216,
+    "v": "mvqo8w31"
+  },
+  "indie/didit.me": {
+    "h": 12000,
+    "v": "mvqo9ehn"
+  },
+  "indie/dreamcut.ai": {
+    "h": 12000,
+    "v": "mvqoaayf"
+  },
+  "indie/droxy.ai": {
+    "h": 11013,
+    "v": "mvqoa789"
+  },
+  "indie/dupe.com": {
+    "h": 5947,
+    "v": "mvqoa2ev"
+  },
+  "indie/eclobeauty.com": {
+    "h": 6635,
+    "v": "mvqph0xl"
+  },
+  "indie/eduardbodak.com": {
+    "h": 4842,
+    "v": "mvqoahvu"
+  },
+  "indie/ekemini.com": {
+    "h": 3393,
+    "v": "mvqoaipq"
+  },
+  "indie/emilylonetto.com": {
+    "h": 12000,
+    "v": "mvqoaweg"
+  },
+  "indie/equals.com": {
+    "h": 9616,
+    "v": "mvqoaxyx"
+  },
+  "indie/eryc.cc": {
+    "h": 900,
+    "v": "mvqoasf9"
+  },
+  "indie/estrellagracia.com": {
+    "h": 3835,
+    "v": "mvqobvwc"
+  },
+  "indie/eu-inc.org": {
+    "h": 4799,
+    "v": "mvqobwab"
+  },
+  "indie/evervault.com": {
+    "h": 7097,
+    "v": "mvqoc05f"
+  },
+  "indie/expensive.toys": {
+    "h": 900,
+    "v": "mvqobb7v"
+  },
+  "indie/fal.ai": {
+    "h": 7248,
+    "v": "mvqobm92"
+  },
+  "indie/fearofgod.com": {
+    "h": 2806,
+    "v": "mvqocxag"
+  },
+  "indie/ferndesk.com": {
+    "h": 9270,
+    "v": "mvqoc75w"
+  },
+  "indie/fey.com": {
+    "h": 900,
+    "v": "mvqoc0mg"
+  },
+  "indie/fiasco.design": {
+    "h": 900,
+    "v": "mvqocz6n"
+  },
+  "indie/flask.do": {
+    "h": 7570,
+    "v": "mvqocdq2"
+  },
+  "indie/flighty.com": {
+    "h": 12000,
+    "v": "mvqocyk4"
+  },
+  "indie/fluar.com": {
+    "h": 6794,
+    "v": "mvqoctsv"
+  },
+  "indie/formnutrition.com": {
+    "h": 900,
+    "v": "mvqod5v2"
+  },
+  "indie/futurethree.studio": {
+    "h": 8938,
+    "v": "mvqodabu"
+  },
+  "indie/geniestudio.app": {
+    "h": 12000,
+    "v": "mvqodde8"
+  },
+  "indie/geospy.ai": {
+    "h": 5500,
+    "v": "mvqodey5"
+  },
+  "indie/giorris.dev": {
+    "h": 6550,
+    "v": "mvqodigw"
+  },
+  "indie/gitbutler.com": {
+    "h": 5400,
+    "v": "mvqodji5"
+  },
+  "indie/gkurt.com": {
+    "h": 900,
+    "v": "mvqodiix"
+  },
+  "indie/glenn.me": {
+    "h": 900,
+    "v": "mvqodj4u"
+  },
+  "indie/gracewalker.ca": {
+    "h": 900,
+    "v": "mvqodns1"
+  },
+  "indie/granola.ai": {
+    "h": 12000,
+    "v": "mvqodv8u"
+  },
+  "indie/graphite.dev": {
+    "h": 8966,
+    "v": "mvqodxws"
+  },
+  "indie/greptile.com": {
+    "h": 9331,
+    "v": "mvqoe39g"
+  },
+  "indie/harshitbeni.com": {
+    "h": 5194,
+    "v": "mvqodyfp"
+  },
+  "indie/harshsingh.me": {
+    "h": 6792,
+    "v": "mvqoe86m"
+  },
+  "indie/haydenbleasel.com": {
+    "h": 1101,
+    "v": "mvqoe8iq"
+  },
+  "indie/headroom.com": {
+    "h": 11231,
+    "v": "mvqoeknm"
+  },
+  "indie/hellodani.co": {
+    "h": 5863,
+    "v": "mvqoej6z"
+  },
+  "indie/hen-ry.com": {
+    "h": 3251,
+    "v": "mvqoeeld"
+  },
+  "indie/henry.codes": {
+    "h": 5624,
+    "v": "mvqoelto"
+  },
+  "indie/hex.inc": {
+    "h": 12000,
+    "v": "mvqoezbs"
+  },
+  "indie/heykuba.com": {
+    "h": 12000,
+    "v": "mvqof549"
+  },
+  "indie/higgsfield.ai": {
+    "h": 11682,
+    "v": "mvqofmoe"
+  },
+  "indie/hims.com": {
+    "h": 900,
+    "v": "mvqof12h"
+  },
+  "indie/huly.io": {
+    "h": 9802,
+    "v": "mvqofl88"
+  },
+  "indie/huyml.co": {
+    "h": 900,
+    "v": "mvqofm16"
+  },
+  "indie/iamnotsrc.com": {
+    "h": 1588,
+    "v": "mvqofjqe"
+  },
+  "indie/imagine.dev": {
+    "h": 9995,
+    "v": "mvqphbjj"
+  },
+  "indie/imgsrc.io": {
+    "h": 1396,
+    "v": "mvqofuzv"
+  },
+  "indie/inngest.com": {
+    "h": 11513,
+    "v": "mvqog74w"
+  },
+  "indie/interfacer.co": {
+    "h": 10130,
+    "v": "mvqog9wl"
+  },
+  "indie/interfere.com": {
+    "h": 7278,
+    "v": "mvqogdt2"
+  },
+  "indie/irenelabat.es": {
+    "h": 6196,
+    "v": "mvqoglf8"
+  },
+  "indie/isapinheiro.com": {
+    "h": 6559,
+    "v": "mvqogj0j"
+  },
+  "indie/itiskul.com": {
+    "h": 900,
+    "v": "mvqogk6s"
+  },
+  "indie/itsjay.us": {
+    "h": 7649,
+    "v": "mvqohtxh"
+  },
+  "indie/ja.mt": {
+    "h": 900,
+    "v": "mvqogxdc"
+  },
+  "indie/jakub.kr": {
+    "h": 2448,
+    "v": "mvqogokl"
+  },
+  "indie/jamesbaduor.com": {
+    "h": 8434,
+    "v": "mvqogxo4"
+  },
+  "indie/jasper.ai": {
+    "h": 10781,
+    "v": "mvqphita"
+  },
+  "indie/jaytel.com": {
+    "h": 1942,
+    "v": "mvqoh2eo"
+  },
+  "indie/jckhlry.com": {
+    "h": 12000,
+    "v": "mvqoh6mn"
+  },
+  "indie/jensonwong.com": {
+    "h": 900,
+    "v": "mvqoh65j"
+  },
+  "indie/joebell.studio": {
+    "h": 948,
+    "v": "mvqohcc4"
+  },
+  "indie/jonhowell.com": {
+    "h": 7964,
+    "v": "mvqohq2n"
+  },
+  "indie/jonsbones.com": {
+    "h": 7842,
+    "v": "mvqohsk3"
+  },
+  "indie/jrhu.me": {
+    "h": 2723,
+    "v": "mvqohuu2"
+  },
+  "indie/jules.google": {
+    "h": 4784,
+    "v": "mvqohx6q"
+  },
+  "indie/julienrivoire.com": {
+    "h": 12000,
+    "v": "mvqoi4wl"
+  },
+  "indie/jus.design": {
+    "h": 1182,
+    "v": "mvqoi642"
+  },
+  "indie/kaisermann.me": {
+    "h": 900,
+    "v": "mvqohyn6"
+  },
+  "indie/kihealth.com": {
+    "h": 12000,
+    "v": "mvqoijfz"
+  },
+  "indie/kimeracorp.eu": {
+    "h": 4702,
+    "v": "mvqoimob"
+  },
+  "indie/kite.video": {
+    "h": 8544,
+    "v": "mvqoioxc"
+  },
+  "indie/krea.ai": {
+    "h": 900,
+    "v": "mvqoiooa"
+  },
+  "indie/kuldar.com": {
+    "h": 3758,
+    "v": "mvqoiujg"
+  },
+  "indie/kuntz.io": {
+    "h": 4773,
+    "v": "mvqoj1lo"
+  },
+  "indie/kyler.design": {
+    "h": 900,
+    "v": "mvqoivpw"
+  },
+  "indie/lab01.dev": {
+    "h": 9568,
+    "v": "mvqoj8e7"
+  },
+  "indie/labs.cuvii.dev": {
+    "h": 1896,
+    "v": "mvqoj6u4"
+  },
+  "indie/labs.noomoagency.com": {
+    "h": 10450,
+    "v": "mvqojxt6"
+  },
+  "indie/layover.studio": {
+    "h": 2090,
+    "v": "mvqojiw3"
+  },
+  "indie/leerob.io": {
+    "h": 1220,
+    "v": "mvqojazz"
+  },
+  "indie/lfs.gd": {
+    "h": 1594,
+    "v": "mvqojh4i"
+  },
+  "indie/linear.app": {
+    "h": 9960,
+    "v": "mvqojth2"
+  },
+  "indie/lltg.co": {
+    "h": 1221,
+    "v": "mvqojrch"
+  },
+  "indie/loader-buttons.appllama.io": {
+    "h": 2211,
+    "v": "mvqok34g"
+  },
+  "indie/loganliffick.com": {
+    "h": 900,
+    "v": "mvqojx04"
+  },
+  "indie/lucis.life": {
+    "h": 11456,
+    "v": "mvqokche"
+  },
+  "indie/lue.studio": {
+    "h": 12000,
+    "v": "mvqokjlw"
+  },
+  "indie/luleav2.framer.website": {
+    "h": 12000,
+    "v": "mvqokfu3"
+  },
+  "indie/lumalabs.ai": {
+    "h": 8886,
+    "v": "mvqokmed"
+  },
+  "indie/lumbre.wtf": {
+    "h": 900,
+    "v": "mvqokmnm"
+  },
+  "indie/lummi.ai": {
+    "h": 6916,
+    "v": "mvqpi1bq"
+  },
+  "indie/lynnandtonic.com": {
+    "h": 900,
+    "v": "mvqokpfh"
+  },
+  "indie/mackenziechild.me": {
+    "h": 900,
+    "v": "mvqokrvn"
+  },
+  "indie/magdabutrym.com": {
+    "h": 900,
+    "v": "mvqol9z5"
+  },
+  "indie/maggie-app.com": {
+    "h": 9945,
+    "v": "mvqol3b1"
+  },
+  "indie/magicpath.ai": {
+    "h": 8062,
+    "v": "mvqolkrq"
+  },
+  "indie/mainfra.me": {
+    "h": 900,
+    "v": "mvqolbui"
+  },
+  "indie/makeover.studio": {
+    "h": 6141,
+    "v": "mvqolnlz"
+  },
+  "indie/marijanapav.com": {
+    "h": 2400,
+    "v": "mvqollm6"
+  },
+  "indie/markflow.app": {
+    "h": 3324,
+    "v": "mvqpi6ts"
+  },
+  "indie/matte.app": {
+    "h": 11015,
+    "v": "mvqolwv9"
+  },
+  "indie/matteosantoro.dev": {
+    "h": 8363,
+    "v": "mvqolvws"
+  },
+  "indie/maximeheckel.com": {
+    "h": 12000,
+    "v": "mvqom365"
+  },
+  "indie/membersexperience-create.lacoste.com": {
+    "h": 900,
+    "v": "mvqom572"
+  },
+  "indie/meter.com": {
+    "h": 12000,
+    "v": "mvqomps8"
+  },
+  "indie/micahcarroll.com": {
+    "h": 2349,
+    "v": "mvqomfa6"
+  },
+  "indie/michael.fm": {
+    "h": 900,
+    "v": "mvqombbd"
+  },
+  "indie/michaeldesigns.co": {
+    "h": 3539,
+    "v": "mvqompbh"
+  },
+  "indie/microsoft.ai": {
+    "h": 12000,
+    "v": "mvqomw0g"
+  },
+  "indie/milkinside.com": {
+    "h": 9090,
+    "v": "mvqpiga3"
+  },
+  "indie/mindmarket.com": {
+    "h": 12000,
+    "v": "mvqon4jk"
+  },
+  "indie/minimum.studio": {
+    "h": 5566,
+    "v": "mvqomz0t"
+  },
+  "indie/mintlify.com": {
+    "h": 8451,
+    "v": "mvqonbku"
+  },
+  "indie/mitul.ca": {
+    "h": 2059,
+    "v": "mvqon73g"
+  },
+  "indie/mockdown.design": {
+    "h": 900,
+    "v": "mvqon9wd"
+  },
+  "indie/models.dev": {
+    "h": 956,
+    "v": "mvqoncyw"
+  },
+  "indie/molly.studio": {
+    "h": 6531,
+    "v": "mvqonnpo"
+  },
+  "indie/monologue.to": {
+    "h": 12000,
+    "v": "mvqoo1sj"
+  },
+  "indie/monos.framer.website": {
+    "h": 3038,
+    "v": "mvqonm4c"
+  },
+  "indie/montecafe.com.au": {
+    "h": 5465,
+    "v": "mvqonsch"
+  },
+  "indie/mubien.com": {
+    "h": 900,
+    "v": "mvqonzl8"
+  },
+  "indie/musesoftware.ai": {
+    "h": 9706,
+    "v": "mvqoo3u9"
+  },
+  "indie/n8n.io": {
+    "h": 9392,
+    "v": "mvqoo5jr"
+  },
+  "indie/natko.com": {
+    "h": 9115,
+    "v": "mvqooau8"
+  },
+  "indie/nestig.com": {
+    "h": 6576,
+    "v": "mvqpinlj"
+  },
+  "indie/nevflynn.com": {
+    "h": 900,
+    "v": "mvqoo9ns"
+  },
+  "indie/noeinoi.com": {
+    "h": 2250,
+    "v": "mvqooc29"
+  },
+  "indie/nvg8.io": {
+    "h": 1058,
+    "v": "mvqood5q"
+  },
+  "indie/obodo.io": {
+    "h": 12000,
+    "v": "mvqooi10"
+  },
+  "indie/oem.care": {
+    "h": 6831,
+    "v": "mvqoougu"
+  },
+  "indie/offchain.design": {
+    "h": 4296,
+    "v": "mvqoovu6"
+  },
+  "indie/okaydev.co": {
+    "h": 11176,
+    "v": "mvqooxjq"
+  },
+  "indie/opencode.ai": {
+    "h": 4113,
+    "v": "mvqop3hd"
+  },
+  "indie/orinfitzgerald.com": {
+    "h": 3392,
+    "v": "mvqop121"
+  },
+  "indie/oryzo.ai": {
+    "h": 12000,
+    "v": "mvqoq5dk"
+  },
+  "indie/outerbloc.com": {
+    "h": 12000,
+    "v": "mvqoposx"
+  },
+  "indie/outpacestudios.com": {
+    "h": 900,
+    "v": "mvqop638"
+  },
+  "indie/pacomepertant.com": {
+    "h": 900,
+    "v": "mvqopit2"
+  },
+  "indie/papatui.com": {
+    "h": 7774,
+    "v": "mvqopzis"
+  },
+  "indie/parallel.ai": {
+    "h": 12000,
+    "v": "mvqoq4nm"
+  },
+  "indie/pencil.dev": {
+    "h": 12000,
+    "v": "mvqoqn9g"
+  },
+  "indie/perryw.ca": {
+    "h": 900,
+    "v": "mvqoq91n"
+  },
+  "indie/pheralb.dev": {
+    "h": 1710,
+    "v": "mvqoqelx"
+  },
+  "indie/pixelwrld.co": {
+    "h": 900,
+    "v": "mvqoqocw"
+  },
+  "indie/pleasecallmechamp.com": {
+    "h": 900,
+    "v": "mvqoqlu9"
+  },
+  "indie/polify.xyz": {
+    "h": 900,
+    "v": "mvqoqqah"
+  },
+  "indie/portfolio.ricoui.com": {
+    "h": 6463,
+    "v": "mvqor3i1"
+  },
+  "indie/postery.com": {
+    "h": 7520,
+    "v": "mvqorp4e"
+  },
+  "indie/pqoqubbw.dev": {
+    "h": 900,
+    "v": "mvqor14a"
+  },
+  "indie/pranathiperi.com": {
+    "h": 5703,
+    "v": "mvqor6z7"
+  },
+  "indie/proofeditor.ai": {
+    "h": 3896,
+    "v": "mvqora73"
+  },
+  "indie/quechua-lookbook.com": {
+    "h": 900,
+    "v": "mvqordpt"
+  },
+  "indie/rachelchen.tech": {
+    "h": 900,
+    "v": "mvqorbig"
+  },
+  "indie/railly.dev": {
+    "h": 3660,
+    "v": "mvqorgt9"
+  },
+  "indie/raphaelsalaja.com": {
+    "h": 1196,
+    "v": "mvqoric9"
+  },
+  "indie/rascalsbaby.com": {
+    "h": 8545,
+    "v": "mvqpj534"
+  },
+  "indie/ray.care": {
+    "h": 8958,
+    "v": "mvqoryde"
+  },
+  "indie/reboot.studio": {
+    "h": 2312,
+    "v": "mvqorpns"
+  },
+  "indie/recraft.ai": {
+    "h": 8293,
+    "v": "mvqosdq5"
+  },
+  "indie/reducto.ai": {
+    "h": 10761,
+    "v": "mvqos3l0"
+  },
+  "indie/retrodiffusion.ai": {
+    "h": 900,
+    "v": "mvqos5qm"
+  },
+  "indie/reve.com": {
+    "h": 900,
+    "v": "mvqosi5n"
+  },
+  "indie/rockstargames.com": {
+    "h": 8119,
+    "v": "mvqoso57"
+  },
+  "indie/rog.ie": {
+    "h": 1107,
+    "v": "mvqosmul"
+  },
+  "indie/ruru.build": {
+    "h": 900,
+    "v": "mvqosldl"
+  },
+  "indie/samitkapoor.com": {
+    "h": 900,
+    "v": "mvqoss8m"
+  },
+  "indie/scale.com": {
+    "h": 11363,
+    "v": "mvqotcnx"
+  },
+  "indie/sensa.co": {
+    "h": 2968,
+    "v": "mvqosu8d"
+  },
+  "indie/sequencehq.com": {
+    "h": 12000,
+    "v": "mvqot3dt"
+  },
+  "indie/sfcompute.com": {
+    "h": 5296,
+    "v": "mvqota6n"
+  },
+  "indie/shader.se": {
+    "h": 900,
+    "v": "mvqotc4d"
+  },
+  "indie/shapeshyft.co.uk": {
+    "h": 12000,
+    "v": "mvqotr91"
+  },
+  "indie/shopify.design": {
+    "h": 12000,
+    "v": "mvqou5nc"
+  },
+  "indie/shoppu.mochi.at": {
+    "h": 4219,
+    "v": "mvqouev6"
+  },
+  "indie/siena.film": {
+    "h": 900,
+    "v": "mvqotlah"
+  },
+  "indie/sinyard.co.uk": {
+    "h": 9309,
+    "v": "mvqou20c"
+  },
+  "indie/skale.solutions": {
+    "h": 900,
+    "v": "mvqotves"
+  },
+  "indie/skills.smoothui.dev": {
+    "h": 11974,
+    "v": "mvqou5jp"
+  },
+  "indie/spectr.irung.me": {
+    "h": 4135,
+    "v": "mvqou8uj"
+  },
+  "indie/spektralstudio.com": {
+    "h": 3782,
+    "v": "mvqoudau"
+  },
+  "indie/stackedstore.com": {
+    "h": 900,
+    "v": "mvqou9tw"
+  },
+  "indie/steel.dev": {
+    "h": 12000,
+    "v": "mvqouji3"
+  },
+  "indie/stripe.com": {
+    "h": 12000,
+    "v": "mvqpj20n"
+  },
+  "indie/strut.so": {
+    "h": 10755,
+    "v": "mvqounvr"
+  },
+  "indie/studio.morflax.com": {
+    "h": 3178,
+    "v": "mvqouk62"
+  },
+  "indie/superpower.com": {
+    "h": 8943,
+    "v": "mvqpk3ld"
+  },
+  "indie/supply.family": {
+    "h": 900,
+    "v": "mvqoutvd"
+  },
+  "indie/symbl.space": {
+    "h": 900,
+    "v": "mvqoutgj"
+  },
+  "indie/syntaxui.com": {
+    "h": 2843,
+    "v": "mvqouz45"
+  },
+  "indie/syrn.com": {
+    "h": 5126,
+    "v": "mvqpjt81"
+  },
+  "indie/tailark.com": {
+    "h": 3780,
+    "v": "mvqovaku"
+  },
+  "indie/takeagander.com": {
+    "h": 5224,
+    "v": "mvqovn9e"
+  },
+  "indie/tembo.io": {
+    "h": 8974,
+    "v": "mvqovgqk"
+  },
+  "indie/tempo.new": {
+    "h": 8078,
+    "v": "mvqovt21"
+  },
+  "indie/thelinestudio.com": {
+    "h": 9812,
+    "v": "mvqovwu3"
+  },
+  "indie/thesocialbrain.in": {
+    "h": 10277,
+    "v": "mvqovxxf"
+  },
+  "indie/tiempo.fitness": {
+    "h": 4814,
+    "v": "mvqowkqz"
+  },
+  "indie/tolans.com": {
+    "h": 3672,
+    "v": "mvqowe71"
+  },
+  "indie/tomjohn.design": {
+    "h": 900,
+    "v": "mvqowflk"
+  },
+  "indie/toni.li": {
+    "h": 1358,
+    "v": "mvqow58r"
+  },
+  "indie/topazlabs.com": {
+    "h": 7175,
+    "v": "mvqox1vg"
+  },
+  "indie/toyfight.co": {
+    "h": 2987,
+    "v": "mvqoxpzm"
+  },
+  "indie/truus.co": {
+    "h": 10966,
+    "v": "mvqoxp2k"
+  },
+  "indie/ui.land": {
+    "h": 1559,
+    "v": "mvqowzq3"
+  },
+  "indie/uilabs.dev": {
+    "h": 10100,
+    "v": "mvqoxb25"
+  },
+  "indie/uiw.tf": {
+    "h": 3445,
+    "v": "mvqoxgqv"
+  },
+  "indie/unito.shop": {
+    "h": 8323,
+    "v": "mvqoxsin"
+  },
+  "indie/unroot.design": {
+    "h": 7628,
+    "v": "mvqoyzgd"
+  },
+  "indie/uxtools.co": {
+    "h": 9283,
+    "v": "mvqoy3s1"
+  },
+  "indie/varchive.ai": {
+    "h": 5764,
+    "v": "mvqoy2g0"
+  },
+  "indie/variant.com": {
+    "h": 900,
+    "v": "mvqoy3d7"
+  },
+  "indie/vercel.com": {
+    "h": 5930,
+    "v": "mvqoyajc"
+  },
+  "indie/wabi.ai": {
+    "h": 7161,
+    "v": "mvqoyqaw"
+  },
+  "indie/wavespeed.ai": {
+    "h": 7276,
+    "v": "mvqoyczd"
+  },
+  "indie/wearecollins.com": {
+    "h": 5402,
+    "v": "mvqpkgf7"
+  },
+  "indie/week.wild.plus": {
+    "h": 1440,
+    "v": "mvqoyjwx"
+  },
+  "indie/whop.com": {
+    "h": 8563,
+    "v": "mvqp0bq0"
+  },
+  "indie/willphan.com": {
+    "h": 1597,
+    "v": "mvqoz9ge"
+  },
+  "indie/wiza.co": {
+    "h": 11879,
+    "v": "mvqozksq"
+  },
+  "indie/wking.dev": {
+    "h": 12000,
+    "v": "mvqozr3x"
+  },
+  "indie/wojtek.im": {
+    "h": 900,
+    "v": "mvqozhbp"
+  },
+  "indie/worawork.vercel.app": {
+    "h": 900,
+    "v": "mvqozzsg"
+  },
+  "indie/yepoda.com": {
+    "h": 4731,
+    "v": "mvqp11zu"
+  },
+  "indie/yevhenyurchuk.com": {
+    "h": 11741,
+    "v": "mvqp02uv"
+  },
+  "indie/yihui.work": {
+    "h": 900,
+    "v": "mvqp0azt"
+  },
+  "indie/zmh.org": {
+    "h": 900,
+    "v": "mvqp0eza"
+  },
+  "web/bugatti": {
+    "h": 8421,
+    "v": "mvqp17c3"
+  },
+  "web/cal": {
+    "h": 8569,
+    "v": "mvqp0qai"
+  },
+  "web/claude": {
+    "h": 4187,
+    "v": "mvqp0m1q"
+  },
+  "web/clay": {
+    "h": 11409,
+    "v": "mvqp1dnj"
+  },
+  "web/dji": {
+    "h": 6169,
+    "v": "mvqp1ksz"
+  },
+  "web/figma": {
+    "h": 8739,
+    "v": "mvqp1hap"
+  },
+  "web/framer": {
+    "h": 10891,
+    "v": "mvqp1w6c"
+  },
+  "web/hashicorp": {
+    "h": 8600,
+    "v": "mvqp1sc9"
+  },
+  "web/ibm": {
+    "h": 4605,
+    "v": "mvqp2d7j"
+  },
+  "web/intercom": {
+    "h": 9653,
+    "v": "mvqp21l4"
+  },
+  "web/linear.app": {
+    "h": 9960,
+    "v": "mvqp2bhe"
+  },
+  "web/meta": {
+    "h": 7362,
+    "v": "mvqp2ja5"
+  },
+  "web/minimax": {
+    "h": 3131,
+    "v": "mvqp2cgj"
+  },
+  "web/mintlify": {
+    "h": 8451,
+    "v": "mvqp2v5w"
+  },
+  "web/miro": {
+    "h": 9596,
+    "v": "mvqp3el7"
+  },
+  "web/mistral.ai": {
+    "h": 6210,
+    "v": "mvqp2skm"
+  },
+  "web/mongodb": {
+    "h": 5360,
+    "v": "mvqp2wq8"
+  },
+  "web/notion": {
+    "h": 4687,
+    "v": "mvqp38mg"
+  },
+  "web/ollama": {
+    "h": 900,
+    "v": "mvqp2zmy"
+  },
+  "web/opencode.ai": {
+    "h": 4113,
+    "v": "mvqp35o8"
+  },
+  "web/together.ai": {
+    "h": 5816,
+    "v": "mvqp3h1j"
+  },
+  "web/x.ai": {
+    "h": 1021,
+    "v": "mvqp3abj"
+  }
+}

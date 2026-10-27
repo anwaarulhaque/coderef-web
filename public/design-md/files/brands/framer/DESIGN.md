@@ -1,0 +1,257 @@
+---
+name: Framer
+colors:
+  canvas: '#000000'
+  foreground: '#ffffff'
+  muted: '#999999'
+  marketplace-surface: '#242424'
+  accent: '#0099ff'
+typography:
+  public-body:
+    fontSize: 14px
+    fontWeight: 400
+    lineHeight: 14
+    letterSpacing: '-0.01px'
+    use: Observed public-home body text
+rounded:
+  compact: 8px
+  menu: 13px
+  category-card: 20px
+spacing:
+  compact-x: 10
+  menu-inset: 5
+components:
+  marketplace-filter:
+    type: button
+    backgroundColor: '#242424'
+    textColor: '#ffffff'
+    rounded: 8px
+    padding: 0px 10px
+    typography: 12px / 500
+    states: expanded and menu-open captured on the Marketplace filter
+    use: Marketplace filter trigger on the public community surface
+  marketplace-category:
+    type: card
+    backgroundColor: '#111111'
+    textColor: '#ffffff'
+    rounded: 20px
+    use: Marketplace category card on the public community surface
+fonts:
+  roles:
+    ui: Inter
+    display: GT Walsheim Medium
+---
+
+# Framer — Design Reference
+
+## Overview
+
+### Visual Theme & Atmosphere
+
+Framer is a platform for designing and publishing websites. Its current careers page describes the mission as building the best tool for designing and publishing incredible sites, while its public product copy positions AI-assisted website creation alongside design, collaboration, CMS, hosting, and publishing. The supplied 2026-07-13 evidence captures three public domains of that ecosystem: the main marketing site, a community Marketplace components listing, and pricing. Across those captures, the clearest recurring visual expression is an achromatic black-and-white public canvas with a small blue accent, compact rounded Marketplace controls, and a more editorial display face on the home page. This reference preserves those domains separately: it does not turn public marketing, community browsing chrome, or pricing into a claim about the authenticated editor, generated sites, or documentation UI.
+
+- **Public canvas:** `#000000` is observed as the home and pricing page background; `#ffffff` is the recurring foreground.
+- **Community layer:** the Marketplace components page introduces `#111111` and `#242424` surfaces, 8px compact controls, 20px category cards, and 13px menu panels.
+- **Blue as local evidence:** `#0099ff` is observed in Marketplace and pricing controls and is also published by Framer as “Framer Blue”; it is not promoted as a universal product-state color.
+- **Official brand assets:** Framer separately publishes Black, White, Framer Blue (`#0099FF`), and Framer Deep Blue (`#0055FF`) for marks. Brand-asset colors are not automatically public-web CSS tokens.
+
+### Primary tasks
+
+- Design a website and publish it
+- Browse Marketplace components by category and filter
+- Check pricing before starting a site
+- Sign up for an account from the public pages
+
+### Brand Narrative
+
+Framer’s present public framing is a web-design and publishing platform: the careers page ties the company to the future of the web, and the product blog describes the continuing goal as moving from an idea to a polished website quickly. Its public navigation also spans design, collaboration, CMS, hosting, performance, SEO, conversion, and publishing. The visually distinctive expression in this packet comes from the current public surfaces—not a claim that every Framer product surface uses the same components or palette.
+
+### Principles
+
+1. **Make the publishing outcome legible.** *UI implication:* public copy should foreground the site-building/publishing task rather than inventing technical workflow claims.
+2. **Keep brand assets recognizable.** *UI implication:* follow the official guidance not to alter, recolor, distort, or create substitute Framer marks.
+3. **Preserve source-domain boundaries.** *UI implication:* use public marketing and Marketplace evidence only for those surfaces; do not synthesize editor or docs patterns.
+4. **Prefer measured compactness over generic pills.** *UI implication:* the supported compact controls are 8px-rounded Marketplace controls, not a site-wide full-pill rule.
+
+### Personas
+
+These are audience archetypes derived from Framer’s public positioning, not synthetic test users or claims about private product behavior.
+
+- **Website creator:** uses the public design-and-publish proposition and may enter through marketing or templates.
+- **Community browser:** explores the public Marketplace components surface through category cards, tabs, and filters.
+- **Developer/documentation reader:** encounters a separately structured developer/docs domain; this packet does not use its chrome as visual-token evidence.
+
+## Colors
+
+### Observed public-web roles
+
+- **Black canvas** (`#000000`): computed background on the captured home and pricing pages.
+- **White foreground** (`#ffffff`): repeated visible text and border value across all three captured surfaces.
+- **Muted label gray** (`#999999`): repeated text and border value on home and Marketplace; it is a lower-emphasis public-web value, not an accessibility-state definition.
+- **Marketplace mid surface** (`#242424`): filter-trigger and open-menu panel background on the Marketplace components page.
+- **Marketplace card surface** (`#111111`): category-card background on the Marketplace components page.
+- **Framer Blue** (`#0099ff`): observed Marketplace/pricing background and home text/border value; official brand guidance also lists the same color.
+
+`#0055FF` remains an official brand-asset color from the brand guidelines, but it was not a measured token in the supplied live samples. Other isolated colors in the raw bundle are route- or content-local and are not raised into a system palette.
+
+## Typography
+
+### Evidence classes
+
+- **Live computed public-web use:** `Inter` is loaded/high with 512 visible uses and two Framer-hosted Inter Variable WOFF2 source URLs. `Inter Variable` is separately loaded/high with 392 visible uses. The Marketplace’s `inter, "inter Fallback"` computed stack is therefore represented by the canonical UI family `Inter`, rather than by a fallback name.
+- **Live computed display use:** `GT Walsheim Medium` is loaded/high with 11 visible heading uses; the collector reports FontFaceSet corroboration but no source URL. It is recorded as the public-home display family, not as a reusable distributed asset.
+- **Live local monospace use:** `Input Mono Regular` and `Input Mono Bold` are loaded/high in a small number of visible public samples. They are not made general UI or code tokens because the capture does not establish a component-level role. Input’s official licence says published/distributed use needs the appropriate licence.
+- **Source-backed local mono:** `jetBrainsMono` has one loaded visible use and two Framer-hosted source URLs. JetBrains Mono’s official project is OFL-1.1; this license context does not grant use of Framer-hosted files.
+- **Declared-only:** Azeret Mono, Chillax, EB Garamond, Geist, additional GT Walsheim faces, numerous Inter aliases/placeholders, and other declared faces have zero visible uses in this bundle. They remain declared-only and are not UI-family tokens.
+- **Unobserved domains:** no authenticated Framer editor/product surface or docs chrome font capture was supplied. No web family is substituted into either domain.
+
+### Measured public hierarchy
+
+| Role | Family | Size | Weight | Line height | Tracking | Evidence boundary |
+|---|---|---:|---:|---:|---:|---|
+| Public home body | Inter Variable | 14px | 400 | 14px | -0.01px | `home::p` |
+| Public home display heading | GT Walsheim Medium | 54px | 500 | 54px | -2.16px | captured `home::h1` |
+| Public home section heading | GT Walsheim Medium | 44px | 500 | 48.4px | -1.76px | captured `home::h2` |
+| Marketplace compact control | Inter | 12px | 500 | 12px | normal | `surface-2::[data-omd-capture="26"]` |
+| Marketplace category label | Inter | 13px | 600 | 18.2px | normal | `surface-2::span.category-card-module-scss-module__VfU1Xq__name` |
+
+## Layout
+
+- The supplied evidence is desktop-only (`1440×900`). It supports local spacing observations, not a responsive grid, breakpoint, container-width, or editor-layout claim.
+- Marketplace compact filter and tab controls use `0px 10px` padding; the open menu uses 5px inset padding.
+- Category-card text has 15px padding in the captured Marketplace DOM. This is a card-local observation, not a global spacing scale.
+- The raw spacing aggregation also repeats 5px, 10px, 14px, 15px, and 40px values. Without semantic selector coverage for a universal scale, they remain aggregate evidence rather than prescribed tokens.
+
+### Responsive Behavior
+
+Only a `1440×900` capture was supplied. The public pages may be responsive, but this packet does not measure a breakpoint, mobile navigation, touch target, image crop, or a responsive state transition. Those fields remain unresolved rather than being extrapolated from the desktop DOM.
+
+## Elevation & Depth
+
+- **Marketplace open menu:** the only selector-backed elevated panel is `surface-2::[data-omd-interaction-capture="menu-0-0"]`, with `rgba(0,0,0,0.08) 0px 3px 6px 0px`.
+- **Home utility controls:** individual home buttons `data-omd-capture="31"` through `"33"` have `rgba(0,0,0,0.2) 0px 2px 6px 0px`; their semantic role is not identified, so the value is not a system elevation level.
+- No general blue glow, card-shadow hierarchy, or authenticated-product elevation rule is asserted.
+
+### Values kept in prose
+
+Measured values the DESIGN.md token grammar cannot carry, kept verbatim:
+
+- `shadow.marketplace-menu`: `rgba(0,0,0,0.08) 0px 3px 6px 0px`
+
+## Motion & Easing
+
+The capture records structural menu and form-error expansions but supplies no measured duration, easing, transition, or reduced-motion behavior. Framer’s historical association with motion does not license a motion-token claim for the currently captured public surfaces; motion values remain unresolved.
+
+## Components
+
+All variants below are selector-backed observations from public surfaces. The capture records three interaction expansions: two Marketplace menus and one home form-error sample. It does not capture an authenticated editor, documentation chrome, hover, pressed, focus, modal, or product-toast contract beyond the exact rows called out below.
+
+### Marketplace action
+
+**Filter trigger, menu-open capture**
+- Background: `#242424`
+- Text: `#ffffff`
+- Border: `1px solid transparent`
+- Radius: `8px`
+- Padding: `0px 10px`
+- Font: `12px / 500 / Inter`
+- Use: public Marketplace components filter trigger; `surface-2::[data-omd-capture="26"]`, `aria-haspopup="menu"`, captured with `expanded` and `menu-open`
+
+**Accent action**
+- Background: `#0099ff`
+- Text: `#ffffff`
+- Border: `1px solid transparent`
+- Radius: `8px`
+- Padding: `0px 10px`
+- Font: `12px / 600 / Inter`
+- Use: public Marketplace action; `surface-2::[data-omd-capture="15"]`
+
+### Marketplace menu
+
+**Open panel**
+- Background: `#242424`
+- Text: `#ffffff`
+- Border: `1px solid #333333`
+- Radius: `13px`
+- Padding: `5px`
+- Font: `12px / 400 / Inter`
+- Shadow: `rgba(0, 0, 0, 0.08) 0px 3px 6px 0px`
+- Use: expanded public Marketplace menu; `surface-2::[data-omd-interaction-capture="menu-0-0"]`
+
+**Unchecked menu option**
+- Text: `#ffffff`
+- Radius: `8px`
+- Padding: `0px 10px 0px 0px`
+- Font: `13px / 500 / Inter`
+- Use: `role="menuitemcheckbox"`, `aria-checked="false"`, captured only in the expanded Marketplace menu at `surface-2::[data-omd-interaction-capture="menu-0-2"]`
+
+### Marketplace category card
+
+**Default**
+- Background: `#111111`
+- Text: `#ffffff`
+- Radius: `20px`
+- Font: `12px / 500 / Inter`
+- Use: public Marketplace category-card root; `surface-2::[data-omd-capture="21"]`
+
+### Marketplace tab
+
+**Disabled**
+- Text: `#666666`
+- Radius: `8px`
+- Padding: `0px 10px`
+- Font: `12px / 500 / Inter`
+- Use: disabled, coming-soon public Marketplace tab; `surface-2::[data-omd-capture="13"]`
+
+### Home form field
+
+**Error capture**
+- Text: `#dee6ff`
+- Font: `14px / 500 / Inter`
+- Use: home textarea error sample; `home::[data-omd-interaction-capture="form-error-0-0"]`. The collector records the error state but does not supply a reusable field shell, label, or transition contract.
+
+---
+
+### States
+
+| State | Evidence boundary |
+|---|---|
+| Form error | Home textarea captured in `error` state with `#dee6ff` text; field shell and message copy are not captured. |
+| Menu open | Two Marketplace menu expansions are captured, including one `#242424` panel and unchecked menu option. |
+| Disabled tab | One Marketplace coming-soon tab is disabled with `#666666` text and 8px radius. |
+| Toast viewport | A Marketplace toast viewport element is present, but no visible message, lifecycle, or style contract is captured. |
+| Empty/loading/success/product failure | Not captured; no editor or authenticated-product state recipe is asserted. |
+
+## Do's and Don'ts
+
+### Do
+
+- Keep generated work scoped to the observed public domain: black/white marketing or the separate dark Marketplace surface.
+- Use the observed Marketplace compact geometry—8px controls, 13px menu panels, 20px category cards—only when recreating the corresponding public patterns.
+- Use Inter for UI/body and GT Walsheim Medium only for public display contexts when the font licensing and asset availability are appropriate.
+- Treat `#0099ff` as a documented public/brand accent, with route-level component provenance rather than a universal semantic-state guarantee.
+
+### Don't
+
+- Do not infer Framer editor, publishing, CMS, collaboration, or docs components from these public captures.
+- Do not turn declared-only faces into live UI tokens or substitute a system font as an unavailable family.
+- Do not claim hover, pressed, focus, responsive, modal, or motion variants that the collector did not capture.
+- Do not treat official brand-asset colors or third-party font licences as permission to reuse Framer-hosted assets.
+
+## Voice & Tone
+
+Framer’s first-party careers page leads with “Make the web more creative” and describes a mission to build the best tool for designing and publishing incredible sites. The product blog says the enduring mission is to turn ideas into stunning websites quickly. That supports a direct, maker-facing public voice; it does not establish editor error copy or a complete product-content style guide.
+
+| Context | Supported direction |
+|---|---|
+| Public headline | Short outcome-led statement, as in “Make the web more creative.” |
+| Public CTA | Direct account/start action; captured pages expose “Sign up.” |
+| Community | Label-led browsing and filters on the Marketplace components surface. |
+
+## Agent Prompt Guide
+
+Use this reference as a public-web direction, not an app-kit specification:
+
+- “Create a public marketing section on `#000000` with `#ffffff` foreground, Inter UI text, and a `#0099ff` accent only where a selector-backed public component warrants it.”
+- “For a Marketplace-like filter, use `#242424`, white 12px/500 Inter text, 8px radius, and `0px 10px` padding; pair it only with the observed 13px-radius menu panel if an open-menu surface is needed.”
+- “For the public home’s editorial hierarchy, use GT Walsheim Medium only when its licensed asset is available; the captured examples are 54px/500 and 44px/500, not an unbounded display scale.”

@@ -1,6 +1,7 @@
 // Builds the global search index at build time. Served as /search-index.json and loaded
 // the first time someone opens search, so normal page loads don't pay for it.
 import { getCompatFeatures } from "./compat";
+import { getDesigns } from "./design-md";
 import { getEmmetIndex } from "./emmet-index";
 import { getMarkdownCheatSheet } from "./markdown/cheatsheet";
 import { getQuickRefs, sectionAnchor } from "./quickref";
@@ -21,7 +22,7 @@ export type SearchEntry = {
   c?: string;
 };
 
-export type SearchKind = "page" | "sheet" | "entry" | "snippet" | "feature" | "abbr" | "markdown";
+export type SearchKind = "page" | "sheet" | "entry" | "snippet" | "feature" | "abbr" | "markdown" | "design";
 
 export function buildSearchIndex(): SearchEntry[] {
   const out: SearchEntry[] = [];
@@ -76,6 +77,10 @@ export function buildSearchIndex(): SearchEntry[] {
       u: `/abbreviations/#${new URLSearchParams({ a: e.abbr, s: e.syntax })}`,
       c: e.output.split("\n")[0].slice(0, 80),
     });
+  }
+
+  for (const d of getDesigns()) {
+    out.push({ k: "design", t: `${d.name} DESIGN.md`, s: `Design system · ${d.category}`, u: `/design-md/${d.id}/` });
   }
 
   for (const m of getMarkdownCheatSheet()) {

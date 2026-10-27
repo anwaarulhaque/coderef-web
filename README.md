@@ -65,6 +65,30 @@ All run entirely in the browser; there is no server.
 | `/css-grid/`, `/flexbox/` | Visual CSS cheat sheets | `data/sheets/*.json` with `"kind": "visual"` |
 | `/browser-support/` | Browser support tables, Baseline status, compare | `web-features`, `@mdn/browser-compat-data` |
 
+### DESIGN.md Library
+
+`/design-md/` is a searchable library of 1,000+ DESIGN.md design systems for AI coding agents, plus blank templates (`/design-md/templates/`). There is no database: search and filters run in the browser over `out/design-md/index.json`, a static JSON index built from `data/design-md/catalog.json`.
+
+| Route | What it is |
+| --- | --- |
+| `/design-md/` | Browse and search all designs (text, collection, color, light/dark, sort) |
+| `/design-md/<collection>/` | One collection (`web`, `mobile`, `brands`, `indie`, `terminal`, `examples`) |
+| `/design-md/<collection>/<slug>/` | One design: live preview in its colors, palette, rendered DESIGN.md, platform tabs, related designs |
+| `/design-md/files/<id>/DESIGN.md` | Raw file, for download or `curl` |
+| `/design-md/index.json` | The search index |
+
+The data comes from the `coderef-scrapper` project. To refresh it:
+
+```bash
+# in coderef-scrapper
+python scrape.py && python build_site.py
+# here
+npm run sync:design-md      # copies ../coderef-scrapper/coderef into data/design-md and public/design-md/files
+npm run build
+```
+
+`data/design-md/THIRD_PARTY_LICENSES.md` holds the open-source license notices the content requires; it is shown at `/design-md/licenses/` (linked in the small print of every library page). Keep it when updating the data.
+
 ### Quick Reference data
 
 Each `data/quickref/<slug>.json` is one topic: `sections[].rows` are `[task, code]` pairs, where `code` can be an array of alternatives. Set `"keys": true` with `"columns": ["Action", "Windows / Linux", "macOS"]` for keyboard-shortcut sheets (see `vscode.json`); `"try"` adds a button linking to a related tool.
