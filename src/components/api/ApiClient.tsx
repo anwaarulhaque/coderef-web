@@ -1,5 +1,6 @@
 "use client";
 
+import { CloudSave } from "@/components/account/CloudSave";
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { CodeEditor, type EditorLanguage } from "@/components/json/CodeEditor";
 import { copyText } from "@/components/quickref/Snippet";
@@ -386,6 +387,16 @@ export function ApiClient({ heading }: { heading: ReactNode }) {
               {notice}
             </span>
           )}
+          <CloudSave
+            kind="api-request"
+            noun="request"
+            getData={() => ({ request: req, vars })}
+            getTitle={() => (req.name || `${req.method} ${req.url}`).slice(0, 80)}
+            onLoad={(d: { request?: Partial<ApiRequest>; vars?: unknown }) => {
+              if (d?.request && typeof d.request === "object") openRequest({ ...newRequest(), ...d.request, auth: { ...emptyAuth(), ...d.request.auth } });
+              if (Array.isArray(d?.vars)) setVars(d.vars as KV[]);
+            }}
+          />
           <button type="button" className={btn} onClick={() => openRequest(newRequest())}>
             + New
           </button>

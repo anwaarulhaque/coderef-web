@@ -14,13 +14,20 @@ export type DesignIndexEntry = {
   w: number; // words
   v: number; // number of files (DESIGN.md + platform variants)
   x?: string; // screenshot version, when the live site has been captured
+  l?: 1; // not an English-language site; listed after the English ones
+  r?: number; // top-brand rank (0 = first); top brands lead the default order
+  e?: string; // external page: the file lives on another site and is linked, not hosted
+  ef?: string; // external DESIGN.md URL
 };
+
+/** Data files (JSON indexes, raw DESIGN.md, screenshots) are served from here. */
+export const CDN_URL = (process.env.NEXT_PUBLIC_CDN_URL || "https://cdn.coderef.xyz").replace(/\/+$/, "");
 
 /** A screenshot of the live site, from scripts/screenshot-design-md.mjs. */
 export type DesignShot = { h: number; v: string };
 
 /** thumb: 600×800, top of the page. full: 1440 wide, whole page. `v` busts caches after a recapture. */
-export const shotHref = (id: string, kind: "thumb" | "full", v: string) => `/design-md/shots/${id}/${kind}.webp?v=${v}`;
+export const shotHref = (id: string, kind: "thumb" | "full", v: string) => `${CDN_URL}/design-md/shots/${id}/${kind}.webp?v=${v}`;
 
 export const HUES = ["red", "orange", "yellow", "green", "teal", "blue", "purple", "pink", "neutral"] as const;
 
@@ -37,7 +44,13 @@ export const HUE_SWATCH: Record<string, string> = {
 };
 
 export const designHref = (id: string) => `/design-md/${id}/`;
-export const designFileHref = (id: string, file = "DESIGN.md") => `/design-md/files/${id}/${file}`;
+export const designFileHref = (id: string, file = "DESIGN.md") => `${CDN_URL}/design-md/files/${id}/${file}`;
+
+/**
+ * The same CDN file, fetched from the page's own origin (next.config.ts rewrites /cdn/* to the CDN). The CDN only
+ * allows CORS from the production domain, so browser fetch() calls go through here; links can use the CDN directly.
+ */
+export const cdnFetchPath = (path: string) => `/cdn/${path.replace(/^\/+/, "")}`;
 
 /** "DESIGN-swiftui.md" → "SwiftUI" */
 export function variantLabel(file: string): string {

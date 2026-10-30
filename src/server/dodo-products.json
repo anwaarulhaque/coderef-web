@@ -1,0 +1,12 @@
+{
+  "test": {
+    "monthly": "pdt_0Nqse6zh1B9CPWWB6jln5",
+    "yearly": "pdt_0Nqse71RpuZD4OsdoOijR",
+    "lifetime": "pdt_0Nqse7481sjSEge4i3RFt"
+  },
+  "live": {
+    "monthly": "pdt_0NqstwnPllOX9HGLpCjVC",
+    "yearly": "pdt_0NqstwpdFtvBDtRAwkgmx",
+    "lifetime": "pdt_0Nqstwr3bvVkEzZqXpp7L"
+  }
+}

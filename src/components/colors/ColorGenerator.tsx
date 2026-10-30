@@ -1,5 +1,6 @@
 "use client";
 
+import { CloudSave } from "@/components/account/CloudSave";
 import React, { useCallback, useEffect, useState } from "react";
 import type {
   ColorLocks,
@@ -193,6 +194,23 @@ export function ColorGenerator() {
 
       {/* Main Preview Canvas Area with bottom padding to stay clear of Floating Footer Dock */}
       <div className="w-full min-h-screen bg-chip/30 pt-4 pb-48 sm:pb-56 transition-colors">
+        <div className="mx-auto mb-3 flex max-w-6xl justify-end px-4">
+          <CloudSave
+            kind="palette"
+            noun="palette"
+            getData={() => ({ palette, fontPair: fontPair.id })}
+            getTitle={() => `Palette ${palette.primary}`}
+            onLoad={(d: { palette?: Partial<ColorPalette>; fontPair?: unknown }) => {
+              const p = d?.palette;
+              const ok = p && (["text", "background", "primary", "secondary", "accent"] as const).every((k) => typeof p[k] === "string" && /^#[0-9a-f]{3,8}$/i.test(p[k]!));
+              if (!ok) return;
+              setPalette(p as ColorPalette);
+              setHistory([p as ColorPalette]);
+              setHistoryIndex(0);
+              if (typeof d.fontPair === "string") setFontPair(getFontPairById(d.fontPair));
+            }}
+          />
+        </div>
         <div
           className={`mx-auto transition-all duration-300 ${
             deviceView === "mobile"

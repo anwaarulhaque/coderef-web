@@ -1,5 +1,6 @@
 "use client";
 
+import { CloudSave } from "@/components/account/CloudSave";
 import DOMPurify from "dompurify";
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { MarkdownEntry } from "@/lib/markdown/cheatsheet";
@@ -7,6 +8,7 @@ import { htmlToMarkdown } from "@/lib/markdown/html-to-markdown";
 import { renderMarkdown } from "@/lib/markdown/render";
 
 const STORAGE_KEY = "coderef:markdown-editor";
+const docTitle = (md: string) => md.match(/^#{1,3}\s+(.+)$/m)?.[1]?.trim().slice(0, 80) || "Untitled document";
 
 type ToolMode = "editor" | "convert" | "table" | "cheatsheet";
 type EditorView = "split" | "edit" | "preview" | "html";
@@ -914,6 +916,13 @@ ${cleanHtml}
 
         <div className="ml-auto flex items-center gap-2">
           {flash && <span className="rounded-md bg-accent/10 px-2.5 py-1 text-xs font-semibold text-accent animate-fade">{flash}</span>}
+          <CloudSave
+            kind="markdown"
+            noun="document"
+            getData={() => ({ text })}
+            getTitle={() => docTitle(text)}
+            onLoad={(d: { text?: unknown }) => setText(typeof d?.text === "string" ? d.text : "")}
+          />
           <button type="button" className={btn} onClick={() => setFullscreen((f) => !f)} aria-pressed={fullscreen}>
             {fullscreen ? "⤡ Exit fullscreen" : "⤢ Fullscreen"}
           </button>
@@ -1498,7 +1507,7 @@ ${cleanHtml}
               <div className="flex h-full flex-col divide-y divide-border overflow-auto">
                 <div className="flex-1 p-4">
                   <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Live Rendered Table</h3>
-                  <div className="md-preview overflow-auto rounded-lg border border-border bg-surface p-4" dangerouslySetInnerHTML={{ __html: renderMarkdown(generateTableMarkdown()) }} />
+                  <div className="md-preview overflow-auto rounded-lg border border-border bg-surface p-4" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(renderMarkdown(generateTableMarkdown())) }} />
                 </div>
                 <div className="flex-1 p-4">
                   <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Generated Source</h3>

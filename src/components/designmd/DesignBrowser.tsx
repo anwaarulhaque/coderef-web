@@ -1,17 +1,19 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { type DesignIndexEntry, HUES, HUE_SWATCH } from "@/lib/design-md-shared";
+import { cdnFetchPath, type DesignIndexEntry, HUES, HUE_SWATCH } from "@/lib/design-md-shared";
 import { DesignCard } from "./DesignCard";
 
 const PAGE = 48;
+/** Pseudo-collection: the curated top brands across every collection. */
+const TOP = "top";
 
 type CollectionChip = { id: string; label: string; count: number };
 type Sort = "relevance" | "name" | "detail";
 
 let indexPromise: Promise<DesignIndexEntry[]> | null = null;
 const loadIndex = () =>
-  (indexPromise ??= fetch("/design-md/index.json")
+  (indexPromise ??= fetch(cdnFetchPath("design-md/index.json"))
     .then((r) => (r.ok ? (r.json() as Promise<DesignIndexEntry[]>) : Promise.reject(r.status)))
     .catch((e) => {
       indexPromise = null;
@@ -70,7 +72,8 @@ export function DesignBrowser({ collections, items, initial = [], fixedCollectio
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
   }, [query, collection, theme, hue, fixedCollection]);
 
-  const inCollection = useMemo(() => all.filter((d) => collection === "all" || d.c === collection), [all, collection]);
+  const inCollection = useMemo(() => all.filter((d) => collection === "all" || (collection === TOP ? d.r !== undefined : d.c === collection)), [all, collection]);
+  const topCount = useMemo(() => all.filter((d) => d.r !== undefined).length, [all]);
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
     for (const d of inCollection) if (d.g.toLowerCase() !== d.c) counts.set(d.g, (counts.get(d.g) ?? 0) + 1);
@@ -95,8 +98,16 @@ export function DesignBrowser({ collections, items, initial = [], fixedCollectio
       scored.push({ d, score });
     }
     const effective = sort === "relevance" && !words.length ? "detail" : sort;
+    // Top brands first, then English sites, then the rest; a search still ranks by how well the name matches.
+    // Two unranked entries give Infinity - Infinity = NaN, which `|| 0` turns into a tie.
+    const top = (a: DesignIndexEntry, b: DesignIndexEntry) => (a.r ?? Infinity) - (b.r ?? Infinity) || 0;
+    const english = (a: DesignIndexEntry, b: DesignIndexEntry) => (a.l ?? 0) - (b.l ?? 0);
     scored.sort((a, b) =>
-      effective === "name" ? a.d.n.localeCompare(b.d.n) : effective === "detail" ? b.d.w - a.d.w : b.score - a.score || b.d.w - a.d.w,
+      effective === "name"
+        ? english(a.d, b.d) || a.d.n.localeCompare(b.d.n)
+        : effective === "detail"
+          ? top(a.d, b.d) || english(a.d, b.d) || b.d.w - a.d.w
+          : b.score - a.score || top(a.d, b.d) || english(a.d, b.d) || b.d.w - a.d.w,
     );
     return scored.map((x) => x.d);
   }, [inCollection, query, category, theme, hue, sort]);
@@ -122,6 +133,11 @@ export function DesignBrowser({ collections, items, initial = [], fixedCollectio
             <button type="button" className={chip(collection === "all")} aria-pressed={collection === "all"} onClick={() => { setCollection("all"); setCategory("all"); }}>
               All
             </button>
+            {topCount > 0 && (
+              <button type="button" className={chip(collection === TOP)} aria-pressed={collection === TOP} onClick={() => { setCollection(TOP); setCategory("all"); }}>
+                ★ Top brands <span className="opacity-70">{topCount}</span>
+              </button>
+            )}
             {collections.map((c) => (
               <button key={c.id} type="button" className={chip(collection === c.id)} aria-pressed={collection === c.id} onClick={() => { setCollection(c.id); setCategory("all"); }}>
                 {c.label} <span className="opacity-70">{c.count}</span>

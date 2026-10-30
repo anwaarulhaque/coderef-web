@@ -114,6 +114,8 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  /* Full-bleed sections use 100vw, which includes the scrollbar; clip (unlike hidden) keeps sticky working. */
+  overflow-x: clip;
 }
 
 /* Rendered Markdown (editor preview and cheat sheet) */

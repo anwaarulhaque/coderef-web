@@ -4,6 +4,6 @@ import { getDesigns, toIndexEntry } from "@/lib/design-md";
 // The browse page fetches it, so search and filters run entirely in the browser; no database.
 export const dynamic = "force-static";
 
-export function GET() {
-  return Response.json(getDesigns().map(toIndexEntry));
+export async function GET() {
+  return Response.json((await getDesigns()).map(toIndexEntry));
 }

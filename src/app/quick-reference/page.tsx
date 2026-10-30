@@ -10,8 +10,8 @@ export const metadata: Metadata = pageMetadata({
   path: "/quick-reference/",
 });
 
-export default function QuickReferencePage() {
-  const topics = getQuickRefSummaries();
+export default async function QuickReferencePage() {
+  const [topics, rows] = await Promise.all([getQuickRefSummaries(), getQuickRefSearchRows()]);
   return (
     <>
       <PageHeader
@@ -19,7 +19,7 @@ export default function QuickReferencePage() {
         crumbs={[{ href: "/", label: "Home" }, { label: "Quick Reference" }]}
         description={`Look up what you want to do, copy the code. ${topics.length} languages and tools, organised by task — search across all of them at once, or open a topic to browse.`}
       />
-      <QuickRefIndex topics={topics} rows={getQuickRefSearchRows()} />
+      <QuickRefIndex topics={topics} rows={rows} />
     </>
   );
 }

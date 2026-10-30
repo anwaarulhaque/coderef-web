@@ -13,9 +13,9 @@ export const metadata: Metadata = pageMetadata({
   path: "/sitemap/",
 });
 
-export default function SitemapPage() {
-  const allSheets = getAllSheets().sort((a, b) => a.title.localeCompare(b.title));
-  const quickRefs = getQuickRefs().sort((a, b) => a.title.localeCompare(b.title));
+export default async function SitemapPage() {
+  const allSheets = [...(await getAllSheets())].sort((a, b) => a.title.localeCompare(b.title));
+  const quickRefs = [...(await getQuickRefs())].sort((a, b) => a.title.localeCompare(b.title));
   const compatFeatures = getCompatFeatures().slice(0, 48); // Top features
 
   const tools = [
@@ -32,6 +32,16 @@ export default function SitemapPage() {
     { href: "/git-branching/", title: "Git Branching", desc: "Animated interactive levels for learning Git branching and rebasing" },
     { href: "/browser-support/", title: "Browser Support", desc: "Baseline status & compatibility data for 1,200+ web features" },
     { href: "/browser-support/compare/", title: "Compare Browsers", desc: "Side-by-side comparison of Chrome, Safari, and Firefox support" },
+  ];
+
+  const pages = [
+    { href: "/pricing/", title: "Pricing", desc: "Free plan today; CodeRef Pro plans coming soon" },
+    { href: "/account/", title: "Your account", desc: "Saved work, subscription, billing history and settings" },
+    { href: "/terms/", title: "Terms of service", desc: "The terms for using CodeRef and CodeRef Pro" },
+    { href: "/privacy/", title: "Privacy policy", desc: "What we collect, why, and who processes it" },
+    { href: "/cookie-policy/", title: "Cookie policy", desc: "The cookies and browser storage we use" },
+    { href: "/refund-policy/", title: "Refund policy", desc: "14-day refunds on a first purchase" },
+    { href: "/cancellation-policy/", title: "Cancellation policy", desc: "How to cancel and what happens to your access" },
   ];
 
   return (
@@ -119,7 +129,23 @@ export default function SitemapPage() {
         </div>
       </section>
 
-      {/* 4. Browser Support */}
+      {/* 4. Pricing, account and policies */}
+      <section className="mt-12">
+        <h2 className="text-xl font-bold tracking-tight border-b border-border pb-3 flex items-center justify-between">
+          <span>Pricing, Account &amp; Policies</span>
+          <span className="text-xs font-normal text-muted">{pages.length} Pages</span>
+        </h2>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {pages.map((t) => (
+            <Link key={t.href} href={t.href} className="group rounded-xl border border-border bg-surface p-4 hover:border-accent/40 hover:bg-chip/40 transition-all shadow-2xs">
+              <h3 className="font-bold text-sm text-foreground group-hover:text-accent transition-colors">{t.title}</h3>
+              <p className="mt-1 text-xs text-muted leading-relaxed">{t.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* 5. Browser Support */}
       <section className="mt-12">
         <h2 className="text-xl font-bold tracking-tight border-b border-border pb-3 flex items-center justify-between">
           <span>Popular Browser Support Tables</span>

@@ -10,13 +10,13 @@ import { getQuickRef, getQuickRefs } from "@/lib/quickref";
 // Only pre-built params exist (static export); anything else renders the 404 page.
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  return getQuickRefs().map((t) => ({ slug: t.slug }));
+export async function generateStaticParams() {
+  return (await getQuickRefs()).map((t) => ({ slug: t.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/quick-reference/[slug]">): Promise<Metadata> {
   const { slug } = await params;
-  const topic = getQuickRef(slug);
+  const topic = await getQuickRef(slug);
   if (!topic) return {};
   return pageMetadata({
     title: topic.keys ? `${topic.title} — Windows, Linux & macOS` : `${topic.title} Quick Reference — Copy-Paste Snippets`,
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps<"/quick-reference/[
 
 export default async function QuickRefTopicPage({ params }: PageProps<"/quick-reference/[slug]">) {
   const { slug } = await params;
-  const topic = getQuickRef(slug);
+  const topic = await getQuickRef(slug);
   if (!topic) notFound();
   const rows = topic.sections.reduce((n, s) => n + s.rows.length, 0);
 

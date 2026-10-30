@@ -46,12 +46,24 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
       { href: "https://code.visualstudio.com/docs", label: "VS Code docs", external: true },
     ],
   },
+  {
+    title: "CodeRef Pro",
+    links: [
+      { href: "/pricing/", label: "Pricing" },
+      { href: "/account/", label: "Your account" },
+      { href: "/terms/", label: "Terms of service" },
+      { href: "/privacy/", label: "Privacy policy" },
+      { href: "/refund-policy/", label: "Refund policy" },
+      { href: "/cancellation-policy/", label: "Cancellation policy" },
+      { href: "/cookie-policy/", label: "Cookie policy" },
+    ],
+  },
 ];
 
 export function SiteFooter() {
   return (
     <footer className="no-print mt-16 border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-[minmax(0,1.3fr)_repeat(4,minmax(0,1fr))]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[minmax(0,1.3fr)_repeat(5,minmax(0,1fr))]">
         <div>
           <Link href="/" className="font-mono text-xl font-semibold tracking-tight">
             code<span className="text-accent">ref</span>

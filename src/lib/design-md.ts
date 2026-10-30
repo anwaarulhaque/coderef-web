@@ -1,8 +1,8 @@
-// DESIGN.md library: design systems for AI coding agents, from data/design-md (synced by
-// scripts/sync-design-md.mjs). Read at build time; the browser gets /design-md/index.json for search.
-import fs from "node:fs";
-import path from "node:path";
+// DESIGN.md library: design systems for AI coding agents, from data/design-md on the CDN (synced by
+// scripts/sync-design-md.mjs, uploaded by scripts/cdn.mjs). Fetched at build time; the browser gets
+// design-md/index.json for search.
 import MarkdownIt from "markdown-it";
+import { cdnJson, cdnText } from "./cdn";
 import type { DesignIndexEntry, DesignShot } from "./design-md-shared";
 
 export * from "./design-md-shared";
@@ -21,16 +21,14 @@ export type Design = {
   fonts: string[];
   theme: "light" | "dark";
   hue: string;
-  /** DESIGN.md plus platform variants (DESIGN-swiftui.md, …) */
+  /** DESIGN.md plus platform variants (DESIGN-swiftui.md, …); empty for external designs */
   files: string[];
+  tags?: string[];
+  /** Listed from a source without an open license: its file is not hosted here, only linked. */
+  external?: { url: string; file: string; credit: string };
 };
 
 export type Collection = { id: string; label: string; description: string; count: number };
-
-export type DesignTemplate = { id: string; file: string; count: number; sections: string[]; markdown: string };
-
-const DIR = path.join(process.cwd(), "data", "design-md");
-const FILES_DIR = path.join(process.cwd(), "public", "design-md", "files");
 
 export const COLLECTIONS: Omit<Collection, "count">[] = [
   { id: "web", label: "Web", description: "Design systems of well-known product and brand websites." },
@@ -39,60 +37,113 @@ export const COLLECTIONS: Omit<Collection, "count">[] = [
   { id: "indie", label: "Indie", description: "Personal sites and portfolios with a distinctive look." },
   { id: "terminal", label: "Terminal", description: "Design systems for terminal and command-line interfaces." },
   { id: "examples", label: "Examples", description: "Reference examples of the DESIGN.md format." },
+  { id: "styles", label: "Styles", description: "Visual styles and design movements, from brutalism to aurora gradients." },
 ];
 
-let cache: Design[] | null = null;
+// Everything the library needs, fetched together once: the catalog, live-site screenshots and their URLs
+// (scripts/design-md-sites.mjs, scripts/screenshot-design-md.mjs; kept in data/design-shots because
+// sync-design-md wipes data/design-md), and how much CJK text each DESIGN.md quotes (scripts/cdn.mjs).
+type Library = { designs: Design[]; shots: Record<string, DesignShot>; sites: Record<string, string | null>; cjk: Record<string, number> };
+let loading: Promise<Library> | null = null;
+let library: Library | null = null;
 
-export function getDesigns(): Design[] {
-  if (!cache) {
-    const file = path.join(DIR, "catalog.json");
-    cache = fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")) as Design[]) : [];
-    cache.sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
-  }
-  return cache;
+function loadLibrary(): Promise<Library> {
+  loading ??= Promise.all([
+    cdnJson<Design[]>("data/design-md/catalog.json"),
+    cdnJson<Record<string, DesignShot>>("data/design-shots/shots.json"),
+    cdnJson<Record<string, string | null>>("data/design-shots/sites.json"),
+    cdnJson<Record<string, number>>("data/bundle/design-cjk.json"),
+  ]).then(([designs, shots, sites, cjk]) => {
+    designs.sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
+    return (library = { designs, shots, sites, cjk });
+  });
+  return loading;
 }
 
-export const getDesign = (id: string) => getDesigns().find((d) => d.id === id);
+/** For the synchronous helpers below, which only ever run on designs that came from getDesigns()/getDesign(). */
+function loaded(): Library {
+  if (!library) throw new Error("design-md: await getDesigns() before using the library helpers");
+  return library;
+}
 
-export function getCollections(): Collection[] {
-  const designs = getDesigns();
+export const getDesigns = async (): Promise<Design[]> => (await loadLibrary()).designs;
+
+export const getDesign = async (id: string) => (await getDesigns()).find((d) => d.id === id);
+
+export async function getCollections(): Promise<Collection[]> {
+  const designs = await getDesigns();
   return COLLECTIONS.map((c) => ({ ...c, count: designs.filter((d) => d.collection === c.id).length })).filter((c) => c.count > 0);
 }
 
-export const getCollection = (id: string) => getCollections().find((c) => c.id === id);
+export const getCollection = async (id: string) => (await getCollections()).find((c) => c.id === id);
 
-export function readDesignFile(id: string, file = "DESIGN.md"): string {
-  return fs.readFileSync(path.join(FILES_DIR, id, file), "utf8");
+export const readDesignFile = (id: string, file = "DESIGN.md") => cdnText(`design-md/files/${id}/${file}`);
+
+export const getShot = (id: string): DesignShot | undefined => loaded().shots[id];
+
+export const getSiteUrl = (id: string): string | undefined => loaded().sites[id] ?? undefined;
+
+// Country domains of non-English-speaking markets; .co, .io, .ai, .me and friends are used worldwide.
+const LOCAL_TLD = /\.(?:kr|jp|tw|cn|hk|de|fr|nl|se|es|it|br|ru|pl|ch|at|be|dk|no|fi|pt|cz|tr|vn|th|id)\/?$/;
+const localCache = new Map<string, boolean>();
+
+/** A site in another language: a CJK name, a DESIGN.md quoting a lot of CJK UI text (counted by scripts/cdn.mjs),
+ * or a local country domain. */
+export function isNonEnglish(d: Design): boolean {
+  let local = localCache.get(d.id);
+  if (local === undefined) {
+    const host = getSiteUrl(d.id)?.replace(/^https?:\/\/([^/]+).*/, "$1") ?? "";
+    const cjk = loaded().cjk[d.id] ?? 0;
+    local = /[぀-ヿ㐀-鿿가-힯]/.test(d.name) || cjk >= 15 || LOCAL_TLD.test(host);
+    localCache.set(d.id, local);
+  }
+  return local;
 }
 
-// Live-site screenshots and their URLs (scripts/design-md-sites.mjs, scripts/screenshot-design-md.mjs).
-// Kept in data/design-shots because sync-design-md wipes data/design-md.
-const SHOTS_DIR = path.join(process.cwd(), "data", "design-shots");
-let shots: Record<string, DesignShot> | null = null;
-let sites: Record<string, string | null> | null = null;
+// Best-known brands, listed first in the library in this order. Matched by slug ("linear" also matches
+// "linear.app"); a brand in several collections is ranked once, on its best entry.
+const TOP_BRANDS = [
+  "apple", "google", "microsoft", "netflix", "spotify", "airbnb", "uber", "stripe", "tesla", "nike", "meta", "openai",
+  "anthropic", "claude", "notion", "figma", "linear", "vercel", "github", "slack", "discord", "shopify", "coinbase",
+  "paypal", "revolut", "wise", "pinterest", "reddit", "twitch", "duolingo", "dropbox", "airtable", "framer", "webflow",
+  "supabase", "cursor", "raycast", "nvidia", "ibm", "samsung", "bmw", "ferrari", "lamborghini", "spacex",
+  "playstation", "starbucks", "lego", "ikea", "zara", "adobe", "salesforce", "huggingface", "mastercard", "intercom",
+  "zapier", "miro", "zoom",
+];
+const BRAND_COLLECTIONS = ["web", "brands", "indie"];
+let topRanks: Map<string, number> | null = null;
 
-const readJson = <T,>(file: string, fallback: T): T => (fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")) as T) : fallback);
-
-export function getShot(id: string): DesignShot | undefined {
-  shots ??= readJson(path.join(SHOTS_DIR, "shots.json"), {});
-  return shots[id];
-}
-
-export function getSiteUrl(id: string): string | undefined {
-  sites ??= readJson(path.join(SHOTS_DIR, "sites.json"), {});
-  return sites[id] ?? undefined;
+/** Position in TOP_BRANDS (0 = first), for the one entry that represents each top brand. */
+export function getTopRank(id: string): number | undefined {
+  if (!topRanks) {
+    const key = (d: Design) => d.slug.toLowerCase().replace(/\.(com|ai|io|app|dev|so)$/, "");
+    const candidates = loaded().designs.filter((d) => BRAND_COLLECTIONS.includes(d.collection) && !d.external);
+    topRanks = new Map();
+    TOP_BRANDS.forEach((brand, rank) => {
+      const best = candidates
+        .filter((d) => key(d) === brand)
+        .sort((a, b) => Number(Boolean(getShot(b.id))) - Number(Boolean(getShot(a.id))) || BRAND_COLLECTIONS.indexOf(a.collection) - BRAND_COLLECTIONS.indexOf(b.collection) || b.words - a.words)[0];
+      if (best) topRanks!.set(best.id, rank);
+    });
+  }
+  return topRanks.get(id);
 }
 
 export function toIndexEntry(d: Design): DesignIndexEntry {
   const shot = getShot(d.id);
-  return { i: d.id, n: d.name, c: d.collection, g: d.category, s: d.summary, p: d.colors.slice(0, 6), f: d.fonts, t: d.theme, h: d.hue, w: d.words, v: d.files.length, ...(shot && { x: shot.v }) };
+  const rank = getTopRank(d.id);
+  return {
+    i: d.id, n: d.name, c: d.collection, g: d.category, s: d.summary, p: d.colors.slice(0, 6), f: d.fonts, t: d.theme, h: d.hue, w: d.words, v: d.files.length,
+    ...(shot && { x: shot.v }), ...(isNonEnglish(d) && { l: 1 as const }), ...(rank !== undefined && { r: rank }),
+    ...(d.external && { e: d.external.url, ef: d.external.file }),
+  };
 }
 
 /** Same collection first, then shared hue and theme; a cheap "more like this". */
 export function getRelated(design: Design, limit = 6): Design[] {
   const score = (d: Design) => (d.collection === design.collection ? 2 : 0) + (d.category === design.category ? 2 : 0) + (d.hue === design.hue ? 3 : 0) + (d.theme === design.theme ? 1 : 0);
-  return getDesigns()
-    .filter((d) => d.id !== design.id)
+  return loaded()
+    .designs.filter((d) => d.id !== design.id)
     .map((d) => ({ d, s: score(d) }))
     .sort((a, b) => b.s - a.s || b.d.words - a.d.words)
     .slice(0, limit)
@@ -127,23 +178,4 @@ export function renderDesign(source: string, idPrefix = ""): { html: string; toc
     return `<h2 id="${id}">${inner}</h2>`;
   });
   return { html, toc };
-}
-
-export function getTemplates(): DesignTemplate[] {
-  const dir = path.join(DIR, "templates");
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((f) => /^DESIGN\.template\..+\.md$/.test(f))
-    .sort()
-    .map((file) => {
-      const id = file.replace(/^DESIGN\.template\.|\.md$/g, "");
-      const stats = JSON.parse(fs.readFileSync(path.join(dir, `heading-stats.${id}.json`), "utf8")) as { documents: number; sections: { title: string }[] };
-      return { id, file, count: stats.documents, sections: stats.sections.map((s) => s.title), markdown: fs.readFileSync(path.join(dir, file), "utf8") };
-    });
-}
-
-export function getLicensesMarkdown(): string {
-  const file = path.join(DIR, "THIRD_PARTY_LICENSES.md");
-  return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
 }

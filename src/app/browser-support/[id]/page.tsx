@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import examples from "../../../../data/compat-examples.json";
 import { BaselineBadge } from "@/components/compat/CompatBits";
 import { PageHeader, headerButton, headerButtonPrimary } from "@/components/layout/PageHeader";
 import { CodeBlock } from "@/components/compat/CodeBlock";
@@ -15,10 +14,12 @@ import {
   type CompatFeature,
   type Release,
 } from "@/lib/compat";
+import { cdnJson } from "@/lib/cdn";
 import { detectionFor } from "@/lib/compat-detect";
 import { BASELINE_INFO, baselineKey } from "@/lib/compat-shared";
 
-const EXAMPLES = examples as Record<string, { language: string; code: string }>;
+// Hand-written "How to use" examples, keyed by web-features ID.
+const getExamples = () => cdnJson<Record<string, { language: string; code: string }>>("data/compat-examples.json");
 
 // Only pre-built params exist (static export); anything else renders the 404 page.
 export const dynamicParams = false;
@@ -167,8 +168,8 @@ function SubFeatures({ feature }: { feature: CompatFeature }) {
   );
 }
 
-function HowToUse({ feature }: { feature: CompatFeature }) {
-  const example = EXAMPLES[feature.id];
+async function HowToUse({ feature }: { feature: CompatFeature }) {
+  const example = (await getExamples())[feature.id];
   const detection = detectionFor(feature.compatKeys.map((k) => k.key), feature.id);
   const missing = BROWSERS.filter((b) => !feature.support[b.id]).map((b) => b.name);
 

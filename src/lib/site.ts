@@ -32,6 +32,19 @@ export type NavGroup = {
 
 export const NAV: NavGroup[] = [
   {
+    label: "Design Systems",
+    badge: "NEW",
+    items: [
+      { href: "/design-md/", label: "DESIGN.md Library", description: "1,000+ design systems for AI coding agents" },
+      { href: "/design-md/?collection=top", label: "Top Brands", description: "Apple, Google, Stripe, Airbnb and other best-known brands" },
+      { href: "/design-md/web/", label: "Web", description: "Design systems of well-known product and brand websites" },
+      { href: "/design-md/brands/", label: "Brands", description: "Company design systems from around the world" },
+      { href: "/design-md/mobile/", label: "Mobile Apps", description: "App design systems with SwiftUI, Android and Expo variants" },
+      { href: "/design-md/indie/", label: "Indie & Portfolios", description: "Personal sites and portfolios with a distinctive look" },
+      { href: "/backgrounds/", label: "Animated Backgrounds", description: "Copy-paste hero effects with custom colors and speed", badge: "NEW" },
+    ],
+  },
+  {
     label: "Cheat Sheets & Reference",
     sections: [
       {
@@ -50,13 +63,6 @@ export const NAV: NavGroup[] = [
           { href: "/quick-reference/vscode/", label: "VS Code Shortcuts", description: "Windows, Linux, and macOS productivity keybindings" },
           { href: "/quick-reference/bash/", label: "Bash & Shell", description: "Shell scripting, pipes, redirections, and command loops" },
           { href: "/quick-reference/csharp/", label: "C# / .NET", description: "Language syntax, LINQ, async/await, and collections" },
-        ],
-      },
-      {
-        title: "DESIGN.md Library",
-        items: [
-          { href: "/design-md/", label: "DESIGN.md Library", description: "1,000+ design systems for AI coding agents", badge: "NEW" },
-          { href: "/design-md/templates/", label: "DESIGN.md Templates", description: "Blank design system files to fill in for your brand" },
         ],
       },
       {

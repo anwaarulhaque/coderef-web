@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { startTopLoader } from "@/components/layout/TopLoader";
+import { cdnFetchPath } from "@/lib/design-md-shared";
 import type { SearchEntry, SearchKind } from "@/lib/search-index";
 
 const KIND_LABEL: Record<SearchKind, string> = {
@@ -20,7 +21,7 @@ const PER_GROUP = 6;
 
 let indexPromise: Promise<SearchEntry[]> | null = null;
 const loadIndex = () =>
-  (indexPromise ??= fetch("/search-index.json")
+  (indexPromise ??= fetch(cdnFetchPath("search-index.json"))
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
     .catch((err) => {
       indexPromise = null; // allow a retry next time

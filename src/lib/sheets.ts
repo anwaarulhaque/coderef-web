@@ -1,14 +1,10 @@
-import fs from "node:fs";
-import path from "node:path";
+import { cdnJson } from "./cdn";
 import type { Sheet, SheetSummary } from "./types";
 
-// Every *.json file in data/sheets becomes a page at /<slug>/ at build time.
-const SHEETS_DIR = path.join(process.cwd(), "data", "sheets");
-
-function readSheet(file: string): Sheet {
-  const raw = fs.readFileSync(path.join(SHEETS_DIR, file), "utf8");
-  const sheet = JSON.parse(raw) as Sheet;
-  const expectedSlug = path.basename(file, ".json");
+// Every data/sheets/*.json file on the CDN becomes a page at /<slug>/ at build time. They arrive as one
+// bundle (scripts/cdn.mjs), each tagged with its file name.
+function checkSheet({ file, ...sheet }: Sheet & { file: string }): Sheet {
+  const expectedSlug = file.replace(/\.json$/, "");
   if (sheet.slug !== expectedSlug) {
     throw new Error(
       `data/sheets/${file}: slug "${sheet.slug}" must match file name "${expectedSlug}"`,
@@ -17,16 +13,17 @@ function readSheet(file: string): Sheet {
   return sheet;
 }
 
-export function getAllSheets(): Sheet[] {
-  return fs
-    .readdirSync(SHEETS_DIR)
-    .filter((file) => file.endsWith(".json"))
-    .map(readSheet)
-    .sort((a, b) => a.title.localeCompare(b.title));
+let cache: Promise<Sheet[]> | null = null;
+
+export function getAllSheets(): Promise<Sheet[]> {
+  cache ??= cdnJson<(Sheet & { file: string })[]>("data/bundle/sheets.json").then((all) =>
+    all.map(checkSheet).sort((a, b) => a.title.localeCompare(b.title)),
+  );
+  return cache;
 }
 
-export function getSheet(slug: string): Sheet | undefined {
-  return getAllSheets().find((sheet) => sheet.slug === slug);
+export async function getSheet(slug: string): Promise<Sheet | undefined> {
+  return (await getAllSheets()).find((sheet) => sheet.slug === slug);
 }
 
 export function countItems(sheet: Sheet): number {
@@ -37,8 +34,8 @@ export function countItems(sheet: Sheet): number {
   );
 }
 
-export function getSheetSummaries(): SheetSummary[] {
-  return getAllSheets().map(({ sections, ...rest }) => ({
+export async function getSheetSummaries(): Promise<SheetSummary[]> {
+  return (await getAllSheets()).map(({ sections, ...rest }) => ({
     ...rest,
     itemCount: countItems({ ...rest, sections }),
   }));

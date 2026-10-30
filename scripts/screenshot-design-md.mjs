@@ -6,7 +6,7 @@
 //   public/design-md/shots/<id>/thumb.webp   600×800, top of the page    (catalog cards)
 //   public/design-md/shots/<id>/full.webp    1440 wide, whole page        (design page)
 //   data/design-shots/shots.json             { "<id>": { "h": <full height>, "v": "<version>" } }
-// Already captured designs are skipped unless --force. Uses the installed Chrome (or Edge); no browser download.
+// Designs already in shots.json are skipped unless --force (the images themselves live in the CDN bucket). Uses the installed Chrome (or Edge); no browser download.
 import fs from "node:fs";
 import path from "node:path";
 import { chromium } from "playwright-core";
@@ -38,7 +38,7 @@ const saveManifest = () => {
 
 const queue = Object.entries(sites)
   .filter(([id, url]) => url && (!only || only.includes(id)))
-  .filter(([id]) => force || only || !shots[id] || !fs.existsSync(path.join(outDir, id, "thumb.webp")))
+  .filter(([id]) => force || only || !shots[id])
   .slice(0, limit);
 
 if (!queue.length) {
@@ -56,7 +56,20 @@ async function launch() {
 }
 
 // Bot checks and error pages that would otherwise be saved as the site's screenshot.
-const BLOCKED = /just a moment|attention required|access denied|are you a robot|verify you are human|captcha|403 forbidden|request blocked|pardon our interruption|application error/i;
+const BLOCKED = new RegExp(
+  [
+    "just a moment", "attention required", "access denied", "access to this page has been denied", "are you a robot", "a person or a robot",
+    "verify you are human", "verifying you are human", "security verification", "security check", "failed to verify", "captcha",
+    "you have been blocked", "unable to access", "403 forbidden", "^403\\b", "request blocked", "request rejected", "pardon our interruption",
+    "unusual traffic", "application error", "internal server error", "something went wrong", "an error occurred", "site can.t be reached",
+    "connection timed out", "service unavailable", "deployment (?:has been |is )?paused", "not available in your (?:country|region)",
+    "only available in", "having trouble loading", "technical difficulties", "under construction", "blocked by network security",
+    "isn.t a site", "saying goodbye", "sorry\\.\\.\\.", "verification of your birthday", "wrong website", "this website uses cookies",
+    "human verification", "request could not be satisfied", "^forbidden", "아이피", "서비스를 이용하실 수 없습니다", "접근이 감지", "アクセスが制限",
+    "vérifier que vous", "正在验证", "请完成下列验证", "접근이 제한", "제한되었습니다","ご利用いただくことができません",
+  ].join("|"),
+  "i",
+);
 // Below this average color spread the thumbnail is a blank page, a spinner or a one-line error.
 const MIN_DETAIL = 9;
 
@@ -86,6 +99,8 @@ async function capture(browser, id, url) {
     const title = await page.title().catch(() => "");
     const text = await page.evaluate(() => document.body?.innerText.slice(0, 2000) ?? "").catch(() => "");
     if (BLOCKED.test(title) || BLOCKED.test(text.slice(0, 400))) throw new Error(`Blocked by a bot check ("${title}")`);
+    // Splash screens, loaders and one-line error pages have almost no text.
+    if (text.replace(/\s+/g, "").length < 40) throw new Error("Page has no content");
     await page.addStyleTag({ content: HIDE_BANNERS }).catch(() => {});
     // Scroll through once so lazy images and reveal-on-scroll sections render, then back to the top.
     await page.evaluate(async (max) => {

@@ -24,13 +24,13 @@ export type SearchEntry = {
 
 export type SearchKind = "page" | "sheet" | "entry" | "snippet" | "feature" | "abbr" | "markdown" | "design";
 
-export function buildSearchIndex(): SearchEntry[] {
+export async function buildSearchIndex(): Promise<SearchEntry[]> {
   const out: SearchEntry[] = [];
 
   for (const p of NAV_PAGES) out.push({ k: "page", t: p.label, s: p.description || "Page", u: p.href });
   out.push({ k: "page", t: "Quick Reference", s: "Copy-paste snippets for 24 languages and tools", u: "/quick-reference/" });
 
-  for (const sheet of getAllSheets()) {
+  for (const sheet of await getAllSheets()) {
     const links = sheet.kind === "links";
     out.push({ k: "sheet", t: sheet.title, s: links ? `${sheet.category} · reference links` : `${sheet.category} cheat sheet`, u: `/${sheet.slug}/` });
     if (links) continue;
@@ -48,7 +48,7 @@ export function buildSearchIndex(): SearchEntry[] {
     }
   }
 
-  for (const topic of getQuickRefs()) {
+  for (const topic of await getQuickRefs()) {
     out.push({ k: "sheet", t: `${topic.title} Quick Reference`, s: topic.description, u: `/quick-reference/${topic.slug}/` });
     for (const section of topic.sections) {
       for (const [task, ...cells] of section.rows) {
@@ -79,7 +79,7 @@ export function buildSearchIndex(): SearchEntry[] {
     });
   }
 
-  for (const d of getDesigns()) {
+  for (const d of await getDesigns()) {
     out.push({ k: "design", t: `${d.name} DESIGN.md`, s: `Design system · ${d.category}`, u: `/design-md/${d.id}/` });
   }
 

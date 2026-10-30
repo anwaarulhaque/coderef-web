@@ -67,7 +67,7 @@ All run entirely in the browser; there is no server.
 
 ### DESIGN.md Library
 
-`/design-md/` is a searchable library of 1,000+ DESIGN.md design systems for AI coding agents, plus blank templates (`/design-md/templates/`). There is no database: search and filters run in the browser over `out/design-md/index.json`, a static JSON index built from `data/design-md/catalog.json`.
+`/design-md/` is a searchable library of 1,000+ DESIGN.md design systems for AI coding agents. There is no database: search and filters run in the browser over `out/design-md/index.json`, a static JSON index built from `data/design-md/catalog.json`.
 
 | Route | What it is |
 | --- | --- |
@@ -83,11 +83,20 @@ The data comes from the `coderef-scrapper` project. To refresh it:
 # in coderef-scrapper
 python scrape.py && python build_site.py
 # here
-npm run sync:design-md      # copies ../coderef-scrapper/coderef into data/design-md and public/design-md/files
+npm run sync:design-md      # copies ../coderef/coderef-scrapper/coderef into data/design-md and public/design-md/files
 npm run build
 ```
 
-`data/design-md/THIRD_PARTY_LICENSES.md` holds the open-source license notices the content requires; it is shown at `/design-md/licenses/` (linked in the small print of every library page). Keep it when updating the data.
+#### Design System packages
+
+Every hosted design page has a "Design System" section built in the browser from its DESIGN.md (no AI, no server): light and dark HTML previews, a normalised DESIGN.md, `tokens.json` and `styles.css`, downloadable individually or as a ZIP. The generator lives in `src/lib/design-system/` and tags every value as `source`, `derived` or `default`.
+
+```bash
+npm test                         # generator tests (node:test, no network)
+npm run design-system:validate   # run the generator over the whole library and report files it cannot handle
+```
+
+`data/design-md/THIRD_PARTY_LICENSES.md` holds the open-source license notices the content requires; it is published on the CDN with the rest of the data and linked from the small print of every library page. Keep it when updating the data.
 
 ### Quick Reference data
 

@@ -1,7 +1,5 @@
-"use client";
-
 import Link from "next/link";
-import React, { useRef, useState, useEffect, useCallback } from "react";
+import type React from "react";
 
 interface ToolBannerCard {
   id: string;
@@ -223,251 +221,90 @@ const FEATURED_TOOLS: ToolBannerCard[] = [
       </div>
     ),
   },
+  {
+    id: "backgrounds",
+    href: "/backgrounds/",
+    title: "Animated Backgrounds",
+    subtitle: "Copy-Paste Hero Effects",
+    description:
+      "Original animated backgrounds for your hero, footer or any section. Pick colors and speed, preview live, then copy plain HTML + JS or a prompt for your AI agent.",
+    badge: "✨ NEW EFFECTS",
+    badgeColor: "bg-fuchsia-600 text-white",
+    accentColor: "#c026d3",
+    gradient: "from-fuchsia-600/15 via-violet-600/10 to-transparent",
+    tags: ["Zero Dependencies", "Reduced-Motion Aware", "Custom Colors", "AI Prompt"],
+    ctaText: "Browse Backgrounds",
+    previewWidget: (
+      <div className="relative h-20 overflow-hidden rounded-xl border border-black/10 dark:border-white/10 bg-[#0b0b1a]">
+        <div className="absolute -left-6 -top-8 size-28 rounded-full bg-fuchsia-500/60 blur-2xl" />
+        <div className="absolute -right-4 top-2 size-24 rounded-full bg-indigo-500/60 blur-2xl" />
+        <div className="absolute bottom-[-30px] left-1/3 size-24 rounded-full bg-cyan-400/50 blur-2xl" />
+        <span className="absolute bottom-2 left-3 text-[10px] font-semibold text-white/80">Aurora</span>
+      </div>
+    ),
+  },
+  {
+    id: "git-branching",
+    href: "/git-branching/",
+    title: "Git Branching",
+    subtitle: "Learn Git by Playing",
+    description: "Animated levels for branching, merging, rebasing and remotes. Type real git commands and watch the commit graph change.",
+    badge: "🌿 GAME",
+    badgeColor: "bg-emerald-600 text-white",
+    accentColor: "#059669",
+    gradient: "from-emerald-600/15 via-teal-600/10 to-transparent",
+    tags: ["Interactive Levels", "Rebase & Cherry-pick", "Remotes"],
+    ctaText: "Start Playing",
+    previewWidget: (
+      <div className="rounded-xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 p-3 font-mono text-[10px] text-muted space-y-1">
+        <div><span className="text-emerald-600 dark:text-emerald-400">$</span> git checkout -b feature</div>
+        <div><span className="text-emerald-600 dark:text-emerald-400">$</span> git commit</div>
+        <div><span className="text-emerald-600 dark:text-emerald-400">$</span> git rebase main</div>
+      </div>
+    ),
+  },
 ];
 
+/** Home-page tools, laid out like the design-system cards: a preview on top, a short pitch below. */
 export function ToolsBanner() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [isHovered, setIsHovered] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const checkScroll = useCallback(() => {
-    if (!scrollRef.current) return;
-    const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-    setCanScrollLeft(scrollLeft > 10);
-    setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
-
-    // Calculate approximate active index based on scroll position
-    const cardWidth = 380;
-    const index = Math.min(
-      FEATURED_TOOLS.length - 1,
-      Math.max(0, Math.round(scrollLeft / cardWidth))
-    );
-    setCurrentIndex(index);
-  }, []);
-
-  useEffect(() => {
-    checkScroll();
-    window.addEventListener("resize", checkScroll);
-    return () => window.removeEventListener("resize", checkScroll);
-  }, [checkScroll]);
-
-  // Smooth scroll to a specific card index
-  const scrollToIndex = useCallback((index: number) => {
-    if (!scrollRef.current) return;
-    const cards = scrollRef.current.children;
-    if (cards[index]) {
-      (cards[index] as HTMLElement).scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "start",
-      });
-    }
-  }, []);
-
-  // Manual scroll helper
-  const scroll = (direction: "left" | "right") => {
-    if (!scrollRef.current) return;
-    const { clientWidth } = scrollRef.current;
-    const scrollAmount = direction === "left" ? -clientWidth * 0.75 : clientWidth * 0.75;
-    scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  };
-
-  // AUTO-SCROLL ENGINE
-  useEffect(() => {
-    if (!isAutoPlaying || isHovered) return;
-
-    const interval = setInterval(() => {
-      if (!scrollRef.current) return;
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-
-      // If at or near the end, loop back smoothly to start
-      if (scrollLeft + clientWidth >= scrollWidth - 25) {
-        scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        // Step forward by 1 card distance (~380px)
-        scrollRef.current.scrollBy({ left: 380, behavior: "smooth" });
-      }
-    }, 3800);
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying, isHovered]);
-
   return (
-    <section
-      className="mb-10 w-full"
-      aria-label="Featured interactive tools"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      onTouchStart={() => setIsHovered(true)}
-      onTouchEnd={() => setIsHovered(false)}
-    >
-      {/* Header with Title and Scroll Controls */}
-      <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="flex size-2 rounded-full bg-accent animate-pulse" />
-            <h2 className="text-lg font-bold tracking-tight text-foreground sm:text-xl">
-              Featured Interactive Developer Tools
-            </h2>
-            {isAutoPlaying && !isHovered && (
-              <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-accent/10 text-accent px-2 py-0.5 text-[10px] font-bold">
-                <span className="size-1.5 rounded-full bg-accent animate-ping" />
-                Auto-scrolling
-              </span>
-            )}
-          </div>
-          <p className="mt-0.5 text-xs text-muted">
-            Auto-scrolling interactive utilities, real-time generators, and compilers (hover to pause)
-          </p>
-        </div>
-
-        {/* Scroll & Auto-Play Controls */}
+    <section className="mb-10 w-full" aria-labelledby="featured-tools-heading">
+      <div className="mb-4">
         <div className="flex items-center gap-2">
-          {/* Play / Pause Toggle Button */}
-          <button
-            type="button"
-            onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-            aria-label={isAutoPlaying ? "Pause auto-scroll" : "Resume auto-scroll"}
-            title={isAutoPlaying ? "Pause auto-scroll" : "Resume auto-scroll"}
-            className="flex items-center gap-1.5 rounded-lg border border-border bg-surface px-2.5 py-1.5 text-xs font-semibold text-muted hover:text-foreground hover:bg-chip transition-colors shadow-2xs"
-          >
-            {isAutoPlaying ? (
-              <>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <rect x="6" y="4" width="4" height="16" />
-                  <rect x="14" y="4" width="4" height="16" />
-                </svg>
-                <span className="hidden sm:inline">Pause</span>
-              </>
-            ) : (
-              <>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3" />
-                </svg>
-                <span className="hidden sm:inline">Auto-scroll</span>
-              </>
-            )}
-          </button>
-
-          {/* Left / Right Arrow Buttons */}
-          <div className="flex items-center gap-1">
-            <button
-              type="button"
-              onClick={() => scroll("left")}
-              disabled={!canScrollLeft}
-              aria-label="Scroll tools left"
-              className="flex size-8 items-center justify-center rounded-lg border border-border bg-surface text-muted hover:text-foreground hover:bg-chip disabled:opacity-30 disabled:pointer-events-none transition-colors shadow-2xs"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polyline points="15 18 9 12 15 6" />
-              </svg>
-            </button>
-            <button
-              type="button"
-              onClick={() => scroll("right")}
-              disabled={!canScrollRight}
-              aria-label="Scroll tools right"
-              className="flex size-8 items-center justify-center rounded-lg border border-border bg-surface text-muted hover:text-foreground hover:bg-chip disabled:opacity-30 disabled:pointer-events-none transition-colors shadow-2xs"
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polyline points="9 18 15 12 9 6" />
-              </svg>
-            </button>
-          </div>
+          <span className="flex size-2 rounded-full bg-accent" />
+          <h2 id="featured-tools-heading" className="text-lg font-bold tracking-tight text-foreground sm:text-xl">
+            Featured Interactive Developer Tools
+          </h2>
         </div>
+        <p className="mt-0.5 text-xs text-muted">Interactive utilities, real-time generators and compilers that run in your browser.</p>
       </div>
 
-      {/* Horizontal Auto-Scrollable Carousel Container */}
-      <div
-        ref={scrollRef}
-        onScroll={checkScroll}
-        className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 pt-1 scrollbar-none"
-        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-      >
-        {FEATURED_TOOLS.map((tool, idx) => (
-          <div
-            key={tool.id}
-            className={`group relative flex w-[310px] sm:w-[360px] md:w-[390px] shrink-0 snap-start flex-col justify-between rounded-2xl border bg-surface p-5 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:shadow-xl ${
-              currentIndex === idx ? "border-accent/40 ring-1 ring-accent/20" : "border-border"
-            }`}
-          >
-            {/* Top gradient highlight banner */}
-            <div
-              className={`absolute inset-x-0 top-0 h-28 rounded-t-2xl bg-gradient-to-b ${tool.gradient} opacity-50 pointer-events-none transition-opacity group-hover:opacity-80`}
-            />
-
-            <div className="relative z-10">
-              {/* Badge & Subtitle */}
-              <div className="flex items-center justify-between">
-                <span className={`rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${tool.badgeColor}`}>
+      <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        {FEATURED_TOOLS.map((tool) => (
+          <li key={tool.id}>
+            <Link
+              href={tool.href}
+              className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface transition-shadow hover:shadow-md"
+            >
+              <div className={`relative flex aspect-[2/1] flex-col justify-between border-b border-border bg-gradient-to-b p-3 sm:aspect-[4/3] sm:p-4 ${tool.gradient}`}>
+                <span className={`self-start rounded-full px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider sm:text-[10px] ${tool.badgeColor}`}>
                   {tool.badge}
                 </span>
-                <span className="text-[11px] font-mono text-muted">coderef.xyz{tool.href}</span>
+                {/* Previews are dense; on phones the card keeps just the badge and color. */}
+                <div className="hidden sm:block">{tool.previewWidget}</div>
               </div>
-
-              {/* Title & Subtitle */}
-              <h3 className="mt-3 text-lg font-bold tracking-tight text-foreground group-hover:text-accent transition-colors">
-                {tool.title}
-              </h3>
-              <p className="text-xs font-semibold text-accent mt-0.5">{tool.subtitle}</p>
-
-              {/* Description */}
-              <p className="mt-2 text-xs text-muted leading-relaxed line-clamp-3">
-                {tool.description}
-              </p>
-
-              {/* Preview Widget */}
-              <div className="mt-4">{tool.previewWidget}</div>
-
-              {/* Feature Tags */}
-              <div className="mt-3 flex flex-wrap gap-1.5">
-                {tool.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-md bg-chip px-2 py-0.5 text-[10px] font-medium text-muted"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              <div className="flex flex-1 flex-col p-3 sm:p-4">
+                <h3 className="font-semibold leading-snug group-hover:text-accent">{tool.title}</h3>
+                <p className="mt-0.5 text-xs font-medium" style={{ color: tool.accentColor }}>
+                  {tool.subtitle}
+                </p>
+                <p className="mt-1.5 line-clamp-2 flex-1 text-sm text-muted">{tool.description}</p>
+                <p className="mt-3 text-xs font-semibold text-foreground group-hover:text-accent">{tool.ctaText} →</p>
               </div>
-            </div>
-
-            {/* Bottom CTA Button */}
-            <div className="relative z-10 mt-5 pt-3 border-t border-border/60">
-              <Link
-                href={tool.href}
-                className="flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-bold text-white shadow-xs transition-all hover:opacity-95 active:scale-[0.98]"
-                style={{ backgroundColor: tool.accentColor }}
-              >
-                <span>{tool.ctaText}</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
+            </Link>
+          </li>
         ))}
-      </div>
-
-      {/* Interactive Pagination Indicator Dots */}
-      <div className="mt-2 flex items-center justify-center gap-1.5">
-        {FEATURED_TOOLS.map((tool, idx) => (
-          <button
-            key={tool.id}
-            type="button"
-            onClick={() => scrollToIndex(idx)}
-            aria-label={`Jump to ${tool.title}`}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              currentIndex === idx
-                ? "w-7 bg-accent shadow-2xs"
-                : "w-2 bg-border hover:bg-muted"
-            }`}
-          />
-        ))}
-      </div>
+      </ul>
     </section>
   );
 }

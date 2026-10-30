@@ -1,5 +1,6 @@
 "use client";
 
+import { CloudSave } from "@/components/account/CloudSave";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { CODE_LANGUAGES, generateCode, type CodeLanguage } from "@/lib/regex/codegen";
@@ -320,7 +321,24 @@ export function RegexTester() {
       <div className="min-w-0 space-y-4">
         <Panel
           title="Regular expression"
-          actions={<span className="text-xs text-muted">ECMAScript (JavaScript) flavor</span>}
+          actions={
+            <div className="flex items-center gap-2">
+              <span className="hidden text-xs text-muted sm:inline">ECMAScript (JavaScript) flavor</span>
+              <CloudSave
+                kind="regex"
+                noun="regex"
+                getData={() => ({ pattern, flags, text, replacement })}
+                getTitle={() => pattern.slice(0, 60) || "Untitled regex"}
+                onLoad={(d: { pattern?: unknown; flags?: unknown; text?: unknown; replacement?: unknown }) => {
+                  const s = (v: unknown) => (typeof v === "string" ? v : "");
+                  setPattern(s(d?.pattern));
+                  setFlags(s(d?.flags).replace(/[^dgimsuyv]/g, ""));
+                  setText(s(d?.text));
+                  setReplacement(s(d?.replacement));
+                }}
+              />
+            </div>
+          }
         >
           <div className="flex items-start rounded-lg border border-border bg-background focus-within:border-accent">
             <span className="select-none py-2 pl-3 font-mono text-[13px] leading-6 text-muted">/</span>

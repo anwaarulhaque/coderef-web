@@ -37,7 +37,6 @@ function TopLoaderBar() {
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
   const active = useRef(false);
   const committedKey = useRef("");
-  const isFirstMount = useRef(true);
 
   const clearTimers = () => {
     clearInterval(trickle.current);
@@ -76,19 +75,18 @@ function TopLoaderBar() {
     timers.current.push(setTimeout(finish, MAX_DURATION_MS));
   };
 
-  // Initial page load sweep animation
+  // Initial page load sweep. Its end timer is owned by this effect: the listener effect's cleanup clears
+  // `timers`, and if this one lived there too the bar would freeze part-way (React re-runs effects on mount
+  // in development, and on any remount).
   useEffect(() => {
-    if (isFirstMount.current) {
-      isFirstMount.current = false;
-      setVisible(true);
-      setProgress(0.25);
-      timers.current.push(
-        setTimeout(() => setProgress(0.7), 80),
-        setTimeout(() => setProgress(1), 220),
-        setTimeout(() => setVisible(false), 420),
-        setTimeout(() => setProgress(0), 650),
-      );
-    }
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- the sweep plays once, after mount
+    start();
+    const done = setTimeout(finish, 300);
+    return () => {
+      clearTimeout(done);
+      finish();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Listen for link clicks, back/forward buttons, and menu clicks
@@ -121,8 +119,10 @@ function TopLoaderBar() {
 
   // When route finishes committing, finish loader
   useEffect(() => {
+    const first = !committedKey.current;
     committedKey.current = routeKey(new URL(window.location.href));
-    finish();
+    if (!first) finish(); // on first render, let the load sweep play out
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, searchParams]);
 

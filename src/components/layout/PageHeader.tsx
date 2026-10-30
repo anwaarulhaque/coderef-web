@@ -11,9 +11,12 @@ export function PageHeader({
   crumbs,
   actions,
   accent,
+  level = 1,
   children,
 }: {
   title: ReactNode;
+  /** Heading level of the title; 2 when something above it is the page's h1. */
+  level?: 1 | 2;
   description?: ReactNode;
   crumbs?: Crumb[];
   actions?: ReactNode;
@@ -37,6 +40,8 @@ export function PageHeader({
           })),
         }
       : null;
+
+  const Heading = level === 1 ? "h1" : "h2";
 
   return (
     <header className="mb-8">
@@ -63,10 +68,10 @@ export function PageHeader({
       )}
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div className="min-w-0">
-          <h1 className="flex flex-wrap items-center gap-3 text-3xl font-semibold tracking-tight">
+          <Heading className="flex flex-wrap items-center gap-3 text-3xl font-semibold tracking-tight">
             {accent && <span className="inline-block size-3 shrink-0 rounded-full" style={{ backgroundColor: accent }} aria-hidden />}
             {title}
-          </h1>
+          </Heading>
           {description && <div className="mt-2 max-w-3xl text-muted">{description}</div>}
           {children}
         </div>

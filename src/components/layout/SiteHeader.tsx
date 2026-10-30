@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { AccountButton } from "@/components/account/AccountButton";
 import { GlobalSearch } from "@/components/search/GlobalSearch";
 import { NAV, type NavGroup } from "@/lib/site";
 
@@ -275,6 +276,7 @@ export function SiteHeader() {
         {/* Right Section: Global Search & Mobile Hamburger */}
         <div className="ml-auto flex items-center gap-2 lg:ml-0">
           <GlobalSearch />
+          <AccountButton />
           <button
             type="button"
             className="flex size-9 items-center justify-center rounded-lg border border-border lg:hidden"

@@ -9,15 +9,15 @@ import { getAllSheets, getSheet } from "@/lib/sheets";
 // Only pre-built params exist (static export); anything else renders the 404 page.
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  return getAllSheets().map((sheet) => ({ slug: sheet.slug }));
+export async function generateStaticParams() {
+  return (await getAllSheets()).map((sheet) => ({ slug: sheet.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[slug]">): Promise<Metadata> {
   const { slug } = await params;
-  const sheet = getSheet(slug);
+  const sheet = await getSheet(slug);
   if (!sheet) return {};
   return pageMetadata({
     title: sheet.kind === "links" ? `${sheet.title} — Reference Links & Cheat Sheets` : `${sheet.title} Cheat Sheet`,
@@ -29,7 +29,7 @@ export async function generateMetadata({
 
 export default async function SheetPage({ params }: PageProps<"/[slug]">) {
   const { slug } = await params;
-  const sheet = getSheet(slug);
+  const sheet = await getSheet(slug);
   if (!sheet) notFound();
 
   return (

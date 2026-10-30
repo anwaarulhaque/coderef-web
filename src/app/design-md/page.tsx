@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { DesignBrowser } from "@/components/designmd/DesignBrowser";
 import { LibraryFootnote } from "@/components/designmd/LibraryFootnote";
-import { PageHeader, headerButton, headerButtonPrimary } from "@/components/layout/PageHeader";
+import { PageHeader, headerButtonPrimary } from "@/components/layout/PageHeader";
 import { Snippet } from "@/components/quickref/Snippet";
-import { getCollections, getDesigns, getTemplates, previewColors, toIndexEntry } from "@/lib/design-md";
-import { pageMetadata } from "@/lib/seo";
+import { designFileHref, getCollections, getDesigns, getTopRank, previewColors, toIndexEntry } from "@/lib/design-md";
+import { SITE_URL, pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   title: "DESIGN.md Library — Design Systems for AI Coding Agents",
@@ -14,15 +14,12 @@ export const metadata: Metadata = pageMetadata({
   path: "/design-md/",
 });
 
-export default function DesignMdPage() {
-  const designs = getDesigns();
-  const collections = getCollections();
-  const templates = getTemplates();
+export default async function DesignMdPage() {
+  const [designs, collections] = await Promise.all([getDesigns(), getCollections()]);
   // Rendered into the HTML so the page is useful (and indexable) before the search index loads.
   const featured = designs
-    .filter((d) => d.collection === "web")
-    .sort((a, b) => b.words - a.words)
-    .slice(0, 24)
+    .filter((d) => getTopRank(d.id) !== undefined)
+    .sort((a, b) => getTopRank(a.id)! - getTopRank(b.id)!)
     .map(toIndexEntry);
   const samplesFor = (collection: string) =>
     designs
@@ -43,12 +40,9 @@ export default function DesignMdPage() {
         }
         actions={
           <>
-            <a href="#how-to-use" className={headerButton}>
+            <a href="#how-to-use" className={headerButtonPrimary}>
               How to use
             </a>
-            <Link href="/design-md/templates/" className={headerButtonPrimary}>
-              Start from a template →
-            </Link>
           </>
         }
       >
@@ -56,7 +50,6 @@ export default function DesignMdPage() {
           {[
             [designs.length.toLocaleString("en"), "design systems"],
             [collections.length, "collections"],
-            [templates.length, "templates"],
             ["Free", "copy, download or curl"],
           ].map(([value, label]) => (
             <div key={label} className="flex items-baseline gap-1.5">
@@ -110,7 +103,7 @@ export default function DesignMdPage() {
           <li>
             <p className="font-medium">1. Pick a design and put its file in your project root</p>
             <div className="mt-2">
-              <Snippet code="curl -o DESIGN.md https://coderef.xyz/design-md/files/web/linear.app/DESIGN.md" />
+              <Snippet code={`curl -o DESIGN.md ${new URL(designFileHref("web/linear.app"), SITE_URL).href}`} />
             </div>
           </li>
           <li>
@@ -122,7 +115,7 @@ export default function DesignMdPage() {
           <li>
             <p className="font-medium">3. Make it yours</p>
             <p className="mt-1 text-muted">
-              Change the palette and fonts, or start from a blank <Link href="/design-md/templates/" className="text-accent hover:underline">template</Link> and describe your own brand.
+              Change the palette, fonts and wording to describe your own brand.
             </p>
           </li>
         </ol>

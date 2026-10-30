@@ -8,6 +8,8 @@ import { getSheetSummaries } from "@/lib/sheets";
 import Link from "next/link";
 import { PageHeader, headerButton, headerButtonPrimary } from "@/components/layout/PageHeader";
 import { ToolsBanner } from "@/components/home/ToolsBanner";
+import { DesignSystemsBanner } from "@/components/home/DesignSystemsBanner";
+import { DeveloperDay } from "@/components/home/DeveloperDay";
 import type { SheetSummary } from "@/lib/types";
 
 export const metadata: Metadata = pageMetadata({
@@ -17,7 +19,8 @@ export const metadata: Metadata = pageMetadata({
   path: "/",
 });
 
-export default function Home() {
+export default async function Home() {
+  const [quickRefRows, sheetSummaries] = await Promise.all([getQuickRefSearchRows(), getSheetSummaries()]);
   // Interactive tools have their own routes but are listed alongside the sheets.
   const tools: SheetSummary[] = [
     {
@@ -50,7 +53,7 @@ export default function Home() {
       category: "Tools",
       description: "Copy-paste snippets by task for 24 languages and tools, including VS Code shortcuts — searchable across all.",
       color: "#0ea5e9",
-      itemCount: getQuickRefSearchRows().length,
+      itemCount: quickRefRows.length,
     },
     {
       slug: "markdown",
@@ -85,11 +88,15 @@ export default function Home() {
       itemCount: getFeatureSummaries().length,
     },
   ];
-  const sheets = [...getSheetSummaries(), ...tools].sort((a, b) => a.title.localeCompare(b.title));
+  const sheets = [...sheetSummaries, ...tools].sort((a, b) => a.title.localeCompare(b.title));
 
   return (
     <>
+      <DesignSystemsBanner />
+      <ToolsBanner />
+      <DeveloperDay />
       <PageHeader
+        level={2}
         title="Developer cheat sheets"
         description="Every method, function and command on one page, each linked to its official documentation — plus quick references, visual guides and interactive tools."
         actions={
@@ -103,7 +110,6 @@ export default function Home() {
           </>
         }
       />
-      <ToolsBanner />
       <SheetBrowser sheets={sheets} />
     </>
   );

@@ -34,39 +34,3 @@ export function Palette({ colors }: { colors: string[] }) {
   );
 }
 
-/** Copies a block of text (a template, a prompt) with one click. */
-export function CopyTextButton({ text, label, className }: { text: string; label: string; className?: string }) {
-  const [done, setDone] = useState(false);
-  return (
-    <button
-      type="button"
-      className={className}
-      onClick={async () => {
-        if (await copyText(text)) {
-          setDone(true);
-          setTimeout(() => setDone(false), 1400);
-        }
-      }}
-    >
-      {done ? "Copied ✓" : label}
-    </button>
-  );
-}
-
-/** Saves a block of text as a file, without a server round trip. */
-export function DownloadTextButton({ text, filename, label, className }: { text: string; filename: string; label: string; className?: string }) {
-  return (
-    <button
-      type="button"
-      className={className}
-      onClick={() => {
-        const url = URL.createObjectURL(new Blob([text], { type: "text/markdown;charset=utf-8" }));
-        const a = Object.assign(document.createElement("a"), { href: url, download: filename });
-        a.click();
-        URL.revokeObjectURL(url);
-      }}
-    >
-      {label}
-    </button>
-  );
-}

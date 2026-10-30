@@ -1,18 +1,20 @@
 "use client";
 
-import { useRef } from "react";
+import { type ReactNode, useRef, useState } from "react";
+import { ShotImage } from "./ShotImage";
 
-type Props = { name: string; src: string; height: number; siteUrl?: string };
+type Props = { name: string; src: string; height: number; siteUrl?: string; fallback: ReactNode };
 
-/** The live site's full-page screenshot in a browser frame, with a full-screen viewer. */
-export function ShotPreview({ name, src, height, siteUrl }: Props) {
+/** The live site's full-page screenshot in a browser frame, with a full-screen viewer; `fallback` if it fails to load. */
+export function ShotPreview({ name, src, height, siteUrl, fallback }: Props) {
   const dialog = useRef<HTMLDialogElement>(null);
+  const [failed, setFailed] = useState(false);
   const host = siteUrl ? new URL(siteUrl).host.replace(/^www\./, "") : undefined;
   const img = (className: string) => (
-    // eslint-disable-next-line @next/next/no-img-element -- static export, image is pre-sized webp
-    <img src={src} alt={`${name} website, full page`} width={1440} height={height} decoding="async" className={className} />
+    <ShotImage src={src} alt={`${name} website, full page`} width={1440} height={height} decoding="async" className={className} onFail={() => setFailed(true)} />
   );
 
+  if (failed) return fallback;
   return (
     <div className="flex min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-surface">
       <div className="flex items-center gap-3 border-b border-border px-3 py-2">

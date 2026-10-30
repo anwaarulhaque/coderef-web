@@ -1,5 +1,6 @@
 "use client";
 
+import { CloudSave } from "@/components/account/CloudSave";
 import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { convertFrom, convertTo, TARGETS, type Source, type Target } from "@/lib/json/convert";
 import { diff, escapeJson, format, minify, queryJsonPath, repair, sortKeys, stats, unescapeJson, type DiffEntry, type Indent } from "@/lib/json/tools";
@@ -497,7 +498,15 @@ export function JsonFormatter({ heading }: { heading?: ReactNode }) {
             </button>
           ))}
         </div>
-        <button type="button" className={btn + " ml-auto"} onClick={() => setFullscreen((f) => !f)} aria-pressed={fullscreen}>
+        <CloudSave
+          className="ml-auto"
+          kind="json"
+          noun="document"
+          getData={() => ({ input })}
+          getTitle={() => "JSON document"}
+          onLoad={(d: { input?: unknown }) => setInput(typeof d?.input === "string" ? d.input : "")}
+        />
+        <button type="button" className={btn} onClick={() => setFullscreen((f) => !f)} aria-pressed={fullscreen}>
           {fullscreen ? "⤡ Exit fullscreen" : "⤢ Fullscreen"}
         </button>
       </div>

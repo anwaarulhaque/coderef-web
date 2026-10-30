@@ -8,7 +8,8 @@ import { getAllSheets } from "@/lib/sheets";
 // Rendered once at build time into out/sitemap.xml.
 export const dynamic = "force-static";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [collections, designs, sheets, quickRefs] = await Promise.all([getCollections(), getDesigns(), getAllSheets(), getQuickRefs()]);
   const now = new Date();
   const entry = (path: string, priority: number, changeFrequency: "weekly" | "monthly" = "monthly") => ({
     url: absoluteUrl(path),
@@ -23,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/browser-support/compare/", 0.7),
     entry("/realtime-colors/", 0.9),
     entry("/sitemap/", 0.7),
+    entry("/pricing/", 0.7),
+    entry("/terms/", 0.3),
+    entry("/privacy/", 0.3),
+    entry("/refund-policy/", 0.3),
+    entry("/cancellation-policy/", 0.3),
+    entry("/cookie-policy/", 0.3),
     entry("/json-formatter/", 0.9),
     entry("/try-it/", 0.9),
     entry("/html-editor/", 0.9),
@@ -34,12 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/git-branching/", 0.8),
     entry("/abbreviations/", 0.7),
     entry("/design-md/", 0.9, "weekly"),
-    entry("/design-md/templates/", 0.8),
-    ...getCollections().map((c) => entry(`/design-md/${c.id}/`, 0.7, "weekly")),
-    ...getDesigns().map((d) => entry(`/design-md/${d.id}/`, 0.6)),
+    entry("/backgrounds/", 0.8),
+    ...collections.map((c) => entry(`/design-md/${c.id}/`, 0.7, "weekly")),
+    // External designs are link-outs (noindex), so they stay out of the sitemap.
+    ...designs.filter((d) => !d.external).map((d) => entry(`/design-md/${d.id}/`, 0.6)),
     // Full cheat sheets rank above the short reference-link pages.
-    ...getAllSheets().map((s) => entry(`/${s.slug}/`, s.kind === "links" ? 0.4 : 0.8)),
-    ...getQuickRefs().map((t) => entry(`/quick-reference/${t.slug}/`, 0.8)),
+    ...sheets.map((s) => entry(`/${s.slug}/`, s.kind === "links" ? 0.4 : 0.8)),
+    ...quickRefs.map((t) => entry(`/quick-reference/${t.slug}/`, 0.8)),
     ...getCompatFeatures().map((f) => entry(`/browser-support/${f.id}/`, 0.5)),
   ];
 }
