@@ -58,8 +58,8 @@ export function parseCookies(header: string | undefined, list: string[] = []): R
   return out;
 }
 
-export function cookie(name: string, value: string, opts: { maxAge: number; secure: boolean }): string {
-  return `${name}=${encodeURIComponent(value)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${opts.maxAge}${opts.secure ? "; Secure" : ""}`;
+export function cookie(name: string, value: string, opts: { maxAge: number; secure: boolean; httpOnly?: boolean }): string {
+  return `${name}=${encodeURIComponent(value)}; Path=/;${opts.httpOnly === false ? "" : " HttpOnly;"} SameSite=Lax; Max-Age=${opts.maxAge}${opts.secure ? "; Secure" : ""}`;
 }
 
 export const str = (v: unknown, max: number): string | undefined => (typeof v === "string" && v.trim() && v.length <= max ? v.trim() : undefined);

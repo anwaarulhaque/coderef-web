@@ -67,7 +67,20 @@ const set = (patch: Partial<State>) => {
   listeners.forEach((l) => l());
 };
 
-export async function refreshAccount(): Promise<Me | null> {
+const SIGNED_OUT: Me = { user: null, lifetimeRemaining: 0, paymentsEnabled: false };
+
+/** The server sets this readable marker next to its HttpOnly session cookie; without it nobody is signed in. */
+const hasSession = () => typeof document !== "undefined" && /(?:^|;\s*)cr_in=1/.test(document.cookie);
+
+/**
+ * Loads /me, but only when a session exists. `force` is for pages that also need the public numbers it returns
+ * (plan availability, lifetime seats left) while signed out.
+ */
+export async function refreshAccount(force = false): Promise<Me | null> {
+  if (!force && !hasSession()) {
+    set({ status: "ready", me: SIGNED_OUT });
+    return SIGNED_OUT;
+  }
   try {
     const me = await api<Me>("GET", "/me");
     set({ status: "ready", me });

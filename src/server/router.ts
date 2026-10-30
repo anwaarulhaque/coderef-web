@@ -2,7 +2,7 @@
 import { adminLogout, adminSessionCookie, clearAdminCookie, createEmployee, deleteEmployee, listCustomers, listEmployees, listSubscriptions, requireAdmin, requestAdminCode, requireSuperadmin, updateEmployee, verifyAdminCode } from "./admin.ts";
 import { listRefundRequests, requestRefund, resolveRefundRequest, transactionsWithRefunds } from "./refunds.ts";
 import { linkProduct, planOverview, syncPlans } from "./admin-plans.ts";
-import { clearSessionCookie, currentUser, endSession, normalizeEmail, requestCode, requireUser, sessionCookie, verifyCode } from "./auth.ts";
+import { clearSessionCookie, clearSessionFlagCookie, currentUser, endSession, normalizeEmail, requestCode, requireUser, sessionCookie, sessionFlagCookie, verifyCode } from "./auth.ts";
 import { config } from "./config.ts";
 import { db, isPro, rateLimit, type User } from "./db.ts";
 import { applyEvent, cancelSubscription, cardUpdateLink, changePlan, createCheckout, invoicePdf, lifetimeSold, setCancelAtPeriodEnd, subscriptionDetails, verifyWebhook } from "./dodo.ts";
@@ -73,11 +73,11 @@ export async function route(req: Req): Promise<Res> {
     const email = normalizeEmail(body.email);
     if (!(await rateLimit(`verify-ip:${req.ip}`, 60))) throw new HttpError(429, "Too many attempts. Try again later.", "rate_limited");
     const { token, user, created } = await verifyCode(email, String(body.code ?? "").trim(), req.headers["user-agent"] ?? "");
-    return json(200, { user: publicUser(user), created }, { cookies: [sessionCookie(token)] });
+    return json(200, { user: publicUser(user), created }, { cookies: [sessionCookie(token), sessionFlagCookie()] });
   }
   if (path === "/auth/logout" && method === "POST") {
     await endSession(req);
-    return json(200, { ok: true }, { cookies: [clearSessionCookie()] });
+    return json(200, { ok: true }, { cookies: [clearSessionCookie(), clearSessionFlagCookie()] });
   }
 
   // ---- account ----
@@ -93,7 +93,7 @@ export async function route(req: Req): Promise<Res> {
     if (readJson(req).confirm !== user.email) throw new HttpError(400, "Type your email address to confirm", "confirm_required");
     if (user.subscription_id && ["active", "on_hold", "past_due"].includes(user.subscription_status ?? "")) await cancelSubscription(user.subscription_id);
     await db()`delete from users where id = ${user.id}`;
-    return json(200, { ok: true }, { cookies: [clearSessionCookie()] });
+    return json(200, { ok: true }, { cookies: [clearSessionCookie(), clearSessionFlagCookie()] });
   }
 
   // ---- billing ----
