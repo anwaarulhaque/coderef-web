@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({ title: "Privacy policy", descri
 
 export default function Page() {
   return (
-    <LegalPage title="Privacy policy" updated="October 31, 2026">
+    <LegalPage title="Privacy policy" updated="November 1, 2026">
       <p>CodeRef collects as little as it can. Most tools run entirely in your browser and never send what you type to us.</p>
       <h2>In short</h2>
       <ul>
@@ -27,6 +27,16 @@ export default function Page() {
         <li><strong>Emails we send you:</strong> sign-in codes and, once you have a paid plan, messages about your subscription (renewals, cancellations, failed payments, refunds). We don&apos;t send marketing email.</li>
         <li><strong>Security logs:</strong> IP addresses are used briefly to rate-limit sign-in codes and prevent abuse.</li>
         <li><strong>Analytics:</strong> Google Analytics and Microsoft Clarity measure how pages are used (pages viewed, clicks, device type). They set their own cookies.</li>
+      </ul>
+      <h2>CodeRef Start and the browser extension</h2>
+      <ul>
+        <li><strong>Start pages:</strong> the pages, widgets, links, notes and to-dos you add are stored in your account. Team pages are visible to the members of that team; public pages to anyone with the link.</li>
+        <li><strong>Connecting the extension:</strong> the extension signs in with an access token that only works for your start pages. We store only a fingerprint (hash) of it, the device name you see on the connect page, and when it was last used. You can remove it any time on the connect page or in your account.</li>
+        <li><strong>What the extension sends us:</strong> only what you ask it to save: the title and address of the current tab or of every tab in the window when you press Save, a link you right-click, or your bookmarks when you press Import. It talks only to coderef.xyz.</li>
+        <li><strong>What stays in your browser:</strong> a copy of your pages (so new tabs open instantly), your settings, saved tab sessions, a picture you upload as a background, and your most visited sites, which the extension reads from Chrome to show as shortcuts. None of these are sent to us.</li>
+        <li><strong>Link clicks on team pages</strong> are counted per link per day for the team&apos;s analytics, without recording who clicked. The counter uses your IP address briefly to prevent abuse.</li>
+        <li><strong>Third parties:</strong> site icons are loaded from Google&apos;s favicon service, which receives the domain name of each site shown. Background photos are loaded from Unsplash. Feeds and weather are fetched through coderef.xyz, which passes the feed address or the chosen city&apos;s coordinates to that feed or to Open-Meteo.</li>
+        <li>Removing the extension deletes everything it kept in your browser.</li>
       </ul>
       <h2>Cookies</h2>
       <p>Signing in sets one cookie, <code>cr_session</code>, that keeps you signed in for 30 days. It is HttpOnly (scripts can&apos;t read it) and used for nothing else. Tools also remember your last work in your browser&apos;s local storage, which never leaves your device unless you save to your account. Analytics services set their own cookies. The full list, with durations and how to control them, is in the <Link href="/cookie-policy/">cookie policy</Link>.</p>
