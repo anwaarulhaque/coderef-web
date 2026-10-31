@@ -25,6 +25,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry("/realtime-colors/", 0.9),
     entry("/sitemap/", 0.7),
     entry("/pricing/", 0.7),
+    entry("/about/", 0.4),
+    entry("/copyright/", 0.3),
     entry("/terms/", 0.3),
     entry("/privacy/", 0.3),
     entry("/refund-policy/", 0.3),

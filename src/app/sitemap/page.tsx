@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { getCompatFeatures } from "@/lib/compat";
-import { getCollections } from "@/lib/design-md";
 import { getQuickRefs } from "@/lib/quickref";
 import { getAllSheets } from "@/lib/sheets";
 import { pageMetadata } from "@/lib/seo";
@@ -17,7 +16,6 @@ export const metadata: Metadata = pageMetadata({
 export default async function SitemapPage() {
   const allSheets = [...(await getAllSheets())].sort((a, b) => a.title.localeCompare(b.title));
   const quickRefs = [...(await getQuickRefs())].sort((a, b) => a.title.localeCompare(b.title));
-  const collections = await getCollections();
   const compatFeatures = getCompatFeatures().slice(0, 48); // Top features
 
   const tools = [
@@ -32,8 +30,6 @@ export default async function SitemapPage() {
     { href: "/javascript-compiler/", title: "JavaScript Compiler", desc: "Run JavaScript code and read visual console logs" },
     { href: "/abbreviations/", title: "HTML & CSS Abbreviations", desc: "Emmet syntax generator for rapid HTML authoring" },
     { href: "/git-branching/", title: "Git Branching", desc: "Animated interactive levels for learning Git branching and rebasing" },
-    { href: "/design-md/", title: "DESIGN.md Library", desc: "Design systems for AI coding agents, grouped by collection" },
-    { href: "/backgrounds/", title: "Animated Backgrounds", desc: "Copy-paste animated hero effects with live color and speed controls" },
     { href: "/browser-support/", title: "Browser Support", desc: "Baseline status & compatibility data for 1,200+ web features" },
     { href: "/browser-support/compare/", title: "Compare Browsers", desc: "Side-by-side comparison of Chrome, Safari, and Firefox support" },
   ];
@@ -41,6 +37,8 @@ export default async function SitemapPage() {
   const pages = [
     { href: "/pricing/", title: "Pricing", desc: "Free plan today; CodeRef Pro plans coming soon" },
     { href: "/account/", title: "Your account", desc: "Saved work, subscription, billing history and settings" },
+    { href: "/about/", title: "About CodeRef", desc: "What CodeRef is, what is free and what Pro adds" },
+    { href: "/copyright/", title: "Content & copyright", desc: "Who owns the content and how to report a problem" },
     { href: "/terms/", title: "Terms of service", desc: "The terms for using CodeRef and CodeRef Pro" },
     { href: "/privacy/", title: "Privacy policy", desc: "What we collect, why, and who processes it" },
     { href: "/cookie-policy/", title: "Cookie policy", desc: "The cookies and browser storage we use" },
@@ -97,7 +95,7 @@ export default async function SitemapPage() {
       {/* 2. Quick References */}
       <section className="mt-12">
         <h2 className="text-xl font-bold tracking-tight border-b border-border pb-3 flex items-center justify-between">
-          <Link href="/quick-reference/" className="hover:text-accent transition-colors">Quick Reference Guides</Link>
+          <span>Quick Reference Guides</span>
           <span className="text-xs font-normal text-muted">{quickRefs.length} Guides</span>
         </h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -108,22 +106,6 @@ export default async function SitemapPage() {
               className="rounded-lg border border-border bg-surface p-3 text-xs font-semibold hover:border-accent hover:text-accent transition-colors"
             >
               {q.title}
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* DESIGN.md collections */}
-      <section className="mt-12">
-        <h2 className="text-xl font-bold tracking-tight border-b border-border pb-3 flex items-center justify-between">
-          <Link href="/design-md/" className="hover:text-accent transition-colors">DESIGN.md Collections</Link>
-          <span className="text-xs font-normal text-muted">{collections.length} Collections</span>
-        </h2>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {collections.map((c) => (
-            <Link key={c.id} href={`/design-md/${c.id}/`} className="group rounded-xl border border-border bg-surface p-4 hover:border-accent/40 hover:bg-chip/40 transition-all shadow-2xs">
-              <h3 className="font-bold text-sm text-foreground group-hover:text-accent transition-colors">{c.label}</h3>
-              <p className="mt-1 text-xs text-muted leading-relaxed">{c.description}</p>
             </Link>
           ))}
         </div>

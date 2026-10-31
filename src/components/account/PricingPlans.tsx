@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { api, ApiError, openSignIn, refreshAccount, useAccount, usePaymentsOpen } from "@/lib/account/client";
+import { api, ApiError, openSignIn, useAccount, usePaymentsOpen } from "@/lib/account/client";
 import { FREE_FEATURES, LIFETIME_CAP, PLANS, PRO_FEATURES, type PlanId } from "@/lib/plans";
 
 const Check = () => (
@@ -19,11 +19,6 @@ export function PricingPlans() {
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const remaining = me?.lifetimeRemaining ?? LIFETIME_CAP;
-
-  // Signed-out visitors skip /me everywhere else, but this page needs plan availability and seats left.
-  useEffect(() => {
-    void refreshAccount(true);
-  }, []);
 
   useEffect(() => {
     const qs = new URLSearchParams(window.location.search);

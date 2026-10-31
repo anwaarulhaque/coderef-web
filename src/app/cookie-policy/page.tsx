@@ -16,6 +16,14 @@ export default function Page() {
         This page explains the cookies and similar browser storage used on coderef.xyz. For how we handle personal data more broadly, see the <Link href="/privacy/">privacy policy</Link>.
       </p>
 
+      <h2>In short</h2>
+      <ul>
+        <li>We use one cookie to keep you signed in, and your browser&apos;s local storage to remember your work in the tools.</li>
+        <li>We use Google Analytics and Microsoft Clarity to see which pages are used.</li>
+        <li>No advertising or cross-site tracking cookies, and we don&apos;t sell data.</li>
+        <li>You can block or delete cookies in your browser at any time. Free tools still work without an account.</li>
+      </ul>
+
       <h2>What we use</h2>
       <div className="-mx-1 overflow-x-auto px-1">
         <table className="w-full min-w-[34rem] text-sm">

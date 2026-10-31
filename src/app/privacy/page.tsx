@@ -10,6 +10,15 @@ export default function Page() {
   return (
     <LegalPage title="Privacy policy" updated="October 31, 2026">
       <p>CodeRef collects as little as it can. Most tools run entirely in your browser and never send what you type to us.</p>
+      <h2>In short</h2>
+      <ul>
+        <li>We collect your email and what you choose to save. We don&apos;t see your card details.</li>
+        <li>We use analytics to see which pages are useful. No ads, no selling data, no marketing email.</li>
+        <li>You can delete your account and all its data at any time.</li>
+        <li>Questions: <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.</li>
+      </ul>
+      <h2>Who we are</h2>
+      <p>CodeRef (coderef.xyz) is the service provider and the party responsible for the personal data described here. Contact us at <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. More about the site is on the <Link href="/about/">About</Link> page.</p>
       <h2>What we collect</h2>
       <ul>
         <li><strong>Account:</strong> your email address, when you created the account and last signed in.</li>
@@ -36,10 +45,16 @@ export default function Page() {
         <li>To understand which pages are useful, through analytics (see the cookie policy).</li>
         <li>To meet legal obligations such as tax records. We never sell your data or use it for advertising.</li>
       </ul>
+      <h2>When we share data</h2>
+      <p>We share data only with the providers listed above, and only what each needs to do its job. We may also disclose information if the law requires it, to enforce our <Link href="/terms/">terms</Link>, or to protect the security of CodeRef and its users. If CodeRef is ever sold or merged, account data may move to the new owner, and we will tell you first.</p>
+      <h2>Information you share publicly</h2>
+      <p>Saved items are private unless you turn on a share link. Anyone with the link can view that item until you turn sharing off, so don&apos;t put secrets in items you share.</p>
+      <h2>Third-party links</h2>
+      <p>Pages link to official documentation and other sites. Their privacy practices are theirs, not ours, so check their policies.</p>
       <h2>Where data is stored</h2>
       <p>Our providers run in several countries, including the United States, so your data can be processed outside your own. We rely on each provider&apos;s standard contractual and security commitments for those transfers.</p>
       <h2>Your choices and rights</h2>
-      <p>You can delete your account and everything saved in it at any time from <Link href="/account/settings/">Settings</Link>; this also cancels any subscription (see the <Link href="/cancellation-policy/">cancellation policy</Link>). Turning off a share link makes it stop working immediately. Depending on where you live you may also have the right to access, correct, export or erase your data and to object to some processing. To use any of these, or for any privacy question, email <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.</p>
+      <p>You can delete your account and everything saved in it at any time from <Link href="/account/settings/">Settings</Link>; this also cancels any subscription (see the <Link href="/cancellation-policy/">cancellation policy</Link>). Turning off a share link makes it stop working immediately. Depending on where you live you may also have the right to access, correct, export or erase your data and to object to some processing. To use any of these, or for any privacy question, email <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. We reply within 30 days. We won&apos;t treat you differently for using these rights. If you are in the EU, UK or a similar region and aren&apos;t happy with our answer, you can also complain to your local data protection authority.</p>
       <h2>Security</h2>
       <p>Connections use HTTPS, sign-in codes and sessions are stored only as one-way hashes, and saved items are accessible only from your account or a share link you turn on. No system is perfectly secure, so keep access to your email inbox safe.</p>
       <h2>Children</h2>

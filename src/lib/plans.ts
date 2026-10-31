@@ -52,6 +52,5 @@ export const PRO_FEATURES = [
   "Share links for anything you save",
   "Complete Design System package: tokens.json, styles.css and every export in one ZIP",
   "Framework exports: Tailwind v4 theme and v3 config, shadcn/ui theme, Figma variables with Light/Dark modes (via Tokens Studio) and W3C design tokens",
-  `Bulk download of a whole DESIGN.md collection (up to ${BULK_LIMIT} files)`,
   "Everything synced across your devices",
 ];

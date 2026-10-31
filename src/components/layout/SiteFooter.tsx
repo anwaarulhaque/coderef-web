@@ -51,10 +51,17 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
     links: [
       { href: "/pricing/", label: "Pricing" },
       { href: "/account/", label: "Your account" },
-      { href: "/terms/", label: "Terms of service" },
-      { href: "/privacy/", label: "Privacy policy" },
       { href: "/refund-policy/", label: "Refund policy" },
       { href: "/cancellation-policy/", label: "Cancellation policy" },
+    ],
+  },
+  {
+    title: "About",
+    links: [
+      { href: "/about/", label: "About CodeRef" },
+      { href: "/copyright/", label: "Content & copyright" },
+      { href: "/terms/", label: "Terms of service" },
+      { href: "/privacy/", label: "Privacy policy" },
       { href: "/cookie-policy/", label: "Cookie policy" },
     ],
   },
@@ -63,7 +70,7 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
 export function SiteFooter() {
   return (
     <footer className="no-print mt-16 border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[minmax(0,1.3fr)_repeat(5,minmax(0,1fr))]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[minmax(0,1.3fr)_repeat(6,minmax(0,1fr))]">
         <div>
           <Link href="/" className="font-mono text-xl font-semibold tracking-tight">
             code<span className="text-accent">ref</span>
@@ -85,7 +92,7 @@ export function SiteFooter() {
                 <li key={l.href}>
                   {l.external ? (
                     <a href={l.href} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-accent">
-                      {l.label} ↗
+                      {l.label}
                     </a>
                   ) : (
                     <Link href={l.href} className="text-sm hover:text-accent">

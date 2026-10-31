@@ -90,9 +90,3 @@ export async function endSession(req: Req): Promise<void> {
 
 export const sessionCookie = (token: string) => cookie(SESSION_COOKIE, token, { maxAge: SESSION_DAYS * 86400, secure: config.secureCookies });
 export const clearSessionCookie = () => cookie(SESSION_COOKIE, "", { maxAge: 0, secure: config.secureCookies });
-
-// The session cookie is HttpOnly, so the browser can't tell whether it exists. This readable marker (no secret in it)
-// lets the client skip calling /me when nobody is signed in.
-export const SESSION_FLAG_COOKIE = "cr_in";
-export const sessionFlagCookie = () => cookie(SESSION_FLAG_COOKIE, "1", { maxAge: SESSION_DAYS * 86400, secure: config.secureCookies, httpOnly: false });
-export const clearSessionFlagCookie = () => cookie(SESSION_FLAG_COOKIE, "", { maxAge: 0, secure: config.secureCookies, httpOnly: false });

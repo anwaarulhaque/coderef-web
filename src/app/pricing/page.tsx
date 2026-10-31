@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   title: "Pricing — CodeRef Pro",
-  description: "CodeRef is free. Pro adds cloud save, share links, Design System exports for Tailwind, shadcn/ui and Figma, and bulk DESIGN.md downloads.",
+  description: "CodeRef is free. Pro adds cloud save, share links, and Design System exports for Tailwind, shadcn/ui and Figma.",
   path: "/pricing/",
 });
 

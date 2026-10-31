@@ -68,7 +68,7 @@ export async function syncPlans(): Promise<{ created: PlanId[]; synced: PlanId[]
     }
     const { product_id } = await dodo<{ product_id: string }>("POST", "/products", {
       name: `CodeRef ${p.name}`,
-      description: p.id === "lifetime" ? "CodeRef Pro forever: cloud save, share links, Design System exports and bulk downloads." : `CodeRef Pro, billed ${p.id}.`,
+      description: p.id === "lifetime" ? "CodeRef Pro forever: cloud save, share links and Design System exports." : `CodeRef Pro, billed ${p.id}.`,
       tax_category: "saas",
       price: price(p.id, p.cents),
       metadata: { plan: p.id },
