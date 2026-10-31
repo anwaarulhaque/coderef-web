@@ -6,6 +6,7 @@ import { HttpError } from "./http.ts";
 import type { FileOut } from "./exports.ts";
 import { refreshProducts } from "./products.ts";
 import { markRefunded } from "./refunds.ts";
+import { applyStartEvent, startPlanOfEvent } from "./start-billing.ts";
 import { listTransactions } from "./transactions.ts";
 import { LIFETIME_CAP, type PlanId } from "../lib/plans.ts";
 
@@ -169,6 +170,10 @@ export async function applyEvent(type: string, data: Obj): Promise<string> {
   if (!user) return "no matching user";
   const customerId = s(o(data.customer).customer_id) ?? s(data.customer_id);
   if (customerId && customerId !== user.dodo_customer_id) await sql`update users set dodo_customer_id = ${customerId} where id = ${user.id}`;
+
+  // CodeRef Start is a separate product with its own table; its events must never touch Pro's columns.
+  const startPlan = await startPlanOfEvent(data);
+  if (startPlan) return applyStartEvent(type, data, user, startPlan);
 
   if (type === "payment.succeeded") {
     const cart = Array.isArray(data.product_cart) ? (data.product_cart as Obj[]) : [];

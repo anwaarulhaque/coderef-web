@@ -302,3 +302,117 @@ export function RefundsPage() {
     </div>
   );
 }
+
+type StartOverview = {
+  totals: { pages: number; users: number; browsers: number };
+  subscriptions: { id: string; email: string; plan: string; status: string; pro_until: string | null; seats: number; team: string | null }[];
+  teams: { id: string; name: string; slug: string; owner: string; seat_limit: number; members: number; pages: number; created_at: string }[];
+  templates: { share_id: string; title: string; template_category: string | null; clone_count: number; views: number; owner: string }[];
+};
+
+/** CodeRef Start (the separate start-page product): usage, its subscriptions, teams, and gallery moderation. */
+export function StartAdminPage() {
+  const admin = useAdmin();
+  const { data, error, reload } = useList<StartOverview>("/admin/start");
+  const [note, setNote] = useState<{ tone: "ok" | "error"; text: string } | null>(null);
+  const [grant, setGrant] = useState({ email: "", until: "" });
+  const planName: Record<string, string> = { start_pro_yearly: "Start PRO", start_team_monthly: "Start Team", start_enterprise: "Enterprise" };
+  return (
+    <div className="space-y-6">
+      <h2 className="text-xl font-semibold">CodeRef Start</h2>
+      {error && <Alert tone="error">{error}</Alert>}
+      {note && <Alert tone={note.tone}>{note.text}</Alert>}
+      {data && (
+        <>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {[["Start pages", data.totals.pages], ["People with pages", data.totals.users], ["Connected browsers", data.totals.browsers]].map(([l, n]) => (
+              <div key={l} className={card}>
+                <p className="text-sm text-muted">{l}</p>
+                <p className="text-2xl font-semibold tabular-nums">{Number(n).toLocaleString()}</p>
+              </div>
+            ))}
+          </div>
+          <section className="space-y-2">
+            <h3 className="font-semibold">Subscriptions</h3>
+            <Table head={["Customer", "Plan", "Status", "Access until", "Team"]}>
+              {data.subscriptions.map((s) => (
+                <tr key={s.id}>
+                  <td className={`${td} font-medium`}>{s.email}</td>
+                  <td className={td}>{planName[s.plan] ?? s.plan}</td>
+                  <td className={`${td} capitalize`}>{s.status}</td>
+                  <td className={td}>{fmtDate(s.pro_until) || "—"}</td>
+                  <td className={td}>{s.team ?? "—"}</td>
+                </tr>
+              ))}
+              {!data.subscriptions.length && <tr><td className={`${td} text-muted`} colSpan={5}>No Start subscriptions yet.</td></tr>}
+            </Table>
+          </section>
+          {admin.role === "superadmin" && (
+            <form
+              className={`${card} grid gap-3 sm:grid-cols-[1fr_12rem_auto]`}
+              onSubmit={async (e) => {
+                e.preventDefault();
+                try {
+                  await api("POST", "/admin/start/enterprise", grant);
+                  setNote({ tone: "ok", text: `Enterprise granted to ${grant.email} until ${grant.until}.` });
+                  setGrant({ email: "", until: "" });
+                  void reload();
+                } catch (err) {
+                  setNote({ tone: "error", text: msg(err) });
+                }
+              }}
+            >
+              <p className="text-sm sm:col-span-3">
+                <strong>Grant Enterprise.</strong> <span className="text-muted">Enterprise is sold by contract and invoiced outside Dodo. The customer can then create teams with unlimited seats.</span>
+              </p>
+              <input className={input} type="email" required placeholder="customer@company.com" value={grant.email} onChange={(e) => setGrant({ ...grant, email: e.target.value })} aria-label="Customer email" />
+              <input className={input} type="date" required value={grant.until} onChange={(e) => setGrant({ ...grant, until: e.target.value })} aria-label="Access until" />
+              <button className={btnPrimary}>Grant</button>
+            </form>
+          )}
+          <section className="space-y-2">
+            <h3 className="font-semibold">Teams</h3>
+            <Table head={["Team", "Owner", "Members", "Pages", "Created"]}>
+              {data.teams.map((t) => (
+                <tr key={t.id}>
+                  <td className={`${td} font-medium`}>{t.name} <span className="text-xs text-muted">/{t.slug}</span></td>
+                  <td className={td}>{t.owner}</td>
+                  <td className={td}>{t.members} / {t.seat_limit > 10000 ? "∞" : t.seat_limit}</td>
+                  <td className={td}>{t.pages}</td>
+                  <td className={td}>{fmtDate(t.created_at)}</td>
+                </tr>
+              ))}
+              {!data.teams.length && <tr><td className={`${td} text-muted`} colSpan={5}>No teams yet.</td></tr>}
+            </Table>
+          </section>
+          <section className="space-y-2">
+            <h3 className="font-semibold">Gallery templates</h3>
+            <Table head={["Template", "Owner", "Category", "Used", ""]}>
+              {data.templates.map((t) => (
+                <tr key={t.share_id}>
+                  <td className={`${td} font-medium`}><a href={`/start/p/${t.share_id}/`} target="_blank" rel="noreferrer" className="hover:text-accent">{t.title}</a></td>
+                  <td className={td}>{t.owner}</td>
+                  <td className={td}>{t.template_category ?? "—"}</td>
+                  <td className={td}>{t.clone_count} · {t.views} views</td>
+                  <td className={td}>
+                    <button
+                      className={btn}
+                      onClick={async () => {
+                        if (!confirm(`Remove “${t.title}” from the gallery? The page itself stays.`)) return;
+                        await api("DELETE", `/admin/start/templates/${t.share_id}`).catch((e) => setNote({ tone: "error", text: msg(e) }));
+                        void reload();
+                      }}
+                    >
+                      Unpublish
+                    </button>
+                  </td>
+                </tr>
+              ))}
+              {!data.templates.length && <tr><td className={`${td} text-muted`} colSpan={5}>No templates published.</td></tr>}
+            </Table>
+          </section>
+        </>
+      )}
+    </div>
+  );
+}

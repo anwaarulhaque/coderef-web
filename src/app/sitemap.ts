@@ -3,6 +3,7 @@ import { getCompatFeatures } from "@/lib/compat";
 import { getCollections, getDesigns } from "@/lib/design-md";
 import { getQuickRefs } from "@/lib/quickref";
 import { absoluteUrl } from "@/lib/seo";
+import { START_SOLUTIONS } from "@/lib/start-marketing";
 import { getAllSheets } from "@/lib/sheets";
 
 // Rendered once at build time into out/sitemap.xml.
@@ -44,6 +45,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry("/abbreviations/", 0.7),
     entry("/design-md/", 0.9, "weekly"),
     entry("/backgrounds/", 0.8),
+    entry("/start-page/", 0.9),
+    entry("/start-page/features/", 0.8),
+    entry("/start-page/extension/", 0.8),
+    entry("/start-page/teams/", 0.8),
+    entry("/start-page/solutions/", 0.7),
+    ...START_SOLUTIONS.map((s) => entry(`/start-page/solutions/${s.slug}/`, 0.6)),
+    entry("/start-page/community/", 0.7, "weekly"),
     ...collections.map((c) => entry(`/design-md/${c.id}/`, 0.7, "weekly")),
     // External designs are link-outs (noindex), so they stay out of the sitemap.
     ...designs.filter((d) => !d.external).map((d) => entry(`/design-md/${d.id}/`, 0.6)),

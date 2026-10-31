@@ -1,11 +1,12 @@
 // Backend settings, read once from the environment. Secrets live in Vercel's environment variables (or .env locally).
 import products from "./dodo-products.json" with { type: "json" };
 import type { PlanId } from "../lib/plans.ts";
+import type { StartPlanId } from "../lib/start-plans.ts";
 
 const env = (k: string, fallback = "") => (process.env[k] ?? fallback).trim();
 
 const mode = env("PAYMENT_MODE", "TEST").toLowerCase() === "live" ? "live" : "test";
-const fileProducts = (products as Record<string, Partial<Record<PlanId, string>>>)[mode] ?? {};
+const fileProducts = (products as Record<string, Partial<Record<PlanId | StartPlanId, string>>>)[mode] ?? {};
 
 export const config = {
   databaseUrl: env("DATABASE_URL"),
@@ -26,6 +27,11 @@ export const config = {
       yearly: env("DODO_PRODUCT_YEARLY") || fileProducts.yearly || "",
       lifetime: env("DODO_PRODUCT_LIFETIME") || fileProducts.lifetime || "",
     } satisfies Record<PlanId, string>,
+    /** CodeRef Start, a separate product: its subscriptions live in start_subscriptions, never on users. */
+    startProducts: {
+      start_pro_yearly: env("DODO_PRODUCT_START_PRO") || fileProducts.start_pro_yearly || "",
+      start_team_monthly: env("DODO_PRODUCT_START_TEAM") || fileProducts.start_team_monthly || "",
+    } satisfies Record<StartPlanId, string>,
   },
   /** Cookies get `Secure` everywhere except `next dev` on plain http. */
   secureCookies: process.env.NODE_ENV === "production",
@@ -33,3 +39,6 @@ export const config = {
 
 export const planForProduct = (productId: string | undefined): PlanId | undefined =>
   (Object.entries(config.dodo.products) as [PlanId, string][]).find(([, id]) => id && id === productId)?.[0];
+
+export const startPlanForProduct = (productId: string | undefined): StartPlanId | undefined =>
+  (Object.entries(config.dodo.startProducts) as [StartPlanId, string][]).find(([, id]) => id && id === productId)?.[0];

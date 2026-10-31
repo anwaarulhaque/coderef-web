@@ -145,3 +145,111 @@ box-shadow: rgba(0,0,0,0.1) 0px 4px 12px 0px, inset 0 1px 0 #ffffff
   assert.equal(figmaFamily("ui-sans-serif, system-ui, sans-serif"), "Inter");
   assert.equal(figmaFamily("'Geist Mono', monospace", true), "Geist Mono");
 });
+
+// ---- CodeRef Start ----
+
+test("Start tiers: best active plan wins, ended plans don't count, and Pro is separate", async () => {
+  const { tierFromPlans } = await import("./start-entitlements.ts");
+  const now = Date.parse("2026-10-30T00:00:00Z");
+  const future = "2026-12-01T00:00:00Z";
+  const past = "2026-10-01T00:00:00Z";
+  assert.equal(tierFromPlans([], now), "free");
+  assert.equal(tierFromPlans([{ plan: "start_pro_yearly", pro_until: future }], now), "pro");
+  assert.equal(tierFromPlans([{ plan: "start_pro_yearly", pro_until: future }, { plan: "start_team_monthly", pro_until: future }], now), "team");
+  assert.equal(tierFromPlans([{ plan: "start_team_monthly", pro_until: past }], now), "free", "expired");
+  assert.equal(tierFromPlans([{ plan: "start_enterprise", pro_until: future }, { plan: "start_pro_yearly", pro_until: future }], now), "enterprise");
+  assert.equal(tierFromPlans([{ plan: "yearly", pro_until: future }], now), "free", "a CodeRef Pro plan isn't a Start plan");
+  const { canUseWidget } = await import("../lib/start-plans.ts");
+  assert.equal(canUseWidget("free", "bookmarks"), true);
+  assert.equal(canUseWidget("free", "kanban"), false);
+  assert.equal(canUseWidget("pro", "kanban"), true);
+  assert.equal(canUseWidget("pro", "announcement"), false);
+  assert.equal(canUseWidget("team", "announcement"), true);
+  assert.equal(canUseWidget("enterprise", "nonsense"), false);
+});
+
+test("Start feeds: RSS, Atom and ICS parse without a dependency", async () => {
+  const { parseFeed, parseIcs } = await import("./start-feeds.ts");
+  const rss = parseFeed(`<?xml version="1.0"?><rss><channel><title>News &amp; more</title>
+    <item><title><![CDATA[First <b>post</b>]]></title><link>https://example.com/1</link><pubDate>Tue, 03 Nov 2026 09:00:00 GMT</pubDate><description>&lt;p&gt;Hello&lt;/p&gt; world</description></item>
+    <item><title>No link</title><guid>https://example.com/2</guid></item></channel></rss>`);
+  assert.equal(rss.title, "News & more");
+  assert.equal(rss.items.length, 2);
+  assert.equal(rss.items[0].title, "First post");
+  assert.equal(rss.items[0].url, "https://example.com/1");
+  assert.equal(rss.items[0].date, "2026-11-03T09:00:00.000Z");
+  assert.equal(rss.items[0].summary, "Hello world");
+  assert.equal(rss.items[1].url, "https://example.com/2", "guid fallback");
+  const atom = parseFeed(`<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title><entry><title>A</title><link rel="alternate" href="https://b.dev/a"/><updated>2026-11-01T00:00:00Z</updated><summary>S</summary></entry></feed>`);
+  assert.deepEqual(atom.items[0], { title: "A", url: "https://b.dev/a", date: "2026-11-01T00:00:00.000Z", summary: "S" });
+  assert.equal(parseFeed(`<rss><item><title>x</title><link>javascript:alert(1)</link></item></rss>`).items[0].url, "", "only http(s) links");
+
+  const ics = parseIcs("BEGIN:VCALENDAR\r\nBEGIN:VEVENT\r\nSUMMARY:Stand-up\\, daily\r\nDTSTART:20261105T090000Z\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nSUMMARY:Old\r\nDTSTART:20200101T090000Z\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nSUMMARY:Holi\r\n day\r\nDTSTART;VALUE=DATE:20261104\r\nEND:VEVENT\r\nEND:VCALENDAR", Date.parse("2026-11-01T00:00:00Z"));
+  assert.deepEqual(ics.map((e) => [e.title, e.allDay]), [["Holiday", true], ["Stand-up, daily", false]], "sorted, past dropped, folded lines joined");
+});
+
+test("Start feeds refuse private and local addresses (SSRF)", async () => {
+  const { isPrivateAddress, publicUrl } = await import("./start-feeds.ts");
+  for (const ip of ["127.0.0.1", "10.1.2.3", "172.16.0.1", "192.168.1.1", "169.254.169.254", "100.64.0.1", "0.0.0.0", "::1", "fd00::1", "fe80::1", "::ffff:127.0.0.1"]) assert.equal(isPrivateAddress(ip), true, ip);
+  for (const ip of ["8.8.8.8", "1.1.1.1", "2606:4700::1111"]) assert.equal(isPrivateAddress(ip), false, ip);
+  assert.throws(() => publicUrl("file:///etc/passwd"), (e: HttpError) => e.status === 400);
+  assert.throws(() => publicUrl("https://user:pw@example.com/"), (e: HttpError) => e.status === 400);
+  assert.throws(() => publicUrl("http://example.com:6379/"), (e: HttpError) => e.status === 400);
+  assert.equal(publicUrl("https://example.com/feed").hostname, "example.com");
+});
+
+test("Start import: browser/start.me bookmark HTML and OPML", async () => {
+  const { parseBookmarkHtml, parseOpml, cleanLinks } = await import("./start.ts");
+  const html = `<!DOCTYPE NETSCAPE-Bookmark-file-1><DL><p>
+    <DT><H3>Bookmarks bar</H3><DL><p>
+      <DT><A HREF="https://github.com/" ADD_DATE="1">GitHub</A>
+      <DT><H3>Docs &amp; refs</H3><DL><p>
+        <DT><A HREF="https://developer.mozilla.org/">MDN</A>
+        <DT><A HREF="javascript:void(0)">Bookmarklet</A>
+      </DL><p>
+    </DL><p>
+    <DT><A HREF="https://example.com/">Loose</A>
+  </DL><p>`;
+  assert.deepEqual(parseBookmarkHtml(html), [
+    { title: "Bookmarks bar", links: [{ url: "https://github.com/", title: "GitHub" }] },
+    { title: "Bookmarks bar / Docs & refs", links: [{ url: "https://developer.mozilla.org/", title: "MDN" }] },
+    { title: "Bookmarks", links: [{ url: "https://example.com/", title: "Loose" }] },
+  ]);
+  const opml = parseOpml(`<opml><body><outline text="Tech"><outline text="HN" xmlUrl="https://hnrss.org/frontpage"/></outline><outline text="Solo" xmlUrl="https://a.dev/rss"/></body></opml>`);
+  assert.deepEqual(opml.map((g) => [g.title, g.feeds.map((f) => f.url)]), [["Tech", ["https://hnrss.org/frontpage"]], ["Feeds", ["https://a.dev/rss"]]]);
+  assert.deepEqual(cleanLinks([{ url: "https://x.dev", title: "" }, { url: "ftp://x" }, "nope", { url: " https://y.dev " }]), [{ url: "https://x.dev", title: "https://x.dev" }, { url: "https://y.dev", title: "https://y.dev" }]);
+});
+
+test("Start layout: moving widgets renumbers both columns", async () => {
+  const { placeWidget } = await import("../lib/start/layout.ts");
+  const w = (id: string, col: number, position: number) => ({ id, col, position, type: "notes", title: id, collapsed: false, color: "", config: {}, data: {} });
+  const sorted = (ws: ReturnType<typeof w>[]) => ws.map((x) => `${x.id}:${x.col}.${x.position}`).sort();
+  const start = [w("a", 0, 0), w("b", 0, 1), w("c", 0, 2), w("d", 1, 0)];
+  assert.deepEqual(sorted(placeWidget(start, "b", 1, 0)), ["a:0.0", "b:1.0", "c:0.1", "d:1.1"]);
+  assert.deepEqual(sorted(placeWidget(start, "a", 0, 99)), ["a:0.2", "b:0.0", "c:0.1", "d:1.0"], "within a column");
+  assert.equal(placeWidget(start, "zzz", 0, 0), start, "unknown id is a no-op");
+});
+
+test("Start calculator evaluates safely", async () => {
+  const { calculate } = await import("../lib/start/calc.ts");
+  assert.equal(calculate("(12 + 30) * 1.5"), 63);
+  assert.equal(calculate("2^3^2"), 512, "right-associative power");
+  assert.equal(calculate("50% * 80"), 40);
+  assert.equal(calculate("sqrt(16) + -2"), 2);
+  assert.equal(calculate("1/0"), null, "not finite");
+  assert.equal(calculate("alert(1)"), null);
+  assert.equal(calculate("constructor"), null);
+  assert.equal(calculate("2 +"), null);
+});
+
+test("Start API: cross-site writes are refused unless they carry an extension token", async () => {
+  const { handle } = await import("./router.ts");
+  const req = (headers: Record<string, string>) => ({ method: "POST", path: "/start/pages", query: new URLSearchParams(), headers: { host: "coderef.xyz", "content-type": "application/json", ...headers }, cookies: {}, body: "{}", ip: "1.2.3.4" });
+  const evil = await handle(req({ origin: "https://evil.example" }));
+  assert.equal(evil.status, 403, "cookie-authenticated cross-site POST is refused");
+  const ext = await handle(req({ origin: "chrome-extension://abcdefghijklmnop", authorization: `Bearer crt_${"x".repeat(43)}` }));
+  assert.notEqual(ext.status, 403, "extension token requests get past the origin check");
+  const { bearerToken } = await import("./auth.ts");
+  assert.equal(bearerToken(req({ authorization: "Bearer crt_short" })), null);
+  assert.equal(bearerToken(req({ authorization: `Bearer crt_${"a".repeat(30)}` })), `crt_${"a".repeat(30)}`);
+});

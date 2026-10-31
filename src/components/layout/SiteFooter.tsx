@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "./BrandMark";
 
 type FooterLink = { href: string; label: string; external?: boolean };
 
@@ -37,6 +38,27 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
     ],
   },
   {
+    title: "Playgrounds",
+    links: [
+      { href: "/try-it/", label: "HTML, CSS & JS Playground" },
+      { href: "/html-editor/", label: "HTML Editor" },
+      { href: "/css-editor/", label: "CSS Editor" },
+      { href: "/javascript-compiler/", label: "JavaScript Compiler" },
+      { href: "/rest-api-client/", label: "REST API Client" },
+    ],
+  },
+  {
+    title: "Design Systems",
+    links: [
+      { href: "/design-md/", label: "DESIGN.md Library" },
+      { href: "/design-md/?collection=top", label: "Top brands" },
+      { href: "/design-md/web/", label: "Web" },
+      { href: "/design-md/mobile/", label: "Mobile apps" },
+      { href: "/design-md/indie/", label: "Indie & portfolios" },
+      { href: "/backgrounds/", label: "Animated backgrounds" },
+    ],
+  },
+  {
     title: "Official docs",
     links: [
       { href: "https://developer.mozilla.org/", label: "MDN Web Docs", external: true },
@@ -56,6 +78,17 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
     ],
   },
   {
+    title: "CodeRef Start",
+    links: [
+      { href: "/start-page/", label: "Overview" },
+      { href: "/start-page/features/", label: "Features" },
+      { href: "/start-page/teams/", label: "For teams" },
+      { href: "/start-page/solutions/", label: "Solutions" },
+      { href: "/start-page/community/", label: "Template gallery" },
+      { href: "/pricing/?product=start", label: "Start pricing" },
+    ],
+  },
+  {
     title: "About",
     links: [
       { href: "/about/", label: "About CodeRef" },
@@ -70,10 +103,13 @@ const COLUMNS: { title: string; links: FooterLink[] }[] = [
 export function SiteFooter() {
   return (
     <footer className="no-print mt-16 border-t border-border bg-surface">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[minmax(0,1.3fr)_repeat(6,minmax(0,1fr))]">
-        <div>
-          <Link href="/" className="font-mono text-xl font-semibold tracking-tight">
-            code<span className="text-accent">ref</span>
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[minmax(0,1.4fr)_repeat(5,minmax(0,1fr))]">
+        <div className="lg:row-span-2">
+          <Link href="/" className="inline-flex items-center gap-2 font-mono text-xl font-semibold tracking-tight">
+            <BrandMark size={28} gradientId="cr-mark-footer" />
+            <span>
+              code<span className="text-accent">ref</span>
+            </span>
           </Link>
           <p className="mt-3 max-w-xs text-sm text-muted">
             Developer cheat sheets, quick references and interactive tools — every entry linked to the official

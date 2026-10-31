@@ -10,6 +10,7 @@ import { PageHeader, headerButton, headerButtonPrimary } from "@/components/layo
 import { ToolsBanner } from "@/components/home/ToolsBanner";
 import { DesignSystemsBanner } from "@/components/home/DesignSystemsBanner";
 import { DeveloperDay } from "@/components/home/DeveloperDay";
+import { StartBanner } from "@/components/home/StartBanner";
 import type { SheetSummary } from "@/lib/types";
 
 export const metadata: Metadata = pageMetadata({
@@ -92,6 +93,7 @@ export default async function Home() {
 
   return (
     <>
+      <StartBanner />
       <DesignSystemsBanner />
       <ToolsBanner />
       <DeveloperDay />

@@ -14,6 +14,7 @@ const NAV = [
   { group: "Customers", href: "/admin/customers/", label: "Customers" },
   { group: "Customers", href: "/admin/subscriptions/", label: "Subscriptions" },
   { group: "Customers", href: "/admin/refunds/", label: "Refunds" },
+  { group: "Customers", href: "/admin/start/", label: "CodeRef Start" },
   { group: "Setup", href: "/admin/plans/", label: "Plans" },
   { group: "Setup", href: "/admin/employees/", label: "Employees", superOnly: true },
 ];

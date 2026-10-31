@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PricingPlans } from "@/components/account/PricingPlans";
+import { ProductTabs } from "@/components/account/ProductTabs";
+import { StartPricingPlans } from "@/components/account/StartPricingPlans";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { REFUND_DAYS, SUPPORT_EMAIL } from "@/lib/plans";
 import { pageMetadata } from "@/lib/seo";
+import { START_FAQ } from "@/lib/start-marketing";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Pricing — CodeRef Pro",
-  description: "CodeRef is free. Pro adds cloud save, share links, and Design System exports for Tailwind, shadcn/ui and Figma.",
+  title: "Pricing — CodeRef Pro and CodeRef Start",
+  description: "CodeRef is free. Pro adds cloud save, share links and Design System exports. CodeRef Start: start pages from free, PRO $24/year, Team $29/month.",
   path: "/pricing/",
 });
 
@@ -20,27 +23,47 @@ const FAQ: [string, string][] = [
   ["What happens to my saved items if I stop paying?", "Nothing is deleted. You can still open everything; you just can't save more than the free limit until you upgrade again."],
 ];
 
+function Faq({ id, items }: { id: string; items: [string, string][] }) {
+  return (
+    <section className="mt-16 max-w-3xl" aria-labelledby={id}>
+      <h2 id={id} className="mb-4 text-xl font-semibold">
+        Questions
+      </h2>
+      <dl className="divide-y divide-border rounded-xl border border-border bg-surface">
+        {items.map(([q, a]) => (
+          <div key={q} className="p-4">
+            <dt className="font-medium">{q}</dt>
+            <dd className="mt-1 text-sm text-muted">{a}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  );
+}
+
 export default function PricingPage() {
   return (
     <>
       <PageHeader
         title="Simple pricing"
         crumbs={[{ href: "/", label: "Home" }, { label: "Pricing" }]}
-        description="CodeRef is free. Pro is for when you want your work saved, synced and exportable."
+        description="Two products, each with a free plan. CodeRef Pro saves, syncs and exports your work; CodeRef Start is your start page and new tab."
       />
-      <PricingPlans />
-      <section className="mt-16 max-w-3xl" aria-labelledby="pricing-faq">
-        <h2 id="pricing-faq" className="mb-4 text-xl font-semibold">
-          Questions
-        </h2>
-        <dl className="divide-y divide-border rounded-xl border border-border bg-surface">
-          {FAQ.map(([q, a]) => (
-            <div key={q} className="p-4">
-              <dt className="font-medium">{q}</dt>
-              <dd className="mt-1 text-sm text-muted">{a}</dd>
-            </div>
-          ))}
-        </dl>
+      <ProductTabs
+        pro={
+          <>
+            <PricingPlans />
+            <Faq id="pricing-faq" items={FAQ} />
+          </>
+        }
+        start={
+          <>
+            <StartPricingPlans />
+            <Faq id="start-pricing-faq" items={START_FAQ} />
+          </>
+        }
+      />
+      <section className="mt-6 max-w-3xl">
         <p className="mt-6 text-sm text-muted">
           Prices in USD; taxes are added at checkout where required. Questions? <a href={`mailto:${SUPPORT_EMAIL}`} className="text-accent hover:underline">{SUPPORT_EMAIL}</a> ·{" "}
           <Link href="/terms/" className="hover:text-foreground">Terms</Link> · <Link href="/privacy/" className="hover:text-foreground">Privacy</Link> ·{" "}

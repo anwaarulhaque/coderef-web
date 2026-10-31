@@ -18,6 +18,10 @@ export type NavFeatured = {
   tagline: string;
   description: string;
   badge?: string;
+  /** Button label (default "Launch Studio"). */
+  cta?: string;
+  /** The five dots on the card (default: the Realtime Colors palette). */
+  swatches?: string[];
 };
 
 export type NavGroup = {
@@ -42,6 +46,38 @@ export const NAV: NavGroup[] = [
       { href: "/design-md/mobile/", label: "Mobile Apps", description: "App design systems with SwiftUI, Android and Expo variants" },
       { href: "/design-md/indie/", label: "Indie & Portfolios", description: "Personal sites and portfolios with a distinctive look" },
       { href: "/backgrounds/", label: "Animated Backgrounds", description: "Copy-paste hero effects with custom colors and speed", badge: "NEW" },
+    ],
+  },
+  {
+    label: "CodeRef Start",
+    badge: "NEW",
+    featured: {
+      href: "/start/",
+      title: "CodeRef Start",
+      tagline: "Your start page & new tab",
+      description: "Bookmarks, feeds, notes, to-dos and 25 widgets on one page that opens in every new tab. Personal or shared with your team.",
+      badge: "NEW",
+      cta: "Open CodeRef Start",
+      swatches: ["#2563eb", "#16a34a", "#d97706", "#9333ea", "#0891b2"],
+    },
+    sections: [
+      {
+        title: "Product",
+        items: [
+          { href: "/start-page/", label: "Start Page Overview", description: "One page for everything you open every day" },
+          { href: "/start-page/features/", label: "Start Page Features", description: "Widgets, themes, inbox, sharing, import and more" },
+          { href: "/start-page/extension/", label: "New Tab Extension", description: "Your start page in every new tab, save tabs in one click" },
+          { href: "/start-page/community/", label: "Template Gallery", description: "Start from pages the community has shared" },
+        ],
+      },
+      {
+        title: "Teams & Plans",
+        items: [
+          { href: "/start-page/teams/", label: "For Teams", description: "Shared, branded start pages and a team intranet" },
+          { href: "/start-page/solutions/", label: "Start Solutions", description: "Education, enterprise, developers, agencies, remote teams" },
+          { href: "/pricing/?product=start", label: "Start Pricing", description: "Free, PRO $24/year, Team $29/month, Enterprise" },
+        ],
+      },
     ],
   },
   {
@@ -70,6 +106,14 @@ export const NAV: NavGroup[] = [
         items: [
           { href: "/browser-support/", label: "Browser Support", description: "Baseline status & compatibility data for 1,200+ web features" },
           { href: "/browser-support/compare/", label: "Compare Browsers", description: "Side-by-side comparison of Chrome, Safari, and Firefox support" },
+        ],
+      },
+      {
+        title: "Learn Interactively",
+        items: [
+          { href: "/css-grid/", label: "CSS Grid", description: "Every grid property with live visual examples" },
+          { href: "/flexbox/", label: "Flexbox", description: "Every flexbox property with live visual examples" },
+          { href: "/git-branching/", label: "Git Branching", description: "Animated levels for branching, rebasing and remotes" },
         ],
       },
     ],
@@ -105,21 +149,6 @@ export const NAV: NavGroup[] = [
         ],
       },
     ],
-  },
-  {
-    label: "Learn",
-    items: [
-      { href: "/css-grid/", label: "CSS Grid", description: "Every grid property with live visual examples" },
-      { href: "/flexbox/", label: "Flexbox", description: "Every flexbox property with live visual examples" },
-      { href: "/git-branching/", label: "Git Branching", description: "Animated levels for branching, rebasing and remotes" },
-      { href: "/quick-reference/vscode/", label: "VS Code Shortcuts", description: "Windows/Linux and macOS keyboard shortcuts" },
-    ],
-  },
-  {
-    label: "Realtime Colors",
-    href: "/realtime-colors/",
-    badge: "NEW",
-    highlight: true,
   },
 ];
 

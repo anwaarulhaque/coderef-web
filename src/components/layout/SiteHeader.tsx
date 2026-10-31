@@ -2,17 +2,24 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { AccountButton } from "@/components/account/AccountButton";
 import { GlobalSearch } from "@/components/search/GlobalSearch";
 import { NAV, type NavGroup } from "@/lib/site";
+import { BrandMark } from "./BrandMark";
 
 const normalize = (p: string) => p.replace(/\/?$/, "/");
 
 function isActive(pathname: string, href: string) {
   const path = normalize(pathname);
-  const target = normalize(href.split("#")[0]);
+  const target = normalize(href.split(/[?#]/)[0]);
   return target === "/" ? path === "/" : path.startsWith(target);
+}
+
+/** The one menu link to mark as current: the longest that matches, so /start-page/ isn't lit on /start-page/features/. */
+function currentHref(pathname: string, group: NavGroup): string | undefined {
+  const items = [...(group.sections?.flatMap((sec) => sec.items) ?? []), ...(group.items ?? [])].filter((i) => !i.href.includes("#") && isActive(pathname, i.href));
+  return items.sort((a, b) => b.href.split(/[?#]/)[0].length - a.href.split(/[?#]/)[0].length)[0]?.href;
 }
 
 function isGroupActive(pathname: string, g: NavGroup): boolean {
@@ -28,8 +35,11 @@ function isGroupActive(pathname: string, g: NavGroup): boolean {
 
 function Logo() {
   return (
-    <Link href="/" className="shrink-0 font-mono text-lg font-semibold tracking-tight" aria-label="coderef home">
-      code<span className="text-accent">ref</span>
+    <Link href="/" className="flex shrink-0 items-center gap-2 font-mono text-lg font-semibold tracking-tight" aria-label="coderef home">
+      <BrandMark size={26} gradientId="cr-mark-header" />
+      <span>
+        code<span className="text-accent">ref</span>
+      </span>
     </Link>
   );
 }
@@ -37,8 +47,18 @@ function Logo() {
 /** Rich Mega Menu or Dropdown */
 function NavDropdown({ group, pathname }: { group: NavGroup; pathname: string }) {
   const [open, setOpen] = useState(false);
+  const current = currentHref(pathname, group);
   const ref = useRef<HTMLDivElement | null>(null);
+  const panel = useRef<HTMLDivElement | null>(null);
+  const [shift, setShift] = useState(0);
   const openedByHover = useRef(false);
+
+  // Wide mega menus open from their button's left edge; nudge them left so they never run off the screen.
+  useLayoutEffect(() => {
+    if (!open || !panel.current || !ref.current) return;
+    const overflow = ref.current.getBoundingClientRect().left + panel.current.offsetWidth - (window.innerWidth - 16);
+    setShift(overflow > 0 ? -overflow : 0);
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -100,15 +120,15 @@ function NavDropdown({ group, pathname }: { group: NavGroup; pathname: string })
       </button>
 
       {open && (
-        <div className="absolute left-0 top-full z-40 pt-2 animate-in fade-in zoom-in-95 duration-100">
+        <div ref={panel} className="absolute left-0 top-full z-40 pt-2 animate-in fade-in zoom-in-95 duration-100" style={shift ? { left: shift } : undefined}>
           {/* Case 1: Mega Menu with Sections */}
           {group.sections ? (
             <div
               className={`rounded-2xl border border-border bg-surface/98 p-5 shadow-2xl backdrop-blur-xl ${
-                group.featured ? "w-[820px] lg:w-[890px]" : "w-[760px] lg:w-[820px]"
+                group.featured ? "w-[820px] lg:w-[890px]" : group.sections.length > 3 ? "w-[900px] lg:w-[980px]" : "w-[760px] lg:w-[820px]"
               }`}
             >
-              <div className="grid gap-6" style={{ gridTemplateColumns: group.featured ? "260px 1fr 1fr" : "repeat(3, 1fr)" }}>
+              <div className="grid gap-6" style={{ gridTemplateColumns: group.featured ? "260px 1fr 1fr" : `repeat(${group.sections.length}, 1fr)` }}>
                 {/* Optional Left Featured Card */}
                 {group.featured && (
                   <div className="flex flex-col justify-between rounded-xl border border-accent/25 bg-gradient-to-b from-accent/10 via-surface to-surface p-4 shadow-xs">
@@ -119,7 +139,7 @@ function NavDropdown({ group, pathname }: { group: NavGroup; pathname: string })
                         </span>
                         {/* 5 mini color dots */}
                         <div className="flex -space-x-1">
-                          {["#050315", "#fbfbfe", "#2f27ce", "#dedcff", "#433bff"].map((c, i) => (
+                          {(group.featured.swatches ?? ["#050315", "#fbfbfe", "#2f27ce", "#dedcff", "#433bff"]).map((c, i) => (
                             <span key={i} className="size-3 rounded-full border border-black/20" style={{ backgroundColor: c }} />
                           ))}
                         </div>
@@ -141,7 +161,7 @@ function NavDropdown({ group, pathname }: { group: NavGroup; pathname: string })
                       onClick={() => setOpen(false)}
                       className="mt-4 flex items-center justify-center gap-1.5 rounded-lg bg-accent py-2 text-xs font-bold text-white shadow-xs hover:opacity-90 transition-all"
                     >
-                      <span>Launch Studio</span>
+                      <span>{group.featured.cta ?? "Launch Studio"}</span>
                       <span>→</span>
                     </Link>
                   </div>
@@ -161,7 +181,7 @@ function NavDropdown({ group, pathname }: { group: NavGroup; pathname: string })
                         key={item.href}
                         href={item.href}
                         onClick={() => setOpen(false)}
-                        aria-current={isActive(pathname, item.href) && !item.href.includes("#") ? "page" : undefined}
+                        aria-current={item.href === current ? "page" : undefined}
                         className="group block rounded-lg px-2.5 py-1.5 hover:bg-chip aria-[current=page]:bg-accent/10 transition-colors"
                       >
                         <div className="flex items-center justify-between">
@@ -191,7 +211,7 @@ function NavDropdown({ group, pathname }: { group: NavGroup; pathname: string })
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  aria-current={isActive(pathname, item.href) && !item.href.includes("#") ? "page" : undefined}
+                  aria-current={item.href === current ? "page" : undefined}
                   className="block rounded-lg px-3 py-2 hover:bg-chip aria-[current=page]:bg-accent/10 transition-colors"
                 >
                   <div className="flex items-center justify-between">

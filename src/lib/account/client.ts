@@ -4,7 +4,8 @@ import type { ItemKind, PlanId } from "@/lib/plans";
 
 export type AccountUser = { email: string; createdAt: string; pro: boolean; plan: PlanId | null; status: string | null; proUntil: string | null; billing: boolean };
 export type Usage = { saved: number; favorites: number; limit: number };
-export type Me = { user: AccountUser | null; usage?: Usage; lifetimeRemaining: number; /** False while paid plans are "coming soon". */ paymentsEnabled: boolean };
+export type StartSummary = { tier: "free" | "pro" | "team" | "enterprise"; pages: number; pageLimit: number };
+export type Me = { user: AccountUser | null; usage?: Usage; /** CodeRef Start plan (a separate product). */ start?: StartSummary; lifetimeRemaining: number; /** False while paid plans are "coming soon". */ paymentsEnabled: boolean };
 export type SavedItem<T = unknown> = { id: string; kind: ItemKind; title: string; shareId: string | null; createdAt: string; updatedAt: string; data?: T };
 
 export class ApiError extends Error {

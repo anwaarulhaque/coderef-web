@@ -90,3 +90,54 @@ export async function endSession(req: Req): Promise<void> {
 
 export const sessionCookie = (token: string) => cookie(SESSION_COOKIE, token, { maxAge: SESSION_DAYS * 86400, secure: config.secureCookies });
 export const clearSessionCookie = () => cookie(SESSION_COOKIE, "", { maxAge: 0, secure: config.secureCookies });
+
+// ---- CodeRef Start browser extension: scoped bearer tokens (crt_…), usable only on /api/start/* ----
+
+export const START_TOKEN = /^crt_[\w-]{20,80}$/;
+
+/** The token in "Authorization: Bearer crt_…", if the request carries one. */
+export function bearerToken(req: Req): string | null {
+  const m = (req.headers.authorization ?? "").match(/^Bearer\s+(\S+)$/i);
+  return m && START_TOKEN.test(m[1]) ? m[1] : null;
+}
+
+export async function createStartToken(userId: string, name: string): Promise<string> {
+  const sql = db();
+  const [{ n }] = await sql`select count(*)::int as n from start_tokens where user_id = ${userId}`;
+  if ((n as number) >= 20) throw new HttpError(409, "You have 20 connected browsers. Remove one first.", "limit_reached");
+  const token = `crt_${randomBytes(32).toString("base64url")}`;
+  await sql`insert into start_tokens (token_hash, user_id, name) values (${sha256(token)}, ${userId}, ${name.slice(0, 80) || "Browser"})`;
+  return token;
+}
+
+export async function listStartTokens(userId: string) {
+  const rows = await db()`select token_hash, name, created_at, last_used_at from start_tokens where user_id = ${userId} order by created_at desc`;
+  return rows.map((r) => ({ id: (r.token_hash as string).slice(0, 16), name: r.name, createdAt: r.created_at, lastUsedAt: r.last_used_at }));
+}
+
+export async function deleteStartToken(userId: string, id: string): Promise<void> {
+  if (!/^[0-9a-f]{16}$/.test(id)) throw new HttpError(404, "Not found", "not_found");
+  await db()`delete from start_tokens where user_id = ${userId} and left(token_hash, 16) = ${id}`;
+}
+
+/**
+ * Who is calling /api/start/*: an extension token when the request has one (and then only that, never the cookie, so a
+ * bad token can't fall back to a session), otherwise the normal session cookie.
+ */
+export async function startUser(req: Req): Promise<User | null> {
+  const token = bearerToken(req);
+  if (token) {
+    const [user] = await db()`
+      update start_tokens t set last_used_at = now() from users u
+      where t.token_hash = ${sha256(token)} and u.id = t.user_id returning u.*`;
+    return (user as User) ?? null;
+  }
+  if (req.headers.authorization) return null;
+  return currentUser(req);
+}
+
+export async function requireStartUser(req: Req): Promise<User> {
+  const user = await startUser(req);
+  if (!user) throw new HttpError(401, "Sign in to continue", "unauthenticated");
+  return user;
+}

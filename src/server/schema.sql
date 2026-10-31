@@ -112,3 +112,125 @@ create table if not exists refund_requests (
   resolved_at timestamptz,
   resolved_by text
 );
+
+-- ---------------------------------------------------------------------------------------------------------------------
+-- CodeRef Start (/start): personal and team start pages made of widgets. A separate product with its own billing
+-- (start_subscriptions), so buying or cancelling it never touches CodeRef Pro's columns on users.
+-- ---------------------------------------------------------------------------------------------------------------------
+create table if not exists start_teams (
+  id uuid primary key default gen_random_uuid(),
+  name text not null,
+  slug text not null unique,
+  owner_id uuid not null references users(id) on delete cascade,
+  logo_url text,
+  brand_color text,
+  default_page_id uuid,
+  seat_limit int not null default 20,
+  allowed_domains text[] not null default '{}',
+  announcement text not null default '',
+  created_at timestamptz not null default now()
+);
+
+create table if not exists start_team_members (
+  team_id uuid not null references start_teams(id) on delete cascade,
+  user_id uuid not null references users(id) on delete cascade,
+  role text not null default 'viewer' check (role in ('owner', 'admin', 'editor', 'viewer')),
+  joined_at timestamptz not null default now(),
+  primary key (team_id, user_id)
+);
+create index if not exists start_team_members_user_idx on start_team_members (user_id);
+
+create table if not exists start_team_invites (
+  id uuid primary key default gen_random_uuid(),
+  team_id uuid not null references start_teams(id) on delete cascade,
+  email text not null,
+  role text not null default 'viewer' check (role in ('admin', 'editor', 'viewer')),
+  token_hash text not null unique,
+  expires_at timestamptz not null,
+  created_at timestamptz not null default now(),
+  unique (team_id, email)
+);
+
+create table if not exists start_pages (
+  id uuid primary key default gen_random_uuid(),
+  owner_id uuid not null references users(id) on delete cascade,
+  team_id uuid references start_teams(id) on delete cascade,
+  title text not null,
+  icon text not null default '',
+  position int not null default 0,
+  theme jsonb not null default '{}',
+  visibility text not null default 'private' check (visibility in ('private', 'team', 'public')),
+  share_id text unique,
+  password_hash text,
+  is_template boolean not null default false,
+  template_category text,
+  template_description text not null default '',
+  clone_count int not null default 0,
+  views int not null default 0,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create index if not exists start_pages_owner_idx on start_pages (owner_id, position);
+create index if not exists start_pages_team_idx on start_pages (team_id, position);
+create index if not exists start_pages_gallery_idx on start_pages (is_template, clone_count desc) where is_template;
+
+create table if not exists start_widgets (
+  id uuid primary key default gen_random_uuid(),
+  page_id uuid not null references start_pages(id) on delete cascade,
+  type text not null,
+  title text not null default '',
+  col int not null default 0,
+  position int not null default 0,
+  collapsed boolean not null default false,
+  color text not null default '',
+  config jsonb not null default '{}',
+  data jsonb not null default '{}',
+  updated_at timestamptz not null default now()
+);
+create index if not exists start_widgets_page_idx on start_widgets (page_id, col, position);
+
+-- One row per paid Start plan: a personal PRO (user_id) or a team plan (team_id).
+create table if not exists start_subscriptions (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references users(id) on delete cascade,
+  team_id uuid references start_teams(id) on delete set null,
+  plan text not null check (plan in ('start_pro_yearly', 'start_team_monthly', 'start_enterprise')),
+  subscription_id text unique,
+  status text not null default 'active',
+  pro_until timestamptz,
+  seats int not null default 1,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create index if not exists start_subscriptions_user_idx on start_subscriptions (user_id);
+create index if not exists start_subscriptions_team_idx on start_subscriptions (team_id);
+
+-- Browser-extension access tokens (crt_…). Only the hash is stored.
+create table if not exists start_tokens (
+  token_hash text primary key,
+  user_id uuid not null references users(id) on delete cascade,
+  name text not null default 'Browser',
+  created_at timestamptz not null default now(),
+  last_used_at timestamptz
+);
+create index if not exists start_tokens_user_idx on start_tokens (user_id);
+
+-- Links saved from the extension before they are filed into a widget.
+create table if not exists start_inbox (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references users(id) on delete cascade,
+  title text not null,
+  url text not null,
+  created_at timestamptz not null default now()
+);
+create index if not exists start_inbox_user_idx on start_inbox (user_id, created_at desc);
+
+-- Team analytics: link clicks per page, widget and day. No user or IP is stored.
+create table if not exists start_link_clicks (
+  page_id uuid not null references start_pages(id) on delete cascade,
+  widget_id uuid not null,
+  url text not null,
+  day date not null default current_date,
+  count int not null default 0,
+  primary key (page_id, widget_id, url, day)
+);
