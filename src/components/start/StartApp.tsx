@@ -11,6 +11,7 @@ import { useEffect, useRef, useState } from "react";
 import { ApiError, openSignIn, useAccount } from "@/lib/account/client";
 import { cache, isUuid, startApi, type StartPage, type TeamSummary } from "@/lib/start/client";
 import { Board, PageShell } from "./Board";
+import { ConnectPage } from "./Connect";
 import { PageView, StartLogo } from "./PageView";
 import { TeamAdmin, TeamsList } from "./Teams";
 import { btn, btnPrimary, Icon, input } from "./ui";
@@ -65,97 +66,6 @@ function Home({ pages, loaded, onCreated }: { pages: StartPage[]; loaded: boolea
       .catch((e) => setError(errText(e, "Couldn't create your first page.")));
   }, [loaded, pages, router, onCreated]);
   return <Centered>{error ? <p className="text-red-600 dark:text-red-400">{error}</p> : <p className="text-muted">Opening your start page…</p>}</Centered>;
-}
-
-/** /start/connect/: issue an extension token and hand it to the extension's content script on this page. */
-function Connect() {
-  const [devices, setDevices] = useState<Awaited<ReturnType<typeof startApi.tokens>>>([]);
-  const [state, setState] = useState<"idle" | "busy" | "connected" | "manual">("idle");
-  const [token, setToken] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const refresh = () =>
-    startApi
-      .tokens()
-      .then(setDevices)
-      .catch(() => undefined);
-  useEffect(() => {
-    void refresh();
-    const onMsg = (e: MessageEvent) => {
-      if (e.source === window && e.origin === window.location.origin && e.data?.type === "coderef-extension-connected") {
-        setState("connected");
-        void refresh();
-      }
-    };
-    window.addEventListener("message", onMsg);
-    return () => window.removeEventListener("message", onMsg);
-  }, []);
-  const connect = async () => {
-    setState("busy");
-    setError(null);
-    try {
-      const ua = navigator.userAgent;
-      const browser = /Edg\//.test(ua) ? "Edge" : /Brave/.test(ua) ? "Brave" : /Chrome\//.test(ua) ? "Chrome" : /Firefox\//.test(ua) ? "Firefox" : "Browser";
-      const os = /Mac/.test(ua) ? "macOS" : /Windows/.test(ua) ? "Windows" : /Linux/.test(ua) ? "Linux" : /CrOS/.test(ua) ? "ChromeOS" : "";
-      const t = await startApi.createToken(`${browser}${os ? ` on ${os}` : ""}`);
-      setToken(t);
-      window.postMessage({ type: "coderef-extension-token", token: t }, window.location.origin);
-      // No answer means the extension isn't installed here (or is an older build): show the token to paste instead.
-      setTimeout(() => setState((s) => (s === "busy" ? "manual" : s)), 2000);
-    } catch (e) {
-      setError(errText(e, "Couldn't create an access token."));
-      setState("idle");
-    }
-  };
-  return (
-    <div className="mx-auto max-w-xl px-4 py-12">
-      <StartLogo />
-      <h1 className="mt-6 text-2xl font-semibold">Connect the browser extension</h1>
-      <p className="mt-2 text-muted">The CodeRef Start extension opens your start page in every new tab and saves pages, tabs and bookmarks to it. Connecting gives it a token that only works for your start pages.</p>
-      <div className="mt-6 rounded-2xl border border-border bg-surface p-5">
-        {state === "connected" ? (
-          <p className="flex items-center gap-2 font-medium text-green-600">
-            <Icon name="check" /> This browser is connected. You can close this tab.
-          </p>
-        ) : (
-          <>
-            <button type="button" className={btnPrimary} onClick={connect} disabled={state === "busy"}>
-              {state === "busy" ? "Connecting…" : "Connect this browser"}
-            </button>
-            <p className="mt-2 text-xs text-muted">
-              Don&apos;t have it yet?{" "}
-              <Link href="/start-page/extension/" className="text-accent">
-                Get the extension
-              </Link>
-            </p>
-          </>
-        )}
-        {state === "manual" && token && (
-          <div className="mt-4">
-            <p className="text-sm">The extension didn&apos;t answer. Open its Settings and paste this token (shown once):</p>
-            <input readOnly className={`${input} mt-2 font-mono text-xs`} value={token} onFocus={(e) => e.target.select()} aria-label="Access token" />
-          </div>
-        )}
-        {error && <p className="mt-3 text-sm text-red-600 dark:text-red-400">{error}</p>}
-      </div>
-      <h2 className="mt-8 font-semibold">Connected browsers</h2>
-      <ul className="mt-2 divide-y divide-border rounded-2xl border border-border bg-surface">
-        {!devices.length && <li className="px-4 py-3 text-sm text-muted">None yet.</li>}
-        {devices.map((d) => (
-          <li key={d.id} className="flex items-center gap-3 px-4 py-3 text-sm">
-            <span className="flex-1">
-              {d.name}
-              <span className="block text-xs text-muted">
-                Connected {new Date(d.createdAt).toLocaleDateString()} · {d.lastUsedAt ? `last used ${new Date(d.lastUsedAt).toLocaleDateString()}` : "not used yet"}
-              </span>
-            </span>
-            <button type="button" className="text-xs text-muted hover:text-red-500" onClick={async () => (await startApi.deleteToken(d.id), refresh())}>
-              Remove
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
 }
 
 /** /start/p/{shareId}/: a read-only public page that anyone can copy to their own account. */
@@ -353,7 +263,7 @@ export function StartApp() {
     return (
       <div className="fixed inset-0 z-40 overflow-y-auto bg-background">
         {seg[0] === "connect" ? (
-          <SignInPrompt title="Connect the CodeRef Start extension" text="Sign in to CodeRef first. Then this page connects your browser in one click." />
+          <ConnectPage />
         ) : seg[0] === "join" ? (
           <SignInPrompt title="You've been invited to a team" text="Sign in with the email address the invitation was sent to." />
         ) : (
@@ -364,7 +274,7 @@ export function StartApp() {
 
   const overlay = (node: React.ReactNode) => <Overlay>{node}</Overlay>;
   if (!seg.length) return overlay(<Home pages={pages} loaded={loaded} onCreated={(p) => setPages((l) => [...l, p])} />);
-  if (seg[0] === "connect") return overlay(<Connect />);
+  if (seg[0] === "connect") return overlay(<ConnectPage />);
   if (seg[0] === "join") return overlay(<JoinTeam />);
   if (seg[0] === "teams" && !seg[1]) return overlay(<TeamsList />);
   if (seg[0] === "teams" && seg[1] && isUuid(seg[1])) return overlay(<TeamAdmin teamId={seg[1]} />);

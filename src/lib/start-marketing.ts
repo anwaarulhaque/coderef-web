@@ -24,6 +24,10 @@ export const FEATURE_GROUPS: FeatureGroup[] = [
     intro: "The CodeRef Start extension for Chrome, Edge and Brave makes your page the first thing every new tab shows.",
     features: [
       { title: "Your page in every new tab", text: "Pick which page opens. The last copy is cached, so it appears instantly, even offline." },
+      { title: "Search or ask AI", text: "Google, DuckDuckGo or CodeRef, or ask ChatGPT, Claude, Perplexity, Copilot and more. Add any other in two fields." },
+      { title: "Live sky and backgrounds", text: "A sky that follows the time of day, 22 photos, gradients or your own picture." },
+      { title: "Most visited", text: "Your most visited sites as shortcuts under the search bar." },
+      { title: "Command menu", text: "Ctrl K jumps to any page, any saved link, or asks AI about what you type." },
       { title: "Save this page", text: "One click saves the current tab to any list on any page." },
       { title: "Save all tabs", text: "Turn a window full of research into a list in one go." },
       { title: "Right-click to save", text: "Save any link or page from the context menu." },
