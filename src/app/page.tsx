@@ -81,6 +81,14 @@ export default async function Home() {
       itemCount: 0,
     },
     {
+      slug: "start-page/extension",
+      title: "CodeRef Start Extension",
+      category: "Tools",
+      description: "Free Chrome, Edge and Brave new tab extension: your start page, AI search and one-click tab saving.",
+      color: "#6366f1",
+      itemCount: 0,
+    },
+    {
       slug: "browser-support",
       title: "Browser Support",
       category: "Web",

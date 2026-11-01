@@ -1,6 +1,16 @@
 // Copy for the CodeRef Start marketing pages (/start-page/…): feature groups, solutions and FAQs. The plans and the
 // widget list come from start-plans.ts so the pages never disagree with the product.
 
+/** The Chrome Web Store listing; it also installs in Edge, Brave, Opera and Vivaldi. NEXT_PUBLIC_START_EXTENSION_URL overrides it. */
+export const START_EXTENSION_URL =
+  process.env.NEXT_PUBLIC_START_EXTENSION_URL || "https://chromewebstore.google.com/detail/cgnfgbgfdkjcmglffeonlhjigmfeglkb";
+
+/** The Edge Add-ons listing. Until NEXT_PUBLIC_START_EDGE_URL is set, Edge visitors get the Chrome Web Store listing. */
+export const START_EDGE_URL = process.env.NEXT_PUBLIC_START_EDGE_URL || START_EXTENSION_URL;
+
+/** The Firefox Add-ons listing. Set NEXT_PUBLIC_START_FIREFOX_URL once it's approved; until then Firefox gets the home-page tip. */
+export const START_FIREFOX_URL = process.env.NEXT_PUBLIC_START_FIREFOX_URL ?? "";
+
 export type Feature = { title: string; text: string; tier?: "PRO" | "Team" | "Enterprise" };
 export type FeatureGroup = { id: string; title: string; intro: string; features: Feature[] };
 

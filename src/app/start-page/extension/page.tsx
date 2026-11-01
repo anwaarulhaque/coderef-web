@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Cta, ctaPrimary, ctaSecondary, Faq, FeatureGrid, Hero, Section, StartMockup, Steps, SubNav } from "@/components/marketing/Sections";
-import { FEATURE_GROUPS } from "@/lib/start-marketing";
+import { ExtensionInstallButton } from "@/components/marketing/ExtensionInstallButton";
+import { FEATURE_GROUPS, START_EXTENSION_URL as STORE_URL } from "@/lib/start-marketing";
 import { jsonLd, pageMetadata, SITE_URL } from "@/lib/seo";
 import { START_SUBNAV } from "../nav";
 
@@ -11,9 +12,6 @@ export const metadata: Metadata = pageMetadata({
     "Free Chrome new tab extension: your bookmarks, feeds, to-dos and weather in every new tab, plus AI search, a live sky background and one-click tab saving.",
   path: "/start-page/extension/",
 });
-
-/** Set NEXT_PUBLIC_START_EXTENSION_URL to the Chrome Web Store listing once it's published. */
-const STORE_URL = process.env.NEXT_PUBLIC_START_EXTENSION_URL ?? "";
 
 const PERMISSIONS: [string, string][] = [
   ["Replace the new tab page", "To show your start page when you open a tab."],
@@ -79,13 +77,7 @@ export default function StartExtension() {
         text="The free CodeRef Start extension for Chrome, Edge and Brave opens your bookmarks, feeds and to-dos in every new tab, instantly. Search or ask AI from the same box, and save anything you find in one click."
         actions={
           <>
-            {STORE_URL ? (
-              <a href={STORE_URL} className={ctaPrimary} target="_blank" rel="noopener noreferrer">
-                Add to Chrome, it&apos;s free
-              </a>
-            ) : (
-              <span className={`${ctaPrimary} cursor-default opacity-80`}>Chrome Web Store listing coming soon</span>
-            )}
+            <ExtensionInstallButton className={ctaPrimary} />
             <Link href="/start/connect/" className={ctaSecondary}>
               Connect an installed extension
             </Link>

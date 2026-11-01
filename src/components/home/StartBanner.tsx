@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/layout/BrandMark";
 import { StartMockup } from "@/components/marketing/Sections";
+import { ExtensionInstallButton } from "@/components/marketing/ExtensionInstallButton";
 import { START_WIDGETS } from "@/lib/start-plans";
 
 const ABOUT: [string, string][] = [
@@ -50,6 +51,30 @@ export function StartBanner() {
           </div>
         </div>
         <StartMockup />
+      </div>
+      <div className="flex flex-col gap-4 border-t border-accent/15 bg-surface/60 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <div className="flex items-start gap-3">
+          <span aria-hidden className="grid size-10 shrink-0 place-items-center rounded-xl border border-border bg-surface">
+            <svg viewBox="0 0 24 24" className="size-5 text-accent" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19.4 13.6a2.4 2.4 0 1 0 0-3.2V6a1 1 0 0 0-1-1h-4.4a2.4 2.4 0 1 0-3.2 0H6.4a1 1 0 0 0-1 1v4.4a2.4 2.4 0 1 1 0 3.2V18a1 1 0 0 0 1 1h4.4a2.4 2.4 0 1 1 3.2 0h4.4a1 1 0 0 0 1-1z" />
+            </svg>
+          </span>
+          <div>
+            <h3 className="text-sm font-semibold">CodeRef Start extension for Chrome, Edge &amp; Brave</h3>
+            <p className="mt-0.5 text-sm text-muted">
+              Free. Opens your start page in every new tab, works offline, and saves pages or all open tabs in one click.
+            </p>
+          </div>
+        </div>
+        <div className="flex shrink-0 flex-wrap gap-2">
+          <ExtensionInstallButton className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-surface hover:opacity-90" />
+          <Link
+            href="/start-page/extension/"
+            className="rounded-lg border border-border bg-surface px-4 py-2 text-sm font-semibold hover:border-accent hover:text-accent"
+          >
+            About the extension
+          </Link>
+        </div>
       </div>
       <ul className="grid gap-px border-t border-accent/15 bg-accent/10 sm:grid-cols-2 lg:grid-cols-4">
         {ABOUT.map(([title, text]) => (
