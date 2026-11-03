@@ -46,6 +46,8 @@ export async function createCheckout(user: User, plan: PlanId): Promise<string> 
     customer: user.dodo_customer_id ? { customer_id: user.dodo_customer_id } : { email: user.email },
     return_url: `${config.siteUrl}/account/?checkout=success`,
     cancel_url: `${config.siteUrl}/pricing/?checkout=cancelled`,
+    billing_currency: config.currency,
+    feature_flags: { allow_currency_selection: false },
     metadata: { user_id: user.id, plan },
   });
   if (!session.checkout_url) throw new HttpError(502, "The payment provider did not return a checkout page", "payments_error");

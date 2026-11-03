@@ -29,6 +29,8 @@ export async function createStartCheckout(user: User, plan: StartPlanId): Promis
     customer: user.dodo_customer_id ? { customer_id: user.dodo_customer_id } : { email: user.email },
     return_url: `${config.siteUrl}/account/start/?checkout=success`,
     cancel_url: `${config.siteUrl}/pricing/?product=start&checkout=cancelled`,
+    billing_currency: config.currency,
+    feature_flags: { allow_currency_selection: false },
     metadata: { user_id: user.id, plan, product: "start" },
   });
   if (!session.checkout_url) throw new HttpError(502, "The payment provider did not return a checkout page", "payments_error");

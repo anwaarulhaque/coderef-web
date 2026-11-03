@@ -33,6 +33,8 @@ export const config = {
       start_team_monthly: env("DODO_PRODUCT_START_TEAM") || fileProducts.start_team_monthly || "",
     } satisfies Record<StartPlanId, string>,
   },
+  /** CodeRef sells in USD only: every checkout pins the billing currency so Adaptive Currency can't switch it. */
+  currency: "USD",
   /** Cookies get `Secure` everywhere except `next dev` on plain http. */
   secureCookies: process.env.NODE_ENV === "production",
 };
