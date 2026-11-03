@@ -9,7 +9,7 @@ import { START_SUBNAV } from "../nav";
 
 export const metadata: Metadata = pageMetadata({
   title: "CodeRef Start for Teams — shared start pages and a lightweight intranet",
-  description: "Give your team one branded start page with every app, link and announcement. Roles, invitations, domain sign-up, analytics. $29/month for 20 members.",
+  description: "Give your team one branded start page with every app, link and announcement. Roles, invitations, domain sign-up, analytics. $29/month for 10 members.",
   path: "/start-page/teams/",
 });
 

@@ -125,7 +125,7 @@ create table if not exists start_teams (
   logo_url text,
   brand_color text,
   default_page_id uuid,
-  seat_limit int not null default 20,
+  seat_limit int not null default 10,
   allowed_domains text[] not null default '{}',
   announcement text not null default '',
   created_at timestamptz not null default now()

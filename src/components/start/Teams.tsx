@@ -86,7 +86,7 @@ export function TeamsList() {
           </form>
         ) : (
           <p className="mt-2 text-sm text-muted">
-            Teams are part of Start Team ($29 / month for 20 members).{" "}
+            Teams are part of Start Team ($29 / month for 10 members).{" "}
             <Link href="/pricing/?product=start" className="font-semibold text-accent">
               See plans
             </Link>

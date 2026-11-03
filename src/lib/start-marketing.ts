@@ -209,7 +209,7 @@ export const START_FAQ: [string, string][] = [
   ["Is CodeRef Start part of CodeRef Pro?", "No. CodeRef Start is a separate product with its own plans. CodeRef Pro (cloud save and Design System exports) stays exactly as it is, and you can have either, both or neither."],
   ["Is there a free plan?", "Yes: up to 3 start pages, the essential widgets, the new-tab extension, sharing and the template gallery, free forever."],
   ["How does PRO cost $24 a year?", "Start PRO is billed once a year. That's $2 a month for unlimited pages, every widget, the inbox, custom backgrounds and CSS, and password-protected sharing."],
-  ["How does the Team plan work?", "Start Team is $29 a month for one shared workspace with up to 20 members, all of whom get PRO. Add pages for the team, invite people by email or let your email domain join."],
+  ["How does the Team plan work?", "Start Team is $29 a month for one shared workspace with up to 10 members, all of whom get PRO. Add pages for the team, invite people by email or let your email domain join."],
   ["Which browsers does the extension support?", "Chrome, Edge, Brave and other Chromium browsers. In Firefox or Safari, set coderef.xyz/start/ as your home page."],
   ["Can I import from start.me or my browser?", "Yes. Upload a bookmarks export (HTML) from any browser or from start.me and it becomes a page with your folders as widgets. Feed readers' OPML files work too."],
   ["Can I cancel?", "Anytime, from Account → CodeRef Start. You keep your plan until the end of the period you paid for, and your pages stay; free limits apply again after that."],
@@ -217,7 +217,7 @@ export const START_FAQ: [string, string][] = [
 ];
 
 export const START_TEAM_FAQ: [string, string][] = [
-  ["Do members need to pay?", "No. The team plan covers up to 20 members, and every member gets PRO features while they're on the team."],
+  ["Do members need to pay?", "No. The team plan covers up to 10 members, and every member gets PRO features while they're on the team."],
   ["Can members have personal pages too?", "Yes. Team pages appear next to each member's own pages; personal pages stay private."],
   ["How do we make it everyone's new tab?", "Members install the CodeRef Start extension and pick the team page. IT can push the extension with Chrome's ExtensionInstallForcelist policy and set the team in the extension's managed policy."],
   ["What does Enterprise add?", "Unlimited teams and members, single sign-on, managed rollout, advanced analytics, invoicing and a dedicated contact. Email us for a quote."],

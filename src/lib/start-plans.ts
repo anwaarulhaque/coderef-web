@@ -6,10 +6,10 @@ export type StartTier = "free" | "pro" | "team" | "enterprise";
 
 export const START_PLANS: { id: StartPlanId; tier: StartTier; name: string; price: string; cents: number; period: string; note: string }[] = [
   { id: "start_pro_yearly", tier: "pro", name: "Start PRO", price: "$24", cents: 2400, period: "/ year", note: "One person. About $2 a month, billed yearly." },
-  { id: "start_team_monthly", tier: "team", name: "Start Team", price: "$29", cents: 2900, period: "/ month", note: "One shared workspace with up to 20 PRO members." },
+  { id: "start_team_monthly", tier: "team", name: "Start Team", price: "$29", cents: 2900, period: "/ month", note: "One shared workspace with up to 10 PRO members." },
 ];
 
-export const START_TEAM_SEATS = 20;
+export const START_TEAM_SEATS = 10;
 
 export const START_LIMITS: Record<StartTier, { pages: number; widgetsPerPage: number; teams: number }> = {
   free: { pages: 3, widgetsPerPage: 20, teams: 0 },

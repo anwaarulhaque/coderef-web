@@ -28,7 +28,7 @@ const describe = (id: PlanId | StartPlanId) =>
     : id === "start_pro_yearly"
       ? "CodeRef Start PRO: unlimited start pages, every widget and the new-tab extension, billed yearly."
       : id === "start_team_monthly"
-        ? "CodeRef Start Team: a shared start-page workspace for up to 20 members, billed monthly."
+        ? "CodeRef Start Team: a shared start-page workspace for up to 10 members, billed monthly."
         : `CodeRef Pro, billed ${id}.`;
 
 const ALL: { id: PlanId | StartPlanId; name: string; cents: number }[] = [...PLANS, ...START_PLANS];
